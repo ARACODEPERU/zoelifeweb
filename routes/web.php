@@ -16,7 +16,7 @@ use Modules\Blog\Http\Controllers\BlogController;
 
 
 Route::get('/', [WebController::class, 'index'])->name('cms_principal');
-
+/*
 Route::get('/blog/home', [BlogController::class, 'index'])->name('blog_principal');
 Route::get('/article/{url}', [BlogController::class, 'article'])->name('blog_article_by_url');
 Route::get('/category/{id}', [BlogController::class, 'category'])->name('blog_category');
@@ -26,11 +26,7 @@ Route::get('/contact-us', [BlogController::class, 'contactUs'])->name('blog_cont
 Route::get('/stories/article/{url}', [BlogController::class, 'storiesArticle'])->name('blog_stories_article_by_url');
 Route::get('/stories/policies', [BlogController::class, 'storiesPolicies'])->name('blog_stories_policies');
 Route::get('/stories/contact-us', [BlogController::class, 'storiesContactUs'])->name('blog_stories_contact_us');
-
-Route::get('/nosotros', [HomeController::class, 'nosotros'])->name('web_nosotros');
-Route::get('/servicios', [HomeController::class, 'servicios'])->name('web_servicios');
-Route::get('/proyectos', [HomeController::class, 'proyectos'])->name('web_proyectos');
-Route::get('/contacto', [HomeController::class, 'contacto'])->name('web_contacto');
+*/
 
 // Route::get('/', function () {
 //     return Inertia::render('Welcome', [
