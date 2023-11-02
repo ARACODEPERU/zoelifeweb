@@ -7,7 +7,7 @@
     <meta name="description" content="Streamlab - Video Streaming HTML5 Template" />
     <meta name="author" content="StreamLab" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Streamlab - Video Streaming HTML5 Template</title>
+    <title>ZoeLife International</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ asset('themes/zoelife/global/images/favicon.png') }}">
     <!-- CSS bootstrap-->
