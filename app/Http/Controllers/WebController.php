@@ -10,4 +10,9 @@ class WebController extends Controller
     {
         return view('zoelife/index');
     }
+
+    public function peruinicio()
+    {
+        return view('zoelife/peru.index');
+    }
 }
