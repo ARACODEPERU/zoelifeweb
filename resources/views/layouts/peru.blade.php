@@ -4,20 +4,20 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="keywords" content="" />
-	<meta name="author" content="" />
+	<meta name="author" content="Aracode Smart Solutión" />
 	<meta name="robots" content="" />
-	<meta name="description" content="CargoZone - Transport and Cargo Template" />
-	<meta property="og:title" content="CargoZone - Transport and Cargo Template" />
-	<meta property="og:description" content="CargoZone - Transport and Cargo Template" />
+	<meta name="description" content="ZoeLife International - Perú" />
+	<meta property="og:title" content="ZoeLife International - Perú" />
+	<meta property="og:description" content="ZoeLife International - Perú" />
 	<meta property="og:image" content=""/>
 	<meta name="format-detection" content="telephone=no">
 	
 	<!-- FAVICONS ICON -->
-	<link rel="icon" href="themes/zoelife/paises/images/favicon.ico" type="image/x-icon" />
-	<link rel="shortcut icon" type="image/x-icon" href="themes/zoelife/paises/images/favicon.png" />
+	<link rel="icon" href="themes/zoelife/global/images/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" type="image/x-icon" href="themes/zoelife/global/images/favicon.png" />
 	
 	<!-- PAGE TITLE HERE -->
-	<title>CargoZone - Transport and Cargo Template </title>
+	<title>Perú | ZoeLife International </title>
 	
 	<!-- MOBILE SPECIFIC -->
 	<meta name="viewport" content="width=device-width">
