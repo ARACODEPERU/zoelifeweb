@@ -16,16 +16,16 @@
                 <div class="row justify-content-between">
                     <div class="dez-topbar-left">
                         <ul class="social-bx list-inline pull-right">
-                            <li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
-                            <li><a href="javascript:void(0);" class="fa fa-twitter"></a></li>
-                            <li><a href="javascript:void(0);" class="fa fa-linkedin"></a></li>
-                            <li><a href="javascript:void(0);" class="fa fa-google-plus"></a></li>
+                            <li><a href="" class="fab fa-facebook" style="padding: 10px; font-size: 15px;"></a></li>
+                            <li><a href="" class="fab fa-instagram" style="padding: 10px; font-size: 15px;"></a></li>
+                            <li><a href="" class="fab fa-linkedin" style="padding: 10px; font-size: 15px;"></a></li>
+                            <li><a href="" class="fab fa-youtube" style="padding: 10px; font-size: 15px;"></a></li>
                         </ul>
                     </div>
                     <div class="dez-topbar-right list-unstyled e-p-bx ">
                         <ul>
-                            <li><i class="fa fa-envelope"></i><span>info@example.com</span></li>
-                            <li><i class="fa fa-phone"></i><span>+141 1234 567 890</span></li>
+                            <li><i class="fa fa-envelope"></i><span>grupogreenplanet@gmail.com</span></li>
+                            <li><i class="fa fa-phone"></i><span>992 914 870</span></li>
                         </ul>
                     </div>
                 </div>
@@ -48,7 +48,12 @@
 					</button>
                     <!-- Extra Nav -->
                     <div class="extra-nav hidden-sm-down disnone-md">
-                        <div class="extra-cell"> <a href="javascript:void(0);" class="site-button">Oficina Virtual</a> </div>
+                        <div class="extra-cell"> 
+                            <a href="" class="site-button">
+                                <i class="fa fa-laptop"></i> &nbsp;
+                                Oficina Virtual
+                            </a> 
+                        </div>
                     </div>
                     <!-- Main Nav -->
                     <div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">

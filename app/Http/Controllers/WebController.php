@@ -21,6 +21,11 @@ class WebController extends Controller
         return view('zoelife/peru.centros-de-distribucion');
     }
 
+    public function perucentroslima()
+    {
+        return view('zoelife/peru.centros-de-distribucion-lima');
+    }
+
     public function peruestrellas()
     {
         return view('zoelife/peru.alcanzando-las-estrellas');

@@ -20,6 +20,7 @@ Route::get('/', [WebController::class, 'index'])->name('cms_principal');
 
 Route::get('/peru', [WebController::class, 'peruinicio'])->name('web_peru_inicio');
 Route::get('/peru.centros-de-distribucion', [WebController::class, 'perucentros'])->name('web_peru_centros');
+Route::get('/peru.centros-de-distribucion-lima', [WebController::class, 'perucentroslima'])->name('web_peru_centros_lima');
 Route::get('/peru.alcanzando-las-estrellas', [WebController::class, 'peruestrellas'])->name('web_peru_alcanzando_las_estrellas');
 Route::get('/peru.contacto', [WebController::class, 'perucontacto'])->name('web_peru_contacto');
 /*

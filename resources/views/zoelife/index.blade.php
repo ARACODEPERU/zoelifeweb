@@ -36,31 +36,31 @@
                                         </li>
                                         -->
                                         <li>
-                                            <a href="#" aria-current="page">
+                                            <a href=" {{ route('web_peru_inicio') }} " aria-current="page">
                                                 <img style="width: 25px;" src="{{ asset('themes/zoelife/global/images/flags/peru.png') }}" alt="">
                                                 &nbsp;Perú
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" aria-current="page">
+                                            <a href=" {{ route('web_peru_inicio') }} " aria-current="page">
                                                 <img style="width: 25px;" src="{{ asset('themes/zoelife/global/images/flags/bolivia.png') }}" alt="">
                                                 &nbsp;Bolivia
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" aria-current="page">
+                                            <a href=" {{ route('web_peru_inicio') }} " aria-current="page">
                                                 <img style="width: 25px;" src="{{ asset('themes/zoelife/global/images/flags/ecuador.png') }}" alt="">
                                                 &nbsp;Ecuador
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" aria-current="page">
+                                            <a href=" {{ route('web_peru_inicio') }} " aria-current="page">
                                                 <img style="width: 25px;" src="{{ asset('themes/zoelife/global/images/flags/colombia.png') }}" alt="">
                                                 &nbsp;Colombia
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#" aria-current="page">
+                                            <a href=" {{ route('web_peru_inicio') }} " aria-current="page">
                                                 <img style="width: 25px;" src="{{ asset('themes/zoelife/global/images/flags/mexico.png') }}" alt="">
                                                 &nbsp;Mexico
                                             </a>

@@ -9,6 +9,8 @@
 	License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
 */
 /*
+
+
 ======================================
   * CSS TABLE CONTENT *  
 ======================================
@@ -122,6 +124,9 @@
 /*--------------------------------------------------------------
 1. GENERAL
 ---------------------------------------------------------------*/
+
+@import url('fontawesome.min.css');
+
 
 body {
     background-color: #FFF;

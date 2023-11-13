@@ -36,14 +36,14 @@
             <div class="container">
                 <div class="row">
                     <!-- Left part start -->
-                    <div class="col-xl-9 col-lg-8 col">
+                    <div class="col-md-7">
                         <div class="dzFormMsg"></div>
                         <div class="p-a30 bg-white clearfix m-b30">
 							<h3>Envianos un mensaje</h3>
                             <form method="post" class="dzForm" action="script/contact.php">
                                 <input type="hidden" value="Contact" name="dzToDo" >
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-md-12">
                                         <div class="form-group">
                                             <div class="input-group"> 
 												<div class="input-group-prepend">
@@ -60,7 +60,7 @@
                                             <div class="input-group"> 
 												<div class="input-group-prepend">
 													<span class="input-group-text">
-														<i class="fa fa-user"></i>
+														<i class="fa fa-phone"></i>
 													</span>
 												</div>
 												<input name="dzName" type="text" required class="form-control" placeholder="Teléfono">
@@ -84,7 +84,7 @@
                                             <div class="input-group"> 
 												<div class="input-group-prepend v-align-t">
 													<span class="input-group-text">
-														<i class="fa fa-pencil"></i>
+														<i class="fa fa-edit"></i>
 													</span>
 												</div>
                                                 <textarea name="dzMessage" rows="4" required class="form-control" placeholder="Escribe tu mensaje aqui..."></textarea>
@@ -98,7 +98,8 @@
 										</div>
 									</div>
                                     <div class="col-md-12">
-                                        <button name="submit" type="submit" value="Submit" class="site-button"> 
+                                        <button name="submit" type="submit" value="Submit" class="site-button">
+                                            <i class="fa fa-envelope"></i> &nbsp;
 											<span>Enviar Ahora</span> 
 										</button>
                                     </div>
@@ -108,9 +109,9 @@
                     </div>
                     <!-- Left part END -->
                     <!-- right part start -->
-                    <div class="col-xl-3 col-lg-4">
+                    <div class="col-md-5">
                         <div class="p-a30 bg-white m-b30">
-							<h3>Contact Info</h3>
+							<h3>Información de Contacto</h3>
                             <ul class="no-margin">
                                 <li class="icon-bx-wraper left m-b30">
                                     <div class="icon-bx-xs bg-primary"> <a href="javascript:void(0);" class="icon-cell"><i class="fa fa-map-marker"></i></a> </div>
@@ -130,7 +131,7 @@
                                     <div class="icon-bx-xs bg-primary"> <a href="javascript:void(0);" class="icon-cell"><i class="fa fa-phone"></i></a> </div>
                                     <div class="icon-content">
                                         <h6 class="text-uppercase m-b0 dez-tilte">TELÉFONO</h6>
-                                        <p>(992 914 870</p>
+                                        <p>992 914 870</p>
                                     </div>
                                 </li>
                             </ul>
@@ -141,8 +142,8 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <!-- Map part start -->
-                        <h4>Our Location</h4>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227748.3825624477!2d75.65046970649679!3d26.88544791796718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4adf4c57e281%3A0xce1c63a0cf22e09!2sJaipur%2C+Rajasthan!5e0!3m2!1sen!2sin!4v1500819483219" style="border:0; width:100%; height:400px;" allowfullscreen></iframe>
+                        <h4>Nuestra Ubicación</h4>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.214123470971!2d-77.03385612512218!3d-12.097488788143261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8686ffa2705%3A0xd12432b3a0aea053!2sAv.%20Petit%20Thouars%203547%2C%20San%20Isidro%2015046!5e0!3m2!1ses-419!2spe!4v1699642496706!5m2!1ses-419!2spe" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         <!-- Map part END -->
                     </div>
                 </div>
