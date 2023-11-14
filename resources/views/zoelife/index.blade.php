@@ -15,56 +15,19 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <div id="gen-menu-contain" class="gen-menu-contain">
                                     <ul id="gen-main-menu" class="navbar-nav ml-auto">
-                                        <!--
-                                        <li class="menu-item active">
-                                            <a href="#" aria-current="page">Home</a>
-                                            <i class="fa fa-chevron-down gen-submenu-icon"></i>
-                                            <ul class="sub-menu">
-                                                <li class="menu-item">
-                                                    <a href="index.html" aria-current="page">Main Home</a>
-                                                </li>
-                                                <li class="menu-item active">
-                                                    <a href="movies-home.html" aria-current="page">Movies Home</a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="tv-shows-home.html" aria-current="page">Tv Shows Home</a>
-                                                </li>
-                                                <li class="menu-item">
-                                                    <a href="video-home.html" aria-current="page">Video Home</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        -->
-                                        <li>
-                                            <a href=" {{ route('web_peru_inicio') }} " aria-current="page">
-                                                <img style="width: 25px;" src="{{ asset('themes/zoelife/global/images/flags/peru.png') }}" alt="">
-                                                &nbsp;Perú
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href=" {{ route('web_peru_inicio') }} " aria-current="page">
-                                                <img style="width: 25px;" src="{{ asset('themes/zoelife/global/images/flags/bolivia.png') }}" alt="">
-                                                &nbsp;Bolivia
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href=" {{ route('web_peru_inicio') }} " aria-current="page">
-                                                <img style="width: 25px;" src="{{ asset('themes/zoelife/global/images/flags/ecuador.png') }}" alt="">
-                                                &nbsp;Ecuador
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href=" {{ route('web_peru_inicio') }} " aria-current="page">
-                                                <img style="width: 25px;" src="{{ asset('themes/zoelife/global/images/flags/colombia.png') }}" alt="">
-                                                &nbsp;Colombia
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href=" {{ route('web_peru_inicio') }} " aria-current="page">
-                                                <img style="width: 25px;" src="{{ asset('themes/zoelife/global/images/flags/mexico.png') }}" alt="">
-                                                &nbsp;Mexico
-                                            </a>
-                                        </li>
+                                        @foreach ($pages as $page)
+                                            <li class="menu-item">
+                                                <a href=" {{ route($page->route) }} " aria-current="page">
+                                                    @if ($page->country)
+                                                        <img style="width: 25px;" src="{{ $page->country->icon }}"
+                                                            alt="">
+                                                        &nbsp;{{ $page->country->description }}
+                                                    @else
+                                                        SIN PAIS
+                                                    @endif
+                                                </a>
+                                            </li>
+                                        @endforeach
                                     </ul>
                                 </div>
                             </div>
@@ -131,7 +94,12 @@
                                                 </div>
                                                 <div class="gen-movie-meta-holder">
                                                     <p>
-                                                        is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially.
+                                                        is simply dummy text of the printing and typesetting industry. Lorem
+                                                        Ipsum has been the industry's standard dummy text ever since the
+                                                        1500s, when an unknown printer took a galley of type and scrambled
+                                                        it to make a type specimen book. It has survived not only five
+                                                        centuries, but also the leap into electronic typesetting, remaining
+                                                        essentially.
                                                     </p>
                                                 </div>
                                                 <div class="gen-movie-action">
@@ -166,7 +134,12 @@
                                                 </div>
                                                 <div class="gen-movie-meta-holder">
                                                     <p>
-                                                        is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially.
+                                                        is simply dummy text of the printing and typesetting industry. Lorem
+                                                        Ipsum has been the industry's standard dummy text ever since the
+                                                        1500s, when an unknown printer took a galley of type and scrambled
+                                                        it to make a type specimen book. It has survived not only five
+                                                        centuries, but also the leap into electronic typesetting, remaining
+                                                        essentially.
                                                     </p>
                                                 </div>
                                                 <div class="gen-movie-action">
@@ -201,7 +174,12 @@
                                                 </div>
                                                 <div class="gen-movie-meta-holder">
                                                     <p>
-                                                        is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially.
+                                                        is simply dummy text of the printing and typesetting industry. Lorem
+                                                        Ipsum has been the industry's standard dummy text ever since the
+                                                        1500s, when an unknown printer took a galley of type and scrambled
+                                                        it to make a type specimen book. It has survived not only five
+                                                        centuries, but also the leap into electronic typesetting, remaining
+                                                        essentially.
                                                     </p>
                                                 </div>
                                                 <div class="gen-movie-action">
@@ -236,7 +214,12 @@
                                                 </div>
                                                 <div class="gen-movie-meta-holder">
                                                     <p>
-                                                        is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially.
+                                                        is simply dummy text of the printing and typesetting industry. Lorem
+                                                        Ipsum has been the industry's standard dummy text ever since the
+                                                        1500s, when an unknown printer took a galley of type and scrambled
+                                                        it to make a type specimen book. It has survived not only five
+                                                        centuries, but also the leap into electronic typesetting, remaining
+                                                        essentially.
                                                     </p>
                                                 </div>
                                                 <div class="gen-movie-action">
@@ -271,7 +254,12 @@
                                                 </div>
                                                 <div class="gen-movie-meta-holder">
                                                     <p>
-                                                        is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially.
+                                                        is simply dummy text of the printing and typesetting industry. Lorem
+                                                        Ipsum has been the industry's standard dummy text ever since the
+                                                        1500s, when an unknown printer took a galley of type and scrambled
+                                                        it to make a type specimen book. It has survived not only five
+                                                        centuries, but also the leap into electronic typesetting, remaining
+                                                        essentially.
                                                     </p>
                                                 </div>
                                                 <div class="gen-movie-action">
@@ -302,198 +290,198 @@
     </section>
     <!-- owl-carousel Banner End -->
 
-    <!-- owl-carousel Videos Section-1 Start 
-    <section class="gen-section-padding-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-6">
-                    <h4 class="gen-heading-title">Most Popular</h4>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 d-none d-md-inline-block">
-                    <div class="gen-movie-action">
-                        <div class="gen-btn-container text-right">
-                            <a href="tv-shows-pagination.html" class="gen-button gen-button-flat">
-                                <span class="text">More Videos</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="item">
-                        <div
-                            class="movie type-movie status-publish has-post-thumbnail hentry movie_genre-action movie_genre-adventure movie_genre-drama">
-                            <div class="gen-carousel-movies-style-3 movie-grid style-3">
-                                <div class="gen-movie-contain">
-                                    <div class="gen-movie-img">
-                                        <img src="{{ asset('themes/zoelife/global/images/background/asset-53.jpg') }}"
-                                            alt="owl-carousel-video-image">
-                                        <div class="gen-movie-add">
-                                            <div class="wpulike wpulike-heart">
-                                                <div class="wp_ulike_general_class wp_ulike_is_not_liked">
-                                                    <button type="button"
-                                                        class="wp_ulike_btn wp_ulike_put_image"></button>
-                                                </div>
-                                            </div>
-                                            <ul class="menu bottomRight">
-                                                <li class="share top">
-                                                    <i class="fa fa-share-alt"></i>
-                                                    <ul class="submenu">
-                                                        <li><a href="#" class="facebook"><i
-                                                                    class="fab fa-facebook-f"></i></a>
-                                                        </li>
-                                                        <li><a href="#" class="facebook"><i
-                                                                    class="fab fa-instagram"></i></a>
-                                                        </li>
-                                                        <li><a href="#" class="facebook"><i
-                                                                    class="fab fa-twitter"></i></a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                            <div class="movie-actions--link_add-to-playlist dropdown">
-                                                <a class="dropdown-toggle" href="#"
-                                                    data-toggle="dropdown"><i class="fa fa-plus"></i></a>
-                                                <div class="dropdown-menu mCustomScrollbar">
-                                                    <div class="mCustomScrollBox">
-                                                        <div class="mCSB_container">
-                                                            <a class="login-link" href="register.html">Sign in
-                                                                to add this
-                                                                movie to a
-                                                                playlist.</a>
+    <!-- owl-carousel Videos Section-1 Start
+                                            <section class="gen-section-padding-2">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-xl-6 col-lg-6 col-md-6">
+                                                            <h4 class="gen-heading-title">Most Popular</h4>
+                                                        </div>
+                                                        <div class="col-xl-6 col-lg-6 col-md-6 d-none d-md-inline-block">
+                                                            <div class="gen-movie-action">
+                                                                <div class="gen-btn-container text-right">
+                                                                    <a href="tv-shows-pagination.html" class="gen-button gen-button-flat">
+                                                                        <span class="text">More Videos</span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <br>
+                                                    <div class="row">
+                                                        <div class="col-md-3">
+                                                            <div class="item">
+                                                                <div
+                                                                    class="movie type-movie status-publish has-post-thumbnail hentry movie_genre-action movie_genre-adventure movie_genre-drama">
+                                                                    <div class="gen-carousel-movies-style-3 movie-grid style-3">
+                                                                        <div class="gen-movie-contain">
+                                                                            <div class="gen-movie-img">
+                                                                                <img src="{{ asset('themes/zoelife/global/images/background/asset-53.jpg') }}"
+                                                                                    alt="owl-carousel-video-image">
+                                                                                <div class="gen-movie-add">
+                                                                                    <div class="wpulike wpulike-heart">
+                                                                                        <div class="wp_ulike_general_class wp_ulike_is_not_liked">
+                                                                                            <button type="button"
+                                                                                                class="wp_ulike_btn wp_ulike_put_image"></button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <ul class="menu bottomRight">
+                                                                                        <li class="share top">
+                                                                                            <i class="fa fa-share-alt"></i>
+                                                                                            <ul class="submenu">
+                                                                                                <li><a href="#" class="facebook"><i
+                                                                                                            class="fab fa-facebook-f"></i></a>
+                                                                                                </li>
+                                                                                                <li><a href="#" class="facebook"><i
+                                                                                                            class="fab fa-instagram"></i></a>
+                                                                                                </li>
+                                                                                                <li><a href="#" class="facebook"><i
+                                                                                                            class="fab fa-twitter"></i></a></li>
+                                                                                            </ul>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                    <div class="movie-actions--link_add-to-playlist dropdown">
+                                                                                        <a class="dropdown-toggle" href="#"
+                                                                                            data-toggle="dropdown"><i class="fa fa-plus"></i></a>
+                                                                                        <div class="dropdown-menu mCustomScrollbar">
+                                                                                            <div class="mCustomScrollBox">
+                                                                                                <div class="mCSB_container">
+                                                                                                    <a class="login-link" href="register.html">Sign in
+                                                                                                        to add this
+                                                                                                        movie to a
+                                                                                                        playlist.</a>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="gen-movie-action">
+                                                                                    <a href="single-movie.html" class="gen-button">
+                                                                                        <i class="fa fa-play"></i>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="gen-info-contain">
+                                                                                <div class="gen-movie-info">
+                                                                                    <h3><a href="single-movie.html">My Generation</a>
+                                                                                    </h3>
+                                                                                </div>
+                                                                                <div class="gen-movie-meta-holder">
+                                                                                    <ul>
+                                                                                        <li>1hr 24 mins</li>
+                                                                                        <li>
+                                                                                            <a href="action.html"><span>Action</span></a>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="gen-movie-action">
-                                            <a href="single-movie.html" class="gen-button">
-                                                <i class="fa fa-play"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="gen-info-contain">
-                                        <div class="gen-movie-info">
-                                            <h3><a href="single-movie.html">My Generation</a>
-                                            </h3>
-                                        </div>
-                                        <div class="gen-movie-meta-holder">
-                                            <ul>
-                                                <li>1hr 24 mins</li>
-                                                <li>
-                                                    <a href="action.html"><span>Action</span></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>-->
+                                            </section>-->
     <!-- owl-carousel Videos Section-1 End -->
 
     <!-- footer start -->
     <footer id="gen-footer">
         <div class="gen-footer-style-1">
             <!--
-            <div class="gen-footer-top">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-3 col-md-6">
-                            <div class="widget">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <img src="{{ asset('themes/zoelife/global/images/logo-1.png') }}"
-                                            class="gen-footer-logo" alt="gen-footer-logo">
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                        </p>
-                                        <ul class="social-link">
-                                            <li><a href="#" class="facebook"><i
-                                                        class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#" class="facebook"><i
-                                                        class="fab fa-instagram"></i></a></li>
-                                            <li><a href="#" class="facebook"><i class="fab fa-skype"></i></a>
-                                            </li>
-                                            <li><a href="#" class="facebook"><i class="fab fa-twitter"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6">
-                            <div class="widget">
-                                <h4 class="footer-title">Explore</h4>
-                                <div class="menu-explore-container">
-                                    <ul class="menu">
-                                        <li class="menu-item">
-                                            <a href="index.html" aria-current="page">Home</a>
-                                        </li>
-                                        <li class="menu-item"><a href="movies-pagination.html">Movies</a></li>
-                                        <li class="menu-item"><a href="tv-shows-pagination.html">Tv Shows</a></li>
-                                        <li class="menu-item"><a href="video-pagination.html">Videos</a></li>
-                                        <li class="menu-item"><a href="#">Actors</a></li>
-                                        <li class="menu-item"><a href="#">Basketball</a></li>
-                                        <li class="menu-item"><a href="#">Celebrity</a></li>
-                                        <li class="menu-item"><a href="#">Cross</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6">
-                            <div class="widget">
-                                <h4 class="footer-title">Company</h4>
-                                <div class="menu-about-container">
-                                    <ul class="menu">
-                                        <li class="menu-item"><a href="contact-us.html">Company</a>
-                                        </li>
-                                        <li class="menu-item"><a href="contact-us.html">Privacy
-                                                Policy</a></li>
-                                        <li class="menu-item"><a href="contact-us.html">Terms Of
-                                                Use</a></li>
-                                        <li class="menu-item"><a href="contact-us.html">Help
-                                                Center</a></li>
-                                        <li class="menu-item"><a href="contact-us.html">contact us</a></li>
-                                        <li class="menu-item"><a href="pricing-style-1.html">Subscribe</a></li>
-                                        <li class="menu-item"><a href="#">Our Team</a></li>
-                                        <li class="menu-item"><a href="contact-us.html">Faq</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3  col-md-6">
-                            <div class="widget">
-                                <h4 class="footer-title">Downlaod App</h4>
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                        </p>
-                                        <a href="#">
-                                            <img src="{{ asset('themes/zoelife/global/images/asset-2.png') }}"
-                                                class="gen-playstore-logo" alt="playstore">
-                                        </a>
-                                        <a href="#">
-                                            <img src="{{ asset('themes/zoelife/global/images/asset-2.png') }}"
-                                                class="gen-appstore-logo" alt="appstore">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>-->
+                                                    <div class="gen-footer-top">
+                                                        <div class="container">
+                                                            <div class="row">
+                                                                <div class="col-xl-3 col-md-6">
+                                                                    <div class="widget">
+                                                                        <div class="row">
+                                                                            <div class="col-sm-12">
+                                                                                <img src="{{ asset('themes/zoelife/global/images/logo-1.png') }}"
+                                                                                    class="gen-footer-logo" alt="gen-footer-logo">
+                                                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                                                                </p>
+                                                                                <ul class="social-link">
+                                                                                    <li><a href="#" class="facebook"><i
+                                                                                                class="fab fa-facebook-f"></i></a></li>
+                                                                                    <li><a href="#" class="facebook"><i
+                                                                                                class="fab fa-instagram"></i></a></li>
+                                                                                    <li><a href="#" class="facebook"><i class="fab fa-skype"></i></a>
+                                                                                    </li>
+                                                                                    <li><a href="#" class="facebook"><i class="fab fa-twitter"></i></a>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xl-3 col-md-6">
+                                                                    <div class="widget">
+                                                                        <h4 class="footer-title">Explore</h4>
+                                                                        <div class="menu-explore-container">
+                                                                            <ul class="menu">
+                                                                                <li class="menu-item">
+                                                                                    <a href="index.html" aria-current="page">Home</a>
+                                                                                </li>
+                                                                                <li class="menu-item"><a href="movies-pagination.html">Movies</a></li>
+                                                                                <li class="menu-item"><a href="tv-shows-pagination.html">Tv Shows</a></li>
+                                                                                <li class="menu-item"><a href="video-pagination.html">Videos</a></li>
+                                                                                <li class="menu-item"><a href="#">Actors</a></li>
+                                                                                <li class="menu-item"><a href="#">Basketball</a></li>
+                                                                                <li class="menu-item"><a href="#">Celebrity</a></li>
+                                                                                <li class="menu-item"><a href="#">Cross</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xl-3 col-md-6">
+                                                                    <div class="widget">
+                                                                        <h4 class="footer-title">Company</h4>
+                                                                        <div class="menu-about-container">
+                                                                            <ul class="menu">
+                                                                                <li class="menu-item"><a href="contact-us.html">Company</a>
+                                                                                </li>
+                                                                                <li class="menu-item"><a href="contact-us.html">Privacy
+                                                                                        Policy</a></li>
+                                                                                <li class="menu-item"><a href="contact-us.html">Terms Of
+                                                                                        Use</a></li>
+                                                                                <li class="menu-item"><a href="contact-us.html">Help
+                                                                                        Center</a></li>
+                                                                                <li class="menu-item"><a href="contact-us.html">contact us</a></li>
+                                                                                <li class="menu-item"><a href="pricing-style-1.html">Subscribe</a></li>
+                                                                                <li class="menu-item"><a href="#">Our Team</a></li>
+                                                                                <li class="menu-item"><a href="contact-us.html">Faq</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xl-3  col-md-6">
+                                                                    <div class="widget">
+                                                                        <h4 class="footer-title">Downlaod App</h4>
+                                                                        <div class="row">
+                                                                            <div class="col-sm-12">
+                                                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                                                                </p>
+                                                                                <a href="#">
+                                                                                    <img src="{{ asset('themes/zoelife/global/images/asset-2.png') }}"
+                                                                                        class="gen-playstore-logo" alt="playstore">
+                                                                                </a>
+                                                                                <a href="#">
+                                                                                    <img src="{{ asset('themes/zoelife/global/images/asset-2.png') }}"
+                                                                                        class="gen-appstore-logo" alt="appstore">
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>-->
             <div class="gen-copyright-footer" style="background-color: #026410;">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 align-self-center">
                             <span class="gen-copyright"> Copyright 2023 Zoelife International
-                                | Desarrollado por <a target="_blank" href="#"> Aracode  </a></span>
+                                | Desarrollado por <a target="_blank" href="#"> Aracode </a></span>
                         </div>
                     </div>
                 </div>

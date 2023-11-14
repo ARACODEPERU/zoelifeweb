@@ -22,9 +22,7 @@ class HeaderArea extends Component
      */
     public function render(): View|Closure|string
     {
-        $countries = Country::where('status', true)->get();
-        return view('components.peru.header-area', [
-            'countries' => $countries
-        ]);
+
+        return view('components.peru.header-area');
     }
 }

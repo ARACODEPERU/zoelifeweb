@@ -3,17 +3,26 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Modules\CMS\Entities\CmsPage;
 
 class WebController extends Controller
 {
     public function index()
     {
+        $pages = CmsPage::with('country')
+            ->where('status', true)
+            ->where('main', true)
+            ->whereNotNull('country_id')
+            ->get();
 
-        return view('zoelife/index');
+        return view('zoelife/index', [
+            'pages' => $pages
+        ]);
     }
 
     public function peruinicio()
     {
+
         return view('zoelife/peru.index');
     }
 
