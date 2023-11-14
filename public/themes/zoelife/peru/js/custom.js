@@ -9,7 +9,7 @@ var CargoZone = function(){
 	
 	var homeSearch = function() {
 		'use strict';
-		/* top search in header on click function */
+		/* top search in header on click function 
 		var quikSearch = jQuery("#quik-search-btn");
 		var quikSearchRemove = jQuery("#quik-search-remove");
 		
@@ -21,7 +21,7 @@ var CargoZone = function(){
 		quikSearchRemove.on('click',function() {
 			jQuery('.dez-quik-search').animate({'width': '0%' ,  'right': '0'  });
 			jQuery('.dez-quik-search').css({'left': 'auto'  });
-		});	
+		});	*/
 		/* top search in header on click function End*/
 	}
 	
@@ -76,6 +76,7 @@ var CargoZone = function(){
 		var headerHeight = $('.header').height();
 		$('.header').css('height', headerHeight);
 	}
+	
 	
 	/* Load File ============ */
 	var dzTheme = function(){
@@ -349,10 +350,10 @@ var CargoZone = function(){
 			{
 				if ($(window).scrollTop() > menu.offset().top) {
 					menu.addClass('is-fixed');
-					//$('.header-style-5 .container > .logo-header .logo').attr('src','images/logo.png');
+					$('.header-style-5 .container > .logo-header .logo').attr('src','images/logo.png');
 				} else {
 					menu.removeClass('is-fixed');
-					//$('.header-style-5 .container > .logo-header .logo').attr('src','images/logo-white.png')
+					$('.header-style-5 .container > .logo-header .logo').attr('src','images/logo-white.png')
 				}
 			}
 		});
@@ -521,7 +522,7 @@ var CargoZone = function(){
 		}	
 	}
 	
-	/* Left Menu ============ */
+	/* Left Menu ============
 	var handleSideBarMenu = function(){
 		$('.openbtn').on('click',function(e){
 			e.preventDefault();
@@ -551,9 +552,9 @@ var CargoZone = function(){
 				document.getElementById("mySidenav1").style.left = "-820px";
 			}
 		})
-	}	
-	
-	/* Left Menu ============ */
+	}	 */
+
+	/* Left Menu ============ 
 	var handleMenuPosition = function(){
 		$(".header-nav li").unbind().each(function (e) {
 			if ($('ul', this).length) {
@@ -573,7 +574,7 @@ var CargoZone = function(){
 				}
 			}
 		});
-	}	
+	}	*/
 	
 	/* Range ============ */
 	var priceslider = function(){
@@ -621,17 +622,18 @@ var CargoZone = function(){
 			
 		})
 	}
-	
+	/*
 	var reposition = function (){
 		'use strict';
 		var modal = jQuery(this),
 		dialog = modal.find('.modal-dialog');
 		modal.css('display', 'block');
-		
+		*/
 		/* Dividing by two centers the modal exactly, but dividing by three 
 		 or four works better for larger screens.  */
+		 /*
 		dialog.css("margin-top", Math.max(0, (jQuery(window).height() - dialog.height()) / 2));
-	}
+	}*/
 	
 	var handelResize = function (){
 		
@@ -644,7 +646,7 @@ var CargoZone = function(){
 			footerAlign();
 		});
 	}
-	
+
 	var handleSupport = function(){
 		var support = '<a href="https://1.envato.market/ZEKLg" target="_blank" class="bt-buy-now theme-btn"><i class="ti-shopping-cart"></i><span>Buy Now</span></a><a href="https://support.w3itexperts.com" target="_blank" class="bt-support-now theme-btn"><i class="ti-headphone-alt"></i><span>Support</span></a><!-- Go to www.addthis.com/dashboard to customize your tools --><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b221c5e31b4e54b"></script>';
 		jQuery('body').append(support);
@@ -752,6 +754,7 @@ jQuery(window).on("load", function (e) {
 	}, 300);
 });
 /*  Window Load END */
+
 /* Window Resize START */
 jQuery(window).on('resize',function () {
 	'use strict'; 

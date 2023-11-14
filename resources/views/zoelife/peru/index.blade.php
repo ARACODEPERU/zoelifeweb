@@ -37,7 +37,7 @@
 									data-paddingright="[0,0,0,0]"
 									data-paddingbottom="[0,0,0,0]"
 									data-paddingleft="[0,0,0,0]"
-									style="z-index: 2;background-color:rgba(0, 0, 0, 0.30);border-color:rgba(0, 0, 0, 0);border-width:0px;"> </div>
+									style="z-index: 2;background-color:rgba(0, 0, 0, 0.05);border-color:rgba(0, 0, 0, 0);border-width:0px;"> </div>
                                     
                                 </li>
                                 <!-- SLIDE  -->
@@ -62,7 +62,7 @@
 									data-paddingright="[0,0,0,0]"
 									data-paddingbottom="[0,0,0,0]"
 									data-paddingleft="[0,0,0,0]"
-									style="z-index: 2;background-color:rgba(0, 0, 0, 0.3);border-color:rgba(0, 0, 0, 0);border-width:0px;"> </div>
+									style="z-index: 2;background-color:rgba(0, 0, 0, 0.05);border-color:rgba(0, 0, 0, 0);border-width:0px;"> </div>
                                     
                                 </li>
                                 <!-- SLIDE  -->

@@ -2525,7 +2525,7 @@ blockquote:before {
 .main-bar {
     background: #FFFFFF;
     width: 100%;
-    position: relative;
+    position: fixed;
 }
 .main-bar .container {} .header-curve .logo-header:before,
 .header-curve .logo-header:after {
@@ -2595,13 +2595,13 @@ blockquote:before {
 .header-nav .nav > li {
     margin: 0px;
     font-weight: 400;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     position: relative;
 }
 .header-nav .nav > li > a {
     border-radius: 0px;
     color: #505050;
-    font-size: 14px;
+    font-size: 16px;
     padding: 25px 12px;
     cursor: pointer;
     display: block;

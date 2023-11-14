@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Streamlab - Video Streaming HTML5 Template" />
-    <meta name="description" content="Streamlab - Video Streaming HTML5 Template" />
-    <meta name="author" content="StreamLab" />
+    <meta name="keywords" content="ZoeLife Perú" />
+    <meta name="description" content="ZoeLife Perú" />
+    <meta name="author" content="Aracode Smart Solution" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>ZoeLife International</title>
     <!-- Favicon -->

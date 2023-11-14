@@ -12,7 +12,7 @@
     <header class="site-header header-style-1 mo-left dark dark-style-2">
         <!-- Top bar -->
         <div class="top-bar">
-            <div class="container">
+            <div class="" style="width: 100%; padding: 0px 40px;">
                 <div class="row justify-content-between">
                     <div class="dez-topbar-left">
                         <ul class="social-bx list-inline pull-right">
@@ -35,10 +35,12 @@
         <!-- Main Header -->
         <div class="sticky-header header-curve main-bar-wraper navbar-expand-lg">
             <div class="main-bar clearfix ">
-                <div class="container clearfix">
+                <div class="clearfix" style="width: 100%; padding: 0px 40px;">
                     <!-- Website Logo -->
                     <div class="logo-header logo-dark mostion">
-						<a href=""><img src="themes/zoelife/global/images/logoChico.png" alt="" style="height: 45px;"></a>
+						<a href="">
+                            <img src="themes/zoelife/global/images/logoChico.png" alt="" style="height: 45px;">
+                        </a>
 					</div>
                     <!-- Nav Toggle Button -->
 					<button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,7 +61,16 @@
                     <div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
                         <ul class="nav navbar-nav">
                             <li class="active"> <a href="{{ route('web_peru_inicio') }}">Home</a> </li>
+                            <li> <a href="{{ route('web_peru_productos') }}">Productos</a> 
+                                <ul class="sub-menu">
+                                    <li><a href="{{ route('web_peru_coffee_3_en_1') }}">Coffee 3 en 1</a></li>
+                                    <li><a href="{{ route('web_peru_harina_de_moringa') }}">Harina de Moringa</a></li>
+                                    <li><a href="{{ route('web_peru_power') }}">Power</a></li>
+                                </ul>
+                            </li>
+                            <li> <a href="{{ route('web_peru_testimonios') }}">Testimonios</a> </li>
                             <li> <a href="{{ route('web_peru_centros') }}">Centros de Distribución</a> </li>
+                            <li> <a href="{{ route('web_peru_eventos') }}">Eventos</a> </li>
                             <li> <a href="{{ route('web_peru_alcanzando_las_estrellas') }}">Alcanzando las Estrellas</a> </li>
                             <li> <a href="{{ route('web_peru_contacto') }}">Contacto</a> </li>
                         </ul>
