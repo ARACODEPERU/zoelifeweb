@@ -2,6 +2,7 @@
 
 namespace App\View\Components\Peru;
 
+use App\Models\Country;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
@@ -21,6 +22,9 @@ class HeaderArea extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.peru.header-area');
+        $countries = Country::where('status', true)->get();
+        return view('components.peru.header-area', [
+            'countries' => $countries
+        ]);
     }
 }

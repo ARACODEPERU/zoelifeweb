@@ -8,6 +8,7 @@ class WebController extends Controller
 {
     public function index()
     {
+
         return view('zoelife/index');
     }
 
@@ -37,7 +38,7 @@ class WebController extends Controller
     {
         return view('zoelife/peru.power');
     }
-    
+
     /*------------ PRODUCTOS - END ------------*/
 
     public function perutestimonios()
