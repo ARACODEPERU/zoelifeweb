@@ -31,6 +31,17 @@
         </div>
         <!-- Breadcrumb row END -->
 
+        
+        <div class="content-area">
+            <div class="container">
+
+
+
+
+            </div>
+        </div>
+
+
     </div>
     <!-- Content END-->
 

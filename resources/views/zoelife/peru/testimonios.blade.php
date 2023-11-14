@@ -35,6 +35,20 @@
         
         <div class="content-area">
             <div class="container">
+
+				
+                <!-- Dividers with icon -->
+                <div class="p-a20 bg-white m-b20">
+                    <div class="section-content" style="text-align: center;">
+                        <div class="m-b10">
+                            <h5 class="text-uppercase">Dividers circle center red</h5>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a Gallery of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic</p>
+                            <div class="dez-divider divider-2px bg-primary icon-center"><i class="fa fa-truck bg-primary text-white"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dividers with icon END -->
+
 				<!-- blog grid -->
 				<div id="masonry" class="dez-blog-grid-3 row">
 
@@ -142,6 +156,7 @@
 
 				</div>
 				<!-- blog grid END -->
+
 				<!-- Pagination -->
 				<div class="pagination-bx">
 					<ul class="pagination">
@@ -153,6 +168,7 @@
 					</ul>
 				</div>
 				<!-- Pagination END -->
+
             </div>
         </div>
 

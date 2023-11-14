@@ -3908,7 +3908,7 @@ blockquote:before {
     background-size: auto;
 }
 .provider-banner-off.overlay-black-middle::after {
-    opacity: 0.1;
+    opacity: 0.05;
 }
 /*---------------------------------------------------------------
 20. SLIDER

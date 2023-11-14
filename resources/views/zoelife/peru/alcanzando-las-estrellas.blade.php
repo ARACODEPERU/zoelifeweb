@@ -37,6 +37,7 @@
         <div class="content-area">
             <!-- Left & right section start -->
             <div class="container">
+
                 <!-- Gallery -->
                 <div class="site-filters clearfix center m-b40">
                     <ul class="filters" data-toggle="buttons">
