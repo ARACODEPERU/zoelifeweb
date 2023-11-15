@@ -73,7 +73,7 @@
             </div>
         </div>
         <!-- Slider END -->
-        <!-- About Company 
+        <!-- About Company -->
         <div class="section-full bg-white p-t70 p-b40">
             <div class="container">
                 <div class="section-head  text-center ">
@@ -138,7 +138,7 @@
                     </div>
                 </div>
             </div>
-        </div>-->
+        </div>
         <!-- About Company END -->
 
         <!-- Our Projects 
