@@ -19,6 +19,7 @@ Route::get('/', [WebController::class, 'index'])->name('cms_principal');
 
 
 Route::get('/peru', [WebController::class, 'peruinicio'])->name('web_peru_inicio');
+Route::get('/peru.nosotros', [WebController::class, 'perunosotros'])->name('web_peru_nosotros');
 Route::get('/peru.productos', [WebController::class, 'peruproductos'])->name('web_peru_productos');
 Route::get('/peru.coffee-3-en-1', [WebController::class, 'perucoffee3en1'])->name('web_peru_coffee_3_en_1');
 Route::get('/peru.harina-de-moringa', [WebController::class, 'peruharinademoringa'])->name('web_peru_harina_de_moringa');

@@ -26,6 +26,10 @@ class WebController extends Controller
         return view('zoelife/peru.index');
     }
 
+    public function perunosotros()
+    {
+        return view('zoelife/peru.nosotros');
+    }
     /*------------ PRODUCTOS - STAR ------------*/
 
     public function peruproductos()

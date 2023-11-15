@@ -43,21 +43,33 @@
                     <!-- Dividers with icon -->
                     <div class="p-a30 bg-white m-b30">
                         <div class="section-content">
-                            <h2 class="text-uppercase">COFFEE 3 EN 1</h2>
+                            <h2 class="text-uppercase">HARINA DE MORINGA ZOE LIFE</h2>
                             <div class="dez-divider divider-2px bg-primary icon-left"><i class="fa fa-thumbs-o-up bg-primary text-white"></i></div>
                         
                             <div class="m-b10">
                                 <h5 class="text-uppercase">
-                                    Disfrute la saludable combinación de sabor, suavidad y aroma, 
-                                    exquisito para el paladar, 100% natural.
+                                    PROPIEDADES:
                                 </h5>
-                                <p>Zoe Life Moringa COFFEE 3 EN 1, es una bebida diseñada para brindar una mejor 
-                                    calidad de vida, esto gracias a la Moringa Oleifera la cual ofrece múltiples 
-                                    nutrientes para la salud y tiene principios activos como la Zeatina, fitohormona 
-                                    para el rejuvenecimiento.
+                                <p>
+                                    Posee más de 90 nutrientes y 46 antioxidantes, es rica en Vitamina C, vitamina A, quercetina y mucho más.
                                 </p>
                                 <p>
-                                    Coffee 3 en 1 es la perfecta formulación de ciencia y Gourmet que garantizan la exelencia exclusiva de este producto.
+                                    La Vitamina A en forma de betacaroteno, potente antioxidante que protege especialmente la piel, las mucosas y órganos como la vejiga.
+                                </p>
+                                <p>
+                                    Posee Vitaminas del grupo B (B1, B2, B3, B5, B6) y vitamina K.
+                                </p>
+                                <p>
+                                    Contiene Vitamina E, gran antioxidante es importante para proteger las membranas celulares.
+                                </p>
+                                <p>
+                                    Aporta minerales como el potasio, hierro, calcio, fósforo, selenio, magnesio, triptófano y zinc.
+                                </p>
+                                <p>
+                                    Por su riqueza en este mineral (hierro) está indicada en casos de anemia.
+                                </p>
+                                <p>
+                                    Por poseer aminoácidos esenciales, es una excelente fuente de proteínas para los vegetarianos y veganos.
                                 </p>
                             </div>
                             <div class="m-b10">
@@ -65,13 +77,19 @@
                                     <span class="text-primary">BENEFICIOS</span>
                                 </h5>
                                 <div class="row">
-                                    <div class="col-md-6"><i class="fa fa-check"></i> Aporta energía.</div>
-                                    <div class="col-md-6"><i class="fa fa-check"></i> Regenera las células.</div>
-                                    <div class="col-md-6"><i class="fa fa-check"></i> Eleva el sistema inmunológico.</div>
-                                    <div class="col-md-6"><i class="fa fa-check"></i> Mejora el sistema circulatorio.</div>
-                                    <div class="col-md-6"><i class="fa fa-check"></i> Ayuda a regular el peso.</div>
-                                    <div class="col-md-6"><i class="fa fa-check"></i> Regenera el sistema óseo.</div>
-                                    <div class="col-md-6"><i class="fa fa-check"></i> Previene el daño celular del cerebro para evitar males como Alzheimer, Parkinson, etc, etc.</div>
+                                    <div class="col-md-6"><i class="fa fa-check"></i> Mejora el sistema respiratorio.</div>
+                                    <div class="col-md-6"><i class="fa fa-check"></i> Previene la diabetes.</div>
+                                    <div class="col-md-6"><i class="fa fa-check"></i> Proteger el corazón.</div>
+                                    <div class="col-md-6"><i class="fa fa-check"></i> Regular la presión arterial.</div>
+                                    <div class="col-md-6"><i class="fa fa-check"></i> Regula el peso de forma nartural.</div>
+                                    <div class="col-md-6"><i class="fa fa-check"></i> Prevenir y combatir la anemia.</div>
+                                    <div class="col-md-6"><i class="fa fa-check"></i> Aumenta las defensas del organismo.</div>
+                                    <div class="col-md-6"><i class="fa fa-check"></i> Efecto antiinflamatorio y analgésico.</div>
+                                    <div class="col-md-6"><i class="fa fa-check"></i> Protege e hidratar la piel.</div>
+                                    <div class="col-md-6"><i class="fa fa-check"></i> Mejorar la salud del sistema digestivo.</div>
+                                    <div class="col-md-6"><i class="fa fa-check"></i> Previene el cáncer.</div>
+                                    <div class="col-md-6"><i class="fa fa-check"></i> Mejora la salud visual.</div>
+                                    <div class="col-md-6"><i class="fa fa-check"></i> Disminuye los efectos de la menopausia.</div>
                                 </div>
                             </div>
                         </div>
@@ -86,15 +104,15 @@
         <div class="section-full text-white bg-img-fix p-t70 p-b40 overlay-black-dark choose-us" style="background-image:url(themes/zoelife/peru/images/background/garden/bg2.jpg);">
             <div class="container">
                 <div class="section-head  text-center text-white">
-                    <h2 class="h2">Recomendaciones <span class="text-primary"> de  Preparación</span></h2>
+                    <h2 class="h2">Recomendaciones <span class="text-primary"> de Uso Sugerido</span></h2>
                     <div class="dez-separator text-primary style-icon border-white"><img alt="" src="themes/zoelife/peru/images/leaf-green.png"/></div>
                 </div>
                 <div class="row">
                     <div class="col-md-6">
                         <ul>
-                            <li> Vierta el contenido de un sobre en una taza .</li>
-                            <li>Agregue agua caliente o fria y mezcle.</li>
-                            <li>Deleite su paladar.</li>
+                            <li> Agregar ½ cucharadita en cada comida.</li>
+                            <li> Preparaciones cerudas: zumos, batidos, esparciéndola sobre ensaladas, en aderezosa de verduras, etc.</li>
+                            <li> Deleite su paladar.</li>
                         </ul>
                         <h3><span class="text-primary">Descargo De Responsabilidad:</span></h3>
                         <p>
@@ -120,7 +138,7 @@
                 <div class="p-a20 bg-white m-b20">
                     <div class="section-content" style="text-align: center;">
                         <div class="m-b10">
-                            <h5 class="text-uppercase">Testimonios del Coffee 3 en 1</h5>
+                            <h5 class="text-uppercase">Testimonios de la Harina de Moringa</h5>
                             <p>Lorem Ipsum is simply dummy text of the een the industry's standard dummy text ever since the 1500s, when an unknown printer took a Gallery of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic</p>
                             <div class="dez-divider divider-2px bg-primary icon-center"><i class="fa fa-truck bg-primary text-white"></i></div>
                         </div>

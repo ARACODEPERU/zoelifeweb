@@ -61,6 +61,7 @@
                     <div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
                         <ul class="nav navbar-nav">
                             <li class="active"> <a href="{{ route('web_peru_inicio') }}">Home</a> </li>
+                            <li> <a href="{{ route('web_peru_nosotros') }}">Nosotros</a> </li>
                             <li> <a href="{{ route('web_peru_productos') }}">Productos</a> 
                                 <ul class="sub-menu">
                                     <li><a href="{{ route('web_peru_coffee_3_en_1') }}">Coffee 3 en 1</a></li>
