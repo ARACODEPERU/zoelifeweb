@@ -109,19 +109,39 @@
                         </div>
                         <div class="row">
                             <div class="col-md-3" style="padding: 20px; text-align:center;">
-                                <img style="width: 70px;" src="themes/zoelife/global/images/flags/peru.png" alt="">
+                                <a href="">
+                                    <img style="width: 70px;" src="themes/zoelife/global/images/flags/peru.png" alt="">
+                                </a>
+                                <br>
+                                <span><b>Perú</b></span>
                             </div>
                             <div class="col-md-3" style="padding: 20px; text-align:center;">
-                                <img style="width: 70px;" src="themes/zoelife/global/images/flags/bolivia.png" alt="">
+                                <a href="">
+                                    <img style="width: 70px;" src="themes/zoelife/global/images/flags/bolivia.png" alt="">
+                                </a>
+                                <br>
+                                <span><b>Bolivia</b></span>
                             </div>
                             <div class="col-md-3" style="padding: 20px; text-align:center;">
-                                <img style="width: 70px;" src="themes/zoelife/global/images/flags/colombia.png" alt="">
+                                <a href="">
+                                    <img style="width: 70px;" src="themes/zoelife/global/images/flags/colombia.png" alt="">
+                                </a>
+                                <br>
+                                <span><b>Colombia</b></span>
                             </div>
                             <div class="col-md-3" style="padding: 20px; text-align:center;">
-                                <img style="width: 70px;" src="themes/zoelife/global/images/flags/ecuador.png" alt="">
+                                <a href="">
+                                    <img style="width: 70px;" src="themes/zoelife/global/images/flags/ecuador.png" alt="">
+                                </a>
+                                <br>
+                                <span><b>Ecuador</b></span>
                             </div>
                             <div class="col-md-3" style="padding: 20px; text-align:center;">
-                                <img style="width: 70px;" src="themes/zoelife/global/images/flags/mexico.png" alt="">
+                                <a href="">
+                                    <img style="width: 70px;" src="themes/zoelife/global/images/flags/mexico.png" alt="">
+                                </a>
+                                <br>
+                                <span><b>Mexico</b></span>
                             </div>
                         </div>
                     </div>

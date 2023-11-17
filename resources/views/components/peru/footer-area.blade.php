@@ -17,53 +17,16 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="widget recent-posts-entry">
-                            <h4 class="m-b10 text-uppercase">Post Recientes</h4>
+                        <div class="widget widget_services">
+                            <h4 class="m-b10 text-uppercase">Testimonios</h4>
                             <div class="dez-separator bg-primary"></div>
-                            <div class="widget-post-bx">
-                                <div class="widget-post clearfix">
-                                    <div class="dez-post-media"> <img src="themes/zoelife/peru/images/blog/recent-blog/pic1.jpg" alt="" width="200" height="143"> </div>
-                                    <div class="dez-post-info">
-                                        <div class="dez-post-header">
-                                            <h6 class="post-title"><a href="blog-single.html">Titulo del articulo</a></h6>
-                                        </div>
-                                        <div class="dez-post-meta">
-                                            <ul>
-                                                <li class="post-author">Por <a href="javascript:void(0);">Admin</a></li>
-                                                <li class="post-comment"><i class="fa fa-comments"></i> 28</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="widget-post clearfix">
-                                    <div class="dez-post-media"> <img src="themes/zoelife/peru/images/blog/recent-blog/pic2.jpg" alt="" width="200" height="160"> </div>
-                                    <div class="dez-post-info">
-                                        <div class="dez-post-header">
-                                            <h6 class="post-title"><a href="blog-single.html">Titulo del articulo</a></h6>
-                                        </div>
-                                        <div class="dez-post-meta">
-                                            <ul>
-                                                <li class="post-author">Por <a href="javascript:void(0);">Admin</a></li>
-                                                <li class="post-comment"><i class="fa fa-comments"></i> 28</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="widget-post clearfix">
-                                    <div class="dez-post-media"> <img src="themes/zoelife/peru/images/blog/recent-blog/pic3.jpg" alt="" width="200" height="160"> </div>
-                                    <div class="dez-post-info">
-                                        <div class="dez-post-header">
-                                            <h6 class="post-title"><a href="blog-single.html">Titulo del articulo</a></h6>
-                                        </div>
-                                        <div class="dez-post-meta">
-                                            <ul>
-                                                <li class="post-author">Por <a href="javascript:void(0);">Admin</a></li>
-                                                <li class="post-comment"><i class="fa fa-comments"></i> 28</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <ul>
+                                <li><a href="">Título del testimonio</a></li>
+                                <li><a href="">Título del testimonio</a></li>
+                                <li><a href="">Título del testimonio</a></li>
+                                <li><a href="">Título del testimonio</a></li>
+                                <li><a href="">Título del testimonio</a></li>
+                            </ul>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
