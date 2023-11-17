@@ -73,73 +73,63 @@
             </div>
         </div>
         <!-- Slider END -->
-        <!-- About Company -->
-        <div class="section-full bg-white p-t70 p-b40">
+
+        <!-- Visión - Misión - Valores / STAR -->
+        <x-peru.vision-mision-valores-area></x-peru.vision-mision-valores-area>
+        <!-- Visión - Misión - Valores / END -->
+
+        
+        <!-- Why Choose Us -->
+        <div class="section-full text-white bg-img-fix p-t70 p-b70 overlay-black-dark choose-us" style="background-image:url(themes/zoelife/peru/images/background/garden/bg2.jpg);">
             <div class="container">
-                <div class="section-head  text-center ">
-                    <h2 class="h2">About <span class="text-primary">Company</span></h2>
-                    <div class="dez-separator text-primary style-icon"><img alt="" src="themes/zoelife/paises/images/leaf-green.png"/></div>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's standard dummy text ever since the been when an unknown printer.</p>
+                <div class="section-head  text-center text-white">
+                    <h2 class="h2">Sobre <span class="text-primary"> Zoé Life</span></h2>
+                    <div class="dez-separator text-primary style-icon border-white">
+                        <img alt="" src="themes/zoelife/peru/images/leaf-green.png"/>
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="icon-bx-wraper bx-style-2 m-l40 m-b30 p-a30 left">
-                            <div class="icon-bx-sm radius bg-primary"> <a href="#" class="icon-cell"><i class="fa fa-leaf"></i></a> </div>
-                            <div class="icon-content p-l40">
-                                <h4 class="dez-tilte">Over 30 Years of Expeirence</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing  sed diam nibh euismod.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="icon-bx-wraper bx-style-2 m-l40 m-b30 p-a30 left">
-                            <div class="icon-bx-sm radius bg-primary"> <a href="#" class="icon-cell"><i class="fa fa-certificate"></i></a> </div>
-                            <div class="icon-content p-l40">
-                                <h4 class="dez-tilte ">Licensed, Bonded, Insured</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing  sed diam nibh euismod.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="icon-bx-wraper bx-style-2 m-l40 m-b30 p-a30 left">
-                            <div class="icon-bx-sm radius bg-primary"> <a href="#" class="icon-cell"><i class="fa fa-shield"></i></a> </div>
-                            <div class="icon-content p-l40">
-                                <h4 class="dez-tilte ">Award Wining Company Since 1986</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing  sed diam nibh euismod.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="icon-bx-wraper bx-style-2 m-l40 m-b30 p-a30 left">
-                            <div class="icon-bx-sm radius bg-primary"> <a href="#" class="icon-cell"><i class="fa fa-leaf"></i></a> </div>
-                            <div class="icon-content p-l40">
-                                <h4 class="dez-tilte ">True Aquatic Landspacing Specialists</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing  sed diam nibh euismod.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="icon-bx-wraper bx-style-2 m-l40 m-b30 p-a30 left">
-                            <div class="icon-bx-sm radius bg-primary"> <a href="#" class="icon-cell"><i class="fa fa-pagelines"></i></a> </div>
-                            <div class="icon-content p-l40">
-                                <h4 class="dez-tilte ">Honest and Dependable</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing  sed diam nibh euismod.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="icon-bx-wraper bx-style-2 m-l40 m-b30 p-a30 left">
-                            <div class="icon-bx-sm radius bg-primary"> <a href="#" class="icon-cell"><i class="fa fa-tree"></i></a> </div>
-                            <div class="icon-content p-l40">
-                                <h4 class="dez-tilte">1000+ Sucessful Projects</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing  sed diam nibh euismod.</p>
-                            </div>
-                        </div>
+                    <div class="col-md-12">
+                        <iframe width="1257" height="707" src="https://www.youtube.com/embed/wvYWJ8NlKcU" title="Delicioso COFFEE 3 en 1 ZOE LIFE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- About Company END -->
+        <!-- Why Choose Us End -->
+
+        
+        <div class="container" style="padding: 60px 0px;">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Dividers with icon -->
+                    <div class="p-a30 bg-white m-b30">
+                        <div class="section-content">
+                            <h2 class="text-uppercase">SELECCIONAR PAIS</h2>
+                            <div class="dez-divider divider-2px bg-primary icon-left"><i class="fa fa-thumbs-o-up bg-primary text-white"></i></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3" style="padding: 20px; text-align:center;">
+                                <img style="width: 70px;" src="themes/zoelife/global/images/flags/peru.png" alt="">
+                            </div>
+                            <div class="col-md-3" style="padding: 20px; text-align:center;">
+                                <img style="width: 70px;" src="themes/zoelife/global/images/flags/bolivia.png" alt="">
+                            </div>
+                            <div class="col-md-3" style="padding: 20px; text-align:center;">
+                                <img style="width: 70px;" src="themes/zoelife/global/images/flags/colombia.png" alt="">
+                            </div>
+                            <div class="col-md-3" style="padding: 20px; text-align:center;">
+                                <img style="width: 70px;" src="themes/zoelife/global/images/flags/ecuador.png" alt="">
+                            </div>
+                            <div class="col-md-3" style="padding: 20px; text-align:center;">
+                                <img style="width: 70px;" src="themes/zoelife/global/images/flags/mexico.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Dividers with icon END -->
+                </div>
+            </div>
+        </div>
+
 
         <!-- Our Projects 
         <div class="section-full bg-img-fix p-t70 p-b40 overlay-black-middle our-projects-galery" style="background-image:url(themes/zoelife/peru/images/background/garden/bg3.jpg);">
@@ -466,7 +456,9 @@
             <div class="container">
                 <div class="section-head text-white text-center">
                     <h2 class="h2">What Peolpe <span class="text-primary"> Are Saying</span></h2>
-                    <div class="dez-separator style-icon border-white"><img alt="" src="themes/zoelife/peru/images/leaf-green.png"></div>
+                    <div class="dez-separator style-icon border-white">
+                        <img alt="" src="themes/zoelife/peru/images/leaf-green.png">
+                    </div>
                 </div>
                 <div class="section-content">
                     <div class="testimonial-two owl-theme owl-carousel">

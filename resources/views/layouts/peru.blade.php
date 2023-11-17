@@ -32,6 +32,7 @@
 	<link rel="stylesheet" type="text/css" href="themes/zoelife/peru/css/style.css">
 	<link rel="stylesheet" type="text/css" href="themes/zoelife/peru/css/templete.css">
 	<link rel="stylesheet" type="text/css" class="skin" href="themes/zoelife/peru/css/skin/skin-9.css">
+	<link rel="stylesheet" type="text/css" class="skin" href="themes/zoelife/peru/css/aracode.css">
 	
 	<!-- REVOLUTION SLIDER CSS -->
 	<link rel="stylesheet" type="text/css" href="themes/zoelife/peru/plugins/revolution/revolution/css/settings.css">
