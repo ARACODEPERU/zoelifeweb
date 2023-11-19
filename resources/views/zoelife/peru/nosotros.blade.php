@@ -38,28 +38,15 @@
         
         
         <!-- Why Choose Us -->
-        <div class="section-full text-white bg-img-fix p-t70 p-b40 overlay-black-dark choose-us" style="background-image:url(themes/zoelife/peru/images/background/garden/bg2.jpg);">
+        <div class="section-full text-white bg-img-fix p-t70 p-b40 overlay-black-dark choose-us" style="background-image:url(themes/zoelife/peru/images/background/experiencia/cancun.jpg);">
             <div class="container">
                 <div class="section-head  text-center text-white">
-                    <h2 class="h2">Recomendaciones <span class="text-primary"> de  Preparación</span></h2>
+                    <h2 class="h2">Experiencias <span class="text-primary"> Zoé Life</span></h2>
                     <div class="dez-separator text-primary style-icon border-white"><img alt="" src="themes/zoelife/peru/images/leaf-green.png"/></div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6">
-                        <ul>
-                            <li> Vierta el contenido de un sobre en una taza .</li>
-                            <li>Agregue agua caliente o fria y mezcle.</li>
-                            <li>Deleite su paladar.</li>
-                        </ul>
-                        <h3><span class="text-primary">Descargo De Responsabilidad:</span></h3>
-                        <p>
-                            Este producto no sustituye una dieta equilibrada.Consulte a su médico si es que está embarazada, 
-                            dando de lactar, tomando algún medicamento o tiene alguna condición médica.Para más información del 
-                            producto puede comunicarse a grupogreenplanet@gmail.com
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <iframe width="1257" height="707" src="https://www.youtube.com/embed/wvYWJ8NlKcU" title="Delicioso COFFEE 3 en 1 ZOE LIFE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <div class="col-md-12">
+                        <iframe width="1257" height="707" src="https://www.youtube.com/embed/MVDEqO62hic" title="Viaja Todo Pagado con ZOE LIFE CANCÚN" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>

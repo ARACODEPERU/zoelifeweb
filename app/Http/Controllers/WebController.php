@@ -65,6 +65,16 @@ class WebController extends Controller
         return view('zoelife/peru.power');
     }
 
+    public function perualkalino()
+    {
+        return view('zoelife/peru.alkalino');
+    }
+
+    public function peruaceitemoringa()
+    {
+        return view('zoelife/peru.aceite-de-moringa');
+    }
+
     /*------------ PRODUCTOS - END ------------*/
 
     public function perutestimonios()

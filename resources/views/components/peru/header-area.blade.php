@@ -60,13 +60,15 @@
                     <!-- Main Nav -->
                     <div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
                         <ul class="nav navbar-nav">
-                            <li class="active"> <a href="{{ route('web_peru_inicio') }}">Home</a> </li>
+                            <li> <a href="{{ route('web_peru_inicio') }}">Home</a> </li>
                             <li> <a href="{{ route('web_peru_nosotros') }}">Nosotros</a> </li>
                             <li> <a href="{{ route('web_peru_productos') }}">Productos</a> 
                                 <ul class="sub-menu">
                                     <li><a href="{{ route('web_peru_coffee_3_en_1') }}">Coffee 3 en 1</a></li>
                                     <li><a href="{{ route('web_peru_harina_de_moringa') }}">Harina de Moringa</a></li>
                                     <li><a href="{{ route('web_peru_power') }}">Power</a></li>
+                                    <li><a href="{{ route('web_peru_alkalino') }}">Alkalino</a></li>
+                                    <li><a href="{{ route('web_peru_aceite_de_moringa') }}">Aceite de Moringa</a></li>
                                 </ul>
                             </li>
                             <li> <a href="{{ route('web_peru_testimonios') }}">Testimonios</a> </li>

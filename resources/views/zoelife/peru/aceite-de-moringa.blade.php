@@ -27,13 +27,11 @@
                 <ul class="list-inline">
                     <li><a href="{{ route('web_peru_inicio') }}">Home</a></li>
                     <li><a href="{{ route('web_peru_inicio') }}">Productos</a></li>
-                    <li>Power</li>
+                    <li>Aceite de Moringa</li>
                 </ul>
             </div>
         </div>
         <!-- Breadcrumb row END -->
-
-        
         
 
         <div class="container" style="padding: 60px 0px;">
@@ -45,33 +43,15 @@
                     <!-- Dividers with icon -->
                     <div class="p-a30 bg-white m-b30">
                         <div class="section-content">
-                            <h2 class="text-uppercase">HARINA DE MORINGA ZOE LIFE</h2>
+                            <h2 class="text-uppercase">ACEITE DE MORINGA ZOE LIFE</h2>
                             <div class="dez-divider divider-2px bg-primary icon-left"><i class="fa fa-thumbs-o-up bg-primary text-white"></i></div>
                         
                             <div class="m-b10">
                                 <h5 class="text-uppercase">
-                                    PROPIEDADES:
+                                    El aceite de semillas de moringa Zoe Life es un gran aliado para la piel, su rápida absorción aumenta la luminosidad, es rico en antioxidantes por lo que ayuda a combatir el efecto de los radicales libres, los causantes del envanecimiento prematuro
                                 </h5>
                                 <p>
                                     Posee más de 90 nutrientes y 46 antioxidantes, es rica en Vitamina C, vitamina A, quercetina y mucho más.
-                                </p>
-                                <p>
-                                    La Vitamina A en forma de betacaroteno, potente antioxidante que protege especialmente la piel, las mucosas y órganos como la vejiga.
-                                </p>
-                                <p>
-                                    Posee Vitaminas del grupo B (B1, B2, B3, B5, B6) y vitamina K.
-                                </p>
-                                <p>
-                                    Contiene Vitamina E, gran antioxidante es importante para proteger las membranas celulares.
-                                </p>
-                                <p>
-                                    Aporta minerales como el potasio, hierro, calcio, fósforo, selenio, magnesio, triptófano y zinc.
-                                </p>
-                                <p>
-                                    Por su riqueza en este mineral (hierro) está indicada en casos de anemia.
-                                </p>
-                                <p>
-                                    Por poseer aminoácidos esenciales, es una excelente fuente de proteínas para los vegetarianos y veganos.
                                 </p>
                             </div>
                             <div class="m-b10">
@@ -79,19 +59,12 @@
                                     <span class="text-primary">BENEFICIOS</span>
                                 </h5>
                                 <div class="row">
-                                    <div class="col-md-6"><i class="fa fa-check"></i> Mejora el sistema respiratorio.</div>
-                                    <div class="col-md-6"><i class="fa fa-check"></i> Previene la diabetes.</div>
-                                    <div class="col-md-6"><i class="fa fa-check"></i> Proteger el corazón.</div>
-                                    <div class="col-md-6"><i class="fa fa-check"></i> Regular la presión arterial.</div>
-                                    <div class="col-md-6"><i class="fa fa-check"></i> Regula el peso de forma nartural.</div>
-                                    <div class="col-md-6"><i class="fa fa-check"></i> Prevenir y combatir la anemia.</div>
-                                    <div class="col-md-6"><i class="fa fa-check"></i> Aumenta las defensas del organismo.</div>
-                                    <div class="col-md-6"><i class="fa fa-check"></i> Efecto antiinflamatorio y analgésico.</div>
-                                    <div class="col-md-6"><i class="fa fa-check"></i> Protege e hidratar la piel.</div>
-                                    <div class="col-md-6"><i class="fa fa-check"></i> Mejorar la salud del sistema digestivo.</div>
-                                    <div class="col-md-6"><i class="fa fa-check"></i> Previene el cáncer.</div>
-                                    <div class="col-md-6"><i class="fa fa-check"></i> Mejora la salud visual.</div>
-                                    <div class="col-md-6"><i class="fa fa-check"></i> Disminuye los efectos de la menopausia.</div>
+                                    <div class="col-md-6"><i class="fa fa-check"></i> 
+                                        Al ser un gran hidratante y ser rico en omega 9 el aceite de moringa fortalece el cabello, hidrata el cuero cabelludo, recupera el cabello dañado, tiene un efecto anti-caspa, aporta brillo y ayuda a controlar las quebraduras del cabello
+                                    </div>
+                                    <div class="col-md-6"><i class="fa fa-check"></i> 
+                                        El aceite de moringa tiene propiedades antisépticas y antiinflamatorias, puede ser usado para pequeños cortes, rasguños, quemaduras, picaduras de insectos, infecciones de quemaduras solares y de la piel. Es bueno para el tratamiento de enfermedades cutáneas como la psoriasis, rosácea, eczema y la dermatitis.
+                                    </div>
                                 </div>
                             </div>
                         </div>

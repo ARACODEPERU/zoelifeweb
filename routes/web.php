@@ -24,6 +24,8 @@ Route::get('/peru.productos', [WebController::class, 'peruproductos'])->name('we
 Route::get('/peru.coffee-3-en-1', [WebController::class, 'perucoffee3en1'])->name('web_peru_coffee_3_en_1');
 Route::get('/peru.harina-de-moringa', [WebController::class, 'peruharinademoringa'])->name('web_peru_harina_de_moringa');
 Route::get('/peru.power', [WebController::class, 'perupower'])->name('web_peru_power');
+Route::get('/peru.alkalino', [WebController::class, 'perualkalino'])->name('web_peru_alkalino');
+Route::get('/peru.aceite-de-moringa', [WebController::class, 'peruaceitemoringa'])->name('web_peru_aceite_de_moringa');
 Route::get('/peru.testimonios', [WebController::class, 'perutestimonios'])->name('web_peru_testimonios');
 Route::get('/peru.centros-de-distribucion', [WebController::class, 'perucentros'])->name('web_peru_centros');
 Route::get('/peru.eventos', [WebController::class, 'perueventos'])->name('web_peru_eventos');
