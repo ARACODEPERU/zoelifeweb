@@ -90,40 +90,46 @@
                         <div class="p-a30 bg-white m-b30">
                             <div class="section-content">
                                 <h2 class="text-uppercase">SELECCIONAR PAIS</h2>
-                                <div class="dez-divider divider-2px bg-primary icon-left"><i class="fa fa-thumbs-o-up bg-primary text-white"></i></div>
+                                <div class="dez-divider divider-2px bg-primary icon-left"><i
+                                        class="fa fa-thumbs-o-up bg-primary text-white"></i></div>
                             </div>
                             <div class="row">
                                 <div class="col-md-3" style="padding: 20px; text-align:center;">
                                     <a href="">
-                                        <img style="width: 70px;" src="themes/zoelife/global/images/flags/peru.png" alt="">
+                                        <img style="width: 70px;" src="themes/zoelife/global/images/flags/peru.png"
+                                            alt="">
                                     </a>
                                     <br>
                                     <span><b>Perú</b></span>
                                 </div>
                                 <div class="col-md-3" style="padding: 20px; text-align:center;">
                                     <a href="">
-                                        <img style="width: 70px;" src="themes/zoelife/global/images/flags/bolivia.png" alt="">
+                                        <img style="width: 70px;" src="themes/zoelife/global/images/flags/bolivia.png"
+                                            alt="">
                                     </a>
                                     <br>
                                     <span><b>Bolivia</b></span>
                                 </div>
                                 <div class="col-md-3" style="padding: 20px; text-align:center;">
                                     <a href="">
-                                        <img style="width: 70px;" src="themes/zoelife/global/images/flags/colombia.png" alt="">
+                                        <img style="width: 70px;" src="themes/zoelife/global/images/flags/colombia.png"
+                                            alt="">
                                     </a>
                                     <br>
                                     <span><b>Colombia</b></span>
                                 </div>
                                 <div class="col-md-3" style="padding: 20px; text-align:center;">
                                     <a href="">
-                                        <img style="width: 70px;" src="themes/zoelife/global/images/flags/ecuador.png" alt="">
+                                        <img style="width: 70px;" src="themes/zoelife/global/images/flags/ecuador.png"
+                                            alt="">
                                     </a>
                                     <br>
                                     <span><b>Ecuador</b></span>
                                 </div>
                                 <div class="col-md-3" style="padding: 20px; text-align:center;">
                                     <a href="">
-                                        <img style="width: 70px;" src="themes/zoelife/global/images/flags/mexico.png" alt="">
+                                        <img style="width: 70px;" src="themes/zoelife/global/images/flags/mexico.png"
+                                            alt="">
                                     </a>
                                     <br>
                                     <span><b>Mexico</b></span>
@@ -137,13 +143,7 @@
 
         </div>
         <!-- Content END-->
-        
-
-
-    <!-- Footer -->
-    <x-peru.footer-area></x-peru.footer-area>
-    <!-- Footer END-->
-
-    
-
+        <!-- Footer -->
+        <x-peru.footer-area></x-peru.footer-area>
+        <!-- Footer END-->
     @endsection
