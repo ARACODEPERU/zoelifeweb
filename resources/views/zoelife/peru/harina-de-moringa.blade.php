@@ -101,7 +101,7 @@
 
         
         <!-- Why Choose Us -->
-        <div class="section-full text-white bg-img-fix p-t70 p-b40 overlay-black-dark choose-us" style="background-image:url(themes/zoelife/peru/images/background/garden/bg2.jpg);">
+        <div class="section-full text-white bg-img-fix p-t70 p-b40 overlay-black-dark choose-us" style="background-image:url(themes/zoelife/peru/images/background/fondo.jpg);">
             <div class="container">
                 <div class="section-head  text-center text-white">
                     <h2 class="h2">Recomendaciones <span class="text-primary"> de Uso Sugerido</span></h2>
@@ -110,13 +110,13 @@
                 <div class="row">
                     <div class="col-md-6">
                         <ul>
-                            <li> Agregar ½ cucharadita en cada comida.</li>
-                            <li> Preparaciones cerudas: zumos, batidos, esparciéndola sobre ensaladas, en aderezosa de verduras, etc.</li>
-                            <li> Deleite su paladar.</li>
+                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting</li>
+                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting</li>
+                            <li>Lorem Ipsum is simply dummy text of the printing and typesetting</li>
                         </ul>
                         <h3><span class="text-primary">Descargo De Responsabilidad:</span></h3>
                         <p>
-                            Este producto no sustituye una dieta equilibrada.Consulte a su médico si es que está embarazada, 
+                            Este producto no sustituye una dieta equilibrada. Consulte a su médico si es que está embarazada, 
                             dando de lactar, tomando algún medicamento o tiene alguna condición médica.Para más información del 
                             producto puede comunicarse a grupogreenplanet@gmail.com
                         </p>

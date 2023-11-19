@@ -19,34 +19,32 @@
                                 data-version="5.3.0.2">
                                 <ul>
                                     @foreach ($slider as $k => $row)
-                                    <!-- SLIDE  -->
-                                    <li data-index="rs-100" data-transition="parallaxvertical" data-slotamount="default" 
-                                        data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" 
-                                        data-masterspeed="default"  data-thumb="{{ $row->content }}"  data-rotate="0"  data-fstransition="fade" 
-                                        data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="A STUDY ON HAPPINESS" 
-                                        data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" 
-                                        data-param8="" data-param9="" data-param10="">
-                                        <!-- MAIN IMAGE -->
-                                        <img src="{{ $row->content }}"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
-                                        <!-- LAYERS -->
-                                        <div class="tp-caption tp-shape tp-shapewrapper " 
-                                        id="slide-100-layer-1" 
-                                        data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                                        data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
-                                        data-width="full"
-                                        data-height="full"
-                                        data-whitespace="nowrap"
-                                        data-type="shape" 
-                                        data-basealign="slide" 
-                                        data-responsive_offset="off" 
-                                        data-responsive="off"
-                                        data-frames='[{"from":"opacity:0;","speed":1000,"to":"o:1;","delay":0,"ease":"Power4.easeOut"},{"delay":"wait","speed":1000,"to":"opacity:0;","ease":"Power4.easeOut"}]'
-                                        data-textAlign="['left','left','left','left']"
-                                        data-paddingtop="[0,0,0,0]"
-                                        data-paddingright="[0,0,0,0]"
-                                        data-paddingbottom="[0,0,0,0]"
-                                        data-paddingleft="[0,0,0,0]"
-                                        style="z-index: 2;background-color:rgba(0, 0, 0, 0.30);border-color:rgba(0, 0, 0, 0);border-width:0px;"> </div>
+                                        <li data-index="rs-200" data-transition="parallaxvertical" data-slotamount="default"
+                                            data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default"
+                                            data-easeout="default" data-masterspeed="default"
+                                            data-thumb="{{ $row->content }}" data-rotate="0" data-fstransition="fade"
+                                            data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"
+                                            data-title="ZOELIFE PERU" data-param1="" data-param2="" data-param3=""
+                                            data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
+                                            data-param9="" data-param10="">
+                                            <!-- MAIN IMAGE -->
+                                            <img src="{{ $row->content }}" alt="" data-bgposition="center center"
+                                                data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10"
+                                                class="rev-slidebg" data-no-retina >
+                                            <!-- LAYERS -->
+                                            <div class="tp-caption tp-shape tp-shapewrapper " id="slide-200-layer-1"
+                                                data-x="['center','center','center','center']"
+                                                data-hoffset="['0','0','0','0']"
+                                                data-y="['middle','middle','middle','middle']"
+                                                data-voffset="['0','0','0','0']" data-width="full" data-height="full"
+                                                data-whitespace="nowrap" data-type="shape" data-basealign="slide"
+                                                data-responsive_offset="off" data-responsive="off"
+                                                data-frames='[{"from":"opacity:0;","speed":1000,"to":"o:1;","delay":0,"ease":"Power4.easeOut"},{"delay":"wait","speed":1000,"to":"opacity:0;","ease":"Power4.easeOut"}]'
+                                                data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
+                                                data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                                data-paddingleft="[0,0,0,0]"
+                                                style="z-index: 2;background-color:rgba(0, 0, 0, 0.05);border-color:rgba(0, 0, 0, 0);border-width:0px;">
+                                            </div>
 
                                         </li>
                                     @endforeach
