@@ -7,9 +7,9 @@
 
         <!-- Content -->
         <div class="page-content">
-            @php
+            {{-- @php
                 dd('hdhdhddhdh');
-            @endphp
+            @endphp --}}
             <!-- Slider -->
             <div class="main-slider style-two default-banner">
                 <div class="tp-banner-container">
