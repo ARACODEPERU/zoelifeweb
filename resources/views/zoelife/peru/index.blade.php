@@ -7,7 +7,6 @@
 
         <!-- Content -->
         <div class="page-content">
-
             <!-- Slider -->
             <div class="main-slider style-two default-banner">
                 <div class="tp-banner-container">
@@ -18,6 +17,7 @@
                             <div id="dz_rev_slider_4" class="rev_slider fullwidthabanner" style="display:none;"
                                 data-version="5.3.0.2">
                                 <ul>
+
                                     @foreach ($slider as $k => $row)
                                         <!-- SLIDE  -->
                                         <li data-index="rs-100" data-transition="parallaxvertical" data-slotamount="default"
