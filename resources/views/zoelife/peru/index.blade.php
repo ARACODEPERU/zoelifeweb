@@ -7,7 +7,7 @@
 
         <!-- Content -->
         <div class="page-content">
-     
+
             <!-- Slider -->
             <div class="main-slider style-two default-banner">
                 <div class="tp-banner-container">
@@ -74,10 +74,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <iframe width="1257" height="707" src="https://www.youtube.com/embed/wvYWJ8NlKcU"
-                                title="Delicioso COFFEE 3 en 1 ZOE LIFE" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
+                            {!! $video->content !!}
                         </div>
                     </div>
                 </div>
@@ -95,46 +92,20 @@
                                         class="fa fa-thumbs-o-up bg-primary text-white"></i></div>
                             </div>
                             <div class="row">
-                                <div class="col-md-3" style="padding: 20px; text-align:center;">
-                                    <a href="">
-                                        <img style="width: 70px;" src="themes/zoelife/global/images/flags/peru.png"
-                                            alt="">
-                                    </a>
-                                    <br>
-                                    <span><b>Perú</b></span>
-                                </div>
-                                <div class="col-md-3" style="padding: 20px; text-align:center;">
-                                    <a href="">
-                                        <img style="width: 70px;" src="themes/zoelife/global/images/flags/bolivia.png"
-                                            alt="">
-                                    </a>
-                                    <br>
-                                    <span><b>Bolivia</b></span>
-                                </div>
-                                <div class="col-md-3" style="padding: 20px; text-align:center;">
-                                    <a href="">
-                                        <img style="width: 70px;" src="themes/zoelife/global/images/flags/colombia.png"
-                                            alt="">
-                                    </a>
-                                    <br>
-                                    <span><b>Colombia</b></span>
-                                </div>
-                                <div class="col-md-3" style="padding: 20px; text-align:center;">
-                                    <a href="">
-                                        <img style="width: 70px;" src="themes/zoelife/global/images/flags/ecuador.png"
-                                            alt="">
-                                    </a>
-                                    <br>
-                                    <span><b>Ecuador</b></span>
-                                </div>
-                                <div class="col-md-3" style="padding: 20px; text-align:center;">
-                                    <a href="">
-                                        <img style="width: 70px;" src="themes/zoelife/global/images/flags/mexico.png"
-                                            alt="">
-                                    </a>
-                                    <br>
-                                    <span><b>Mexico</b></span>
-                                </div>
+                                @foreach ($pages as $page)
+                                    <div class="col-md-3" style="padding: 20px; text-align:center;">
+                                        <a href=" {{ route($page->route) }} ">
+                                            @if ($page->country)
+                                                <img style="width: 70px;" src="{{ $page->country->image }}" alt="">
+                                            @else
+                                                SIN PAIS
+                                            @endif
+                                        </a>
+                                        <br>
+                                        <span><b>{{ $page->country->description }}</b></span>
+                                    </div>
+                                @endforeach
+
                             </div>
                         </div>
                         <!-- Dividers with icon END -->

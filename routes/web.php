@@ -32,6 +32,9 @@ Route::get('/peru.eventos', [WebController::class, 'perueventos'])->name('web_pe
 Route::get('/peru.centros-de-distribucion-lima', [WebController::class, 'perucentroslima'])->name('web_peru_centros_lima');
 Route::get('/peru.alcanzando-las-estrellas', [WebController::class, 'peruestrellas'])->name('web_peru_alcanzando_las_estrellas');
 Route::get('/peru.contacto', [WebController::class, 'perucontacto'])->name('web_peru_contacto');
+
+Route::get('/bolivia', [WebController::class, 'peruinicio'])->name('web_bolivia_inicio');
+
 /*
 Route::get('/blog/home', [BlogController::class, 'index'])->name('blog_principal');
 Route::get('/article/{url}', [BlogController::class, 'article'])->name('blog_article_by_url');

@@ -23,7 +23,7 @@ class WebController extends Controller
 
     public function peruinicio()
     {
-        $slider = CmsSection::where('component_id', 'perusliderprincipal_1')
+        $slider = CmsSection::where('component_id', 'slider_peru_inicio_2')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
@@ -33,9 +33,26 @@ class WebController extends Controller
             ->orderBy('cms_section_items.position')
             ->get();
 
-        //dd($slider);
+        $video = CmsSection::where('component_id', 'video_presentacion_4')
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->first();
+
+        $pages = CmsPage::with('country')
+            ->where('status', true)
+            ->where('main', true)
+            ->whereNotNull('country_id')
+            ->get();
+
         return view('zoelife/peru.index', [
-            'slider' => $slider
+            'slider' => $slider,
+            'video' => $video,
+            'pages' => $pages
         ]);
     }
 

@@ -6,13 +6,18 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="widget widget_about">
-                            <div class="logo-footer"><img src="themes/zoelife/peru/images/logoBlanco.png" alt=""></div>
-                            <p class="m-tb20"><strong>CargoZone</strong> Lorem ipsum dolor sit amet, cons ectetur elit. Vestibulum nec odios Suspe ndisse cursus.  Vestibulum nec.</p>
+                            <div class="logo-footer">
+                                <img src="{{ $footer[0]->items[0]->item->content }}" alt="">
+                            </div>
+                            <p class="m-tb20">{{ $footer[0]->items[1]->item->content }}</p>
                             <ul class="dez-social-icon dez-border dez-social-icon-lg">
-                                <li><a href="" class="fab fa-facebook fb-btn"></a></li>
-                                <li><a href="" class="fab fa-instagram tw-btn"></a></li>
-                                <li><a href="" class="fab fa-linkedin link-btn"></a></li>
-                                <li><a href="" class="fab fa-youtube pin-btn"></a></li>
+                                <li><a href="{{ $footer[0]->items[2]->item->content }}"
+                                        class="fab fa-facebook fb-btn"></a></li>
+                                <li><a href="{{ $footer[0]->items[3]->item->content }}"
+                                        class="fab fa-instagram tw-btn"></a></li>
+                                {{-- <li><a href="{{ $footer[0]->items[0]->item->content }}" class="fab fa-linkedin link-btn"></a></li> --}}
+                                <li><a href="{{ $footer[0]->items[4]->item->content }}"
+                                        class="fab fa-youtube pin-btn"></a></li>
                             </ul>
                         </div>
                     </div>
@@ -48,9 +53,22 @@
                             <h4 class="m-b10 text-uppercase">Contactanos</h4>
                             <div class="dez-separator bg-primary"></div>
                             <ul>
-                                <li><i class="fa fa-map-marker"></i><strong>Oficina Principal:</strong> Av. Petit Thouars 3547 , Lima, Peru </li>
-                                <li><i class="fa fa-envelope"></i><strong>E-mail:</strong>grupogreenplanet@gmail.com</li>
-                                <li><i class="fa fa-phone"></i><strong>Teléfono: <strong>992 914 870<br/></li>
+                                <li>
+                                    <i class="fa fa-map-marker"></i>
+                                    <strong>Oficina Principal:</strong>
+                                    {{ $footer[0]->items[5]->item->content }}
+                                </li>
+                                <li>
+                                    <i class="fa fa-envelope"></i>
+                                    <strong>E-mail:</strong>
+                                    {{ $footer[0]->items[6]->item->content }}
+                                </li>
+                                <li>
+                                    <i class="fa fa-phone"></i>
+                                    <strong>Teléfono: <strong>
+                                            {{ $footer[0]->items[7]->item->content }}
+                                            <br />
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -61,21 +79,21 @@
         <div class="footer-bottom">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 text-left"> 
-						<span>© Copyright 2023</span> 
-					</div>
-                    <div class="col-lg-4 text-center"> 
-						<span> Desarrollado por <i class="fa fa-heart text-primary heart"></i> 
+                    <div class="col-lg-4 text-left">
+                        <span>© Copyright 2023</span>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <span> Desarrollado por <i class="fa fa-heart text-primary heart"></i>
                             <a href="">Aracode Smart Solutión</a>
-                        </span> 
-					</div>
-                    <div class="col-lg-4 text-right"> 
-						<ul class="list-inline">
-							<li><a href=""> Nosotros</a></li>
-							<li><a href=""> Contactanos</a></li> 
-							<li><a href=""> Politica de Privacidad</a></li>
-						</ul>
-					</div>
+                        </span>
+                    </div>
+                    <div class="col-lg-4 text-right">
+                        <ul class="list-inline">
+                            <li><a href=""> Nosotros</a></li>
+                            <li><a href=""> Contactanos</a></li>
+                            <li><a href=""> Politica de Privacidad</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
