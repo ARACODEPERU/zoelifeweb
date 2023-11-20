@@ -7,9 +7,13 @@
 
         <!-- Content -->
         <div class="page-content">
+<<<<<<< HEAD
             {{-- @php
                 dd('hdhdhddhdh');
             @endphp --}}
+=======
+     
+>>>>>>> 61a555dd16cc0436906207d754523d1ab7138c73
             <!-- Slider -->
             <div class="main-slider style-two default-banner">
                 <div class="tp-banner-container">
