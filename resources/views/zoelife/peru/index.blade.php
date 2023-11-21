@@ -62,7 +62,7 @@
             <!-- Visión - Misión - Valores / END -->
 
 
-            <!-- Why Choose Us -->
+            <!-- Video Presentación / STAR -->
             <div class="section-full text-white bg-img-fix p-t70 p-b70 overlay-black-dark choose-us"
                 style="background-image:url(themes/zoelife/peru/images/background/fondo.jpg);">
                 <div class="container">
@@ -79,17 +79,19 @@
                     </div>
                 </div>
             </div>
-            <!-- Why Choose Us End -->
+            <!-- Video Presentación / END -->
 
+            
+            <!-- Paises / STAR -->
             <div class="container" style="padding: 60px 0px;">
                 <div class="row">
                     <div class="col-md-12">
-                        <!-- Dividers with icon -->
                         <div class="p-a30 bg-white m-b30">
                             <div class="section-content">
                                 <h2 class="text-uppercase">SELECCIONAR PAIS</h2>
-                                <div class="dez-divider divider-2px bg-primary icon-left"><i
-                                        class="fa fa-thumbs-o-up bg-primary text-white"></i></div>
+                                <div class="dez-divider divider-2px bg-primary icon-left">
+                                    <i class="fa fa-thumbs-o-up bg-primary text-white"></i>
+                                </div>
                             </div>
                             <div class="row">
                                 @foreach ($pages as $page)
@@ -105,16 +107,16 @@
                                         <span><b>{{ $page->country->description }}</b></span>
                                     </div>
                                 @endforeach
-
                             </div>
                         </div>
-                        <!-- Dividers with icon END -->
                     </div>
                 </div>
             </div>
+            <!-- Paises / END -->
 
         </div>
         <!-- Content END-->
+        
         <!-- Footer -->
         <x-peru.footer-area></x-peru.footer-area>
         <!-- Footer END-->

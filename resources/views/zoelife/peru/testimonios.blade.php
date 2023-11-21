@@ -60,71 +60,81 @@
 
 				<ul id="masonry" class="dez-gallery-listing row gallery-grid-4 m-b0 mfp-gallery">
 					<li class="card-container col-md-4 coffee" style="padding: 15px;">
-						<div class="dez-post-media dez-img-effect zoom-slow"> 
-							<iframe width="893" height="360" src="https://www.youtube.com/embed/0YSfKdntZa8" title="Testimonio: !! Sufria de Mucha Gastritis !!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
-						</div>
-						<div class="dez-post-info">
-							<div class="dez-post-title ">
-								<h3 class="post-title"><a href="">Título del testimonio</a></h3>
+						<div class="aracode-box-with">
+							<div class="dez-post-media dez-img-effect zoom-slow"> 
+								<iframe width="893" height="360" src="https://www.youtube.com/embed/0YSfKdntZa8" title="Testimonio: !! Sufria de Mucha Gastritis !!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
 							</div>
-							<div class="dez-post-tags">
-								<div class="post-tags">
+							<div class="dez-post-info">
+								<div class="dez-post-title ">
+									<h3 class="post-title"><a href="">Título del testimonio</a></h3>
+								</div>
+								<div class="dez-post-tags">
+									<div class="post-tags">
+									</div>
 								</div>
 							</div>
 						</div>
 					</li>
 					<li class="card-container col-md-4 alkalino" style="padding: 15px;">
-						<div class="dez-post-media dez-img-effect zoom-slow"> 
-							<iframe width="893" height="360" src="https://www.youtube.com/embed/0YSfKdntZa8" title="Testimonio: !! Sufria de Mucha Gastritis !!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
-						</div>
-						<div class="dez-post-info">
-							<div class="dez-post-title ">
-								<h3 class="post-title"><a href="">Título del testimonio</a></h3>
+						<div class="aracode-box-with">
+							<div class="dez-post-media dez-img-effect zoom-slow"> 
+								<iframe width="893" height="360" src="https://www.youtube.com/embed/0YSfKdntZa8" title="Testimonio: !! Sufria de Mucha Gastritis !!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
 							</div>
-							<div class="dez-post-tags">
-								<div class="post-tags">
+							<div class="dez-post-info">
+								<div class="dez-post-title ">
+									<h3 class="post-title"><a href="">Título del testimonio</a></h3>
+								</div>
+								<div class="dez-post-tags">
+									<div class="post-tags">
+									</div>
 								</div>
 							</div>
 						</div>
 					</li>
 					<li class="card-container col-md-4 coffee" style="padding: 15px;">
-						<div class="dez-post-media dez-img-effect zoom-slow"> 
-							<iframe width="893" height="360" src="https://www.youtube.com/embed/0YSfKdntZa8" title="Testimonio: !! Sufria de Mucha Gastritis !!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
-						</div>
-						<div class="dez-post-info">
-							<div class="dez-post-title ">
-								<h3 class="post-title"><a href="">Título del testimonio</a></h3>
+						<div class="aracode-box-with">
+							<div class="dez-post-media dez-img-effect zoom-slow"> 
+								<iframe width="893" height="360" src="https://www.youtube.com/embed/0YSfKdntZa8" title="Testimonio: !! Sufria de Mucha Gastritis !!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
 							</div>
-							<div class="dez-post-tags">
-								<div class="post-tags">
+							<div class="dez-post-info">
+								<div class="dez-post-title ">
+									<h3 class="post-title"><a href="">Título del testimonio</a></h3>
+								</div>
+								<div class="dez-post-tags">
+									<div class="post-tags">
+									</div>
 								</div>
 							</div>
 						</div>
 					</li>
 					<li class="card-container col-md-4 power" style="padding: 15px;">
-						<div class="dez-post-media dez-img-effect zoom-slow"> 
-							<iframe width="893" height="360" src="https://www.youtube.com/embed/0YSfKdntZa8" title="Testimonio: !! Sufria de Mucha Gastritis !!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
-						</div>
-						<div class="dez-post-info">
-							<div class="dez-post-title ">
-								<h3 class="post-title"><a href="">Título del testimonio</a></h3>
+						<div class="aracode-box-with">
+							<div class="dez-post-media dez-img-effect zoom-slow"> 
+								<iframe width="893" height="360" src="https://www.youtube.com/embed/0YSfKdntZa8" title="Testimonio: !! Sufria de Mucha Gastritis !!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
 							</div>
-							<div class="dez-post-tags">
-								<div class="post-tags">
+							<div class="dez-post-info">
+								<div class="dez-post-title ">
+									<h3 class="post-title"><a href="">Título del testimonio</a></h3>
+								</div>
+								<div class="dez-post-tags">
+									<div class="post-tags">
+									</div>
 								</div>
 							</div>
 						</div>
 					</li>
 					<li class="card-container col-md-4 power" style="padding: 15px;">
-						<div class="dez-post-media dez-img-effect zoom-slow"> 
-							<iframe width="893" height="360" src="https://www.youtube.com/embed/0YSfKdntZa8" title="Testimonio: !! Sufria de Mucha Gastritis !!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
-						</div>
-						<div class="dez-post-info">
-							<div class="dez-post-title ">
-								<h3 class="post-title"><a href="">Título del testimonio</a></h3>
+						<div class="aracode-box-with">
+							<div class="dez-post-media dez-img-effect zoom-slow"> 
+								<iframe width="893" height="360" src="https://www.youtube.com/embed/0YSfKdntZa8" title="Testimonio: !! Sufria de Mucha Gastritis !!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
 							</div>
-							<div class="dez-post-tags">
-								<div class="post-tags">
+							<div class="dez-post-info">
+								<div class="dez-post-title ">
+									<h3 class="post-title"><a href="">Título del testimonio</a></h3>
+								</div>
+								<div class="dez-post-tags">
+									<div class="post-tags">
+									</div>
 								</div>
 							</div>
 						</div>

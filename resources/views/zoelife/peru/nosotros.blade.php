@@ -37,7 +37,7 @@
         <!-- Visión - Misión - Valores / END -->
         
         
-        <!-- Why Choose Us -->
+        <!-- Video Presentación / STAR -->
         <div class="section-full text-white bg-img-fix p-t70 p-b40 overlay-black-dark choose-us" style="background-image:url(themes/zoelife/peru/images/background/experiencia/cancun.jpg);">
             <div class="container">
                 <div class="section-head  text-center text-white">
@@ -46,12 +46,12 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <iframe width="1257" height="707" src="https://www.youtube.com/embed/MVDEqO62hic" title="Viaja Todo Pagado con ZOE LIFE CANCÚN" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        {!! $video->content !!}
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Why Choose Us End -->
+        <!-- Video Presentación / END -->
 
         
         

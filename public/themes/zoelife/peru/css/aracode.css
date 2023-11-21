@@ -1,4 +1,8 @@
 .aracode-box-with{
     background-color: #fff;
-    padding: 15px;
+    padding: 5px;
+}
+
+.aracode-box-with .post-title{
+    padding: 0px 10px;
 }

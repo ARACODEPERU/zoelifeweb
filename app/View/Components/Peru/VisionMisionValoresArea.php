@@ -19,7 +19,7 @@ class VisionMisionValoresArea extends Component
         $this->nosotros = CmsSection::with(['items' => function ($query) {
             $query->orderBy('cms_section_items.position', 'asc');
         }])
-            ->where('component_id', 'nosotros_peru_3')
+            ->where('component_id', 'peru_vision_mision_valores_area_3')
             ->get();
 
         //dd($this->nosotros);
