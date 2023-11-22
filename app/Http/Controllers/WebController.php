@@ -58,6 +58,16 @@ class WebController extends Controller
 
     public function perunosotros()
     {
+        
+        $banner= CmsSection::where('component_id', 'banner_nosotros_7')
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->first();
 
         $video = CmsSection::where('component_id', 'peru_video_presentacion_nosotros_6')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
@@ -76,6 +86,7 @@ class WebController extends Controller
             ->get();
 
         return view('zoelife/peru.nosotros', [
+            'banner' => $banner,
             'video' => $video,
             'pages' => $pages
         ]);

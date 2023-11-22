@@ -1,8 +1,23 @@
-.aracode-box-with{
+.aracode-box-with {
     background-color: #fff;
     padding: 5px;
 }
 
-.aracode-box-with .post-title{
+.aracode-box-with .post-title {
     padding: 0px 10px;
+} 
+
+.aracode-flags {
+    padding: 20px; 
+    text-align:center;
+}
+
+
+.aracode-flags .ara-contenedor-redondo {
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #ccc; /* Puedes agregar un borde si lo deseas */
+ 
 }
