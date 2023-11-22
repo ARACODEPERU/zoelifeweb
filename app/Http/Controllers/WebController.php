@@ -58,7 +58,6 @@ class WebController extends Controller
 
     public function perunosotros()
     {
-        
         $banner= CmsSection::where('component_id', 'banner_nosotros_7')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
@@ -96,7 +95,27 @@ class WebController extends Controller
 
     public function peruproductos()
     {
-        return view('zoelife/peru.productos');
+        $banner= CmsSection::where('component_id', 'peru_banner_productos_8')
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->first();
+
+
+        $pages = CmsPage::with('country')
+            ->where('status', true)
+            ->where('main', true)
+            ->whereNotNull('country_id')
+            ->get();
+
+        return view('zoelife/peru.productos', [
+            'banner' => $banner,
+            'pages' => $pages
+        ]);
     }
 
     public function perucoffee3en1()
@@ -128,17 +147,77 @@ class WebController extends Controller
 
     public function perutestimonios()
     {
-        return view('zoelife/peru.testimonios');
+        $banner= CmsSection::where('component_id', 'peru_banner_testimonios_9')
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->first();
+
+
+        $pages = CmsPage::with('country')
+            ->where('status', true)
+            ->where('main', true)
+            ->whereNotNull('country_id')
+            ->get();
+
+        return view('zoelife/peru.testimonios', [
+            'banner' => $banner,
+            'pages' => $pages
+        ]);
     }
 
     public function perucentros()
     {
-        return view('zoelife/peru.centros-de-distribucion');
+        $banner= CmsSection::where('component_id', 'peru_banner_centros_de_distribucion_10')
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->first();
+
+
+        $pages = CmsPage::with('country')
+            ->where('status', true)
+            ->where('main', true)
+            ->whereNotNull('country_id')
+            ->get();
+
+        return view('zoelife/peru.centros-de-distribucion', [
+            'banner' => $banner,
+            'pages' => $pages
+        ]);
     }
 
     public function perueventos()
     {
-        return view('zoelife/peru.eventos');
+        $banner= CmsSection::where('component_id', 'peru_banner_eventos_11')
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->first();
+
+
+        $pages = CmsPage::with('country')
+            ->where('status', true)
+            ->where('main', true)
+            ->whereNotNull('country_id')
+            ->get();
+
+        return view('zoelife/peru.eventos', [
+            'banner' => $banner,
+            'pages' => $pages
+        ]);
     }
 
     public function perucentroslima()
@@ -148,12 +227,52 @@ class WebController extends Controller
 
     public function peruestrellas()
     {
-        return view('zoelife/peru.alcanzando-las-estrellas');
+        $banner= CmsSection::where('component_id', 'peru_banner_alcanzando_las_estrellas_12')
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->first();
+
+
+        $pages = CmsPage::with('country')
+            ->where('status', true)
+            ->where('main', true)
+            ->whereNotNull('country_id')
+            ->get();
+
+        return view('zoelife/peru.alcanzando-las-estrellas', [
+            'banner' => $banner,
+            'pages' => $pages
+        ]);
     }
 
     public function perucontacto()
     {
-        return view('zoelife/peru.contacto');
+        $banner= CmsSection::where('component_id', 'peru_banner_contacto_13')
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->first();
+
+
+        $pages = CmsPage::with('country')
+            ->where('status', true)
+            ->where('main', true)
+            ->whereNotNull('country_id')
+            ->get();
+
+        return view('zoelife/peru.contacto', [
+            'banner' => $banner,
+            'pages' => $pages
+        ]);
     }
 
 

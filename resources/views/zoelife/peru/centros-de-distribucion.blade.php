@@ -6,17 +6,12 @@
     <x-peru.header-area></x-peru.header-area>
     <!-- Encabezado fin -->
 
-    <!-- inner page banner -->
-    <div class="dez-bnr-inr overlay-black-middle" style="background-image:url(themes/zoelife/peru/images/header-page/centrosPeru.jpg);">
-        <!--
-        <div class="container">
-            <div class="dez-bnr-inr-entry">
-                <h1 class="text-white">Contact Us</h1>
-            </div>
+        <!-- inner page banner -->
+        <div class="dez-bnr-inr overlay-black-middle" style="background-image:url({{ $banner->content }});">
+            
         </div>
-        -->
-    </div>
-    <!-- inner page banner END -->
+        <!-- inner page banner END -->
+
     <!-- Breadcrumb row -->
     <div class="breadcrumb-row">
         <div class="container">
