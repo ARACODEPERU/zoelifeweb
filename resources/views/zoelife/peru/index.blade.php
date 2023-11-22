@@ -96,15 +96,13 @@
                             <div class="row">
                                 @foreach ($pages as $page)
                                     <div class="col-md-3 aracode-flags">
-                                        <div class="ara-contenedor-redondo">
-                                            <a href=" {{ route($page->route) }} ">
+                                            <a href=" {{ route($page->route) }} " class="ara-contenedor-redondo">
                                                 @if ($page->country)
-                                                    <img class="imagen-redonda"  src="{{ $page->country->image }}" alt="">
+                                                    <img style="height: 70px; width: auto; " src="{{ $page->country->image }}" alt="">
                                                 @else
                                                     SIN PAIS
                                                 @endif
                                             </a>
-                                        </div>
                                         <br>
                                         <span><b>{{ $page->country->description }}</b></span>
                                     </div>
