@@ -119,6 +119,8 @@ Route::middleware('auth')->group(function () {
         'company/getdata',
         [CompanyController::class, 'getdata']
     )->middleware(['auth', 'verified'])->name('datosempresa');
+
+    Route::resource('products', ProductController::class);
 });
 
 require __DIR__ . '/auth.php';

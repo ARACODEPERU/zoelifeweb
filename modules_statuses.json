@@ -1,5 +1,7 @@
 {
     "Security": true,
     "Blog": true,
-    "CMS": true
+    "CMS": true,
+    "Onlineshop": true,
+    "Sales": true
 }

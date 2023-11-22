@@ -3,12 +3,9 @@ import { ref } from 'vue';
 import { 
     faPoll, 
     faGear, 
-    faCashRegister, 
-    faBolt, 
-    faUserGear,
-    faEarthAmericas,
-    faCartShopping
- } from "@fortawesome/free-solid-svg-icons";
+    faGlobe, 
+    faEarthAmericas
+} from "@fortawesome/free-solid-svg-icons";
 import { Link } from '@inertiajs/vue3';
 
 const props = defineProps({
@@ -60,7 +57,13 @@ const menu = ref([
                 status: false,
                 text: 'usuarios',
                 permissions: 'usuarios',
-            }
+            },
+            {
+                status: false,
+                route: route('products.index'),
+                text: 'Gestión Productos & servicios',
+                permissions: 'productos',
+            },
         ]
     },
     {
@@ -105,8 +108,35 @@ const menu = ref([
                 text: 'Suscriptores',
                 permissions: 'cms_seccion',
             },
+            {
+                route: route('cms_testimonies_list'),
+                status: false,
+                text: 'Testimonios',
+                permissions: 'cms_testimonios',
+            }
         ]
-    }
+    },
+    {
+        status:false,
+        text: 'Productos en línea',
+        icom: faGlobe,
+        route: null,
+        permissions: 'onli_dashboard',
+        items: [
+            {
+                route: route('establishments.index'),
+                status: false,
+                text: 'Centros de distribución',
+                permissions: 'sale_tienda',
+            },
+            {
+                route: route('onlineshop_items'),
+                status: false,
+                text: 'Productos & servicios',
+                permissions: 'onli_items',
+            }
+        ]
+    },
 ]);
 
 const toggleSubItems = (index) => {
