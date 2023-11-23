@@ -85,16 +85,16 @@ class CmsTestimonyController extends Controller
             [
                 'item_id' => 'required',
                 'title' => 'required|max:255',
-                'description' => 'required',
-                'image' => 'required',
+                //'description' => 'required',
+                //'image' => 'required',
                 'video' => 'required'
             ],
             [
                 'item_id.required' => 'el campo producto o servicio es obligatorio',
                 'title.required' => 'el campo titulo es obligatorio',
                 'title.max' => 'el campo titulo solo acepta 255 caracteres',
-                'description.required' => 'el campo Descripción es obligatorio',
-                'image.required' => 'el campo imagen es obligatorio',
+                //'description.required' => 'el campo Descripción es obligatorio',
+                //'image.required' => 'el campo imagen es obligatorio',
                 'video.required' => 'el campo vídeo es obligatorio',
             ]
         );
@@ -159,14 +159,14 @@ class CmsTestimonyController extends Controller
             [
                 'item_id' => 'required',
                 'title' => 'required|max:255',
-                'description' => 'required',
+                //'description' => 'required',
                 'video' => 'required'
             ],
             [
                 'item_id.required' => 'el campo producto o servicio es obligatorio',
                 'title.required' => 'el campo titulo es obligatorio',
                 'title.max' => 'el campo titulo solo acepta 255 caracteres',
-                'description.required' => 'el campo Descripción es obligatorio',
+                //'description.required' => 'el campo Descripción es obligatorio',
                 'video.required' => 'el campo vídeo es obligatorio',
             ]
         );
