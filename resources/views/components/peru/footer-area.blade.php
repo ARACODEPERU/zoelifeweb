@@ -28,7 +28,8 @@
                             <ul>
                                 @if (count($testimonies) > 0)
                                     @foreach ($testimonies as $testimony)
-                                        <li><a href="" data-toggle="modal" data-target="#testimonios">{{ $testimony->title }}</a></li>
+                                        <li><a href="#" data-toggle="modal"
+                                                data-target="#testimonios">{{ $testimony->title }}</a></li>
                                     @endforeach
                                 @endif
                             </ul>
@@ -99,9 +100,15 @@
         </div>
     </footer>
     <!-- Footer END-->
+    <script>
+        function openModalTestimony() {
 
+            $('#testimonios').modal('show')
+        }
+    </script>
     <!-- Modal -->
-    <div class="modal fade" id="testimonios" tabindex="-1" role="dialog" aria-labelledby="testimoniosTitle" aria-hidden="true">
+    <div class="modal fade" id="testimonios" tabindex="-1" role="dialog" aria-labelledby="testimoniosTitle"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header ara-modal-title">
@@ -111,7 +118,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                ...
+                    ...
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
