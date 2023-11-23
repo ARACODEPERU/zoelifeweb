@@ -1,3 +1,23 @@
+:root {
+    --zoeprimary-color: #00b01a;
+    --zoeprimarydark-color: #026410;
+    --black-color: #221f1f;
+    --dark-color: #161616;
+    --secondary-color: #cecfd1;
+    --white-color: #ffffff;
+}
+
+
+/*================================================
+General
+================================================*/
+
+.ara-modal-title{
+    background: var(--zoeprimary-color);
+}
+
+
+
 .aracode-box-with {
     background-color: #fff;
     padding: 5px;
