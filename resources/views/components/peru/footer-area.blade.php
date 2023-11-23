@@ -26,11 +26,11 @@
                             <h4 class="m-b10 text-uppercase">Testimonios</h4>
                             <div class="dez-separator bg-primary"></div>
                             <ul>
-                                <li><a href="">Título del testimonio</a></li>
-                                <li><a href="">Título del testimonio</a></li>
-                                <li><a href="">Título del testimonio</a></li>
-                                <li><a href="">Título del testimonio</a></li>
-                                <li><a href="">Título del testimonio</a></li>
+                                @if (count($testimonies) > 0)
+                                    @foreach ($testimonies as $testimony)
+                                        <li><a href="">{{ $testimony->title }}</a></li>
+                                    @endforeach
+                                @endif
                             </ul>
                         </div>
                     </div>
