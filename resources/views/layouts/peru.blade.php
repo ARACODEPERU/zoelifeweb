@@ -88,6 +88,13 @@ jQuery(document).ready(function() {
 	dz_rev_slider_4();
 });	/*ready*/
 </script>
+
+<script>
+	$('#myModal').on('shown.bs.modal', function () {
+  		$('#myInput').trigger('focus')
+	})
+</script>
+
 <div class="loading-area" style="display:none;">
     <div class="loading-box"></div>
     <div class="loading-pic"></div>

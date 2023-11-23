@@ -49,8 +49,8 @@
 
         
             
-            <!-- Paises / STAR -->
-            <div class="container" style="padding: 60px 0px;">
+        <!-- Paises / STAR -->
+        <div class="container" style="padding: 60px 0px;">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="p-a30 bg-white m-b30">
@@ -62,7 +62,7 @@
                             </div>
                             <div class="row">
                                 @foreach ($pages as $page)
-                                    <div class="col-md-3 aracode-flags">
+                                    <div class="col-md-2 aracode-flags">
                                             <a href=" {{ route($page->route) }} " class="ara-contenedor-redondo">
                                                 @if ($page->country)
                                                     <img style="height: 70px; width: auto; " src="{{ $page->country->image }}" alt="">
@@ -78,8 +78,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- Paises / END -->
+        </div>
+        <!-- Paises / END -->
 
         
         
