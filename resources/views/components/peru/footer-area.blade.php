@@ -28,7 +28,8 @@
                             <ul>
                                 @if (count($testimonies) > 0)
                                     @foreach ($testimonies as $testimony)
-                                        <li><a href="#" data-toggle="modal"
+                                        <li><a href="javascript:openModalTestimony('{{ $testimony->title }}', '{{ $testimony->video }}')"
+                                                data-toggle="modal"
                                                 data-target="#testimonios">{{ $testimony->title }}</a></li>
                                     @endforeach
                                 @endif
@@ -101,9 +102,10 @@
     </footer>
     <!-- Footer END-->
     <script>
-        function openModalTestimony() {
-
-            $('#testimonios').modal('show')
+        function openModalTestimony(title, video) {
+            $('#testimoniosTitle').html(title);
+            $('#testimoniosBody').html(video);
+            $('#testimonios').modal('show');
         }
     </script>
     <!-- Modal -->
@@ -117,8 +119,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
-                    ...
+                <div class="modal-body" id="testimoniosBody">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
