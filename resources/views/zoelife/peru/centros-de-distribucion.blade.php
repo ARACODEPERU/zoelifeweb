@@ -1,14 +1,13 @@
 @extends('layouts.peru')
 
 @section('content')
-
     <!-- Encabezado inicio -->
     <x-peru.header-area></x-peru.header-area>
     <!-- Encabezado fin -->
 
     <!-- inner page banner -->
     <div class="dez-bnr-inr overlay-black-middle" style="background-image:url({{ $banner->content }});">
-        
+
     </div>
     <!-- inner page banner END -->
 
@@ -31,188 +30,52 @@
                 <ul class="filters" data-toggle="buttons">
                     <li data-filter="" class="btn active">
                         <input type="radio">
-                        <a href="#" class="site-button-secondry"><span>Todos</span></a> 
+                        <a href="#" class="site-button-secondry"><span>Todos</span></a>
                     </li>
-                    <li data-filter="amazonas" class="btn">
-                        <input type="radio" >
-                        <a href="#" class="site-button-secondry"><span>Amazonas</span></a> 
-                    </li>
-                    <li data-filter="ancash" class="btn">
-                        <input type="radio">
-                        <a href="#" class="site-button-secondry"><span>Áncash</span></a> 
-                    </li>
-                    <li data-filter="apurimac" class="btn">
-                        <input type="radio">
-                        <a href="#" class="site-button-secondry "><span>Apurímac</span></a> 
-                    </li>
-                    <li data-filter="arequipa" class="btn">
-                        <input type="radio">
-                        <a href="#" class="site-button-secondry"><span>Arequipa</span></a> 
-                    </li>
-                    <li data-filter="ayacucho" class="btn">
-                        <input type="radio">
-                        <a href="#" class="site-button-secondry"><span>Ayacucho</span></a> 
-                    </li>
-                    <li data-filter="cajamarca" class="btn">
-                        <input type="radio">
-                        <a href="#" class="site-button-secondry"><span>Cajamarca</span></a> 
-                    </li>
-                    <li data-filter="cuzco" class="btn">
-                        <input type="radio">
-                        <a href="#" class="site-button-secondry"><span>Cusco</span></a> 
-                    </li>
-                    <li data-filter="huancavelica" class="btn">
-                        <input type="radio">
-                        <a href="#" class="site-button-secondry"><span>Huancavelica</span></a> 
-                    </li>
-                    <li data-filter="huanuco" class="btn">
-                        <input type="radio">
-                        <a href="#" class="site-button-secondry"><span>Huánuco</span></a> 
-                    </li>
-                    <li data-filter="ica" class="btn">
-                        <input type="radio">
-                        <a href="#" class="site-button-secondry"><span>Ica</span></a> 
-                    </li>
-                    <li data-filter="junin" class="btn">
-                        <input type="radio">
-                        <a href="#" class="site-button-secondry"><span>Junín</span></a> 
-                    </li>
-                    <li data-filter="window" class="btn">
-                        <input type="radio">
-                        <a href="#" class="site-button-secondry"><span>La Libertad</span></a> 
-                    </li>
-                    <li data-filter="window" class="btn">
-                        <input type="radio">
-                        <a href="#" class="site-button-secondry"><span>Lambayeque</span></a> 
-                    </li>
-                    <li data-filter="lima" class="btn">
-                        <input type="radio">
-                        <a href="#" class="site-button-secondry"><span>Lima</span></a> 
-                    </li>
-                    <li data-filter="loreto" class="btn">
-                        <input type="radio">
-                        <a href="#" class="site-button-secondry"><span>Loreto</span></a> 
-                    </li>
-                    <li data-filter="madre de dios" class="btn">
-                        <input type="radio">
-                        <a href="#" class="site-button-secondry"><span>Madre de Dios</span></a> 
-                    </li>
-                    <li data-filter="moquegua" class="btn">
-                        <input type="radio">
-                        <a href="#" class="site-button-secondry"><span>Moquegua</span></a> 
-                    </li>
-                    <li data-filter="pasco" class="btn">
-                        <input type="radio">
-                        <a href="#" class="site-button-secondry"><span>Pasco</span></a> 
-                    </li>
-                    <li data-filter="piura" class="btn">
-                        <input type="radio">
-                        <a href="#" class="site-button-secondry"><span>Piura</span></a> 
-                    </li>
-                    <li data-filter="puno" class="btn">
-                        <input type="radio">
-                        <a href="#" class="site-button-secondry"><span>Puno</span></a> 
-                    </li>
-                    <li data-filter="san martin" class="btn">
-                        <input type="radio">
-                        <a href="#" class="site-button-secondry"><span>San Martín</span></a> 
-                    </li>
-                    <li data-filter="tacna" class="btn">
-                        <input type="radio">
-                        <a href="#" class="site-button-secondry"><span>Tacna</span></a> 
-                    </li>
-                    <li data-filter="tumbes" class="btn">
-                        <input type="radio">
-                        <a href="#" class="site-button-secondry"><span>Tumbes</span></a> 
-                    </li>
-                    <li data-filter="ucayali" class="btn">
-                        <input type="radio">
-                        <a href="#" class="site-button-secondry"><span>Ucayali</span></a> 
-                    </li>
+                    @if (count($departments) > 0)
+                        @foreach ($departments as $department)
+                            <li data-filter="{{ $department->name }}" class="btn">
+                                <input type="radio">
+                                <a href="#" class="site-button-secondry"><span>{{ $department->name }}</span></a>
+                            </li>
+                        @endforeach
+                    @endif
                 </ul>
             </div>
             <ul id="masonry" class="dez-gallery-listing row gallery-grid-4 m-b0 mfp-gallery">
-                <li class="card-container col-md-4 lima">
-                    <div class="dez-box dez-gallery-box">
-                        <a href="{{ route('web_peru_centros_lima') }}"> 
-                            <div class="dez-thum dez-img-overlay1 dez-img-effect"> 
-                                <img src="themes/zoelife/peru/images/center/lima.jpg"  alt="Lima"> 
+                @if (count($centers) > 0)
+                    @foreach ($centers as $center)
+                        <li class="card-container col-md-4 {{ $center->district->department->name }}">
+                            <div class="dez-box dez-gallery-box">
+                                <a href="{{ route('web_peru_centros_lima') }}">
+                                    <div class="dez-thum dez-img-overlay1 dez-img-effect">
+                                        <img src="{{ asset('storage/' . $center->image) }}" alt="Lima">
+                                    </div>
+                                </a>
                             </div>
-                        </a>
-                    </div>
-                </li>
-                <li class="card-container col-md-4 cuzco">
+                        </li>
+                    @endforeach
+                @endif
+
+                {{-- <li class="card-container col-md-4 ayacucho">
                     <div class="dez-box dez-gallery-box">
-                        <a href=""> 
-                            <div class="dez-thum dez-img-overlay1 dez-img-effect"> 
-                                <img src="themes/zoelife/peru/images/center/cuzco.jpg"  alt=""> 
-                                <!--
-                                <div class="overlay-bx">
-                                    <div class="overlay-icon"> <a href=""> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="themes/zoelife/peru/images/center/cuzco.jpg" class="mfp-link" title="Cuzco"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
+                        <div class="dez-thum dez-img-overlay1 dez-img-effect">
+                            <a href="">
+                                <img src="themes/zoelife/peru/images/center/ayacucho.jpg" alt="">
+                            </a>
+                            <div class="overlay-bx">
+                                <div class="overlay-icon"> <a href=""> <i class="fa fa-link icon-bx-xs"></i> </a>
+                                    <a href="themes/zoelife/peru/images/center/ayacucho.jpg" class="mfp-link"
+                                        title="Ayacucho"> <i class="fa fa-picture-o icon-bx-xs"></i> </a>
                                 </div>
-                                -->
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li class="card-container col-md-4 ancash">
-                    <div class="dez-box dez-gallery-box">
-                        <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href=""> <img src="themes/zoelife/peru/images/center/nuevo-chimbote.jpg"  alt=""> </a>
-                            <div class="overlay-bx">
-                                <div class="overlay-icon"> <a href=""> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="themes/zoelife/peru/images/center/nuevo-chimbote.jpg" class="mfp-link" title="Nuevo Chimbote"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
                             </div>
                         </div>
                     </div>
-                </li>
-                <li class="card-container col-md-4 cajamarca">
-                    <div class="dez-box dez-gallery-box">
-                        <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href=""> <img src="themes/zoelife/peru/images/center/cajamarca.jpg"  alt=""> </a>
-                            <div class="overlay-bx">
-                                <div class="overlay-icon"> <a href=""> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="themes/zoelife/peru/images/center/cajamarca.jpg" class="mfp-link" title="Cajamarca"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="card-container col-md-4 ancash">
-                    <div class="dez-box dez-gallery-box">
-                        <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href=""> <img src="themes/zoelife/peru/images/center/chimbote.jpg"  alt=""> </a>
-                            <div class="overlay-bx">
-                                <div class="overlay-icon"> <a href=""> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="themes/zoelife/peru/images/center/chimbote.jpg" class="mfp-link" title="Chimbote"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="card-container col-md-4 tacna">
-                    <div class="dez-box dez-gallery-box">
-                        <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href=""> <img src="themes/zoelife/peru/images/center/tacna.jpg"  alt=""> </a>
-                            <div class="overlay-bx">
-                                <div class="overlay-icon"> <a href=""> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="themes/zoelife/peru/images/center/tacna.jpg" class="mfp-link" title="Tacna"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="card-container col-md-4 arequipa">
-                    <div class="dez-box dez-gallery-box">
-                        <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href=""> <img src="themes/zoelife/peru/images/center/arequipa.jpg"  alt=""> </a>
-                            <div class="overlay-bx">
-                                <div class="overlay-icon"> <a href=""> <i class="fa fa-link icon-bx-xs"></i> </a> <a href="themes/zoelife/peru/images/center/arequipa.jpg" class="mfp-link" title="Arequipa"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="card-container col-md-4 ayacucho">
-                    <div class="dez-box dez-gallery-box">
-                        <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href=""> <img src="themes/zoelife/peru/images/center/ayacucho.jpg"  alt=""> </a>
-                            <div class="overlay-bx">
-                                <div class="overlay-icon"> <a href=""> <i class="fa fa-link icon-bx-xs"></i> </a> <a  href="themes/zoelife/peru/images/center/ayacucho.jpg" class="mfp-link" title="Ayacucho"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
+                </li> --}}
             </ul>
             <!-- Gallery END -->
             <!-- Pagination start -->
-            <div class="pagination-bx">
+            {{-- <div class="pagination-bx">
                 <ul class="pagination">
                     <li class="previous"><a href="javascript:void(0);"><i class="fa fa-angle-double-left"></i></a></li>
                     <li class="active"><a href="javascript:void(0);">1</a></li>
@@ -220,13 +83,13 @@
                     <li><a href="javascript:void(0);">3</a></li>
                     <li class="next"><a href="javascript:void(0);"><i class="fa fa-angle-double-right"></i></a></li>
                 </ul>
-            </div>
+            </div> --}}
             <!-- Pagination END -->
         </div>
         <!-- Left & right section  END -->
     </div>
 
-    
+
     <!-- Paises / STAR -->
     <div class="container" style="padding: 60px 0px;">
         <div class="row">
@@ -241,13 +104,14 @@
                     <div class="row">
                         @foreach ($pages as $page)
                             <div class="col-md-2 aracode-flags">
-                                    <a href=" {{ route($page->route) }} " class="ara-contenedor-redondo">
-                                        @if ($page->country)
-                                            <img style="height: 70px; width: auto; " src="{{ $page->country->image }}" alt="">
-                                        @else
-                                            SIN PAIS
-                                        @endif
-                                    </a>
+                                <a href=" {{ route($page->route) }} " class="ara-contenedor-redondo">
+                                    @if ($page->country)
+                                        <img style="height: 70px; width: auto; " src="{{ $page->country->image }}"
+                                            alt="">
+                                    @else
+                                        SIN PAIS
+                                    @endif
+                                </a>
                                 <br>
                                 <span><b>{{ $page->country->description }}</b></span>
                             </div>
@@ -264,8 +128,4 @@
     <!-- Footer -->
     <x-peru.footer-area></x-peru.footer-area>
     <!-- Footer END-->
-
-
-
-
 @endsection
