@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\LocalSale;
 use Illuminate\Http\Request;
 use Modules\CMS\Entities\CmsPage;
 use Modules\CMS\Entities\CmsSection;
@@ -58,7 +59,7 @@ class WebController extends Controller
 
     public function perunosotros()
     {
-        $banner= CmsSection::where('component_id', 'peru_banner_nosotros_7')
+        $banner = CmsSection::where('component_id', 'peru_banner_nosotros_7')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
@@ -95,7 +96,7 @@ class WebController extends Controller
 
     public function peruproductos()
     {
-        $banner= CmsSection::where('component_id', 'peru_banner_productos_8')
+        $banner = CmsSection::where('component_id', 'peru_banner_productos_8')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
@@ -147,7 +148,7 @@ class WebController extends Controller
 
     public function perutestimonios()
     {
-        $banner= CmsSection::where('component_id', 'peru_banner_testimonios_9')
+        $banner = CmsSection::where('component_id', 'peru_banner_testimonios_9')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
@@ -172,7 +173,7 @@ class WebController extends Controller
 
     public function perucentros()
     {
-        $banner= CmsSection::where('component_id', 'peru_banner_centros_de_distribucion_10')
+        $banner = CmsSection::where('component_id', 'peru_banner_centros_de_distribucion_10')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
@@ -189,15 +190,25 @@ class WebController extends Controller
             ->whereNotNull('country_id')
             ->get();
 
+        $centers = LocalSale::with('district.department')->get();
+
+        $departments = LocalSale::join('districts', 'ubigeo', 'districts.id')
+            ->join('departments', 'districts.department_id', 'departments.id')
+            ->select('districts.department_id', 'departments.name')
+            ->groupBy('departments.name', 'districts.department_id')
+            ->get();
+
         return view('zoelife/peru.centros-de-distribucion', [
             'banner' => $banner,
-            'pages' => $pages
+            'pages' => $pages,
+            'centers' => $centers,
+            'departments' => $departments
         ]);
     }
 
     public function perueventos()
     {
-        $banner= CmsSection::where('component_id', 'peru_banner_eventos_11')
+        $banner = CmsSection::where('component_id', 'peru_banner_eventos_11')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
@@ -227,7 +238,7 @@ class WebController extends Controller
 
     public function peruestrellas()
     {
-        $banner= CmsSection::where('component_id', 'peru_banner_alcanzando_las_estrellas_12')
+        $banner = CmsSection::where('component_id', 'peru_banner_alcanzando_las_estrellas_12')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
@@ -252,7 +263,7 @@ class WebController extends Controller
 
     public function perucontacto()
     {
-        $banner= CmsSection::where('component_id', 'peru_banner_contacto_13')
+        $banner = CmsSection::where('component_id', 'peru_banner_contacto_13')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
@@ -276,7 +287,7 @@ class WebController extends Controller
     }
 
 
-    
+
 
     public function boliviainicio()
     {
@@ -287,5 +298,4 @@ class WebController extends Controller
     {
         return view('zoelife/ecuador.index');
     }
-
 }
