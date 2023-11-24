@@ -51,7 +51,7 @@
                     <!-- Website Logo -->
                     <div class="logo-header logo-dark mostion">
                         <a href="">
-                            <img src="themes/zoelife/global/images/logoChico.png" alt="" style="height: 45px;">
+                            <img src="{{ $header[5]->content }}" alt="" style="height: 45px;">
                         </a>
                     </div>
                     <!-- Nav Toggle Button -->
