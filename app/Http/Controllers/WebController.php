@@ -6,6 +6,8 @@ use App\Models\LocalSale;
 use Illuminate\Http\Request;
 use Modules\CMS\Entities\CmsPage;
 use Modules\CMS\Entities\CmsSection;
+use Modules\CMS\Entities\CmsTestimony;
+use Modules\Onlineshop\Entities\OnliItem;
 
 class WebController extends Controller
 {
@@ -165,9 +167,15 @@ class WebController extends Controller
             ->whereNotNull('country_id')
             ->get();
 
+        $products = OnliItem::where('status', true)->get();
+
+        $testimonies = CmsTestimony::with('product')->get();
+
         return view('zoelife/peru.testimonios', [
-            'banner' => $banner,
-            'pages' => $pages
+            'banner'        => $banner,
+            'pages'         => $pages,
+            'products'      => $products,
+            'testimonies'   => $testimonies
         ]);
     }
 
