@@ -75,7 +75,7 @@
             </ul>
             <!-- Gallery END -->
             <!-- Pagination start -->
-            <div class="pagination-bx">
+            {{-- <div class="pagination-bx">
                 <ul class="pagination">
                     <li class="previous"><a href="javascript:void(0);"><i class="fa fa-angle-double-left"></i></a></li>
                     <li class="active"><a href="javascript:void(0);">1</a></li>
@@ -83,7 +83,7 @@
                     <li><a href="javascript:void(0);">3</a></li>
                     <li class="next"><a href="javascript:void(0);"><i class="fa fa-angle-double-right"></i></a></li>
                 </ul>
-            </div>
+            </div> --}}
             <!-- Pagination END -->
         </div>
         <!-- Left & right section  END -->
