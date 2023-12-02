@@ -12,12 +12,12 @@
         <div class="dez-bnr-inr overlay-black-middle"
             style="background-image:url(themes/zoelife/peru/images/header-page/contactanosPeru.jpg);">
             <!--
-                                                            <div class="container">
-                                                                <div class="dez-bnr-inr-entry">
-                                                                    <h1 class="text-white">Contact Us</h1>
+                                                                <div class="container">
+                                                                    <div class="dez-bnr-inr-entry">
+                                                                        <h1 class="text-white">Contact Us</h1>
+                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                            -->
+                                                                -->
         </div>
         <!-- inner page banner END -->
 
@@ -106,7 +106,7 @@
                             <div class="post card-container col-md-4">
                                 <div class="blog-post blog-grid date-style-2">
                                     <div class="dez-post-media dez-img-effect zoom-slow">
-                                        {!! $testimony->description !!}
+                                        {!! $testimony->video !!}
                                     </div>
                                     <div class="dez-post-info">
                                         <div class="dez-post-title ">
