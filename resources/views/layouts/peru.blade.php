@@ -35,8 +35,8 @@
 	<link rel="stylesheet" type="text/css" class="skin" href="{{ asset('themes/zoelife/peru/css/aracode.css') }}">
 	
 	<!-- REVOLUTION SLIDER CSS -->
-	<link rel="stylesheet" type="text/css" href="{{ asset('themes/zoelife/peru/plugins/revolution/revolution/css/settings.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('themes/zoelife/peru/plugins/revolution/revolution/css/navigation.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('themes/zoelife/peru/plugins/revolution/css/settings.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('themes/zoelife/peru/plugins/revolution/css/navigation.css') }}">
 
 	
 
