@@ -51,7 +51,7 @@
                     <!-- Website Logo -->
                     <div class="logo-header logo-dark mostion">
                         <a href="">
-                            <img src="themes/zoelife/global/images/logoChico.png" alt="" style="height: 45px;">
+                            <img src="{{ $header[5]->content }}" alt="" style="height: 45px;">
                         </a>
                     </div>
                     <!-- Nav Toggle Button -->
@@ -79,7 +79,10 @@
                             <li> <a href="{{ route('web_peru_productos') }}">Productos</a>
                                 <ul class="sub-menu">
                                     @foreach ($products as $product)
-                                        <li><a href="{{ route('web_peru_coffee_3_en_1') }}">{{ $product->name }}</a>
+                                        <li>
+                                            <a href="{{ route('web_peru_producto_descripcion', $product->id) }}">
+                                                {{ $product->name }}
+                                            </a>
                                         </li>
                                     @endforeach
                                 </ul>

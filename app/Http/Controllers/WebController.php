@@ -121,30 +121,15 @@ class WebController extends Controller
         ]);
     }
 
-    public function perucoffee3en1()
+    public function peruproductodescripcion($id)
     {
-        return view('zoelife/peru.coffee-3-en-1');
+        $product = OnliItem::find($id);
+
+        return view('zoelife/peru.producto-descripcion', [
+            'product' => $product
+        ]);
     }
 
-    public function peruharinademoringa()
-    {
-        return view('zoelife/peru.harina-de-moringa');
-    }
-
-    public function perupower()
-    {
-        return view('zoelife/peru.power');
-    }
-
-    public function perualkalino()
-    {
-        return view('zoelife/peru.alkalino');
-    }
-
-    public function peruaceitemoringa()
-    {
-        return view('zoelife/peru.aceite-de-moringa');
-    }
 
     /*------------ PRODUCTOS - END ------------*/
 
