@@ -78,11 +78,10 @@
                             <li> <a href="{{ route('web_peru_nosotros') }}">Nosotros</a> </li>
                             <li> <a href="{{ route('web_peru_productos') }}">Productos</a>
                                 <ul class="sub-menu">
-                                    <li><a href="{{ route('web_peru_coffee_3_en_1') }}">Coffee 3 en 1</a></li>
-                                    <li><a href="{{ route('web_peru_harina_de_moringa') }}">Harina de Moringa</a></li>
-                                    <li><a href="{{ route('web_peru_power') }}">Power</a></li>
-                                    <li><a href="{{ route('web_peru_alkalino') }}">Alkalino</a></li>
-                                    <li><a href="{{ route('web_peru_aceite_de_moringa') }}">Aceite de Moringa</a></li>
+                                    @foreach ($products as $product)
+                                        <li><a href="{{ route('web_peru_coffee_3_en_1') }}">{{ $product->name }}</a>
+                                        </li>
+                                    @endforeach
                                 </ul>
                             </li>
                             <li> <a href="{{ route('web_peru_testimonios') }}">Testimonios</a> </li>

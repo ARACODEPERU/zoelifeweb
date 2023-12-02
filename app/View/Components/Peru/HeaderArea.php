@@ -7,10 +7,12 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 use Modules\CMS\Entities\CmsSection;
+use Modules\Onlineshop\Entities\OnliItem;
 
 class HeaderArea extends Component
 {
     protected $header;
+    protected $products;
 
     public function __construct()
     {
@@ -23,6 +25,8 @@ class HeaderArea extends Component
             )
             ->orderBy('cms_section_items.position')
             ->get();
+
+        $this->products  = OnliItem::all();
     }
 
     /**
@@ -31,7 +35,8 @@ class HeaderArea extends Component
     public function render(): View|Closure|string
     {
         return view('components.peru.header-area', [
-            'header' => $this->header
+            'header' => $this->header,
+            'products' => $this->products
         ]);
     }
 }
