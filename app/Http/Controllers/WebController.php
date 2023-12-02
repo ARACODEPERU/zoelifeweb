@@ -123,10 +123,12 @@ class WebController extends Controller
 
     public function peruproductodescripcion($id)
     {
-        $product = OnliItem::find($id);
+        $product = OnliItem::where('id', $id)->first();
+        $testimonies = CmsTestimony::where('item_id', $id)->get();
 
         return view('zoelife/peru.producto-descripcion', [
-            'product' => $product
+            'product' => $product,
+            'testimonies' => $testimonies
         ]);
     }
 
