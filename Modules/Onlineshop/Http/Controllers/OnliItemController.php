@@ -190,7 +190,7 @@ class OnliItemController extends Controller
             'name'                      => 'required|max:255',
             ///'description'               => 'required|max:255',
             'description'               => 'required',
-            'image'                     => 'required|image|mimes:jpeg,png,gif|max:2048'
+            //'image'                     => 'required|image|mimes:jpeg,png,gif|max:2048'
         ], [
             'item_id.required' => 'Elija un Curso',
             'item_id.unique'   => 'Ya existe como item para la web',
@@ -232,7 +232,6 @@ class OnliItemController extends Controller
 
             $OnliItem->image = $path;
         }
-
         $OnliItem->save();
     }
 
