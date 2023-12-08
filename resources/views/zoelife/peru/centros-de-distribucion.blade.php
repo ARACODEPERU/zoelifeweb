@@ -47,7 +47,7 @@
                     @foreach ($centers as $center)
                         <li class="card-container col-md-4 {{ $center->district->department->name }}">
                             <div class="dez-box dez-gallery-box">
-                                <a href="" data-toggle="modal" data-target="#centros">
+                                <a href="#" onclick="openModalCenterDetails(event, {{ json_encode($center) }})">
                                     <div class="dez-thum dez-img-overlay1 dez-img-effect">
                                         <img src="{{ asset('storage/' . $center->image) }}" alt="Lima">
                                     </div>
@@ -104,7 +104,7 @@
                     <div class="row">
                         @foreach ($pages as $page)
                             <div class="col-md-2 aracode-flags">
-                                <a href=" {{ route($page->route) }} "  class="ara-contenedor-redondo">
+                                <a href=" {{ route($page->route) }} " class="ara-contenedor-redondo">
                                     @if ($page->country)
                                         <img style="height: 70px; width: auto; " src="{{ $page->country->image }}"
                                             alt="">
@@ -124,54 +124,74 @@
     <!-- Paises / END -->
 
     <br>
-    
-    <!-- Modal -->
-    <div class="modal fade" id="centros" tabindex="-1" role="dialog" aria-labelledby="centrosTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-          <div class="modal-content">
-              <div class="modal-header ara-modal-title">
-                <h5 class="modal-title" id="centrosTitle">Centro de Distribución:</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <div class="row">
-                    <div class="col-md-12">
-                        <img src="themes/zoelife/peru/images/Independencia-Lima-Peru.jpg" alt="">
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-md-6">
-                        <b>Representante:</b> Jesus Anaya Aguirre
-                    </div>
-                    <div class="col-md-6">
-                        <b>Teléfono:</b> 977627207
-                    </div>
-                    <div class="col-md-6">
-                        <b>Correo Electrónico:</b> connexion.jesus@gmail.com
-                    </div>
-                    <div class="col-md-6">
-                        <b>Dirección:</b> Av. Pettit touars 1425 - San Isidro
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-md-12">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3902.902428081117!2d-77.0607342!3d-11.981253!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105ce4b619a87fb%3A0x6471351404e01c07!2sMercado%20Los%20Incas!5e0!3m2!1ses-419!2spe!4v1700758432787!5m2!1ses-419!2spe" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-              </div>
-          </div>
-        </div>
-      </div>
-  
-      <br>
 
+    <!-- Modal -->
+    <div class="modal fade" id="modal-centros" tabindex="-1" role="dialog" aria-labelledby="centrosTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header ara-modal-title">
+                    <h5 class="modal-title" id="centrosTitle">Centro de Distribución:</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img id="modal-centros-img" src="" alt="">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <b>Representante:</b><span id="modal-centros-res"> Jesus Anaya Aguirre</span>
+                        </div>
+                        <div class="col-md-6">
+                            <b>Teléfono:</b> <span id="modal-centros-tel"> Jesus Anaya Aguirre</span>
+                        </div>
+                        <div class="col-md-6">
+                            <b>Correo Electrónico:</b> <span id="modal-centros-ele"> Jesus Anaya Aguirre</span>
+                        </div>
+                        <div class="col-md-6">
+                            <b>Dirección:</b> <span id="modal-centros-dir"> Jesus Anaya Aguirre</span>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12" id="modal-centros-ifr">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <script>
+        function openModalCenterDetails(event, centerObject) {
+            // Evitar que el enlace abra el modal directamente
+            event.preventDefault();
+            console.log(centerObject)
+
+            // Cambiar el atributo src de la imagen en el modal
+            document.getElementById('modal-centros-img').src = centerObject.image;
+            document.getElementById('modal-centros-res').innerHTML = centerObject.agent;
+            document.getElementById('modal-centros-tel').innerHTML = centerObject.phone;
+            document.getElementById('modal-centros-ele').innerHTML = centerObject.email;
+            document.getElementById('modal-centros-dir').innerHTML = centerObject.address;
+            document.getElementById('modal-centros-ifr').innerHTML = centerObject.map;
+            // Abre el modal después de procesar la lógica
+            // ...
+
+            // Ejemplo: abrir modal usando Bootstrap
+            $('#modal-centros').modal('show');
+        }
+    </script>
     <!-- Footer -->
     <x-peru.footer-area></x-peru.footer-area>
     <!-- Footer END-->
