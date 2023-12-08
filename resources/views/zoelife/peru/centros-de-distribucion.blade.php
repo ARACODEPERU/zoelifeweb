@@ -179,7 +179,7 @@
             console.log(centerObject)
 
             // Cambiar el atributo src de la imagen en el modal
-            document.getElementById('modal-centros-img').src = centerObject.image;
+            document.getElementById('modal-centros-img').src = "{{ asset('storage') }}" + "/" + centerObject.image;
             document.getElementById('modal-centros-res').innerHTML = centerObject.agent;
             document.getElementById('modal-centros-tel').innerHTML = centerObject.phone;
             document.getElementById('modal-centros-ele').innerHTML = centerObject.email;
