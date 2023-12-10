@@ -104,7 +104,7 @@
                                                 </div>
                                                 <div class="gen-movie-action">
                                                     <div class="gen-btn-container button-1">
-                                                        <a href="single-movie.html" class="gen-button">
+                                                        <a href="{{ route('web_peru_inicio') }}" class="gen-button">
                                                             <i class="fa fa-leaf" aria-hidden="true"></i>
                                                             <span class="text">Ingresar Ahora</span>
                                                         </a>
@@ -144,7 +144,7 @@
                                                 </div>
                                                 <div class="gen-movie-action">
                                                     <div class="gen-btn-container button-1">
-                                                        <a href="single-movie.html" class="gen-button">
+                                                        <a href="{{ route('web_bolivia_inicio') }}" class="gen-button">
                                                             <i class="fa fa-leaf" aria-hidden="true"></i>
                                                             <span class="text">Ingresar Ahora</span>
                                                         </a>
@@ -184,7 +184,7 @@
                                                 </div>
                                                 <div class="gen-movie-action">
                                                     <div class="gen-btn-container button-1">
-                                                        <a href="single-movie.html" class="gen-button">
+                                                        <a href="{{ route('web_ecuador_inicio') }}" class="gen-button">
                                                             <i class="fa fa-leaf" aria-hidden="true"></i>
                                                             <span class="text">Ingresar Ahora</span>
                                                         </a>
@@ -224,7 +224,7 @@
                                                 </div>
                                                 <div class="gen-movie-action">
                                                     <div class="gen-btn-container button-1">
-                                                        <a href="single-movie.html" class="gen-button">
+                                                        <a href="{{ route('web_colombia_inicio') }}" class="gen-button">
                                                             <i class="fa fa-leaf" aria-hidden="true"></i>
                                                             <span class="text">Ingresar Ahora</span>
                                                         </a>
