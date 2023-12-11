@@ -110,8 +110,8 @@
                                                         </a>
                                                     </div>
                                                     <div class="gen-btn-container button-2">
-                                                        <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
-                                                            class="gen-button popup-youtube popup-vimeo popup-gmaps gen-button-link">
+                                                        <a href="{{ route('web_peru_testimonios') }}"
+                                                            class="gen-button gen-button-link">
                                                             <i aria-hidden="true" class="fa fa-play"></i> <span
                                                                 class="text">Banco de Testimonios</span>
                                                         </a>
@@ -150,8 +150,8 @@
                                                         </a>
                                                     </div>
                                                     <div class="gen-btn-container button-2">
-                                                        <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
-                                                            class="gen-button popup-youtube popup-vimeo popup-gmaps gen-button-link">
+                                                        <a href=""
+                                                            class="gen-button  gen-button-link">
                                                             <i aria-hidden="true" class="fa fa-play"></i> <span
                                                                 class="text">Banco de Testimonios</span>
                                                         </a>
@@ -190,8 +190,8 @@
                                                         </a>
                                                     </div>
                                                     <div class="gen-btn-container button-2">
-                                                        <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
-                                                            class="gen-button popup-youtube popup-vimeo popup-gmaps gen-button-link">
+                                                        <a href=""
+                                                            class="gen-button gen-button-link">
                                                             <i aria-hidden="true" class="fa fa-play"></i> <span
                                                                 class="text">Banco de Testimonios</span>
                                                         </a>
@@ -230,8 +230,8 @@
                                                         </a>
                                                     </div>
                                                     <div class="gen-btn-container button-2">
-                                                        <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
-                                                            class="gen-button popup-youtube popup-vimeo popup-gmaps gen-button-link">
+                                                        <a href=""
+                                                            class="gen-button gen-button-link">
                                                             <i aria-hidden="true" class="fa fa-play"></i> <span
                                                                 class="text">Banco de Testimonios</span>
                                                         </a>
@@ -264,14 +264,14 @@
                                                 </div>
                                                 <div class="gen-movie-action">
                                                     <div class="gen-btn-container button-1">
-                                                        <a href="single-movie.html" class="gen-button">
+                                                        <a href="{{ route('web_mexico_inicio') }}" class="gen-button">
                                                             <i class="fa fa-leaf" aria-hidden="true"></i>
                                                             <span class="text">Ingresar Ahora</span>
                                                         </a>
                                                     </div>
                                                     <div class="gen-btn-container button-2">
-                                                        <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
-                                                            class="gen-button popup-youtube popup-vimeo popup-gmaps gen-button-link">
+                                                        <a href=""
+                                                            class="gen-button gen-button-link">
                                                             <i aria-hidden="true" class="fa fa-play"></i> <span
                                                                 class="text">Banco de Testimonios</span>
                                                         </a>
