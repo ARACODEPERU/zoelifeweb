@@ -2,6 +2,7 @@
 
 namespace Modules\Onlineshop\Entities;
 
+use App\Models\Country;
 use App\Models\Product;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -24,7 +25,8 @@ class OnliItem extends Model
         'status',
         'additional',
         'additional1',
-        'additional2'
+        'additional2',
+        'country_id'
     ];
 
     protected static function newFactory()
@@ -35,5 +37,10 @@ class OnliItem extends Model
     public function getImageAttribute($value)
     {
         return ($value ? asset('storage/' . $value) : asset($value));
+    }
+
+    public function country(): HasOne
+    {
+        return $this->hasOne(Country::class, 'id', 'country_id');
     }
 }

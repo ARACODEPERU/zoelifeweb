@@ -15,6 +15,10 @@ const props = defineProps({
     tiny_api_key: {
         type: String,
         default: () => ({}),
+    },
+    countries: {
+        type: Object,
+        default: () => ({}),
     }
 });
 
@@ -52,7 +56,7 @@ const props = defineProps({
                     </li>
                 </ol>
             </nav>
-            <EditForm :item="item" :type="type" :tiny_api_key="tiny_api_key" /> 
+            <EditForm :countries="countries" :item="item" :type="type" :tiny_api_key="tiny_api_key" /> 
         </div>
     </AppLayout>
 </template>

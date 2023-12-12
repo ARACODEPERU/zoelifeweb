@@ -132,6 +132,9 @@
                                         Categoría
                                     </th>
                                     <th class="py-2 px-4 font-medium text-black dark:text-white">
+                                        País
+                                    </th>
+                                    <th class="py-2 px-4 font-medium text-black dark:text-white">
                                         Nombre
                                     </th>
                                     <th v-if="type == 1" class="py-2 px-4 font-medium text-black dark:text-white">
@@ -164,6 +167,11 @@
                                         </td>
                                         <td v-if="type == 1" class="py-2 px-2 dark:border-strokedark">
                                             {{ item.category_description }}
+                                        </td>
+                                        <td class="py-2 px-2 dark:border-strokedark">
+                                            <div v-if="item.country">
+                                                {{ item.country.description }}
+                                            </div>
                                         </td>
                                         <td class="py-2 px-2 dark:border-strokedark">
                                             {{ item.name }}

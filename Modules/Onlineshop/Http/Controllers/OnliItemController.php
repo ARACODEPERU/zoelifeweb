@@ -2,6 +2,7 @@
 
 namespace Modules\Onlineshop\Http\Controllers;
 
+use App\Models\Country;
 use App\Models\Parameter;
 use App\Models\Product;
 use Illuminate\Contracts\Support\Renderable;
@@ -45,7 +46,7 @@ class OnliItemController extends Controller
         } else {
             $items->latest();
         }
-
+        $items = $items->with('country');
         $items = $items->paginate(20)->onEachSide(2);
 
         return Inertia::render('Onlineshop::Items/List', [
@@ -69,6 +70,7 @@ class OnliItemController extends Controller
         //             ->from('onli_items');
         //     })
         //     ->get();
+        $countries = Country::where('status', true)->get();
 
         $products = Product::whereNotIn('id', function ($query) {
             $query->select('item_id')
@@ -80,7 +82,8 @@ class OnliItemController extends Controller
             'courses'   => $courses,
             'products'  => $products,
             'tiny_api_key' => env('TINY_API_KEY'),
-            'type'  => $this->P000009
+            'type'  => $this->P000009,
+            'countries' => $countries
         ]);
     }
 
@@ -143,7 +146,8 @@ class OnliItemController extends Controller
             'image'                     => $path,
             'status'                    => true,
             'additional'                => $request->get('additional'),
-            'additional1'                => $request->get('additional1')
+            'additional1'                => $request->get('additional1'),
+            'country_id'                => $request->get('country_id')
         ]);
 
         return redirect()->route('onlineshop_items')
@@ -168,11 +172,13 @@ class OnliItemController extends Controller
     public function edit($id)
     {
 
-        $item = OnliItem::find($id);
+        $item = OnliItem::with('country')->where('id', $id)->first();
+        $countries = Country::where('status', true)->get();
         return Inertia::render('Onlineshop::Items/Edit', [
             'item' => $item,
             'type'  => $this->P000009,
             'tiny_api_key' => env('TINY_API_KEY'),
+            'countries' => $countries
         ]);
     }
 
@@ -213,6 +219,7 @@ class OnliItemController extends Controller
         $OnliItem->additional = $request->get('additional');
         $OnliItem->additional1 = $request->get('additional1');
         $OnliItem->additional2 = $request->get('additional2');
+        $OnliItem->country_id = $request->get('country_id');
 
         // $path = 'img' . DIRECTORY_SEPARATOR . 'imagen-no-disponible.jpeg';
         // $destination = 'uploads' . DIRECTORY_SEPARATOR . 'products';

@@ -10,6 +10,10 @@
         ubigeo: {
             type: Object,
             default: () => ({}),
+        },
+        countries: {
+            type: Object,
+            default: () => ({}),
         }
     });
     
@@ -24,7 +28,7 @@
         </template>
         <div>
             <div class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8">
-                <CreateForm :users="users" :ubigeo="ubigeo" />
+                <CreateForm :countries="countries" :users="users" :ubigeo="ubigeo" />
             </div>
         </div>
     </AppLayout>

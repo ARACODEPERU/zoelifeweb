@@ -8,6 +8,7 @@
     import Keypad from '@/Components/Keypad.vue';
     import swal from 'sweetalert';
     import { ref } from 'vue';
+    import { Dropdown } from 'flowbite-vue'
 
     const props = defineProps({
         users: {
@@ -26,7 +27,19 @@
             type: Object,
             default: () => ({}),
         },
+        countries: {
+            type: Object,
+            default: () => ({}),
+        }
     });
+
+    const getImageCountry = (path) => {
+        if(path){
+            return assetUrl + path;
+        }else{
+            return null;
+        }
+    }
 
     const form = useForm({
         id: props.local.id,
@@ -40,7 +53,10 @@
         agent: props.local.agent,
         email: props.local.email,
         image: null,
-        image_view: assetUrl +'storage/'+ props.local.image
+        image_view: assetUrl +'storage/'+ props.local.image,
+        country_id: props.local.country_id ?? null,
+        country_icon: props.local.country_id ? getImageCountry(props.local.country.icon) : null,
+        country_description: props.local.country_id ? props.local.country.description : 'Seleccionar',
     });
 
     const updateEstablishment = () => {
@@ -94,6 +110,14 @@
             URL.revokeObjectURL(imageFile); // libera memoria
         }
     };
+
+
+
+const setCountry = (id, text, icon) => {
+    form.country_id = id;
+    form.country_description = text;
+    form.country_icon = assetUrl + icon;
+}
  </script>
 
 <template>
@@ -107,6 +131,29 @@
         </template>
 
         <template #form>
+            <div class="col-span-6 ">
+                <InputLabel value="País *" class="mb-1" />
+                <dropdown>
+                    <template #trigger="{ toggle }">
+                    <button class="w-full flex-shrink-0 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-500 bg-gray-100 border border-gray-300 rounded-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-white dark:border-gray-600" type="button" @click="toggle">
+                        <img v-show="form.country_icon" :src="form.country_icon" class="mr-1" style="width: 15px;"><span>{{ form.country_description }}</span> 
+                    </button>
+                    </template>
+                    <div class="z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-full dark:bg-gray-700">
+                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+                            <li v-for="(country, ke) in countries">
+                                <button @click="setCountry(country.id,country.description,country.icon)" type="button" class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white">
+                                    <div class="inline-flex items-center">
+                                        <img :src="getImageCountry(country.icon)" class="h-3.5 w-3.5 rounded-full mr-2" >
+                                        {{ country.description }}
+                                    </div>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </dropdown>
+                <InputError :message="form.errors.country_id" class="mt-2" />
+            </div>
             <div class="col-span-6 sm:col-span-3">
                 <InputLabel for="description" value="Descripción" />
                 <TextInput

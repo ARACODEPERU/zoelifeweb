@@ -20,7 +20,8 @@ class LocalSale extends Model
         'map',
         'agent',
         'email',
-        'image'
+        'image',
+        'country_id'
     ];
 
     public function getCreatedAtAttribute($value)
@@ -36,5 +37,9 @@ class LocalSale extends Model
     public function district(): HasOne
     {
         return $this->hasOne(District::class, 'id', 'ubigeo');
+    }
+    public function country(): HasOne
+    {
+        return $this->hasOne(Country::class, 'id', 'country_id');
     }
 }

@@ -185,7 +185,7 @@ class WebController extends Controller
             ->whereNotNull('country_id')
             ->get();
 
-        $centers = LocalSale::with('district.department')->get();
+        $centers = LocalSale::with('district.department')->where('country_id', 1)->get();
 
         $departments = LocalSale::join('districts', 'ubigeo', 'districts.id')
             ->join('departments', 'districts.department_id', 'departments.id')

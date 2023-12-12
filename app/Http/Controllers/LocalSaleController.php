@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Country;
 use App\Models\District;
 use App\Models\LocalSale;
 use App\Models\SaleDocumentType;
@@ -35,16 +36,9 @@ class LocalSaleController extends Controller
         } else {
             $locals->latest();
         }
-
-        $locals = $locals->select(
-            'local_sales.id',
-            'local_sales.description',
-            'local_sales.address',
-            'local_sales.phone'
-        )
-            ->selectRaw('(SELECT GROUP_CONCAT(name) FROM users WHERE users.local_id=local_sales.id) AS user_name')
-            ->paginate(10)->onEachSide(2);
-
+        $locals = $locals->with('country');
+        $locals = $locals->paginate(10)->onEachSide(2);
+        //dd($locals);
         return Inertia::render('Establishments/List', [
             'locals' => $locals,
             'filters' => request()->all('search'),
@@ -69,9 +63,13 @@ class LocalSaleController extends Controller
             )
             ->get();
         $users = User::all();
+
+        $countries = Country::where('status', true)->get();
+
         return Inertia::render('Establishments/Create', [
             'ubigeo' => $ubigeo,
-            'users' => $users
+            'users' => $users,
+            'countries' => $countries
         ]);
     }
 
@@ -117,7 +115,8 @@ class LocalSaleController extends Controller
             'map'           => $request->get('map'),
             'agent'         => $request->get('agent'),
             'email'         => $request->get('email'),
-            'image'         => $path
+            'image'         => $path,
+            'country_id'    => $request->get('country_id') ?? null
         ]);
 
         if ($request->get('user_id')) {
@@ -151,11 +150,14 @@ class LocalSaleController extends Controller
             )
             ->get();
 
+        $countries = Country::where('status', true)->get();
+
         return Inertia::render('Establishments/Edit', [
             'ubigeo' => $ubigeo,
             'users' => $users,
-            'local' => LocalSale::find($id),
-            'seller' => User::where('local_id', $id)->first()
+            'local' => LocalSale::with('country')->where('id', $id)->first(),
+            'seller' => User::where('local_id', $id)->first(),
+            'countries' => $countries
         ]);
     }
 
@@ -190,6 +192,7 @@ class LocalSaleController extends Controller
         $localsale->map = $request->get('map');
         $localsale->agent = $request->get('agent');
         $localsale->email = $request->get('email');
+        $localsale->country_id = $request->get('country_id') ?? null;
 
         $destination = 'uploads/stablishments';
         $file = $request->file('image');

@@ -163,6 +163,9 @@
                                         Acciones
                                     </th>
                                     <th class="py-2 px-4 font-medium text-black dark:text-white">
+                                        País
+                                    </th>
+                                    <th class="py-2 px-4 font-medium text-black dark:text-white">
                                         Nombre
                                     </th>
                                     <th class="py-2 px-4 font-medium text-black dark:text-white">
@@ -187,6 +190,11 @@
                                             >
                                             <font-awesome-icon :icon="faTrashAlt" />
                                         </button>
+                                    </td>
+                                    <td class="py-2 dark:border-strokedark">
+                                        <div v-if="local.country">
+                                            {{ local.country.description }}
+                                        </div>
                                     </td>
                                     <td class="py-2 dark:border-strokedark">
                                         {{ local.description }}

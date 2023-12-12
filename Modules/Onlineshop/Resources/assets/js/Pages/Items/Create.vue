@@ -19,6 +19,10 @@ const props = defineProps({
     type: {
         type: String,
         default: () => ({}),
+    },
+    countries: {
+        type: Object,
+        default: () => ({}),
     }
 });
 
@@ -56,7 +60,7 @@ const props = defineProps({
                     </li>
                 </ol>
             </nav>
-            <CreateForm :courses="courses" :products="products" :tiny_api_key="tiny_api_key" :type="type" /> 
+            <CreateForm :countries="countries" :courses="courses" :products="products" :tiny_api_key="tiny_api_key" :type="type" /> 
         </div>
     </AppLayout>
 </template>
