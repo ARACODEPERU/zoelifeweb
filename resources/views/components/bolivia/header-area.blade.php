@@ -81,7 +81,8 @@
                     <div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
                         <ul class="nav navbar-nav">
                             <li> <a href="{{ route('web_peru_inicio') }}">Home</a> </li>
-                            <li> <a href="{{ route('web_peru_nosotros') }}">Nosotros</a> </li>
+                            <li> <a href="">Nosotros</a> </li>
+                            <!--
                             <li> <a href="{{ route('web_peru_productos') }}">Productos</a>
                                 <ul class="sub-menu">
                                     @foreach ($products as $product)
@@ -92,13 +93,14 @@
                                         </li>
                                     @endforeach
                                 </ul>
-                            </li>
-                            <li> <a href="{{ route('web_peru_testimonios') }}">Testimonios</a> </li>
+                            </li>-->
+                            <li> <a href="">Testimonios</a> </li>
+                            <!--
                             <li> <a href="{{ route('web_peru_centros') }}">Centros de Distribución</a> </li>
-                            <li> <a href="{{ route('web_peru_eventos') }}">Eventos</a> </li>
-                            <li> <a href="{{ route('web_peru_alcanzando_las_estrellas') }}">Alcanzando las
+                            <li> <a href="{{ route('web_peru_eventos') }}">Eventos</a> </li>-->
+                            <li> <a href="">Alcanzando las
                                     Estrellas</a> </li>
-                            <li> <a href="{{ route('web_peru_contacto') }}">Contacto</a> </li>
+                            <li> <a href="">Contacto</a> </li>
                         </ul>
                     </div>
                 </div>
