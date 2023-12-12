@@ -97,4 +97,7 @@
     </div>
     <!-- Content END-->
     
+        <!-- Footer -->
+        <x-bolivia.footer-area></x-bolivia.footer-area>
+        <!-- Footer END-->
 @endsection
