@@ -98,7 +98,7 @@ class OnliItemController extends Controller
     {
 
         $this->validate($request, [
-            'item_id'                   => 'required|unique:onli_items,item_id',
+            'item_id'                   => 'required',
             'entitie'                   => 'required',
             'name'                      => 'required|max:255',
             ///'description'               => 'required|max:255',
