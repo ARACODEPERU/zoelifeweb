@@ -72,11 +72,13 @@ class OnliItemController extends Controller
         //     ->get();
         $countries = Country::where('status', true)->get();
 
-        $products = Product::whereNotIn('id', function ($query) {
-            $query->select('item_id')
-                ->from('onli_items')
-                ->where('onli_items.entitie', 'App-Models-Product');
-        })->get();
+        // $products = Product::whereNotIn('id', function ($query) {
+        //     $query->select('item_id')
+        //         ->from('onli_items')
+        //         ->where('onli_items.entitie', 'App-Models-Product');
+        // })->get();
+
+        $products = Product::get();
 
         return Inertia::render('Onlineshop::Items/Create', [
             'courses'   => $courses,
