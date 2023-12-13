@@ -190,7 +190,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="gen-btn-container button-2">
-                                                        <a href=""
+                                                        <a href="{{ route('web_ecuador_testimonios') }}"
                                                             class="gen-button gen-button-link">
                                                             <i aria-hidden="true" class="fa fa-play"></i> <span
                                                                 class="text">Banco de Testimonios</span>
@@ -230,7 +230,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="gen-btn-container button-2">
-                                                        <a href=""
+                                                        <a href="{{ route('web_colombia_testimonios') }}"
                                                             class="gen-button gen-button-link">
                                                             <i aria-hidden="true" class="fa fa-play"></i> <span
                                                                 class="text">Banco de Testimonios</span>
@@ -270,7 +270,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="gen-btn-container button-2">
-                                                        <a href=""
+                                                        <a href="{{ route('web_mexico_testimonios') }}"
                                                             class="gen-button gen-button-link">
                                                             <i aria-hidden="true" class="fa fa-play"></i> <span
                                                                 class="text">Banco de Testimonios</span>
