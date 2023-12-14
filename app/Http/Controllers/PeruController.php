@@ -39,7 +39,7 @@ class PeruController extends Controller
         ]);
     }
 
-    public function perunosotros()
+    public function nosotros()
     {
         $banner = CmsSection::where('component_id', 'peru_banner_nosotros_7')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
