@@ -1,8 +1,8 @@
-@extends('layouts.colombia')
+@extends('layouts.bolivia')
 
 @section('content')
     <!-- Encabezado inicio -->
-    <x-colombia.header-area></x-colombia.header-area>
+    <x-bolivia.header-area></x-bolivia.header-area>
     <!-- Encabezado fin -->
 
     <!-- Content -->
@@ -10,7 +10,7 @@
 
         <!-- inner page banner -->
         <div class="dez-bnr-inr overlay-black-middle"
-            style="background-image:url(themes/zoelife/colombia/images/header-page/contactanoscolombia.jpg);">
+            style="background-image:url(themes/zoelife/bolivia/images/header-page/contactanosbolivia.jpg);">
             <!--
                                                                             <div class="container">
                                                                                 <div class="dez-bnr-inr-entry">
@@ -25,8 +25,8 @@
         <div class="breadcrumb-row">
             <div class="container">
                 <ul class="list-inline">
-                    <li><a href="{{ route('web_colombia_inicio') }}">Home</a></li>
-                    <li><a href="{{ route('web_colombia_inicio') }}">Productos</a></li>
+                    <li><a href="{{ route('web_bolivia_inicio') }}">Home</a></li>
+                    <li><a href="{{ route('web_bolivia_inicio') }}">Productos</a></li>
                     <li>Coffe 3 en 1</li>
                 </ul>
             </div>
@@ -59,12 +59,12 @@
 
         <!-- Why Choose Us -->
         <div class="section-full text-white bg-img-fix p-t70 p-b40 overlay-black-dark choose-us"
-            style="background-image:url(themes/zoelife/colombia/images/background/fondo.jpg);">
+            style="background-image:url(themes/zoelife/bolivia/images/background/fondo.jpg);">
             <div class="container">
                 <div class="section-head  text-center text-white">
                     <h2 class="h2">Recomendaciones <span class="text-primary"> de Uso Sugerido</span></h2>
                     <div class="dez-separator text-primary style-icon border-white"><img alt=""
-                            src="themes/zoelife/colombia/images/leaf-green.png" /></div>
+                            src="themes/zoelife/bolivia/images/leaf-green.png" /></div>
                 </div>
                 <div class="row">
                     <div class="col-md-6">
@@ -149,6 +149,6 @@
     <!-- Content END-->
 
     <!-- Footer -->
-    <x-colombia.footer-area></x-colombia.footer-area>
+    <x-bolivia.footer-area></x-bolivia.footer-area>
     <!-- Footer END-->
 @endsection

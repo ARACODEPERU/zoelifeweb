@@ -1,13 +1,13 @@
-@extends('layouts.colombia')
+@extends('layouts.bolivia')
 
 @section('content')
     <!-- Encabezado inicio -->
-    <x-colombia.header-area></x-colombia.header-area>
+    <x-bolivia.header-area></x-bolivia.header-area>
     <!-- Encabezado fin -->
 
     <!-- inner page banner -->
     <div class="dez-bnr-inr overlay-black-middle"
-        style="background-image:url(themes/zoelife/colombia/images/header-page/centroscolombia.jpg);">
+        style="background-image:url(themes/zoelife/bolivia/images/header-page/centrosbolivia.jpg);">
         <!--
                         <div class="container">
                             <div class="dez-bnr-inr-entry">
@@ -109,6 +109,6 @@
     <br>
 
     <!-- Footer -->
-    <x-colombia.footer-area></x-colombia.footer-area>
+    <x-bolivia.footer-area></x-bolivia.footer-area>
     <!-- Footer END-->
 @endsection

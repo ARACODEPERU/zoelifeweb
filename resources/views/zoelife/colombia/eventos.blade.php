@@ -1,4 +1,4 @@
-@extends('layouts.peru')
+@extends('layouts.colombia')
 
 @section('content')
     <!-- Encabezado inicio -->
@@ -18,7 +18,7 @@
         <div class="breadcrumb-row">
             <div class="container">
                 <ul class="list-inline">
-                    <li><a href="{{ route('web_peru_inicio') }}">Home</a></li>
+                    <li><a href="{{ route('web_colombia_inicio') }}">Home</a></li>
                     <li>Eventos</li>
                 </ul>
             </div>

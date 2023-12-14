@@ -1,8 +1,8 @@
-@extends('layouts.colombia')
+@extends('layouts.bolivia')
 
 @section('content')
     <!-- Encabezado inicio -->
-    <x-colombia.header-area></x-colombia.header-area>
+    <x-bolivia.header-area></x-bolivia.header-area>
     <!-- Encabezado fin -->
 
     <!-- Content -->
@@ -18,7 +18,7 @@
         <div class="breadcrumb-row">
             <div class="container">
                 <ul class="list-inline">
-                    <li><a href="{{ route('web_colombia_inicio') }}">Home</a></li>
+                    <li><a href="{{ route('web_bolivia_inicio') }}">Home</a></li>
                     <li>Nosotros</li>
                 </ul>
             </div>
@@ -26,18 +26,18 @@
         <!-- Breadcrumb row END -->
 
         <!-- Visión - Misión - Valores / STAR -->
-        <x-colombia.vision-mision-valores-area></x-colombia.vision-mision-valores-area>
+        <x-bolivia.vision-mision-valores-area></x-bolivia.vision-mision-valores-area>
         <!-- Visión - Misión - Valores / END -->
 
 
         <!-- Video Presentación / STAR -->
         <div class="section-full text-white bg-img-fix p-t70 p-b40 overlay-black-dark choose-us"
-            style="background-image:url(themes/zoelife/colombia/images/background/experiencia/cancun.jpg);">
+            style="background-image:url(themes/zoelife/bolivia/images/background/experiencia/cancun.jpg);">
             <div class="container">
                 <div class="section-head  text-center text-white">
                     <h2 class="h2">Experiencias <span class="text-primary"> Zoé Life</span></h2>
                     <div class="dez-separator text-primary style-icon border-white"><img alt=""
-                            src="themes/zoelife/colombia/images/leaf-green.png" /></div>
+                            src="themes/zoelife/bolivia/images/leaf-green.png" /></div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
@@ -63,7 +63,7 @@
                             <div class="col-lg-3 col-md-6 col-sm-6">
                                 <div class="dez-box m-b30">
                                     <div class="dez-media"> <a href="javascript:void(0);"> <img width="358"
-                                                height="460" src="themes/zoelife/colombia/images/our-team/pic5.jpg"
+                                                height="460" src="themes/zoelife/bolivia/images/our-team/pic5.jpg"
                                                 alt=""> </a>
                                         <div class="dez-info-has bg-primary">
                                             <ul class="dez-social-icon dez-border">
@@ -83,7 +83,7 @@
                             <div class="col-lg-3 col-md-6 col-sm-6">
                                 <div class="dez-box m-b30">
                                     <div class="dez-media"> <a href="javascript:void(0);"> <img width="358"
-                                                height="460" src="themes/zoelife/colombia/images/our-team/pic6.jpg"
+                                                height="460" src="themes/zoelife/bolivia/images/our-team/pic6.jpg"
                                                 alt=""> </a>
                                         <div class="dez-info-has bg-primary">
                                             <ul class="dez-social-icon dez-border">
@@ -103,7 +103,7 @@
                             <div class="col-lg-3 col-md-6 col-sm-6">
                                 <div class="dez-box m-b30">
                                     <div class="dez-media"> <a href="javascript:void(0);"> <img width="358"
-                                                height="460" src="themes/zoelife/colombia/images/our-team/pic7.jpg"
+                                                height="460" src="themes/zoelife/bolivia/images/our-team/pic7.jpg"
                                                 alt=""> </a>
                                         <div class="dez-info-has bg-primary">
                                             <ul class="dez-social-icon dez-border">
@@ -123,7 +123,7 @@
                             <div class="col-lg-3 col-md-6 col-sm-6">
                                 <div class="dez-box m-b30">
                                     <div class="dez-media"> <a href="javascript:void(0);"> <img width="358"
-                                                height="460" src="themes/zoelife/colombia/images/our-team/pic8.jpg"
+                                                height="460" src="themes/zoelife/bolivia/images/our-team/pic8.jpg"
                                                 alt=""> </a>
                                         <div class="dez-info-has bg-primary">
                                             <ul class="dez-social-icon dez-border">
@@ -162,6 +162,6 @@
     <!-- Content END-->
 
     <!-- Footer -->
-    <x-colombia.footer-area></x-colombia.footer-area>
+    <x-bolivia.footer-area></x-bolivia.footer-area>
     <!-- Footer END-->
 @endsection

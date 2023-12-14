@@ -1,8 +1,8 @@
-@extends('layouts.colombia')
+@extends('layouts.bolivia')
 
 @section('content')
     <!-- Encabezado inicio -->
-    <x-colombia.header-area></x-colombia.header-area>
+    <x-bolivia.header-area></x-bolivia.header-area>
     <!-- Encabezado fin -->
 
     <!-- Content -->
@@ -18,23 +18,12 @@
         <div class="breadcrumb-row">
             <div class="container">
                 <ul class="list-inline">
-                    <li><a href="{{ route('web_colombia_inicio') }}">Home</a></li>
-                    <li>Productos</li>
+                    <li><a href="{{ route('web_bolivia_inicio') }}">Home</a></li>
+                    <li>Eventos</li>
                 </ul>
             </div>
         </div>
         <!-- Breadcrumb row END -->
-
-
-        <div class="content-area">
-            <div class="container">
-
-
-
-
-            </div>
-        </div>
-
 
         <!-- Paises / STAR -->
         <x-countries-section />
@@ -44,6 +33,6 @@
     <!-- Content END-->
 
     <!-- Footer -->
-    <x-colombia.footer-area></x-colombia.footer-area>
+    <x-bolivia.footer-area></x-bolivia.footer-area>
     <!-- Footer END-->
 @endsection

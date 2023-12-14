@@ -1,8 +1,8 @@
-@extends('layouts.colombia')
+@extends('layouts.bolivia')
 
 @section('content')
     <!-- Encabezado inicio -->
-    <x-colombia.header-area></x-colombia.header-area>
+    <x-bolivia.header-area></x-bolivia.header-area>
     <!-- Encabezado fin -->
 
     <!-- Content -->
@@ -118,7 +118,7 @@
                                                 class="fa fa-map-marker"></i></a> </div>
                                     <div class="icon-content">
                                         <h6 class="text-uppercase m-b0 dez-tilte">Oficina Principal</h6>
-                                        <p>Av. Petit Thouars 3547 , Lima, colombia</p>
+                                        <p>Av. Petit Thouars 3547 , Lima, bolivia</p>
                                     </div>
                                 </li>
                                 <li class="icon-bx-wraper left  m-b30">
@@ -166,6 +166,6 @@
     <!-- Content END-->
 
     <!-- Footer -->
-    <x-colombia.footer-area></x-colombia.footer-area>
+    <x-bolivia.footer-area></x-bolivia.footer-area>
     <!-- Footer END-->
 @endsection
