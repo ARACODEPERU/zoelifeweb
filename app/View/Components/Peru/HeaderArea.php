@@ -26,7 +26,7 @@ class HeaderArea extends Component
             ->orderBy('cms_section_items.position')
             ->get();
 
-        $this->products  = OnliItem::all();
+        $this->products  = OnliItem::where('country_id', 1)->get();
     }
 
     /**

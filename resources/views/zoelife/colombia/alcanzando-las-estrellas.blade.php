@@ -1,8 +1,8 @@
-@extends('layouts.ecuador')
+@extends('layouts.colombia')
 
 @section('content')
     <!-- Encabezado inicio -->
-    <x-ecuador.header-area></x-ecuador.header-area>
+    <x-colombia.header-area></x-colombia.header-area>
     <!-- Encabezado fin -->
 
 
@@ -56,11 +56,11 @@
                     <li class="card-container col-md-4 donaciones">
                         <div class="dez-box dez-gallery-box">
                             <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href="javascript:void(0);"> <img
-                                        src="themes/zoelife/ecuador/images/gallery/estrellas/01.jpg" alt=""> </a>
+                                        src="/themes/zoelife/colombia/images/gallery/estrellas/01.jpg" alt=""> </a>
                                 <div class="overlay-bx">
                                     <div class="overlay-icon"> <a href="javascript:void(0);"> <i
                                                 class="fa fa-link icon-bx-xs"></i> </a> <a
-                                            href="themes/zoelife/ecuador/images/gallery/estrellas/01.jpg" class="mfp-link"
+                                            href="/themes/zoelife/colombia/images/gallery/estrellas/01.jpg" class="mfp-link"
                                             title="Title Come Here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
                                 </div>
                             </div>
@@ -69,11 +69,11 @@
                     <li class="card-container col-md-4 donaciones">
                         <div class="dez-box dez-gallery-box">
                             <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href="javascript:void(0);"> <img
-                                        src="themes/zoelife/ecuador/images/gallery/estrellas/02.jpg" alt=""> </a>
+                                        src="/themes/zoelife/colombia/images/gallery/estrellas/02.jpg" alt=""> </a>
                                 <div class="overlay-bx">
                                     <div class="overlay-icon"> <a href="javascript:void(0);"> <i
                                                 class="fa fa-link icon-bx-xs"></i> </a> <a
-                                            href="themes/zoelife/ecuador/images/gallery/estrellas/02.jpg" class="mfp-link"
+                                            href="themes/zoelife/colombia/images/gallery/estrellas/02.jpg" class="mfp-link"
                                             title="Title Come Here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
                                 </div>
                             </div>
@@ -82,11 +82,11 @@
                     <li class="card-container col-md-4 donaciones">
                         <div class="dez-box dez-gallery-box">
                             <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href="javascript:void(0);"> <img
-                                        src="themes/zoelife/ecuador/images/gallery/estrellas/03.jpg" alt=""> </a>
+                                        src="/themes/zoelife/colombia/images/gallery/estrellas/03.jpg" alt=""> </a>
                                 <div class="overlay-bx">
                                     <div class="overlay-icon"> <a href="javascript:void(0);"> <i
                                                 class="fa fa-link icon-bx-xs"></i> </a> <a
-                                            href="themes/zoelife/ecuador/images/gallery/estrellas/03.jpg" class="mfp-link"
+                                            href="themes/zoelife/colombia/images/gallery/estrellas/03.jpg" class="mfp-link"
                                             title="Title Come Here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
                                 </div>
                             </div>
@@ -95,11 +95,11 @@
                     <li class="card-container col-md-4 donaciones">
                         <div class="dez-box dez-gallery-box">
                             <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href="javascript:void(0);"> <img
-                                        src="themes/zoelife/ecuador/images/gallery/estrellas/04.jpg" alt=""> </a>
+                                        src="themes/zoelife/colombia/images/gallery/estrellas/04.jpg" alt=""> </a>
                                 <div class="overlay-bx">
                                     <div class="overlay-icon"> <a href="javascript:void(0);"> <i
                                                 class="fa fa-link icon-bx-xs"></i> </a> <a
-                                            href="themes/zoelife/ecuador/images/gallery/estrellas/04.jpg" class="mfp-link"
+                                            href="themes/zoelife/colombia/images/gallery/estrellas/04.jpg" class="mfp-link"
                                             title="Title Come Here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
                                 </div>
                             </div>
@@ -108,12 +108,13 @@
                     <li class="card-container col-md-4 donaciones">
                         <div class="dez-box dez-gallery-box">
                             <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href="javascript:void(0);"> <img
-                                        src="themes/zoelife/ecuador/images/gallery/estrellas/05.jpg" alt=""> </a>
+                                        src="themes/zoelife/colombia/images/gallery/estrellas/05.jpg" alt=""> </a>
                                 <div class="overlay-bx">
                                     <div class="overlay-icon"> <a href="javascript:void(0);"> <i
                                                 class="fa fa-link icon-bx-xs"></i> </a> <a
-                                            href="themes/zoelife/ecuador/images/gallery/estrellas/05.jpg" class="mfp-link"
-                                            title="Title Come Here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a>
+                                            href="themes/zoelife/colombia/images/gallery/estrellas/05.jpg"
+                                            class="mfp-link" title="Title Come Here"> <i
+                                                class="fa fa-picture-o icon-bx-xs"></i> </a>
                                     </div>
                                 </div>
                             </div>
@@ -122,12 +123,13 @@
                     <li class="card-container col-md-4 donaciones">
                         <div class="dez-box dez-gallery-box">
                             <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href="javascript:void(0);"> <img
-                                        src="themes/zoelife/ecuador/images/gallery/estrellas/06.jpg" alt=""> </a>
+                                        src="themes/zoelife/colombia/images/gallery/estrellas/06.jpg" alt=""> </a>
                                 <div class="overlay-bx">
                                     <div class="overlay-icon"> <a href="javascript:void(0);"> <i
                                                 class="fa fa-link icon-bx-xs"></i> </a> <a
-                                            href="themes/zoelife/ecuador/images/gallery/estrellas/06.jpg" class="mfp-link"
-                                            title="Title Come Here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a>
+                                            href="themes/zoelife/colombia/images/gallery/estrellas/06.jpg"
+                                            class="mfp-link" title="Title Come Here"> <i
+                                                class="fa fa-picture-o icon-bx-xs"></i> </a>
                                     </div>
                                 </div>
                             </div>
@@ -136,12 +138,13 @@
                     <li class="card-container col-md-4 donaciones">
                         <div class="dez-box dez-gallery-box">
                             <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href="javascript:void(0);"> <img
-                                        src="themes/zoelife/ecuador/images/gallery/estrellas/07.jpg" alt=""> </a>
+                                        src="themes/zoelife/colombia/images/gallery/estrellas/07.jpg" alt=""> </a>
                                 <div class="overlay-bx">
                                     <div class="overlay-icon"> <a href="javascript:void(0);"> <i
                                                 class="fa fa-link icon-bx-xs"></i> </a> <a
-                                            href="themes/zoelife/ecuador/images/gallery/estrellas/07.jpg" class="mfp-link"
-                                            title="Title Come Here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a>
+                                            href="themes/zoelife/colombia/images/gallery/estrellas/07.jpg"
+                                            class="mfp-link" title="Title Come Here"> <i
+                                                class="fa fa-picture-o icon-bx-xs"></i> </a>
                                     </div>
                                 </div>
                             </div>
@@ -150,12 +153,13 @@
                     <li class="card-container col-md-4 donaciones">
                         <div class="dez-box dez-gallery-box">
                             <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href="javascript:void(0);"> <img
-                                        src="themes/zoelife/ecuador/images/gallery/estrellas/08.jpg" alt=""> </a>
+                                        src="themes/zoelife/colombia/images/gallery/estrellas/08.jpg" alt=""> </a>
                                 <div class="overlay-bx">
                                     <div class="overlay-icon"> <a href="javascript:void(0);"> <i
                                                 class="fa fa-link icon-bx-xs"></i> </a> <a
-                                            href="themes/zoelife/ecuador/images/gallery/estrellas/08.jpg" class="mfp-link"
-                                            title="Title Come Here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a>
+                                            href="themes/zoelife/colombia/images/gallery/estrellas/08.jpg"
+                                            class="mfp-link" title="Title Come Here"> <i
+                                                class="fa fa-picture-o icon-bx-xs"></i> </a>
                                     </div>
                                 </div>
                             </div>
@@ -164,12 +168,13 @@
                     <li class="card-container col-md-4 niños">
                         <div class="dez-box dez-gallery-box">
                             <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href="javascript:void(0);"> <img
-                                        src="themes/zoelife/ecuador/images/gallery/estrellas/09.jpg" alt=""> </a>
+                                        src="themes/zoelife/colombia/images/gallery/estrellas/09.jpg" alt=""> </a>
                                 <div class="overlay-bx">
                                     <div class="overlay-icon"> <a href="javascript:void(0);"> <i
                                                 class="fa fa-link icon-bx-xs"></i> </a> <a
-                                            href="themes/zoelife/ecuador/images/gallery/estrellas/08.jpg" class="mfp-link"
-                                            title="Title Come Here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a>
+                                            href="themes/zoelife/colombia/images/gallery/estrellas/08.jpg"
+                                            class="mfp-link" title="Title Come Here"> <i
+                                                class="fa fa-picture-o icon-bx-xs"></i> </a>
                                     </div>
                                 </div>
                             </div>
@@ -178,12 +183,13 @@
                     <li class="card-container col-md-4 niños">
                         <div class="dez-box dez-gallery-box">
                             <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href="javascript:void(0);"> <img
-                                        src="themes/zoelife/ecuador/images/gallery/estrellas/10.jpg" alt=""> </a>
+                                        src="themes/zoelife/colombia/images/gallery/estrellas/10.jpg" alt=""> </a>
                                 <div class="overlay-bx">
                                     <div class="overlay-icon"> <a href="javascript:void(0);"> <i
                                                 class="fa fa-link icon-bx-xs"></i> </a> <a
-                                            href="themes/zoelife/ecuador/images/gallery/estrellas/08.jpg" class="mfp-link"
-                                            title="Title Come Here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a>
+                                            href="themes/zoelife/colombia/images/gallery/estrellas/08.jpg"
+                                            class="mfp-link" title="Title Come Here"> <i
+                                                class="fa fa-picture-o icon-bx-xs"></i> </a>
                                     </div>
                                 </div>
                             </div>
@@ -192,12 +198,13 @@
                     <li class="card-container col-md-4 adolescentes">
                         <div class="dez-box dez-gallery-box">
                             <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href="javascript:void(0);"> <img
-                                        src="themes/zoelife/ecuador/images/gallery/estrellas/11.jpg" alt=""> </a>
+                                        src="themes/zoelife/colombia/images/gallery/estrellas/11.jpg" alt=""> </a>
                                 <div class="overlay-bx">
                                     <div class="overlay-icon"> <a href="javascript:void(0);"> <i
                                                 class="fa fa-link icon-bx-xs"></i> </a> <a
-                                            href="themes/zoelife/ecuador/images/gallery/estrellas/08.jpg" class="mfp-link"
-                                            title="Title Come Here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a>
+                                            href="themes/zoelife/colombia/images/gallery/estrellas/08.jpg"
+                                            class="mfp-link" title="Title Come Here"> <i
+                                                class="fa fa-picture-o icon-bx-xs"></i> </a>
                                     </div>
                                 </div>
                             </div>
@@ -206,12 +213,13 @@
                     <li class="card-container col-md-4 adolescentes">
                         <div class="dez-box dez-gallery-box">
                             <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href="javascript:void(0);"> <img
-                                        src="themes/zoelife/ecuador/images/gallery/estrellas/12.jpg" alt=""> </a>
+                                        src="themes/zoelife/colombia/images/gallery/estrellas/12.jpg" alt=""> </a>
                                 <div class="overlay-bx">
                                     <div class="overlay-icon"> <a href="javascript:void(0);"> <i
                                                 class="fa fa-link icon-bx-xs"></i> </a> <a
-                                            href="themes/zoelife/ecuador/images/gallery/estrellas/08.jpg" class="mfp-link"
-                                            title="Title Come Here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a>
+                                            href="themes/zoelife/colombia/images/gallery/estrellas/08.jpg"
+                                            class="mfp-link" title="Title Come Here"> <i
+                                                class="fa fa-picture-o icon-bx-xs"></i> </a>
                                     </div>
                                 </div>
                             </div>
@@ -220,12 +228,13 @@
                     <li class="card-container col-md-4 donaciones">
                         <div class="dez-box dez-gallery-box">
                             <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href="javascript:void(0);"> <img
-                                        src="themes/zoelife/ecuador/images/gallery/estrellas/13.jpg" alt=""> </a>
+                                        src="themes/zoelife/colombia/images/gallery/estrellas/13.jpg" alt=""> </a>
                                 <div class="overlay-bx">
                                     <div class="overlay-icon"> <a href="javascript:void(0);"> <i
                                                 class="fa fa-link icon-bx-xs"></i> </a> <a
-                                            href="themes/zoelife/ecuador/images/gallery/estrellas/08.jpg" class="mfp-link"
-                                            title="Title Come Here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a>
+                                            href="themes/zoelife/colombia/images/gallery/estrellas/08.jpg"
+                                            class="mfp-link" title="Title Come Here"> <i
+                                                class="fa fa-picture-o icon-bx-xs"></i> </a>
                                     </div>
                                 </div>
                             </div>
@@ -234,12 +243,13 @@
                     <li class="card-container col-md-4 donaciones">
                         <div class="dez-box dez-gallery-box">
                             <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href="javascript:void(0);"> <img
-                                        src="themes/zoelife/ecuador/images/gallery/estrellas/14.jpg" alt=""> </a>
+                                        src="themes/zoelife/colombia/images/gallery/estrellas/14.jpg" alt=""> </a>
                                 <div class="overlay-bx">
                                     <div class="overlay-icon"> <a href="javascript:void(0);"> <i
                                                 class="fa fa-link icon-bx-xs"></i> </a> <a
-                                            href="themes/zoelife/ecuador/images/gallery/estrellas/08.jpg" class="mfp-link"
-                                            title="Title Come Here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a>
+                                            href="themes/zoelife/colombia/images/gallery/estrellas/08.jpg"
+                                            class="mfp-link" title="Title Come Here"> <i
+                                                class="fa fa-picture-o icon-bx-xs"></i> </a>
                                     </div>
                                 </div>
                             </div>
@@ -248,12 +258,13 @@
                     <li class="card-container col-md-4 donaciones">
                         <div class="dez-box dez-gallery-box">
                             <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href="javascript:void(0);"> <img
-                                        src="themes/zoelife/ecuador/images/gallery/estrellas/15.jpg" alt=""> </a>
+                                        src="themes/zoelife/colombia/images/gallery/estrellas/15.jpg" alt=""> </a>
                                 <div class="overlay-bx">
                                     <div class="overlay-icon"> <a href="javascript:void(0);"> <i
                                                 class="fa fa-link icon-bx-xs"></i> </a> <a
-                                            href="themes/zoelife/ecuador/images/gallery/estrellas/08.jpg" class="mfp-link"
-                                            title="Title Come Here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a>
+                                            href="themes/zoelife/colombia/images/gallery/estrellas/08.jpg"
+                                            class="mfp-link" title="Title Come Here"> <i
+                                                class="fa fa-picture-o icon-bx-xs"></i> </a>
                                     </div>
                                 </div>
                             </div>

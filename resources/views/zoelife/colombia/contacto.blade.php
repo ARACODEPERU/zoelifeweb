@@ -1,8 +1,8 @@
-@extends('layouts.ecuador')
+@extends('layouts.peru')
 
 @section('content')
     <!-- Encabezado inicio -->
-    <x-ecuador.header-area></x-ecuador.header-area>
+    <x-colombia.header-area></x-colombia.header-area>
     <!-- Encabezado fin -->
 
     <!-- Content -->
@@ -118,7 +118,7 @@
                                                 class="fa fa-map-marker"></i></a> </div>
                                     <div class="icon-content">
                                         <h6 class="text-uppercase m-b0 dez-tilte">Oficina Principal</h6>
-                                        <p>Av. Petit Thouars 3547 , Lima, ecuador</p>
+                                        <p>Av. Petit Thouars 3547 , Lima, Peru</p>
                                     </div>
                                 </li>
                                 <li class="icon-bx-wraper left  m-b30">
@@ -166,6 +166,6 @@
     <!-- Content END-->
 
     <!-- Footer -->
-    <x-ecuador.footer-area></x-ecuador.footer-area>
+    <x-colombia.footer-area></x-colombia.footer-area>
     <!-- Footer END-->
 @endsection

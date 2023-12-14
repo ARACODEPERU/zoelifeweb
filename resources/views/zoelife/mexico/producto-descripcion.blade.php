@@ -1,4 +1,4 @@
-@extends('layouts.ecuador')
+@extends('layouts.peru')
 
 @section('content')
     <!-- Encabezado inicio -->
@@ -10,14 +10,14 @@
 
         <!-- inner page banner -->
         <div class="dez-bnr-inr overlay-black-middle"
-            style="background-image:url(themes/zoelife/ecuador/images/header-page/contactanosecuador.jpg);">
+            style="background-image:url(themes/zoelife/peru/images/header-page/contactanosPeru.jpg);">
             <!--
-                                                                        <div class="container">
-                                                                            <div class="dez-bnr-inr-entry">
-                                                                                <h1 class="text-white">Contact Us</h1>
-                                                                            </div>
+                                                                    <div class="container">
+                                                                        <div class="dez-bnr-inr-entry">
+                                                                            <h1 class="text-white">Contact Us</h1>
                                                                         </div>
-                                                                        -->
+                                                                    </div>
+                                                                    -->
         </div>
         <!-- inner page banner END -->
 
@@ -25,8 +25,8 @@
         <div class="breadcrumb-row">
             <div class="container">
                 <ul class="list-inline">
-                    <li><a href="{{ route('web_ecuador_inicio') }}">Home</a></li>
-                    <li><a href="{{ route('web_ecuador_inicio') }}">Productos</a></li>
+                    <li><a href="{{ route('web_peru_inicio') }}">Home</a></li>
+                    <li><a href="{{ route('web_peru_inicio') }}">Productos</a></li>
                     <li>Coffe 3 en 1</li>
                 </ul>
             </div>
@@ -59,12 +59,12 @@
 
         <!-- Why Choose Us -->
         <div class="section-full text-white bg-img-fix p-t70 p-b40 overlay-black-dark choose-us"
-            style="background-image:url(themes/zoelife/ecuador/images/background/fondo.jpg);">
+            style="background-image:url(themes/zoelife/peru/images/background/fondo.jpg);">
             <div class="container">
                 <div class="section-head  text-center text-white">
                     <h2 class="h2">Recomendaciones <span class="text-primary"> de Uso Sugerido</span></h2>
                     <div class="dez-separator text-primary style-icon border-white"><img alt=""
-                            src="themes/zoelife/ecuador/images/leaf-green.png" /></div>
+                            src="themes/zoelife/peru/images/leaf-green.png" /></div>
                 </div>
                 <div class="row">
                     <div class="col-md-6">

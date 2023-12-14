@@ -1,4 +1,4 @@
-@extends('layouts.ecuador')
+@extends('layouts.peru')
 
 @section('content')
     <!-- Encabezado inicio -->
@@ -118,7 +118,7 @@
                                                 class="fa fa-map-marker"></i></a> </div>
                                     <div class="icon-content">
                                         <h6 class="text-uppercase m-b0 dez-tilte">Oficina Principal</h6>
-                                        <p>Av. Petit Thouars 3547 , Lima, ecuador</p>
+                                        <p>Av. Petit Thouars 3547 , Lima, Peru</p>
                                     </div>
                                 </li>
                                 <li class="icon-bx-wraper left  m-b30">

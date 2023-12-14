@@ -1,13 +1,13 @@
-@extends('layouts.ecuador')
+@extends('layouts.peru')
 
 @section('content')
     <!-- Encabezado inicio -->
-    <x-ecuador.header-area></x-ecuador.header-area>
+    <x-colombia.header-area></x-colombia.header-area>
     <!-- Encabezado fin -->
 
     <!-- inner page banner -->
     <div class="dez-bnr-inr overlay-black-middle"
-        style="background-image:url(themes/zoelife/ecuador/images/header-page/centrosecuador.jpg);">
+        style="background-image:url(themes/zoelife/peru/images/header-page/centrosPeru.jpg);">
         <!--
                     <div class="container">
                         <div class="dez-bnr-inr-entry">
@@ -109,6 +109,6 @@
     <br>
 
     <!-- Footer -->
-    <x-ecuador.footer-area></x-ecuador.footer-area>
+    <x-colombia.footer-area></x-colombia.footer-area>
     <!-- Footer END-->
 @endsection

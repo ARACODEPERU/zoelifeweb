@@ -1,4 +1,4 @@
-@extends('layouts.ecuador')
+@extends('layouts.peru')
 
 @section('content')
     <!-- Encabezado inicio -->
@@ -18,12 +18,23 @@
         <div class="breadcrumb-row">
             <div class="container">
                 <ul class="list-inline">
-                    <li><a href="{{ route('web_ecuador_inicio') }}">Home</a></li>
-                    <li>Eventos</li>
+                    <li><a href="{{ route('web_peru_inicio') }}">Home</a></li>
+                    <li>Productos</li>
                 </ul>
             </div>
         </div>
         <!-- Breadcrumb row END -->
+
+
+        <div class="content-area">
+            <div class="container">
+
+
+
+
+            </div>
+        </div>
+
 
         <!-- Paises / STAR -->
         <x-countries-section />

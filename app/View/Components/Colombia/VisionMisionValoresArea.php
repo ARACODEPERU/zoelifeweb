@@ -8,12 +8,15 @@ use Illuminate\View\Component;
 
 class VisionMisionValoresArea extends Component
 {
-    /**
-     * Create a new component instance.
-     */
+    protected $nosotros;
+
     public function __construct()
     {
-        //
+        $this->nosotros = CmsSection::with(['items' => function ($query) {
+            $query->orderBy('cms_section_items.position', 'asc');
+        }])
+            ->where('component_id', 'peru_vision_mision_valores_area_3')
+            ->get();
     }
 
     /**
@@ -21,6 +24,8 @@ class VisionMisionValoresArea extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.colombia.vision-mision-valores-area');
+        return view('components.colombia.vision-mision-valores-area', [
+            'nosotros' => $this->nosotros
+        ]);
     }
 }

@@ -1,4 +1,4 @@
-    @extends('layouts.ecuador')
+    @extends('layouts.peru')
 
     @section('content')
         <!-- Encabezado inicio -->
@@ -58,18 +58,18 @@
             <!-- Slider END -->
 
             <!-- Visión - Misión - Valores / STAR -->
-            <x-ecuador.vision-mision-valores-area></x-ecuador.vision-mision-valores-area>
+            <x-peru.vision-mision-valores-area></x-peru.vision-mision-valores-area>
             <!-- Visión - Misión - Valores / END -->
 
 
             <!-- Video Presentación / STAR -->
             <div class="section-full text-white bg-img-fix p-t70 p-b70 overlay-black-dark choose-us"
-                style="background-image:url(/themes/zoelife/ecuador/images/background/fondo.jpg);">
+                style="background-image:url(/themes/zoelife/peru/images/background/fondo.jpg);">
                 <div class="container">
                     <div class="section-head  text-center text-white">
                         <h2 class="h2">Sobre <span class="text-primary"> Zoé Life</span></h2>
                         <div class="dez-separator text-primary style-icon border-white">
-                            <img alt="" src="/themes/zoelife/ecuador/images/leaf-green.png" />
+                            <img alt="" src="/themes/zoelife/peru/images/leaf-green.png" />
                         </div>
                     </div>
                     <div class="row">

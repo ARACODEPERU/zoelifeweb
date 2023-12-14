@@ -5,15 +5,24 @@ namespace App\View\Components\Mexico;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
+use Modules\CMS\Entities\CmsSection;
+use Modules\CMS\Entities\CmsTestimony;
 
 class FooterArea extends Component
 {
+    protected $footer;
+    protected $testimonies;
     /**
      * Create a new component instance.
      */
     public function __construct()
     {
-        //
+        $this->footer = CmsSection::with(['items' => function ($query) {
+            $query->orderBy('cms_section_items.position', 'asc');
+        }])
+            ->where('component_id', 'peru_footer_area_5')
+            ->get();
+        $this->testimonies = CmsTestimony::where('status', true)->get();
     }
 
     /**
@@ -21,6 +30,9 @@ class FooterArea extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.mexico.footer-area');
+        return view('components.mexico.footer-area', [
+            'footer' => $this->footer,
+            'testimonies'   => $this->testimonies
+        ]);
     }
 }

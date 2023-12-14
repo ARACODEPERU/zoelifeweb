@@ -2,11 +2,13 @@
 
 
 use App\Http\Controllers\ClientController;
+use App\Http\Controllers\ColombiaController;
 use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\EcuadorController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\KardexController;
 use App\Http\Controllers\LocalSaleController;
+use App\Http\Controllers\MexicoController;
 use App\Http\Controllers\PersonController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -49,7 +51,6 @@ Route::get('/ecuador.productos', [EcuadorController::class, 'productos'])->name(
 Route::get('/ecuador.producto-descripcion/{id}', [EcuadorController::class, 'productodescripcion'])->name('web_ecuador_producto_descripcion');
 Route::get('/ecuador.testimonios', [EcuadorController::class, 'testimonios'])->name('web_ecuador_testimonios');
 Route::get('/ecuador.centros-de-distribucion', [EcuadorController::class, 'centros'])->name('web_ecuador_centros');
-Route::get('/ecuador.centros-de-distribucion-lima', [EcuadorController::class, 'centroslima'])->name('web_ecuador_centros_lima');
 Route::get('/ecuador.eventos', [EcuadorController::class, 'eventos'])->name('web_ecuador_eventos');
 Route::get('/ecuador.alcanzando-las-estrellas', [EcuadorController::class, 'estrellas'])->name('web_ecuador_alcanzando_las_estrellas');
 Route::get('/ecuador.contacto', [EcuadorController::class, 'contacto'])->name('web_ecuador_contacto');
@@ -57,27 +58,28 @@ Route::get('/ecuador.contacto', [EcuadorController::class, 'contacto'])->name('w
 
 
 
-Route::get('/colombia', [WebController::class, 'colombiainicio'])->name('web_colombia_inicio');
-Route::get('/colombia.nosotros', [WebController::class, 'colombianosotros'])->name('web_colombia_nosotros');
-Route::get('/colombia.productos', [WebController::class, 'colombiaproductos'])->name('web_colombia_productos');
-Route::get('/colombia.testimonios', [WebController::class, 'colombiatestimonios'])->name('web_colombia_testimonios');
-Route::get('/colombia.centros-de-distribucion', [WebController::class, 'colombiacentros'])->name('web_colombia_centros');
-Route::get('/colombia.eventos', [WebController::class, 'colombiaeventos'])->name('web_colombia_eventos');
-Route::get('/colombia.alcanzando-las-estrellas', [WebController::class, 'colombiaestrellas'])->name('web_colombia_alcanzando_las_estrellas');
-Route::get('/colombia.contacto', [WebController::class, 'colombiacontacto'])->name('web_colombia_contacto');
+Route::get('/colombia', [ColombiaController::class, 'inicio'])->name('web_colombia_inicio');
+Route::get('/colombia.nosotros', [ColombiaController::class, 'nosotros'])->name('web_colombia_nosotros');
+Route::get('/colombia.productos', [ColombiaController::class, 'productos'])->name('web_colombia_productos');
+Route::get('/colombia.producto-descripcion/{id}', [ColombiaController::class, 'productodescripcion'])->name('web_colombia_producto_descripcion');
+Route::get('/colombia.testimonios', [ColombiaController::class, 'testimonios'])->name('web_colombia_testimonios');
+Route::get('/colombia.centros-de-distribucion', [ColombiaController::class, 'centros'])->name('web_colombia_centros');
+Route::get('/colombia.eventos', [ColombiaController::class, 'eventos'])->name('web_colombia_eventos');
+Route::get('/colombia.alcanzando-las-estrellas', [ColombiaController::class, 'estrellas'])->name('web_colombia_alcanzando_las_estrellas');
+Route::get('/colombia.contacto', [ColombiaController::class, 'contacto'])->name('web_colombia_contacto');
 
 
 
 
-Route::get('/mexico', [WebController::class, 'mexicoinicio'])->name('web_mexico_inicio');
-Route::get('/mexico.nosotros', [WebController::class, 'mexiconosotros'])->name('web_mexico_nosotros');
-Route::get('/peru.productos', [WebController::class, 'peruproductos'])->name('web_peru_productos');
-Route::get('/mexico.productos', [WebController::class, 'mexicoproductos'])->name('web_mexico_productos');
-Route::get('/mexico.testimonios', [WebController::class, 'mexicotestimonios'])->name('web_mexico_testimonios');
-Route::get('/mexico.centros-de-distribucion', [WebController::class, 'mexicocentros'])->name('web_mexico_centros');
-Route::get('/mexico.eventos', [WebController::class, 'mexicoeventos'])->name('web_mexico_eventos');
-Route::get('/mexico.alcanzando-las-estrellas', [WebController::class, 'mexicoestrellas'])->name('web_mexico_alcanzando_las_estrellas');
-Route::get('/mexico.contacto', [WebController::class, 'mexicocontacto'])->name('web_mexico_contacto');
+Route::get('/mexico', [MexicoController::class, 'inicio'])->name('web_mexico_inicio');
+Route::get('/mexico.nosotros', [MexicoController::class, 'nosotros'])->name('web_mexico_nosotros');
+Route::get('/mexico.productos', [MexicoController::class, 'productos'])->name('web_mexico_productos');
+Route::get('/mexico.producto-descripcion/{id}', [MexicoController::class, 'productodescripcion'])->name('web_mexico_producto_descripcion');
+Route::get('/mexico.testimonios', [MexicoController::class, 'testimonios'])->name('web_mexico_testimonios');
+Route::get('/mexico.centros-de-distribucion', [MexicoController::class, 'centros'])->name('web_mexico_centros');
+Route::get('/mexico.eventos', [MexicoController::class, 'eventos'])->name('web_mexico_eventos');
+Route::get('/mexico.alcanzando-las-estrellas', [MexicoController::class, 'estrellas'])->name('web_mexico_alcanzando_las_estrellas');
+Route::get('/mexico.contacto', [MexicoController::class, 'contacto'])->name('web_mexico_contacto');
 
 /*
 Route::get('/blog/home', [BlogController::class, 'index'])->name('blog_principal');
