@@ -5,6 +5,7 @@ namespace App\View\Components\Colombia;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
+use Modules\CMS\Entities\CmsSection;
 
 class VisionMisionValoresArea extends Component
 {

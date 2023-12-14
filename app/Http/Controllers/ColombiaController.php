@@ -89,7 +89,6 @@ class ColombiaController extends Controller
     public function productodescripcion($id)
     {
         $product = OnliItem::where('id', $id)
-            ->where('country_id', 3)
             ->first();
 
         $testimonies = CmsTestimony::where('item_id', $id)->get();
@@ -115,7 +114,7 @@ class ColombiaController extends Controller
             ->orderBy('cms_section_items.position')
             ->first();
 
-        $products = OnliItem::where('status', true)->where('country_id', 3)->get();
+        $products = OnliItem::where('status', true)->get();
 
         $testimonies = CmsTestimony::with('product')->get();
 

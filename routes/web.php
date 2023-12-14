@@ -1,6 +1,6 @@
 <?php
 
-
+use App\Http\Controllers\BoliviaController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\ColombiaController;
 use App\Http\Controllers\CompanyController;
@@ -10,6 +10,7 @@ use App\Http\Controllers\KardexController;
 use App\Http\Controllers\LocalSaleController;
 use App\Http\Controllers\MexicoController;
 use App\Http\Controllers\PersonController;
+use App\Http\Controllers\PeruController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use Illuminate\Foundation\Application;
@@ -21,27 +22,27 @@ use Modules\Blog\Http\Controllers\BlogController;
 Route::get('/', [WebController::class, 'index'])->name('cms_principal');
 
 
-Route::get('/peru', [WebController::class, 'peruinicio'])->name('web_peru_inicio');
-Route::get('/peru.nosotros', [WebController::class, 'perunosotros'])->name('web_peru_nosotros');
-Route::get('/peru.productos', [WebController::class, 'peruproductos'])->name('web_peru_productos');
-Route::get('/peru.producto-descripcion/{id}', [WebController::class, 'peruproductodescripcion'])->name('web_peru_producto_descripcion');
-Route::get('/peru.testimonios', [WebController::class, 'perutestimonios'])->name('web_peru_testimonios');
-Route::get('/peru.centros-de-distribucion', [WebController::class, 'perucentros'])->name('web_peru_centros');
-Route::get('/peru.centros-de-distribucion-lima', [WebController::class, 'perucentroslima'])->name('web_peru_centros_lima');
-Route::get('/peru.eventos', [WebController::class, 'perueventos'])->name('web_peru_eventos');
-Route::get('/peru.alcanzando-las-estrellas', [WebController::class, 'peruestrellas'])->name('web_peru_alcanzando_las_estrellas');
-Route::get('/peru.contacto', [WebController::class, 'perucontacto'])->name('web_peru_contacto');
+Route::get('/peru', [PeruController::class, 'inicio'])->name('web_peru_inicio');
+Route::get('/peru.nosotros', [PeruController::class, 'nosotros'])->name('web_peru_nosotros');
+Route::get('/peru.productos', [PeruController::class, 'productos'])->name('web_peru_productos');
+Route::get('/peru.producto-descripcion/{id}', [PeruController::class, 'productodescripcion'])->name('web_peru_producto_descripcion');
+Route::get('/peru.testimonios', [PeruController::class, 'testimonios'])->name('web_peru_testimonios');
+Route::get('/peru.centros-de-distribucion', [PeruController::class, 'centros'])->name('web_peru_centros');
+Route::get('/peru.centros-de-distribucion-lima', [PeruController::class, 'centroslima'])->name('web_peru_centros_lima');
+Route::get('/peru.eventos', [PeruController::class, 'eventos'])->name('web_peru_eventos');
+Route::get('/peru.alcanzando-las-estrellas', [PeruController::class, 'estrellas'])->name('web_peru_alcanzando_las_estrellas');
+Route::get('/peru.contacto', [PeruController::class, 'contacto'])->name('web_peru_contacto');
 
 
 
-Route::get('/bolivia', [WebController::class, 'boliviainicio'])->name('web_bolivia_inicio');
-Route::get('/bolivia.nosotros', [WebController::class, 'bolivianosotros'])->name('web_bolivia_nosotros');
-Route::get('/bolivia.productos', [WebController::class, 'boliviaproductos'])->name('web_bolivia_productos');
-Route::get('/bolivia.testimonios', [WebController::class, 'boliviatestimonios'])->name('web_bolivia_testimonios');
-Route::get('/bolivia.centros-de-distribucion', [WebController::class, 'boliviacentros'])->name('web_bolivia_centros');
-Route::get('/bolivia.eventos', [WebController::class, 'boliviaeventos'])->name('web_bolivia_eventos');
-Route::get('/bolivia.alcanzando-las-estrellas', [WebController::class, 'boliviaestrellas'])->name('web_bolivia_alcanzando_las_estrellas');
-Route::get('/bolivia.contacto', [WebController::class, 'boliviacontacto'])->name('web_bolivia_contacto');
+Route::get('/bolivia', [BoliviaController::class, 'inicio'])->name('web_bolivia_inicio');
+Route::get('/bolivia.nosotros', [BoliviaController::class, 'nosotros'])->name('web_bolivia_nosotros');
+Route::get('/bolivia.productos', [BoliviaController::class, 'productos'])->name('web_bolivia_productos');
+Route::get('/bolivia.testimonios', [BoliviaController::class, 'testimonios'])->name('web_bolivia_testimonios');
+Route::get('/bolivia.centros-de-distribucion', [BoliviaController::class, 'centros'])->name('web_bolivia_centros');
+Route::get('/bolivia.eventos', [BoliviaController::class, 'eventos'])->name('web_bolivia_eventos');
+Route::get('/bolivia.alcanzando-las-estrellas', [BoliviaController::class, 'estrellas'])->name('web_bolivia_alcanzando_las_estrellas');
+Route::get('/bolivia.contacto', [BoliviaController::class, 'contacto'])->name('web_bolivia_contacto');
 
 
 
