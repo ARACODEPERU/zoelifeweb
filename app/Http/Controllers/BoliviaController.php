@@ -12,7 +12,7 @@ class BoliviaController extends Controller
 {
     public function inicio()
     {
-        $slider = CmsSection::where('component_id', 'peru_slider_inicio_2')
+        $slider = CmsSection::where('component_id', 'bolivia_slider_inicio_15')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
@@ -22,7 +22,7 @@ class BoliviaController extends Controller
             ->orderBy('cms_section_items.position')
             ->get();
 
-        $video = CmsSection::where('component_id', 'peru_video_presentacion_inicio_4')
+        $video = CmsSection::where('component_id', 'bolivia_video_presentacion_inicio_18')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
@@ -39,7 +39,7 @@ class BoliviaController extends Controller
         ]);
     }
 
-    public function perunosotros()
+    public function nosotros()
     {
         $banner = CmsSection::where('component_id', 'peru_banner_nosotros_7')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')

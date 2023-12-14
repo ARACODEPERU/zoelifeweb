@@ -2,7 +2,6 @@
 
 namespace App\View\Components\Peru;
 
-use App\Models\Country;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;

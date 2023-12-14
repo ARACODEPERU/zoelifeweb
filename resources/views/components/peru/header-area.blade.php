@@ -36,8 +36,15 @@
                     </div>
                     <div class="dez-topbar-right list-unstyled e-p-bx ">
                         <ul>
-                            <li><i class="fa fa-envelope"></i><span>{{ $header[3]->content }}</span></li>
-                            <li><i class="fa fa-phone"></i><span>{{ $header[4]->content }}</span></li>
+                            <li>
+                                <img  style="height: 30px;" src="{{ asset('themes/zoelife/global/images/flags/peru.png') }}" alt="">
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope"></i><span>{{ $header[3]->content }}</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-phone"></i><span>{{ $header[4]->content }}</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
