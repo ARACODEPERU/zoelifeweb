@@ -3,6 +3,7 @@
 
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\CompanyController;
+use App\Http\Controllers\EcuadorController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\KardexController;
 use App\Http\Controllers\LocalSaleController;
@@ -42,16 +43,16 @@ Route::get('/bolivia.contacto', [WebController::class, 'boliviacontacto'])->name
 
 
 
-Route::get('/ecuador', [WebController::class, 'peruinicio'])->name('web_ecuador_inicio');
-Route::get('/ecuador.nosotros', [WebController::class, 'perunosotros'])->name('web_ecuador_nosotros');
-Route::get('/ecuador.productos', [WebController::class, 'peruproductos'])->name('web_ecuador_productos');
-Route::get('/ecuador.producto-descripcion/{id}', [WebController::class, 'peruproductodescripcion'])->name('web_ecuador_producto_descripcion');
-Route::get('/ecuador.testimonios', [WebController::class, 'perutestimonios'])->name('web_ecuador_testimonios');
-Route::get('/ecuador.centros-de-distribucion', [WebController::class, 'perucentros'])->name('web_ecuador_centros');
-Route::get('/ecuador.centros-de-distribucion-lima', [WebController::class, 'perucentroslima'])->name('web_ecuador_centros_lima');
-Route::get('/ecuador.eventos', [WebController::class, 'perueventos'])->name('web_ecuador_eventos');
-Route::get('/ecuador.alcanzando-las-estrellas', [WebController::class, 'peruestrellas'])->name('web_ecuador_alcanzando_las_estrellas');
-Route::get('/ecuador.contacto', [WebController::class, 'perucontacto'])->name('web_ecuador_contacto');
+Route::get('/ecuador', [EcuadorController::class, 'inicio'])->name('web_ecuador_inicio');
+Route::get('/ecuador.nosotros', [EcuadorController::class, 'nosotros'])->name('web_ecuador_nosotros');
+Route::get('/ecuador.productos', [EcuadorController::class, 'productos'])->name('web_ecuador_productos');
+Route::get('/ecuador.producto-descripcion/{id}', [EcuadorController::class, 'productodescripcion'])->name('web_ecuador_producto_descripcion');
+Route::get('/ecuador.testimonios', [EcuadorController::class, 'testimonios'])->name('web_ecuador_testimonios');
+Route::get('/ecuador.centros-de-distribucion', [EcuadorController::class, 'centros'])->name('web_ecuador_centros');
+Route::get('/ecuador.centros-de-distribucion-lima', [EcuadorController::class, 'centroslima'])->name('web_ecuador_centros_lima');
+Route::get('/ecuador.eventos', [EcuadorController::class, 'eventos'])->name('web_ecuador_eventos');
+Route::get('/ecuador.alcanzando-las-estrellas', [EcuadorController::class, 'estrellas'])->name('web_ecuador_alcanzando_las_estrellas');
+Route::get('/ecuador.contacto', [EcuadorController::class, 'contacto'])->name('web_ecuador_contacto');
 
 
 

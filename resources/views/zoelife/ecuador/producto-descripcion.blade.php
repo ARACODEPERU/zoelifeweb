@@ -2,7 +2,7 @@
 
 @section('content')
     <!-- Encabezado inicio -->
-    <x-peru.header-area></x-peru.header-area>
+    <x-ecuador.header-area></x-ecuador.header-area>
     <!-- Encabezado fin -->
 
     <!-- Content -->
@@ -12,12 +12,12 @@
         <div class="dez-bnr-inr overlay-black-middle"
             style="background-image:url(themes/zoelife/peru/images/header-page/contactanosPeru.jpg);">
             <!--
-                                                                <div class="container">
-                                                                    <div class="dez-bnr-inr-entry">
-                                                                        <h1 class="text-white">Contact Us</h1>
+                                                                    <div class="container">
+                                                                        <div class="dez-bnr-inr-entry">
+                                                                            <h1 class="text-white">Contact Us</h1>
+                                                                        </div>
                                                                     </div>
-                                                                </div>
-                                                                -->
+                                                                    -->
         </div>
         <!-- inner page banner END -->
 
@@ -149,6 +149,6 @@
     <!-- Content END-->
 
     <!-- Footer -->
-    <x-peru.footer-area></x-peru.footer-area>
+    <x-ecuador.footer-area></x-ecuador.footer-area>
     <!-- Footer END-->
 @endsection
