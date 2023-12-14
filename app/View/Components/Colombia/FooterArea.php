@@ -18,7 +18,7 @@ class FooterArea extends Component
         $this->footer = CmsSection::with(['items' => function ($query) {
             $query->orderBy('cms_section_items.position', 'asc');
         }])
-            ->where('component_id', 'peru_footer_area_5')
+            ->where('component_id', 'colombia_footer_area_42')
             ->get();
         $this->testimonies = CmsTestimony::where('status', true)->get();
     }
