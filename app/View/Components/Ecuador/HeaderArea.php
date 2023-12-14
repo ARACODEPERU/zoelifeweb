@@ -22,10 +22,11 @@ class HeaderArea extends Component
                 'cms_items.content',
                 'cms_section_items.position'
             )
+
             ->orderBy('cms_section_items.position')
             ->get();
-
-        $this->products  = OnliItem::all();
+        //dd($this->products);
+        $this->products  = OnliItem::where('country_id', 3)->get();
     }
 
     /**
