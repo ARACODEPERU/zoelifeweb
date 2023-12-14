@@ -36,8 +36,15 @@
                     </div>
                     <div class="dez-topbar-right list-unstyled e-p-bx ">
                         <ul>
-                            <li><i class="fa fa-envelope"></i><span>{{ $header[3]->content }}</span></li>
-                            <li><i class="fa fa-phone"></i><span>{{ $header[4]->content }}</span></li>
+                            <li>
+                                <img  style="height: 30px;" src="{{ asset('themes/zoelife/global/images/flags/mexico.png') }}" alt="">
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope"></i><span>{{ $header[3]->content }}</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-phone"></i><span>{{ $header[4]->content }}</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -50,8 +57,8 @@
                 <div class="clearfix" style="width: 100%; padding: 0px 40px;">
                     <!-- Website Logo -->
                     <div class="logo-header logo-dark mostion">
-                        <a href="">
-                            <img src="{{ $header[5]->content }}" alt="" style="height: 45px;">
+                        <a href="{{ route('cms_principal') }}">
+                            <img  style="height: 45px;" src="{{ $header[5]->content }}" alt="">
                         </a>
                     </div>
                     <!-- Nav Toggle Button -->
@@ -81,25 +88,27 @@
                     <!-- Main Nav -->
                     <div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
                         <ul class="nav navbar-nav">
-                            <li> <a href="{{ route('web_peru_inicio') }}">Home</a> </li>
-                            <li> <a href="{{ route('web_peru_nosotros') }}">Nosotros</a> </li>
-                            <li> <a href="{{ route('web_peru_productos') }}">Productos</a>
+                            <li> <a href="{{ route('web_mexico_inicio') }}">Home</a> </li>
+                            <li> <a href="{{ route('web_mexico_nosotros') }}">Nosotros</a> </li>
+                            <li> <a href="{{ route('web_mexico_productos') }}">Productos</a>
                                 <ul class="sub-menu">
                                     @foreach ($products as $product)
                                         <li>
-                                            <a href="{{ route('web_peru_producto_descripcion', $product->id) }}">
+                                            <a href="{{ route('web_mexico_producto_descripcion', $product->id) }}">
                                                 {{ $product->name }}
                                             </a>
                                         </li>
                                     @endforeach
                                 </ul>
                             </li>
-                            <li> <a href="{{ route('web_peru_testimonios') }}">Testimonios</a> </li>
-                            <li> <a href="{{ route('web_peru_centros') }}">Centros de Distribución</a> </li>
-                            <li> <a href="{{ route('web_peru_eventos') }}">Eventos</a> </li>
-                            <li> <a href="{{ route('web_peru_alcanzando_las_estrellas') }}">Alcanzando las
+                            <li> <a href="{{ route('web_mexico_testimonios') }}">Testimonios</a> </li>
+                            <!--
+                            <li> <a href="{{ route('web_mexico_centros') }}">Centros de Distribución</a> </li>
+                            <li> <a href="{{ route('web_mexico_eventos') }}">Eventos</a> </li>
+                            -->
+                            <li> <a href="{{ route('web_mexico_alcanzando_las_estrellas') }}">Alcanzando las
                                     Estrellas</a> </li>
-                            <li> <a href="{{ route('web_peru_contacto') }}">Contacto</a> </li>
+                            <li> <a href="{{ route('web_mexico_contacto') }}">Contacto</a> </li>
                         </ul>
                     </div>
                 </div>
