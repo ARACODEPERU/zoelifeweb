@@ -8,8 +8,8 @@ import TextInput from '@/Components/TextInput.vue';
 import Keypad from '@/Components/Keypad.vue';
 import Swal2 from 'sweetalert2';
 import { ref, watch } from 'vue';
-import { Select, Input, Textarea } from 'flowbite-vue'
-import Editor from '@tinymce/tinymce-vue'
+import { Select, Input, Textarea } from 'flowbite-vue';
+import Editor from '@tinymce/tinymce-vue';
 
 const props = defineProps({
     venture: {
@@ -66,6 +66,7 @@ watch(() => form.image, (newValue) => {
 });
 
 </script>
+
 
 <template>
     <FormSection @submitted="createTestimony" class="">
@@ -124,7 +125,8 @@ watch(() => form.image, (newValue) => {
                     v-model="form.video"
                     :rows="4"
                     label="Iframe del vídeo *"
-                    placeholder="Código del vídeo..."
+                    placeholder="Código del vídeo... por favor verifique que el código no contenga emoticonos(genera error). Borre los emoticonos manualmente"
+                    id="iframe"
                 />
                 <InputError :message="form.errors.video" class="mt-2" />
                 <div class="mt-4 w-full" v-html="form.video"></div>
