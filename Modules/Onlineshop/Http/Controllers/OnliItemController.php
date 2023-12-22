@@ -120,7 +120,9 @@ class OnliItemController extends Controller
 
         // $path = 'img' . DIRECTORY_SEPARATOR . 'imagen-no-disponible.jpeg';
         // $destination = 'uploads' . DIRECTORY_SEPARATOR . 'products';
-        $path = $request->get('image_view');
+        $image_url = $request->get('image_view');
+        $path = str_replace(asset('storage/'), "", $image_url);
+
         $destination = 'uploads/onlineshop/items';
         $file = $request->file('image');
         if ($file) {
