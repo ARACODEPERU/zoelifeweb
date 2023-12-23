@@ -18,6 +18,27 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\WebController;
 use Modules\Blog\Http\Controllers\BlogController;
 
+Route::get('/', function () {
+    $ip = $_SERVER['REMOTE_ADDR']; // Esto contendrá la ip de la solicitud.
+
+    $dataArray = json_decode(file_get_contents("http://www.geoplugin.net/json.gp?ip=" . $ip));
+
+    switch ($dataArray->geoplugin_countryCode) {
+        case 'PE':
+            return to_route('web_peru_inicio');
+        case 'EC':
+            return to_route('web_ecuador_inicio');
+        case 'BO':
+            return to_route('web_bolivia_inicio');
+        case 'CO':
+            return to_route('web_colombia_inicio');
+        case 'MX':
+            return to_route('web_mexico_inicio');
+        default:
+            // Agrega aquí lo que quieres hacer en caso de otros países.
+            return to_route('cms_principal');
+    }
+});
 
 Route::get('/home', [WebController::class, 'index'])->name('cms_principal');
 
@@ -82,27 +103,7 @@ Route::get('/mexico.eventos', [MexicoController::class, 'eventos'])->name('web_m
 Route::get('/mexico.alcanzando-las-estrellas', [MexicoController::class, 'estrellas'])->name('web_mexico_alcanzando_las_estrellas');
 Route::get('/mexico.contacto', [MexicoController::class, 'contacto'])->name('web_mexico_contacto');
 
-Route::get('/mipais', function () {
-    $ip = $_SERVER['REMOTE_ADDR']; // Esto contendrá la ip de la solicitud.
 
-    $dataArray = json_decode(file_get_contents("http://www.geoplugin.net/json.gp?ip=" . $ip));
-
-    switch ($dataArray->geoplugin_countryCode) {
-        case 'PE':
-            return to_route('web_peru_inicio');
-        case 'EC':
-            return to_route('web_ecuador_inicio');
-        case 'BO':
-            return to_route('web_bolivia_inicio');
-        case 'CO':
-            return to_route('web_colombia_inicio');
-        case 'MX':
-            return to_route('web_mexico_inicio');
-        default:
-            // Agrega aquí lo que quieres hacer en caso de otros países.
-            return to_route('cms_principal');
-    }
-});
 
 /*
 Route::get('/blog/home', [BlogController::class, 'index'])->name('blog_principal');
