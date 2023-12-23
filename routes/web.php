@@ -82,6 +82,18 @@ Route::get('/mexico.eventos', [MexicoController::class, 'eventos'])->name('web_m
 Route::get('/mexico.alcanzando-las-estrellas', [MexicoController::class, 'estrellas'])->name('web_mexico_alcanzando_las_estrellas');
 Route::get('/mexico.contacto', [MexicoController::class, 'contacto'])->name('web_mexico_contacto');
 
+Route::get('/mipais', function () {
+    $ip = $_SERVER['REMOTE_ADDR']; // Esto contendrá la ip de la solicitud.
+
+    // Puedes usar un método más sofisticado para recuperar el contenido de una página web con PHP usando una biblioteca o algo así
+    // Vamos a recuperar los datos rápidamente con file_get_contents
+    $dataArray = json_decode(file_get_contents("http://www.geoplugin.net/json.gp?ip=" . $ip));
+
+    //var_dump($dataArray);
+
+    dd($dataArray);
+});
+
 /*
 Route::get('/blog/home', [BlogController::class, 'index'])->name('blog_principal');
 Route::get('/article/{url}', [BlogController::class, 'article'])->name('blog_article_by_url');
