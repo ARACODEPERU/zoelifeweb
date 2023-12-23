@@ -84,9 +84,9 @@ Route::get('/mexico.contacto', [MexicoController::class, 'contacto'])->name('web
 
 Route::get('/mipais', function () {
     $ip = $_SERVER['REMOTE_ADDR']; // Esto contendrá la ip de la solicitud.
-    //$ip = '179.6.101.101';
+
     $dataArray = json_decode(file_get_contents("http://www.geoplugin.net/json.gp?ip=" . $ip));
-    dd($dataArray);
+
     switch ($dataArray->geoplugin_countryCode) {
         case 'PE':
             return to_route('web_peru_inicio');
