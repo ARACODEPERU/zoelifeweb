@@ -19,7 +19,7 @@ use App\Http\Controllers\WebController;
 use Modules\Blog\Http\Controllers\BlogController;
 
 
-Route::get('/', [WebController::class, 'index'])->name('cms_principal');
+Route::get('/home', [WebController::class, 'index'])->name('cms_principal');
 
 
 Route::get('/peru', [PeruController::class, 'inicio'])->name('web_peru_inicio');
@@ -84,14 +84,24 @@ Route::get('/mexico.contacto', [MexicoController::class, 'contacto'])->name('web
 
 Route::get('/mipais', function () {
     $ip = $_SERVER['REMOTE_ADDR']; // Esto contendrá la ip de la solicitud.
-
-    // Puedes usar un método más sofisticado para recuperar el contenido de una página web con PHP usando una biblioteca o algo así
-    // Vamos a recuperar los datos rápidamente con file_get_contents
+    //$ip = '179.6.101.101';
     $dataArray = json_decode(file_get_contents("http://www.geoplugin.net/json.gp?ip=" . $ip));
 
-    //var_dump($dataArray);
-
-    dd($dataArray);
+    switch ($dataArray->geoplugin_countryCode) {
+        case 'PE':
+            return to_route('web_peru_inicio');
+        case 'EC':
+            return to_route('web_ecuador_inicio');
+        case 'BO':
+            return to_route('web_bolivia_inicio');
+        case 'CO':
+            return to_route('web_colombia_inicio');
+        case 'MX':
+            return to_route('web_mexico_inicio');
+        default:
+            // Agrega aquí lo que quieres hacer en caso de otros países.
+            return to_route('cms_principal');
+    }
 });
 
 /*
