@@ -6,7 +6,11 @@ document.addEventListener('DOMContentLoaded', function() {
       document.body.classList.add("dark");
       const a_tags = document.querySelectorAll(".dropdown-item");
       a_tags.forEach((a_tag) => {
-        a_tag.classList.add("dark");
+        a_tag.classList.toggle("dark");
+      });
+      const bg_whites = document.querySelectorAll(".selector-d");
+      bg_whites.forEach((bg_white) => {
+        bg_white.classList.toggle("bg-white");
       });
     }
 
@@ -28,6 +32,10 @@ document.addEventListener('DOMContentLoaded', function() {
       const a_tags = document.querySelectorAll(".dropdown-item");
       a_tags.forEach((a_tag) => {
         a_tag.classList.toggle("dark");
+      });
+      const bg_whites = document.querySelectorAll(".selector-d");
+      bg_whites.forEach((bg_white) => {
+        bg_white.classList.toggle("bg-white");
       });
     }
   });

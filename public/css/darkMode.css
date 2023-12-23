@@ -52,6 +52,14 @@ body.dark div.body {
     background-color: #313131;
 }
 
+body.dark div.section-full {
+    background-color: #00000000;
+}
+
+.bg-white {
+    background-color: #00000000;
+}
+
 body.dark div.tp-mask-wrap {
     background-color: #00000000;
 }
