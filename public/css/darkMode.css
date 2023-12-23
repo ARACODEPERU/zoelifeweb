@@ -1,0 +1,69 @@
+/* Estilos para Switch */
+.switch {
+    width: 60px;
+    height: 25px;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 100px;
+    border: #333 solid 2px;
+    background-color: #132b41;
+}
+
+.switch i {
+    font-size: 1rem;
+    color: #fdc21c;
+}
+
+/*Accede al ultimo item de la lista */
+ul.nav li.switch::before {
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: solid thin #000;
+    left: 0;
+    right: unset;
+}
+
+ul.nav li.switch.active::before {
+    right: 0;
+    left: unset;
+    border: solid thin #fff;
+}
+
+li.switch.active i {
+    color: #fff
+}
+
+body.dark .header-container {
+    background-color: #313131;
+}
+
+body.dark .main {
+    background-color: #313131;
+}
+
+body.dark div.body {
+    background-color: #313131;
+}
+
+body.dark div.tp-mask-wrap {
+    background-color: #00000000;
+}
+
+body.dark div {
+    background-color: #313131;
+}
+
+body.dark nav ul {
+    background-color: #313131;
+}
+
+a.dropdown-item.dark {
+    color: white;
+}

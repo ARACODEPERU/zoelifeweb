@@ -1,4 +1,8 @@
 <div>
+        <!-- Importando darkMode -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="{{ asset('css/darkMode.css') }}">
+        <script src="{{ asset('js/darkMode.js') }}"></script>
     <!--
     <div id="loading-area" class="loading-page-1">
         <div class="spinner">
@@ -106,6 +110,10 @@
                             <li> <a href="{{ route('web_ecuador_alcanzando_las_estrellas') }}">Alcanzando las
                                     Estrellas</a> </li>
                             <li> <a href="{{ route('web_ecuador_contacto') }}">Contacto</a> </li>
+                            <li class="switch">
+                                <i class="bx bxs-sun"></i>
+                                <i class="bx bxs-moon"></i>
+                            </li>  
                         </ul>
                     </div>
                 </div>
