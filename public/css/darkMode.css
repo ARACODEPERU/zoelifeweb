@@ -70,6 +70,10 @@ body.dark h2.swal2-title {
 body.dark div.swal2-success-ring {
     background-color: #33333342;
 }
+/* Fondo que rodea al modal del sweetalert2 */
+body.dark div.swal2-backdrop-show {
+    background-color: #3333332c;
+}
 
 body.dark div.swal2-html-container {
     color: rgb(210, 248, 120);
