@@ -18,7 +18,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('themes/zoelife/global/images/favicon.png') }}" />
 
     <!-- PAGE TITLE HERE -->
-    <title>Perú | ZoeLife International </title>
+    <title>México | ZoeLife International </title>
 
     <!-- MOBILE SPECIFIC -->
     <meta name="viewport" content="width=device-width">
