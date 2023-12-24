@@ -1,4 +1,4 @@
-@extends('layouts.peru')
+@extends('layouts.mexico')
 
 @section('content')
     <!-- Encabezado inicio -->

@@ -35,7 +35,7 @@
                         <div class="p-a30 bg-white clearfix m-b30">
                             <h3>Envianos un mensaje</h3>
                             <form class="dzForm" id="pageContactForm">
-                                <input type="text" hidden name="country" value="PE" required>
+                                <input type="text" hidden name="country" value="BO" required>
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
