@@ -2,7 +2,7 @@
 
 @section('content')
     <!-- Encabezado inicio -->
-    <x-ecuador.header-area></x-ecuador.header-area>
+    <x-mexico.header-area></x-mexico.header-area>
     <!-- Encabezado fin -->
 
     <!-- Content -->
@@ -220,6 +220,6 @@
         });
     </script>
     <!-- Footer -->
-    <x-ecuador.footer-area></x-ecuador.footer-area>
+    <x-mexico.footer-area></x-mexico.footer-area>
     <!-- Footer END-->
 @endsection
