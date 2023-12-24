@@ -63,9 +63,24 @@ body.dark div.section-full {
 body.dark div.tp-mask-wrap {
     background-color: #00000000;
 }
+body.dark h2.swal2-title {
+    color: white;
+}
+
+body.dark div.swal2-success-ring {
+    background-color: #33333342;
+}
+
+body.dark div.swal2-html-container {
+    color: rgb(210, 248, 120);
+}
 
 body.dark div {
     background-color: #313131;
+}
+
+body.dark div.swal2-popup {
+    background-color: #5a5a5a;
 }
 
 body.dark nav ul {
