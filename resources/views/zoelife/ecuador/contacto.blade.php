@@ -34,8 +34,8 @@
                         <div class="dzFormMsg"></div>
                         <div class="p-a30 bg-white clearfix m-b30">
                             <h3>Envianos un mensaje</h3>
-                            <form method="post" class="dzForm" action="script/contact.php">
-                                <input type="hidden" value="Contact" name="dzToDo">
+                            <form class="dzForm" id="pageContactForm">
+                                <input type="text" hidden name="country" value="EC" required>
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
@@ -45,8 +45,8 @@
                                                         <i class="fa fa-user"></i>
                                                     </span>
                                                 </div>
-                                                <input name="dzName" type="text" required class="form-control"
-                                                    placeholder="Nombre Completo">
+                                                <input name="full_name" id="full_name" type="text" required
+                                                    class="form-control" placeholder="Nombre Completo">
                                             </div>
                                         </div>
                                     </div>
@@ -58,8 +58,8 @@
                                                         <i class="fa fa-phone"></i>
                                                     </span>
                                                 </div>
-                                                <input name="dzName" type="text" required class="form-control"
-                                                    placeholder="Teléfono">
+                                                <input name="phone" id="phone" type="telephone" required
+                                                    class="form-control" placeholder="Teléfono">
                                             </div>
                                         </div>
                                     </div>
@@ -71,8 +71,8 @@
                                                         <i class="fa fa-envelope"></i>
                                                     </span>
                                                 </div>
-                                                <input name="dzEmail" type="email" required class="form-control"
-                                                    placeholder="Correo Electrónico">
+                                                <input name="email" id="email" type="email" required
+                                                    class="form-control" placeholder="Correo Electrónico">
                                             </div>
                                         </div>
                                     </div>
@@ -84,21 +84,14 @@
                                                         <i class="fa fa-edit"></i>
                                                     </span>
                                                 </div>
-                                                <textarea name="dzMessage" rows="4" required class="form-control" placeholder="Escribe tu mensaje aqui..."></textarea>
+                                                <textarea name="message" id="message" rows="4" required class="form-control"
+                                                    placeholder="Escribe tu mensaje aqui..."></textarea>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div>                                 
                                     <div class="col-md-12">
-                                        <div class="g-recaptcha-bx">
-                                            <div class="g-recaptcha" data-sitekey="6LefsVUUAAAAADBPsLZzsNnETChealv6PYGzv3ZN"
-                                                data-callback="verifyRecaptchaCallback"
-                                                data-expired-callback="expiredRecaptchaCallback"></div>
-                                            <input class="form-control d-none" style="display:none;" data-recaptcha="true"
-                                                required data-error="Please complete the Captcha">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <button name="submit" type="submit" value="Submit" class="site-button">
+                                        <button class="site-button"
+                                            id="submitPageContactButton">
                                             <i class="fa fa-envelope"></i> &nbsp;
                                             <span>Enviar Ahora</span>
                                         </button>
@@ -164,7 +157,68 @@
 
     </div>
     <!-- Content END-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let form = document.getElementById('pageContactForm');
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
 
+                var formulario = document.getElementById('pageContactForm');
+                var formData = new FormData(formulario);
+
+                // Deshabilitar el botón
+                var submitButton = document.getElementById('submitPageContactButton');
+                submitButton.disabled = true;
+                submitButton.style.opacity = 0.25;
+
+                // Crear una nueva solicitud XMLHttpRequest
+                var xhr = new XMLHttpRequest();
+
+                // Configurar la solicitud POST al servidor
+                xhr.open('POST', "{{ route('apisubscriber') }}", true);
+
+                // Configurar la función de callback para manejar la respuesta
+                xhr.onload = function() {
+                    // Habilitar nuevamente el botón
+                    submitButton.disabled = false;
+                    submitButton.style.opacity = 1;
+                    if (xhr.status === 200) {
+                        var response = JSON.parse(xhr.responseText);
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Enhorabuena',
+                            text: response.message,
+                            customClass: {
+                                container: 'sweet-modal-zindex' // Clase personalizada para controlar el z-index
+                            }
+                        });
+                        formulario.reset();
+                    } else if (xhr.status === 422) {
+                        var errorResponse = JSON.parse(xhr.responseText);
+                        // Maneja los errores de validación aquí, por ejemplo, mostrando los mensajes de error en algún lugar de tu página.
+                        var errorMessages = errorResponse.errors;
+                        var errorMessageContainer = document.getElementById('messagePageContact');
+                        errorMessageContainer.innerHTML = 'Errores de validación:<br>';
+                        for (var field in errorMessages) {
+                            if (errorMessages.hasOwnProperty(field)) {
+                                errorMessageContainer.innerHTML += field + ': ' + errorMessages[field]
+                                    .join(', ') +
+                                    '<br>';
+                            }
+                        }
+                    } else {
+                        console.error('Error en la solicitud: ' + xhr.status);
+                    }
+
+
+                };
+
+                // Enviar la solicitud al servidor
+                xhr.send(formData);
+            });
+        });
+    </script>
     <!-- Footer -->
     <x-ecuador.footer-area></x-ecuador.footer-area>
     <!-- Footer END-->
