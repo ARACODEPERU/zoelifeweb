@@ -14,11 +14,11 @@
     </div>
     -->
     <!-- Header -->
-    <header class="site-header header-style-1 mo-left dark dark-style-2 selector-d">
+    <header class="site-header header-style-1 mo-left dark dark-style-2">
         <!-- Top bar -->
         <div class="top-bar">
-            <div class="" style="width: 100%; padding: 0px 40px;">
-                <div class="row justify-content-between">
+            <div class="top-bar-content" style="width: 100%; padding: 0px 40px;">
+                <div class="top-bar-contect-space row justify-content-between">
                     <div class="dez-topbar-left">
                         <ul class="social-bx list-inline pull-right">
                             <li>
@@ -57,7 +57,7 @@
         </div>
         <!-- Top Bar END-->
         <!-- Main Header -->
-        <div class="sticky-header header-curve main-bar-wraper navbar-expand-lg">
+        <div class="sticky-header main-bar-wraper navbar-expand-lg">
             <div class="main-bar clearfix ">
                 <div class="clearfix" style="width: 100%; padding: 0px 40px;">
                     <!-- Website Logo -->

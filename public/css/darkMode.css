@@ -40,8 +40,23 @@ li.switch.active i {
     color: #fff
 }
 
-body.dark header .top-bar{
-    background-color: orange;
+body.dark h2{
+    color: #fff;
+}
+body.dark h4{
+    color: #00b01a; 
+}
+
+body.dark .bg-primary{
+    background-color: #00b01a; 
+}
+
+body.dark .text-primary{
+    color: #00b01a; 
+}
+
+body.dark p{
+    color: #fff;
 }
 
 body.dark .header-container {
@@ -87,8 +102,39 @@ body.dark div {
     background-color: #313131;
 }
 
+/* TOP HEADER */
+body.dark .header-style-1.dark.dark-style-2 .top-bar{ 
+    background-color:#00b01a; 
+}
+
+body.dark .header-style-1.dark.dark-style-2 .top-bar .top-bar-content{ 
+    background-color:#00b01a; 
+}
+
+body.dark .header-style-1.dark.dark-style-2 .top-bar .top-bar-content .top-bar-contect-space{ 
+    background-color:#00b01a; 
+}
+
+/* TOP HEADER - END */
+
+body.dark .main-bar .clearfix .logo-header {
+    background-color: #313131;
+
+}
+
 body.dark div.swal2-popup {
     background-color: #5a5a5a;
+}
+
+
+body.dark header div.dez-topbar-left{
+    
+    background-color: #00b01a;
+}
+
+body.dark header div.dez-topbar-right{
+    
+    background-color: #00b01a;
 }
 
 body.dark .header-nav nav ul {

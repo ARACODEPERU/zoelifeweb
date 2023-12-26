@@ -2,7 +2,7 @@
     <!-- Visión - Misión - Valores / STAR -->
     <div class="section-full bg-white p-t70 p-b40 selector-d">
         <div class="container">
-            <div class="  text-center ">
+            <div class="text-center">
                 <h2 class="h2">GRUPO <span class="text-primary">GREEN PLANET SRL</span></h2>
                 <div class="dez-separator text-primary style-icon">
                     <img alt="" src="themes/zoelife/peru/images/leaf-green.png" />
