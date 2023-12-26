@@ -14,7 +14,7 @@
     </div>
     -->
     <!-- Header -->
-    <header class="site-header header-style-1 mo-left dark dark-style-2">
+    <header class="site-header header-style-1 mo-left dark dark-style-2 selector-d">
         <!-- Top bar -->
         <div class="top-bar">
             <div class="" style="width: 100%; padding: 0px 40px;">
@@ -111,7 +111,7 @@
                             <li> <a href="{{ route('web_peru_alcanzando_las_estrellas') }}">Alcanzando las
                                     Estrellas</a> </li>
                             <li> <a href="{{ route('web_peru_contacto') }}">Contacto</a> </li>
-                            <li class="switch">
+                            <li class="switch" style="top: 25px;">
                                 <i class="bx bxs-sun"></i>
                                 <i class="bx bxs-moon"></i>
                             </li>                            
