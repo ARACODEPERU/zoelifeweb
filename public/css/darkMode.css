@@ -47,6 +47,10 @@ body.dark h4{
     color: #00b01a; 
 }
 
+body.dark h4.dez-title{
+    color: #00b01a; 
+}
+
 body.dark .bg-primary{
     background-color: #00b01a; 
 }
@@ -58,6 +62,23 @@ body.dark .text-primary{
 body.dark p{
     color: #fff;
 }
+
+body.dark span{
+    color: #fff;
+}
+
+body.dark .breadcrumb-row ul li{
+    color: #fff;
+}
+
+body.dark .breadcrumb-row ul li a{
+    color: #00b01a; 
+}
+
+
+
+
+
 
 body.dark .header-container {
     background-color: #313131;
