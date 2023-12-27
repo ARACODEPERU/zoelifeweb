@@ -12,7 +12,7 @@
         <div class="p-6">
             <div class="grid grid-cols-6 ">
                 <div class="col-span-6 ms:col-span-1 md:col-span-1 p-2">
-                    <div class="text-center p-4 max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+                    <div class="text-center p-4 max-w-sm bg-white selector-d  border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
                         <a :href="route('roles.index')">
                             <img class="rounded-t-lg" src="/img/security-guard.png" alt="" />
                         </a>
@@ -28,7 +28,7 @@
                     </div>
                 </div>
                 <div class="col-span-6 ms:col-span-1 md:col-span-1 p-2">
-                    <div class="text-center p-4 max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+                    <div class="text-center p-4 max-w-sm bg-white selector-d  border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
                         <a :href="route('permissions.index')">
                             <img class="rounded-t-lg" src="/img/armario.png" alt="" />
                         </a>

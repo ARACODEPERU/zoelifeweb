@@ -117,7 +117,7 @@ function openModalPettycashEdit(pettycash){
             <!-- ====== Table Section Start -->
             <div class="flex flex-col gap-10">
                 <!-- ====== Table One Start -->
-                <div class="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5 xl:pb-1">
+                <div class="rounded-sm border border-stroke bg-white selector-d  shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5 xl:pb-1">
                     <div class="w-full p-4 border-b border-gray-200 bg-gray-50 rounded-t-xl dark:border-gray-600 dark:bg-gray-700">
                         <div class="grid grid-cols-2">
                             <div class="col-span-3 sm:col-span-1">
@@ -190,7 +190,7 @@ function openModalPettycashEdit(pettycash){
                                             >
                                                 <font-awesome-icon :icon="faPencilAlt" />
                                             </button>
-                                            <button v-if="pettycash.income==0" type="button" class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-2 py-1.5 mr-1 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+                                            <button v-if="pettycash.income==0" type="button" class="text-gray-900 bg-white selector-d  border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-2 py-1.5 mr-1 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
                                                 @click="destroy(pettycash)"
                                                 title="Eliminar"
                                                 >

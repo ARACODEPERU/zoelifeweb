@@ -54,7 +54,7 @@
             <div class="container">
 
                 <!-- Nuestro Equipo -->
-                <div class="p-a30 bg-white m-b30 selector-d">
+                <div class="p-a30 bg-white selector-d  m-b30 ">
                     <div class="section-head">
                         <h2 class="text-uppercase">Nuestro Equipo</h2>
                         <div class="dez-divider divider-2px bg-primary icon-left">

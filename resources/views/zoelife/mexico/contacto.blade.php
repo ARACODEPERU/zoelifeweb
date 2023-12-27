@@ -32,7 +32,7 @@
                     <!-- Left part start -->
                     <div class="col-md-7">
                         <div class="dzFormMsg"></div>
-                        <div class="p-a30 bg-white clearfix m-b30">
+                        <div class="p-a30 bg-white selector-d  clearfix m-b30 ">
                             <h3>Envianos un mensaje</h3>
                             <form class="dzForm" id="pageContactForm">
                                 <input type="text" hidden name="country" value="ME" required>
@@ -103,7 +103,7 @@
                     <!-- Left part END -->
                     <!-- right part start -->
                     <div class="col-md-5">
-                        <div class="p-a30 bg-white m-b30">
+                        <div class="p-a30 bg-white selector-d  m-b30 ">
                             <h3>Información de Contacto</h3>
                             <ul class="no-margin">
                                 <li class="icon-bx-wraper left m-b30">

@@ -1,7 +1,7 @@
 <div class="container" style="padding: 60px 0px;">
     <div class="row">
         <div class="col-md-12">
-            <div class="p-a30 bg-white m-b30 selector-d ">
+            <div class="p-a30 bg-white selector-d  m-b30  ">
                 <div class="section-content">
                     <h2 class="text-uppercase">SELECCIONAR PAIS</h2>
                     <div class="dez-divider divider-2px bg-primary icon-left">

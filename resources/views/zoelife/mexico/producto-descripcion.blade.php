@@ -40,7 +40,7 @@
                 </div>
                 <div class="col-md-6">
                     <!-- Dividers with icon -->
-                    <div class="p-a30 bg-white m-b30">
+                    <div class="p-a30 bg-white selector-d  m-b30 ">
                         <div class="section-content">
                             <h2 class="text-uppercase">{{ $product->name }}</h2>
                             <div class="dez-divider divider-2px bg-primary icon-left">
@@ -84,7 +84,7 @@
 
 
                 <!-- Dividers with icon -->
-                <div class="p-a20 bg-white m-b20">
+                <div class="p-a20 bg-white selector-d  m-b20 ">
                     <div class="section-content" style="text-align: center;">
                         <div class="m-b10">
                             <h5 class="text-uppercase">Testimonios del Coffee 3 en 1</h5>

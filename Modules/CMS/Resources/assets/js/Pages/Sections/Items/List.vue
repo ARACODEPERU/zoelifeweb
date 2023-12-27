@@ -174,13 +174,13 @@
                     <div class="max-w-full overflow-x-auto">
                         <div class="flex">
                             <div class="w-full">
-                                <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                                <div class="max-w-sm p-6 bg-white selector-d  border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                                     <h2 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Items Disponibles</h2>
                                     <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
                                         <template v-for="(item, index) in form.items" >
                                             <li v-if="item.display" class="py-3 sm:py-4">
                                                 <template v-if="item.type_id == 1">
-                                                    <label @click="addItem(item,index)" :for="'react-option'+index" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">                           
+                                                    <label @click="addItem(item,index)" :for="'react-option'+index" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white selector-d  border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">                           
                                                         <div class="block">
                                                             <img  :src="item.content" style="width: 60px;" />
                                                             <div class="w-full text-sm">{{ item.description }}</div>
@@ -190,7 +190,7 @@
                                                 </template>
                                                 <template v-if="item.type_id == 2">
                                                     
-                                                    <label @click="addItem(item,index)" :for="'react-option'+index" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">                           
+                                                    <label @click="addItem(item,index)" :for="'react-option'+index" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white selector-d  border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">                           
                                                         <div class="block">
                                                             <font-awesome-icon class="mb-2 w-7 h-7 text-sky-500"  :icon="faCirclePlay" />
                                                             <div class="w-full text-sm">{{ item.description }}</div>
@@ -200,7 +200,7 @@
                                                 </template>
                                                 <template v-if="item.type_id == 3">
                                                     
-                                                    <label @click="addItem(item,index)" :for="'react-option'+index" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">                           
+                                                    <label @click="addItem(item,index)" :for="'react-option'+index" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white selector-d  border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">                           
                                                         <div class="block">
                                                             <font-awesome-icon class="mb-2 w-7 h-7 text-sky-500"  :icon="faFileCircleCheck" />
                                                             <div class="w-full text-sm">{{ item.description }}</div>
@@ -210,7 +210,7 @@
                                                 </template>
                                                 <template v-if="item.type_id == 4">
                                                 
-                                                    <label @click="addItem(item,index)" :for="'react-option'+index" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">                           
+                                                    <label @click="addItem(item,index)" :for="'react-option'+index" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white selector-d  border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">                           
                                                         <div class="block">
                                                             <div class="w-full text-lg font-semibold">{{ item.content }}</div>
                                                             <div class="w-full text-sm">{{ item.description }}</div>
@@ -226,12 +226,12 @@
                             </div>
                             <div class="w-3 px-2"></div>
                             <div class="w-full">
-                                <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                                <div class="max-w-sm p-6 bg-white selector-d  border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                                     <h2 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Items Elegidos</h2>
                                     <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
                                         <li v-for="(item, index) in arrayItems.data" class="py-3 sm:py-4">
                                             <template v-if="item.type_id == 1">
-                                                <label :for="'react-option'+index" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">                           
+                                                <label :for="'react-option'+index" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white selector-d  border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">                           
                                                     <div class="block">
                                                         <img  :src="item.content" style="width: 60px;" />
                                                         <div class="w-full text-sm">{{ item.description }}</div>
@@ -241,7 +241,7 @@
                                             </template>
                                             <template v-if="item.type_id == 2">
                                                 
-                                                <label :for="'react-option'+index" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">                           
+                                                <label :for="'react-option'+index" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white selector-d  border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">                           
                                                     <div class="block">
                                                         <font-awesome-icon class="mb-2 w-7 h-7 text-sky-500"  :icon="faCirclePlay" />
                                                         <div class="w-full text-sm">{{ item.description }}</div>
@@ -251,7 +251,7 @@
                                             </template>
                                             <template v-if="item.type_id == 3">
                                                 
-                                                <label :for="'react-option'+index" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">                           
+                                                <label :for="'react-option'+index" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white selector-d  border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">                           
                                                     <div class="block">
                                                         <font-awesome-icon class="mb-2 w-7 h-7 text-sky-500"  :icon="faFileCircleCheck" />
                                                         <div class="w-full text-sm">{{ item.description }}</div>
@@ -261,7 +261,7 @@
                                             </template>
                                             <template v-if="item.type_id == 4">
                                                 
-                                                <label :for="'react-option'+index" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">                           
+                                                <label :for="'react-option'+index" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white selector-d  border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">                           
                                                     <div class="block">
                                                         <div class="w-full text-lg font-semibold">{{ item.content }}</div>
                                                         <div class="w-full text-sm">{{ item.description }}</div>

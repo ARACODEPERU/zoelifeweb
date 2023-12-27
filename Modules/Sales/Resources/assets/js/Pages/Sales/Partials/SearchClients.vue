@@ -120,7 +120,7 @@
             </form>
             <div v-show="displayResultSearchClient" style="position: absolute;width: 100%;z-index: 999;">
                 <div class="mt-1 border border-stroke" style="max-height: 250px;overflow-y: auto;">
-                    <ul class="max-w-md divide-y bg-white">
+                    <ul class="max-w-md divide-y bg-white selector-d ">
                         <li  v-for="(client, index) in form.clients" class="p-4 border-b border-stroke bg-gray-100 pb-3 sm:pb-4 dark:border-strokedark dark:bg-boxdark" >
                             <div @click="selectClient(client)" style="cursor: pointer;">
                                 <p :class="[client.number == '99999999' ? 'text-gray-500' : 'text-gray-900']" class="text-sm font-medium truncate dark:text-white">
@@ -150,7 +150,7 @@
                                     text-base
                                     font-normal
                                     text-gray-700
-                                    bg-white bg-clip-padding bg-no-repeat
+                                    bg-white selector-d  bg-clip-padding bg-no-repeat
                                     border border-solid border-gray-300
                                     rounded
                                     transition
@@ -177,7 +177,7 @@
 
                         <div class="col-span-6 sm:col-span-2">
                             <button @click="modalNewSearchClient()" type="button"
-                                class="block w-full bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow mt-6 
+                                class="block w-full bg-white selector-d  hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow mt-6 
                                     dark:hover:bg-gray-800
                                     dark:text-white
                                     dark:bg-gray-700

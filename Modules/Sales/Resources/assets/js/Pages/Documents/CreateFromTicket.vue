@@ -468,7 +468,7 @@
             </nav>
 
             <div class="flex-shrink max-w-full w-full mb-6">
-                <div class="p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg">
+                <div class="p-6 bg-white selector-d  dark:bg-gray-800 rounded-lg shadow-lg">
                     <div class="flex justify-between items-center pb-4 border-b border-gray-200 dark:border-gray-700 mb-3">
                         <div class="flex flex-col">
                             <div class="text-3xl font-bold mb-1">
