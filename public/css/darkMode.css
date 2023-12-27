@@ -47,9 +47,21 @@ body.dark h4{
     color: #00b01a; 
 }
 
-body.dark .dez-box .dez-title{
+
+body.dark h4.dez-title a{
     color: #00b01a; 
 }
+
+body.dark h5.text-uppercase{
+    color: #00b01a; 
+}
+
+
+body.dark h3.post-title a{
+    color: #fff; 
+}
+
+
 
 body.dark .bg-primary{
     background-color: #00b01a; 

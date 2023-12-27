@@ -36,11 +36,11 @@
         <div class="container" style="padding: 60px 0px;">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="{{ $product->image }}" alt="">
+                    <img src="{{ $product->image }}" alt="img">
                 </div>
                 <div class="col-md-6">
                     <!-- Dividers with icon -->
-                    <div class="p-a30 bg-white m-b30">
+                    <div class="p-a30 bg-white m-b30 selector-d">
                         <div class="section-content">
                             <h2 class="text-uppercase">{{ $product->name }}</h2>
                             <div class="dez-divider divider-2px bg-primary icon-left">
@@ -59,18 +59,18 @@
 
         <!-- Why Choose Us -->
         <div class="section-full text-white bg-img-fix p-t70 p-b40 overlay-black-dark choose-us"
-            style="background-image:url(themes/zoelife/peru/images/background/fondo.jpg);">
+            style="background-image:url({{ asset('themes/zoelife/peru/images/background/fondo.jpg') }});">
             <div class="container">
-                <div class="section-head  text-center text-white">
+                <div class="section-head  text-center text-white" style="padding: 10px;">
                     <h2 class="h2">Recomendaciones <span class="text-primary"> de Uso Sugerido</span></h2>
                     <div class="dez-separator text-primary style-icon border-white"><img alt=""
-                            src="themes/zoelife/peru/images/leaf-green.png" /></div>
+                            src="{{ asset('themes/zoelife/peru/images/leaf-green.png') }}" /></div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6" style="padding: 10px;">
                         {!! $product->additional !!}
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" style="padding: 10px;">
                         {!! $product->additional1 !!}
                     </div>
                 </div>
@@ -84,16 +84,16 @@
 
 
                 <!-- Dividers with icon -->
-                <div class="p-a20 bg-white m-b20">
+                <div class="p-a20 bg-white m-b20 selector-d">
                     <div class="section-content" style="text-align: center;">
                         <div class="m-b10">
-                            <h5 class="text-uppercase">Testimonios del Coffee 3 en 1</h5>
+                            <h5 class="text-uppercase">Testimonios del {{ $product->name }}</h5>
                             <p>Lorem Ipsum is simply dummy text of the een the industry's standard dummy text ever since the
                                 1500s, when an unknown printer took a Gallery of type and scrambled it to make a type
                                 specimen book. It has survived not only five centuries, but also the leap into electronic
                             </p>
                             <div class="dez-divider divider-2px bg-primary icon-center"><i
-                                    class="fa fa-truck bg-primary text-white"></i></div>
+                                    class="fa fa-video bg-primary text-white"></i></div>
                         </div>
                     </div>
                 </div>

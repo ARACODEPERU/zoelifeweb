@@ -32,15 +32,15 @@
 
         <!-- Video Presentación / STAR -->
         <div class="section-full text-white bg-img-fix p-t70 p-b40 overlay-black-dark choose-us"
-            style="background-image:url(themes/zoelife/peru/images/background/experiencia/cancun.jpg);">
+            style="background-image:url({{ asset('themes/zoelife/peru/images/background/experiencia/cancun.jpg') }});">
             <div class="container">
                 <div class="section-head  text-center text-white" style="padding: 10px;">
                     <h2 class="h2">Experiencias <span class="text-primary"> Zoé Life</span></h2>
                     <div class="dez-separator text-primary style-icon border-white"><img alt=""
-                            src="themes/zoelife/peru/images/leaf-green.png" /></div>
+                            src="{{ asset('themes/zoelife/peru/images/leaf-green.png') }}" /></div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12" style="padding: 10px;">
                         {!! $video->content !!}
                     </div>
                 </div>
@@ -76,66 +76,6 @@
                                                 <li><a href="javascript:void(0);" class="fab fa-facebook"></a></li>
                                                 <li><a href="javascript:void(0);" class="fab fa-instagram"></a></li>
                                                 <li><a href="javascript:void(0);" class="fab fa-linkedin"></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="p-a10">
-                                        <h4 class="dez-title m-b0"><a href="javascript:void(0);">Nashid Martines</a></h4>
-                                        <span class="dez-member-position">Director</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                <div class="dez-box m-b30">
-                                    <div class="dez-media"> <a href="javascript:void(0);"> <img width="358"
-                                                height="460" src="themes/zoelife/peru/images/our-team/pic5.jpg"
-                                                alt=""> </a>
-                                        <div class="dez-info-has bg-primary">
-                                            <ul class="dez-social-icon dez-border">
-                                                <li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
-                                                <li><a href="javascript:void(0);" class="fa fa-twitter"></a></li>
-                                                <li><a href="javascript:void(0);" class="fa fa-linkedin"></a></li>
-                                                <li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="p-a10">
-                                        <h4 class="dez-title m-b0"><a href="javascript:void(0);">Nashid Martines</a></h4>
-                                        <span class="dez-member-position">Director</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                <div class="dez-box m-b30">
-                                    <div class="dez-media"> <a href="javascript:void(0);"> <img width="358"
-                                                height="460" src="themes/zoelife/peru/images/our-team/pic5.jpg"
-                                                alt=""> </a>
-                                        <div class="dez-info-has bg-primary">
-                                            <ul class="dez-social-icon dez-border">
-                                                <li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
-                                                <li><a href="javascript:void(0);" class="fa fa-twitter"></a></li>
-                                                <li><a href="javascript:void(0);" class="fa fa-linkedin"></a></li>
-                                                <li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="p-a10">
-                                        <h4 class="dez-title m-b0"><a href="javascript:void(0);">Nashid Martines</a></h4>
-                                        <span class="dez-member-position">Director</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                <div class="dez-box m-b30">
-                                    <div class="dez-media"> <a href="javascript:void(0);"> <img width="358"
-                                                height="460" src="themes/zoelife/peru/images/our-team/pic5.jpg"
-                                                alt=""> </a>
-                                        <div class="dez-info-has bg-primary">
-                                            <ul class="dez-social-icon dez-border">
-                                                <li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
-                                                <li><a href="javascript:void(0);" class="fa fa-twitter"></a></li>
-                                                <li><a href="javascript:void(0);" class="fa fa-linkedin"></a></li>
-                                                <li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
                                             </ul>
                                         </div>
                                     </div>
