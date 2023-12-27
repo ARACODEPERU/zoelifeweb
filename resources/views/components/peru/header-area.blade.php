@@ -94,7 +94,7 @@
                         <ul class="nav navbar-nav">
                             <li> <a href="{{ route('web_peru_inicio') }}">Home</a> </li>
                             <li> <a href="{{ route('web_peru_nosotros') }}">Nosotros</a> </li>
-                            <li> <a href="{{ route('web_peru_productos') }}">Productos</a>
+                            <li> <a href="javascript:;">Productos</a>
                                 <ul class="sub-menu">
                                     @foreach ($products as $product)
                                         <li>
