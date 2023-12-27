@@ -69,17 +69,17 @@ export default {
 
         <div>
             <div class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8">
-                <div class="col-span-6 p-4 bg-white dark:bg-gray-800 shadow sm:rounded-lg">
+                <div class="col-span-6 p-4 bg-white selector-d  dark:bg-gray-800 shadow sm:rounded-lg">
 
                         <div class="grid grid-cols-4 gap-3 py-2" id="form-dates">
                             <div>
                                 <input type="date" v-model="date_start"
-                                    class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                    class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white selector-d  bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                                     id="f1" />
                             </div>
                             <div>
                                 <input type="date" v-model="date_end"
-                                    class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                                    class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white selector-d  bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                                     id="f2" />
                             </div>
                             <div class="" hidden>

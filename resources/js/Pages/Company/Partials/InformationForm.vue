@@ -162,7 +162,7 @@
                     placeholder="Buscar Distrito"
                     type="text" 
                     class="block w-full mt-1" />
-                    <ul v-if="searchUbigeos && searchUbigeos.length > 0" class="list-disc list-inside absolute z-50 w-full bg-white border border-gray-300 rounded-md mt-1">
+                    <ul v-if="searchUbigeos && searchUbigeos.length > 0" class="list-disc list-inside absolute z-50 w-full bg-white selector-d  border border-gray-300 rounded-md mt-1">
                         <li v-for="item in searchUbigeos" :key="item.id" class="px-4 cursor-pointer hover:bg-gray-100" @click="selectCity(item)">
                             {{ item.department_name+'-'+item.province_name+'-'+item.district_name }}
                         </li>

@@ -58,7 +58,7 @@
                             text-base
                             font-normal
                             text-gray-700
-                            bg-white bg-clip-padding bg-no-repeat
+                            bg-white selector-d  bg-clip-padding bg-no-repeat
                             border border-solid border-gray-300
                             rounded
                             transition
