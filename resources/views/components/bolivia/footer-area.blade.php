@@ -85,7 +85,7 @@
                     </div>
                     <div class="col-lg-4 text-center">
                         <span> Desarrollado por <i class="fa fa-heart text-primary heart"></i>
-                            <a href="">Aracode Smart Solutión</a>
+                            <a href="">Aracode Smart Solutions</a>
                         </span>
                     </div>
                     <div class="col-lg-4 text-right">
