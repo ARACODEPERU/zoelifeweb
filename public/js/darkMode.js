@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
       a_tags.forEach((a_tag) => {
         a_tag.classList.toggle("dark");
       });
-      const bg_whites = document.querySelectorAll(".selector-d");
+      let bg_whites = document.querySelectorAll(".selector-d");
       bg_whites.forEach((bg_white) => {
         bg_white.classList.toggle("bg-white");
       });
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
       a_tags.forEach((a_tag) => {
         a_tag.classList.toggle("dark");
       });
-      const bg_whites = document.querySelectorAll(".selector-d");
+      let bg_whites = document.querySelectorAll(".selector-d");
       bg_whites.forEach((bg_white) => {
         bg_white.classList.toggle("bg-white");
       });
