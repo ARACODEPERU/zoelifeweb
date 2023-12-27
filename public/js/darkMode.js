@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
       a_tags.forEach((a_tag) => {
         a_tag.classList.toggle("dark");
       });
-      let bg_whites = document.querySelectorAll(".selector-d");
-      bg_whites.forEach((bg_white) => {
+      let bg_whitess = document.querySelectorAll(".selector-d");
+      bg_whitess.forEach((bg_white) => {
         bg_white.classList.toggle("bg-white");
       });
     }
