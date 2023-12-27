@@ -59,6 +59,7 @@ Route::get('/peru.contacto', [PeruController::class, 'contacto'])->name('web_per
 Route::get('/bolivia', [BoliviaController::class, 'inicio'])->name('web_bolivia_inicio');
 Route::get('/bolivia.nosotros', [BoliviaController::class, 'nosotros'])->name('web_bolivia_nosotros');
 Route::get('/bolivia.productos', [BoliviaController::class, 'productos'])->name('web_bolivia_productos');
+Route::get('/bolivia.producto-descripcion/{id}', [BoliviaController::class, 'productodescripcion'])->name('web_bolivia_producto_descripcion');
 Route::get('/bolivia.testimonios', [BoliviaController::class, 'testimonios'])->name('web_bolivia_testimonios');
 Route::get('/bolivia.centros-de-distribucion', [BoliviaController::class, 'centros'])->name('web_bolivia_centros');
 Route::get('/bolivia.eventos', [BoliviaController::class, 'eventos'])->name('web_bolivia_eventos');
