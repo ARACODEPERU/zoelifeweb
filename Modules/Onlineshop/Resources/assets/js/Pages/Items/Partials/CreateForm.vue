@@ -133,7 +133,7 @@ const setCountry = (id, text, icon) => {
 <template>
     <div class="grid grid-cols-2 md:grid-cols-2 gap-4">
         <div class="col-span-2 sm:col-span-1">
-            <div v-if="courses.length > 0" class="w-full rounded-lg font-medium text-gray-900 bg-white selector-d  border border-gray-200 dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+            <div v-if="courses.length > 0" class="w-full rounded-lg font-medium text-gray-900 bg-white border border-gray-200 dark:bg-gray-700 dark:border-gray-600 dark:text-white">
                 <div class="block w-full px-4 py-2 border-b border-gray-200 dark:bg-gray-800 dark:border-gray-600">Cursos</div>
                 <div style="height: 250px; overflow-y: auto;">
                     <button @click="setItemsData(course,1)" v-for="(course, key) in courses" type="button" class="w-full text-sm px-4 py-2 font-medium text-left border-b border-gray-200 cursor-pointer hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white">
@@ -141,7 +141,7 @@ const setCountry = (id, text, icon) => {
                     </button>
                 </div>
             </div>
-            <div v-if="products.length > 0" class="w-full rounded-lg font-medium text-gray-900 bg-white selector-d  border border-gray-200 dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+            <div v-if="products.length > 0" class="w-full rounded-lg font-medium text-gray-900 bg-white border border-gray-200 dark:bg-gray-700 dark:border-gray-600 dark:text-white">
                 <div class="block w-full px-4 py-2 border-b border-gray-200 dark:bg-gray-800 dark:border-gray-600">Productos</div>
                 <div>
                     <button @click="setItemsData(product,2)" v-for="(product, key) in products" type="button" class="w-full text-sm px-4 py-2 font-medium text-left border-b border-gray-200 cursor-pointer hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white">
@@ -152,7 +152,7 @@ const setCountry = (id, text, icon) => {
         </div>
         <div class="col-span-2 sm:col-span-1">
 
-            <div class="w-full p-4 bg-white selector-d  border border-gray-200 rounded-lg sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
+            <div class="w-full p-4 bg-white border border-gray-200 rounded-lg sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700">
                 <form @submit.prevent="createItem" class="space-y-6" action="#">
                     <div>
                         <InputLabel value="País *" class="mb-1" />
@@ -162,7 +162,7 @@ const setCountry = (id, text, icon) => {
                                 <img v-show="form.country_icon" :src="form.country_icon" class="mr-1" style="width: 15px;"><span>{{ form.country_description }}</span> 
                             </button>
                             </template>
-                            <div class="z-10 bg-white selector-d  divide-y divide-gray-100 rounded-lg shadow w-full dark:bg-gray-700">
+                            <div class="z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-full dark:bg-gray-700">
                                 <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
                                     <li v-for="(country, ke) in countries">
                                         <button @click="setCountry(country.id,country.description,country.icon)" type="button" class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white">

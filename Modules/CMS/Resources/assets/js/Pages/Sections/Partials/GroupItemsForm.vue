@@ -219,7 +219,7 @@ const destroyGroup = (id) => {
     <div class="grid grid-cols-6 gap-6">
         <div v-for="(gr, groupIndex) in arrayGroups" class="col-span-2 sm:col-span-2">
             <template v-if="gr.group">
-                <div class="max-w-sm bg-white selector-d  p-4 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <div class="max-w-sm bg-white p-4 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <div class="flex justify-end px-4 pt-4">
                         <button @click="destroyGroup(gr.group.id)" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                             <font-awesome-icon :icon="faTrashAlt" />

@@ -78,8 +78,8 @@ function getProductsByLocal() {
 
         <div>
             <div class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8">
-                <div class="col-span-6 p-4 bg-white selector-d  dark:bg-gray-800 shadow sm:rounded-lg">
-                    <div class="grid grid-cols-4 gap-4 pb-4 bg-white selector-d  dark:bg-gray-900">
+                <div class="col-span-6 p-4 bg-white dark:bg-gray-800 shadow sm:rounded-lg">
+                    <div class="grid grid-cols-4 gap-4 pb-4 bg-white dark:bg-gray-900">
                         <div class="col-span-4 sm:col-span-1">
                             <InputLabel for="stablishment" value="Establecimiento" />
                             <select v-model="form.local_id" v-on:change="form.get(route('kardex_index'))"

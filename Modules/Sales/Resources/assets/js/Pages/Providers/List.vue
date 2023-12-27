@@ -37,7 +37,7 @@
 
         <div>
             <div class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8">
-                <div class="col-span-6 p-4 bg-white selector-d  dark:bg-gray-800 shadow sm:rounded-lg">
+                <div class="col-span-6 p-4 bg-white dark:bg-gray-800 shadow sm:rounded-lg">
                     <form @submit.prevent="form.get(route('providers.index'))">
                         <div class="grid grid-cols-3 gap-4 py-2">
                             <div>
@@ -51,7 +51,7 @@
                                         text-base
                                         font-normal
                                         text-gray-700
-                                        bg-white selector-d  bg-clip-padding
+                                        bg-white bg-clip-padding
                                         border border-solid border-gray-300
                                         rounded
                                         transition

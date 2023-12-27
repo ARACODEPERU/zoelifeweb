@@ -54,7 +54,7 @@
             <div class="container">
 
                 <!-- Team Section Style 2 -->
-                <div class="p-a30 bg-white selector-d  m-b30 ">
+                <div class="p-a30 bg-white m-b30">
                     <div class="section-head">
                         <h2 class="text-uppercase">Team Section Style 2</h2>
                     </div>
@@ -114,7 +114,7 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="p-a10 bg-white selector-d  ">
+                                    <div class="p-a10 bg-white">
                                         <h4 class="dez-title m-b0"><a href="javascript:void(0);">konne Backfield</a></h4>
                                         <span class="dez-member-position">Designer</span>
                                     </div>

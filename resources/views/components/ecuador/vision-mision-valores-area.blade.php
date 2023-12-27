@@ -1,6 +1,6 @@
 <div>
     <!-- Visión - Misión - Valores / STAR -->
-    <div class="section-full bg-white selector-d  p-t70 p-b40 ">
+    <div class="section-full bg-white p-t70 p-b40 selector-d">
         <div class="container">
             <div class="  text-center ">
                 <h2 class="h2">GRUPO <span class="text-primary">GREEN PLANET SRL</span></h2>
