@@ -1,5 +1,5 @@
 <template>
-    <nav class="topnav navbar navbar-expand-lg navbar-light bg-white selector-d  fixed-top">
+    <nav class="topnav navbar navbar-expand-lg navbar-light bg-white  fixed-top">
         <div class="container">
             <a class="navbar-brand" href="./index.html"><strong>Mundana</strong></a>
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">

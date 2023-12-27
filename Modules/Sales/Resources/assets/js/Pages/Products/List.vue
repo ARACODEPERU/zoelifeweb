@@ -360,7 +360,7 @@
           <!-- ====== Table Section Start -->
           <div class="flex flex-col gap-10">
             <!-- ====== Table One Start -->
-            <div class="rounded-sm border border-stroke bg-white selector-d  pb-2.5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5 xl:pb-1">
+            <div class="rounded-sm border border-stroke bg-white pb-2.5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5 xl:pb-1">
               <div class="border-b border-gray-200 dark:border-gray-700">
                 <ul class="flex flex-wrap -mb-px text-sm font-medium text-center text-gray-500 dark:text-gray-400">
                   <li class="mr-2">

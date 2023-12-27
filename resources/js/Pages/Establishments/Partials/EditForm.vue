@@ -139,7 +139,7 @@ const setCountry = (id, text, icon) => {
                         <img v-show="form.country_icon" :src="form.country_icon" class="mr-1" style="width: 15px;"><span>{{ form.country_description }}</span> 
                     </button>
                     </template>
-                    <div class="z-10 bg-white selector-d  divide-y divide-gray-100 rounded-lg shadow w-full dark:bg-gray-700">
+                    <div class="z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-full dark:bg-gray-700">
                         <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
                             <li v-for="(country, ke) in countries">
                                 <button @click="setCountry(country.id,country.description,country.icon)" type="button" class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white">
@@ -223,7 +223,7 @@ const setCountry = (id, text, icon) => {
                     placeholder="Buscar Distrito"
                     type="text" 
                     class="block w-full mt-1" />
-                    <ul v-if="searchUbigeos && searchUbigeos.length > 0" class="list-disc list-inside absolute z-50 w-full bg-white selector-d  border border-gray-300 rounded-md mt-1">
+                    <ul v-if="searchUbigeos && searchUbigeos.length > 0" class="list-disc list-inside absolute z-50 w-full bg-white border border-gray-300 rounded-md mt-1">
                         <li v-for="item in searchUbigeos" :key="item.id" class="px-4 cursor-pointer hover:bg-gray-100" @click="selectCity(item)">
                             {{ item.department_name+'-'+item.province_name+'-'+item.district_name }}
                         </li>

@@ -53,8 +53,8 @@
     <AppLayout title="Blog Suscriptores">
         <div>
             <div class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8">
-                <div class="col-span-6 p-4 bg-white selector-d  dark:bg-gray-800 shadow sm:rounded-lg">
-                    <div class="flex items-center justify-between pb-4 bg-white selector-d  dark:bg-gray-900">
+                <div class="col-span-6 p-4 bg-white dark:bg-gray-800 shadow sm:rounded-lg">
+                    <div class="flex items-center justify-between pb-4 bg-white dark:bg-gray-900">
                         <form @submit.prevent="form.get(route('blog_subscriber'))">
                             <label for="table-search" class="sr-only">Search</label>
                             <div class="relative">

@@ -63,7 +63,7 @@ library.add(faTrashAlt);
                             text-base
                             font-normal
                             text-gray-700
-                            bg-white selector-d  bg-clip-padding bg-no-repeat
+                            bg-white bg-clip-padding bg-no-repeat
                             border border-solid border-gray-300
                             rounded
                             transition
@@ -95,7 +95,7 @@ library.add(faTrashAlt);
                 <form @submit.prevent="searchPerson()">
                     <div class="">
                         <input v-model="form.number" autocomplete="off" type="search" id="search" style="display:none" class="" placeholder="Buscar Producto" required>
-                        <button type="submit" class="block w-full bg-white selector-d  hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow mt-6">Buscar por Nro</button>
+                        <button type="submit" class="block w-full bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow mt-6">Buscar por Nro</button>
                     </div>
                 </form>
             </div>

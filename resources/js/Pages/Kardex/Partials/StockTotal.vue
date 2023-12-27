@@ -45,7 +45,7 @@ onMounted(async () => {
   </div>
   <div v-if="hasData" class="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 xl:grid-cols-4 2xl:gap-7.5">
     <!-- Card Item Start -->
-    <div class="rounded-sm border border-stroke bg-white selector-d  py-6 px-7.5 shadow-default dark:border-strokedark dark:bg-boxdark">
+    <div class="rounded-sm border border-stroke bg-white py-6 px-7.5 shadow-default dark:border-strokedark dark:bg-boxdark">
       <div class="flex h-11.5 w-11.5 items-center justify-center rounded-full bg-meta-2 dark:bg-meta-4">
           <img src="/img/caja.png" />
       </div>
@@ -68,7 +68,7 @@ onMounted(async () => {
         </span>
       </div>
     </div>
-    <div class="rounded-sm border border-stroke bg-white selector-d  py-6 px-7.5 shadow-default dark:border-strokedark dark:bg-boxdark">
+    <div class="rounded-sm border border-stroke bg-white py-6 px-7.5 shadow-default dark:border-strokedark dark:bg-boxdark">
       <div class="flex h-11.5 w-11.5 items-center justify-center rounded-full bg-meta-2 dark:bg-meta-4">
         <img src="/img/puerta.png" />
       </div>
@@ -96,7 +96,7 @@ onMounted(async () => {
         
     <!-- Card Item Start -->
     <div
-      class="rounded-sm border border-stroke bg-white selector-d  py-6 px-7.5 shadow-default dark:border-strokedark dark:bg-boxdark">
+      class="rounded-sm border border-stroke bg-white py-6 px-7.5 shadow-default dark:border-strokedark dark:bg-boxdark">
       <div class="flex h-11.5 w-11.5 items-center justify-center rounded-full bg-meta-2 dark:bg-meta-4">
         <img src="/img/bienes.png" />
       </div>
@@ -124,7 +124,7 @@ onMounted(async () => {
         
     <!-- Card Item Start -->
     <div
-      class="rounded-sm border border-stroke bg-white selector-d  py-6 px-7.5 shadow-default dark:border-strokedark dark:bg-boxdark">
+      class="rounded-sm border border-stroke bg-white py-6 px-7.5 shadow-default dark:border-strokedark dark:bg-boxdark">
       <div class="flex h-11.5 w-11.5 items-center justify-center rounded-full bg-meta-2 dark:bg-meta-4">
         <img src="/img/en-stock.png" />
       </div>

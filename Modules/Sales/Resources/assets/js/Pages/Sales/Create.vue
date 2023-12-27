@@ -137,7 +137,7 @@
 
             <div class="grid grid-cols-2 gap-9">
                 <div class="mb-2 pr-4 col-span-2 gap-9 sm:col-span-1">
-                    <div class="p-2 border border-stroke bg-white selector-d  shadow-default dark:border-strokedark dark:bg-boxdark">
+                    <div class="p-2 border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
                         <SearchProducts @eventdata="getDataTable" />
                         <div class="mt-4 relative overflow-x-auto">
                             <table class="border border-stroke w-full">
@@ -213,7 +213,7 @@
                     </div>
                 </div>
                 <div class="mb-2 pr-4 col-span-2 gap-9 sm:col-span-1">
-                    <div class="p-2 border border-stroke bg-white selector-d  shadow-default dark:border-strokedark dark:bg-boxdark">
+                    <div class="p-2 border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
                         <SearchClients @clientId="getClient" :clientDefault="form.client" :documentTypes="documentTypes" />
                         <InputError :message="form.errors[`client.id`]" class="mt-2" />
                         <div class="mt-4">

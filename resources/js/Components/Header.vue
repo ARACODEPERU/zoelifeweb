@@ -19,11 +19,11 @@ const showSidebarToggle = async () => {
 }
 </script>
 <template>
-    <header class="sticky top-0 z-99 flex w-full bg-white selector-d  drop-shadow-1 dark:bg-boxdark dark:drop-shadow-none">
+    <header class="sticky top-0 z-99 flex w-full bg-white drop-shadow-1 dark:bg-boxdark dark:drop-shadow-none">
         <div class="flex flex-grow items-center justify-between py-4 px-4 shadow-2 md:px-6 2xl:px-11">
             <div class="flex items-center gap-2 sm:gap-4 lg:hidden">
             <!-- Hamburger Toggle BTN -->
-                <button @click.stop="showSidebarToggle" class="z-99999 block rounded-sm border border-stroke bg-white selector-d  p-1.5 shadow-sm dark:border-strokedark dark:bg-boxdark lg:hidden">
+                <button @click.stop="showSidebarToggle" class="z-99999 block rounded-sm border border-stroke bg-white p-1.5 shadow-sm dark:border-strokedark dark:bg-boxdark lg:hidden">
                     <span class="relative block h-5.5 w-5.5 cursor-pointer">
                         <span class="du-block absolute right-0 h-full w-full">
                             <span class="relative top-0 left-0 my-1 block h-0.5 w-0 rounded-sm bg-black delay-[0] duration-200 ease-in-out dark:bg-white"
@@ -79,7 +79,7 @@ const showSidebarToggle = async () => {
 
                     <!-- Dropdown Start -->
                     <div v-show="dropdownOpen"
-                        class="absolute right-0 mt-4 flex w-62.5 flex-col rounded-sm border border-stroke bg-white selector-d  shadow-default dark:border-strokedark dark:bg-boxdark">
+                        class="absolute right-0 mt-4 flex w-62.5 flex-col rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
                         <ul class="flex flex-col gap-5 border-b border-stroke px-6 py-7.5 dark:border-strokedark">
                             <li>
                                 <Link :href="route('profile.edit')"
