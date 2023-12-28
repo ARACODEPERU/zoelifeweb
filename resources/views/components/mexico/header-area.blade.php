@@ -61,7 +61,7 @@
                 <div class="clearfix" style="width: 100%; padding: 0px 40px;">
                     <!-- Website Logo -->
                     <div class="logo-header logo-dark mostion">
-                        <a href="{{ route('cms_principal') }}">
+                        <a href="{{ route('web_mexico_inicio') }}">
                             <img  style="height: 45px;" src="{{ $header[5]->content }}" alt="">
                         </a>
                     </div>
