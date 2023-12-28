@@ -10,7 +10,7 @@ class CmsSubscriber extends Model
     use HasFactory;
 
     protected $fillable = [
-        'full_name', 'email', 'phone', 'client_ip', 'read', 'subject', 'message'
+        'full_name', 'email', 'phone', 'client_ip', 'read', 'subject', 'message', 'country', 
     ];
 
     protected static function newFactory()

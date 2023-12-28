@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="keywords" content="" />
-    <meta name="author" content="Aracode Smart Solutión" />
+    <meta name="author" content="Aracode Smart Solutions" />
     <meta name="robots" content="" />
     <meta name="description" content="ZoeLife International - Perú" />
     <meta property="og:title" content="ZoeLife International - Perú" />

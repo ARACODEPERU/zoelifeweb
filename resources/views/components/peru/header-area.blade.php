@@ -1,4 +1,9 @@
 <div>
+    <!-- Importando darkMode -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="{{ asset('css/darkMode.css') }}">
+    <script src="{{ asset('js/darkMode.js') }}"></script>
+
     <!--
     <div id="loading-area" class="loading-page-1">
         <div class="spinner">
@@ -12,8 +17,8 @@
     <header class="site-header header-style-1 mo-left dark dark-style-2">
         <!-- Top bar -->
         <div class="top-bar">
-            <div class="" style="width: 100%; padding: 0px 40px;">
-                <div class="row justify-content-between">
+            <div class="top-bar-content" style="width: 100%; padding: 0px 40px;">
+                <div class="top-bar-contect-space row justify-content-between">
                     <div class="dez-topbar-left">
                         <ul class="social-bx list-inline pull-right">
                             <li>
@@ -52,12 +57,12 @@
         </div>
         <!-- Top Bar END-->
         <!-- Main Header -->
-        <div class="sticky-header header-curve main-bar-wraper navbar-expand-lg">
+        <div class="sticky-header main-bar-wraper navbar-expand-lg">
             <div class="main-bar clearfix ">
                 <div class="clearfix" style="width: 100%; padding: 0px 40px;">
                     <!-- Website Logo -->
                     <div class="logo-header logo-dark mostion">
-                        <a href="">
+                        <a href="{{ route('web_peru_inicio') }}">
                             <img src="{{ $header[5]->content }}" alt="" style="height: 45px;">
                         </a>
                     </div>
@@ -89,7 +94,7 @@
                         <ul class="nav navbar-nav">
                             <li> <a href="{{ route('web_peru_inicio') }}">Home</a> </li>
                             <li> <a href="{{ route('web_peru_nosotros') }}">Nosotros</a> </li>
-                            <li> <a href="{{ route('web_peru_productos') }}">Productos</a>
+                            <li> <a href="javascript:;">Productos</a>
                                 <ul class="sub-menu">
                                     @foreach ($products as $product)
                                         <li>
@@ -106,6 +111,10 @@
                             <li> <a href="{{ route('web_peru_alcanzando_las_estrellas') }}">Alcanzando las
                                     Estrellas</a> </li>
                             <li> <a href="{{ route('web_peru_contacto') }}">Contacto</a> </li>
+                            <li class="switch" style="top: 25px;">
+                                <i class="bx bxs-sun"></i>
+                                <i class="bx bxs-moon"></i>
+                            </li>                            
                         </ul>
                     </div>
                 </div>

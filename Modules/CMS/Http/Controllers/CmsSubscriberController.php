@@ -55,7 +55,7 @@ class CmsSubscriberController extends Controller
         // Verificar si las validaciones fallaron
         if ($validator->fails()) {
             return response()->json(['errors' => $validator->errors()], 422);
-        }
+        }        
 
         CmsSubscriber::create([
             'full_name'     => $request->get('full_name') ?? null,
@@ -65,6 +65,7 @@ class CmsSubscriberController extends Controller
             'read'          => 0,
             'subject'       => $request->get('subject') ?? null,
             'message'       => $request->get('message') ?? null,
+            'country'       => $request->country,
         ]);
 
         return response()->json([

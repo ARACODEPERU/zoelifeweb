@@ -1,0 +1,183 @@
+/* Estilos para Switch */
+.switch {
+    width: 60px;
+    height: 25px;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    border-radius: 100px;
+    border: #333 solid 2px;
+    background-color: #132b41;
+}
+
+.switch i {
+    font-size: 1rem;
+    color: #fdc21c;
+}
+
+/*Accede al ultimo item de la lista */
+ul.nav li.switch::before {
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: solid thin #000;
+    left: 0;
+    right: unset;
+}
+
+ul.nav li.switch.active::before {
+    right: 0;
+    left: unset;
+    border: solid thin #fff;
+}
+
+li.switch.active i {
+    color: #fff
+}
+
+body.dark h2{
+    color: #fff;
+}
+body.dark h4{
+    color: #00b01a; 
+}
+
+
+body.dark h4.dez-title a{
+    color: #00b01a; 
+}
+
+body.dark h5.text-uppercase{
+    color: #00b01a; 
+}
+
+
+body.dark h3.post-title a{
+    color: #fff; 
+}
+
+
+
+body.dark .bg-primary{
+    background-color: #00b01a; 
+}
+
+body.dark .text-primary{
+    color: #00b01a; 
+}
+
+body.dark p{
+    color: #fff;
+}
+
+body.dark span{
+    color: #fff;
+}
+
+body.dark .breadcrumb-row ul li{
+    color: #fff;
+}
+
+body.dark .breadcrumb-row ul li a{
+    color: #00b01a; 
+}
+
+
+
+
+
+
+body.dark .header-container {
+    background-color: #313131;
+}
+
+body.dark .main {
+    background-color: #313131;
+}
+
+body.dark div.body {
+    background-color: #313131;
+}
+
+body.dark div.section-full {
+    background-color: #00000000;
+}
+
+.bg-white {
+    background-color: #00000000;
+}
+
+body.dark div.tp-mask-wrap {
+    background-color: #00000000;
+}
+body.dark h2.swal2-title {
+    color: white;
+}
+
+body.dark div.swal2-success-ring {
+    background-color: #33333342;
+}
+/* Fondo que rodea al modal del sweetalert2 */
+body.dark div.swal2-backdrop-show {
+    background-color: #3333332c;
+}
+
+body.dark div.swal2-container {
+    color: rgb(210, 248, 120);
+}
+
+body.dark div {
+    background-color: #313131;
+}
+
+/* TOP HEADER */
+body.dark .header-style-1.dark.dark-style-2 .top-bar{ 
+    background-color:#00b01a; 
+}
+
+body.dark .header-style-1.dark.dark-style-2 .top-bar .top-bar-content{ 
+    background-color:#00b01a; 
+}
+
+body.dark .header-style-1.dark.dark-style-2 .top-bar .top-bar-content .top-bar-contect-space{ 
+    background-color:#00b01a; 
+}
+
+/* TOP HEADER - END */
+
+body.dark .main-bar .clearfix .logo-header {
+    background-color: #313131;
+
+}
+
+body.dark div.swal2-popup {
+    background-color: #5a5a5a;
+}
+
+
+body.dark header div.dez-topbar-left{
+    
+    background-color: #00b01a;
+}
+
+body.dark header div.dez-topbar-right{
+    
+    background-color: #00b01a;
+}
+
+body.dark .header-nav nav ul {
+    background-color: #535353;
+}
+
+body.dark .header-nav ul li a{
+    color: #fff;
+}
+
+a.dropdown-item.dark {
+    color: white;
+}

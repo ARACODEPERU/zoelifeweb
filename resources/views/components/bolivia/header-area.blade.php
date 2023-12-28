@@ -1,4 +1,8 @@
 <div>
+        <!-- Importando darkMode -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="{{ asset('css/darkMode.css') }}">
+        <script src="{{ asset('js/darkMode.js') }}"></script>
     <!--
     <div id="loading-area" class="loading-page-1">
         <div class="spinner">
@@ -57,7 +61,7 @@
                 <div class="clearfix" style="width: 100%; padding: 0px 40px;">
                     <!-- Website Logo -->
                     <div class="logo-header logo-dark mostion">
-                        <a href="">
+                        <a href="{{ route('web_bolivia_inicio') }}">
                             <img src="{{ $header[5]->content }}" alt="" style="height: 45px;">
                         </a>
                     </div>
@@ -87,27 +91,30 @@
                     <!-- Main Nav -->
                     <div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
                         <ul class="nav navbar-nav">
-                            <li> <a href="{{ route('web_peru_inicio') }}">Home</a> </li>
-                            <li> <a href="">Nosotros</a> </li>
-                            <!--
-                            <li> <a href="{{ route('web_peru_productos') }}">Productos</a>
+                            <li> <a href="{{ route('web_bolivia_inicio') }}">Home</a> </li>
+                            <li> <a href="{{ route('web_bolivia_nosotros') }}">Nosotros</a> </li>
+                            <li> <a href="javascript:;">Productos</a>
                                 <ul class="sub-menu">
                                     @foreach ($products as $product)
                                         <li>
-                                            <a href="{{ route('web_peru_producto_descripcion', $product->id) }}">
+                                            <a href="{{ route('web_bolivia_producto_descripcion', $product->id) }}">
                                                 {{ $product->name }}
                                             </a>
                                         </li>
                                     @endforeach
                                 </ul>
-                            </li>-->
-                            <li> <a href="">Testimonios</a> </li>
+                            </li>
+                            <li> <a href="{{ route('web_bolivia_testimonios') }}">Testimonios</a> </li>
                             <!--
-                            <li> <a href="{{ route('web_peru_centros') }}">Centros de Distribución</a> </li>
-                            <li> <a href="{{ route('web_peru_eventos') }}">Eventos</a> </li>-->
+                            <li> <a href="{{ route('web_bolivia_centros') }}">Centros de Distribución</a> </li>
+                            <li> <a href="{{ route('web_bolivia_eventos') }}">Eventos</a> </li>-->
                             <li> <a href="">Alcanzando las
                                     Estrellas</a> </li>
-                            <li> <a href="">Contacto</a> </li>
+                            <li> <a href="{{ route('web_bolivia_contacto') }}">Contacto</a> </li>
+                            <li class="switch">
+                                <i class="bx bxs-sun"></i>
+                                <i class="bx bxs-moon"></i>
+                            </li>  
                         </ul>
                     </div>
                 </div>
