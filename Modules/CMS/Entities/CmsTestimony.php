@@ -60,6 +60,6 @@ class CmsTestimony extends Model
 
     public function product(): BelongsTo
     {
-        return $this->belongsTo(OnliItem::class, 'id', 'item_id');
+        return $this->belongsTo(OnliItem::class, 'item_id');
     }
 }
