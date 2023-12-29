@@ -92,14 +92,6 @@
                                     </th>
                                     <th scope="col" class="px-6 py-4">
                                         <div class="flex items-center">
-                                            País
-                                            <a href="">
-                                                <img style="max-width: 12px;height: auto;" class="svg-img" src="/icons-svg/clasificar.svg" alt="Descripción de la imagen">
-                                            </a>
-                                        </div>
-                                    </th>
-                                    <th scope="col" class="px-6 py-4">
-                                        <div class="flex items-center">
                                             Nombres
                                             <a href="">
                                                 <img style="max-width: 12px;height: auto;" class="svg-img" src="/icons-svg/clasificar.svg" alt="Descripción de la imagen">
@@ -150,9 +142,6 @@
                                     </td> -->
                                     <td class="border px-6 py-4">
                                         {{ formatDateTime(subscriber.created_at) }}
-                                    </td>
-                                    <td class="border px-6 py-4">
-                                        {{ subscriber.country }}
                                     </td>
                                     <td class="border px-6 py-4">
                                         {{ subscriber.full_name }}
