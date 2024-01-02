@@ -105,16 +105,16 @@
                                 </ul>
                             </li>
                             <li> <a href="{{ route('web_bolivia_testimonios') }}">Testimonios</a> </li>
-                            <!--
+                            <!--ssssass
                             <li> <a href="{{ route('web_bolivia_centros') }}">Centros de Distribución</a> </li>
                             <li> <a href="{{ route('web_bolivia_eventos') }}">Eventos</a> </li>-->
                             <li> <a href="">Alcanzando las
                                     Estrellas</a> </li>
                             <li> <a href="{{ route('web_bolivia_contacto') }}">Contacto</a> </li>
-                            <li class="switch">
+                            <li class="switch" style="top: 25px;">
                                 <i class="bx bxs-sun"></i>
                                 <i class="bx bxs-moon"></i>
-                            </li>  
+                            </li>
                         </ul>
                     </div>
                 </div>

@@ -113,10 +113,10 @@
                             <li> <a href="{{ route('web_mexico_alcanzando_las_estrellas') }}">Alcanzando las
                                     Estrellas</a> </li>
                             <li> <a href="{{ route('web_mexico_contacto') }}">Contacto</a> </li>
-                            <li class="switch">
+                            <li class="switch" style="top: 25px;">
                                 <i class="bx bxs-sun"></i>
                                 <i class="bx bxs-moon"></i>
-                            </li>  
+                            </li>
                         </ul>
                     </div>
                 </div>
