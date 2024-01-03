@@ -61,13 +61,12 @@ class PeruController extends Controller
             )
             ->orderBy('cms_section_items.position')
             ->first();
-        
-            
-        $equipos = CmsSectionItem::with('item.items')->where('section_id', 66)
-        ->orderBy('position')   //hay que revisar el ORDEN aqui es medio raro funciona por ahora 21/09/2023
-        ->get();
-        dd($equipos);
 
+
+        $equipos = CmsSectionItem::with('item.items')->where('section_id', 66)
+            ->orderBy('position')
+            ->get();
+        //dd($equipos);
         return view('zoelife/peru.nosotros', [
             'banner' => $banner,
             'video' => $video,

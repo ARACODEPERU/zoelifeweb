@@ -52,40 +52,45 @@
         <div class="content-area">
             <!-- Left & right section start -->
             <div class="container">
-
                 <!-- Nuestro Equipo -->
                 <div class="p-a30 bg-white m-b30 selector-d">
                     <div class="section-head">
-                        <h2 class="text-uppercase">Nuestro Equipo</h2>
+                        <h2 class="text-uppercase">{{ $equipos[0]->item->content }}</h2>
                         <div class="dez-divider divider-2px bg-primary icon-left">
                             <i class="fa fa-thumbs-o-up bg-primary text-white"></i>
                         </div>
                     </div>
                     <div class="section-content text-center ">
                         <div class="row">
-                            @foreach ($equipos as $equipo)
-                                <div class="col-lg-3 col-md-6 col-sm-6">
-                                    <div class="dez-box m-b30">
-                                        <div class="dez-media"> 
-                                            <a href="javascript:void(0);"> 
-                                                <img width="358" height="460" 
-                                                    src="{{ asset('themes/zoelife/peru/images/our-team/pic5.jpg') }}"
-                                                    alt=""> 
-                                            </a>
-                                            <div class="dez-info-has bg-primary">
-                                                <ul class="dez-social-icon dez-border">
-                                                    <li><a href="" class="fab fa-facebook"></a></li>
-                                                    <li><a href="" class="fab fa-instagram"></a></li>
-                                                    <li><a href="" class="fab fa-linkedin"></a></li>
-                                                </ul>
+                            @foreach ($equipos as $k => $equipo)
+                                @if ($k > 0)
+                                    <div class="col-lg-3 col-md-6 col-sm-6">
+                                        <div class="dez-box m-b30">
+                                            <div class="dez-media">
+                                                <a href="javascript:void(0);">
+                                                    <img width="358" height="460"
+                                                        src="{{ $equipo->item->items[0]->content }}" alt="">
+                                                </a>
+                                                <div class="dez-info-has bg-primary">
+                                                    <ul class="dez-social-icon dez-border">
+                                                        <li><a href="{{ $equipo->item->items[3]->content }}"
+                                                                class="fab fa-facebook"></a></li>
+                                                        <li><a href="{{ $equipo->item->items[4]->content }}"
+                                                                class="fab fa-instagram"></a></li>
+                                                        <li><a href="{{ $equipo->item->items[5]->content }}"
+                                                                class="fab fa-linkedin"></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="p-a10">
+                                                <h4 class="dez-title m-b0"><a
+                                                        href="">{{ $equipo->item->items[1]->content }}</a></h4>
+                                                <span
+                                                    class="dez-member-position">{{ $equipo->item->items[2]->content }}</span>
                                             </div>
                                         </div>
-                                        <div class="p-a10">
-                                            <h4 class="dez-title m-b0"><a href="">Nashid Martines</a></h4>
-                                            <span class="dez-member-position">Director</span>
-                                        </div>
                                     </div>
-                                </div>
+                                @endif
                             @endforeach
                         </div>
                     </div>
