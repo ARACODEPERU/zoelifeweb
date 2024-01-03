@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\LocalSale;
 use Illuminate\Http\Request;
 use Modules\CMS\Entities\CmsSection;
+use Modules\CMS\Entities\CmsSectionItem;
 use Modules\CMS\Entities\CmsTestimony;
 use Modules\Onlineshop\Entities\OnliItem;
 
@@ -60,10 +61,17 @@ class PeruController extends Controller
             )
             ->orderBy('cms_section_items.position')
             ->first();
+        
+            
+        $equipos = CmsSectionItem::with('item.items')->where('section_id', 66)
+        ->orderBy('position')   //hay que revisar el ORDEN aqui es medio raro funciona por ahora 21/09/2023
+        ->get();
+        dd($equipos);
 
         return view('zoelife/peru.nosotros', [
             'banner' => $banner,
-            'video' => $video
+            'video' => $video,
+            'equipos' => $equipos,
         ]);
     }
 

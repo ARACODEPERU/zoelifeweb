@@ -63,28 +63,30 @@
                     </div>
                     <div class="section-content text-center ">
                         <div class="row">
-                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                <div class="dez-box m-b30">
-                                    <div class="dez-media"> 
-                                        <a href="javascript:void(0);"> 
-                                            <img width="358" height="460" 
-                                                src="{{ asset('themes/zoelife/peru/images/our-team/pic5.jpg') }}"
-                                                alt=""> 
-                                        </a>
-                                        <div class="dez-info-has bg-primary">
-                                            <ul class="dez-social-icon dez-border">
-                                                <li><a href="javascript:void(0);" class="fab fa-facebook"></a></li>
-                                                <li><a href="javascript:void(0);" class="fab fa-instagram"></a></li>
-                                                <li><a href="javascript:void(0);" class="fab fa-linkedin"></a></li>
-                                            </ul>
+                            @foreach ($equipos as $equipo)
+                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                    <div class="dez-box m-b30">
+                                        <div class="dez-media"> 
+                                            <a href="javascript:void(0);"> 
+                                                <img width="358" height="460" 
+                                                    src="{{ asset('themes/zoelife/peru/images/our-team/pic5.jpg') }}"
+                                                    alt=""> 
+                                            </a>
+                                            <div class="dez-info-has bg-primary">
+                                                <ul class="dez-social-icon dez-border">
+                                                    <li><a href="" class="fab fa-facebook"></a></li>
+                                                    <li><a href="" class="fab fa-instagram"></a></li>
+                                                    <li><a href="" class="fab fa-linkedin"></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="p-a10">
+                                            <h4 class="dez-title m-b0"><a href="">Nashid Martines</a></h4>
+                                            <span class="dez-member-position">Director</span>
                                         </div>
                                     </div>
-                                    <div class="p-a10">
-                                        <h4 class="dez-title m-b0"><a href="javascript:void(0);">Nashid Martines</a></h4>
-                                        <span class="dez-member-position">Director</span>
-                                    </div>
                                 </div>
-                            </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
