@@ -20,7 +20,7 @@ class FooterArea extends Component
         }])
             ->where('component_id', 'colombia_footer_area_42')
             ->get();
-        $this->testimonies = CmsTestimony::where('status', true)->get();
+        $this->testimonies = CmsTestimony::where('status', true)->orderBy('id')->limit(3)->get();
     }
 
     /**

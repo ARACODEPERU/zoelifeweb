@@ -112,9 +112,9 @@ class BoliviaController extends Controller
             ->orderBy('cms_section_items.position')
             ->first();
 
-        $products = OnliItem::where('status', true)->get();
+        $products = OnliItem::where('status', true)->get(); //$testimonies = CmsTestimony::where('item_id', $id)->orderBy('item_id')->limit(3)->get();
 
-        $testimonies = CmsTestimony::with('product')->get();
+        $testimonies = CmsTestimony::with('product')->orderBy('item_id')->limit(3)->get();
 
         return view('zoelife/bolivia.testimonios', [
             'banner'        => $banner,
