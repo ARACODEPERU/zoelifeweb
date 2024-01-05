@@ -28,8 +28,29 @@
 
 
         <div class="content-area">
-            <!-- Left & right section start -->
+
             <div class="container">
+                
+                
+                <!-- Dividers with icon -->
+                <div class="p-a20 bg-white selector-d m-b20">
+                    <div class="section-content" style="text-align: center;">
+                        <div class="m-b10">
+                            <h3 class="text-uppercase text-primary">¿Qué es alcanzando las estrellas?</h3>
+                            <p>Lorem Ipsum is simply dummy text of the een the industry's standard dummy text ever since the
+                                1500s, when an unknown printer took a Gallery of type and scrambled it to make a type
+                                specimen book. It has survived not only five centuries, but also the leap into electronic
+                            </p>
+                            <div class="dez-divider divider-2px bg-primary icon-center"><i
+                                    class="fa fa-truck bg-primary text-white"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dividers with icon END -->
+            </div>
+
+            <!-- Left & right section start -->
+            <div class="" style="width: 100%; padding: 40px;">
 
                 <!-- Gallery -->
                 <div class="site-filters clearfix center m-b40">
