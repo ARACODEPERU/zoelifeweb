@@ -35,7 +35,7 @@
                                     @endforeach
                                 @endif
                             </ul>
-                            <a href="" class="site-button">Ver más</a>
+                            <a href="" style="color: orange;"> Ver más testimonios</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
