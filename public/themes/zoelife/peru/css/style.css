@@ -3877,12 +3877,23 @@ blockquote:before {
 /*== > inner page banner ==*/
 
 .dez-bnr-inr {
+    margin-top: 70px;
     height: 300px;
     background-size: cover;
     background-position: center center;
     display: table;
     width: 100%;
 }
+
+.dez-bnr-inr-eventos {
+    margin-top: 70px;
+    height: 550px;
+    background-size: cover;
+    background-position: center center;
+    display: table;
+    width: 100%;
+}
+
 .dez-bnr-inr .container {
     display: table;
     height: 100%;

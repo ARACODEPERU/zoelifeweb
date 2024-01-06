@@ -8,17 +8,10 @@
     <!-- Content -->
     <div class="page-content">
 
-        <!-- inner page banner -->
+        <!-- inner page banner
         <div class="dez-bnr-inr overlay-black-middle"
             style="background-image:url(themes/zoelife/peru/images/header-page/contactanosPeru.jpg);">
-            <!--
-                                                                <div class="container">
-                                                                    <div class="dez-bnr-inr-entry">
-                                                                        <h1 class="text-white">Contact Us</h1>
-                                                                    </div>
-                                                                </div>
-                                                                -->
-        </div>
+        </div> -->
         <!-- inner page banner END -->
 
         <!-- Breadcrumb row -->

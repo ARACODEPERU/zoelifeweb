@@ -25,7 +25,7 @@
                                             data-easeout="default" data-masterspeed="default"
                                             data-thumb="{{ $row->content }}" data-rotate="0" data-fstransition="fade"
                                             data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"
-                                            data-title="A STUDY ON HAPPINESS" data-param1="" data-param2="" data-param3=""
+                                            data-title="" data-param1="" data-param2="" data-param3=""
                                             data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
                                             data-param9="" data-param10="">
                                             <!-- MAIN IMAGE -->

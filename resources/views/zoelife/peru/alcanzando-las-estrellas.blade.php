@@ -10,7 +10,7 @@
     <div class="page-content">
 
         <!-- inner page banner -->
-        <div class="dez-bnr-inr overlay-black-middle" style="background-image:url({{ $banner->content }});">
+        <div class="dez-bnr-inr" style="background-image:url({{ $banner->content }});">
 
         </div>
         <!-- inner page banner END -->
