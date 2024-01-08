@@ -74,7 +74,7 @@
                     </ul>
                 </div>
                 <ul id="masonry" class="dez-gallery-listing row gallery-grid-4 m-b0 mfp-gallery">
-                    <li class="card-container col-md-4 donaciones">
+                    <li class="card-container col-md-3 donaciones">
                         <div class="dez-box dez-gallery-box">
                             <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href="javascript:void(0);"> <img
                                         src="themes/zoelife/peru/images/gallery/estrellas/01.jpg" alt=""> </a>
@@ -87,7 +87,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="card-container col-md-4 donaciones">
+                    <li class="card-container col-md-3 donaciones">
                         <div class="dez-box dez-gallery-box">
                             <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href="javascript:void(0);"> <img
                                         src="themes/zoelife/peru/images/gallery/estrellas/02.jpg" alt=""> </a>
@@ -100,7 +100,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="card-container col-md-4 donaciones">
+                    <li class="card-container col-md-3 donaciones">
                         <div class="dez-box dez-gallery-box">
                             <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href="javascript:void(0);"> <img
                                         src="themes/zoelife/peru/images/gallery/estrellas/03.jpg" alt=""> </a>
@@ -113,7 +113,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="card-container col-md-4 donaciones">
+                    <li class="card-container col-md-3 donaciones">
                         <div class="dez-box dez-gallery-box">
                             <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href="javascript:void(0);"> <img
                                         src="themes/zoelife/peru/images/gallery/estrellas/04.jpg" alt=""> </a>
@@ -126,7 +126,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="card-container col-md-4 donaciones">
+                    <li class="card-container col-md-3 donaciones">
                         <div class="dez-box dez-gallery-box">
                             <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href="javascript:void(0);"> <img
                                         src="themes/zoelife/peru/images/gallery/estrellas/05.jpg" alt=""> </a>
@@ -140,7 +140,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="card-container col-md-4 donaciones">
+                    <li class="card-container col-md-3 donaciones">
                         <div class="dez-box dez-gallery-box">
                             <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href="javascript:void(0);"> <img
                                         src="themes/zoelife/peru/images/gallery/estrellas/06.jpg" alt=""> </a>
@@ -154,7 +154,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="card-container col-md-4 donaciones">
+                    <li class="card-container col-md-3 donaciones">
                         <div class="dez-box dez-gallery-box">
                             <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href="javascript:void(0);"> <img
                                         src="themes/zoelife/peru/images/gallery/estrellas/07.jpg" alt=""> </a>
@@ -168,7 +168,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="card-container col-md-4 donaciones">
+                    <li class="card-container col-md-3 donaciones">
                         <div class="dez-box dez-gallery-box">
                             <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href="javascript:void(0);"> <img
                                         src="themes/zoelife/peru/images/gallery/estrellas/08.jpg" alt=""> </a>
@@ -182,7 +182,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="card-container col-md-4 niños">
+                    <li class="card-container col-md-3 niños">
                         <div class="dez-box dez-gallery-box">
                             <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href="javascript:void(0);"> <img
                                         src="themes/zoelife/peru/images/gallery/estrellas/09.jpg" alt=""> </a>
@@ -196,7 +196,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="card-container col-md-4 niños">
+                    <li class="card-container col-md-3 niños">
                         <div class="dez-box dez-gallery-box">
                             <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href="javascript:void(0);"> <img
                                         src="themes/zoelife/peru/images/gallery/estrellas/10.jpg" alt=""> </a>
@@ -210,7 +210,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="card-container col-md-4 adolescentes">
+                    <li class="card-container col-md-3 adolescentes">
                         <div class="dez-box dez-gallery-box">
                             <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href="javascript:void(0);"> <img
                                         src="themes/zoelife/peru/images/gallery/estrellas/11.jpg" alt=""> </a>
@@ -224,7 +224,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="card-container col-md-4 adolescentes">
+                    <li class="card-container col-md-3 adolescentes">
                         <div class="dez-box dez-gallery-box">
                             <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href="javascript:void(0);"> <img
                                         src="themes/zoelife/peru/images/gallery/estrellas/12.jpg" alt=""> </a>
@@ -238,7 +238,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="card-container col-md-4 donaciones">
+                    <li class="card-container col-md-3 donaciones">
                         <div class="dez-box dez-gallery-box">
                             <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href="javascript:void(0);"> <img
                                         src="themes/zoelife/peru/images/gallery/estrellas/13.jpg" alt=""> </a>
@@ -252,7 +252,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="card-container col-md-4 donaciones">
+                    <li class="card-container col-md-3 donaciones">
                         <div class="dez-box dez-gallery-box">
                             <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href="javascript:void(0);"> <img
                                         src="themes/zoelife/peru/images/gallery/estrellas/14.jpg" alt=""> </a>
@@ -266,7 +266,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="card-container col-md-4 donaciones">
+                    <li class="card-container col-md-3 donaciones">
                         <div class="dez-box dez-gallery-box">
                             <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href="javascript:void(0);"> <img
                                         src="themes/zoelife/peru/images/gallery/estrellas/15.jpg" alt=""> </a>
