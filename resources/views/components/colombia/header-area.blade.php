@@ -92,25 +92,25 @@
                     <!-- Main Nav -->
                     <div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
                         <ul class="nav navbar-nav">
-                            <li> <a href="{{ route('web_peru_inicio') }}">Home</a> </li>
-                            <li> <a href="{{ route('web_peru_nosotros') }}">Nosotros</a> </li>
-                            <li> <a href="{{ route('web_peru_productos') }}">Productos</a>
+                            <li> <a href="{{ route('web_colombia_inicio') }}">Home</a> </li>
+                            <li> <a href="{{ route('web_colombia_nosotros') }}">Nosotros</a> </li>
+                            <li> <a href="{{ route('web_colombia_productos') }}">Productos</a>
                                 <ul class="sub-menu">
                                     @foreach ($products as $product)
                                         <li>
-                                            <a href="{{ route('web_peru_producto_descripcion', $product->id) }}">
+                                            <a href="{{ route('web_colombia_producto_descripcion', $product->id) }}">
                                                 {{ $product->name }}
                                             </a>
                                         </li>
                                     @endforeach
                                 </ul>
                             </li>
-                            <li> <a href="{{ route('web_peru_testimonios') }}">Testimonios</a> </li>
-                            <li> <a href="{{ route('web_peru_centros') }}">Centros de Distribución</a> </li>
-                            <li> <a href="{{ route('web_peru_eventos') }}">Eventos</a> </li>
-                            <li> <a href="{{ route('web_peru_alcanzando_las_estrellas') }}">Alcanzando las
+                            <li> <a href="{{ route('web_colombia_testimonios') }}">Testimonios</a> </li>
+                            <li> <a href="{{ route('web_colombia_centros') }}">Centros de Distribución</a> </li>
+                            <li> <a href="{{ route('web_colombia_eventos') }}">Eventos</a> </li>
+                            <li> <a href="{{ route('web_colombia_alcanzando_las_estrellas') }}">Alcanzando las
                                     Estrellas</a> </li>
-                            <li> <a href="{{ route('web_peru_contacto') }}">Contacto</a> </li>
+                            <li> <a href="{{ route('web_colombia_contacto') }}">Contacto</a> </li>
                             <li class="switch" style="top: 25px;">
                                 <i class="bx bxs-sun"></i>
                                 <i class="bx bxs-moon"></i>

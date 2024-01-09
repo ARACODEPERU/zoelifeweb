@@ -32,15 +32,15 @@
                 <!-- Gallery -->
                 <div class="site-filters clearfix center m-b40">
                     <ul class="filters" data-toggle="buttons">
-                        <li data-filter="" class="btn active">
+                        {{-- <li data-filter="" class="btn active">
                             <input type="radio">
                             <a href="#" class="site-button-secondry"><span>Todos</span></a>
-                        </li>
+                        </li> --}}
                         @if (count($products) > 0)
-                            @foreach ($products as $product)
+                            @foreach ($products as $k => $product)
                                 <li data-filter="{{ $product->name }}" class="btn">
                                     <input type="radio">
-                                    <a href="#" class="site-button-secondry"><span>{{ $product->name }}</span></a>
+                                    <a href="#" class="site-button-secondry" id="{{ "btn-".$k+1 }}"><span>{{ $product->name }}</span></a>
                                 </li>
                             @endforeach
                         @endif
