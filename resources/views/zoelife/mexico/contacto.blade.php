@@ -88,7 +88,7 @@
                                                     placeholder="Escribe tu mensaje aqui..."></textarea>
                                             </div>
                                         </div>
-                                    </div>                                 
+                                    </div>
                                     <div class="col-md-12">
                                         <button class="site-button"
                                             id="submitPageContactButton">
@@ -152,7 +152,7 @@
 
 
         <!-- Paises / STAR -->
-        <x-countries-section />
+        {{-- <x-countries-section /> --}}
         <!-- Paises / END -->
 
     </div>
