@@ -7,11 +7,14 @@ use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 use Modules\CMS\Entities\CmsSection;
 use Modules\Onlineshop\Entities\OnliItem;
+use Modules\CMS\Entities\CmsPage;
 
 class HeaderArea extends Component
 {
     protected $header;
     protected $products;
+    protected $pages; //de aqui se saca los paises o countries
+    protected $country;
     /**
      * Create a new component instance.
      */
@@ -28,6 +31,13 @@ class HeaderArea extends Component
             ->orderBy('cms_section_items.position')
             ->get();
         $this->products  = OnliItem::where('country_id', 4)->get();
+
+        $this->pages = CmsPage::with('country')
+            ->where('status', true)
+            ->where('main', true)
+            ->whereNotNull('country_id')
+            ->get();
+        $this->country = $this->pages->where('route', 'web_colombia_inicio')->values(); //cambiar pais segun convenga  debe ir values o entrega la posicion del array y no reordena la posicion
     }
 
     /**
@@ -37,7 +47,9 @@ class HeaderArea extends Component
     {
         return view('components.colombia.header-area', [
             'header' => $this->header,
-            'products' => $this->products
+            'products' => $this->products,
+            'pages' => $this->pages,
+            'country' => $this->country,
         ]);
     }
 }
