@@ -45,7 +45,7 @@
             <ul id="masonry" class="dez-gallery-listing row gallery-grid-4 m-b0 mfp-gallery">
                 @if (count($centers) > 0)
                     @foreach ($centers as $center)
-                        <li class="card-container col-md-4 {{ $center->district->department->name }}">
+                        <li class="card-container col-md-3 {{ $center->district->department->name }}">
                             <div class="dez-box dez-gallery-box">
                                 <a href="#" onclick="openModalCenterDetails(event, {{ json_encode($center) }})">
                                     <div class="dez-thum dez-img-overlay1 dez-img-effect">
