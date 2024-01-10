@@ -201,6 +201,11 @@ class PeruController extends Controller
             'banner' => $banner
         ]);
     }
+    
+    public function university()
+    {
+        return view('zoelife/peru.zoe-university');
+    }
 
     public function contacto()
     {

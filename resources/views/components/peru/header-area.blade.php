@@ -126,6 +126,8 @@
                             <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_eventos') ? 'active' : '' }}" href="{{ route('web_peru_eventos') }}">Eventos</a> </li>
                             <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_alcanzando_las_estrellas') ? 'active' : '' }}" href="{{ route('web_peru_alcanzando_las_estrellas') }}">Alcanzando las
                                     Estrellas</a> </li>
+                                    
+                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_university') ? 'active' : '' }}" href="{{ route('web_peru_university') }}">University</a> </li>
                             <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_contacto') ? 'active' : '' }}" href="{{ route('web_peru_contacto') }}">Contacto</a> </li>
                             <li class="switch" style="top: 25px;">
                                 <i class="bx bxs-sun"></i>

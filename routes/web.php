@@ -52,6 +52,7 @@ Route::get('/peru.centros-de-distribucion', [PeruController::class, 'centros'])-
 Route::get('/peru.centros-de-distribucion-lima', [PeruController::class, 'centroslima'])->name('web_peru_centros_lima');
 Route::get('/peru.eventos', [PeruController::class, 'eventos'])->name('web_peru_eventos');
 Route::get('/peru.alcanzando-las-estrellas', [PeruController::class, 'estrellas'])->name('web_peru_alcanzando_las_estrellas');
+Route::get('/peru.zoe-university', [PeruController::class, 'university'])->name('web_peru_university');
 Route::get('/peru.contacto', [PeruController::class, 'contacto'])->name('web_peru_contacto');
 
 

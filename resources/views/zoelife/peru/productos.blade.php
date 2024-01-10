@@ -35,10 +35,9 @@
 
                             <div class="col-lg-3 col-md-6 col-sm-6">
                                 <div class="dez-box m-b30">
-                                    <div class="dez-media dez-img-overlay2 dez-img-effect zoom">
+                                    <div class="dez-media dez-img-effect zoom">
                                         <a href="{{ route('web_peru_producto_descripcion', $producto->id) }}">
-                                            {{-- <img width="358" height="460" src="{{ asset('themes/zoelife/peru/images/our-team/pic8.png') }}" alt=""> --}}
-                                            <img width="358" height="460" src="{{ asset($producto->image) }}" alt="">
+                                            <img style="height: 300px;" src="{{ asset($producto->image) }}" alt="">
                                         </a>
                                     </div>
                                     <div class="p-a10">

@@ -25,10 +25,6 @@ class WebController extends Controller
     }
 
 
-
-
-
-
     public function boliviainicio()
     {
         $slider = CmsSection::where('component_id', 'bolivia_slider_inicio_15')
