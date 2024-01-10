@@ -2601,7 +2601,7 @@ blockquote:before {
 .header-nav .nav > li > a {
     border-radius: 0px;
     color: #505050;
-    font-size: 16px;
+    font-size: 15px;
     padding: 25px 12px;
     cursor: pointer;
     display: block;

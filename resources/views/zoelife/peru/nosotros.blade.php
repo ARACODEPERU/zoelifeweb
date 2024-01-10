@@ -96,8 +96,6 @@
                     </div>
                 </div>
                 <!-- Nuestro Equipo END -->
-
-
             </div>
             <!-- Left & right section  END -->
         </div>
