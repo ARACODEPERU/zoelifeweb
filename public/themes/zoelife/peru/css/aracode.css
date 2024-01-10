@@ -12,6 +12,13 @@
 General
 ================================================*/
 
+
+.navbar-nav  li a.active{
+    background: var(--zoeprimary-color);
+    color: var(--white-color);
+}
+
+
 .ara-modal-title{
     background: var(--zoeprimary-color);
 }
