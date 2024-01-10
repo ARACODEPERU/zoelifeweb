@@ -38,116 +38,34 @@
         
             <!-- Left & right section start -->
             <div class="" style="width: 100%; padding: 40px;">
-
+                <!-- Gallery START -->
                 <ul id="masonry" class="dez-gallery-listing row gallery-grid-4 m-b0 mfp-gallery">
-                    <li class="card-container col-md-3">
-                        <div class="dez-box dez-gallery-box">
-                            <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href="javascript:void(0);"> <img
-                                        src="themes/zoelife/peru/images/gallery/estrellas/01.jpg" alt=""> </a>
-                                <div class="overlay-bx">
-                                    <div class="overlay-icon"> <a href="javascript:void(0);"> <i
-                                                class="fa fa-link icon-bx-xs"></i> </a> <a
-                                            href="themes/zoelife/peru/images/gallery/estrellas/01.jpg" class="mfp-link"
-                                            title="Title Come Here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="card-container col-md-3">
-                        <div class="dez-box dez-gallery-box">
-                            <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href="javascript:void(0);"> <img
-                                        src="themes/zoelife/peru/images/gallery/estrellas/02.jpg" alt=""> </a>
-                                <div class="overlay-bx">
-                                    <div class="overlay-icon"> <a href="javascript:void(0);"> <i
-                                                class="fa fa-link icon-bx-xs"></i> </a> <a
-                                            href="themes/zoelife/peru/images/gallery/estrellas/02.jpg" class="mfp-link"
-                                            title="Title Come Here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="card-container col-md-3">
-                        <div class="dez-box dez-gallery-box">
-                            <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href="javascript:void(0);"> <img
-                                        src="themes/zoelife/peru/images/gallery/estrellas/03.jpg" alt=""> </a>
-                                <div class="overlay-bx">
-                                    <div class="overlay-icon"> <a href="javascript:void(0);"> <i
-                                                class="fa fa-link icon-bx-xs"></i> </a> <a
-                                            href="themes/zoelife/peru/images/gallery/estrellas/03.jpg" class="mfp-link"
-                                            title="Title Come Here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="card-container col-md-3">
-                        <div class="dez-box dez-gallery-box">
-                            <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href="javascript:void(0);"> <img
-                                        src="themes/zoelife/peru/images/gallery/estrellas/04.jpg" alt=""> </a>
-                                <div class="overlay-bx">
-                                    <div class="overlay-icon"> <a href="javascript:void(0);"> <i
-                                                class="fa fa-link icon-bx-xs"></i> </a> <a
-                                            href="themes/zoelife/peru/images/gallery/estrellas/04.jpg" class="mfp-link"
-                                            title="Title Come Here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a> </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="card-container col-md-3">
-                        <div class="dez-box dez-gallery-box">
-                            <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href="javascript:void(0);"> <img
-                                        src="themes/zoelife/peru/images/gallery/estrellas/12.jpg" alt=""> </a>
-                                <div class="overlay-bx">
-                                    <div class="overlay-icon"> <a href="javascript:void(0);"> <i
-                                                class="fa fa-link icon-bx-xs"></i> </a> <a
-                                            href="themes/zoelife/peru/images/gallery/estrellas/08.jpg" class="mfp-link"
-                                            title="Title Come Here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a>
+                    @if (count($galeryEvents) > 0)
+                        @foreach ($galeryEvents as $ge)
+                            <li class="card-container col-md-3">
+                                <div class="dez-box dez-gallery-box">
+                                    <div class="dez-thum dez-img-overlay1 dez-img-effect"> 
+                                        <a href="javascript:void(0);"> 
+                                            <img src="{{ asset($ge->image) }}" alt="img"> 
+                                        </a>
+                                        <div class="overlay-bx">
+                                            <div class="overlay-icon"> 
+                                                <!--
+                                                    <a href="javascript:void(0);"> 
+                                                        <i class="fa fa-link icon-bx-xs"></i> 
+                                                    </a> 
+                                                -->
+                                                <a href="{{ asset($ge->image) }}" class="mfp-link"
+                                                    title="Eventos"> 
+                                                    <i class="fa fa-picture-o icon-bx-xs"></i> <b  style="color: #fff;">Zoom</b> 
+                                                </a> 
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="card-container col-md-3">
-                        <div class="dez-box dez-gallery-box">
-                            <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href="javascript:void(0);"> <img
-                                        src="themes/zoelife/peru/images/gallery/estrellas/13.jpg" alt=""> </a>
-                                <div class="overlay-bx">
-                                    <div class="overlay-icon"> <a href="javascript:void(0);"> <i
-                                                class="fa fa-link icon-bx-xs"></i> </a> <a
-                                            href="themes/zoelife/peru/images/gallery/estrellas/08.jpg" class="mfp-link"
-                                            title="Title Come Here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="card-container col-md-3">
-                        <div class="dez-box dez-gallery-box">
-                            <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href="javascript:void(0);"> <img
-                                        src="themes/zoelife/peru/images/gallery/estrellas/14.jpg" alt=""> </a>
-                                <div class="overlay-bx">
-                                    <div class="overlay-icon"> <a href="javascript:void(0);"> <i
-                                                class="fa fa-link icon-bx-xs"></i> </a> <a
-                                            href="themes/zoelife/peru/images/gallery/estrellas/08.jpg" class="mfp-link"
-                                            title="Title Come Here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="card-container col-md-3">
-                        <div class="dez-box dez-gallery-box">
-                            <div class="dez-thum dez-img-overlay1 dez-img-effect"> <a href="javascript:void(0);"> <img
-                                        src="themes/zoelife/peru/images/gallery/estrellas/15.jpg" alt=""> </a>
-                                <div class="overlay-bx">
-                                    <div class="overlay-icon"> <a href="javascript:void(0);"> <i
-                                                class="fa fa-link icon-bx-xs"></i> </a> <a
-                                            href="themes/zoelife/peru/images/gallery/estrellas/08.jpg" class="mfp-link"
-                                            title="Title Come Here"> <i class="fa fa-picture-o icon-bx-xs"></i> </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
+                            </li>
+                        @endforeach
+                    @endif
                 </ul>
                 <!-- Gallery END -->
                 <!-- Pagination start -->

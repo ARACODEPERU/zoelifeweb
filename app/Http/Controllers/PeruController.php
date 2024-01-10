@@ -174,9 +174,15 @@ class PeruController extends Controller
             )
             ->orderBy('cms_section_items.position')
             ->first();
+        
+        
+        $galeryEvents = CmsSectionItem::with('item.items')->where('section_id', 76)
+        ->orderBy('position')
+        ->get();
 
         return view('zoelife/peru.eventos', [
-            'banner' => $banner
+            'banner' => $banner,
+            'galeryEvents' => $galeryEvents
         ]);
     }
 
