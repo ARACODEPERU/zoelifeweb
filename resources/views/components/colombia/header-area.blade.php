@@ -108,9 +108,9 @@
                     <!-- Main Nav -->
                     <div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
                         <ul class="nav navbar-nav">
-                            <li> <a href="{{ route('web_colombia_inicio') }}">Home</a> </li>
-                            <li> <a href="{{ route('web_colombia_nosotros') }}">Nosotros</a> </li>
-                            <li> <a href="{{ route('web_colombia_productos') }}">Productos</a>
+                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_colombia_inicio') ? 'active' : '' }}" href="{{ route('web_colombia_inicio') }}">Home</a> </li>
+                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_colombia_nosotros') ? 'active' : '' }}" href="{{ route('web_colombia_nosotros') }}">Nosotros</a> </li>
+                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_colombia_productos') ? 'active' : '' }}" href="{{ route('web_colombia_productos') }}">Productos</a>
                                 <ul class="sub-menu">
                                     @foreach ($products as $product)
                                         <li>
@@ -121,12 +121,12 @@
                                     @endforeach
                                 </ul>
                             </li>
-                            <li> <a href="{{ route('web_colombia_testimonios') }}">Testimonios</a> </li>
-                            <li> <a href="{{ route('web_colombia_centros') }}">Centros de Distribución</a> </li>
-                            <li> <a href="{{ route('web_colombia_eventos') }}">Eventos</a> </li>
-                            <li> <a href="{{ route('web_colombia_alcanzando_las_estrellas') }}">Alcanzando las
+                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_colombia_testimonios') ? 'active' : '' }}" href="{{ route('web_colombia_testimonios') }}">Testimonios</a> </li>
+                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_colombia_centros') ? 'active' : '' }}" href="{{ route('web_colombia_centros') }}">Centros de Distribución</a> </li>
+                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_colombia_eventos') ? 'active' : '' }}" href="{{ route('web_colombia_eventos') }}">Eventos</a> </li>
+                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_colombia_alcanzando_las_estrellas') ? 'active' : '' }}" href="{{ route('web_colombia_alcanzando_las_estrellas') }}">Alcanzando las
                                     Estrellas</a> </li>
-                            <li> <a href="{{ route('web_colombia_contacto') }}">Contacto</a> </li>
+                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_colombia_contacto') ? 'active' : '' }}" href="{{ route('web_colombia_contacto') }}">Contacto</a> </li>
                             <li class="switch" style="top: 25px;">
                                 <i class="bx bxs-sun"></i>
                                 <i class="bx bxs-moon"></i>

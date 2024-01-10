@@ -107,9 +107,9 @@
                     <!-- Main Nav -->
                     <div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
                         <ul class="nav navbar-nav">
-                            <li> <a href="{{ route('web_mexico_inicio') }}">Home</a> </li>
-                            <li> <a href="{{ route('web_mexico_nosotros') }}">Nosotros</a> </li>
-                            <li> <a href="{{ route('web_mexico_productos') }}">Productos</a>
+                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_mexico_inicio') ? 'active' : '' }}" href="{{ route('web_mexico_inicio') }}">Home</a> </li>
+                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_mexico_nosotros') ? 'active' : '' }}" href="{{ route('web_mexico_nosotros') }}">Nosotros</a> </li>
+                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_mexico_productos') ? 'active' : '' }}" href="{{ route('web_mexico_productos') }}">Productos</a>
                                 <ul class="sub-menu">
                                     @foreach ($products as $product)
                                         <li>
@@ -120,14 +120,14 @@
                                     @endforeach
                                 </ul>
                             </li>
-                            <li> <a href="{{ route('web_mexico_testimonios') }}">Testimonios</a> </li>
+                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_mexico_testimonios') ? 'active' : '' }}" href="{{ route('web_mexico_testimonios') }}">Testimonios</a> </li>
                             <!--
                             <li> <a href="{{ route('web_mexico_centros') }}">Centros de Distribución</a> </li>
                             <li> <a href="{{ route('web_mexico_eventos') }}">Eventos</a> </li>
                             -->
-                            <li> <a href="{{ route('web_mexico_alcanzando_las_estrellas') }}">Alcanzando las
+                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_mexico_alcanzando_las_estrellas') ? 'active' : '' }}" href="{{ route('web_mexico_alcanzando_las_estrellas') }}">Alcanzando las
                                     Estrellas</a> </li>
-                            <li> <a href="{{ route('web_mexico_contacto') }}">Contacto</a> </li>
+                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_mexico_contacto') ? 'active' : '' }}" href="{{ route('web_mexico_contacto') }}">Contacto</a> </li>
                             <li class="switch" style="top: 25px;">
                                 <i class="bx bxs-sun"></i>
                                 <i class="bx bxs-moon"></i>
