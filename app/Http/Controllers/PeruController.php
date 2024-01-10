@@ -88,8 +88,14 @@ class PeruController extends Controller
             ->orderBy('cms_section_items.position')
             ->first();
 
+            $productos = OnliItem::join('countries', 'onli_items.country_id', '=', 'countries.id')
+            ->where('countries.description', 'Perú')
+            ->select('onli_items.name', 'onli_items.image', 'onli_items.id')
+            ->get();
+
         return view('zoelife/peru.productos', [
-            'banner' => $banner
+            'banner' => $banner,
+            'productos' => $productos,
         ]);
     }
 

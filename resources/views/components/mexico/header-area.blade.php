@@ -39,20 +39,24 @@
                         </ul>
                     </div>
                     <div class="dez-topbar-right list-unstyled e-p-bx ">
-                        <ul>
-                            <li>
-                                <i class=""></i><span>
+                            <li style="float: left;">
+                                <span>
                                     <div class="dropdown">
-                                        <button class="btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
-                                            <a class="dropdown-item" href="{{ route($country[0]->route) }}"> <img  style="height: 25px;" src="{{ $country[0]->country->image }}" alt="">{{ $country[0]->country->description }}</a>
+                                        <button class="btn-secondary" type="button" data-toggle="dropdown" aria-expanded="false">
+                                            <a class="dropdown-item" href="{{ route($country[0]->route) }}">
+                                                <img  style="height: 25px;" src="{{ $country[0]->country->image }}" alt="">{{ $country[0]->country->description }}
+                                                <i class="dropdown-toggle"></i>
+                                            </a>
                                         </button>
                                         <div class="dropdown-menu">
                                             @foreach ($pages as $page)
-                                            <a class="dropdown-item" href="{{ route($page->route) }}"> <img  style="height: 30px;" src="{{ $page->country->image }}" alt="">{{ $page->country->description }}</a>
+                                            <a class="dropdown-item" href="{{ route($page->route) }}">
+                                                <img  style="height: 25px;" src="{{ $page->country->image }}" alt="">{{ $page->country->description }}
+                                            </a>
                                             @endforeach
                                         </div>
-                                      </div>
-                                    </span>
+                                    </div>
+                                </span>
                             </li>
                             <li>
                                 <i class="fa fa-envelope"></i><span>{{ $header[3]->content }}</span>

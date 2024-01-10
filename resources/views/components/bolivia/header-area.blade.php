@@ -40,19 +40,24 @@
                     </div>
                     <div class="dez-topbar-right list-unstyled e-p-bx ">
                         <ul>
-                            <li>
-                                <i class=""></i><span>
+                            <li style="float: left;">
+                                <span>
                                     <div class="dropdown">
-                                        <button class="btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
-                                            <a class="dropdown-item" href="{{ route($country[0]->route) }}"> <img  style="height: 25px;" src="{{ $country[0]->country->image }}" alt="">{{ $country[0]->country->description }}</a>
+                                        <button class="btn-secondary" type="button" data-toggle="dropdown" aria-expanded="false">
+                                            <a class="dropdown-item" href="{{ route($country[0]->route) }}">
+                                                <img  style="height: 25px;" src="{{ $country[0]->country->image }}" alt="">{{ $country[0]->country->description }}
+                                                <i class="dropdown-toggle"></i>
+                                            </a>
                                         </button>
                                         <div class="dropdown-menu">
                                             @foreach ($pages as $page)
-                                            <a class="dropdown-item" href="{{ route($page->route) }}"> <img  style="height: 30px;" src="{{ $page->country->image }}" alt="">{{ $page->country->description }}</a>
+                                            <a class="dropdown-item" href="{{ route($page->route) }}">
+                                                 <img  style="height: 25px;" src="{{ $page->country->image }}" alt="">{{ $page->country->description }}
+                                            </a>
                                             @endforeach
                                         </div>
-                                      </div>
-                                    </span>
+                                    </div>
+                                </span>
                             </li>
                             {{-- <li>
                                 <img  style="height: 30px;" src="{{ asset('themes/zoelife/global/images/flags/bolivia.png') }}" alt="">
@@ -107,7 +112,7 @@
                         <ul class="nav navbar-nav">
                             <li> <a href="{{ route('web_bolivia_inicio') }}">Home</a> </li>
                             <li> <a href="{{ route('web_bolivia_nosotros') }}">Nosotros</a> </li>
-                            <li> <a href="javascript:;">Productos</a>
+                            <li> <a href="{{ route('web_bolivia_productos') }}">Productos</a>
                                 <ul class="sub-menu">
                                     @foreach ($products as $product)
                                         <li>
