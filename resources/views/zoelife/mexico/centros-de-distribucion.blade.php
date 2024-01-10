@@ -2,7 +2,7 @@
 
 @section('content')
     <!-- Encabezado inicio -->
-    <x-ecuador.header-area></x-ecuador.header-area>
+    <x-mexico.header-area></x-mexico.header-area>
     <!-- Encabezado fin -->
 
     <!-- inner page banner -->

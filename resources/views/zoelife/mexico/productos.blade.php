@@ -2,7 +2,7 @@
 
 @section('content')
     <!-- Encabezado inicio -->
-    <x-ecuador.header-area></x-ecuador.header-area>
+    <x-mexico.header-area></x-mexico.header-area>
     <!-- Encabezado fin -->
 
     <!-- Content -->
@@ -37,7 +37,7 @@
 
 
         <!-- Paises / STAR -->
-        <x-countries-section />
+        {{-- <x-countries-section /> --}}
         <!-- Paises / END -->
 
     </div>
