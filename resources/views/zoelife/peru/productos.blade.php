@@ -37,7 +37,7 @@
                                 <div class="dez-box m-b30">
                                     <div class="dez-media dez-img-effect zoom">
                                         <a href="{{ route('web_peru_producto_descripcion', $producto->id) }}">
-                                            <img style="height: 300px;" src="{{ asset($producto->image) }}" alt="">
+                                            <img style="height: 100%;" src="{{ asset($producto->image) }}" alt="">
                                         </a>
                                     </div>
                                     <div class="p-a10">
