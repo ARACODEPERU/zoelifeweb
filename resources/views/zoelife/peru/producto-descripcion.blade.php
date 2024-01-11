@@ -80,7 +80,7 @@
                 <div class="p-a20 bg-white selector-d m-b20">
                     <div class="section-content" style="text-align: center;">
                         <div class="m-b10">
-                            <h5 class="text-uppercase">Testimonios del Coffee 3 en 1</h5>
+                            <h5 class="text-uppercase">Testimonios del {{ $product->name }}</h5>
                             <p>Lorem Ipsum is simply dummy text of the een the industry's standard dummy text ever since the
                                 1500s, when an unknown printer took a Gallery of type and scrambled it to make a type
                                 specimen book. It has survived not only five centuries, but also the leap into electronic
