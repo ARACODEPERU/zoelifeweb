@@ -118,7 +118,13 @@ class BoliviaController extends Controller
             ->orderBy('cms_section_items.position')
             ->first();
 
-        $products = OnliItem::where('status', true)->get(); //$testimonies = CmsTestimony::where('item_id', $id)->orderBy('item_id')->limit(3)->get();
+            $products = OnliItem::whereIn('id', function ($query) {
+                $query->selectRaw('MIN(id)')
+                    ->from('onli_items')
+                    ->where('status', true)
+                    ->groupBy('name');
+            })
+            ->get();
 
         $testimonies = CmsTestimony::with('product')->orderBy('item_id')->limit(3)->get();
 
