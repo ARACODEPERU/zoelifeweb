@@ -29,7 +29,7 @@
         <div class="container" style="padding: 60px 0px;">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="{{ $product->image }}" alt="">
+                    <img style="width: 100%;" src="{{ $product->image }}" alt="">
                 </div>
                 <div class="col-md-6">
                     <!-- Dividers with icon -->
