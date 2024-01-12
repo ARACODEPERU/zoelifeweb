@@ -73,11 +73,10 @@
 
 
         <div class="content-area">
-            <div class="container">
-
+            <div class="" style="width: 100%; padding: 40px;">
 
                 <!-- Dividers with icon -->
-                <div class="p-a20 bg-white selector-d m-b20">
+                <div class="p-a20 bg-white selector-d m-b20 container">
                     <div class="section-content" style="text-align: center;">
                         <div class="m-b10">
                             <h5 class="text-uppercase">Testimonios del {{ $product->name }}</h5>
@@ -96,7 +95,7 @@
                 <div id="masonry" class="dez-blog-grid-3 row">
                     @if (count($testimonies) > 0)
                         @foreach ($testimonies as $testimony)
-                            <div class="post card-container col-md-4">
+                            <div class="post card-container col-md-3">
                                 <div class="blog-post blog-grid date-style-2">
                                     <div class="dez-post-media dez-img-effect zoom-slow">
                                         {!! $testimony->video !!}
