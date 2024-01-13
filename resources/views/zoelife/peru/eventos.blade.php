@@ -40,32 +40,32 @@
             <div class="" style="width: 100%; padding: 40px;">
                 <!-- Gallery START -->
                 <ul id="masonry" class="dez-gallery-listing row gallery-grid-4 m-b0 mfp-gallery">
-                    @if (count($galeryEvents) > 0)
-                        @foreach ($galeryEvents as $ge)
-                            <li class="card-container col-md-3">
-                                <div class="dez-box dez-gallery-box">
-                                    <div class="dez-thum dez-img-overlay1 dez-img-effect"> 
-                                        <a href="javascript:void(0);"> 
-                                            <img src="{{ asset($ge->image) }}" alt="img"> 
-                                        </a>
-                                        <div class="overlay-bx">
-                                            <div class="overlay-icon"> 
-                                                <!--
-                                                    <a href="javascript:void(0);"> 
-                                                        <i class="fa fa-link icon-bx-xs"></i> 
-                                                    </a> 
-                                                -->
-                                                <a href="{{ asset($ge->image) }}" class="mfp-link"
-                                                    title="Eventos"> 
-                                                    <i class="fa fa-picture-o icon-bx-xs"></i> <b  style="color: #fff;">Zoom</b> 
+                    @foreach ($galeryEvents as $key => $ge)
+                        @if ($key>0)
+                        <li class="card-container col-md-3">
+                            <div class="dez-box dez-gallery-box">
+                                <div class="dez-thum dez-img-overlay1 dez-img-effect"> 
+                                    <a href="javascript:void(0);"> 
+                                        <img src="{{ $ge->item->items[0]->content }}" alt="img"> 
+                                    </a>
+                                    <div class="overlay-bx">
+                                        <div class="overlay-icon"> 
+                                            <!--
+                                                <a href="javascript:void(0);"> 
+                                                    <i class="fa fa-link icon-bx-xs"></i> 
                                                 </a> 
-                                            </div>
+                                            -->
+                                            <a href="{{ $ge->item->items[0]->content }}" class="mfp-link"
+                                                title="Eventos"> 
+                                                <i class="fa fa-picture-o icon-bx-xs"></i> <b  style="color: #fff;">Zoom</b> 
+                                            </a> 
                                         </div>
                                     </div>
                                 </div>
-                            </li>
-                        @endforeach
-                    @endif
+                            </div>
+                        </li>
+                        @endif
+                    @endforeach
                 </ul>
                 <!-- Gallery END -->
                 <!-- Pagination start -->
