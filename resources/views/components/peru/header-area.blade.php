@@ -108,7 +108,7 @@
                     <!-- Main Nav -->
                     <div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
                         <ul class="nav navbar-nav">
-                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_inicio') ? 'active' : '' }}" href="{{ route('web_peru_inicio') }}">Home</a> </li>
+                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_inicio') ? 'active' : '' }}" href="{{ route('web_peru_inicio') }}">Inicio</a> </li>
                             <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_nosotros') ? 'active' : '' }}" href="{{ route('web_peru_nosotros') }}">Nosotros</a> </li>
                             <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_productos') ? 'active' : '' }}" href="{{ route('web_peru_productos') }}">Productos</a>
                                 <ul class="sub-menu">
