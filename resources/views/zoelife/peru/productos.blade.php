@@ -31,22 +31,22 @@
                     <div class="section-content text-center ">
                         <div class="row">
                             @if (isset($productos))
-                            @foreach ($productos as $producto)
+                                @foreach ($productos as $producto)
 
-                            <div class="col-lg-3 col-md-6 col-sm-6">
-                                <div class="dez-box m-b30">
-                                    <div class="dez-media dez-img-effect zoom">
-                                        <a href="{{ route('web_peru_producto_descripcion', $producto->id) }}">
-                                            <img style="height: 100%;" src="{{ asset($producto->image) }}" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="p-a10">
-                                        <h4 class="dez-title m-b0"><a href="{{ route('web_peru_producto_descripcion', $producto->id) }}">{{ $producto->name }}</a></h4>
+                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                    <div class="dez-box m-b30">
+                                        <div class="dez-media dez-img-effect zoom">
+                                            <a href="{{ route('web_peru_producto_descripcion', $producto->id) }}">
+                                                <img style="height: 100%;" src="{{ asset($producto->image) }}" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="p-a10">
+                                            <h4 class="dez-title m-b0"><a href="{{ route('web_peru_producto_descripcion', $producto->id) }}">{{ $producto->name }}</a></h4>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            @endforeach
+                                @endforeach
                             @endif
                     </div>
                     </div>

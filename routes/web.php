@@ -40,6 +40,9 @@ Route::get('/', function () {
     }
 });
 
+
+Route::get('/', [WebController::class, 'index'])->name('cms_principal');
+
 Route::get('/home', [WebController::class, 'index'])->name('cms_principal');
 
 
