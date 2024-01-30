@@ -8,10 +8,8 @@
     <!-- Content -->
     <div class="page-content">
 
-        <!-- inner page banner -->
-        <div class="dez-bnr-inr" style="background-image:url({{ $banner->content }});">
-
-        </div>
+        <!-- inner page banner | Medidas 1920 x 300 pixeles -->
+        <div class="dez-bnr-inr" style="background-image:url({{ $banner->content }});"></div>
         <!-- inner page banner END -->
 
         <!-- Breadcrumb row -->
