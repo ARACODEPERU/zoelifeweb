@@ -57,7 +57,7 @@
 .testimonial-2 .testimonial-text.bg-primary,
 .about-service .icon-bx-wraper,
 .skew-top-bar::after{
-    background-color: #6AAF08;
+    background-color: #5A9F00;
 }
 
 /*Hex color :hover */
@@ -77,13 +77,13 @@
 .pagination > .active > a:focus, 
 .pagination > .active > span:focus,
 .about-service .icon-bx-wraper:nth-child(2){
-    background-color:#5A9F00;
+    background-color:#026410;
 }
 
 /* Rgba color */
 .dez-info-has.bg-primary,
 .dez-info-has.bg-secondry:hover {
-    background-color: rgba(38,170,93,0.8) ;
+    background-color: rgba(83,175,8,0.8) ;
 }
 
 /*===================== 
@@ -130,7 +130,7 @@ h4 a:hover,
 h5 a:hover,
 h6 a:hover,
 .header-style-3 .social-line li a{
-    color: #6AAF08;
+    color: #5A9F00;
 }
 
 /*===================== 
@@ -146,7 +146,7 @@ blockquote,
     border-color:#6AAF08;
 }
 .dez-tabs.border-tp .nav-tabs > li > a.active{
-	border-top-color: #6AAF08;
+	border-top-color: #5A9F00;
 }
 
 /*===================== 
@@ -167,5 +167,5 @@ blockquote,
 	Border top color
 =======================*/
 .testimonial-2 .testimonial-text.bg-primary::after{ 
-	border-top-color:#6AAF08;
+	border-top-color:#5A9F00;
  }

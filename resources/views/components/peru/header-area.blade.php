@@ -22,25 +22,28 @@
                     <div class="dez-topbar-left">
                         <ul class="social-bx list-inline pull-right">
                             <li>
-                                <a href="{{ $header[0]->content }}" class="fab fa-facebook"
-                                    style="padding: 10px; font-size: 15px;">
+                                <a href="{{ $header[0]->content }}" target="_blank" class="fab fa-facebook"
+                                    style="padding: 10px; font-size: 16px;">
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ $header[1]->content }}" class="fab fa-instagram"
-                                    style="padding: 10px; font-size: 15px;">
+                                <a href="{{ $header[1]->content }}" target="_blank" class="fab fa-instagram"
+                                    style="padding: 10px; font-size: 16px;">
                                 </a>
                             </li>
                             {{-- <li><a href="{{ $header[1]->content }}" class="fab fa-linkedin" style="padding: 10px; font-size: 15px;"></a></li> --}}
                             <li>
-                                <a href="{{ $header[2]->content }}" class="fab fa-youtube"
-                                    style="padding: 10px; font-size: 15px;">
+                                <a href="{{ $header[2]->content }}" target="_blank" class="fab fa-youtube"
+                                    style="padding: 10px; font-size: 16px;">
                                 </a>
                             </li>
                         </ul>
                     </div>
                     <div class="dez-topbar-right list-unstyled e-p-bx ">
                         <ul>
+                            <li style="float: left;">
+                                <a href="https://zoelifeinternational.com/"><i class="fa fa-globe" aria-hidden="true"></i><span>Zoé Global</span></a>
+                            </li>
                             <li style="float: left;">
                                 <span>
                                     <div class="dropdown">

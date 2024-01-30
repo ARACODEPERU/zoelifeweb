@@ -1,5 +1,5 @@
 :root {
-    --zoeprimary-color: #00b01a;
+    --zoeprimary-color: #5A9F00;
     --zoeprimarydark-color: #026410;
     --black-color: #221f1f;
     --dark-color: #161616;
@@ -15,6 +15,12 @@ General
 
 .navbar-nav  li a.active{
     background: var(--zoeprimary-color);
+    color: var(--white-color);
+}
+
+
+.navbar-nav  li a.hover{
+    background: var(--zoeprimarydark-color);
     color: var(--white-color);
 }
 
@@ -48,3 +54,78 @@ General
     border: 2px solid #ccc; /* Puedes agregar un borde si lo deseas */
  
 }
+
+
+
+
+/**********************/
+/****** Facebook ******/
+/**********************/
+
+.appFacebook{
+	position: fixed;
+	right: 26px;
+	bottom: 315px;
+	width: 50px;
+	z-index: 1000;
+  }
+  
+  .appFacebook img{
+	width: 100%;
+	height: auto;
+  }
+
+/***********************/
+/****** Instagram ******/
+/**********************/
+
+.appInstagram{
+	position: fixed;
+	right: 26px;
+	bottom: 250px;
+	width: 50px;
+	z-index: 1000;
+  }
+  
+  .appInstagram img{
+	width: 100%;
+	height: auto;
+  }
+
+/**********************/
+/****** Youtube ******/
+/**********************/
+
+.appYoutube{
+	position: fixed;
+	right: 26px;
+	bottom: 185px;
+	width: 50px;
+	z-index: 1000;
+  }
+  
+  .appYoutube img{
+	width: 100%;
+	height: auto;
+  }
+
+/**********************/
+/****** Whatsapp ******/
+/**********************/
+
+.appWhatsapp{
+	position: fixed;
+	right: 26px;
+	bottom: 120px;
+	width: 53px;
+	z-index: 1000;
+  }
+  
+  .appWhatsapp img{
+	width: 100%;
+	height: auto;
+  }
+  
+  /**********************/
+  /**********************/
+  /**********************/

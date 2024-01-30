@@ -1,4 +1,22 @@
 <div>
+
+    <a class="appFacebook" target="_blanck" href="{{ $footer[0]->items[2]->item->content }}">
+        <img src="themes/zoelife/peru/images/redes/facebook.png" alt="Facebook">
+    </a>
+    
+    <a class="appInstagram" target="_blanck" href="{{ $footer[0]->items[3]->item->content }}">
+        <img src="themes/zoelife/peru/images/redes/instagram.png" alt="Instagram">
+    </a>
+    
+    <a class="appYoutube" target="_blanck" href="{{ $footer[0]->items[4]->item->content }}">
+        <img src="themes/zoelife/peru/images/redes/youtube.png" alt="Youtube">
+    </a>
+    
+    
+    <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=51919019395&text=Hola&nbsp;CapPeru!&nbsp;me&nbsp;pueden&nbsp;ayudar?">
+        <img src="themes/zoelife/peru/images/redes/whatsapp.png" alt="Whatsapp">
+    </a>
+
     <!-- Footer -->
     <footer class="site-footer dark-style-2">
         <div class="footer-top">
