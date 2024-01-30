@@ -9,7 +9,7 @@
     <div class="page-content">
 
         <!-- inner page banner -->
-        <div class="dez-bnr-inr " style="background-image:url({{ $banner->content }});">
+        <div class="dez-bnr-inr " style="background-image:url({{ $banner->content }}); margin-top: 80px;">
 
         </div>
         <!-- inner page banner END -->
