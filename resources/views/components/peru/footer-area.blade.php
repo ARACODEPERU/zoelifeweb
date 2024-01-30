@@ -84,7 +84,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 text-left">
-                        <span>© Copyright 2023</span>
+                        <span>© Copyright 2024</span>
                     </div>
                     <div class="col-lg-4 text-center">
                         <span> Desarrollado por <i class="fa fa-heart text-primary heart"></i>

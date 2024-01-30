@@ -46,14 +46,16 @@
                                     <div class="dropdown">
                                         <button class="btn-secondary" type="button" data-toggle="dropdown" aria-expanded="false">
                                             <a class="dropdown-item" href="{{ route($country[0]->route) }}">
-                                                <img  style="height: 25px;" src="{{ $country[0]->country->image }}" alt="">{{ $country[0]->country->description }}
+                                                <img  style="height: 25px;" src="{{ $country[0]->country->image }}" alt="">
+                                                <b style="color: #fff;">{{ $country[0]->country->description }}</b>
                                                 <i class="dropdown-toggle"></i>
                                             </a>
                                         </button>
                                         <div class="dropdown-menu">
                                             @foreach ($pages as $page)
-                                            <a class="dropdown-item" href="{{ route($page->route) }}">
-                                                 <img  style="height: 25px;" src="{{ $page->country->image }}" alt="">{{ $page->country->description }}
+                                            <a class="dropdown-item" href="{{ route($page->route) }}"  style="color: #000;">
+                                                 <img  style="height: 25px;" src="{{ $page->country->image }}" alt="">
+                                                <b style="color: #000;">{{ $page->country->description }}</b>
                                             </a>
                                             @endforeach
                                         </div>
