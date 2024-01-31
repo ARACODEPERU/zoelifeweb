@@ -72,7 +72,7 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="widget widget_getintuch">
-                            <h4 class="m-b10 text-uppercase">Contactanos</h4>
+                            <h4 class="m-b10 text-uppercase">Contáctanos</h4>
                             <div class="dez-separator bg-primary"></div>
                             <ul>
                                 <li>
