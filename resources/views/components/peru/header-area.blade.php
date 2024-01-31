@@ -44,6 +44,7 @@
                             <li style="float: left;">
                                 <a href="https://zoelifeinternational.com/"><i class="fa fa-globe" aria-hidden="true"></i><span>Zoé Global</span></a>
                             </li>
+                            <!--
                             <li style="float: left;">
                                 <span>
                                     <div class="dropdown">
@@ -65,6 +66,7 @@
                                     </div>
                                 </span>
                             </li>
+                            -->
                             <li>
                                 <i class="fa fa-envelope"></i><span>{{ $header[3]->content }}</span>
                             </li>

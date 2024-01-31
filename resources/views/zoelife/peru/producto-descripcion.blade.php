@@ -39,7 +39,7 @@
                             <div class="dez-divider divider-2px bg-primary icon-left">
                                 <i class="fa fa-thumbs-o-up bg-primary text-white"></i>
                             </div>
-                            <div class="m-b10">
+                            <div class="m-b10" >
                                 {!! $product->description !!}
                             </div>
                         </div>
