@@ -33,10 +33,16 @@ class PeruController extends Controller
             ->orderBy('cms_section_items.position')
             ->first();
 
+            
+        $equipos = CmsSectionItem::with('item.items')->where('section_id', 66)
+        ->orderBy('position')
+        ->get();
+
 
         return view('zoelife/peru.index', [
             'slider' => $slider,
-            'video' => $video
+            'video' => $video,
+            'equipos' => $equipos
         ]);
     }
 

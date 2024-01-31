@@ -25,15 +25,52 @@
         </div>
         <!-- Breadcrumb row END -->
 
+        
+
         <div class="content-area">
-            <!-- Left & right section start -->
+            <div class="container">
+                <!-- Dividers with icon -->
+                <div class="p-a20 bg-white selector-d m-b20">
+                    <div class="section-content" style="text-align: center;">
+                        <div class="m-b10">
+                            <h2 class="text-uppercase text-primary">Beneficio de los productos</h2>
+                            <div class="row">
+                                <div class="col-md-2" style="padding: 20px 0px;">
+                                    <img src="{{ asset('themes/zoelife/peru/images/beneficios/01.jpeg') }}" alt="">
+                                </div>
+                                <div class="col-md-2" style="padding: 20px 0px;">
+                                    <img src="{{ asset('themes/zoelife/peru/images/beneficios/02.jpeg') }}" alt="">
+                                </div>
+                                <div class="col-md-2" style="padding: 20px 0px;">
+                                    <img src="{{ asset('themes/zoelife/peru/images/beneficios/03.jpeg') }}" alt="">
+                                </div>
+                                <div class="col-md-2" style="padding: 20px 0px;">
+                                    <img src="{{ asset('themes/zoelife/peru/images/beneficios/04.jpeg') }}" alt="">
+                                </div>
+                                <div class="col-md-2" style="padding: 20px 0px;">
+                                    <img src="{{ asset('themes/zoelife/peru/images/beneficios/05.jpeg') }}" alt="">
+                                </div>
+                                <div class="col-md-2" style="padding: 20px 0px;">
+                                    <img src="{{ asset('themes/zoelife/peru/images/beneficios/06.jpeg') }}" alt="">
+                                </div>
+                            </div>
+                            <div class="dez-divider divider-2px bg-primary icon-center">
+                                <i class="fa fa-leaf bg-primary text-white"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dividers with icon END -->
+            </div>
+        </div>
+
+        <div class="content-area">
             <div class=""  style="width: 100%; padding: 40px;">
                 <div class="p-a30  m-b30">
                     <div class="section-content text-center ">
                         <div class="row">
                             @if (isset($productos))
                                 @foreach ($productos as $producto)
-
                                 <div class="col-md-2">
                                     <div class="dez-box m-b30">
                                         <div class="dez-media dez-img-effect zoom">
@@ -48,10 +85,9 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 @endforeach
                             @endif
-                    </div>
+                        </div>
                     </div>
                 </div>
             </div>
