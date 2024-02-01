@@ -116,6 +116,10 @@
             }
         </style>
             <script>
+
+                setInterval(function() {
+                    paginator_np("n");
+                }, 3000);
                 function paginator(n){
                     var elements = document.querySelectorAll(".paginator_aracode");
                     for (var i = 0; i < elements.length; i++) {
