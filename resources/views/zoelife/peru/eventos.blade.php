@@ -44,9 +44,10 @@
                         @if ($key>0)
                             @if ( (($key-1) % 6 == 0) || $key == 1)
                                 <li class="card-container col-md-3" id="{{ (($key-1)/6)+1 }}_pag">
+                                    <div class="dez-box dez-gallery-box">
                             @endif
 
-                                <div class="dez-box dez-gallery-box">
+
                                     <div class="dez-thum dez-img-overlay1 dez-img-effect">
                                         <a href="javascript:void(0);">
                                             <img src="{{ $ge->item->items[0]->content }}" alt="img">
@@ -65,10 +66,11 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+
                                 @if ( (($key-1) % 6) == 0 || $key == 1)
-                                    </li>
-                            @endif
+                                </div>
+                                        </li>
+                                @endif
                         @endif
                     @endforeach
                 </ul>
