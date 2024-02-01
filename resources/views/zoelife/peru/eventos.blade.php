@@ -40,7 +40,6 @@
             <!-- Left & right section start -->
             <div class="" style="width: 100%; padding: 40px;">
                 <!-- Gallery START -->
-                <ul id="masonry" class="dez-gallery-listing row gallery-grid-4 m-b0 mfp-gallery">
                     @foreach ($galeryEvents as $key => $ge)
                         @if ($key>0)
                         @if ($key == 1)
@@ -78,7 +77,7 @@
                             </ul>
                         @endif
                     @endforeach
-                </ul>
+
                 <!-- Gallery END -->
                 <!-- Pagination start -->
                 @foreach ($galeryEvents as $key => $ge)
