@@ -36,18 +36,20 @@
         </div>
 
 
+                        <!-- Gallery START -->
             <!-- Left & right section start -->
             <div class="" style="width: 100%; padding: 40px;">
                 <!-- Gallery START -->
                 <ul id="masonry" class="dez-gallery-listing row gallery-grid-4 m-b0 mfp-gallery">
                     @foreach ($galeryEvents as $key => $ge)
                         @if ($key>0)
+                        @if ($key == 1)
+                        <ul id="{{ (($key-1)/6)+1 }}_pag" class="dez-gallery-listing row gallery-grid-4 m-b0 mfp-gallery">
+                        @endif
                             @if ( (($key-1) % 6 == 0) || $key == 1)
-                                <li class="card-container col-md-3" id="{{ (($key-1)/6)+1 }}_pag">
+                                <li class="card-container col-md-3">
                                     <div class="dez-box dez-gallery-box">
                             @endif
-
-
                                     <div class="dez-thum dez-img-overlay1 dez-img-effect">
                                         <a href="javascript:void(0);">
                                             <img src="{{ $ge->item->items[0]->content }}" alt="img">
@@ -71,6 +73,9 @@
                                 </div>
                                         </li>
                                 @endif
+                        @endif
+                        @if ($key > 6 && (count($galeryEvents)-1) == $key)
+                            </ul>
                         @endif
                     @endforeach
                 </ul>
