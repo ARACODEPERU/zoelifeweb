@@ -42,33 +42,58 @@
                 <ul id="masonry" class="dez-gallery-listing row gallery-grid-4 m-b0 mfp-gallery">
                     @foreach ($galeryEvents as $key => $ge)
                         @if ($key>0)
-                        <li class="card-container col-md-3">
-                            <div class="dez-box dez-gallery-box">
-                                <div class="dez-thum dez-img-overlay1 dez-img-effect">
-                                    <a href="javascript:void(0);">
-                                        <img src="{{ $ge->item->items[0]->content }}" alt="img">
-                                    </a>
-                                    <div class="overlay-bx">
-                                        <div class="overlay-icon">
-                                            <!--
-                                                <a href="javascript:void(0);">
-                                                    <i class="fa fa-link icon-bx-xs"></i>
+                            @if (($key-1 % 6) || $key == 1)
+                                <li class="card-container col-md-3" id="{{ $key/6 }}_pag">
+                            @endif
+
+                                <div class="dez-box dez-gallery-box">
+                                    <div class="dez-thum dez-img-overlay1 dez-img-effect">
+                                        <a href="javascript:void(0);">
+                                            <img src="{{ $ge->item->items[0]->content }}" alt="img">
+                                        </a>
+                                        <div class="overlay-bx">
+                                            <div class="overlay-icon">
+                                                <!--
+                                                    <a href="javascript:void(0);">
+                                                        <i class="fa fa-link icon-bx-xs"></i>
+                                                    </a>
+                                                -->
+                                                <a href="{{ $ge->item->items[0]->content }}" class="mfp-link"
+                                                    title="Eventos">
+                                                    <i class="fa fa-picture-o icon-bx-xs"></i> <b  style="color: #fff;">Zoom</b>
                                                 </a>
-                                            -->
-                                            <a href="{{ $ge->item->items[0]->content }}" class="mfp-link"
-                                                title="Eventos">
-                                                <i class="fa fa-picture-o icon-bx-xs"></i> <b  style="color: #fff;">Zoom</b>
-                                            </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </li>
+                                @if (($key-1) % 6 || $key == 1)
+                                    </li>
+                            @endif
                         @endif
                     @endforeach
                 </ul>
                 <!-- Gallery END -->
                 <!-- Pagination start -->
+                @foreach ($galeryEvents as $key => $ge)
+                @if ($key>0)
+                    @if ($key > 6)
+                        @if ( $key-1 == 6 )
+                        <div class="pagination-bx">
+                            <ul class="pagination">
+                                <li class="previous"><a href="javascript:void(0);"><i class="fa fa-angle-double-left"></i></a></li>
+                        @endif
+
+                        @if (($key-1)%6)
+                            <li><a href="javascript:void(0);">{{ ($key-1) / 6 }}</a></li>
+                        @endif
+                        @if ( $key-1 == 6 )
+                                <li class="next"><a href="javascript:void(0);"><i class="fa fa-angle-double-right"></i></a></li>
+                            </ul>
+                        </div>
+                        @endif
+                    @endif
+                @endif
+                @endforeach
                 <div class="pagination-bx">
                     <ul class="pagination">
                         <li class="previous"><a href="javascript:void(0);"><i class="fa fa-angle-double-left"></i></a>
