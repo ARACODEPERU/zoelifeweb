@@ -109,6 +109,11 @@
         <!-- Paises / STAR -->
         {{-- <x-countries-section /> --}}
         <!-- Paises / END -->
+        <style>
+            .paginator_aracode {
+            transition: opacity 0.5s;
+            }
+        </style>
             <script>
                 var x=1;
                 function paginator(n){
