@@ -66,7 +66,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                @if (($key-1) % 6 || $key == 1)
+                                @if (($key-1) % 6 == 0 || $key == 1)
                                     </li>
                             @endif
                         @endif
