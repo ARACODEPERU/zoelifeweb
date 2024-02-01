@@ -58,10 +58,11 @@
                                                             <i class="fa fa-link icon-bx-xs"></i>
                                                         </a>
                                                     -->
-                                                    <img src="{{ $ge->item->items[0]->content }}" class="mfp-link"
+                                                        <img src="{{ $ge->item->items[0]->content }}" alt="">
+                                                    <a href="{{ $ge->item->items[0]->content }}" class="mfp-link"
                                                         title="Eventos">
                                                         <i class="fa fa-picture-o icon-bx-xs"></i> <b  style="color: #fff;">Zoom</b>
-
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
