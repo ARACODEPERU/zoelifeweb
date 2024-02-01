@@ -38,12 +38,11 @@
 
                         <!-- Gallery START -->
             <!-- Left & right section start -->
-
+            <div class="" style="width: 100%; padding: 40px;">
                 <!-- Gallery START -->
                     @foreach ($galeryEvents as $key => $ge)
                         @if ($key>0)
                             @if ( (($key-1) % 6 == 0) || $key == 1)
-                            <div class="" style="width: 100%; padding: 40px;">
                             <ul id="{{ (($key-1)/6)+1 }}_pag" class="dez-gallery-listing row gallery-grid-4 m-b0 mfp-gallery">
                                 <li class="card-container col-md-3">
                                     <div class="dez-box dez-gallery-box">
@@ -101,10 +100,9 @@
                             @endif
                         @endif
                     @endif
-                </div>
                 @endforeach
                 <!-- Pagination END -->
-
+            </div>
             <!-- Left & right section  END -->
 
         <!-- Paises / STAR -->
