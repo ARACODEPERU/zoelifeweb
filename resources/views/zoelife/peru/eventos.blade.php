@@ -42,8 +42,8 @@
                 <ul id="masonry" class="dez-gallery-listing row gallery-grid-4 m-b0 mfp-gallery">
                     @foreach ($galeryEvents as $key => $ge)
                         @if ($key>0)
-                            @if (($key-1 % 6 == 0) || $key == 1)
-                                <li class="card-container col-md-3" id="{{ $key/6 }}_pag">
+                            @if ( (($key-1) % 6 == 0) || $key == 1)
+                                <li class="card-container col-md-3" id="{{ ($key-1)/6 }}_pag">
                             @endif
 
                                 <div class="dez-box dez-gallery-box">
@@ -66,7 +66,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                @if (($key-1) % 6 == 0 || $key == 1)
+                                @if ( (($key-1) % 6) == 0 || $key == 1)
                                     </li>
                             @endif
                         @endif
