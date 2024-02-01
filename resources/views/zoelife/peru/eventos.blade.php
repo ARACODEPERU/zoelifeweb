@@ -43,7 +43,7 @@
                     @foreach ($galeryEvents as $key => $ge)
                         @if ($key>0)
                             @if ( (($key-1) % 6 == 0) || $key == 1)
-                                <li class="card-container col-md-3" id="{{ ($key-1)/6 }}_pag">
+                                <li class="card-container col-md-3" id="{{ (($key-1)/6)+1 }}_pag">
                             @endif
 
                                 <div class="dez-box dez-gallery-box">
