@@ -93,7 +93,7 @@
                                     <li id="{{ ($key-1) / 8 }}_numpag" onclick="paginator({{ ($key-1) / 8 }})" class="{{ ($key-1) / 8 == 1? 'numpag active': 'numpag' }}"><a >{{ ($key-1) / 8 }}</a></li>
                                 @endif
                                 @if ($key > 8 && (count($galeryEvents)-1) == $key && $key % 8 != 0)
-                                    <li onclick="paginator({{ intdiv($key, 8) + 1 }})" class="numpag"><a >{{ intdiv($key, 8) + 1 }}</a></li>
+                                    <li id="{{ intdiv($key, 8) + 1 }}_numpag" onclick="paginator({{ intdiv($key, 8) + 1 }})" class="numpag"><a >{{ intdiv($key, 8) + 1 }}</a></li>
                                 @endif
                             @if ( $key > 8 && (count($galeryEvents)-1) == $key )
                                     <li class="next" onclick="paginator_np('n')"><a ><i class="fa fa-angle-double-right"></i></a></li>
