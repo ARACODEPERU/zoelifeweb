@@ -197,7 +197,7 @@ class PeruController extends Controller
         return view('zoelife/peru.eventos', [
             'banner' => $banner,
             'galeryEvents' => $galeryEvents,
-            'elementos_paginator' => $elementos_paginator
+            'elementos_paginator' => $this->elementos_paginator
         ]);
     }
 
