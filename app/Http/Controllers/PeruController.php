@@ -11,6 +11,7 @@ use Modules\Onlineshop\Entities\OnliItem;
 
 class PeruController extends Controller
 {
+    public $elementos_paginator;
     public function inicio()
     {
         $slider = CmsSection::where('component_id', 'peru_slider_inicio_2')
@@ -33,7 +34,7 @@ class PeruController extends Controller
             ->orderBy('cms_section_items.position')
             ->first();
 
-            
+
         $equipos = CmsSectionItem::with('item.items')->where('section_id', 66)
         ->orderBy('position')
         ->get();
@@ -177,6 +178,7 @@ class PeruController extends Controller
 
     public function eventos()
     {
+        $this->elementos_paginator = 4; //numero de elementos por vista
         $banner = CmsSection::where('component_id', 'peru_banner_eventos_11')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
