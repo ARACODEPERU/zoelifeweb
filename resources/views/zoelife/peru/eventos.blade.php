@@ -90,10 +90,10 @@
                             @endif
 
                                 @if ( ( $key - 1 ) % 8 == 0)
-                                    <li onclick="paginator({{ ($key-1) / 8 }})"><a >{{ ($key-1) / 8 }}</a></li>
+                                    <li id="{{ ($key-1) / 8 }}_numpag" onclick="paginator({{ ($key-1) / 8 }})" class="{{ ($key-1) / 8 == 1? 'numpag active': 'numpag' }}"><a >{{ ($key-1) / 8 }}</a></li>
                                 @endif
                                 @if ($key > 8 && (count($galeryEvents)-1) == $key && $key % 8 != 0)
-                                    <li onclick="paginator({{ intdiv($key, 8) + 1 }})"><a >{{ intdiv($key, 8) + 1 }}</a></li>
+                                    <li onclick="paginator({{ intdiv($key, 8) + 1 }})" class="numpag"><a >{{ intdiv($key, 8) + 1 }}</a></li>
                                 @endif
                             @if ( $key > 8 && (count($galeryEvents)-1) == $key )
                                     <li class="next" onclick="paginator_np('n')"><a ><i class="fa fa-angle-double-right"></i></a></li>
@@ -122,6 +122,14 @@
                     elements[i].hidden = true;
                     }
                     document.getElementById(n+"_pag").hidden=false;
+                    var elements = document.querySelectorAll(".numpag");
+
+                    for (var i = 0; i < elements.length; i++) {
+                    elements[i].classList.remove("active");
+                    }
+
+                    var targetElement = document.getElementById(n + "_numpag");
+                    targetElement.classList.add("active");
                 }
 
                 function paginator_np(n){
