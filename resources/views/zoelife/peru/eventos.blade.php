@@ -75,24 +75,24 @@
                 <!-- Gallery END -->
                 <!-- Pagination start -->
                 @foreach ($galeryEvents as $key => $ge)
-                @if ($key>0)
-                    @if ($key > 6)
-                        @if ( $key-1 == 6 )
-                        <div class="pagination-bx">
-                            <ul class="pagination">
-                                <li class="previous"><a href="javascript:void(0);"><i class="fa fa-angle-double-left"></i></a></li>
-                        @endif
+                    @if ($key>0)
+                        @if ($key > 6)
+                            @if ( $key-1 == 6 )
+                            <div class="pagination-bx">
+                                <ul class="pagination">
+                                    <li class="previous"><a href="javascript:void(0);"><i class="fa fa-angle-double-left"></i></a></li>
+                            @endif
 
-                        @if (($key-1)%6)
-                            <li><a href="javascript:void(0);">{{ ($key-1) / 6 }}</a></li>
-                        @endif
-                        @if ( $key-1 == 6 )
-                                <li class="next"><a href="javascript:void(0);"><i class="fa fa-angle-double-right"></i></a></li>
-                            </ul>
-                        </div>
+                            @if (($key-1)%6)
+                                <li><a href="javascript:void(0);">{{ ($key-1) / 6 }}</a></li>
+                            @endif
+                            @if ( $key > 6 && (count($galeryEvents)-1) == $key )
+                                    <li class="next"><a href="javascript:void(0);"><i class="fa fa-angle-double-right"></i></a></li>
+                                </ul>
+                            </div>
+                            @endif
                         @endif
                     @endif
-                @endif
                 @endforeach
                 <!-- Pagination END -->
             </div>
