@@ -86,7 +86,7 @@
                                 @if ( ( $key - 1 ) % 6 == 0)
                                     <li><a onclick="paginator({{ ($key-1) / 6 }})">{{ ($key-1) / 6 }}</a></li>
                                 @endif
-                                @if ($key > 6 && (count($galeryEvents)-1) == $key &&  ( $key - 1 ) % 6)
+                                @if ($key > 6 && (count($galeryEvents)-1) == $key &&  ( $key - 1 ) % 6 != 0)
                                     <li><a onclick="paginator({{ ($key-1) / 6 }})">{{ intdiv($key, 6) + 1 }}</a></li>
                                 @endif
                             @if ( $key > 6 && (count($galeryEvents)-1) == $key )
