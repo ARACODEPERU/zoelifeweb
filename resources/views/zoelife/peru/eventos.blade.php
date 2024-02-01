@@ -117,7 +117,7 @@
                     elements[i].hidden = true;
                     }
                     document.getElementbyId(n+"_pag").hidden=false;
-                }´
+                }
 
                 function paginator_np(n){
                     if(n=="p"){
