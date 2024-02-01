@@ -138,7 +138,7 @@
                     var numero = parseInt(pagina.match(/\d+/)[0]);
 
                     if(n=="p"){
-                        if(numero>1)paginator(++numero);
+                        if(numero>1)paginator(--numero);
                     }
                     if(n=="n"){
                             if(document.getElementById((numero+1)+"_pag")){
