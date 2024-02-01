@@ -83,9 +83,12 @@
                                     <li class="previous"><a href="javascript:void(0);"><i class="fa fa-angle-double-left"></i></a></li>
                             @endif
 
-                            @if ( ( $key - 1 ) % 6 == 0)
-                                <li><a href="javascript:void(0);">{{ ($key-1) / 6 }}</a></li>
-                            @endif
+                                @if ( ( $key - 1 ) % 6 == 0)
+                                    <li><a href="javascript:void(0);">{{ ($key-1) / 6 }}</a></li>
+                                @endif
+                                @if ($key > 6 && (count($galeryEvents)-1) == $key &&  ( $key - 1 ) % 6)
+
+                                @endif
                             @if ( $key > 6 && (count($galeryEvents)-1) == $key )
                                     <li class="next"><a href="javascript:void(0);"><i class="fa fa-angle-double-right"></i></a></li>
                                 </ul>
