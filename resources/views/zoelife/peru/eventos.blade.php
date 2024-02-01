@@ -38,7 +38,7 @@
 
                         <!-- Gallery START -->
             <!-- Left & right section start -->
-            <div class="" style="width: 100%; padding: 40px;">
+            <div class="" style="width: 100%; padding: 40px;" id="carrusel_aracode">
                 <!-- Gallery START -->
                     @foreach ($galeryEvents as $key => $ge)
                         @if ($key>0)
@@ -117,9 +117,21 @@
         </style>
             <script>
 
-                setInterval(function() {
-                    paginator_np("n");
-                }, 3000);
+                    var intervalID;
+                    function startInterval() {
+                    intervalID = setInterval(function() {
+                        paginator_np("n");
+                    }, 3000);
+                    }
+
+                    function stopInterval() {
+                    clearInterval(intervalID);
+                    }
+
+                var elementoHTML = document.getElementById("carrusel_aracode");
+
+                elementoHTML.addEventListener("mouseenter", stopInterval);
+                elementoHTML.addEventListener("mouseleave", startInterval);
                 function paginator(n){
                     var elements = document.querySelectorAll(".paginator_aracode");
                     for (var i = 0; i < elements.length; i++) {
@@ -155,6 +167,8 @@
                     if(n=="n"){
                             if(document.getElementById((numero+1)+"_pag")){
                             paginator(++numero);
+                            }else{
+                                paginator(1);
                             }
                     }
                 }
