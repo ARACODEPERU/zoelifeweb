@@ -42,8 +42,8 @@
                 <!-- Gallery START -->
                     @foreach ($galeryEvents as $key => $ge)
                         @if ($key>0)
-                                @if ( ($key-1) % 8 == 0 || $key == 1)
-                                    <ul id="{{ (($key-1)/8)+1 }}_pag" {{ $key == 1 ? "" : "hidden" }} class="dez-gallery-listing row gallery-grid-4 m-b0 mfp-gallery paginator_aracode">
+                                @if ( ($key-1) % $elementos_paginator == 0 || $key == 1)
+                                    <ul id="{{ (($key-1)/$elementos_paginator)+1 }}_pag" {{ $key == 1 ? "" : "hidden" }} class="dez-gallery-listing row gallery-grid-4 m-b0 mfp-gallery paginator_aracode">
                                 @endif
                                 <li class="card-container col-md-3">
                                     <div class="dez-box dez-gallery-box">
@@ -69,11 +69,11 @@
                                     </div>
                                 </li>
 
-                                @if ( $key % 8 == 0 && $key > 1)
+                                @if ( $key % $elementos_paginator == 0 && $key > 1)
                                     </ul>
                                 @endif
                         @endif
-                        @if ($key > 8 && (count($galeryEvents)-1) == $key)
+                        @if ($key > $elementos_paginator && (count($galeryEvents)-1) == $key)
                             </ul>
                         @endif
                     @endforeach
@@ -82,20 +82,20 @@
                 <!-- Pagination start -->
                 @foreach ($galeryEvents as $key => $ge)
                     @if ($key>0)
-                        @if ($key > 8)
-                            @if ( $key-1 == 8 )
+                        @if ($key > $elementos_paginator)
+                            @if ( $key-1 == $elementos_paginator )
                             <div class="pagination-bx">
                                 <ul class="pagination">
                                     <li class="previous"><a onclick="paginator_np('p')"><i class="fa fa-angle-double-left"></i></a></li>
                             @endif
 
-                                @if ( ( $key - 1 ) % 8 == 0)
-                                    <li id="{{ ($key-1) / 8 }}_numpag" onclick="paginator({{ ($key-1) / 8 }})" class="{{ ($key-1) / 8 == 1? 'numpag active': 'numpag' }}"><a >{{ ($key-1) / 8 }}</a></li>
+                                @if ( ( $key - 1 ) % $elementos_paginator == 0)
+                                    <li id="{{ ($key-1) / $elementos_paginator }}_numpag" onclick="paginator({{ ($key-1) / $elementos_paginator }})" class="{{ ($key-1) / $elementos_paginator == 1? 'numpag active': 'numpag' }}"><a >{{ ($key-1) / $elementos_paginator }}</a></li>
                                 @endif
-                                @if ($key > 8 && (count($galeryEvents)-1) == $key && $key % 8 != 0)
-                                    <li id="{{ intdiv($key, 8) + 1 }}_numpag" onclick="paginator({{ intdiv($key, 8) + 1 }})" class="numpag"><a >{{ intdiv($key, 8) + 1 }}</a></li>
+                                @if ($key > $elementos_paginator && (count($galeryEvents)-1) == $key && $key % $elementos_paginator != 0)
+                                    <li id="{{ intdiv($key, $elementos_paginator) + 1 }}_numpag" onclick="paginator({{ intdiv($key, $elementos_paginator) + 1 }})" class="numpag"><a >{{ intdiv($key, $elementos_paginator) + 1 }}</a></li>
                                 @endif
-                            @if ( $key > 8 && (count($galeryEvents)-1) == $key )
+                            @if ( $key > $elementos_paginator && (count($galeryEvents)-1) == $key )
                                     <li class="next" onclick="paginator_np('n')"><a ><i class="fa fa-angle-double-right"></i></a></li>
                                 </ul>
                             </div>
