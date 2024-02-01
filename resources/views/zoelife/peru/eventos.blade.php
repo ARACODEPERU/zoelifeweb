@@ -89,13 +89,13 @@
                             @endif
 
                                 @if ( ( $key - 1 ) % 8 == 0)
-                                    <li><a onclick="paginator({{ ($key-1) / 8 }})">{{ ($key-1) / 8 }}</a></li>
+                                    <li onclick="paginator({{ ($key-1) / 8 }})"><a >{{ ($key-1) / 8 }}</a></li>
                                 @endif
                                 @if ($key > 8 && (count($galeryEvents)-1) == $key && $key % 8 != 0)
-                                    <li><a onclick="paginator({{ intdiv($key, 8) + 1 }})">{{ intdiv($key, 8) + 1 }}</a></li>
+                                    <li onclick="paginator({{ intdiv($key, 8) + 1 }})"><a >{{ intdiv($key, 8) + 1 }}</a></li>
                                 @endif
                             @if ( $key > 8 && (count($galeryEvents)-1) == $key )
-                                    <li class="next"><a onclick="paginator_np('n')"><i class="fa fa-angle-double-right"></i></a></li>
+                                    <li class="next" onclick="paginator_np('n')"><a ><i class="fa fa-angle-double-right"></i></a></li>
                                 </ul>
                             </div>
                             @endif
