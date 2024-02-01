@@ -116,7 +116,6 @@
             }
         </style>
             <script>
-                var x=1;
                 function paginator(n){
                     var elements = document.querySelectorAll(".paginator_aracode");
                     for (var i = 0; i < elements.length; i++) {
@@ -126,15 +125,25 @@
                 }
 
                 function paginator_np(n){
+                    var elements = document.querySelectorAll(".paginator_aracode");
+                    var id;
+                    for (var i = 0; i < elements.length; i++) {
+                    if (!elements[i].hidden) {
+                        id = elements[i].id;
+                        console.log("El ID del elemento sin atributo hidden es: " + id);
+                        break; // Rompe el bucle una vez que se encuentra el primer elemento sin hidden
+                    }
+                    }
+                    var pagina = id;
+                    var numero = parseInt(pagina.match(/\d+/)[0]);
+
                     if(n=="p"){
-                        if(x>1)paginator(--x);
+                        if(numero>1)paginator(++numero);
                     }
                     if(n=="n"){
-                        if(x>1){
-                            if(document.getElementById((x+1)+"_pag")){
-                            paginator(++x);
+                            if(document.getElementById((numero+1)+"_pag")){
+                            paginator(++numero);
                             }
-                        }
                     }
                 }
             </script>
