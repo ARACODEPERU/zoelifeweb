@@ -116,7 +116,7 @@
                     for (var i = 0; i < elements.length; i++) {
                     elements[i].hidden = true;
                     }
-                    document.getElementbyId(n+"_pag").hidden=false;
+                    document.getElementById(n+"_pag").hidden=false;
                 }
 
                 function paginator_np(n){
@@ -125,7 +125,7 @@
                     }
                     if(n=="n"){
                         if(x>1){
-                            if(document.getElementbyId((x+1)+"_pag")){
+                            if(document.getElementById((x+1)+"_pag")){
                             paginator(++x);
                             }
                         }
