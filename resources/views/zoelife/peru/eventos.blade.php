@@ -35,6 +35,18 @@
             </div>
         </div>
 
+        <div class="carousel">
+            <div class="wrap">
+              <ul>
+                @foreach ($galeryEvents as $key => $ge)
+                    @if ($key>0)
+                        <li> <img src="{{ $ge->item->items[0]->content }}"/></li>
+                    @endif
+                @endforeach
+              </ul>
+            </div>
+        </div>
+
         
             <!-- Left & right section start -->
             <div class="" style="width: 100%; padding: 40px;">
