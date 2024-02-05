@@ -66,7 +66,7 @@ const menu = ref([
             },
             {
                 status: false,
-                route: route('products.index'),
+                route: route('ubigeo_list'),
                 text: 'Ciudades Internacionales',
                 permissions: 'productos',
             },

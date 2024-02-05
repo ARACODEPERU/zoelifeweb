@@ -13,7 +13,8 @@ class Department extends Model
 
     protected $fillable = [
         'id',
-        'name'
+        'name',
+        'country_id'
     ];
 
     public function provinces(): HasMany

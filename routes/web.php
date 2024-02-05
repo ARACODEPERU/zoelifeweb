@@ -11,12 +11,14 @@ use App\Http\Controllers\LocalSaleController;
 use App\Http\Controllers\MexicoController;
 use App\Http\Controllers\PersonController;
 use App\Http\Controllers\PeruController;
+use App\Http\Controllers\UbigeoController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use Illuminate\Foundation\Application;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\WebController;
 use Modules\Blog\Http\Controllers\BlogController;
+use Modules\Sales\Http\Controllers\ProductController;
 
 Route::get('/', function () {
     $ip = $_SERVER['REMOTE_ADDR']; // Esto contendrá la ip de la solicitud.
@@ -190,6 +192,11 @@ Route::middleware('auth')->group(function () {
     )->middleware(['auth', 'verified'])->name('datosempresa');
 
     Route::resource('products', ProductController::class);
+    Route::get('international/cities', [UbigeoController::class, 'index'])->name('ubigeo_list');
+    Route::get('international/cities/create/{country_id?}/{department_id?}', [UbigeoController::class, 'create'])->name('ubigeo_create');
+    Route::post('international/province/store', [UbigeoController::class, 'store'])->name('ubigeo__state_province_store');
+    Route::post('international/cities/store', [UbigeoController::class, 'storeCity'])->name('ubigeo_store');
+    Route::delete('international/cities/destroy/{id}', [UbigeoController::class, 'destroy'])->name('ubigeo_destroy');
 });
 
 require __DIR__ . '/auth.php';
