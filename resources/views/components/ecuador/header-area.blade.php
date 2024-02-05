@@ -116,7 +116,6 @@
                     <div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
                         <ul class="nav navbar-nav">
                             <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_ecuador_inicio') ? 'active' : '' }}" href="{{ route('web_ecuador_inicio') }}">Inicio</a> </li>
-                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_ecuador_nosotros') ? 'active' : '' }}" href="{{ route('web_ecuador_nosotros') }}">Nosotros</a> </li>
                             <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_ecuador_productos') ? 'active' : '' }}" href="{{ route('web_ecuador_productos') }}">Productos</a>
                                 <ul class="sub-menu">
                                     @foreach ($products as $product)
@@ -130,8 +129,10 @@
                             </li>
                             <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_ecuador_testimonios') ? 'active' : '' }}" href="{{ route('web_ecuador_testimonios') }}">Testimonios</a> </li>
                             <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_ecuador_centros') ? 'active' : '' }}" href="{{ route('web_ecuador_centros') }}">Centros de Distribución</a> </li>
+                            <li> <a class="dropdown-item  {{ request()->routeIs('web_ecuador_eventos') ? 'active' : '' }}" href="{{ route('web_ecuador_eventos') }}">Eventos</a> </li>
                             <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_ecuador_alcanzando_las_estrellas') ? 'active' : '' }}" href="{{ route('web_ecuador_alcanzando_las_estrellas') }}">Alcanzando las
                                     Estrellas</a> </li>
+                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_ecuador_university') ? 'active' : '' }}" href="{{ route('web_ecuador_university') }}">University</a> </li>
                             <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_ecuador_contacto') ? 'active' : '' }}" href="{{ route('web_ecuador_contacto') }}">Contacto</a> </li>
                             <li class="switch" style="top: 25px;">
                                 <i class="bx bxs-sun"></i>
