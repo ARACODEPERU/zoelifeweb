@@ -64,6 +64,12 @@ const menu = ref([
                 text: 'Gestión Productos & servicios',
                 permissions: 'productos',
             },
+            {
+                status: false,
+                route: route('products.index'),
+                text: 'Ciudades Internacionales',
+                permissions: 'productos',
+            },
         ]
     },
     {
