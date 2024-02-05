@@ -70,6 +70,7 @@ Route::get('/bolivia.testimonios', [BoliviaController::class, 'testimonios'])->n
 Route::get('/bolivia.centros-de-distribucion', [BoliviaController::class, 'centros'])->name('web_bolivia_centros');
 Route::get('/bolivia.eventos', [BoliviaController::class, 'eventos'])->name('web_bolivia_eventos');
 Route::get('/bolivia.alcanzando-las-estrellas', [BoliviaController::class, 'estrellas'])->name('web_bolivia_alcanzando_las_estrellas');
+Route::get('/bolivia.zoe-university', [BoliviaController::class, 'university'])->name('web_bolivia_university');
 Route::get('/bolivia.contacto', [BoliviaController::class, 'contacto'])->name('web_bolivia_contacto');
 
 
@@ -82,6 +83,7 @@ Route::get('/ecuador.testimonios', [EcuadorController::class, 'testimonios'])->n
 Route::get('/ecuador.centros-de-distribucion', [EcuadorController::class, 'centros'])->name('web_ecuador_centros');
 Route::get('/ecuador.eventos', [EcuadorController::class, 'eventos'])->name('web_ecuador_eventos');
 Route::get('/ecuador.alcanzando-las-estrellas', [EcuadorController::class, 'estrellas'])->name('web_ecuador_alcanzando_las_estrellas');
+Route::get('/ecuador.zoe-university', [EcuadorController::class, 'university'])->name('web_ecuador_university');
 Route::get('/ecuador.contacto', [EcuadorController::class, 'contacto'])->name('web_ecuador_contacto');
 
 
@@ -95,6 +97,7 @@ Route::get('/colombia.testimonios', [ColombiaController::class, 'testimonios'])-
 Route::get('/colombia.centros-de-distribucion', [ColombiaController::class, 'centros'])->name('web_colombia_centros');
 Route::get('/colombia.eventos', [ColombiaController::class, 'eventos'])->name('web_colombia_eventos');
 Route::get('/colombia.alcanzando-las-estrellas', [ColombiaController::class, 'estrellas'])->name('web_colombia_alcanzando_las_estrellas');
+Route::get('/colombia.zoe-university', [ColombiaController::class, 'university'])->name('web_colombia_university');
 Route::get('/colombia.contacto', [ColombiaController::class, 'contacto'])->name('web_colombia_contacto');
 
 
@@ -108,6 +111,7 @@ Route::get('/mexico.testimonios', [MexicoController::class, 'testimonios'])->nam
 Route::get('/mexico.centros-de-distribucion', [MexicoController::class, 'centros'])->name('web_mexico_centros');
 Route::get('/mexico.eventos', [MexicoController::class, 'eventos'])->name('web_mexico_eventos');
 Route::get('/mexico.alcanzando-las-estrellas', [MexicoController::class, 'estrellas'])->name('web_mexico_alcanzando_las_estrellas');
+Route::get('/mexico.zoe-university', [MexicoController::class, 'university'])->name('web_mexico_university');
 Route::get('/mexico.contacto', [MexicoController::class, 'contacto'])->name('web_mexico_contacto');
 
 

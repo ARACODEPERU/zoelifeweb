@@ -16,8 +16,8 @@
     <header class="site-header header-style-1 mo-left dark dark-style-2">
         <!-- Top bar -->
         <div class="top-bar">
-            <div class="" style="width: 100%; padding: 0px 40px;">
-                <div class="row justify-content-between">
+            <div class="top-bar-content" style="width: 100%; padding: 0px 40px;">
+                <div class="top-bar-contect-space row justify-content-between">
                     <div class="dez-topbar-left">
                         <ul class="social-bx list-inline pull-right">
                             <li>
@@ -41,24 +41,31 @@
                     <div class="dez-topbar-right list-unstyled e-p-bx ">
                         <ul>
                             <li style="float: left;">
+                                <a href="https://zoelifeinternational.com/"><i class="fa fa-globe" aria-hidden="true"></i><span>Zoé Global</span></a>
+                            </li>
+                            <!--
+                            <li style="float: left;">
                                 <span>
                                     <div class="dropdown">
                                         <button class="btn-secondary" type="button" data-toggle="dropdown" aria-expanded="false">
                                             <a class="dropdown-item" href="{{ route($country[0]->route) }}">
-                                                <img  style="height: 25px;" src="{{ $country[0]->country->image }}" alt="">{{ $country[0]->country->description }}
+                                                <img  style="height: 25px;" src="{{ $country[0]->country->image }}" alt="">
+                                                <b style="color: #fff;"> &nbsp; {{ $country[0]->country->description }}</b>
                                                 <i class="dropdown-toggle"></i>
                                             </a>
                                         </button>
                                         <div class="dropdown-menu">
                                             @foreach ($pages as $page)
                                             <a class="dropdown-item" href="{{ route($page->route) }}">
-                                                 <img  style="height: 25px;" src="{{ $page->country->image }}" alt="">{{ $page->country->description }}
+                                                 <img  style="height: 25px;" src="{{ $page->country->image }}" alt="">
+                                                <b class="country"> &nbsp; {{ $page->country->description }}</b>
                                             </a>
                                             @endforeach
                                         </div>
                                     </div>
                                 </span>
                             </li>
+                            -->
                             <li>
                                 <i class="fa fa-envelope"></i><span>{{ $header[3]->content }}</span>
                             </li>
@@ -109,7 +116,6 @@
                     <div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
                         <ul class="nav navbar-nav">
                             <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_ecuador_inicio') ? 'active' : '' }}" href="{{ route('web_ecuador_inicio') }}">Inicio</a> </li>
-                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_ecuador_nosotros') ? 'active' : '' }}" href="{{ route('web_ecuador_nosotros') }}">Nosotros</a> </li>
                             <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_ecuador_productos') ? 'active' : '' }}" href="{{ route('web_ecuador_productos') }}">Productos</a>
                                 <ul class="sub-menu">
                                     @foreach ($products as $product)
@@ -123,8 +129,10 @@
                             </li>
                             <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_ecuador_testimonios') ? 'active' : '' }}" href="{{ route('web_ecuador_testimonios') }}">Testimonios</a> </li>
                             <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_ecuador_centros') ? 'active' : '' }}" href="{{ route('web_ecuador_centros') }}">Centros de Distribución</a> </li>
+                            <li> <a class="dropdown-item  {{ request()->routeIs('web_ecuador_eventos') ? 'active' : '' }}" href="{{ route('web_ecuador_eventos') }}">Eventos</a> </li>
                             <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_ecuador_alcanzando_las_estrellas') ? 'active' : '' }}" href="{{ route('web_ecuador_alcanzando_las_estrellas') }}">Alcanzando las
                                     Estrellas</a> </li>
+                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_ecuador_university') ? 'active' : '' }}" href="{{ route('web_ecuador_university') }}">University</a> </li>
                             <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_ecuador_contacto') ? 'active' : '' }}" href="{{ route('web_ecuador_contacto') }}">Contacto</a> </li>
                             <li class="switch" style="top: 25px;">
                                 <i class="bx bxs-sun"></i>

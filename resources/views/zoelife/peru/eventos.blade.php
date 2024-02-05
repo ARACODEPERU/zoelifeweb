@@ -35,8 +35,24 @@
             </div>
         </div>
 
+<<<<<<< HEAD
+        <div class="carousel">
+            <div class="wrap">
+              <ul>
+                @foreach ($galeryEvents as $key => $ge)
+                    @if ($key>0)
+                        <li> <img src="{{ $ge->item->items[0]->content }}"/></li>
+                    @endif
+                @endforeach
+              </ul>
+            </div>
+        </div>
+
+        
+=======
 
                         <!-- Gallery START -->
+>>>>>>> 2c9ed6354fe9f8f6bb2b9daa9d87de8388bbfbd2
             <!-- Left & right section start -->
             <div class="" style="width: 100%; padding: 40px;" id="carrusel_aracode">
                 <!-- Gallery START -->
