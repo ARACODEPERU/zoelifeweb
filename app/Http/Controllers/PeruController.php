@@ -36,8 +36,8 @@ class PeruController extends Controller
 
 
         $equipos = CmsSectionItem::with('item.items')->where('section_id', 66)
-        ->orderBy('position')
-        ->get();
+            ->orderBy('position')
+            ->get();
 
 
         return view('zoelife/peru.index', [
@@ -86,29 +86,29 @@ class PeruController extends Controller
     public function productos()
     {
         $banner = CmsSection::where('component_id', 'peru_banner_productos_8')
-        ->join('cms_section_items', 'section_id', 'cms_sections.id')
-        ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
-        ->select(
-            'cms_items.content',
-            'cms_section_items.position'
-        )
-        ->orderBy('cms_section_items.position')
-        ->first();
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->first();
 
         $beneficiop = CmsSection::where('component_id', 'peru_beneficio_productos_78')
-        ->join('cms_section_items', 'section_id', 'cms_sections.id')
-        ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
-        ->select(
-            'cms_items.content',
-            'cms_section_items.position'
-        )
-        ->orderBy('cms_section_items.position')
-        ->get();
-        
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->get();
+
         $productos = OnliItem::join('countries', 'onli_items.country_id', '=', 'countries.id')
-        ->where('countries.description', 'Perú')
-        ->select('onli_items.name', 'onli_items.image', 'onli_items.id')
-        ->get();
+            ->where('countries.description', 'Perú')
+            ->select('onli_items.name', 'onli_items.image', 'onli_items.id')
+            ->get();
 
         return view('zoelife/peru.productos', [
             'banner' => $banner,
@@ -143,12 +143,12 @@ class PeruController extends Controller
             ->orderBy('cms_section_items.position')
             ->first();
 
-            $products = OnliItem::whereIn('id', function ($query) {
-                $query->selectRaw('MIN(id)')
-                    ->from('onli_items')
-                    ->where('status', true)
-                    ->groupBy('name');
-            })
+        $products = OnliItem::whereIn('id', function ($query) {
+            $query->selectRaw('MIN(id)')
+                ->from('onli_items')
+                ->where('status', true)
+                ->groupBy('name');
+        })
             ->get();
 
         $testimonies = CmsTestimony::with('product')->get();
@@ -176,7 +176,9 @@ class PeruController extends Controller
 
         $departments = LocalSale::join('districts', 'ubigeo', 'districts.id')
             ->join('departments', 'districts.department_id', 'departments.id')
+            ->join('countries', 'departments.country_id', 'countries.id')
             ->select('districts.department_id', 'departments.name')
+            ->where('departments.country_id', 1)
             ->groupBy('departments.name', 'districts.department_id')
             ->get();
 
@@ -202,8 +204,8 @@ class PeruController extends Controller
 
 
         $galeryEvents = CmsSectionItem::with('item.items')->where('section_id', 76)
-        ->orderBy('position')
-        ->get();
+            ->orderBy('position')
+            ->get();
 
         return view('zoelife/peru.eventos', [
             'banner' => $banner,

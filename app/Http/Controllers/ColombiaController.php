@@ -80,7 +80,7 @@ class ColombiaController extends Controller
             ->orderBy('cms_section_items.position')
             ->first();
 
-            $productos = OnliItem::join('countries', 'onli_items.country_id', '=', 'countries.id')
+        $productos = OnliItem::join('countries', 'onli_items.country_id', '=', 'countries.id')
             ->where('countries.description', 'Colombia')
             ->select('onli_items.name', 'onli_items.image', 'onli_items.id')
             ->get();
@@ -119,12 +119,12 @@ class ColombiaController extends Controller
             ->orderBy('cms_section_items.position')
             ->first();
 
-            $products = OnliItem::whereIn('id', function ($query) {
-                $query->selectRaw('MIN(id)')
-                    ->from('onli_items')
-                    ->where('status', true)
-                    ->groupBy('name');
-            })
+        $products = OnliItem::whereIn('id', function ($query) {
+            $query->selectRaw('MIN(id)')
+                ->from('onli_items')
+                ->where('status', true)
+                ->groupBy('name');
+        })
             ->get();
 
         $testimonies = CmsTestimony::with('product')->get();
@@ -148,11 +148,13 @@ class ColombiaController extends Controller
             ->orderBy('cms_section_items.position')
             ->first();
 
-        $centers = LocalSale::with('district.department')->where('country_id', 1)->get();
+        $centers = LocalSale::with('district.department')->where('country_id', 4)->get();
 
         $departments = LocalSale::join('districts', 'ubigeo', 'districts.id')
             ->join('departments', 'districts.department_id', 'departments.id')
+            ->join('countries', 'departments.country_id', 'countries.id')
             ->select('districts.department_id', 'departments.name')
+            ->where('departments.country_id', 4)
             ->groupBy('departments.name', 'districts.department_id')
             ->get();
 
