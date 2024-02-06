@@ -35,24 +35,11 @@
                         <div class="m-b10">
                             <h2 class="text-uppercase text-primary">Beneficio de los productos</h2>
                             <div class="row">
+                                @foreach ( $beneficiop as $bp )
                                 <div class="col-md-2" style="padding: 20px 0px;">
-                                    <img src="{{ asset('themes/zoelife/peru/images/beneficios/01.jpeg') }}" alt="">
+                                    <img src="{{ $bp->content }}" alt="">
                                 </div>
-                                <div class="col-md-2" style="padding: 20px 0px;">
-                                    <img src="{{ asset('themes/zoelife/peru/images/beneficios/02.jpeg') }}" alt="">
-                                </div>
-                                <div class="col-md-2" style="padding: 20px 0px;">
-                                    <img src="{{ asset('themes/zoelife/peru/images/beneficios/03.jpeg') }}" alt="">
-                                </div>
-                                <div class="col-md-2" style="padding: 20px 0px;">
-                                    <img src="{{ asset('themes/zoelife/peru/images/beneficios/04.jpeg') }}" alt="">
-                                </div>
-                                <div class="col-md-2" style="padding: 20px 0px;">
-                                    <img src="{{ asset('themes/zoelife/peru/images/beneficios/05.jpeg') }}" alt="">
-                                </div>
-                                <div class="col-md-2" style="padding: 20px 0px;">
-                                    <img src="{{ asset('themes/zoelife/peru/images/beneficios/06.jpeg') }}" alt="">
-                                </div>
+                                @endforeach
                             </div>
                             <div class="dez-divider divider-2px bg-primary icon-center">
                                 <i class="fa fa-leaf bg-primary text-white"></i>
