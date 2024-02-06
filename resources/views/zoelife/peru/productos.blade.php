@@ -36,7 +36,7 @@
                             <h2 class="text-uppercase text-primary">Beneficio de los productos</h2>
                             <div class="row">
                                 @foreach ( $beneficiop as $bp )
-                                <div class="col-md-2" style="padding: 20px 0px;">
+                                <div class="col-md-2" style="padding: 20px 0px;  ">
                                     <img src="{{ $bp->content }}" alt="">
                                 </div>
                                 @endforeach
