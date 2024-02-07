@@ -25,38 +25,10 @@
         </div>
         <!-- Breadcrumb row END -->
 
-        <div class="container" style="padding: 40px;">
-            <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-4" style="text-align: center;">
-                    <a href="" class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px;"> <b>Inscripciones</b></a>
-                </div>
-                <div class="col-md-4"></div>
-            </div>
-        </div>
-
-<<<<<<< HEAD
-        <div class="carousel">
-            <div class="wrap">
-              <ul>
+        <!-- Left & right section start -->
+        <div class="" style="width: 100%; padding: 40px;" id="carrusel_aracode">
+            <!-- Gallery START -->
                 @foreach ($galeryEvents as $key => $ge)
-                    @if ($key>0)
-                        <li> <img src="{{ $ge->item->items[0]->content }}"/></li>
-                    @endif
-                @endforeach
-              </ul>
-            </div>
-        </div>
-
-        
-=======
-
-                        <!-- Gallery START -->
->>>>>>> 2c9ed6354fe9f8f6bb2b9daa9d87de8388bbfbd2
-            <!-- Left & right section start -->
-            <div class="" style="width: 100%; padding: 40px;" id="carrusel_aracode">
-                <!-- Gallery START -->
-                    @foreach ($galeryEvents as $key => $ge)
                         @if ($key>0)
                                 @if ( ($key-1) % $elementos_paginator == 0 || $key == 1)
                                     <ul id="{{ (($key-1)/$elementos_paginator)+1 }}_pag" {{ $key == 1 ? "" : "hidden" }} class="dez-gallery-listing row gallery-grid-4 m-b0 mfp-gallery paginator_aracode">
@@ -92,36 +64,53 @@
                         @if ($key > $elementos_paginator && (count($galeryEvents)-1) == $key)
                             </ul>
                         @endif
-                    @endforeach
+                @endforeach
+            <!-- Gallery END -->
 
-                <!-- Gallery END -->
-                <!-- Pagination start -->
-                @foreach ($galeryEvents as $key => $ge)
-                    @if ($key>0)
-                        @if ($key > $elementos_paginator)
-                            @if ( $key-1 == $elementos_paginator )
-                            <div class="pagination-bx">
-                                <ul class="pagination">
-                                    <li class="previous"><a onclick="paginator_np('p')"><i class="fa fa-angle-double-left"></i></a></li>
-                            @endif
+            <!-- Pagination start -->
+            @foreach ($galeryEvents as $key => $ge)
+                @if ($key>0)
+                    @if ($key > $elementos_paginator)
+                        @if ( $key-1 == $elementos_paginator )
+                        <div class="pagination-bx">
+                            <ul class="pagination">
+                                <li class="previous"><a onclick="paginator_np('p')"><i class="fa fa-angle-double-left"></i></a></li>
+                        @endif
 
-                                @if ( ( $key - 1 ) % $elementos_paginator == 0)
-                                    <li id="{{ ($key-1) / $elementos_paginator }}_numpag" onclick="paginator({{ ($key-1) / $elementos_paginator }})" class="{{ ($key-1) / $elementos_paginator == 1? 'numpag active': 'numpag' }}"><a >{{ ($key-1) / $elementos_paginator }}</a></li>
-                                @endif
-                                @if ($key > $elementos_paginator && (count($galeryEvents)-1) == $key && $key % $elementos_paginator != 0)
-                                    <li id="{{ intdiv($key, $elementos_paginator) + 1 }}_numpag" onclick="paginator({{ intdiv($key, $elementos_paginator) + 1 }})" class="numpag"><a >{{ intdiv($key, $elementos_paginator) + 1 }}</a></li>
-                                @endif
-                            @if ( $key > $elementos_paginator && (count($galeryEvents)-1) == $key )
-                                    <li class="next" onclick="paginator_np('n')"><a ><i class="fa fa-angle-double-right"></i></a></li>
-                                </ul>
-                            </div>
+                            @if ( ( $key - 1 ) % $elementos_paginator == 0)
+                                <li id="{{ ($key-1) / $elementos_paginator }}_numpag" onclick="paginator({{ ($key-1) / $elementos_paginator }})" class="{{ ($key-1) / $elementos_paginator == 1? 'numpag active': 'numpag' }}"><a >{{ ($key-1) / $elementos_paginator }}</a></li>
                             @endif
+                            @if ($key > $elementos_paginator && (count($galeryEvents)-1) == $key && $key % $elementos_paginator != 0)
+                                <li id="{{ intdiv($key, $elementos_paginator) + 1 }}_numpag" onclick="paginator({{ intdiv($key, $elementos_paginator) + 1 }})" class="numpag"><a >{{ intdiv($key, $elementos_paginator) + 1 }}</a></li>
+                            @endif
+                        @if ( $key > $elementos_paginator && (count($galeryEvents)-1) == $key )
+                                <li class="next" onclick="paginator_np('n')"><a ><i class="fa fa-angle-double-right"></i></a></li>
+                            </ul>
+                        </div>
                         @endif
                     @endif
-                @endforeach
-                <!-- Pagination END -->
+                @endif
+            @endforeach
+            <!-- Pagination END -->
+        </div>
+        <!-- Left & right section  END -->
+
+        <div class="container" style="padding: 40px;">
+            <div class="row" style="justify-content: space-between">
+                <div class="col-md-2"></div>
+                <div class="col-md-4" style="text-align: center;">
+                    <a href="{{ $inscripcioncontacto[0]->content }}" target="_blank" class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;"> 
+                        <b><i class="fa fa-edit"aria-hidden="true"></i> Inscripciones</b>
+                    </a>
+                </div>
+                <div class="col-md-4" style="text-align: center;">
+                    <a href="https://api.whatsapp.com/send?phone={{ $inscripcioncontacto[1]->content }}&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?" target="_blank"  class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;"> 
+                        <b><i class="fa fa-commenting" aria-hidden="true"></i> Más Información</b>
+                    </a>
+                </div>
+                <div class="col-md-2"></div>
             </div>
-            <!-- Left & right section  END -->
+        </div>
 
         <!-- Paises / STAR -->
         {{-- <x-countries-section /> --}}

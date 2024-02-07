@@ -13,7 +13,7 @@
     </a>
     
     
-    <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=51919019395&text=Hola&nbsp;CapPeru!&nbsp;me&nbsp;pueden&nbsp;ayudar?">
+    <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=51992914870&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?">
         <img src="themes/zoelife/peru/images/redes/what.png" alt="Whatsapp">
     </a>
 
