@@ -205,6 +205,7 @@ class PeruController extends Controller
         $galeryEvents = CmsSectionItem::with('item.items')->where('section_id', 76)
             ->orderBy('position')
             ->get();
+        $galeryEvents->prepend(null);
 
         $inscripcioncontacto = CmsSection::where('component_id', 'peru_eventos_inscripcion_contacto_83')
         ->join('cms_section_items', 'section_id', 'cms_sections.id')
@@ -245,12 +246,22 @@ class PeruController extends Controller
             $stars = CmsSectionItem::with('item.items')->where('section_id', 85) //peru_galeria_alcanzando_las_estrellas_85
             ->orderBy('position')
             ->get();
+
+            $star_videos = CmsSectionItem::with('item.items')->where('section_id', 87) //peru_videos_alcanzando_las_estrellas_87
+            ->orderBy('position')
+            ->get();
+
+            $stars->prepend(null);
+            $star_videos->prepend(null);
             $elementos_paginator = 4; //cantidad de elementos a mostrar
+            $elementos_paginator_v = 2; //para videos
 
         return view('zoelife/peru.alcanzando-las-estrellas', [
             'banner' => $banner,
             'stars' => $stars,
-            'elementos_paginator' => $elementos_paginator
+            'star_videos' => $star_videos,
+            'elementos_paginator' => $elementos_paginator,
+            'elementos_paginator_v' => $elementos_paginator_v
         ]);
     }
 

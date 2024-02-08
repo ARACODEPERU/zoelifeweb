@@ -68,6 +68,7 @@
             <!-- Gallery END -->
 
             <!-- Pagination start -->
+
             @foreach ($galeryEvents as $key => $ge)
                 @if ($key>0)
                     @if ($key > $elementos_paginator)
@@ -83,6 +84,9 @@
                             @if ($key > $elementos_paginator && (count($galeryEvents)-1) == $key && $key % $elementos_paginator != 0)
                                 <li id="{{ intdiv($key, $elementos_paginator) + 1 }}_numpag" onclick="paginator({{ intdiv($key, $elementos_paginator) + 1 }})" class="numpag"><a >{{ intdiv($key, $elementos_paginator) + 1 }}</a></li>
                             @endif
+                            @if ($key==count($galeryEvents)-1 && (count($galeryEvents)-1) % $elementos_paginator == 0)
+                                <li id="{{ intdiv($key, $elementos_paginator) }}_numpag" onclick="paginator({{ intdiv($key, $elementos_paginator) }})" class="numpag"><a >{{ intdiv($key, $elementos_paginator) }}</a></li>
+                            @endif
                         @if ( $key > $elementos_paginator && (count($galeryEvents)-1) == $key )
                                 <li class="next" onclick="paginator_np('n')"><a ><i class="fa fa-angle-double-right"></i></a></li>
                             </ul>
@@ -91,6 +95,7 @@
                     @endif
                 @endif
             @endforeach
+
             <!-- Pagination END -->
         </div>
         <!-- Left & right section  END -->
@@ -99,12 +104,12 @@
             <div class="row" style="justify-content: space-between">
                 <div class="col-md-2"></div>
                 <div class="col-md-4" style="text-align: center;">
-                    <a href="{{ $inscripcioncontacto[0]->content }}" target="_blank" class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;"> 
+                    <a href="{{ $inscripcioncontacto[0]->content }}" target="_blank" class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;">
                         <b><i class="fa fa-edit"aria-hidden="true"></i> Inscripciones</b>
                     </a>
                 </div>
                 <div class="col-md-4" style="text-align: center;">
-                    <a href="https://api.whatsapp.com/send?phone={{ $inscripcioncontacto[1]->content }}&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?" target="_blank"  class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;"> 
+                    <a href="https://api.whatsapp.com/send?phone={{ $inscripcioncontacto[1]->content }}&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?" target="_blank"  class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;">
                         <b><i class="fa fa-commenting" aria-hidden="true"></i> Más Información</b>
                     </a>
                 </div>
