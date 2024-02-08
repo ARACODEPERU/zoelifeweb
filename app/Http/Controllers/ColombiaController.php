@@ -188,7 +188,7 @@ class ColombiaController extends Controller
 
     public function estrellas()
     {
-        $banner = CmsSection::where('component_id', 'ecuador_banner_alcanzando_las_estrellas_38')
+        $banner = CmsSection::where('component_id', 'colombia_banner_alcanzando_las_estrellas_51')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(

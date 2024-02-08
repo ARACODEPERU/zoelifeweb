@@ -11,7 +11,6 @@ use Modules\Onlineshop\Entities\OnliItem;
 
 class PeruController extends Controller
 {
-    public $elementos_paginator;
     public function inicio()
     {
         $slider = CmsSection::where('component_id', 'peru_slider_inicio_2')
@@ -217,11 +216,12 @@ class PeruController extends Controller
         ->orderBy('cms_section_items.position')
         ->get();
 
+        $elementos_paginator = 4; //cantidad de elementos a mostrar
         return view('zoelife/peru.eventos', [
             'banner' => $banner,
             'galeryEvents' => $galeryEvents,
             'inscripcioncontacto' => $inscripcioncontacto,
-            'elementos_paginator' => $this->elementos_paginator
+            'elementos_paginator' => $elementos_paginator
         ]);
     }
 
@@ -242,8 +242,15 @@ class PeruController extends Controller
             ->orderBy('cms_section_items.position')
             ->first();
 
+            $stars = CmsSectionItem::with('item.items')->where('section_id', 85) //peru_galeria_alcanzando_las_estrellas_85
+            ->orderBy('position')
+            ->get();
+            $elementos_paginator = 4; //cantidad de elementos a mostrar
+
         return view('zoelife/peru.alcanzando-las-estrellas', [
-            'banner' => $banner
+            'banner' => $banner,
+            'stars' => $stars,
+            'elementos_paginator' => $elementos_paginator
         ]);
     }
 
