@@ -34,9 +34,9 @@
                     <div class="section-content" style="text-align: center;">
                         <div class="m-b10">
                             <h2 class="text-uppercase text-primary">Beneficio de los productos</h2>
-                            <div class="row">
+                            <div class="row" style="justify-content: space-between;">
                                 @foreach ( $beneficiop as $bp )
-                                <div class="col-md-2" style="padding: 20px 0px;">
+                                <div class="col-md-2" style="padding: 20px 0px;  ">
                                     <img src="{{ $bp->content }}" alt="">
                                 </div>
                                 @endforeach

@@ -1,20 +1,20 @@
 <div>
 
     <a class="appFacebook" target="_blanck" href="{{ $footer[0]->items[2]->item->content }}">
-        <img src="themes/zoelife/peru/images/redes/facebook.png" alt="Facebook">
+        <img src="themes/zoelife/peru/images/redes/face.png" alt="Facebook">
     </a>
     
     <a class="appInstagram" target="_blanck" href="{{ $footer[0]->items[3]->item->content }}">
-        <img src="themes/zoelife/peru/images/redes/instagram.png" alt="Instagram">
+        <img src="themes/zoelife/peru/images/redes/ins.png" alt="Instagram">
     </a>
     
     <a class="appYoutube" target="_blanck" href="{{ $footer[0]->items[4]->item->content }}">
-        <img src="themes/zoelife/peru/images/redes/youtube.png" alt="Youtube">
+        <img src="themes/zoelife/peru/images/redes/you.png" alt="Youtube">
     </a>
     
     
-    <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=51919019395&text=Hola&nbsp;CapPeru!&nbsp;me&nbsp;pueden&nbsp;ayudar?">
-        <img src="themes/zoelife/peru/images/redes/whatsapp.png" alt="Whatsapp">
+    <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=51992914870&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?">
+        <img src="themes/zoelife/peru/images/redes/what.png" alt="Whatsapp">
     </a>
 
     <!-- Footer -->
