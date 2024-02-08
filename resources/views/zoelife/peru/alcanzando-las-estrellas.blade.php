@@ -137,11 +137,16 @@
         </div>
         <!-- Video Presentación / END -->
 
-        <div class="content-area">
-            <div class="container">
-                <div class="p-a30 bg-white m-b30 selector-d">
-                    Hola
+        
+        <div class="container" style="padding: 40px;">
+            <div class="row" style="justify-content: space-between">
+                <div class="col-md-2"></div>
+                <div class="col-md-4" style="text-align: center;">
+                    <a href="" target="_blank"  class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;"> 
+                        <b><i class="fa fa-users" aria-hidden="true"></i> Más Información</b>
+                    </a>
                 </div>
+                <div class="col-md-2"></div>
             </div>
         </div>
 
