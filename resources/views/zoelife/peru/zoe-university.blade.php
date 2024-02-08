@@ -26,9 +26,7 @@
         <!-- Breadcrumb row END -->
 
         <div class="container" style="padding: 40px;">
-            <div class="row">
-                
-            </div>
+            <x-study-programs></x-study-programs>
         </div>
 
 

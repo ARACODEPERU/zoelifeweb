@@ -1,0 +1,40 @@
+<div>
+    <div class="content-area">
+        <!-- Left & right section start -->
+        <div class="container">
+            <!-- Nuestro Equipo -->
+            <div class="p-a30 bg-white m-b30 selector-d">
+                <div class="section-head">
+                    <h2 class="text-uppercase">{{ $programs->items[0]->item->content }}</h2>
+                    <div class="dez-divider divider-2px bg-primary icon-left">
+                        <i class="fa fa-thumbs-o-up bg-primary text-white"></i>
+                    </div>
+                </div>
+                <div class="section-content text-center ">
+                    <div class="row">
+                        @foreach ($programs->items as $k => $program)
+                            @if ($k > 0)
+                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                    <div class="dez-box m-b30">
+                                        <div class="dez-media">
+                                            <a href="javascript:void(0);">
+                                                <img width="358" height="460"
+                                                    src="{{ $program->item->items[0]->content }}" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="p-a10">
+                                            <h4 class="dez-title m-b0"><a
+                                                    href="">{{ $program->item->items[1]->content }}</a></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endif
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+            <!-- Nuestro Equipo END -->
+        </div>
+        <!-- Left & right section  END -->
+    </div>
+</div>
