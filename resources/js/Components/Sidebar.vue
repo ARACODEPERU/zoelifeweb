@@ -112,7 +112,7 @@ const menu = ref([
                 route: route('blog_subscriber'),
                 status: false,
                 text: 'Suscriptores',
-                permissions: 'cms_seccion',
+                permissions: 'cms_subscribers',
             },
             {
                 route: route('cms_testimonies_list'),
