@@ -301,15 +301,12 @@
         <div class="section-full text-white bg-img-fix p-t70 p-b70 overlay-black-dark choose-us"
             style="background-image:url({{ asset('themes/zoelife/peru/images/background/fondo.jpg') }});">
             <div class="container">
-                <div class="section-head text-center text-white" style="padding: 10px;">
-                    <h2 class="h2">Sobre <span class="text-primary"> Zoé Life</span></h2>
-                    <div class="dez-separator text-primary style-icon border-white">
-                        <img alt="" src="themes/zoelife/peru/images/leaf-green.png" />
+                <div class="row" style="justify-content: space-between;">
+                    <div class="col-md-6" style="padding: 15px;">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/BaHWpEO-aOE?si=i4fG1cy5rLXrieH9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-
+                    <div class="col-md-6" style="padding: 15px;">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/BaHWpEO-aOE?si=i4fG1cy5rLXrieH9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -317,15 +314,11 @@
         <!-- Video Presentación / END -->
         
         <div class="content-area">
-            <!-- Left & right section start -->
             <div class="container">
-                <!-- Nuestro Equipo -->
                 <div class="p-a30 bg-white m-b30 selector-d">
                     Hola
                 </div>
-                <!-- Nuestro Equipo END -->
             </div>
-            <!-- Left & right section  END -->
         </div>
 
 
