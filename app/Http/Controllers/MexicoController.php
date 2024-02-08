@@ -188,7 +188,7 @@ class MexicoController extends Controller
 
     public function estrellas()
     {
-        $banner = CmsSection::where('component_id', 'ecuador_banner_alcanzando_las_estrellas_38')
+        $banner = CmsSection::where('component_id', 'mexico_banner_alcanzando_las_estrellas_64')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
@@ -198,7 +198,7 @@ class MexicoController extends Controller
             ->orderBy('cms_section_items.position')
             ->first();
 
-
+        //dd($banner);
         return view('zoelife/mexico.alcanzando-las-estrellas', [
             'banner' => $banner
         ]);
