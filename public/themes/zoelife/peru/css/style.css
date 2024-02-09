@@ -5087,7 +5087,6 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 .widget_nav_menu ul li:before,
 .widget_recent_entries ul li:before,
 .widget_services ul li:before {
-    content: "\f105";
     position: absolute;
     left: 0;
     top: 10px;

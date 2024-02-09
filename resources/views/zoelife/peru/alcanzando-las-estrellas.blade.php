@@ -126,7 +126,7 @@
 
         <!-- Video Presentación / STAR -->
 
-        <div class="section-full text-white bg-img-fix p-t70 p-b70 overlay-black-dark choose-us"
+        <div class="section-full text-white bg-img-fix p-t10 p-b30 overlay-black-dark choose-us"
         style="background-image:url({{ asset('themes/zoelife/peru/images/background/fondo.jpg') }});" id="carrusel_aracode_v">
             <!-- Gallery START -->
                 @foreach ($star_videos as $key => $star_video)
@@ -151,34 +151,34 @@
                 @endforeach
             <!-- Gallery END -->
         </div>
- <!-- Pagination start -->
- @foreach ($star_videos as $key => $star_video)
- @if ($key>0)
-     @if ($key > $elementos_paginator_v)
-         @if ( $key-1 == $elementos_paginator_v )
-         <div class="pagination-bx">
-             <ul class="pagination">
-                 <li class="previous"><a onclick="paginator_np_v('p')"><i class="fa fa-angle-double-left"></i></a></li>
-         @endif
+        <!-- Pagination start -->
+        @foreach ($star_videos as $key => $star_video)
+        @if ($key>0)
+            @if ($key > $elementos_paginator_v)
+                @if ( $key-1 == $elementos_paginator_v )
+                <div class="pagination-bx p-t10 p-b30" style="justify-content: space-between;">
+                    <ul class="pagination">
+                        <li class="previous"><a onclick="paginator_np_v('p')"><i class="fa fa-angle-double-left"></i></a></li>
+                @endif
 
-             @if ( ( $key - 1 ) % $elementos_paginator_v == 0)
-                 <li id="{{ ($key-1) / $elementos_paginator_v }}_numpag_v" onclick="paginator_v({{ ($key-1) / $elementos_paginator_v }})" class="{{ ($key-1) / $elementos_paginator_v == 1? 'numpag_v active': 'numpag_v' }}"><a >{{ ($key-1) / $elementos_paginator_v }}</a></li>
-             @endif
-             @if ($key > $elementos_paginator_v && (count($star_videos)-1) == $key && $key % $elementos_paginator_v != 0)
-                 <li id="{{ intdiv($key, $elementos_paginator_v) + 1 }}_numpag_v" onclick="paginator_v({{ intdiv($key, $elementos_paginator_v) + 1 }})" class="numpag_v"><a >{{ intdiv($key, $elementos_paginator_v) + 1 }}</a></li>
-             @endif
-             @if ($key==count($star_videos)-1 && (count($star_videos)-1) % $elementos_paginator_v == 0)
-                     <li id="{{ intdiv($key, $elementos_paginator_v) }}_numpag_v" onclick="paginator_v({{ intdiv($key, $elementos_paginator_v) }})" class="numpag_v"><a >{{ intdiv($key, $elementos_paginator_v) }}</a></li>
-             @endif
-             @if ( $key > $elementos_paginator_v && (count($star_videos)-1) == $key )
-                 <li class="next" onclick="paginator_np_v('n')"><a ><i class="fa fa-angle-double-right"></i></a></li>
-             </ul>
-         </div>
-         @endif
-     @endif
- @endif
-@endforeach
- <!-- Pagination END -->
+                    @if ( ( $key - 1 ) % $elementos_paginator_v == 0)
+                        <li id="{{ ($key-1) / $elementos_paginator_v }}_numpag_v" onclick="paginator_v({{ ($key-1) / $elementos_paginator_v }})" class="{{ ($key-1) / $elementos_paginator_v == 1? 'numpag_v active': 'numpag_v' }}"><a >{{ ($key-1) / $elementos_paginator_v }}</a></li>
+                    @endif
+                    @if ($key > $elementos_paginator_v && (count($star_videos)-1) == $key && $key % $elementos_paginator_v != 0)
+                        <li id="{{ intdiv($key, $elementos_paginator_v) + 1 }}_numpag_v" onclick="paginator_v({{ intdiv($key, $elementos_paginator_v) + 1 }})" class="numpag_v"><a >{{ intdiv($key, $elementos_paginator_v) + 1 }}</a></li>
+                    @endif
+                    @if ($key==count($star_videos)-1 && (count($star_videos)-1) % $elementos_paginator_v == 0)
+                            <li id="{{ intdiv($key, $elementos_paginator_v) }}_numpag_v" onclick="paginator_v({{ intdiv($key, $elementos_paginator_v) }})" class="numpag_v"><a >{{ intdiv($key, $elementos_paginator_v) }}</a></li>
+                    @endif
+                    @if ( $key > $elementos_paginator_v && (count($star_videos)-1) == $key )
+                        <li class="next" onclick="paginator_np_v('n')"><a ><i class="fa fa-angle-double-right"></i></a></li>
+                    </ul>
+                </div>
+                @endif
+            @endif
+        @endif
+        @endforeach
+        <!-- Pagination END -->
         <!-- Video Presentación / END -->
 
         
@@ -186,7 +186,7 @@
             <div class="row" style="justify-content: space-between">
                 <div class="col-md-2"></div>
                 <div class="col-md-4" style="text-align: center;">
-                    <a href="" target="_blank"  class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;"> 
+                    <a href="https://ninosperu.wixsite.com/sagradafamilia" target="_blank"  class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;"> 
                         <b><i class="fa fa-users" aria-hidden="true"></i> Más Información</b>
                     </a>
                 </div>

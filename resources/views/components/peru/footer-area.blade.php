@@ -28,15 +28,6 @@
                                 <img src="{{ $footer[0]->items[0]->item->content }}" alt="">
                             </div>
                             <p class="m-tb20">{{ $footer[0]->items[1]->item->content }}</p>
-                            <ul class="dez-social-icon dez-border dez-social-icon-lg">
-                                <li><a href="{{ $footer[0]->items[2]->item->content }}"
-                                        class="fab fa-facebook fb-btn"></a></li>
-                                <li><a href="{{ $footer[0]->items[3]->item->content }}"
-                                        class="fab fa-instagram tw-btn"></a></li>
-                                {{-- <li><a href="{{ $footer[0]->items[0]->item->content }}" class="fab fa-linkedin link-btn"></a></li> --}}
-                                <li><a href="{{ $footer[0]->items[4]->item->content }}"
-                                        class="fab fa-youtube pin-btn"></a></li>
-                            </ul>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
@@ -48,12 +39,18 @@
                                     @foreach ($testimonies as $testimony)
                                         <li>
                                             <a
-                                                href="javascript:openModalTestimony('{{ $testimony->title }}', '{{ $testimony->video }}')">{{ $testimony->title }}</a>
+                                                href="javascript:openModalTestimony('{{ $testimony->title }}', '{{ $testimony->video }}')">
+                                                <i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp; {{ $testimony->title }}
+                                            </a>
                                         </li>
                                     @endforeach
                                 @endif
+                                <li>
+                                <a href="{{ route('web_peru_testimonios') }}" style="color: orange;">
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Ver más testimonios
+                                </a>
+                                </li>
                             </ul>
-                            <a href="{{ route('web_peru_testimonios') }}" style="color: orange;"> Ver más testimonios</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
@@ -61,12 +58,12 @@
                             <h4 class="m-b10 text-uppercase">Navegación</h4>
                             <div class="dez-separator bg-primary"></div>
                             <ul>
-                                <li><a href="">Home</a></li>
-                                <li><a href="">Nosotros</a></li>
-                                <li><a href="">Productos</a></li>
-                                <li><a href="">Centros de Distribución</a></li>
-                                <li><a href="">Alcansando las Estrellas</a></li>
-                                <li><a href="">Contacto</a></li>
+                                <li><a href="{{ route('web_peru_inicio') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Home</a></li>
+                                <li><a href="{{ route('web_peru_productos') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Productos</a></li>
+                                <li><a href="{{ route('web_peru_centros') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Centros de Distribución</a></li>
+                                <li><a href="{{ route('web_peru_eventos') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Eventos</a></li>
+                                <li><a href="{{ route('web_peru_alcanzando_las_estrellas') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Alcansando las Estrellas</a></li>
+                                <li><a href="{{ route('web_peru_contacto') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Contacto</a></li>
                             </ul>
                         </div>
                     </div>
