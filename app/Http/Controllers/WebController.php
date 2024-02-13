@@ -19,8 +19,19 @@ class WebController extends Controller
             ->whereNotNull('country_id')
             ->get();
 
+        $paisesintro = CmsSection::where('component_id', 'global_paises_principal_88')
+        ->join('cms_section_items', 'section_id', 'cms_sections.id')
+        ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+        ->select(
+            'cms_items.content',
+            'cms_section_items.position'
+        )
+        ->orderBy('cms_section_items.position')
+        ->get();
+
         return view('zoelife/index', [
-            'pages' => $pages
+            'pages' => $pages,
+            'paisesintro' => $paisesintro
         ]);
     }
 

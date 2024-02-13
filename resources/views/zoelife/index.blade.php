@@ -83,7 +83,7 @@
                         <div class="owl-carousel " data-desk_num="1" data-lap_num="1" data-tab_num="1" data-mob_num="1"
                             data-mob_sm="1" data-autoplay="true" data-loop="true" data-margin="30">
                             <div class="item"
-                                style="background: url('{{ asset('themes/zoelife/global/images/background/peru.jpg') }}')">
+                                style="background: url('{{ $paisesintro[0]->content }}')">
                                 <div class="gen-movie-contain h-100">
                                     <div class="container h-100">
                                         <div class="row align-items-center h-100">
@@ -94,12 +94,7 @@
                                                 </div>
                                                 <div class="gen-movie-meta-holder">
                                                     <p>
-                                                        is simply dummy text of the printing and typesetting industry. Lorem
-                                                        Ipsum has been the industry's standard dummy text ever since the
-                                                        1500s, when an unknown printer took a galley of type and scrambled
-                                                        it to make a type specimen book. It has survived not only five
-                                                        centuries, but also the leap into electronic typesetting, remaining
-                                                        essentially.
+                                                        {{ $paisesintro[1]->content }}
                                                     </p>
                                                 </div>
                                                 <div class="gen-movie-action">
@@ -110,7 +105,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="gen-btn-container button-2">
-                                                        <a href="{{ route('web_peru_testimonios') }}"
+                                                        <a href="{{ $paisesintro[2]->content }}"
                                                             class="gen-button gen-button-link">
                                                             <i aria-hidden="true" class="fa fa-play"></i> <span
                                                                 class="text">Banco de Testimonios</span>
@@ -123,7 +118,7 @@
                                 </div>
                             </div>
                             <div class="item"
-                                style="background: url('{{ asset('themes/zoelife/global/images/background/bolivia.jpg') }}')">
+                                style="background: url('{{ $paisesintro[3]->content }}')">
                                 <div class="gen-movie-contain h-100">
                                     <div class="container h-100">
                                         <div class="row align-items-center h-100">
@@ -134,12 +129,7 @@
                                                 </div>
                                                 <div class="gen-movie-meta-holder">
                                                     <p>
-                                                        is simply dummy text of the printing and typesetting industry. Lorem
-                                                        Ipsum has been the industry's standard dummy text ever since the
-                                                        1500s, when an unknown printer took a galley of type and scrambled
-                                                        it to make a type specimen book. It has survived not only five
-                                                        centuries, but also the leap into electronic typesetting, remaining
-                                                        essentially.
+                                                        {{ $paisesintro[4]->content }}
                                                     </p>
                                                 </div>
                                                 <div class="gen-movie-action">
@@ -150,7 +140,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="gen-btn-container button-2">
-                                                        <a href=""
+                                                        <a href="{{ $paisesintro[5]->content }}"
                                                             class="gen-button  gen-button-link">
                                                             <i aria-hidden="true" class="fa fa-play"></i> <span
                                                                 class="text">Banco de Testimonios</span>
@@ -163,7 +153,7 @@
                                 </div>
                             </div>
                             <div class="item"
-                                style="background: url('{{ asset('themes/zoelife/global/images/background/ecuador.jpg') }}')">
+                                style="background: url('{{ $paisesintro[6]->content }}')">
                                 <div class="gen-movie-contain h-100">
                                     <div class="container h-100">
                                         <div class="row align-items-center h-100">
@@ -174,12 +164,7 @@
                                                 </div>
                                                 <div class="gen-movie-meta-holder">
                                                     <p>
-                                                        is simply dummy text of the printing and typesetting industry. Lorem
-                                                        Ipsum has been the industry's standard dummy text ever since the
-                                                        1500s, when an unknown printer took a galley of type and scrambled
-                                                        it to make a type specimen book. It has survived not only five
-                                                        centuries, but also the leap into electronic typesetting, remaining
-                                                        essentially.
+                                                        {{ $paisesintro[7]->content }}
                                                     </p>
                                                 </div>
                                                 <div class="gen-movie-action">
@@ -190,7 +175,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="gen-btn-container button-2">
-                                                        <a href="{{ route('web_ecuador_testimonios') }}"
+                                                        <a href="{{ $paisesintro[8]->content }}"
                                                             class="gen-button gen-button-link">
                                                             <i aria-hidden="true" class="fa fa-play"></i> <span
                                                                 class="text">Banco de Testimonios</span>
@@ -203,7 +188,7 @@
                                 </div>
                             </div>
                             <div class="item"
-                                style="background: url('{{ asset('themes/zoelife/global/images/background/colombia.jpg') }}')">
+                                style="background: url('{{ $paisesintro[9]->content }}')">
                                 <div class="gen-movie-contain h-100">
                                     <div class="container h-100">
                                         <div class="row align-items-center h-100">
@@ -214,12 +199,7 @@
                                                 </div>
                                                 <div class="gen-movie-meta-holder">
                                                     <p>
-                                                        is simply dummy text of the printing and typesetting industry. Lorem
-                                                        Ipsum has been the industry's standard dummy text ever since the
-                                                        1500s, when an unknown printer took a galley of type and scrambled
-                                                        it to make a type specimen book. It has survived not only five
-                                                        centuries, but also the leap into electronic typesetting, remaining
-                                                        essentially.
+                                                        {{ $paisesintro[10]->content }}
                                                     </p>
                                                 </div>
                                                 <div class="gen-movie-action">
@@ -230,7 +210,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="gen-btn-container button-2">
-                                                        <a href="{{ route('web_colombia_testimonios') }}"
+                                                        <a href="{{ $paisesintro[11]->content }}"
                                                             class="gen-button gen-button-link">
                                                             <i aria-hidden="true" class="fa fa-play"></i> <span
                                                                 class="text">Banco de Testimonios</span>
@@ -243,7 +223,7 @@
                                 </div>
                             </div>
                             <div class="item"
-                                style="background: url('{{ asset('themes/zoelife/global/images/background/mexico.jpg') }}')">
+                                style="background: url('{{ $paisesintro[12]->content }}')">
                                 <div class="gen-movie-contain h-100">
                                     <div class="container h-100">
                                         <div class="row align-items-center h-100">
@@ -254,12 +234,7 @@
                                                 </div>
                                                 <div class="gen-movie-meta-holder">
                                                     <p>
-                                                        is simply dummy text of the printing and typesetting industry. Lorem
-                                                        Ipsum has been the industry's standard dummy text ever since the
-                                                        1500s, when an unknown printer took a galley of type and scrambled
-                                                        it to make a type specimen book. It has survived not only five
-                                                        centuries, but also the leap into electronic typesetting, remaining
-                                                        essentially.
+                                                        {{ $paisesintro[13]->content }}
                                                     </p>
                                                 </div>
                                                 <div class="gen-movie-action">
@@ -270,7 +245,7 @@
                                                         </a>
                                                     </div>
                                                     <div class="gen-btn-container button-2">
-                                                        <a href="{{ route('web_mexico_testimonios') }}"
+                                                        <a href="{{ $paisesintro[14]->content }}"
                                                             class="gen-button gen-button-link">
                                                             <i aria-hidden="true" class="fa fa-play"></i> <span
                                                                 class="text">Banco de Testimonios</span>

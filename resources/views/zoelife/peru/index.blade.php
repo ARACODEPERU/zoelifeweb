@@ -82,11 +82,8 @@
             <!-- Video Presentación / END -->
 
             
-        <div class="content-area">
-            <!-- Left & right section start -->
+        <div class="content-area" style="padding: 80px 0px;">
             <div class="container">
-                <!-- Nuestro Equipo -->
-                <div class="p-a30 bg-white m-b30 selector-d">
                     <div class="section-head">
                         <h2 class="text-uppercase">{{ $equipos[0]->item->content }}</h2>
                         <div class="dez-divider divider-2px bg-primary icon-left">
@@ -127,17 +124,36 @@
                             @endforeach
                         </div>
                     </div>
-                </div>
-                <!-- Nuestro Equipo END -->
             </div>
-            <!-- Left & right section  END -->
         </div>
 
-
-            <!-- Paises / STAR 
-            <x-countries-section />-->
-            <!-- Paises / END -->
-
+        <div class="container-area" style="padding: 80px 0px;">
+            <div class="container">
+                <div class="section-head">
+                    <h2 class="text-uppercase">Zona de descargas</h2>
+                    <div class="dez-divider divider-2px bg-primary icon-left">
+                        <i class="fa fa-thumbs-o-up bg-primary text-white"></i>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4" style="text-align: center;">
+                        <a href="https://ninosperu.wixsite.com/sagradafamilia" target="_blank"  class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;"> 
+                            <b><i class="fa fa-download" aria-hidden="true"></i> Descargar Catálogo</b>
+                        </a>
+                    </div>
+                    <div class="col-md-4" style="text-align: center;">
+                        <a href="https://ninosperu.wixsite.com/sagradafamilia" target="_blank"  class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;"> 
+                            <b><i class="fa fa-download" aria-hidden="true"></i> Descargar Productos</b>
+                        </a>
+                    </div>
+                    <div class="col-md-4" style="text-align: center;">
+                        <a href="https://ninosperu.wixsite.com/sagradafamilia" target="_blank"  class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;"> 
+                            <b><i class="fa fa-download" aria-hidden="true"></i> Descargar Presentación</b>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         </div>
         <!-- Content END-->
