@@ -152,10 +152,12 @@ class PeruController extends Controller
 
         $testimonies = CmsTestimony::with('product')->get();
 
+        $testimonies->prepend(null);
         return view('zoelife/peru.testimonios', [
             'banner'        => $banner,
             'products'      => $products,
-            'testimonies'   => $testimonies
+            'testimonies'   => $testimonies,
+            'elementos_paginator_v' => 4
         ]);
     }
 

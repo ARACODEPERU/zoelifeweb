@@ -140,7 +140,7 @@
                                         {!! $star_video->item->items[0]->content !!}
                                     </div>
 
-                                @if ( $key % $elementos_paginator_v == 0 && $key > 1)
+                                @if ( $key % $elementos_paginator_v == 0 && $key > 1 || $key+1 == count($star_videos))
                                     </div>
                                 </div>
                                 @endif
@@ -181,12 +181,12 @@
         <!-- Pagination END -->
         <!-- Video Presentación / END -->
 
-        
+
         <div class="container" style="padding: 40px;">
             <div class="row" style="justify-content: space-between">
                 <div class="col-md-2"></div>
                 <div class="col-md-4" style="text-align: center;">
-                    <a href="https://ninosperu.wixsite.com/sagradafamilia" target="_blank"  class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;"> 
+                    <a href="https://ninosperu.wixsite.com/sagradafamilia" target="_blank"  class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;">
                         <b><i class="fa fa-users" aria-hidden="true"></i> Más Información</b>
                     </a>
                 </div>
