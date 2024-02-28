@@ -23,47 +23,30 @@
         </div>
         <!-- Breadcrumb row END -->
 
-
-        <div class="content-area">
+        <div class="content-area" style="width: 100%; padding: 60px;">
             <!-- Left & right section start -->
-            <div class="" style="width: 100%; padding: 40px;">
+            <div>
+              {{-- @foreach ($testimonies as $key => $star_video)
+                    {!! $star_video->video !!}
+              @endforeach --}}
 
-
-                      {{-- @foreach ($testimonies as $key => $star_video)
-
-                            {!! $star_video->video !!}
-
-                      @endforeach --}}
-
-                      <section id="tranding">
-                        <div class="container">
-                          <h1 class="text-center section-heading">Testimonios</h1>
-                        </div>
-                        <div class="container">
+              <section>
+                        <div>
                           <div class="swiper tranding-slider">
                             <div class="swiper-wrapper">
                               <!-- Slide-start -->
-                      @foreach ($testimonies as $key => $star_video)
-
-                              <div class="swiper-slide tranding-slide">
-                                <div class="tranding-slide-img">
-                                  <{!! $star_video->video !!}
-                                </div>
-                                <div class="tranding-slide-content">
-                                  <h1 class="food-price">{{ $star_video->title }}</h1>
-                                  <div class="tranding-slide-content-bottom">
-                                    <h2 class="food-name">
-                                        {{ $star_video->product->name }}
-                                    </h2>
+                              @foreach ($testimonies as $key => $star_video)
+                                <div class="swiper-slide tranding-slide">
+                                  <div  style=" width: 100%; height: 250px;">
+                                    {!! $star_video->video !!}
+                                    <h3 style="text-align: center; margin-top: 10px;">{{ $star_video->title }}</h2>
                                   </div>
                                 </div>
-                              </div>
-
-                      @endforeach
+                               @endforeach
                               <!-- Slide-end -->
                             </div>
 
-                            <div class="tranding-slider-control">
+                            <div class="tranding-slider-control" style="margin-top: -210px;">
                               <div class="swiper-button-prev slider-arrow">
                                 <ion-icon name="arrow-back-outline"></ion-icon>
                               </div>
@@ -75,11 +58,11 @@
 
                           </div>
                         </div>
-                      </section>
+              </section>
 
-                      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-                      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-                      <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+              <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+              <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+              <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
 
 {{--
@@ -140,6 +123,7 @@
             </div>
             <!-- Left & right section  END -->
         </div>
+
         <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 <!-- script del video -->
 <script>
@@ -168,22 +152,9 @@
 
 <style>
     @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style-type: none;
-  text-decoration: none;
-}
 
-:root {
-  --primary: #ec994b;
-  --white: #ffffff;
-  --bg: #f5f5f5;
-}
 
+/*
 html {
   font-size: 62.5%;
   font-family: "Montserrat", sans-serif;
@@ -208,6 +179,7 @@ html {
   }
 }
 
+
 ::-webkit-scrollbar {
   width: 1.3rem;
 }
@@ -224,9 +196,9 @@ html {
 
 ::-webkit-scrollbar-track {
   background: #f9f9f9;
-}
+}*/
 
-body {
+/*body {
   font-size: 1.6rem;
   background: var(--bg);
 }
@@ -236,6 +208,7 @@ body {
   padding: 0 1rem;
   margin: 0 auto;
 }
+*/
 
 .text-center {
   text-align: center;
@@ -310,8 +283,8 @@ body {
 
 .tranding-slide-content .tranding-slide-content-bottom {
   position: absolute;
-  bottom: 2rem;
-  left: 2rem;
+  bottom: 1rem;
+  left: 1rem;
   color: var(--white);
 }
 
@@ -332,7 +305,7 @@ body {
 
 .tranding-slider-control {
   position: relative;
-  bottom: 2rem;
+  bottom: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
