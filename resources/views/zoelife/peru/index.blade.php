@@ -137,17 +137,17 @@
                 </div>
                 <div class="row">
                     <div class="col-md-4" style="text-align: center;">
-                        <a href="https://ninosperu.wixsite.com/sagradafamilia" target="_blank"  class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;"> 
+                        <a href="{{ $linkDescarga[0]->content }}" target="_blank"  class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;"> 
                             <b><i class="fa fa-download" aria-hidden="true"></i> Descargar Catálogo</b>
                         </a>
                     </div>
                     <div class="col-md-4" style="text-align: center;">
-                        <a href="https://ninosperu.wixsite.com/sagradafamilia" target="_blank"  class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;"> 
+                        <a href="{{ $linkDescarga[1]->content }}" target="_blank"  class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;"> 
                             <b><i class="fa fa-download" aria-hidden="true"></i> Descargar Productos</b>
                         </a>
                     </div>
                     <div class="col-md-4" style="text-align: center;">
-                        <a href="https://ninosperu.wixsite.com/sagradafamilia" target="_blank"  class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;"> 
+                        <a href="{{ $linkDescarga[2]->content }}" target="_blank"  class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;"> 
                             <b><i class="fa fa-download" aria-hidden="true"></i> Descargar Presentación</b>
                         </a>
                     </div>

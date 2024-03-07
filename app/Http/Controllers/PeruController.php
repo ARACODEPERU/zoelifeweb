@@ -37,12 +37,23 @@ class PeruController extends Controller
         $equipos = CmsSectionItem::with('item.items')->where('section_id', 66)
             ->orderBy('position')
             ->get();
+        
+        $linkDescarga = CmsSection::where('component_id', 'peru_descargas_89')
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->get();
 
 
         return view('zoelife/peru.index', [
             'slider' => $slider,
             'video' => $video,
-            'equipos' => $equipos
+            'equipos' => $equipos,
+            'linkDescarga' => $linkDescarga
         ]);
     }
 
