@@ -33,6 +33,16 @@ class PeruController extends Controller
             ->orderBy('cms_section_items.position')
             ->first();
 
+            
+        $fundador = CmsSection::where('component_id', 'zoe_fundador_area_95')
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->get();
 
         $equipos = CmsSectionItem::with('item.items')->where('section_id', 66)
             ->orderBy('position')
@@ -52,6 +62,7 @@ class PeruController extends Controller
         return view('zoelife/peru.index', [
             'slider' => $slider,
             'video' => $video,
+            'fundador' => $fundador,
             'equipos' => $equipos,
             'linkDescarga' => $linkDescarga
         ]);

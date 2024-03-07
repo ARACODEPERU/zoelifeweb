@@ -82,78 +82,54 @@
             <!-- Video Presentación / END -->
 
             
-        <div class="content-area" style="padding: 80px 0px;">
-            <div class="container">
-                    <div class="section-head">
-                        <h2 class="text-uppercase">{{ $equipos[0]->item->content }}</h2>
-                        <div class="dez-divider divider-2px bg-primary icon-left">
-                            <i class="fa fa-thumbs-o-up bg-primary text-white"></i>
+            <div class="content-area" style="padding: 80px 0px;">
+                <div class="container">
+                        <div class="section-head">
+                            <h2 class="text-uppercase">{{ $equipos[0]->item->content }}</h2>
+                            <div class="dez-divider divider-2px bg-primary icon-left">
+                                <i class="fa fa-thumbs-o-up bg-primary text-white"></i>
+                            </div>
                         </div>
-                    </div>
-                    <div class="section-content text-center ">
-                        <div class="row">
-                            @foreach ($equipos as $k => $equipo)
-                                @if ($k > 0)
-                                    <div class="col-lg-3 col-md-6 col-sm-6">
-                                        <div class="dez-box m-b30">
-                                            <div class="dez-media">
-                                                <a href="javascript:void(0);">
-                                                    <img width="358" height="460"
-                                                        src="{{ $equipo->item->items[0]->content }}" alt="">
-                                                </a>
-                                                <div class="dez-info-has bg-primary">
-                                                    <ul class="dez-social-icon dez-border">
-                                                        <li><a href="{{ $equipo->item->items[3]->content }}"
-                                                                class="fab fa-facebook"></a></li>
-                                                        <li><a href="{{ $equipo->item->items[4]->content }}"
-                                                                class="fab fa-instagram"></a></li>
-                                                        <li><a href="{{ $equipo->item->items[5]->content }}"
-                                                                class="fab fa-linkedin"></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="p-a10">
-                                                <h4 class="dez-title m-b0"><a
-                                                        href="">{{ $equipo->item->items[1]->content }}</a></h4>
-                                                <span
-                                                    class="dez-member-position">{{ $equipo->item->items[2]->content }}</span>
+                        <div class="section-content text-center ">
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-3" style="padding: 15px;">
+                                    <div class="dez-box m-b30">
+                                        <div class="dez-media">
+                                            <a href="javascript:void(0);">
+                                                <img width="358" height="460"
+                                                    src="{{ $fundador[0]->content }}" alt="">
+                                            </a>
+                                            <div class="dez-info-has bg-primary">
+                                                <ul class="dez-social-icon dez-border">
+                                                    <li><a href="{{ $fundador[4]->content }}"
+                                                            class="fab fa-facebook"></a></li>
+                                                    <li><a href="{{ $fundador[5]->content }}"
+                                                            class="fab fa-instagram"></a></li>
+                                                    <li><a href="{{ $fundador[6]->content }}"
+                                                            class="fab fa-linkedin"></a></li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
-                                @endif
-                            @endforeach
+                                </div>
+                                <div class="col-md-7" style="padding: 15px;">
+                                    <br><br><br><br>
+                                    <h3 class="dez-title" style="text-align: left;">
+                                        <b style="font-size: 30px;" class="text-primary">{{ $fundador[1]->content }}</b>
+                                        <br>
+                                        {{ $fundador[2]->content }}
+                                    </h3>
+                                    <p style="text-align: left;">
+                                        {{ $fundador[3]->content }}
+                                    </p>
+                                </div>
+                                <div class="col-md-1"></div>
+                            </div>
                         </div>
-                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="container-area" style="padding: 80px 0px;">
-            <div class="container">
-                <div class="section-head">
-                    <h2 class="text-uppercase">Zona de descargas</h2>
-                    <div class="dez-divider divider-2px bg-primary icon-left">
-                        <i class="fa fa-thumbs-o-up bg-primary text-white"></i>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4" style="text-align: center;">
-                        <a href="{{ $linkDescarga[0]->content }}" target="_blank"  class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;"> 
-                            <b><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; Descargar Catálogo</b>
-                        </a>
-                    </div>
-                    <div class="col-md-4" style="text-align: center;">
-                        <a href="{{ $linkDescarga[1]->content }}" target="_blank"  class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;"> 
-                            <b><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; Descargar Productos</b>
-                        </a>
-                    </div>
-                    <div class="col-md-4" style="text-align: center;">
-                        <a href="{{ $linkDescarga[2]->content }}" target="_blank"  class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;"> 
-                            <b><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; Descargar Presentación</b>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         </div>
         <!-- Content END-->
