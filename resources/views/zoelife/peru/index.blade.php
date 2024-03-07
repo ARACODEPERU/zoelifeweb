@@ -138,17 +138,17 @@
                 <div class="row">
                     <div class="col-md-4" style="text-align: center;">
                         <a href="{{ $linkDescarga[0]->content }}" target="_blank"  class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;"> 
-                            <b><i class="fa fa-download" aria-hidden="true"></i> Descargar Catálogo</b>
+                            <b><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; Descargar Catálogo</b>
                         </a>
                     </div>
                     <div class="col-md-4" style="text-align: center;">
                         <a href="{{ $linkDescarga[1]->content }}" target="_blank"  class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;"> 
-                            <b><i class="fa fa-download" aria-hidden="true"></i> Descargar Productos</b>
+                            <b><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; Descargar Productos</b>
                         </a>
                     </div>
                     <div class="col-md-4" style="text-align: center;">
                         <a href="{{ $linkDescarga[2]->content }}" target="_blank"  class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;"> 
-                            <b><i class="fa fa-download" aria-hidden="true"></i> Descargar Presentación</b>
+                            <b><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; Descargar Presentación</b>
                         </a>
                     </div>
                 </div>

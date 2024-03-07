@@ -33,10 +33,8 @@
                 <div class="p-a20 bg-white selector-d m-b20">
                     <div class="section-content" style="text-align: center;">
                         <div class="m-b10">
-                            <h3 class="text-uppercase text-primary">¿Qué es alcanzando las estrellas?</h3>
-                            <p>Lorem Ipsum is simply dummy text of the een the industry's standard dummy text ever since the
-                                1500s, when an unknown printer took a Gallery of type and scrambled it to make a type
-                                specimen book. It has survived not only five centuries, but also the leap into electronic
+                            <h3 class="text-uppercase text-primary"><b>{{ $presentacion[0]->content }}</b></h3>
+                            <p>{{ $presentacion[1]->content }}
                             </p>
                             <div class="dez-divider divider-2px bg-primary icon-center"><i
                                     class="fa fa-truck bg-primary text-white"></i></div>
