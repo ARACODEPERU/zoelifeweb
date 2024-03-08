@@ -33,7 +33,7 @@ class PeruController extends Controller
             ->orderBy('cms_section_items.position')
             ->first();
 
-            
+
         $fundador = CmsSection::where('component_id', 'zoe_fundador_area_95')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
@@ -47,7 +47,7 @@ class PeruController extends Controller
         $equipos = CmsSectionItem::with('item.items')->where('section_id', 66)
             ->orderBy('position')
             ->get();
-        
+
         $linkDescarga = CmsSection::where('component_id', 'peru_descargas_89')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
@@ -231,7 +231,7 @@ class PeruController extends Controller
         $galeryEvents = CmsSectionItem::with('item.items')->where('section_id', 76)
             ->orderBy('position')
             ->get();
-        $galeryEvents->prepend(null);
+        //$galeryEvents->prepend(null);
 
         $inscripcioncontacto = CmsSection::where('component_id', 'peru_eventos_inscripcion_contacto_83')
         ->join('cms_section_items', 'section_id', 'cms_sections.id')
@@ -287,8 +287,8 @@ class PeruController extends Controller
             ->orderBy('position')
             ->get();
 
-            $stars->prepend(null);
-            $star_videos->prepend(null);
+            //$stars->prepend(null);
+            //$star_videos->prepend(null);
             $elementos_paginator = 4; //cantidad de elementos a mostrar
             $elementos_paginator_v = 2; //para videos
 
