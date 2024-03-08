@@ -197,6 +197,16 @@ class PeruController extends Controller
             ->orderBy('cms_section_items.position')
             ->first();
 
+        $presentacion= CmsSection::where('component_id', 'peru_presentacion_alcanzando_las_estrellas_84')
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->get();
+
         $centers = LocalSale::with('district.department')->where('country_id', 1)->get();
 
         $departments = LocalSale::join('districts', 'ubigeo', 'districts.id')
@@ -209,6 +219,7 @@ class PeruController extends Controller
 
         return view('zoelife/peru.centros-de-distribucion', [
             'banner' => $banner,
+            'presentacion' => $presentacion,
             'centers' => $centers,
             'departments' => $departments
         ]);

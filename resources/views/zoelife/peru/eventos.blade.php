@@ -29,34 +29,30 @@
 
 <div>
 
-    <section>
-              <div>
-                <div class="swiper tranding-slider">
-                  <div class="swiper-wrapper">
-                    <!-- Slide-start -->
-                    @foreach ($galeryEvents as $key => $event)
-                      <div class="swiper-slide tranding-slide">
-                        <div  style=" width: 100%; height: 250px;">
-                            <img src="{{ $event->item->items[0]->content }}" alt="">
-                          {{-- <h3 style="text-align: center; margin-top: 10px;">{{ $star_video->title }}</h2> --}}
-                        </div>
-                      </div>
-                     @endforeach
-                    <!-- Slide-end -->
-                  </div>
-
-                  <div class="tranding-slider-control" style="margin-top: -210px;">
-                    <div class="swiper-button-prev slider-arrow">
-                      <ion-icon name="arrow-back-outline"></ion-icon>
-                    </div>
-                    <div class="swiper-button-next slider-arrow">
-                      <ion-icon name="arrow-forward-outline"></ion-icon>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                  </div>
-
-                </div>
+    <section style="padding: 60px 10px;">
+        <div class="swiper tranding-slider">
+          <div class="swiper-wrapper">
+            <!-- Slide-start -->
+            @foreach ($galeryEvents as $key => $event)
+              <div class="swiper-slide tranding-slide">
+                    <img src="{{ $event->item->items[0]->content }}" alt="" style="width: 100%;">
+                  {{-- <h3 style="text-align: center; margin-top: 10px;">{{ $star_video->title }}</h2> --}}
               </div>
+             @endforeach
+            <!-- Slide-end -->
+          </div>
+
+          <div class="tranding-slider-control" style="margin-top: -190px;">
+            <div class="swiper-button-prev slider-arrow">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </div>
+            <div class="swiper-button-next slider-arrow">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+        </div>
     </section>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -162,7 +158,7 @@ text-align: center;
 .section-heading {
 font-size: 3rem;
 color: var(--primary);
-padding: 2rem 0;
+padding: 2rem;
 }
 
 #tranding {
@@ -400,12 +396,12 @@ background: var(--primary);
                 <div class="col-md-2"></div>
                 <div class="col-md-4" style="text-align: center;">
                     <a href="{{ $inscripcioncontacto[0]->content }}" target="_blank" class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;">
-                        <b><i class="fa fa-edit"aria-hidden="true"></i> Inscripciones</b>
+                        <b><i class="fa fa-edit"aria-hidden="true"></i>&nbsp;&nbsp; Inscripciones</b>
                     </a>
                 </div>
                 <div class="col-md-4" style="text-align: center;">
                     <a href="https://api.whatsapp.com/send?phone={{ $inscripcioncontacto[1]->content }}&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?" target="_blank"  class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;">
-                        <b><i class="fa fa-commenting" aria-hidden="true"></i> Más Información</b>
+                        <b><i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;&nbsp; Más Información</b>
                     </a>
                 </div>
                 <div class="col-md-2"></div>

@@ -25,26 +25,70 @@
             </div>
         </div>
         <!-- Breadcrumb row END -->
+        
+        <div class="content-area">
+          <div class="container">
+              <!-- Dividers with icon -->
+              <div class="p-a20 bg-white selector-d m-b20">
+                  <div class="section-content" style="text-align: center;">
+                      <div class="m-b10">
+                          <h3 class="text-uppercase text-primary"><b>{{ $presentacion[0]->content }}</b></h3>
+                          <p>{{ $presentacion[1]->content }}</p>
+                          <div class="dez-divider divider-2px bg-primary icon-center"><i
+                                  class="fa fa-truck bg-primary text-white"></i></div>
+                      </div>
+                  </div>
+              </div>
+              <!-- Dividers with icon END -->
+          </div>
 
 
 
 <!-- CARRUSEL INICIO -->
 
-<div>
+        <div>
 
-    <section>
-              <div>
+          <section style="padding: 60px 10px;">
+                      <div class="swiper tranding-slider">
+                        <div class="swiper-wrapper">
+                          <!-- Slide-start -->
+                          @foreach ($stars as $key => $star)
+                            <div class="swiper-slide tranding-slide">
+                              <div  style=" width: 100%; height: 250px;">
+                                  <img src="{{ $star->item->items[0]->content }}" alt="img">
+                                {{-- <h3 style="text-align: center; margin-top: 10px;">{{ $star_video->title }}</h2> --}}
+                              </div>
+                            </div>
+                          @endforeach
+                          <!-- Slide-end -->
+                        </div>
+
+                        <div class="tranding-slider-control" style="margin-top: -210px;">
+                          <div class="swiper-button-prev slider-arrow">
+                            <ion-icon name="arrow-back-outline"></ion-icon>
+                          </div>
+                          <div class="swiper-button-next slider-arrow">
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                          </div>
+                          <div class="swiper-pagination"></div>
+                        </div>
+
+                      </div>
+          </section>
+          <br>
+          <br>
+          <section  style="padding: 80px 10px;">
                 <div class="swiper tranding-slider">
                   <div class="swiper-wrapper">
                     <!-- Slide-start -->
-                    @foreach ($stars as $key => $star)
+                    @foreach ($star_videos as $key => $star_video)
                       <div class="swiper-slide tranding-slide">
                         <div  style=" width: 100%; height: 250px;">
-                            <img src="{{ $star->item->items[0]->content }}" alt="img">
+                          {!! $star_video->item->items[0]->content !!}
                           {{-- <h3 style="text-align: center; margin-top: 10px;">{{ $star_video->title }}</h2> --}}
                         </div>
                       </div>
-                     @endforeach
+                    @endforeach
                     <!-- Slide-end -->
                   </div>
 
@@ -57,49 +101,15 @@
                     </div>
                     <div class="swiper-pagination"></div>
                   </div>
-
                 </div>
-              </div>
-    </section>
-<br>
-    <hr>
-<br>
-    <section>
-        <div>
-          <div class="swiper tranding-slider">
-            <div class="swiper-wrapper">
-              <!-- Slide-start -->
-              @foreach ($star_videos as $key => $star_video)
-                <div class="swiper-slide tranding-slide">
-                  <div  style=" width: 100%; height: 250px;">
-                    {!! $star_video->item->items[0]->content !!}
-                    {{-- <h3 style="text-align: center; margin-top: 10px;">{{ $star_video->title }}</h2> --}}
-                  </div>
-                </div>
-               @endforeach
-              <!-- Slide-end -->
-            </div>
+          </section>
 
-            <div class="tranding-slider-control" style="margin-top: -210px;">
-              <div class="swiper-button-prev slider-arrow">
-                <ion-icon name="arrow-back-outline"></ion-icon>
-              </div>
-              <div class="swiper-button-next slider-arrow">
-                <ion-icon name="arrow-forward-outline"></ion-icon>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
+          <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+          <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
-          </div>
+
         </div>
-</section>
-
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-
-
-  </div>
 
 
 </div>
@@ -107,27 +117,27 @@
 <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 <!-- script del video -->
 <script>
-var TrandingSlider = new Swiper('.tranding-slider', {
-effect: 'coverflow',
-grabCursor: true,
-centeredSlides: true,
-loop: true,
-slidesPerView: 'auto',
-coverflowEffect: {
-rotate: 0,
-stretch: 0,
-depth: 100,
-modifier: 2.5,
-},
-pagination: {
-el: '.swiper-pagination',
-clickable: true,
-},
-navigation: {
-nextEl: '.swiper-button-next',
-prevEl: '.swiper-button-prev',
-}
-});
+  var TrandingSlider = new Swiper('.tranding-slider', {
+  effect: 'coverflow',
+  grabCursor: true,
+  centeredSlides: true,
+  loop: true,
+  slidesPerView: 'auto',
+  coverflowEffect: {
+  rotate: 0,
+  stretch: 0,
+  depth: 100,
+  modifier: 2.5,
+  },
+  pagination: {
+  el: '.swiper-pagination',
+  clickable: true,
+  },
+  navigation: {
+  nextEl: '.swiper-button-next',
+  prevEl: '.swiper-button-prev',
+  }
+  });
 </script>
 
 <style>
@@ -365,7 +375,7 @@ background: var(--primary);
         <div class="col-md-2"></div>
         <div class="col-md-4" style="text-align: center;">
             <a href="https://ninosperu.wixsite.com/sagradafamilia" target="_blank"  class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;">
-                <b><i class="fa fa-users" aria-hidden="true"></i> Más Información</b>
+                <b><i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;&nbsp; Más Información</b>
             </a>
         </div>
         <div class="col-md-2"></div>
