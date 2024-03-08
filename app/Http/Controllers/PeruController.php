@@ -173,7 +173,7 @@ class PeruController extends Controller
             ->get();
 
         // $testimonies = CmsTestimony::with('product')->get();
-        $testimonies = CmsTestimony::with('product')->inRandomOrder()->take(5)->get();
+        $testimonies = CmsTestimony::with('product')->inRandomOrder()->take(20)->get();
 
 
         //$testimonies->prepend(null);

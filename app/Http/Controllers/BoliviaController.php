@@ -125,8 +125,7 @@ class BoliviaController extends Controller
                 ->groupBy('name');
         })
             ->get();
-
-        $testimonies = CmsTestimony::with('product')->orderBy('item_id')->limit(3)->get();
+        $testimonies = CmsTestimony::with('product')->inRandomOrder()->take(20)->get();
 
         return view('zoelife/bolivia.testimonios', [
             'banner'        => $banner,
