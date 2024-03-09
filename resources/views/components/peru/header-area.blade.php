@@ -19,6 +19,7 @@
         <div class="top-bar">
             <div class="top-bar-content" style="width: 100%; padding: 0px 40px;">
                 <div class="top-bar-contect-space row justify-content-between">
+                    <!--
                     <div class="dez-topbar-left">
                         <ul class="social-bx list-inline pull-right">
                             <li>
@@ -31,7 +32,6 @@
                                     style="padding: 10px; font-size: 16px;">
                                 </a>
                             </li>
-                            {{-- <li><a href="{{ $header[1]->content }}" class="fab fa-linkedin" style="padding: 10px; font-size: 15px;"></a></li> --}}
                             <li>
                                 <a href="{{ $header[2]->content }}" target="_blank" class="fab fa-youtube"
                                     style="padding: 10px; font-size: 16px;">
@@ -39,6 +39,7 @@
                             </li>
                         </ul>
                     </div>
+                    -->
                     <div class="dez-topbar-right list-unstyled e-p-bx ">
                         <ul>
                             <li style="float: left;">
