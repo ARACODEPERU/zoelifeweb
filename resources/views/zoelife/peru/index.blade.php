@@ -130,6 +130,40 @@
                 </div>
             </div>
 
+            
+            <div class="content-area" style="padding: 80px 0px;">
+                <div class="container">
+                        <div class="section-head">
+                            <h2 class="text-uppercase">Zona de Descarga</h2>
+                            <div class="dez-divider divider-2px bg-primary icon-left">
+                                <i class="fa fa-thumbs-o-up bg-primary text-white"></i>
+                            </div>
+                        </div>
+                        <div class="section-content text-center ">
+                            <div class="row" style="justify-content: space-between">
+                                <div class="col-md-4" style="text-align: center;">
+                                    <a href="{{ $linkDescarga[0]->content }}" target="_blank" class="site-button" 
+                                        style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;">
+                                        <b><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; Descargar Catálogo</b>
+                                    </a>
+                                </div>
+                                <div class="col-md-4" style="text-align: center;">
+                                    <a href="{{ $linkDescarga[1]->content }}" target="_blank"  class="site-button" 
+                                        style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;">
+                                        <b><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; Descargar Producto</b>
+                                    </a>
+                                </div>
+                                <div class="col-md-4" style="text-align: center;">
+                                    <a href="{{ $linkDescarga[2]->content }}" target="_blank"  class="site-button" 
+                                        style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;">
+                                        <b><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; Descargar Presentación</b>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
 
         </div>
         <!-- Content END-->
