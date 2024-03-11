@@ -143,6 +143,27 @@
 }
 
 
+
+@media only screen and (max-width: 1280px) {
+    .btn-header-pc{
+        display: none;
+    }
+    
+    .btn-header-mobile{
+        display: block;
+    }
+
+    .header-nav ul.navbar-nav li{
+        padding: 2px;
+    }
+
+    .header-nav ul.navbar-nav li a{
+        font-size: 12px;
+    }
+}
+
+
+
 body {
     background-color: #FFF;
     font-family: 'Lato', sans-serif;
@@ -9081,6 +9102,14 @@ ol.commentlist li .star-rating {
 	color:#fff;
 }
 /*==== Responsive ====*/
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 1024px) {
     .style-3 .dez-full-blog {
