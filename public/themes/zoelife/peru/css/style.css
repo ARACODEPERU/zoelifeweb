@@ -5158,7 +5158,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 /*widget search custom*/
 
 .search-bx .site-button {
-    padding: 9px 12px;
+    padding: 9px;
     border: 1px solid transparent;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
@@ -5576,7 +5576,7 @@ a,
 .site-button,
 .site-button-secondry {
     color: #fff;
-    padding: 10px 20px;
+    padding: 9px 12px;
     display: inline-block;
     font-size: 14px;
     outline: none;

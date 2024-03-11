@@ -118,12 +118,14 @@
                     <div class="btn-header-mobile">
                         <div class="extra-nav hidden-sm-down disnone-md" style="text-align: center;">
                             <div class="extra-cell">
-                                <a href="https://zoelife.global//link/store/TIENDAPUBLICA" target="_blank" class="site-button" title="Tienda Online">
+                                <a href="https://zoelife.global//link/store/TIENDAPUBLICA" target="_blank" 
+                                    class="site-button" title="Tienda Online">
                                     <i class="fa fa-cart-plus" aria-hidden="true"></i>
                                 </a>
                             </div>
                             <div class="extra-cell">
-                                <a href="https://zoelife.global/LoginSalesForce.php" target="_blank" class="site-button" title="Oficina Vitual">
+                                <a href="https://zoelife.global/LoginSalesForce.php" target="_blank" 
+                                    class="site-button" title="Oficina Vitual">
                                     <i class="fa fa-laptop" aria-hidden="true"></i> 
                                 </a>
                             </div>
