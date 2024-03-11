@@ -2462,7 +2462,7 @@ blockquote:before {
     margin-left: 0;
     margin-right: 0;
     width: 170px;
-    height: 70px;
+    height: 80px;
     position: relative;
     z-index: 9;
 }
@@ -2503,7 +2503,7 @@ blockquote:before {
 
 .is-fixed .logo-header,
 .is-fixed.header-curve .logo-header {
-    height: 70px;
+    height: 80px;
     width: 170px;
 }
 /*= Set width for mobile  =*/
@@ -3304,7 +3304,7 @@ blockquote:before {
     width: 100%;
 }
 .header-style-3 .logo-header {
-    height: 70px;
+    height: 80px;
 }
 .header-style-3 .header-nav .nav > li > a {
     padding: 24px 15px;
@@ -3332,7 +3332,7 @@ blockquote:before {
 /* is Fixed */
 
 .header-style-3 .is-fixed.header-nav.header-curve .logo-header {
-    height: 70px;
+    height: 80px;
 }
 /* Top Bar */
 

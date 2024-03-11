@@ -87,7 +87,7 @@
                     <!-- Website Logo -->
                     <div class="logo-header logo-dark mostion">
                         <a href="{{ route('web_peru_inicio') }}">
-                            <img src="{{ $header[5]->content }}" alt="" style="height: 45px;">
+                            <img src="{{ $header[5]->content }}" alt="" style="height: 80px; padding: 0px;">
                         </a>
                     </div>
                     <!-- Nav Toggle Button -->
