@@ -33,7 +33,7 @@
                     <div class="col-md-7">
                         <div class="dzFormMsg"></div>
                         <div class="p-a30 bg-white selector-d clearfix m-b30">
-                            <h3>Envianos un mensaje</h3>
+                            <h3 class="des-producto">Envianos un mensaje</h3>
                             <form class="dzForm" id="pageContactForm">
                                 <input type="text" hidden name="country" value="PE" required>
                                 <div class="row">
@@ -104,13 +104,16 @@
                     <!-- right part start -->
                     <div class="col-md-5">
                         <div class="p-a30 bg-white selector-d m-b30">
-                            <h3>Información de Contacto</h3>
+                            <h3 class="des-producto">Información de Contacto</h3>
                             <ul class="no-margin">
                                 <li class="icon-bx-wraper left m-b30">
-                                    <div class="icon-bx-xs bg-primary"> <a href="javascript:void(0);" class="icon-cell"><i
-                                                class="fa fa-map-marker"></i></a> </div>
+                                    <div class="icon-bx-xs bg-primary"> 
+                                        <a href="javascript:void(0);" class="icon-cell"><i
+                                                class="fa fa-map-marker"></i>
+                                        </a> 
+                                    </div>
                                     <div class="icon-content">
-                                        <h6 class="text-uppercase m-b0 dez-tilte">Oficina Principal</h6>
+                                        <h6 class="text-uppercase m-b0 dez-tilte des-producto">Oficina Principal</h6>
                                         <p>{{ $datosContacto[0]->content }}</p>
                                     </div>
                                 </li>
@@ -118,7 +121,7 @@
                                     <div class="icon-bx-xs bg-primary"> <a href="javascript:void(0);" class="icon-cell"><i
                                                 class="fa fa-envelope"></i></a> </div>
                                     <div class="icon-content">
-                                        <h6 class="text-uppercase m-b0 dez-tilte">E-MAIl</h6>
+                                        <h6 class="text-uppercase m-b0 dez-tilte des-producto">E-MAIl</h6>
                                         <p>{{ $datosContacto[1]->content }}</p>
                                     </div>
                                 </li>
@@ -126,7 +129,7 @@
                                     <div class="icon-bx-xs bg-primary"> <a href="javascript:void(0);" class="icon-cell"><i
                                                 class="fa fa-phone"></i></a> </div>
                                     <div class="icon-content">
-                                        <h6 class="text-uppercase m-b0 dez-tilte">TELÉFONO</h6>
+                                        <h6 class="text-uppercase m-b0 dez-tilte des-producto">TELÉFONO</h6>
                                         <p>{{ $datosContacto[2]->content }}</p>
                                     </div>
                                 </li>
@@ -138,7 +141,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <!-- Map part start -->
-                        <h4>Nuestra Ubicación</h4>
+                        <h4 class=" des-producto">Nuestra Ubicación</h4>
                         <iframe
                             src="{{ $datosContacto[3]->content }}"
                             width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
