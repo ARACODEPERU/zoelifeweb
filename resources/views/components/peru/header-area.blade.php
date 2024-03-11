@@ -99,18 +99,34 @@
                         <span></span>
                     </button>
                     <!-- Extra Nav -->
-                    <div class="extra-nav hidden-sm-down disnone-md" style="text-align: center;">
-                        <div class="extra-cell">
-                            <a href="https://zoelife.global//link/store/TIENDAPUBLICA" target="_blank" class="site-button">
-                                <i class="fa fa-cart-plus" aria-hidden="true"></i> &nbsp;
-                                Tienda Online
-                            </a>
+                    <div class="btn-header-pc">
+                        <div class="extra-nav hidden-sm-down disnone-md" style="text-align: center;">
+                            <div class="extra-cell">
+                                <a href="https://zoelife.global//link/store/TIENDAPUBLICA" target="_blank" class="site-button">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i> &nbsp;
+                                    Tienda Online
+                                </a>
+                            </div>
+                            <div class="extra-cell">
+                                <a href="https://zoelife.global/LoginSalesForce.php" target="_blank" class="site-button">
+                                    <i class="fa fa-laptop" aria-hidden="true"></i> &nbsp;
+                                    Oficina Virtual
+                                </a>
+                            </div>
                         </div>
-                        <div class="extra-cell">
-                            <a href="https://zoelife.global/LoginSalesForce.php" target="_blank" class="site-button">
-                                <i class="fa fa-laptop" aria-hidden="true"></i> &nbsp;
-                                Oficina Virtual
-                            </a>
+                    </div>
+                    <div class="btn-header-mobile">
+                        <div class="extra-nav hidden-sm-down disnone-md" style="text-align: center;">
+                            <div class="extra-cell">
+                                <a href="https://zoelife.global//link/store/TIENDAPUBLICA" target="_blank" class="site-button" title="Tienda Online">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="extra-cell">
+                                <a href="https://zoelife.global/LoginSalesForce.php" target="_blank" class="site-button" title="Oficina Vitual">
+                                    <i class="fa fa-laptop" aria-hidden="true"></i> 
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <!-- Main Nav -->

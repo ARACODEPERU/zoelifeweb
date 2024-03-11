@@ -6,9 +6,9 @@
     <!-- Encabezado fin -->
 
     <!-- inner page banner -->
-    <div class="dez-bnr-inr" style="background-image:url({{ $banner->content }});">
-
-    </div>
+        <div class="dez-bnr-inr ara_centrado_total">
+            <img src="{{ $banner->content }}" alt="">
+        </div>
     <!-- inner page banner END -->
 
     <!-- Breadcrumb row -->

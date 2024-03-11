@@ -9,8 +9,8 @@
     <div class="page-content">
 
         <!-- inner page banner -->
-        <div class="dez-bnr-inr-eventos " style="background-image:url({{ $banner->content }}); top: 10px;">
-
+        <div class="dez-bnr-inr ara_centrado_total">
+            <img src="{{ $banner->content }}" alt="">
         </div>
         <!-- inner page banner END -->
 

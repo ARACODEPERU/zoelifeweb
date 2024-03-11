@@ -127,6 +127,21 @@
 
 @import url('fontawesome.min.css');
 
+.btn-header-pc{
+    display: block;
+}
+
+.btn-header-mobile{
+    display: none;
+}
+
+/*aracode*/
+.ara_centrado_total {
+	display: flex;
+	justify-content: center; /* Centrar horizontalmente */
+	align-items: center; /* Centrar verticalmente */
+}
+
 
 body {
     background-color: #FFF;
@@ -2288,6 +2303,14 @@ blockquote:before {
         margin: 0 1px 0 0;
         text-align: right;
     }
+    
+    .btn-header-pc{
+        display: none;
+    }
+
+    .btn-header-mobile{
+        display: block;
+    }
 }
 /* map page header*/
 
@@ -2303,6 +2326,14 @@ blockquote:before {
 @media only screen and (max-width: 480px) {
     #header-part.fix-map-header {
         height: 160px;
+    }
+    
+    .btn-header-pc{
+        display: none;
+    }
+
+    .btn-header-mobile{
+        display: block;
     }
 }
 /*---------------------------------------------------------------
@@ -2335,6 +2366,13 @@ blockquote:before {
     }
     .top-bar [class*="col-"]:last-child {
         border-bottom: none;
+    }
+    .btn-header-pc{
+        display: none;
+    }
+
+    .btn-header-mobile{
+        display: block;
     }
 }
 /*=== >eamil-phone (left) ===*/
@@ -9129,6 +9167,19 @@ ol.commentlist li .star-rating {
 	.main-slider .site-button-secondry{
 		padding:10px 8px;
 	}
+
+    
+    .btn-header-pc{
+        display: none;
+    }
+
+    .btn-header-tablet{
+        display: none;
+    }
+
+    .btn-header-mobile{
+        display: block;
+    }
 }
 /* spacial */
 .bg-primary a:hover{ 
