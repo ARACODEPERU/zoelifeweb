@@ -116,9 +116,9 @@
                                 <div class="col-md-7" style="padding: 15px;">
                                     <br><br><br><br>
                                     <h3 class="dez-title" style="text-align: left;">
-                                        <b style="font-size: 30px;" class="text-primary">{{ $fundador[1]->content }}</b>
+                                        <b style="font-size: 30px;" class=" text-primary" >{{ $fundador[1]->content }}</b>
                                         <br>
-                                        {{ $fundador[2]->content }}
+                                        <b class="des-producto">{{ $fundador[2]->content }}</b>
                                     </h3>
                                     <p style="text-align: left;">
                                         {{ $fundador[3]->content }}
@@ -141,19 +141,19 @@
                         </div>
                         <div class="section-content text-center ">
                             <div class="row" style="justify-content: space-between">
-                                <div class="col-md-4" style="text-align: center;">
+                                <div class="col-md-4" style="text-align: center; padding: 15px;">
                                     <a href="{{ $linkDescarga[0]->content }}" target="_blank" class="site-button" 
                                         style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;">
                                         <b><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; Descargar Catálogo</b>
                                     </a>
                                 </div>
-                                <div class="col-md-4" style="text-align: center;">
+                                <div class="col-md-4" style="text-align: center; padding: 15px;">
                                     <a href="{{ $linkDescarga[1]->content }}" target="_blank"  class="site-button" 
                                         style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;">
                                         <b><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; Descargar Producto</b>
                                     </a>
                                 </div>
-                                <div class="col-md-4" style="text-align: center;">
+                                <div class="col-md-4" style="text-align: center; padding: 15px;">
                                     <a href="{{ $linkDescarga[2]->content }}" target="_blank"  class="site-button" 
                                         style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;">
                                         <b><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; Descargar Presentación</b>

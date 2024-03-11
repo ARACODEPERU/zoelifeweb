@@ -48,14 +48,14 @@
                 <ul id="masonry" class="dez-gallery-listing row gallery-grid-4 m-b0 mfp-gallery">
                     @if (count($testimonies) > 0)
                         @foreach ($testimonies as $testimony)
-                            <li class="card-container col-md-3 {{ $testimony->product->name }}" style="padding: 15px;">
+                            <li class="card-container col-md-3" style="padding: 15px;">
                                 <div class="aracode-box-with">
                                     <div class="dez-post-media dez-img-effect zoom-slow">
                                         {!! $testimony->video !!}
                                     </div>
                                     <div class="dez-post-info">
                                         <div class="dez-post-title ">
-                                            <h4 class="post-title"><a href="">{{ $testimony->title }}</a></h4>
+                                            <h4 class="post-title"><a href="" class=" des-producto">{{ $testimony->title }}</a></h4>
                                         </div>
                                         <div class="dez-post-tags">
                                             <div class="post-tags">
