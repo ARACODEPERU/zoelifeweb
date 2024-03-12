@@ -109,7 +109,7 @@
                     <div class="col-lg-4 text-right">
                         <ul class="list-inline">
                             <li><a href="{{ route('web_peru_contacto') }}"> Contáctanos</a></li>
-                            <li><a href=""> Politica de Privacidad</a></li>
+                            <li><a href="{{ $footer[0]->items[8]->item->content }}"> Politica de Privacidad</a></li>
                         </ul>
                     </div>
                 </div>
