@@ -108,8 +108,7 @@
                     </div>
                     <div class="col-lg-4 text-right">
                         <ul class="list-inline">
-                            <li><a href=""> Nosotros</a></li>
-                            <li><a href=""> Contactanos</a></li>
+                            <li><a href="{{ route('web_peru_contacto') }}"> Contáctanos</a></li>
                             <li><a href=""> Politica de Privacidad</a></li>
                         </ul>
                     </div>

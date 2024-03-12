@@ -143,20 +143,20 @@
                             <div class="row" style="justify-content: space-between">
                                 <div class="col-md-4" style="text-align: center; padding: 15px;">
                                     <a href="{{ $linkDescarga[0]->content }}" target="_blank" class="site-button" 
-                                        style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;">
-                                        <b><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; Descargar Catálogo</b>
+                                        style="width: 90%; font-size: 14px; padding: 10px 20px; border-radius: 30px;">
+                                        <b><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; CATÁLOGO DE PRODUCTOS</b>
                                     </a>
                                 </div>
                                 <div class="col-md-4" style="text-align: center; padding: 15px;">
                                     <a href="{{ $linkDescarga[1]->content }}" target="_blank"  class="site-button" 
-                                        style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;">
-                                        <b><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; Descargar Producto</b>
+                                        style="width: 90%; font-size: 14px; padding: 10px 20px; border-radius: 30px;">
+                                        <b><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; PLAN LIBERTAD </b>
                                     </a>
                                 </div>
                                 <div class="col-md-4" style="text-align: center; padding: 15px;">
                                     <a href="{{ $linkDescarga[2]->content }}" target="_blank"  class="site-button" 
-                                        style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;">
-                                        <b><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; Descargar Presentación</b>
+                                        style="width: 90%; font-size: 14px; padding: 10px 20px; border-radius: 30px;">
+                                        <b><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; MANUAL DE POLITICAS Y PROCESOS</b>
                                     </a>
                                 </div>
                             </div>
