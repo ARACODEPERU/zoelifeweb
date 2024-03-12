@@ -14,7 +14,7 @@
                     <div class="row">
                         @foreach ($programs->items as $k => $program)
                             @if ($k > 0)
-                                <div class="col-md-3">
+                                <div class="col-md-4" style="padding: 15px;">
                                     <div class="dez-box m-b30">
                                         <div class="dez-media">
                                             <a href="javascript:void(0);">
