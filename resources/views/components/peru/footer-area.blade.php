@@ -11,6 +11,10 @@
     <a class="appYoutube" target="_blanck" href="{{ $footer[0]->items[4]->item->content }}">
         <img src="themes/zoelife/peru/images/redes/you.png" alt="Youtube">
     </a>
+
+    <a class="appTiktok" target="_blanck" href="{{ $footer[0]->items[4]->item->content }}">
+        <img src="themes/zoelife/peru/images/redes/tik.png" alt="Tiktok">
+    </a>
     
     
     <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=51992914870&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?">

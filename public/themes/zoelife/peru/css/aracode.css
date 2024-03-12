@@ -65,7 +65,7 @@ General
 .appFacebook{
 	position: fixed;
 	right: 26px;
-	bottom: 315px;
+	bottom: 328px;
 	width: 50px;
 	z-index: 1000;
   }
@@ -82,7 +82,7 @@ General
 .appInstagram{
 	position: fixed;
 	right: 26px;
-	bottom: 250px;
+	bottom: 277px;
 	width: 50px;
 	z-index: 1000;
   }
@@ -99,12 +99,29 @@ General
 .appYoutube{
 	position: fixed;
 	right: 26px;
-	bottom: 185px;
+	bottom: 225px;
 	width: 50px;
 	z-index: 1000;
   }
   
   .appYoutube img{
+	width: 100%;
+	height: auto;
+  }
+  
+/**********************/
+/****** Tik Tok ******/
+/**********************/
+
+.appTiktok{
+	position: fixed;
+	right: 26px;
+	bottom: 175px;
+	width: 50px;
+	z-index: 1000;
+  }
+  
+  .appTiktok img{
 	width: 100%;
 	height: auto;
   }
