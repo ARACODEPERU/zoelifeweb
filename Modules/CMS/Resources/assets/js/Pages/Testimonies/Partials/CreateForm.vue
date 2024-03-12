@@ -39,7 +39,7 @@ const form = useForm({
 });
 
 const createTestimony = () => {
-    
+
     try {
         form.post(route('cms_testimonies_store'), {
             forceFormData: true,
@@ -124,7 +124,7 @@ const handleImageCompressed = (file) => {
                     </figure>
                 </div>
                 <!-- <input @input="form.image = $event.target.files[0]" accept=".svg, .png, .jpg, .jpeg, .gif" class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" aria-describedby="file_input_help" id="file_input" type="file"> -->
-                <ImageCompressorjs :onImageCompressed="handleImageCompressed" /> 
+                <ImageCompressorjs :onImageCompressed="handleImageCompressed" />
                 <InputError :message="form.errors.image" class="mt-2" />
             </div>
             <div class="col-span-6">
