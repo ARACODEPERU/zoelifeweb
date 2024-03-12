@@ -99,7 +99,7 @@ const handleImageCompressed = (file) => {
                 <InputLabel for="description" value="Descripción *" />
                 <Editor
                     id="description"
-                    :api-key="xmpsrss1dh49by6nnf83jicfv477cz0o31h0xu3ejsnnhsnz"
+                    :api-key="tiny_api_key"
                     v-model="form.description"
                     :init="{
                         plugins: 'anchor autolink charmap codesample emoticons link lists media searchreplace table visualblocks wordcount',
@@ -116,10 +116,10 @@ const handleImageCompressed = (file) => {
                         <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">Imagen Actual</figcaption>
                     </figure>
                 </div>
-                <ImageCompressorjs :onImageCompressed="handleImageCompressed" />
+                <ImageCompressorjs :onImageCompressed="handleImageCompressed" /> 
                 <InputError :message="form.errors.image" class="mt-2" />
             </div>
-
+            
             <div class="col-span-6">
                 <Textarea
                     v-model="form.video"
