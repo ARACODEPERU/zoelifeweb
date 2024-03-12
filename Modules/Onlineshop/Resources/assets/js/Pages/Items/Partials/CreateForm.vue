@@ -159,7 +159,7 @@ const setCountry = (id, text, icon) => {
                         <dropdown>
                             <template #trigger="{ toggle }">
                             <button class="w-full flex-shrink-0 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-500 bg-gray-100 border border-gray-300 rounded-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-white dark:border-gray-600" type="button" @click="toggle">
-                                <img v-show="form.country_icon" :src="form.country_icon" class="mr-1" style="width: 15px;"><span>{{ form.country_description }}</span> 
+                                <img v-show="form.country_icon" :src="form.country_icon" class="mr-1" style="width: 15px;"><span>{{ form.country_description }}</span>
                             </button>
                             </template>
                             <div class="z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-full dark:bg-gray-700">
@@ -199,7 +199,7 @@ const setCountry = (id, text, icon) => {
                         <InputLabel for="description" value="Descripción" />
                         <Editor
                             id="description"
-                            :api-key="tiny_api_key"
+                            :api-key="xmpsrss1dh49by6nnf83jicfv477cz0o31h0xu3ejsnnhsnz"
                             v-model="form.description"
                             :init="{
                                 plugins: 'anchor autolink charmap codesample emoticons link lists media searchreplace table visualblocks wordcount',
@@ -251,7 +251,7 @@ const setCountry = (id, text, icon) => {
                         <InputLabel for="additional" :value="titles.additional+'*'" />
                         <Editor
                             id="additional"
-                            :api-key="tiny_api_key"
+                            :api-key="xmpsrss1dh49by6nnf83jicfv477cz0o31h0xu3ejsnnhsnz"
                             v-model="form.additional"
                             :init="{
                                 plugins: 'anchor autolink charmap codesample emoticons link lists media searchreplace table visualblocks wordcount',
