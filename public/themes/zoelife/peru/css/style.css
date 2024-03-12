@@ -2324,14 +2324,14 @@ blockquote:before {
         margin: 0 1px 0 0;
         text-align: right;
     }
-    
+    /*
     .btn-header-pc{
         display: none;
     }
 
     .btn-header-mobile{
         display: block;
-    }
+    }*/
 }
 /* map page header*/
 
@@ -9197,18 +9197,15 @@ ol.commentlist li .star-rating {
 		padding:10px 8px;
 	}
 
-    
+    /*
     .btn-header-pc{
-        display: none;
-    }
-
-    .btn-header-tablet{
         display: none;
     }
 
     .btn-header-mobile{
         display: block;
     }
+    */
 }
 /* spacial */
 .bg-primary a:hover{ 

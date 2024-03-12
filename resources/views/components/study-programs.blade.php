@@ -1,7 +1,7 @@
 <div>
     <div class="content-area">
         <!-- Left & right section start -->
-        <div class="container">
+        <div class="">
             <!-- Nuestro Equipo -->
             <div class="p-a30 bg-white m-b30 selector-d">
                 <div class="section-head">
@@ -14,7 +14,7 @@
                     <div class="row">
                         @foreach ($programs->items as $k => $program)
                             @if ($k > 0)
-                                <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="col-md-3">
                                     <div class="dez-box m-b30">
                                         <div class="dez-media">
                                             <a href="javascript:void(0);">
