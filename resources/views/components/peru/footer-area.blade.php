@@ -66,7 +66,7 @@
                                 <li><a href="{{ route('web_peru_productos') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Productos</a></li>
                                 <li><a href="{{ route('web_peru_centros') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Centros de Distribución</a></li>
                                 <li><a href="{{ route('web_peru_eventos') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Eventos</a></li>
-                                <li><a href="{{ route('web_peru_alcanzando_las_estrellas') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Alcansando las Estrellas</a></li>
+                                <li><a href="{{ route('web_peru_alcanzando_las_estrellas') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Alcanzando las Estrellas</a></li>
                                 <li><a href="{{ route('web_peru_contacto') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Contacto</a></li>
                             </ul>
                         </div>
@@ -113,7 +113,7 @@
                     <div class="col-lg-4 text-right">
                         <ul class="list-inline">
                             <li><a href="{{ route('web_peru_contacto') }}"> Contáctanos</a></li>
-                            <li><a href="{{ $footer[0]->items[8]->item->content }}"> Politica de Privacidad</a></li>
+                            <li><a href="{{ $footer[0]->items[8]->item->content }}"> Política de Privacidad</a></li>
                         </ul>
                     </div>
                 </div>

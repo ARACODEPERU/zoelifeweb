@@ -7,7 +7,7 @@
 
     <!-- inner page banner -->
         <div class="dez-bnr-inr ara_centrado_total">
-            <img src="{{ $banner->content }}" alt="">
+            <img style="width: 100%;" src="{{ $banner->content }}" alt="">
         </div>
     <!-- inner page banner END -->
 
