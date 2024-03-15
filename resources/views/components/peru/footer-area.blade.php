@@ -12,7 +12,7 @@
         <img src="themes/zoelife/peru/images/redes/you.png" alt="Youtube">
     </a>
 
-    <a class="appTiktok" target="_blanck" href="{{ $footer[0]->items[4]->item->content }}">
+    <a class="appTiktok" target="_blanck" href="{{ $footer[0]->items[9]->item->content }}">
         <img src="themes/zoelife/peru/images/redes/tik.png" alt="Tiktok">
     </a>
     
