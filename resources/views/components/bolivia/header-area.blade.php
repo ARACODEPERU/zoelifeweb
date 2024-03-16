@@ -18,26 +18,27 @@
         <div class="top-bar">
             <div class="top-bar-content" style="width: 100%; padding: 0px 40px;">
                 <div class="top-bar-contect-space row justify-content-between">
+                    <!--
                     <div class="dez-topbar-left">
                         <ul class="social-bx list-inline pull-right">
                             <li>
-                                <a href="{{ $header[0]->content }}" class="fab fa-facebook"
-                                    style="padding: 10px; font-size: 15px;">
+                                <a href="{{ $header[0]->content }}" target="_blank" class="fab fa-facebook"
+                                    style="padding: 10px; font-size: 16px;">
                                 </a>
                             </li>
                             <li>
-                                <a href="{{ $header[1]->content }}" class="fab fa-instagram"
-                                    style="padding: 10px; font-size: 15px;">
+                                <a href="{{ $header[1]->content }}" target="_blank" class="fab fa-instagram"
+                                    style="padding: 10px; font-size: 16px;">
                                 </a>
                             </li>
-                            {{-- <li><a href="{{ $header[1]->content }}" class="fab fa-linkedin" style="padding: 10px; font-size: 15px;"></a></li> --}}
                             <li>
-                                <a href="{{ $header[2]->content }}" class="fab fa-youtube"
-                                    style="padding: 10px; font-size: 15px;">
+                                <a href="{{ $header[2]->content }}" target="_blank" class="fab fa-youtube"
+                                    style="padding: 10px; font-size: 16px;">
                                 </a>
                             </li>
                         </ul>
                     </div>
+                    -->
                     <div class="dez-topbar-right list-unstyled e-p-bx ">
                         <ul>
                             <li style="float: left;">
@@ -79,13 +80,13 @@
         </div>
         <!-- Top Bar END-->
         <!-- Main Header -->
-        <div class="sticky-header header-curve main-bar-wraper navbar-expand-lg">
+        <div class="sticky-header main-bar-wraper navbar-expand-lg">
             <div class="main-bar clearfix ">
                 <div class="clearfix" style="width: 100%; padding: 0px 40px;">
                     <!-- Website Logo -->
                     <div class="logo-header logo-dark mostion">
-                        <a href="{{ route('web_bolivia_inicio') }}">
-                            <img src="{{ $header[5]->content }}" alt="" style="height: 45px;">
+                        <a href="{{ route('web_peru_inicio') }}">
+                            <img src="{{ $header[5]->content }}" alt="" style="height: 80px; padding: 15px 0px;">
                         </a>
                     </div>
                     <!-- Nav Toggle Button -->
@@ -97,42 +98,62 @@
                         <span></span>
                     </button>
                     <!-- Extra Nav -->
-                    <div class="extra-nav hidden-sm-down disnone-md">
-                        <div class="extra-cell">
-                            <a href="https://zoelife.global//link/store/TIENDAPUBLICA" target="_blank" class="site-button">
-                                <i class="fa fa-cart-plus" aria-hidden="true"></i> &nbsp;
-                                Tienda Online
-                            </a>
+                    <div class="btn-header-pc">
+                        <div class="extra-nav hidden-sm-down disnone-md" style="text-align: center;">
+                            <div class="extra-cell">
+                                <a href="https://zoelife.global//link/store/TIENDAPUBLICA" target="_blank" class="site-button">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i> &nbsp;
+                                    Tienda Online
+                                </a>
+                            </div>
+                            <div class="extra-cell">
+                                <a href="https://zoelife.global/LoginSalesForce.php" target="_blank" class="site-button">
+                                    <i class="fa fa-laptop" aria-hidden="true"></i> &nbsp;
+                                    Oficina Virtual
+                                </a>
+                            </div>
                         </div>
-                        <div class="extra-cell">
-                            <a href="https://zoelife.global/LoginSalesForce.php" target="_blank" class="site-button">
-                                <i class="fa fa-laptop" aria-hidden="true"></i> &nbsp;
-                                Oficina Virtual
-                            </a>
+                    </div>
+                    <div class="btn-header-mobile">
+                        <div class="extra-nav hidden-sm-down disnone-md" style="text-align: center;">
+                            <div class="extra-cell">
+                                <a href="https://zoelife.global//link/store/TIENDAPUBLICA" target="_blank" 
+                                    class="site-button" title="Tienda Online">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="extra-cell">
+                                <a href="https://zoelife.global/LoginSalesForce.php" target="_blank" 
+                                    class="site-button" title="Oficina Vitual">
+                                    <i class="fa fa-laptop" aria-hidden="true"></i> 
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <!-- Main Nav -->
                     <div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
                         <ul class="nav navbar-nav">
-                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_bolivia_inicio') ? 'active' : '' }}" href="{{ route('web_bolivia_inicio') }}">Inicio</a> </li>
-                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_bolivia_productos') ? 'active' : '' }}" href="{{ route('web_bolivia_productos') }}">Productos</a>
+                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_inicio') ? 'active' : '' }}" href="{{ route('web_peru_inicio') }}">Inicio</a> </li>
+                            
+                             <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_productos') ? 'active' : '' }}" href="{{ route('web_peru_productos') }}">Productos</a>
                                 <ul class="sub-menu">
                                     @foreach ($products as $product)
                                         <li>
-                                            <a href="{{ route('web_bolivia_producto_descripcion', $product->id) }}">
+                                            <a href="{{ route('web_peru_producto_descripcion', $product->id) }}">
                                                 {{ $product->name }}
                                             </a>
                                         </li>
                                     @endforeach
                                 </ul>
                             </li>
-                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_bolivia_testimonios') ? 'active' : '' }}" href="{{ route('web_bolivia_testimonios') }}">Testimonios</a> </li>
-                            <li> <a href="{{ route('web_bolivia_centros') }}">Centros de Distribución</a> </li>
-                            <li> <a class="dropdown-item {{ request()->routeIs('web_bolivia_eventos') ? 'active' : '' }}" href="{{ route('web_bolivia_eventos') }}">Eventos</a> </li>
-                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_bolivia_alcanzando_las_estrellas') ? 'active' : '' }}" href="{{ route('web_bolivia_alcanzando_las_estrellas') }}">Alcanzando las
+                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_testimonios') ? 'active' : '' }}" href="{{ route('web_peru_testimonios') }}">Testimonios</a> </li>
+                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_centros') ? 'active' : '' }}" href="{{ route('web_peru_centros') }}">Centros de Distribución</a> </li>
+                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_eventos') ? 'active' : '' }}" href="{{ route('web_peru_eventos') }}">Eventos</a> </li>
+                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_alcanzando_las_estrellas') ? 'active' : '' }}" href="{{ route('web_peru_alcanzando_las_estrellas') }}">Alcanzando las
                                     Estrellas</a> </li>
-                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_bolivia_university') ? 'active' : '' }}" href="{{ route('web_bolivia_university') }}">University</a> </li>
-                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_bolivia_contacto') ? 'active' : '' }}" href="{{ route('web_bolivia_contacto') }}">Contacto</a> </li>
+                                    
+                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_university') ? 'active' : '' }}" href="{{ route('web_peru_university') }}">University</a> </li>
+                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_contacto') ? 'active' : '' }}" href="{{ route('web_peru_contacto') }}">Contacto</a> </li>
                             <li class="switch" style="top: 25px;">
                                 <i class="bx bxs-sun"></i>
                                 <i class="bx bxs-moon"></i>
