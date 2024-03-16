@@ -23,9 +23,7 @@
     <!-- Breadcrumb row END -->
 
     <div class="content-area">
-        <!-- Left & right section start -->
-            <div class="container" style="width: 100%; padding: 40px;">
-            <!-- Gallery -->
+        <div class="">
             <div class="site-filters clearfix center m-b40">
                 <ul class="filters" data-toggle="buttons">
                     <li data-filter="" class="btn active">
@@ -42,11 +40,13 @@
                     @endif
                 </ul>
             </div>
+
+
             <ul id="masonry" class="dez-gallery-listing row gallery-grid-4 m-b0 mfp-gallery">
                 @if (count($centers) > 0)
                     @foreach ($centers as $center)
-                        <li class="card-container col-md-4 {{ $center->district->department->name }}">
-                            <div class="dez-box dez-gallery-box">
+                        <li class="card-container col-md-4 {{ $center->district->department->name }}" style="padding: 15px;">
+                            <div class="aracode-box-with">
                                 <a href="#" onclick="openModalCenterDetails(event, {{ json_encode($center) }})">
                                     <div class="dez-thum dez-img-overlay1 dez-img-effect">
                                         <img src="{{ asset('storage/' . $center->image) }}" alt="Lima">
@@ -73,20 +73,7 @@
                     </div>
                 </li> --}}
             </ul>
-            <!-- Gallery END -->
-            <!-- Pagination start -->
-            {{-- <div class="pagination-bx">
-                <ul class="pagination">
-                    <li class="previous"><a href="javascript:void(0);"><i class="fa fa-angle-double-left"></i></a></li>
-                    <li class="active"><a href="javascript:void(0);">1</a></li>
-                    <li><a href="javascript:void(0);">2</a></li>
-                    <li><a href="javascript:void(0);">3</a></li>
-                    <li class="next"><a href="javascript:void(0);"><i class="fa fa-angle-double-right"></i></a></li>
-                </ul>
-            </div> --}}
-            <!-- Pagination END -->
         </div>
-        <!-- Left & right section  END -->
     </div>
 
 
