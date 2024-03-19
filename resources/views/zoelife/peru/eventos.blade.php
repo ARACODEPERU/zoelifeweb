@@ -33,12 +33,14 @@
         <div class="swiper tranding-slider">
           <div class="swiper-wrapper">
             <!-- Slide-start -->
+            @if (count($galeryEvents) > 0)
             @foreach ($galeryEvents as $key => $event)
-              <div class="swiper-slide tranding-slide">
-                    <img src="{{ $event->item->items[0]->content }}" alt="" style="width: 100%;">
-                  {{-- <h3 style="text-align: center; margin-top: 10px;">{{ $star_video->title }}</h2> --}}
-              </div>
-             @endforeach
+            <div class="swiper-slide tranding-slide">
+                  <img src="{{ $event->item->items[0]->content }}" alt="" style="width: 100%;">
+                {{-- <h3 style="text-align: center; margin-top: 10px;">{{ $star_video->title }}</h2> --}}
+            </div>
+           @endforeach
+            @endif
             <!-- Slide-end -->
           </div>
 
@@ -393,6 +395,7 @@ background: var(--primary);
     <!-- Content END-->
         <div class="container" style="padding: 40px;">
             <div class="row" style="justify-content: space-between">
+                @if ( count($inscripcioncontacto) > 0 )
                 <div class="col-md-2"></div>
                 <div class="col-md-4" style="text-align: center;">
                     <a href="{{ $inscripcioncontacto[0]->content }}" target="_blank" class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;">
@@ -405,6 +408,7 @@ background: var(--primary);
                     </a>
                 </div>
                 <div class="col-md-2"></div>
+                @endif
             </div>
         </div>
     <!-- Footer -->
