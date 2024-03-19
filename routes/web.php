@@ -116,27 +116,6 @@ Route::get('/mexico.contacto', [MexicoController::class, 'contacto'])->name('web
 
 
 
-/*
-Route::get('/blog/home', [BlogController::class, 'index'])->name('blog_principal');
-Route::get('/article/{url}', [BlogController::class, 'article'])->name('blog_article_by_url');
-Route::get('/category/{id}', [BlogController::class, 'category'])->name('blog_category');
-Route::get('/policies', [BlogController::class, 'policies'])->name('blog_policies');
-Route::get('/contact-us', [BlogController::class, 'contactUs'])->name('blog_contact_us');
-
-Route::get('/stories/article/{url}', [BlogController::class, 'storiesArticle'])->name('blog_stories_article_by_url');
-Route::get('/stories/policies', [BlogController::class, 'storiesPolicies'])->name('blog_stories_policies');
-Route::get('/stories/contact-us', [BlogController::class, 'storiesContactUs'])->name('blog_stories_contact_us');
-*/
-
-// Route::get('/', function () {
-//     return Inertia::render('Welcome', [
-//         'canLogin' => Route::has('login'),
-//         'canRegister' => Route::has('register'),
-//         'laravelVersion' => Application::VERSION,
-//         'phpVersion' => PHP_VERSION,
-//     ]);
-// });
-
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

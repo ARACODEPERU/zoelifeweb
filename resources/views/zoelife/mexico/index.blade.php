@@ -170,6 +170,6 @@
         <!-- Content END-->
 
         <!-- Footer -->
-        <x-ecuador.footer-area></x-ecuador.footer-area>
+        <x-mexico.footer-area></x-mexico.footer-area>
         <!-- Footer END-->
     @endsection

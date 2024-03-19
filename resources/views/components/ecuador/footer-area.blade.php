@@ -1,4 +1,5 @@
 <div>
+
     <a class="appFacebook" target="_blanck" href="{{ $footer[0]->items[2]->item->content }}">
         <img src="themes/zoelife/peru/images/redes/face.png" alt="Facebook">
     </a>
@@ -19,6 +20,7 @@
     <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=51992914870&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?">
         <img src="themes/zoelife/peru/images/redes/what.png" alt="Whatsapp">
     </a>
+
     <!-- Footer -->
     <footer class="site-footer dark-style-2">
         <div class="footer-top">
@@ -60,12 +62,12 @@
                             <h4 class="m-b10 text-uppercase">Navegación</h4>
                             <div class="dez-separator bg-primary"></div>
                             <ul>
-                                <li><a href="{{ route('web_peru_inicio') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Inicio</a></li>
-                                <li><a href="{{ route('web_peru_productos') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Productos</a></li>
-                                <li><a href="{{ route('web_peru_centros') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Centros de Distribución</a></li>
-                                <li><a href="{{ route('web_peru_eventos') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Eventos</a></li>
-                                <li><a href="{{ route('web_peru_alcanzando_las_estrellas') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Alcanzando las Estrellas</a></li>
-                                <li><a href="{{ route('web_peru_contacto') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Contacto</a></li>
+                                <li><a href="{{ route('web_ecuador_inicio') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Inicio</a></li>
+                                <li><a href="{{ route('web_ecuador_productos') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Productos</a></li>
+                                <li><a href="{{ route('web_ecuador_centros') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Centros de Distribución</a></li>
+                                <li><a href="{{ route('web_ecuador_eventos') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Eventos</a></li>
+                                <li><a href="{{ route('web_ecuador_alcanzando_las_estrellas') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Alcanzando las Estrellas</a></li>
+                                <li><a href="{{ route('web_ecuador_contacto') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Contacto</a></li>
                             </ul>
                         </div>
                     </div>
@@ -109,7 +111,7 @@
                     </div>
                     <div class="col-lg-4 text-right">
                         <ul class="list-inline">
-                            <li><a href="{{ route('web_peru_contacto') }}"> Contáctanos</a></li>
+                            <li><a href="{{ route('web_ecuador_contacto') }}"> Contáctanos</a></li>
                             <li><a href="{{ $footer[0]->items[8]->item->content }}"> Política de Privacidad</a></li>
                         </ul>
                     </div>
