@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\LocalSale;
 use Illuminate\Http\Request;
 use Modules\CMS\Entities\CmsSection;
+use Modules\CMS\Entities\CmsSectionItem;
 use Modules\CMS\Entities\CmsTestimony;
 use Modules\Onlineshop\Entities\OnliItem;
 
@@ -32,9 +33,37 @@ class ColombiaController extends Controller
             ->orderBy('cms_section_items.position')
             ->first();
 
+
+        $fundador = CmsSection::where('component_id', 'zoe_fundador_area_95')
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->get();
+
+        $equipos = CmsSectionItem::with('item.items')->where('section_id', 66)
+            ->orderBy('position')
+            ->get();
+
+        $linkDescarga = CmsSection::where('component_id', 'peru_descargas_89')
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->get();
+
         return view('zoelife/colombia.index', [
             'slider' => $slider,
-            'video' => $video
+            'video' => $video,
+            'fundador' => $fundador,
+            'equipos' => $equipos,
+            'linkDescarga' => $linkDescarga
         ]);
     }
 
