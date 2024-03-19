@@ -61,7 +61,6 @@
             <x-peru.vision-mision-valores-area></x-peru.vision-mision-valores-area>
             <!-- Visión - Misión - Valores / END -->
 
-            
             <div class="content-area" style="padding: 80px 0px;">
                 <div class="container">
                         <div class="section-head">
@@ -114,7 +113,6 @@
                 </div>
             </div>
 
-
             <!-- Video Presentación / STAR -->
             <div class="section-full text-white bg-img-fix p-t70 p-b70 overlay-black-dark choose-us"
                 style="background-image:url({{ asset('themes/zoelife/peru/images/background/fondo.jpg') }});">
@@ -134,8 +132,6 @@
             </div>
             <!-- Video Presentación / END -->
 
-            
-            
             <div class="content-area" style="padding: 80px 0px;">
                 <div class="container">
                         <div class="section-head">
@@ -168,7 +164,6 @@
                         </div>
                 </div>
             </div>
-
 
         </div>
         <!-- Content END-->

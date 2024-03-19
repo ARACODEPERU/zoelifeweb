@@ -18,6 +18,7 @@
         <div class="top-bar">
             <div class="top-bar-content" style="width: 100%; padding: 0px 40px;">
                 <div class="top-bar-contect-space row justify-content-between">
+                    <!--
                     <div class="dez-topbar-left">
                         <ul class="social-bx list-inline pull-right">
                             <li>
@@ -30,7 +31,6 @@
                                     style="padding: 10px; font-size: 15px;">
                                 </a>
                             </li>
-                            {{-- <li><a href="{{ $header[1]->content }}" class="fab fa-linkedin" style="padding: 10px; font-size: 15px;"></a></li> --}}
                             <li>
                                 <a href="{{ $header[2]->content }}" class="fab fa-youtube"
                                     style="padding: 10px; font-size: 15px;">
@@ -38,6 +38,7 @@
                             </li>
                         </ul>
                     </div>
+                    -->
                     <div class="dez-topbar-right list-unstyled e-p-bx ">
                         <ul>
                             <li style="float: left;">
@@ -85,7 +86,7 @@
                     <!-- Website Logo -->
                     <div class="logo-header logo-dark mostion">
                         <a href="{{ route('web_ecuador_inicio') }}">
-                            <img src="{{ $header[5]->content }}" alt="" style="height: 45px;">
+                            <img src="{{ $header[5]->content }}" alt="" style="height: 80px; padding: 15px 0px;">
                         </a>
                     </div>
                     <!-- Nav Toggle Button -->
@@ -110,6 +111,22 @@
                                 <i class="fa fa-laptop" aria-hidden="true"></i> &nbsp;
                                 Oficina Virtual
                             </a>
+                        </div>
+                    </div>
+                    <div class="btn-header-mobile">
+                        <div class="extra-nav hidden-sm-down disnone-md" style="text-align: center;">
+                            <div class="extra-cell">
+                                <a href="https://zoelife.global//link/store/TIENDAPUBLICA" target="_blank" 
+                                    class="site-button" title="Tienda Online">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="extra-cell">
+                                <a href="https://zoelife.global/LoginSalesForce.php" target="_blank" 
+                                    class="site-button" title="Oficina Vitual">
+                                    <i class="fa fa-laptop" aria-hidden="true"></i> 
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <!-- Main Nav -->
