@@ -61,6 +61,59 @@
             <x-bolivia.vision-mision-valores-area></x-bolivia.vision-mision-valores-area>
             <!-- Visión - Misión - Valores / END -->
 
+            
+            <div class="content-area" style="padding: 80px 0px;">
+                <div class="container">
+                        <div class="section-head">
+                            <h2 class="text-uppercase">{{ $equipos[0]->item->content }}</h2>
+                            <div class="dez-divider divider-2px bg-primary icon-left">
+                                <i class="fa fa-thumbs-o-up bg-primary text-white"></i>
+                            </div>
+                        </div>
+                        <div class="section-content text-center ">
+                            <div class="row">
+                                <div class="col-md-3" style="padding: 15px;">
+                                    <div class="dez-box m-b30">
+                                        <div class="dez-media">
+                                            <a href="javascript:void(0);">
+                                                <img width="358" height="460"
+                                                    src="{{ $fundador[0]->content }}" alt="">
+                                            </a>
+                                            <div class="dez-info-has bg-primary">
+                                                <ul class="dez-social-icon dez-border">
+                                                    <li><a href="{{ $fundador[4]->content }}"
+                                                            class="fab fa-facebook"></a></li>
+                                                    <li><a href="{{ $fundador[5]->content }}"
+                                                            class="fab fa-instagram"></a></li>
+                                                    <li><a href="{{ $fundador[6]->content }}"
+                                                            class="fab fa-linkedin"></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-9" style="padding: 15px;">
+                                    <br>
+                                    <h3 class="dez-title" style="text-align: left;">
+                                        <b style="font-size: 30px;" class=" text-primary" >{{ $fundador[1]->content }}</b>
+                                        <br>
+                                        <b class="des-producto">{{ $fundador[2]->content }}</b>
+                                    </h3>
+                                    <p style="text-align: left;">
+                                        {{ $fundador[6]->content }}
+                                    </p>
+                                    <p style="text-align: left;">
+                                        {{ $fundador[7]->content }}
+                                    </p>
+                                    <p style="text-align: left;">
+                                        {{ $fundador[8]->content }}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
 
             <!-- Video Presentación / STAR -->
             <div class="section-full text-white bg-img-fix p-t70 p-b70 overlay-black-dark choose-us"
@@ -81,11 +134,40 @@
             </div>
             <!-- Video Presentación / END -->
 
+            <div class="content-area" style="padding: 80px 0px;">
+                <div class="container">
+                        <div class="section-head">
+                            <h2 class="text-uppercase">Zona de Descarga</h2>
+                            <div class="dez-divider divider-2px bg-primary icon-left">
+                                <i class="fa fa-thumbs-o-up bg-primary text-white"></i>
+                            </div>
+                        </div>
+                        <div class="section-content text-center ">
+                            <div class="row" style="justify-content: space-between">
+                                <div class="col-md-4" style="text-align: center; padding: 15px;">
+                                    <a href="{{ $linkDescarga[0]->content }}" target="_blank" class="site-button" 
+                                        style="width: 90%; font-size: 14px; padding: 10px 20px; border-radius: 30px;">
+                                        <b><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; CATÁLOGO DE PRODUCTOS</b>
+                                    </a>
+                                </div>
+                                <div class="col-md-4" style="text-align: center; padding: 15px;">
+                                    <a href="{{ $linkDescarga[1]->content }}" target="_blank"  class="site-button" 
+                                        style="width: 90%; font-size: 14px; padding: 10px 20px; border-radius: 30px;">
+                                        <b><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; PLAN LIBERTAD </b>
+                                    </a>
+                                </div>
+                                <div class="col-md-4" style="text-align: center; padding: 15px;">
+                                    <a href="{{ $linkDescarga[2]->content }}" target="_blank"  class="site-button" 
+                                        style="width: 90%; font-size: 14px; padding: 10px 20px; border-radius: 30px;">
+                                        <b><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; MANUAL DE POLÍTICAS Y PROCESOS</b>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
 
-            <!-- Paises / STAR -->
-            <x-countries-section />
 
-            <!-- Paises / END -->
 
 
         </div>

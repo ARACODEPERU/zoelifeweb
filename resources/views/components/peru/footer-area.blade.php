@@ -98,7 +98,6 @@
                 </div>
             </div>
         </div>
-        <!-- footer bottom part -->
         <div class="footer-bottom">
             <div class="container">
                 <div class="row">

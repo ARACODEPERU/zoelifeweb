@@ -1,4 +1,26 @@
 <div>
+    
+    <a class="appFacebook" target="_blanck" href="{{ $footer[0]->items[2]->item->content }}">
+        <img src="themes/zoelife/peru/images/redes/face.png" alt="Facebook">
+    </a>
+    
+    <a class="appInstagram" target="_blanck" href="{{ $footer[0]->items[3]->item->content }}">
+        <img src="themes/zoelife/peru/images/redes/ins.png" alt="Instagram">
+    </a>
+    
+    <a class="appYoutube" target="_blanck" href="{{ $footer[0]->items[4]->item->content }}">
+        <img src="themes/zoelife/peru/images/redes/you.png" alt="Youtube">
+    </a>
+
+    <a class="appTiktok" target="_blanck" href="{{ $footer[0]->items[9]->item->content }}">
+        <img src="themes/zoelife/peru/images/redes/tik.png" alt="Tiktok">
+    </a>
+    
+    
+    <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=51992914870&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?">
+        <img src="themes/zoelife/peru/images/redes/what.png" alt="Whatsapp">
+    </a>
+
     <!-- Footer -->
     <footer class="site-footer dark-style-2">
         <div class="footer-top">
@@ -10,15 +32,6 @@
                                 <img src="{{ $footer[0]->items[0]->item->content }}" alt="">
                             </div>
                             <p class="m-tb20">{{ $footer[0]->items[1]->item->content }}</p>
-                            <ul class="dez-social-icon dez-border dez-social-icon-lg">
-                                <li><a href="{{ $footer[0]->items[2]->item->content }}"
-                                        class="fab fa-facebook fb-btn"></a></li>
-                                <li><a href="{{ $footer[0]->items[3]->item->content }}"
-                                        class="fab fa-instagram tw-btn"></a></li>
-                                {{-- <li><a href="{{ $footer[0]->items[0]->item->content }}" class="fab fa-linkedin link-btn"></a></li> --}}
-                                <li><a href="{{ $footer[0]->items[4]->item->content }}"
-                                        class="fab fa-youtube pin-btn"></a></li>
-                            </ul>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
@@ -30,12 +43,18 @@
                                     @foreach ($testimonies as $testimony)
                                         <li>
                                             <a
-                                                href="javascript:openModalTestimony('{{ $testimony->title }}', '{{ $testimony->video }}')">{{ $testimony->title }}</a>
+                                                href="javascript:openModalTestimony('{{ $testimony->title }}', '{{ $testimony->video }}')">
+                                                <i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp; {{ $testimony->title }}
+                                            </a>
                                         </li>
                                     @endforeach
                                 @endif
+                                <li>
+                                <a href="{{ route('web_bolivia_testimonios') }}" style="color: orange;">
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Ver más testimonios
+                                </a>
+                                </li>
                             </ul>
-                            <a href="{{ route('web_bolivia_testimonios') }}" style="color: orange;"> Ver más testimonios</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
@@ -43,16 +62,18 @@
                             <h4 class="m-b10 text-uppercase">Navegación</h4>
                             <div class="dez-separator bg-primary"></div>
                             <ul>
-                                <li><a href="">Home</a></li>
-                                <li><a href="">Nosotros</a></li>
-                                <li><a href="">Alcansando las Estrellas</a></li>
-                                <li><a href="">Contacto</a></li>
+                                <li><a href="{{ route('web_bolivia_inicio') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Inicio</a></li>
+                                <li><a href="{{ route('web_bolivia_productos') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Productos</a></li>
+                                <li><a href="{{ route('web_bolivia_centros') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Centros de Distribución</a></li>
+                                <li><a href="{{ route('web_bolivia_eventos') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Eventos</a></li>
+                                <li><a href="{{ route('web_bolivia_alcanzando_las_estrellas') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Alcanzando las Estrellas</a></li>
+                                <li><a href="{{ route('web_bolivia_contacto') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Contacto</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="widget widget_getintuch">
-                            <h4 class="m-b10 text-uppercase">Contactanos</h4>
+                            <h4 class="m-b10 text-uppercase">Contáctanos</h4>
                             <div class="dez-separator bg-primary"></div>
                             <ul>
                                 <li>
@@ -77,12 +98,11 @@
                 </div>
             </div>
         </div>
-        <!-- footer bottom part -->
         <div class="footer-bottom">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 text-left">
-                        <span>© Copyright 2023</span>
+                        <span>© Copyright 2024</span>
                     </div>
                     <div class="col-lg-4 text-center">
                         <span> Desarrollado por <i class="fa fa-heart text-primary heart"></i>
@@ -91,9 +111,8 @@
                     </div>
                     <div class="col-lg-4 text-right">
                         <ul class="list-inline">
-                            <li><a href=""> Nosotros</a></li>
-                            <li><a href=""> Contactanos</a></li>
-                            <li><a href=""> Politica de Privacidad</a></li>
+                            <li><a href="{{ route('web_bolivia_contacto') }}"> Contáctanos</a></li>
+                            <li><a href="{{ $footer[0]->items[8]->item->content }}"> Política de Privacidad</a></li>
                         </ul>
                     </div>
                 </div>
