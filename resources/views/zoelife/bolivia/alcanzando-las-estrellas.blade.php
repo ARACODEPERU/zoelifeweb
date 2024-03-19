@@ -296,7 +296,7 @@
             <!-- Left & right section  END -->
         </div>
 
-        
+
         <!-- Video Presentación / STAR -->
         <div class="section-full text-white bg-img-fix p-t70 p-b70 overlay-black-dark choose-us"
             style="background-image:url({{ asset('themes/zoelife/peru/images/background/fondo.jpg') }});">
@@ -313,7 +313,7 @@
         </div>
         <!-- Video Presentación / END -->
 
-        
+
         <div class="content-area">
             <div class="container">
                 <div class="p-a30 bg-white m-b30 selector-d">

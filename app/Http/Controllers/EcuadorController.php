@@ -157,7 +157,7 @@ class EcuadorController extends Controller
         })
             ->get();
 
-        $testimonies = CmsTestimony::with('product')->get();
+            $testimonies = CmsTestimony::with('product')->inRandomOrder()->take(20)->get();
 
         return view('zoelife/ecuador.testimonios', [
             'banner'        => $banner,

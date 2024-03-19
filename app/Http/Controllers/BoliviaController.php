@@ -57,7 +57,7 @@ class BoliviaController extends Controller
             )
             ->orderBy('cms_section_items.position')
             ->get();
-    
+
 
         return view('zoelife/bolivia.index', [
             'slider' => $slider,
@@ -154,7 +154,7 @@ class BoliviaController extends Controller
                 ->groupBy('name');
         })
             ->get();
-        $testimonies = CmsTestimony::with('product')->inRandomOrder()->take(20)->get();
+            $testimonies = CmsTestimony::with('product')->inRandomOrder()->take(20)->get();
 
         return view('zoelife/bolivia.testimonios', [
             'banner'        => $banner,

@@ -25,20 +25,22 @@
             </div>
         </div>
         <!-- Breadcrumb row END -->
-        
+
         <div class="content-area">
           <div class="container">
               <!-- Dividers with icon -->
+              @if ( count($presentacion) > 0)
               <div class="p-a20 bg-white selector-d m-b20">
-                  <div class="section-content" style="text-align: center;">
-                      <div class="m-b10">
-                          <h3 class="text-uppercase text-primary"><b>{{ $presentacion[0]->content }}</b></h3>
-                          <p>{{ $presentacion[1]->content }}</p>
-                          <div class="dez-divider divider-2px bg-primary icon-center"><i
-                                  class="fa fa-truck bg-primary text-white"></i></div>
-                      </div>
-                  </div>
-              </div>
+                <div class="section-content" style="text-align: center;">
+                    <div class="m-b10">
+                        <h3 class="text-uppercase text-primary"><b>{{ $presentacion[0]->content }}</b></h3>
+                        <p>{{ $presentacion[1]->content }}</p>
+                        <div class="dez-divider divider-2px bg-primary icon-center"><i
+                                class="fa fa-truck bg-primary text-white"></i></div>
+                    </div>
+                </div>
+            </div>
+              @endif
               <!-- Dividers with icon END -->
           </div>
 
@@ -52,14 +54,16 @@
                       <div class="swiper tranding-slider">
                         <div class="swiper-wrapper">
                           <!-- Slide-start -->
-                          @foreach ($stars as $key => $star)
-                            <div class="swiper-slide tranding-slide">
-                              <div  style=" width: 100%; height: 250px;">
-                                  <img src="{{ $star->item->items[0]->content }}" alt="img">
-                                {{-- <h3 style="text-align: center; margin-top: 10px;">{{ $star_video->title }}</h2> --}}
-                              </div>
-                            </div>
-                          @endforeach
+                            @if ( count($stars) > 0)
+                                @foreach ($stars as $key => $star)
+                                    <div class="swiper-slide tranding-slide">
+                                    <div  style=" width: 100%; height: 250px;">
+                                        <img src="{{ $star->item->items[0]->content }}" alt="img">
+                                        {{-- <h3 style="text-align: center; margin-top: 10px;">{{ $star_video->title }}</h2> --}}
+                                    </div>
+                                    </div>
+                                @endforeach
+                            @endif
                           <!-- Slide-end -->
                         </div>
 
@@ -81,14 +85,16 @@
                 <div class="swiper tranding-slider">
                   <div class="swiper-wrapper">
                     <!-- Slide-start -->
-                    @foreach ($star_videos as $key => $star_video)
-                      <div class="swiper-slide tranding-slide">
-                        <div  style=" width: 100%; height: 250px;">
-                          {!! $star_video->item->items[0]->content !!}
-                          {{-- <h3 style="text-align: center; margin-top: 10px;">{{ $star_video->title }}</h2> --}}
-                        </div>
-                      </div>
-                    @endforeach
+                        @if ( count($star_videos) > 0 )
+                            @foreach ($star_videos as $key => $star_video)
+                                <div class="swiper-slide tranding-slide">
+                                <div  style=" width: 100%; height: 250px;">
+                                    {!! $star_video->item->items[0]->content !!}
+                                    {{-- <h3 style="text-align: center; margin-top: 10px;">{{ $star_video->title }}</h2> --}}
+                                </div>
+                                </div>
+                            @endforeach
+                        @endif
                     <!-- Slide-end -->
                   </div>
 

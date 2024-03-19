@@ -127,7 +127,7 @@ class ColombiaController extends Controller
         })
             ->get();
 
-        $testimonies = CmsTestimony::with('product')->get();
+            $testimonies = CmsTestimony::with('product')->inRandomOrder()->take(20)->get();
 
         return view('zoelife/colombia.testimonios', [
             'banner'        => $banner,
