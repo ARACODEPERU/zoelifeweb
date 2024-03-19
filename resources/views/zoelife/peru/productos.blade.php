@@ -29,7 +29,6 @@
 
         <div class="content-area">
             <div class="container">
-                <!-- Dividers with icon -->
                 <div class="p-a20 bg-white selector-d m-b20">
                     <div class="section-content" style="text-align: center;">
                         <div class="m-b10">
@@ -47,7 +46,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Dividers with icon END -->
             </div>
         </div>
 

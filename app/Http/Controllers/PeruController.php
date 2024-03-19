@@ -134,7 +134,7 @@ class PeruController extends Controller
         return view('zoelife/peru.productos', [
             'banner' => $banner,
             'beneficiop' => $beneficiop,
-            'productos' => $productos,
+            'productos' => $productos
         ]);
     }
 
