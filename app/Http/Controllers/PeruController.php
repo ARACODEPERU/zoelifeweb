@@ -227,7 +227,6 @@ class PeruController extends Controller
 
     public function eventos()
     {
-        $this->elementos_paginator = 4; //numero de elementos por vista
         $banner = CmsSection::where('component_id', 'peru_banner_eventos_11')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
@@ -254,12 +253,10 @@ class PeruController extends Controller
         ->orderBy('cms_section_items.position')
         ->get();
 
-        $elementos_paginator = 4; //cantidad de elementos a mostrar
         return view('zoelife/peru.eventos', [
             'banner' => $banner,
             'galeryEvents' => $galeryEvents,
-            'inscripcioncontacto' => $inscripcioncontacto,
-            'elementos_paginator' => $elementos_paginator
+            'inscripcioncontacto' => $inscripcioncontacto
         ]);
     }
 
@@ -298,18 +295,11 @@ class PeruController extends Controller
             ->orderBy('position')
             ->get();
 
-            //$stars->prepend(null);
-            //$star_videos->prepend(null);
-            $elementos_paginator = 4; //cantidad de elementos a mostrar
-            $elementos_paginator_v = 2; //para videos
-
         return view('zoelife/peru.alcanzando-las-estrellas', [
             'banner' => $banner,
             'presentacion' => $presentacion,
             'stars' => $stars,
-            'star_videos' => $star_videos,
-            'elementos_paginator' => $elementos_paginator,
-            'elementos_paginator_v' => $elementos_paginator_v
+            'star_videos' => $star_videos
         ]);
     }
 

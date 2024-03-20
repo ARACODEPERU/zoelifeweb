@@ -43,11 +43,11 @@ class MexicoController extends Controller
             )
             ->orderBy('cms_section_items.position')
             ->get();
-    
+
         $equipos = CmsSectionItem::with('item.items')->where('section_id', 66)
             ->orderBy('position')
             ->get();
-    
+
         $linkDescarga = CmsSection::where('component_id', 'peru_descargas_89')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
@@ -207,7 +207,7 @@ class MexicoController extends Controller
 
     public function eventos()
     {
-        $banner = CmsSection::where('component_id', 'ecuador_banner_eventos_37')
+        $banner = CmsSection::where('component_id', 'peru_banner_eventos_11')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
@@ -216,8 +216,27 @@ class MexicoController extends Controller
             )
             ->orderBy('cms_section_items.position')
             ->first();
+
+
+        $galeryEvents = CmsSectionItem::with('item.items')->where('section_id', 76)
+            ->orderBy('position')
+            ->get();
+        //$galeryEvents->prepend(null);
+
+        $inscripcioncontacto = CmsSection::where('component_id', 'peru_eventos_inscripcion_contacto_83')
+        ->join('cms_section_items', 'section_id', 'cms_sections.id')
+        ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+        ->select(
+            'cms_items.content',
+            'cms_section_items.position'
+        )
+        ->orderBy('cms_section_items.position')
+        ->get();
+
         return view('zoelife/mexico.eventos', [
-            'banner' => $banner
+            'banner' => $banner,
+            'galeryEvents' => $galeryEvents,
+            'inscripcioncontacto' => $inscripcioncontacto
         ]);
     }
 
@@ -238,9 +257,29 @@ class MexicoController extends Controller
             ->orderBy('cms_section_items.position')
             ->first();
 
-        //dd($banner);
+            $presentacion = CmsSection::where('component_id', 'peru_presentacion_alcanzando_las_estrellas_84')
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->get();
+
+        $stars = CmsSectionItem::with('item.items')->where('section_id', 85) //peru_galeria_alcanzando_las_estrellas_85
+            ->orderBy('position')
+            ->get();
+
+        $star_videos = CmsSectionItem::with('item.items')->where('section_id', 87) //peru_videos_alcanzando_las_estrellas_87
+            ->orderBy('position')
+            ->get();
+
         return view('zoelife/mexico.alcanzando-las-estrellas', [
-            'banner' => $banner
+            'banner' => $banner,
+            'presentacion' => $presentacion,
+            'stars' => $stars,
+            'star_videos' => $star_videos
         ]);
     }
 
