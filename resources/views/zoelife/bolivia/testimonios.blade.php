@@ -8,9 +8,9 @@
     <!-- Content -->
     <div class="page-content">
 
-        <!-- inner page banner -->
-        <div class="dez-bnr-inr overlay-black-middle" style="background-image:url({{ $banner->content }});">
-
+        <!-- inner page banner | Medidas 1920 x 300 pixeles -->
+        <div class="dez-bnr-inr ara_centrado_total">
+            <img style="width: 100%;" src="{{ $banner->content }}" alt="">
         </div>
         <!-- inner page banner END -->
 
@@ -50,7 +50,7 @@
                 <ul id="masonry" class="dez-gallery-listing row gallery-grid-4 m-b0 mfp-gallery">
                     @if (count($testimonies) > 0)
                         @foreach ($testimonies as $testimony)
-                            <li class="card-container col-md-3 {{ $testimony->product->name }}" style="padding: 15px;">
+                            <li class="card-container col-md-4 {{ $testimony->product->name }}" style="padding: 15px;">
                                 <div class="aracode-box-with">
                                     <div class="dez-post-media dez-img-effect zoom-slow">
                                         {!! $testimony->video !!}
@@ -87,9 +87,6 @@
             <!-- Left & right section  END -->
         </div>
 
-        <!-- Paises / STAR -->
-        {{-- <x-countries-section /> --}}
-        <!-- Paises / END -->
 
     </div>
     <!-- Content END-->

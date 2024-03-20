@@ -114,7 +114,6 @@
                 <!-- blog grid END -->
             </div>
         </div>
-
     </div>
     <!-- Content END-->
 

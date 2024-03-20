@@ -56,30 +56,9 @@
                         </li>
                     @endforeach
                 @endif
-
-                {{-- <li class="card-container col-md-4 ayacucho">
-                    <div class="dez-box dez-gallery-box">
-                        <div class="dez-thum dez-img-overlay1 dez-img-effect">
-                            <a href="">
-                                <img src="themes/zoelife/peru/images/center/ayacucho.jpg" alt="">
-                            </a>
-                            <div class="overlay-bx">
-                                <div class="overlay-icon"> <a href=""> <i class="fa fa-link icon-bx-xs"></i> </a>
-                                    <a href="themes/zoelife/peru/images/center/ayacucho.jpg" class="mfp-link"
-                                        title="Ayacucho"> <i class="fa fa-picture-o icon-bx-xs"></i> </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li> --}}
             </ul>
         </div>
     </div>
-
-
-    <!-- Paises / STAR -->
-    {{-- <x-countries-section /> --}}
-    <!-- Paises / END -->
 
     <br>
 

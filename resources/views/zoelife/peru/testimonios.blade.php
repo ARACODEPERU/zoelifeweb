@@ -50,14 +50,16 @@
                 <ul id="masonry" class="dez-gallery-listing row gallery-grid-4 m-b0 mfp-gallery">
                     @if (count($testimonies) > 0)
                         @foreach ($testimonies as $testimony)
-                            <li class="card-container col-md-3 {{ $testimony->product->name }}" style="padding: 15px;">
+                            <li class="card-container col-md-4 {{ $testimony->product->name }}" style="padding: 15px;">
                                 <div class="aracode-box-with">
                                     <div class="dez-post-media dez-img-effect zoom-slow">
                                         {!! $testimony->video !!}
                                     </div>
                                     <div class="dez-post-info">
                                         <div class="dez-post-title ">
-                                            <h4 class="post-title"><a href="" class=" des-producto">{{ $testimony->title }}</a></h4>
+                                            <h4 class="post-title">
+                                                <a href="" class=" des-producto">{{ $testimony->title }}</a>
+                                            </h4>
                                         </div>
                                         <div class="dez-post-tags">
                                             <div class="post-tags">
@@ -69,27 +71,9 @@
                         @endforeach
                     @endif
                 </ul>
-                <!-- Gallery END -->
-                <!-- Pagination start -->
-                {{-- <div class="pagination-bx">
-                    <ul class="pagination">
-                        <li class="previous"><a href="javascript:void(0);"><i class="fa fa-angle-double-left"></i></a>
-                        </li>
-                        <li class="active"><a href="javascript:void(0);">1</a></li>
-                        <li><a href="javascript:void(0);">2</a></li>
-                        <li><a href="javascript:void(0);">3</a></li>
-                        <li class="next"><a href="javascript:void(0);"><i class="fa fa-angle-double-right"></i></a>
-                        </li>
-                    </ul>
-                </div> --}}
-                <!-- Pagination END -->
             </div>
             <!-- Left & right section  END -->
         </div>
-
-        <!-- Paises / STAR -->
-        {{-- <x-countries-section /> --}}
-        <!-- Paises / END -->
 
     </div>
     <!-- Content END-->
