@@ -7,27 +7,13 @@
 
     <!-- Content -->
     <div class="page-content">
-
-        <!-- inner page banner -->
-        <div class="dez-bnr-inr overlay-black-middle"
-            style="background-image:url(themes/zoelife/ecuador/images/header-page/contactanosecuador.jpg);">
-            <!--
-                                                                        <div class="container">
-                                                                            <div class="dez-bnr-inr-entry">
-                                                                                <h1 class="text-white">Contact Us</h1>
-                                                                            </div>
-                                                                        </div>
-                                                                        -->
-        </div>
-        <!-- inner page banner END -->
-
         <!-- Breadcrumb row -->
-        <div class="breadcrumb-row">
+        <div class="breadcrumb-row" style="margin-top: 80px;">
             <div class="container">
                 <ul class="list-inline">
                     <li><a href="{{ route('web_ecuador_inicio') }}">Home</a></li>
                     <li><a href="{{ route('web_ecuador_inicio') }}">Productos</a></li>
-                    <li>Coffe 3 en 1</li>
+                    <li>{{ $product->name }}</li>
                 </ul>
             </div>
         </div>
@@ -59,15 +45,16 @@
 
         <!-- Why Choose Us -->
         <div class="section-full text-white bg-img-fix p-t70 p-b40 overlay-black-dark choose-us"
-            style="background-image:url(themes/zoelife/ecuador/images/background/fondo.jpg);">
+            style="background-image:url({{ asset('themes/zoelife/ecuador/images/background/fondo.jpg') }});">
             <div class="container">
-                <div class="section-head  text-center text-white">
-                    <h2 class="h2">Recomendaciones <span class="text-primary"> de Uso Sugerido</span></h2>
-                    <div class="dez-separator text-primary style-icon border-white"><img alt=""
-                            src="themes/zoelife/ecuador/images/leaf-green.png" /></div>
-                </div>
                 <div class="row">
                     <div class="col-md-6">
+                        <div class="section-head  text-center text-white">
+                            <h2 class="h2">Recomendaciones <span class="text-primary"> de Uso Sugerido</span></h2>
+                            <div class="dez-separator text-primary style-icon border-white">
+                                <img alt="" src="{{ asset('themes/zoelife/peru/images/leaf-green.png') }}" />
+                            </div>
+                        </div>
                         {!! $product->additional !!}
                     </div>
                     <div class="col-md-6">
@@ -87,10 +74,9 @@
                 <div class="p-a20 bg-white selector-d m-b20">
                     <div class="section-content" style="text-align: center;">
                         <div class="m-b10">
-                            <h5 class="text-uppercase">Testimonios del Coffee 3 en 1</h5>
-                            <p>Lorem Ipsum is simply dummy text of the een the industry's standard dummy text ever since the
-                                1500s, when an unknown printer took a Gallery of type and scrambled it to make a type
-                                specimen book. It has survived not only five centuries, but also the leap into electronic
+                            <h5 class="text-uppercase">Testimonios del {{ $product->name }}</h5>
+                            <p>
+                                Sumérgete en una experiencia única y conoce de primera mano cómo nuestro producto ha superado las expectativas y ha transformado rutinas diarias en momentos extraordinarios.
                             </p>
                             <div class="dez-divider divider-2px bg-primary icon-center"><i
                                     class="fa fa-truck bg-primary text-white"></i></div>

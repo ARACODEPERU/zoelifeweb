@@ -7,20 +7,13 @@
 
     <!-- Content -->
     <div class="page-content">
-
-        <!-- inner page banner
-        <div class="dez-bnr-inr overlay-black-middle"
-            style="background-image:url(themes/zoelife/peru/images/header-page/contactanosPeru.jpg);">
-        </div> -->
-        <!-- inner page banner END -->
-
         <!-- Breadcrumb row -->
-        <div class="breadcrumb-row">
+        <div class="breadcrumb-row" style="margin-top: 80px;">
             <div class="container">
                 <ul class="list-inline">
                     <li><a href="{{ route('web_peru_inicio') }}">Home</a></li>
                     <li><a href="{{ route('web_peru_inicio') }}">Productos</a></li>
-                    <li>Coffe 3 en 1</li>
+                    <li>{{ $product->name }}</li>
                 </ul>
             </div>
         </div>
@@ -52,15 +45,16 @@
 
         <!-- Why Choose Us -->
         <div class="section-full text-white bg-img-fix p-t70 p-b40 overlay-black-dark choose-us"
-            style="background-image:url(themes/zoelife/peru/images/background/fondo.jpg);">
+            style="background-image:url({{ asset('themes/zoelife/peru/images/background/fondo.jpg') }});">
             <div class="container">
-                <div class="section-head  text-center text-white">
-                    <h2 class="h2">Recomendaciones <span class="text-primary"> de Uso Sugerido</span></h2>
-                    <div class="dez-separator text-primary style-icon border-white"><img alt=""
-                            src="themes/zoelife/peru/images/leaf-green.png" /></div>
-                </div>
                 <div class="row">
                     <div class="col-md-6">
+                        <div class="section-head  text-center text-white">
+                            <h2 class="h2">Recomendaciones <span class="text-primary"> de Uso Sugerido</span></h2>
+                            <div class="dez-separator text-primary style-icon border-white">
+                                <img alt="" src="{{ asset('themes/zoelife/peru/images/leaf-green.png') }}" />
+                            </div>
+                        </div>
                         {!! $product->additional !!}
                     </div>
                     <div class="col-md-6">
@@ -80,9 +74,8 @@
                     <div class="section-content" style="text-align: center;">
                         <div class="m-b10">
                             <h5 class="text-uppercase">Testimonios del {{ $product->name }}</h5>
-                            <p>Lorem Ipsum is simply dummy text of the een the industry's standard dummy text ever since the
-                                1500s, when an unknown printer took a Gallery of type and scrambled it to make a type
-                                specimen book. It has survived not only five centuries, but also the leap into electronic
+                            <p>
+                                Sumérgete en una experiencia única y conoce de primera mano cómo nuestro producto ha superado las expectativas y ha transformado rutinas diarias en momentos extraordinarios.
                             </p>
                             <div class="dez-divider divider-2px bg-primary icon-center"><i
                                     class="fa fa-truck bg-primary text-white"></i></div>
@@ -119,21 +112,6 @@
                     @endif
                 </div>
                 <!-- blog grid END -->
-
-                <!-- Pagination -->
-                {{-- <div class="pagination-bx">
-                    <ul class="pagination">
-                        <li class="previous"><a href="javascript:void(0);"><i class="fa fa-angle-double-left"></i></a>
-                        </li>
-                        <li class="active"><a href="javascript:void(0);">1</a></li>
-                        <li><a href="javascript:void(0);">2</a></li>
-                        <li><a href="javascript:void(0);">3</a></li>
-                        <li class="next"><a href="javascript:void(0);"><i class="fa fa-angle-double-right"></i></a>
-                        </li>
-                    </ul>
-                </div> --}}
-                <!-- Pagination END -->
-
             </div>
         </div>
 
