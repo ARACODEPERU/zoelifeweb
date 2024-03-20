@@ -25,8 +25,6 @@
         </div>
         <!-- Breadcrumb row END -->
 
-        
-
         <div class="content-area">
             <div class="container">
                 <div class="p-a20 bg-white selector-d m-b20">

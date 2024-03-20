@@ -99,7 +99,7 @@ class MexicoController extends Controller
 
     public function productos()
     {
-        $banner = CmsSection::where('component_id', 'ecuador_banner_productos_34')
+        $banner = CmsSection::where('component_id', 'mexico_banner_productos_60')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
@@ -109,6 +109,16 @@ class MexicoController extends Controller
             ->orderBy('cms_section_items.position')
             ->first();
 
+        $beneficiop = CmsSection::where('component_id', 'mexico_beneficio_productos_82')
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->get();
+
         $productos = OnliItem::join('countries', 'onli_items.country_id', '=', 'countries.id')
             ->where('countries.description', 'Mexico')
             ->select('onli_items.name', 'onli_items.image', 'onli_items.id')
@@ -116,7 +126,8 @@ class MexicoController extends Controller
 
         return view('zoelife/mexico.productos', [
             'banner' => $banner,
-            'productos' => $productos,
+            'beneficiop' => $beneficiop,
+            'productos' => $productos
         ]);
     }
 
