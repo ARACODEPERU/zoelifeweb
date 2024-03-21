@@ -1,24 +1,23 @@
 <div>
 
-    <a class="appFacebook" target="_blanck" href="{{ $footer[0]->items[2]->item->content }}">
-        <img src="themes/zoelife/peru/images/redes/face.png" alt="Facebook">
+    <a class="appFacebook" target="_blanck" href="{{ $footer[0]->items[4]->item->content }}">
+        <img src="{{ $footer[0]->items[3]->item->content }}" alt="Facebook">
     </a>
     
-    <a class="appInstagram" target="_blanck" href="{{ $footer[0]->items[3]->item->content }}">
-        <img src="themes/zoelife/peru/images/redes/ins.png" alt="Instagram">
+    <a class="appInstagram" target="_blanck" href="{{ $footer[0]->items[6]->item->content }}">
+        <img src="{{ $footer[0]->items[5]->item->content }}" alt="Instagram">
     </a>
     
-    <a class="appYoutube" target="_blanck" href="{{ $footer[0]->items[4]->item->content }}">
-        <img src="themes/zoelife/peru/images/redes/you.png" alt="Youtube">
+    <a class="appYoutube" target="_blanck" href="{{ $footer[0]->items[8]->item->content }}">
+        <img src="{{ $footer[0]->items[7]->item->content }}" alt="Youtube">
     </a>
 
-    <a class="appTiktok" target="_blanck" href="{{ $footer[0]->items[9]->item->content }}">
-        <img src="themes/zoelife/peru/images/redes/tik.png" alt="Tiktok">
+    <a class="appTiktok" target="_blanck" href="{{ $footer[0]->items[10]->item->content }}">
+        <img src="{{ $footer[0]->items[9]->item->content }}" alt="Tiktok">
     </a>
     
-    
-    <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=51992914870&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?">
-        <img src="themes/zoelife/peru/images/redes/what.png" alt="Whatsapp">
+    <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=51{{ $footer[0]->items[12]->item->content }}&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?">
+        <img src="{{ $footer[0]->items[11]->item->content }}" alt="Whatsapp">
     </a>
 
     <!-- Footer -->
@@ -79,17 +78,17 @@
                                 <li>
                                     <i class="fa fa-map-marker"></i>
                                     <strong>Oficina Principal:</strong>
-                                    {{ $footer[0]->items[5]->item->content }}
+                                    {{ $footer[0]->items[2]->item->content }}
                                 </li>
                                 <li>
                                     <i class="fa fa-envelope"></i>
                                     <strong>E-mail:</strong>
-                                    {{ $footer[0]->items[6]->item->content }}
+                                    {{ $footer[0]->items[13]->item->content }}
                                 </li>
                                 <li>
                                     <i class="fa fa-phone"></i>
                                     <strong>Teléfono: <strong>
-                                            {{ $footer[0]->items[7]->item->content }}
+                                            {{ $footer[0]->items[12]->item->content }}
                                             <br />
                                 </li>
                             </ul>
