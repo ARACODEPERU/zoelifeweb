@@ -72,7 +72,7 @@
                                 <i class="fa fa-envelope"></i><span>{{ $header[3]->content }}</span>
                             </li>
                             <li>
-                                <i class="fa fa-phone"></i><span>{{ $header[4]->content }}</span>
+                                <i class="fa fa-phone"></i><span>(+51) {{ $header[4]->content }}</span>
                             </li>
                         </ul>
                     </div>

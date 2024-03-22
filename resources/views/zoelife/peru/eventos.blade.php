@@ -403,7 +403,7 @@ background: var(--primary);
                     </a>
                 </div>
                 <div class="col-md-4" style="text-align: center;">
-                    <a href="https://api.whatsapp.com/send?phone={{ $inscripcioncontacto[1]->content }}&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?" target="_blank"  class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;">
+                    <a href="https://api.whatsapp.com/send?phone=51{{ $inscripcioncontacto[1]->content }}&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?" target="_blank"  class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;">
                         <b><i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;&nbsp; Más Información</b>
                     </a>
                 </div>

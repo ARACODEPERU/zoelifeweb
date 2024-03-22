@@ -5,33 +5,11 @@
     <x-bolivia.header-area></x-bolivia.header-area>
     <!-- Encabezado fin -->
 
-
-    <!-- Content -->
-    <div class="page-content">
-
-        <!-- inner page banner -->
-        <div class="dez-bnr-inr overlay-black-middle" style="background-image:url({{ $banner->content }});">
-
-        </div>
-        <!-- inner page banner END -->
-
-        <!-- Breadcrumb row -->
-        <div class="breadcrumb-row">
-            <div class="container">
-                <ul class="list-inline">
-                    <li><a href="index.html">Home</a></li>
-                    <li>Alcanzando las Estrellas</li>
-                </ul>
-            </div>
-        </div>
-        <!-- Breadcrumb row END -->
-
-
         <!-- Content -->
     <div class="page-content">
 
         <!-- inner page banner -->
-        <div class="dez-bnr-inr ara_centrado_total">
+      <div class="dez-bnr-inr ara_centrado_total">
           <img style="width: 100%;" src="{{ $banner->content }}" alt="">
       </div>
         <!-- inner page banner END -->
@@ -60,16 +38,11 @@
                                 class="fa fa-truck bg-primary text-white"></i></div>
                     </div>
                 </div>
-            </div>
+              </div>
               @endif
               <!-- Dividers with icon END -->
           </div>
-
-
-
-<!-- CARRUSEL INICIO -->
-
-        <div>
+        </div>
 
           <section style="padding: 60px 10px;">
                       <div class="swiper tranding-slider">
@@ -136,10 +109,7 @@
           <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
 
-        </div>
-
-
-</div>
+    </div>
 
 <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 <!-- script del video -->

@@ -15,7 +15,7 @@
     <div class="breadcrumb-row">
         <div class="container">
             <ul class="list-inline">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="{{ route('web_peru_inicio') }}">Home</a></li>
                 <li>Centros de Distribución</li>
             </ul>
         </div>
@@ -40,7 +40,6 @@
                     @endif
                 </ul>
             </div>
-
 
             <ul id="masonry" class="dez-gallery-listing row gallery-grid-4 m-b0 mfp-gallery">
                 @if (count($centers) > 0)

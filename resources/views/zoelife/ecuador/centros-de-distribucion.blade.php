@@ -6,16 +6,16 @@
     <!-- Encabezado fin -->
 
     <!-- inner page banner -->
-    <div class="dez-bnr-inr overlay-black-middle" style="background-image:url({{ $banner->content }});">
-
+    <div class="dez-bnr-inr ara_centrado_total">
+        <img style="width: 100%;" src="{{ $banner->content }}" alt="">
     </div>
-    <!-- inner page banner END -->
+<!-- inner page banner END -->
 
     <!-- Breadcrumb row -->
     <div class="breadcrumb-row">
         <div class="container">
             <ul class="list-inline">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="{{ route('web_ecuador_inicio') }}">Home</a></li>
                 <li>Centros de Distribución</li>
             </ul>
         </div>
@@ -23,8 +23,7 @@
     <!-- Breadcrumb row END -->
 
     <div class="content-area">
-        <!-- Left & right section start -->
-        <div class="container">
+        <div class="">
             <!-- Gallery -->
             <div class="site-filters clearfix center m-b40">
                 <ul class="filters" data-toggle="buttons">
@@ -45,7 +44,7 @@
             <ul id="masonry" class="dez-gallery-listing row gallery-grid-4 m-b0 mfp-gallery">
                 @if (count($centers) > 0)
                     @foreach ($centers as $center)
-                        <li class="card-container col-md-4 {{ $center->district->department->name }}">
+                        <li class="card-container col-md-4 {{ $center->district->department->name }}" style="padding: 15px;">
                             <div class="dez-box dez-gallery-box">
                                 <a href="#" onclick="openModalCenterDetails(event, {{ json_encode($center) }})">
                                     <div class="dez-thum dez-img-overlay1 dez-img-effect">

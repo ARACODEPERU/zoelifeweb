@@ -148,7 +148,7 @@ class BoliviaController extends Controller
 
     public function testimonios()
     {
-        $banner = CmsSection::where('component_id', 'peru_banner_testimonios_9')
+        $banner = CmsSection::where('component_id', 'bolivia_banner_testimonios_22')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
