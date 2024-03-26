@@ -54,7 +54,6 @@ Route::get('/peru.productos', [PeruController::class, 'productos'])->name('web_p
 Route::get('/peru.producto-descripcion/{id}', [PeruController::class, 'productodescripcion'])->name('web_peru_producto_descripcion');
 Route::get('/peru.testimonios', [PeruController::class, 'testimonios'])->name('web_peru_testimonios');
 Route::get('/peru.centros-de-distribucion', [PeruController::class, 'centros'])->name('web_peru_centros');
-Route::get('/peru.centros-de-distribucion-lima', [PeruController::class, 'centroslima'])->name('web_peru_centros_lima');
 Route::get('/peru.eventos', [PeruController::class, 'eventos'])->name('web_peru_eventos');
 Route::get('/peru.alcanzando-las-estrellas', [PeruController::class, 'estrellas'])->name('web_peru_alcanzando_las_estrellas');
 Route::get('/peru.zoe-university', [PeruController::class, 'university'])->name('web_peru_university');
@@ -87,8 +86,6 @@ Route::get('/ecuador.zoe-university', [EcuadorController::class, 'university'])-
 Route::get('/ecuador.contacto', [EcuadorController::class, 'contacto'])->name('web_ecuador_contacto');
 
 
-
-
 Route::get('/colombia', [ColombiaController::class, 'inicio'])->name('web_colombia_inicio');
 Route::get('/colombia.nosotros', [ColombiaController::class, 'nosotros'])->name('web_colombia_nosotros');
 Route::get('/colombia.productos', [ColombiaController::class, 'productos'])->name('web_colombia_productos');
@@ -99,8 +96,6 @@ Route::get('/colombia.eventos', [ColombiaController::class, 'eventos'])->name('w
 Route::get('/colombia.alcanzando-las-estrellas', [ColombiaController::class, 'estrellas'])->name('web_colombia_alcanzando_las_estrellas');
 Route::get('/colombia.zoe-university', [ColombiaController::class, 'university'])->name('web_colombia_university');
 Route::get('/colombia.contacto', [ColombiaController::class, 'contacto'])->name('web_colombia_contacto');
-
-
 
 
 Route::get('/mexico', [MexicoController::class, 'inicio'])->name('web_mexico_inicio');

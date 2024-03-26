@@ -98,6 +98,15 @@
                                     </div>
                                 </div>
                             </form>
+                            <div class="col-md-12">
+                                <div class="g-recaptcha-bx">
+                                    <div class="g-recaptcha" data-sitekey="6LefsVUUAAAAADBPsLZzsNnETChealv6PYGzv3ZN"
+                                        data-callback="verifyRecaptchaCallback"
+                                        data-expired-callback="expiredRecaptchaCallback"></div>
+                                    <input class="form-control d-none" style="display:none;" data-recaptcha="true"
+                                        required data-error="Please complete the Captcha">
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- Left part END -->
@@ -152,12 +161,6 @@
             </div>
         </div>
         <!-- contact area  END -->
-
-
-        <!-- Paises / STAR -->
-        {{-- <x-countries-section /> --}}
-        <!-- Paises / END -->
-
     </div>
     <!-- Content END-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

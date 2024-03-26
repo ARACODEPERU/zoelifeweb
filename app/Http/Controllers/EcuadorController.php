@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\LocalSale;
 use Illuminate\Http\Request;
-use Modules\CMS\Entities\CmsPage;
 use Modules\CMS\Entities\CmsSection;
 use Modules\CMS\Entities\CmsSectionItem;
 use Modules\CMS\Entities\CmsTestimony;
@@ -34,7 +33,6 @@ class EcuadorController extends Controller
             ->orderBy('cms_section_items.position')
             ->first();
 
-
         $fundador = CmsSection::where('component_id', 'zoe_fundador_area_95')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
@@ -49,7 +47,7 @@ class EcuadorController extends Controller
             ->orderBy('position')
             ->get();
 
-        $linkDescarga = CmsSection::where('component_id', 'peru_descargas_89')
+        $linkDescarga = CmsSection::where('component_id', 'ecuador_descargas_91')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(

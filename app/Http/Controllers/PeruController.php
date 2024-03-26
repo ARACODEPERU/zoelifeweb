@@ -33,7 +33,6 @@ class PeruController extends Controller
             ->orderBy('cms_section_items.position')
             ->first();
 
-
         $fundador = CmsSection::where('component_id', 'zoe_fundador_area_95')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
@@ -65,40 +64,6 @@ class PeruController extends Controller
             'fundador' => $fundador,
             'equipos' => $equipos,
             'linkDescarga' => $linkDescarga
-        ]);
-    }
-
-    public function nosotros()
-    {
-        $banner = CmsSection::where('component_id', 'peru_banner_nosotros_7')
-            ->join('cms_section_items', 'section_id', 'cms_sections.id')
-            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
-            ->select(
-                'cms_items.content',
-                'cms_section_items.position'
-            )
-            ->orderBy('cms_section_items.position')
-            ->first();
-
-        $video = CmsSection::where('component_id', 'peru_video_presentacion_nosotros_6')
-            ->join('cms_section_items', 'section_id', 'cms_sections.id')
-            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
-            ->select(
-                'cms_items.content',
-                'cms_section_items.position'
-            )
-            ->orderBy('cms_section_items.position')
-            ->first();
-
-
-        $equipos = CmsSectionItem::with('item.items')->where('section_id', 66)
-            ->orderBy('position')
-            ->get();
-        //dd($equipos);
-        return view('zoelife/peru.nosotros', [
-            'banner' => $banner,
-            'video' => $video,
-            'equipos' => $equipos,
         ]);
     }
 
@@ -169,19 +134,15 @@ class PeruController extends Controller
                 ->from('onli_items')
                 ->where('status', true)
                 ->groupBy('name');
-        })
+            })
             ->get();
-
-        // $testimonies = CmsTestimony::with('product')->get();
+        
         $testimonies = CmsTestimony::with('product')->inRandomOrder()->take(20)->get();
 
-
-        //$testimonies->prepend(null);
         return view('zoelife/peru.testimonios', [
             'banner'        => $banner,
             'products'      => $products,
-            'testimonies'   => $testimonies,
-            'elementos_paginator_v' => 4
+            'testimonies'   => $testimonies
         ]);
     }
 
@@ -197,16 +158,6 @@ class PeruController extends Controller
             ->orderBy('cms_section_items.position')
             ->first();
 
-        $presentacion= CmsSection::where('component_id', 'peru_presentacion_alcanzando_las_estrellas_84')
-            ->join('cms_section_items', 'section_id', 'cms_sections.id')
-            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
-            ->select(
-                'cms_items.content',
-                'cms_section_items.position'
-            )
-            ->orderBy('cms_section_items.position')
-            ->get();
-
         $centers = LocalSale::with('district.department')->where('country_id', 1)->get();
 
         $departments = LocalSale::join('districts', 'ubigeo', 'districts.id')
@@ -219,7 +170,6 @@ class PeruController extends Controller
 
         return view('zoelife/peru.centros-de-distribucion', [
             'banner' => $banner,
-            'presentacion' => $presentacion,
             'centers' => $centers,
             'departments' => $departments
         ]);
@@ -258,11 +208,6 @@ class PeruController extends Controller
             'galeryEvents' => $galeryEvents,
             'inscripcioncontacto' => $inscripcioncontacto
         ]);
-    }
-
-    public function centroslima()
-    {
-        return view('zoelife/peru.centros-de-distribucion-lima');
     }
 
     public function estrellas()

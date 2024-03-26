@@ -48,7 +48,7 @@ class BoliviaController extends Controller
             ->orderBy('position')
             ->get();
 
-        $linkDescarga = CmsSection::where('component_id', 'peru_descargas_89')
+        $linkDescarga = CmsSection::where('component_id', 'bolivia_descargas_90')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
@@ -65,34 +65,6 @@ class BoliviaController extends Controller
             'fundador' => $fundador,
             'equipos' => $equipos,
             'linkDescarga' => $linkDescarga
-        ]);
-    }
-
-    public function nosotros()
-    {
-        $banner = CmsSection::where('component_id', 'peru_banner_nosotros_7')
-            ->join('cms_section_items', 'section_id', 'cms_sections.id')
-            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
-            ->select(
-                'cms_items.content',
-                'cms_section_items.position'
-            )
-            ->orderBy('cms_section_items.position')
-            ->first();
-
-        $video = CmsSection::where('component_id', 'peru_video_presentacion_nosotros_6')
-            ->join('cms_section_items', 'section_id', 'cms_sections.id')
-            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
-            ->select(
-                'cms_items.content',
-                'cms_section_items.position'
-            )
-            ->orderBy('cms_section_items.position')
-            ->first();
-
-        return view('zoelife/bolivia.nosotros', [
-            'banner' => $banner,
-            'video' => $video
         ]);
     }
 
@@ -163,9 +135,10 @@ class BoliviaController extends Controller
                 ->from('onli_items')
                 ->where('status', true)
                 ->groupBy('name');
-        })
+            })
             ->get();
-            $testimonies = CmsTestimony::with('product')->inRandomOrder()->take(20)->get();
+
+        $testimonies = CmsTestimony::with('product')->inRandomOrder()->take(20)->get();
 
         return view('zoelife/bolivia.testimonios', [
             'banner'        => $banner,
@@ -176,7 +149,7 @@ class BoliviaController extends Controller
 
     public function centros()
     {
-        $banner = CmsSection::where('component_id', 'peru_banner_centros_de_distribucion_10')
+        $banner = CmsSection::where('component_id', 'bolivia_banner_centros_de_distribucion_23')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
@@ -205,7 +178,7 @@ class BoliviaController extends Controller
 
     public function eventos()
     {
-        $banner = CmsSection::where('component_id', 'peru_banner_eventos_11')
+        $banner = CmsSection::where('component_id', 'bolivia_banner_eventos_24')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
@@ -221,7 +194,7 @@ class BoliviaController extends Controller
         ->get();
         //$galeryEvents->prepend(null);
 
-        $inscripcioncontacto = CmsSection::where('component_id', 'peru_eventos_inscripcion_contacto_83')
+        $inscripcioncontacto = CmsSection::where('component_id', 'bolivia_eventos_inscripcion_contacto_100')
         ->join('cms_section_items', 'section_id', 'cms_sections.id')
         ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
         ->select(
@@ -238,11 +211,6 @@ class BoliviaController extends Controller
         ]);
     }
 
-    public function centroslima()
-    {
-        return view('zoelife/peru.centros-de-distribucion-lima');
-    }
-
     public function estrellas()
     {
         $banner = CmsSection::where('component_id', 'bolivia_banner_alcanzando_las_estrellas_25')
@@ -255,7 +223,7 @@ class BoliviaController extends Controller
             ->orderBy('cms_section_items.position')
             ->first();
 
-            $presentacion = CmsSection::where('component_id', 'peru_presentacion_alcanzando_las_estrellas_84')
+        $presentacion = CmsSection::where('component_id', 'peru_presentacion_alcanzando_las_estrellas_84')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
@@ -281,9 +249,9 @@ class BoliviaController extends Controller
         ]);
     }
 
-    public function contacto()
+    public function university()
     {
-        $banner = CmsSection::where('component_id', 'peru_banner_contacto_13')
+        $banner = CmsSection::where('component_id', 'bolivia_banner_university_104')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
@@ -293,8 +261,36 @@ class BoliviaController extends Controller
             ->orderBy('cms_section_items.position')
             ->first();
 
-        return view('zoelife/bolivia.contacto', [
+        return view('zoelife/bolivia.zoe-university', [
             'banner' => $banner
+        ]);
+    }
+
+    public function contacto()
+    {
+        $banner = CmsSection::where('component_id', 'bolivia_banner_contacto_26')
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->first();
+
+        $datosContacto = CmsSection::where('component_id', 'bolivia_datos_contacto_108')
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->get();
+
+        return view('zoelife/bolivia.contacto', [
+            'banner' => $banner,
+            'datosContacto' => $datosContacto
         ]);
     }
 }
