@@ -259,7 +259,7 @@ class EcuadorController extends Controller
             ->orderBy('cms_section_items.position')
             ->first();
 
-        return view('zoelife/peru.zoe-university', [
+        return view('zoelife/ecuador.zoe-university', [
             'banner' => $banner
         ]);
     }
