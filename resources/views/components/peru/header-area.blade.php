@@ -4,70 +4,17 @@
     <link rel="stylesheet" href="{{ asset('css/darkMode.css') }}">
     <script src="{{ asset('js/darkMode.js') }}"></script>
 
-    <!--
-    <div id="loading-area" class="loading-page-1">
-        <div class="spinner">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="8" cy="8" r="7" stroke-width="1"/>
-            </svg>
-        </div>
-    </div>
-    -->
     <!-- Header -->
     <header class="site-header header-style-1 mo-left dark dark-style-2">
         <!-- Top bar -->
         <div class="top-bar">
             <div class="top-bar-content" style="width: 100%; padding: 0px 40px;">
                 <div class="top-bar-contect-space row justify-content-between">
-                    <!--
-                    <div class="dez-topbar-left">
-                        <ul class="social-bx list-inline pull-right">
-                            <li>
-                                <a href="{{ $header[0]->content }}" target="_blank" class="fab fa-facebook"
-                                    style="padding: 10px; font-size: 16px;">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="{{ $header[1]->content }}" target="_blank" class="fab fa-instagram"
-                                    style="padding: 10px; font-size: 16px;">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="{{ $header[2]->content }}" target="_blank" class="fab fa-youtube"
-                                    style="padding: 10px; font-size: 16px;">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    -->
                     <div class="dez-topbar-right list-unstyled e-p-bx ">
                         <ul>
                             <li style="float: left;">
                                 <a href="https://zoelifeinternational.com/"><i class="fa fa-globe" aria-hidden="true"></i><span>Zoé Global</span></a>
                             </li>
-                            <!--
-                            <li style="float: left;">
-                                <span>
-                                    <div class="dropdown">
-                                        <button class="btn-secondary" type="button" data-toggle="dropdown" aria-expanded="false">
-                                            <a class="dropdown-item" href="{{ route($country[0]->route) }}">
-                                                <img  style="height: 25px;" src="{{ $country[0]->country->image }}" alt="">
-                                                <b style="color: #fff;"> &nbsp; {{ $country[0]->country->description }}</b>
-                                                <i class="dropdown-toggle"></i>
-                                            </a>
-                                        </button>
-                                        <div class="dropdown-menu">
-                                            @foreach ($pages as $page)
-                                            <a class="dropdown-item" href="{{ route($page->route) }}">
-                                                 <img  style="height: 25px;" src="{{ $page->country->image }}" alt="">
-                                                <b class="country"> &nbsp; {{ $page->country->description }}</b>
-                                            </a>
-                                            @endforeach
-                                        </div>
-                                    </div>
-                                </span>
-                            </li>
-                            -->
                             <li>
                                 <i class="fa fa-envelope"></i><span>{{ $header[3]->content }}</span>
                             </li>

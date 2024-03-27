@@ -57,7 +57,6 @@ class PeruController extends Controller
             ->orderBy('cms_section_items.position')
             ->get();
 
-
         return view('zoelife/peru.index', [
             'slider' => $slider,
             'video' => $video,

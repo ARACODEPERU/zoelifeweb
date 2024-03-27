@@ -65,35 +65,7 @@ class EcuadorController extends Controller
             'linkDescarga' => $linkDescarga
         ]);
     }
-
-    public function nosotros()
-    {
-        $banner = CmsSection::where('component_id', 'ecuador_banner_nosotros_33')
-            ->join('cms_section_items', 'section_id', 'cms_sections.id')
-            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
-            ->select(
-                'cms_items.content',
-                'cms_section_items.position'
-            )
-            ->orderBy('cms_section_items.position')
-            ->first();
-
-        $video = CmsSection::where('component_id', 'ecuador_video_presentacion_nosotros_32')
-            ->join('cms_section_items', 'section_id', 'cms_sections.id')
-            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
-            ->select(
-                'cms_items.content',
-                'cms_section_items.position'
-            )
-            ->orderBy('cms_section_items.position')
-            ->first();
-
-        return view('zoelife/ecuador.nosotros', [
-            'banner' => $banner,
-            'video' => $video
-        ]);
-    }
-
+    
     /*------------ PRODUCTOS - STAR ------------*/
 
     public function productos()
@@ -132,9 +104,7 @@ class EcuadorController extends Controller
 
     public function productodescripcion($id)
     {
-        $product = OnliItem::where('id', $id)
-            ->first();
-
+        $product = OnliItem::where('id', $id)->first();
         $testimonies = CmsTestimony::where('item_id', $id)->get();
 
         return view('zoelife/ecuador.producto-descripcion', [
@@ -206,7 +176,7 @@ class EcuadorController extends Controller
 
     public function eventos()
     {
-        $banner = CmsSection::where('component_id', 'peru_banner_eventos_11')
+        $banner = CmsSection::where('component_id', 'ecuador_banner_eventos_37')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
@@ -222,7 +192,7 @@ class EcuadorController extends Controller
             ->get();
         //$galeryEvents->prepend(null);
 
-        $inscripcioncontacto = CmsSection::where('component_id', 'peru_eventos_inscripcion_contacto_83')
+        $inscripcioncontacto = CmsSection::where('component_id', 'ecuador_eventos_inscripcion_contacto_101')
         ->join('cms_section_items', 'section_id', 'cms_sections.id')
         ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
         ->select(
@@ -239,11 +209,6 @@ class EcuadorController extends Controller
         ]);
     }
 
-    public function centroslima()
-    {
-        return view('zoelife/ecuador.centros-de-distribucion-lima');
-    }
-
     public function estrellas()
     {
         $banner = CmsSection::where('component_id', 'ecuador_banner_alcanzando_las_estrellas_38')
@@ -256,7 +221,7 @@ class EcuadorController extends Controller
             ->orderBy('cms_section_items.position')
             ->first();
 
-            $presentacion = CmsSection::where('component_id', 'peru_presentacion_alcanzando_las_estrellas_84')
+            $presentacion = CmsSection::where('component_id', 'ecuador_presentacion_alcanzando_las_estrellas_113')
                 ->join('cms_section_items', 'section_id', 'cms_sections.id')
                 ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
                 ->select(
@@ -282,6 +247,23 @@ class EcuadorController extends Controller
         ]);
     }
 
+    public function university()
+    {
+        $banner = CmsSection::where('component_id', 'ecuador_banner_university_105')
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->first();
+
+        return view('zoelife/peru.zoe-university', [
+            'banner' => $banner
+        ]);
+    }
+
     public function contacto()
     {
         $banner = CmsSection::where('component_id', 'ecuador_banner_contacto_39')
@@ -294,8 +276,19 @@ class EcuadorController extends Controller
             ->orderBy('cms_section_items.position')
             ->first();
 
+        $datosContacto = CmsSection::where('component_id', 'ecuador_datos_contacto_109')
+                ->join('cms_section_items', 'section_id', 'cms_sections.id')
+                ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+                ->select(
+                    'cms_items.content',
+                    'cms_section_items.position'
+                )
+                ->orderBy('cms_section_items.position')
+                ->get();
+
         return view('zoelife/ecuador.contacto', [
-            'banner' => $banner
+            'banner' => $banner,
+            'datosContacto' => $datosContacto
         ]);
     }
 }

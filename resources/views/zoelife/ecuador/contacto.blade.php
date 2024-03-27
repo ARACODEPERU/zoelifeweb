@@ -9,8 +9,8 @@
     <div class="page-content">
 
         <!-- inner page banner -->
-        <div class="dez-bnr-inr overlay-black-middle" style="background-image:url({{ $banner->content }});">
-
+        <div class="dez-bnr-inr ara_centrado_total">
+            <img style="width: 100%;" src="{{ $banner->content }}" alt="">
         </div>
         <!-- inner page banner END -->
 
@@ -18,7 +18,7 @@
         <div class="breadcrumb-row">
             <div class="container">
                 <ul class="list-inline">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="{{ route('web_ecuador_inicio') }}">Home</a></li>
                     <li>Contacto</li>
                 </ul>
             </div>
@@ -33,9 +33,9 @@
                     <div class="col-md-7">
                         <div class="dzFormMsg"></div>
                         <div class="p-a30 bg-white selector-d clearfix m-b30">
-                            <h3>Envianos un mensaje</h3>
+                            <h3 class="des-producto">Envianos un mensaje</h3>
                             <form class="dzForm" id="pageContactForm">
-                                <input type="text" hidden name="country" value="EC" required>
+                                <input type="text" hidden name="country" value="PE" required>
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
@@ -98,36 +98,48 @@
                                     </div>
                                 </div>
                             </form>
+                            <div class="col-md-12">
+                                <div class="g-recaptcha-bx">
+                                    <div class="g-recaptcha" data-sitekey="6LefsVUUAAAAADBPsLZzsNnETChealv6PYGzv3ZN"
+                                        data-callback="verifyRecaptchaCallback"
+                                        data-expired-callback="expiredRecaptchaCallback"></div>
+                                    <input class="form-control d-none" style="display:none;" data-recaptcha="true"
+                                        required data-error="Please complete the Captcha">
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- Left part END -->
                     <!-- right part start -->
                     <div class="col-md-5">
                         <div class="p-a30 bg-white selector-d m-b30">
-                            <h3>Información de Contacto</h3>
+                            <h3 class="des-producto">Información de Contacto</h3>
                             <ul class="no-margin">
                                 <li class="icon-bx-wraper left m-b30">
-                                    <div class="icon-bx-xs bg-primary"> <a href="javascript:void(0);" class="icon-cell"><i
-                                                class="fa fa-map-marker"></i></a> </div>
+                                    <div class="icon-bx-xs bg-primary"> 
+                                        <a href="javascript:void(0);" class="icon-cell"><i
+                                                class="fa fa-map-marker"></i>
+                                        </a> 
+                                    </div>
                                     <div class="icon-content">
-                                        <h6 class="text-uppercase m-b0 dez-tilte">Oficina Principal</h6>
-                                        <p>Av. Petit Thouars 3547 , Lima, ecuador</p>
+                                        <h6 class="text-uppercase m-b0 dez-tilte des-producto">Oficina Principal</h6>
+                                        <p>{{ $datosContacto[0]->content }}</p>
                                     </div>
                                 </li>
                                 <li class="icon-bx-wraper left  m-b30">
                                     <div class="icon-bx-xs bg-primary"> <a href="javascript:void(0);" class="icon-cell"><i
                                                 class="fa fa-envelope"></i></a> </div>
                                     <div class="icon-content">
-                                        <h6 class="text-uppercase m-b0 dez-tilte">E-MAIl</h6>
-                                        <p>grupogreenplanet@gmail.com</p>
+                                        <h6 class="text-uppercase m-b0 dez-tilte des-producto">E-MAIl</h6>
+                                        <p>{{ $datosContacto[1]->content }}</p>
                                     </div>
                                 </li>
                                 <li class="icon-bx-wraper left">
                                     <div class="icon-bx-xs bg-primary"> <a href="javascript:void(0);" class="icon-cell"><i
                                                 class="fa fa-phone"></i></a> </div>
                                     <div class="icon-content">
-                                        <h6 class="text-uppercase m-b0 dez-tilte">TELÉFONO</h6>
-                                        <p>992 914 870</p>
+                                        <h6 class="text-uppercase m-b0 dez-tilte des-producto">TELÉFONO</h6>
+                                        <p>{{ $datosContacto[2]->content }}</p>
                                     </div>
                                 </li>
                             </ul>
@@ -138,9 +150,9 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <!-- Map part start -->
-                        <h4>Nuestra Ubicación</h4>
+                        <h4 class=" des-producto">Nuestra Ubicación</h4>
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.214123470971!2d-77.03385612512218!3d-12.097488788143261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8686ffa2705%3A0xd12432b3a0aea053!2sAv.%20Petit%20Thouars%203547%2C%20San%20Isidro%2015046!5e0!3m2!1ses-419!2spe!4v1699642496706!5m2!1ses-419!2spe"
+                            src="{{ $datosContacto[3]->content }}"
                             width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                         <!-- Map part END -->
