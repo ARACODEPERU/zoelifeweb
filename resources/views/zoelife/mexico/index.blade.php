@@ -1,4 +1,4 @@
-    @extends('layouts.peru')
+    @extends('layouts.mexico')
 
     @section('content')
         <!-- Encabezado inicio -->
@@ -58,7 +58,7 @@
             <!-- Slider END -->
 
             <!-- Visión - Misión - Valores / STAR -->
-            <x-peru.vision-mision-valores-area></x-peru.vision-mision-valores-area>
+            <x-mexico.vision-mision-valores-area></x-mexico.vision-mision-valores-area>
             <!-- Visión - Misión - Valores / END -->
 
             <div class="content-area" style="padding: 80px 0px;">
@@ -164,7 +164,6 @@
                         </div>
                 </div>
             </div>
-
 
         </div>
         <!-- Content END-->

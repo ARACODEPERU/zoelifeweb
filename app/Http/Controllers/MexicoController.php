@@ -104,9 +104,7 @@ class MexicoController extends Controller
 
     public function productodescripcion($id)
     {
-        $product = OnliItem::where('id', $id)
-            ->first();
-
+        $product = OnliItem::where('id', $id)->first();
         $testimonies = CmsTestimony::where('item_id', $id)->get();
 
         return view('zoelife/mexico.producto-descripcion', [
@@ -115,12 +113,11 @@ class MexicoController extends Controller
         ]);
     }
 
-
     /*------------ PRODUCTOS - END ------------*/
 
     public function testimonios()
     {
-        $banner = CmsSection::where('component_id', 'ecuador_banner_testimonios_35')
+        $banner = CmsSection::where('component_id', 'mexico_banner_testimonios_61')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
@@ -149,7 +146,7 @@ class MexicoController extends Controller
 
     public function centros()
     {
-        $banner = CmsSection::where('component_id', 'ecuador_banner_centros_de_distribucion_36')
+        $banner = CmsSection::where('component_id', 'mexico_banner_centros_de_distribucion_62')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
@@ -178,7 +175,7 @@ class MexicoController extends Controller
 
     public function eventos()
     {
-        $banner = CmsSection::where('component_id', 'peru_banner_eventos_11')
+        $banner = CmsSection::where('component_id', 'mexico_banner_eventos_63')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
@@ -189,12 +186,12 @@ class MexicoController extends Controller
             ->first();
 
 
-        $galeryEvents = CmsSectionItem::with('item.items')->where('section_id', 76)
+        $galeryEvents = CmsSectionItem::with('item.items')->where('section_id', 99)
             ->orderBy('position')
             ->get();
         //$galeryEvents->prepend(null);
 
-        $inscripcioncontacto = CmsSection::where('component_id', 'peru_eventos_inscripcion_contacto_83')
+        $inscripcioncontacto = CmsSection::where('component_id', 'mexico_eventos_inscripcion_contacto_103')
         ->join('cms_section_items', 'section_id', 'cms_sections.id')
         ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
         ->select(
@@ -209,11 +206,6 @@ class MexicoController extends Controller
             'galeryEvents' => $galeryEvents,
             'inscripcioncontacto' => $inscripcioncontacto
         ]);
-    }
-
-    public function centroslima()
-    {
-        return view('zoelife/mexico.centros-de-distribucion-lima');
     }
 
     public function estrellas()

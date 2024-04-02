@@ -25,7 +25,6 @@
         </div>
         <!-- Breadcrumb row END -->
 
-
         <div class="content-area">
             <!-- Left & right section start -->
             <div class="">
@@ -74,7 +73,6 @@
             </div>
             <!-- Left & right section  END -->
         </div>
-
     </div>
     <!-- Content END-->
 

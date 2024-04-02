@@ -1,4 +1,4 @@
-@extends('layouts.peru')
+@extends('layouts.mexico')
 
 @section('content')
     <!-- Encabezado inicio -->
@@ -24,7 +24,6 @@
 
     <div class="content-area">
         <div class="">
-            <!-- Gallery -->
             <div class="site-filters clearfix center m-b40">
                 <ul class="filters" data-toggle="buttons">
                     <li data-filter="" class="btn active">
@@ -55,44 +54,9 @@
                         </li>
                     @endforeach
                 @endif
-
-                {{-- <li class="card-container col-md-4 ayacucho">
-                    <div class="dez-box dez-gallery-box">
-                        <div class="dez-thum dez-img-overlay1 dez-img-effect">
-                            <a href="">
-                                <img src="themes/zoelife/peru/images/center/ayacucho.jpg" alt="">
-                            </a>
-                            <div class="overlay-bx">
-                                <div class="overlay-icon"> <a href=""> <i class="fa fa-link icon-bx-xs"></i> </a>
-                                    <a href="themes/zoelife/peru/images/center/ayacucho.jpg" class="mfp-link"
-                                        title="Ayacucho"> <i class="fa fa-picture-o icon-bx-xs"></i> </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li> --}}
             </ul>
-            <!-- Gallery END -->
-            <!-- Pagination start -->
-            {{-- <div class="pagination-bx">
-                <ul class="pagination">
-                    <li class="previous"><a href="javascript:void(0);"><i class="fa fa-angle-double-left"></i></a></li>
-                    <li class="active"><a href="javascript:void(0);">1</a></li>
-                    <li><a href="javascript:void(0);">2</a></li>
-                    <li><a href="javascript:void(0);">3</a></li>
-                    <li class="next"><a href="javascript:void(0);"><i class="fa fa-angle-double-right"></i></a></li>
-                </ul>
-            </div> --}}
-            <!-- Pagination END -->
         </div>
-        <!-- Left & right section  END -->
     </div>
-
-
-    <!-- Paises / STAR -->
-    {{-- <x-countries-section /> --}}
-    <!-- Paises / END -->
-
     <br>
 
     <!-- Modal -->
@@ -163,6 +127,6 @@
         }
     </script>
     <!-- Footer -->
-    <x-ecuador.footer-area></x-ecuador.footer-area>
+    <x-mexico.footer-area></x-mexico.footer-area>
     <!-- Footer END-->
 @endsection

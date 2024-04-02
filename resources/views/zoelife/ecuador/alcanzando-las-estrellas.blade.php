@@ -19,7 +19,7 @@
         <div class="breadcrumb-row">
             <div class="container">
                 <ul class="list-inline">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="{{ route('web_ecuador_inicio') }}">Home</a></li>
                     <li>Alcanzando las Estrellas</li>
                 </ul>
             </div>
@@ -67,14 +67,26 @@
                           <!-- Slide-end -->
                         </div>
 
-                        <div class="tranding-slider-control" style="margin-top: -210px;">
-                          <div class="swiper-button-prev slider-arrow">
-                            <ion-icon name="arrow-back-outline"></ion-icon>
+                        <div class="tranding-slider-control" style="margin-top: -200px;">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-md-2"></div>
+                              <div class="col-md-2">
+                                <div class="swiper-button-prev slider-arrow" style="margin-top: -40px;">
+                                  <ion-icon name="arrow-back-outline"></ion-icon>
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="swiper-pagination" style="justify-content: center;"></div>
+                              </div>
+                              <div class="col-md-2">
+                                <div class="swiper-button-next slider-arrow" style="margin-top: -40px;">
+                                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </div>
+                              </div>
+                              <div class="col-md-2"></div>
+                            </div>
                           </div>
-                          <div class="swiper-button-next slider-arrow">
-                            <ion-icon name="arrow-forward-outline"></ion-icon>
-                          </div>
-                          <div class="swiper-pagination"></div>
                         </div>
 
                       </div>
@@ -98,15 +110,28 @@
                     <!-- Slide-end -->
                   </div>
 
-                  <div class="tranding-slider-control" style="margin-top: -210px;">
-                    <div class="swiper-button-prev slider-arrow">
-                      <ion-icon name="arrow-back-outline"></ion-icon>
+                  <div class="tranding-slider-control" style="margin-top: -260px;">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-2">
+                          <div class="swiper-button-prev slider-arrow" style="margin-top: -40px;">
+                            <ion-icon name="arrow-back-outline"></ion-icon>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="swiper-pagination" style="justify-content: center;"></div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="swiper-button-next slider-arrow" style="margin-top: -40px;">
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                          </div>
+                        </div>
+                        <div class="col-md-2"></div>
+                      </div>
                     </div>
-                    <div class="swiper-button-next slider-arrow">
-                      <ion-icon name="arrow-forward-outline"></ion-icon>
-                    </div>
-                    <div class="swiper-pagination"></div>
                   </div>
+
                 </div>
           </section>
 

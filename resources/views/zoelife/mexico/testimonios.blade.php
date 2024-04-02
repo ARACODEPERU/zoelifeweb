@@ -1,4 +1,4 @@
-@extends('layouts.peru')
+@extends('layouts.mexico')
 
 @section('content')
     <!-- Encabezado inicio -->
@@ -18,13 +18,12 @@
         <div class="breadcrumb-row">
             <div class="container">
                 <ul class="list-inline">
-                    <li><a href="{{ route('web_peru_inicio') }}">Home</a></li>
+                    <li><a href="{{ route('web_mexico_inicio') }}">Home</a></li>
                     <li>Testimonios</li>
                 </ul>
             </div>
         </div>
         <!-- Breadcrumb row END -->
-
 
         <div class="content-area">
             <!-- Left & right section start -->
@@ -69,32 +68,13 @@
                         @endforeach
                     @endif
                 </ul>
-                <!-- Gallery END -->
-                <!-- Pagination start -->
-                {{-- <div class="pagination-bx">
-                    <ul class="pagination">
-                        <li class="previous"><a href="javascript:void(0);"><i class="fa fa-angle-double-left"></i></a>
-                        </li>
-                        <li class="active"><a href="javascript:void(0);">1</a></li>
-                        <li><a href="javascript:void(0);">2</a></li>
-                        <li><a href="javascript:void(0);">3</a></li>
-                        <li class="next"><a href="javascript:void(0);"><i class="fa fa-angle-double-right"></i></a>
-                        </li>
-                    </ul>
-                </div> --}}
-                <!-- Pagination END -->
             </div>
             <!-- Left & right section  END -->
         </div>
-
-        <!-- Paises / STAR -->
-        {{-- <x-countries-section /> --}}
-        <!-- Paises / END -->
-
     </div>
     <!-- Content END-->
 
     <!-- Footer -->
-    <x-ecuador.footer-area></x-ecuador.footer-area>
+    <x-mexico.footer-area></x-mexico.footer-area>
     <!-- Footer END-->
 @endsection

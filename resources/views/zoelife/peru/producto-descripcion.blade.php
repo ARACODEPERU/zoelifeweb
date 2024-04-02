@@ -12,7 +12,7 @@
             <div class="container">
                 <ul class="list-inline">
                     <li><a href="{{ route('web_peru_inicio') }}">Home</a></li>
-                    <li><a href="{{ route('web_peru_inicio') }}">Productos</a></li>
+                    <li><a href="{{ route('web_peru_productos') }}">Productos</a></li>
                     <li>{{ $product->name }}</li>
                 </ul>
             </div>
@@ -42,7 +42,6 @@
             </div>
         </div>
 
-
         <!-- Why Choose Us -->
         <div class="section-full text-white bg-img-fix p-t70 p-b40 overlay-black-dark choose-us"
             style="background-image:url({{ asset('themes/zoelife/peru/images/background/fondo.jpg') }});">
@@ -64,7 +63,6 @@
             </div>
         </div>
         <!-- Why Choose Us End -->
-
 
         <div class="content-area">
             <div class="" style="width: 100%; padding: 40px;">

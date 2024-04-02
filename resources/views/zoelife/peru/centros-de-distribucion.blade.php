@@ -40,7 +40,6 @@
                     @endif
                 </ul>
             </div>
-
             <ul id="masonry" class="dez-gallery-listing row gallery-grid-4 m-b0 mfp-gallery">
                 @if (count($centers) > 0)
                     @foreach ($centers as $center)
@@ -58,7 +57,6 @@
             </ul>
         </div>
     </div>
-
     <br>
 
     <!-- Modal -->

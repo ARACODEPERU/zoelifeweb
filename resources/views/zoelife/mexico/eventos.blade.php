@@ -1,4 +1,4 @@
-@extends('layouts.peru')
+@extends('layouts.mexico')
 
 @section('content')
     <!-- Encabezado inicio -->
@@ -18,7 +18,7 @@
     <div class="breadcrumb-row">
         <div class="container">
             <ul class="list-inline">
-                <li><a href="{{ route('web_peru_inicio') }}">Home</a></li>
+                <li><a href="{{ route('web_mexico_inicio') }}">Home</a></li>
                 <li>Eventos</li>
             </ul>
         </div>
@@ -34,12 +34,12 @@
       <div class="swiper-wrapper">
         <!-- Slide-start -->
         @if (count($galeryEvents) > 0)
-        @foreach ($galeryEvents as $key => $event)
-        <div class="swiper-slide tranding-slide">
-              <img src="{{ $event->item->items[0]->content }}" alt="" style="width: 100%;">
-            {{-- <h3 style="text-align: center; margin-top: 10px;">{{ $star_video->title }}</h2> --}}
-        </div>
-       @endforeach
+            @foreach ($galeryEvents as $key => $event)
+            <div class="swiper-slide tranding-slide">
+                <img src="{{ $event->item->items[0]->content }}" alt="" style="width: 100%;">
+                {{-- <h3 style="text-align: center; margin-top: 10px;">{{ $star_video->title }}</h2> --}}
+            </div>
+            @endforeach
         @endif
         <!-- Slide-end -->
       </div>
@@ -70,27 +70,27 @@
 <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 <!-- script del video -->
 <script>
-var TrandingSlider = new Swiper('.tranding-slider', {
-effect: 'coverflow',
-grabCursor: true,
-centeredSlides: true,
-loop: true,
-slidesPerView: 'auto',
-coverflowEffect: {
-rotate: 0,
-stretch: 0,
-depth: 100,
-modifier: 2.5,
-},
-pagination: {
-el: '.swiper-pagination',
-clickable: true,
-},
-navigation: {
-nextEl: '.swiper-button-next',
-prevEl: '.swiper-button-prev',
-}
-});
+    var TrandingSlider = new Swiper('.tranding-slider', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    loop: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 100,
+    modifier: 2.5,
+    },
+    pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    },
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    }
+    });
 </script>
 
 <style>
@@ -413,6 +413,6 @@ background: var(--primary);
     </div>
 
     <!-- Footer -->
-    <x-ecuador.footer-area></x-ecuador.footer-area>
+    <x-mexico.footer-area></x-mexico.footer-area>
     <!-- Footer END-->
 @endsection

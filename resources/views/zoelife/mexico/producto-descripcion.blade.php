@@ -1,4 +1,4 @@
-@extends('layouts.peru')
+@extends('layouts.mexico')
 
 @section('content')
     <!-- Encabezado inicio -->
@@ -11,8 +11,8 @@
         <div class="breadcrumb-row" style="margin-top: 80px;">
             <div class="container">
                 <ul class="list-inline">
-                    <li><a href="{{ route('web_peru_inicio') }}">Home</a></li>
-                    <li><a href="{{ route('web_peru_inicio') }}">Productos</a></li>
+                    <li><a href="{{ route('web_mexico_inicio') }}">Home</a></li>
+                    <li><a href="{{ route('web_mexico_productos') }}">Productos</a></li>
                     <li>{{ $product->name }}</li>
                 </ul>
             </div>
@@ -42,7 +42,6 @@
             </div>
         </div>
 
-
         <!-- Why Choose Us -->
         <div class="section-full text-white bg-img-fix p-t70 p-b40 overlay-black-dark choose-us"
             style="background-image:url({{ asset('themes/zoelife/peru/images/background/fondo.jpg') }});">
@@ -65,10 +64,8 @@
         </div>
         <!-- Why Choose Us End -->
 
-
         <div class="content-area">
             <div class="container">
-
 
                 <!-- Dividers with icon -->
                 <div class="p-a20 bg-white selector-d m-b20">
@@ -130,11 +127,10 @@
 
             </div>
         </div>
-
     </div>
     <!-- Content END-->
 
     <!-- Footer -->
-    <x-ecuador.footer-area></x-ecuador.footer-area>
+    <x-mexico.footer-area></x-mexico.footer-area>
     <!-- Footer END-->
 @endsection
