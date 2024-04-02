@@ -18,7 +18,7 @@
     <div class="breadcrumb-row">
         <div class="container">
             <ul class="list-inline">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="{{ route('web_colombia_inicio') }}">Home</a></li>
                 <li>Alcanzando las Estrellas</li>
             </ul>
         </div>
@@ -66,14 +66,26 @@
                       <!-- Slide-end -->
                     </div>
 
-                    <div class="tranding-slider-control" style="margin-top: -210px;">
-                      <div class="swiper-button-prev slider-arrow">
-                        <ion-icon name="arrow-back-outline"></ion-icon>
+                    <div class="tranding-slider-control" style="margin-top: -200px;">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-2"></div>
+                          <div class="col-md-2">
+                            <div class="swiper-button-prev slider-arrow" style="margin-top: -40px;">
+                              <ion-icon name="arrow-back-outline"></ion-icon>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="swiper-pagination" style="justify-content: center;"></div>
+                          </div>
+                          <div class="col-md-2">
+                            <div class="swiper-button-next slider-arrow" style="margin-top: -40px;">
+                              <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </div>
+                          </div>
+                          <div class="col-md-2"></div>
+                        </div>
                       </div>
-                      <div class="swiper-button-next slider-arrow">
-                        <ion-icon name="arrow-forward-outline"></ion-icon>
-                      </div>
-                      <div class="swiper-pagination"></div>
                     </div>
 
                   </div>
@@ -97,15 +109,28 @@
                 <!-- Slide-end -->
               </div>
 
-              <div class="tranding-slider-control" style="margin-top: -210px;">
-                <div class="swiper-button-prev slider-arrow">
-                  <ion-icon name="arrow-back-outline"></ion-icon>
+              <div class="tranding-slider-control" style="margin-top: -260px;">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-2">
+                      <div class="swiper-button-prev slider-arrow" style="margin-top: -40px;">
+                        <ion-icon name="arrow-back-outline"></ion-icon>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="swiper-pagination" style="justify-content: center;"></div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="swiper-button-next slider-arrow" style="margin-top: -40px;">
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                      </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                  </div>
                 </div>
-                <div class="swiper-button-next slider-arrow">
-                  <ion-icon name="arrow-forward-outline"></ion-icon>
-                </div>
-                <div class="swiper-pagination"></div>
               </div>
+
             </div>
       </section>
 
@@ -149,61 +174,6 @@ prevEl: '.swiper-button-prev',
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
 
-/*
-html {
-font-size: 62.5%;
-font-family: "Montserrat", sans-serif;
-scroll-behavior: smooth;
-}
-
-@media (min-width: 1440px) {
-html {
-zoom: 1.5;
-}
-}
-
-@media (min-width: 2560px) {
-html {
-zoom: 1.7;
-}
-}
-
-@media (min-width: 3860px) {
-html {
-zoom: 2.5;
-}
-}
-
-
-::-webkit-scrollbar {
-width: 1.3rem;
-}
-
-::-webkit-scrollbar-thumb {
-border-radius: 1rem;
-background: #797979;
-transition: all 0.5s ease-in-out;
-}
-
-::-webkit-scrollbar-thumb:hover {
-background: #222224;
-}
-
-::-webkit-scrollbar-track {
-background: #f9f9f9;
-}*/
-
-/*body {
-font-size: 1.6rem;
-background: var(--bg);
-}
-
-.container {
-max-width: 124rem;
-padding: 0 1rem;
-margin: 0 auto;
-}
-*/
 
 .text-center {
 text-align: center;
