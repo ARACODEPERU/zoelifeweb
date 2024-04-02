@@ -13,7 +13,7 @@ class MexicoController extends Controller
 {
     public function inicio()
     {
-        $slider = CmsSection::where('component_id', 'ecuador_slider_inicio_28')
+        $slider = CmsSection::where('component_id', 'mexico_slider_inicio_54')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
@@ -23,7 +23,7 @@ class MexicoController extends Controller
             ->orderBy('cms_section_items.position')
             ->get();
 
-        $video = CmsSection::where('component_id', 'ecuador_video_presentacion_inicio_31')
+        $video = CmsSection::where('component_id', 'mexico_video_presentacion_inicio_57')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
@@ -32,7 +32,6 @@ class MexicoController extends Controller
             )
             ->orderBy('cms_section_items.position')
             ->first();
-
 
         $fundador = CmsSection::where('component_id', 'zoe_fundador_area_95')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
@@ -44,11 +43,11 @@ class MexicoController extends Controller
             ->orderBy('cms_section_items.position')
             ->get();
 
-        $equipos = CmsSectionItem::with('item.items')->where('section_id', 66)
+        $equipos = CmsSectionItem::with('item.items')->where('section_id', 70)
             ->orderBy('position')
             ->get();
 
-        $linkDescarga = CmsSection::where('component_id', 'peru_descargas_89')
+        $linkDescarga = CmsSection::where('component_id', 'mexico_descargas_93')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
@@ -66,35 +65,7 @@ class MexicoController extends Controller
             'linkDescarga' => $linkDescarga
         ]);
     }
-
-    public function nosotros()
-    {
-        $banner = CmsSection::where('component_id', 'ecuador_banner_nosotros_33')
-            ->join('cms_section_items', 'section_id', 'cms_sections.id')
-            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
-            ->select(
-                'cms_items.content',
-                'cms_section_items.position'
-            )
-            ->orderBy('cms_section_items.position')
-            ->first();
-
-        $video = CmsSection::where('component_id', 'ecuador_video_presentacion_nosotros_32')
-            ->join('cms_section_items', 'section_id', 'cms_sections.id')
-            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
-            ->select(
-                'cms_items.content',
-                'cms_section_items.position'
-            )
-            ->orderBy('cms_section_items.position')
-            ->first();
-
-        return view('zoelife/mexico.nosotros', [
-            'banner' => $banner,
-            'video' => $video
-        ]);
-    }
-
+    
     /*------------ PRODUCTOS - STAR ------------*/
 
     public function productos()
