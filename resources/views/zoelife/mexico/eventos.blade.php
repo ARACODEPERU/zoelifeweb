@@ -44,15 +44,27 @@
         <!-- Slide-end -->
       </div>
 
-      <div class="tranding-slider-control" style="margin-top: -190px;">
-        <div class="swiper-button-prev slider-arrow">
-          <ion-icon name="arrow-back-outline"></ion-icon>
+      <div class="tranding-slider-control" style="margin-top: -160px;">
+        <div class="container">
+            <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-2">
+                <div class="swiper-button-prev slider-arrow" style="margin-top: -40px;">
+                <ion-icon name="arrow-back-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="swiper-pagination" style="justify-content: center;"></div>
+            </div>
+            <div class="col-md-2">
+                <div class="swiper-button-next slider-arrow" style="margin-top: -40px;">
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+            </div>
         </div>
-        <div class="swiper-button-next slider-arrow">
-          <ion-icon name="arrow-forward-outline"></ion-icon>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
+    </div>
 
     </div>
 </section>
@@ -61,6 +73,24 @@
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
+<div class="containe" style="padding: 40px;">
+    <div class="row" style="justify-content: space-between">
+        @if ( count($inscripcioncontacto) > 0 )
+        <div class="col-md-3"></div>
+        <div class="col-md-3" style="text-align: center;">
+            <a href="{{ $inscripcioncontacto[0]->content }}" target="_blank" class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;">
+                <b><i class="fa fa-edit"aria-hidden="true"></i>&nbsp;&nbsp; Inscripciones</b>
+            </a>
+        </div>
+        <div class="col-md-3" style="text-align: center;">
+            <a href="https://api.whatsapp.com/send?phone=51{{ $inscripcioncontacto[1]->content }}&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?" target="_blank"  class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;">
+                <b><i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;&nbsp; Más Información</b>
+            </a>
+        </div>
+        <div class="col-md-3"></div>
+        @endif
+    </div>
+</div>
 
 </div>
 
@@ -393,25 +423,6 @@ background: var(--primary);
         </script>
 </div>
 <!-- Content END-->
-    <div class="container" style="padding: 40px;">
-        <div class="row" style="justify-content: space-between">
-            @if ( count($inscripcioncontacto) > 0 )
-            <div class="col-md-2"></div>
-            <div class="col-md-4" style="text-align: center;">
-                <a href="{{ $inscripcioncontacto[0]->content }}" target="_blank" class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;">
-                    <b><i class="fa fa-edit"aria-hidden="true"></i>&nbsp;&nbsp; Inscripciones</b>
-                </a>
-            </div>
-            <div class="col-md-4" style="text-align: center;">
-                <a href="https://api.whatsapp.com/send?phone={{ $inscripcioncontacto[1]->content }}&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?" target="_blank"  class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;">
-                    <b><i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;&nbsp; Más Información</b>
-                </a>
-            </div>
-            <div class="col-md-2"></div>
-            @endif
-        </div>
-    </div>
-
     <!-- Footer -->
     <x-mexico.footer-area></x-mexico.footer-area>
     <!-- Footer END-->

@@ -29,38 +29,69 @@
 
 <div>
 
-<section style="padding: 60px 10px;">
-    <div class="swiper tranding-slider">
-      <div class="swiper-wrapper">
-        <!-- Slide-start -->
-        @if (count($galeryEvents) > 0)
-        @foreach ($galeryEvents as $key => $event)
-        <div class="swiper-slide tranding-slide">
-              <img src="{{ $event->item->items[0]->content }}" alt="" style="width: 100%;">
-            {{-- <h3 style="text-align: center; margin-top: 10px;">{{ $star_video->title }}</h2> --}}
+    <section style="padding: 80px 10px;">
+        <div class="swiper tranding-slider">
+        <div class="swiper-wrapper">
+            <!-- Slide-start -->
+            @if (count($galeryEvents) > 0)
+            @foreach ($galeryEvents as $key => $event)
+            <div class="swiper-slide tranding-slide">
+                <img src="{{ $event->item->items[0]->content }}" alt="" style="width: 100%;">
+                {{-- <h3 style="text-align: center; margin-top: 10px;">{{ $star_video->title }}</h2> --}}
+            </div>
+        @endforeach
+            @endif
+            <!-- Slide-end -->
         </div>
-       @endforeach
-        @endif
-        <!-- Slide-end -->
-      </div>
 
-      <div class="tranding-slider-control" style="margin-top: -190px;">
-        <div class="swiper-button-prev slider-arrow">
-          <ion-icon name="arrow-back-outline"></ion-icon>
-        </div>
-        <div class="swiper-button-next slider-arrow">
-          <ion-icon name="arrow-forward-outline"></ion-icon>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
 
+        <div class="tranding-slider-control" style="margin-top: -160px;">
+            <div class="container">
+                <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-2">
+                    <div class="swiper-button-prev slider-arrow" style="margin-top: -40px;">
+                    <ion-icon name="arrow-back-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="swiper-pagination" style="justify-content: center;"></div>
+                </div>
+                <div class="col-md-2">
+                    <div class="swiper-button-next slider-arrow" style="margin-top: -40px;">
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+                </div>
+            </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <div class="containe" style="padding: 40px;">
+        <div class="row" style="justify-content: space-between">
+            @if ( count($inscripcioncontacto) > 0 )
+            <div class="col-md-3"></div>
+            <div class="col-md-3" style="text-align: center;">
+                <a href="{{ $inscripcioncontacto[0]->content }}" target="_blank" class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;">
+                    <b><i class="fa fa-edit"aria-hidden="true"></i>&nbsp;&nbsp; Inscripciones</b>
+                </a>
+            </div>
+            <div class="col-md-3" style="text-align: center;">
+                <a href="https://api.whatsapp.com/send?phone=51{{ $inscripcioncontacto[1]->content }}&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?" target="_blank"  class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;">
+                    <b><i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;&nbsp; Más Información</b>
+                </a>
+            </div>
+            <div class="col-md-3"></div>
+            @endif
+        </div>
     </div>
-</section>
-
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-
 
 </div>
 
@@ -95,63 +126,6 @@ prevEl: '.swiper-button-prev',
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
-
-
-/*
-html {
-font-size: 62.5%;
-font-family: "Montserrat", sans-serif;
-scroll-behavior: smooth;
-}
-
-@media (min-width: 1440px) {
-html {
-zoom: 1.5;
-}
-}
-
-@media (min-width: 2560px) {
-html {
-zoom: 1.7;
-}
-}
-
-@media (min-width: 3860px) {
-html {
-zoom: 2.5;
-}
-}
-
-
-::-webkit-scrollbar {
-width: 1.3rem;
-}
-
-::-webkit-scrollbar-thumb {
-border-radius: 1rem;
-background: #797979;
-transition: all 0.5s ease-in-out;
-}
-
-::-webkit-scrollbar-thumb:hover {
-background: #222224;
-}
-
-::-webkit-scrollbar-track {
-background: #f9f9f9;
-}*/
-
-/*body {
-font-size: 1.6rem;
-background: var(--bg);
-}
-
-.container {
-max-width: 124rem;
-padding: 0 1rem;
-margin: 0 auto;
-}
-*/
 
 .text-center {
 text-align: center;
@@ -392,26 +366,6 @@ background: var(--primary);
             }
         </script>
 </div>
-<!-- Content END-->
-    <div class="container" style="padding: 40px;">
-        <div class="row" style="justify-content: space-between">
-            @if ( count($inscripcioncontacto) > 0 )
-            <div class="col-md-2"></div>
-            <div class="col-md-4" style="text-align: center;">
-                <a href="{{ $inscripcioncontacto[0]->content }}" target="_blank" class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;">
-                    <b><i class="fa fa-edit"aria-hidden="true"></i>&nbsp;&nbsp; Inscripciones</b>
-                </a>
-            </div>
-            <div class="col-md-4" style="text-align: center;">
-                <a href="https://api.whatsapp.com/send?phone={{ $inscripcioncontacto[1]->content }}&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?" target="_blank"  class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;">
-                    <b><i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;&nbsp; Más Información</b>
-                </a>
-            </div>
-            <div class="col-md-2"></div>
-            @endif
-        </div>
-    </div>
-
     <!-- Footer -->
     <x-ecuador.footer-area></x-ecuador.footer-area>
     <!-- Footer END-->
