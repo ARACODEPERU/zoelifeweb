@@ -246,6 +246,23 @@ class MexicoController extends Controller
         ]);
     }
 
+    public function university()
+    {
+        $banner = CmsSection::where('component_id', 'peru_banner_university_77')
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->first();
+
+        return view('zoelife/peru.zoe-university', [
+            'banner' => $banner
+        ]);
+    }
+
     public function contacto()
     {
         $banner = CmsSection::where('component_id', 'ecuador_banner_contacto_39')
