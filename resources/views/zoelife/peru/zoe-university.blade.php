@@ -15,7 +15,7 @@
         <!-- inner page banner END -->
 
         <!-- Breadcrumb row -->
-        <div class="breadcrumb-row">
+        <div class="breadcrumb-row" style="margin-top: 50px; ">
             <div class="container">
                 <ul class="list-inline">
                     <li><a href="{{ route('web_peru_inicio') }}">Home</a></li>

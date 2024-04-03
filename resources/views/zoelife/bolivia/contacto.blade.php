@@ -116,9 +116,9 @@
                             <h3 class="des-producto">Información de Contacto</h3>
                             <ul class="no-margin">
                                 <li class="icon-bx-wraper left m-b30">
-                                    <div class="icon-bx-xs bg-primary"> 
-                                        <a href="javascript:void(0);" class="icon-cell"><i
-                                                class="fa fa-map-marker"></i>
+                                    <div class="icon-bx-xs"> 
+                                        <a href="javascript:void(0);" class="icon-cell"  style="background: #00b01a;">
+                                            <i class="fa fa-map-marker"></i>
                                         </a>
                                     </div>
                                     <div class="icon-content">
@@ -127,7 +127,7 @@
                                     </div>
                                 </li>
                                 <li class="icon-bx-wraper left  m-b30">
-                                    <div class="icon-bx-xs bg-primary"> <a href="javascript:void(0);" class="icon-cell"><i
+                                    <div class="icon-bx-xs"> <a href="javascript:void(0);" class="icon-cell"><i
                                                 class="fa fa-envelope"></i></a> </div>
                                     <div class="icon-content">
                                         <h6 class="text-uppercase m-b0 dez-tilte des-producto">E-MAIl</h6>
@@ -135,7 +135,7 @@
                                     </div>
                                 </li>
                                 <li class="icon-bx-wraper left">
-                                    <div class="icon-bx-xs bg-primary"> <a href="javascript:void(0);"
+                                    <div class="icon-bx-xs"> <a href="javascript:void(0);"
                                             class="icon-cell"><i class="fa fa-phone"></i></a> </div>
                                     <div class="icon-content">
                                         <h6 class="text-uppercase m-b0 dez-tilte des-producto">TELÉFONO</h6>

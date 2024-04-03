@@ -6,8 +6,8 @@
             <div class="p-a30 bg-white m-b30 selector-d">
                 <div class="section-head">
                     <h2 class="text-uppercase">{{ $programs->items[0]->item->content }}</h2>
-                    <div class="dez-divider divider-2px bg-primary icon-left">
-                        <i class="fa fa-thumbs-o-up bg-primary text-white"></i>
+                    <div class="dez-divider divider-2px  icon-left" style="background: #00b01a;">
+                        <i class="fa fa-thumbs-o-up text-white" style="background: #00b01a;"></i>
                     </div>
                 </div>
                 <div class="section-content text-center ">
