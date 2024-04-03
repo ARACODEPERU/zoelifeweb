@@ -36,7 +36,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="widget widget_services">
                             <h4 class="m-b10 text-uppercase">Testimonios</h4>
-                            <div class="dez-separator bg-primary"></div>
+                            <div class="dez-separator"  style="background: #00b01a;"></div>
                             <ul>
                                 @if (count($testimonies) > 0)
                                     @foreach ($testimonies as $testimony)
@@ -59,7 +59,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="widget widget_services">
                             <h4 class="m-b10 text-uppercase">Navegación</h4>
-                            <div class="dez-separator bg-primary"></div>
+                            <div class="dez-separator"  style="background: #00b01a;"></div>
                             <ul>
                                 <li><a href="{{ route('web_peru_inicio') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Inicio</a></li>
                                 <li><a href="{{ route('web_peru_productos') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Productos</a></li>
@@ -73,7 +73,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="widget widget_getintuch">
                             <h4 class="m-b10 text-uppercase">Contáctanos</h4>
-                            <div class="dez-separator bg-primary"></div>
+                            <div class="dez-separator"  style="background: #00b01a;"></div>
                             <ul>
                                 <li>
                                     <i class="fa fa-map-marker"></i>
@@ -104,7 +104,7 @@
                         <span>© Copyright 2024</span>
                     </div>
                     <div class="col-lg-4 text-center">
-                        <span> Desarrollado por <i class="fa fa-heart text-primary heart"></i>
+                        <span> Desarrollado por <i class="fa fa-heart  heart" style="color: #00b01a;"></i>
                             <a href="">Aracode Smart Solutions</a>
                         </span>
                     </div>

@@ -7,7 +7,7 @@
 
         <!-- Content -->
         <div class="page-content">
-            
+
             <div class="main-slider style-two default-banner">
                 <div class="tp-banner-container">
                     <div class="tp-banner">
@@ -61,8 +61,8 @@
                 <div class="container">
                         <div class="section-head">
                             <h2 class="text-uppercase">{{ $equipos[0]->item->content }}</h2>
-                            <div class="dez-divider divider-2px bg-primary icon-left">
-                                <i class="fa fa-thumbs-o-up bg-primary text-white"></i>
+                            <div class="dez-divider divider-2px icon-left" style="background: #00b01a;">
+                                <i class="fa fa-thumbs-o-up text-white"  style="background: #00b01a;"></i>
                             </div>
                         </div>
                         <div class="section-content text-center ">
@@ -90,7 +90,7 @@
                                 <div class="col-md-9" style="padding: 15px;">
                                     <br>
                                     <h3 class="dez-title" style="text-align: left;">
-                                        <b style="font-size: 30px;" class=" text-primary" >{{ $fundador[1]->content }}</b>
+                                        <b style="font-size: 30px; color: #00b01a;" >{{ $fundador[1]->content }}</b>
                                         <br>
                                         <b class="des-producto">{{ $fundador[2]->content }}</b>
                                     </h3>
@@ -114,7 +114,7 @@
                 style="background-image:url({{ asset('themes/zoelife/peru/images/background/fondo.jpg') }});">
                 <div class="container">
                     <div class="section-head text-center text-white" style="padding: 10px;">
-                        <h2 class="h2">Sobre <span class="text-primary"> Zoé Life</span></h2>
+                        <h2 class="h2">Sobre <span style="color: #00b01a;"> Zoé Life</span></h2>
                         <div class="dez-separator text-primary style-icon border-white">
                             <img alt="" src="themes/zoelife/peru/images/leaf-green.png" />
                         </div>
@@ -132,8 +132,8 @@
                 <div class="container">
                         <div class="section-head">
                             <h2 class="text-uppercase">Zona de Descarga</h2>
-                            <div class="dez-divider divider-2px bg-primary icon-left">
-                                <i class="fa fa-thumbs-o-up bg-primary text-white"></i>
+                            <div class="dez-divider divider-2pxicon-left" style="background: #00b01a;">
+                                <i class="fa fa-thumbs-o-up  text-white"  style="background: #00b01a;"></i>
                             </div>
                         </div>
                         <div class="section-content text-center ">
