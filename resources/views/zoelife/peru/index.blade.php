@@ -7,7 +7,7 @@
 
         <!-- Content -->
         <div class="page-content">
-            <!-- Slider -->
+            
             <div class="main-slider style-two default-banner">
                 <div class="tp-banner-container">
                     <div class="tp-banner">
@@ -17,9 +17,7 @@
                             <div id="dz_rev_slider_4" class="rev_slider fullwidthabanner" style="display:none;"
                                 data-version="5.3.0.2">
                                 <ul>
-
                                     @foreach ($slider as $k => $row)
-                                        <!-- SLIDE  -->
                                         <li data-index="rs-100" data-transition="parallaxvertical" data-slotamount="default"
                                             data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default"
                                             data-easeout="default" data-masterspeed="default"
@@ -27,12 +25,12 @@
                                             data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"
                                             data-title="" data-param1="" data-param2="" data-param3=""
                                             data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
-                                            data-param9="" data-param10="" >
-                                            <!-- MAIN IMAGE -->
-                                                <img src="{{ $row->content }}" alt="" data-bgposition="center center"
+                                            data-param9="" data-param10="" class="ara_centrado_total">
+                                            <img src="{{ $row->content }}" alt="" data-bgposition="center center"
                                                     data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10"
-                                                    class="rev-slidebg" data-no-retina=""
-                                            <!-- LAYERS -->
+                                                    class="rev-slidebg" data-no-retina="" style="background-size: cover; background-position: center; width: 100%; height: auto;"
+                                            />
+                                            
                                             <div class="tp-caption tp-shape tp-shapewrapper " id="slide-100-layer-1"
                                                 data-x="['center','center','center','center']"
                                                 data-hoffset="['0','0','0','0']"
@@ -46,7 +44,6 @@
                                                 data-paddingleft="[0,0,0,0]"
                                                 style="z-index: 2;background-color:rgba(0, 0, 0, 0.30);border-color:rgba(0, 0, 0, 0);border-width:0px;">
                                             </div>
-
                                         </li>
                                     @endforeach
                                 </ul>
@@ -55,7 +52,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Slider END -->
 
             <!-- Visión - Misión - Valores / STAR -->
             <x-peru.vision-mision-valores-area></x-peru.vision-mision-valores-area>

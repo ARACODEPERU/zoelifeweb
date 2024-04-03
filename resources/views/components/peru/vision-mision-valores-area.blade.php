@@ -1,15 +1,17 @@
 <div>
     <!-- Visión - Misión - Valores / STAR -->
-    <div class="section-full bg-white selector-d p-t70 p-b40 selector-d">
+    <div class="section-full bg-white  selector-d" style="padding: 80px 5px;">
         <div class="container">
-            <div class="text-center">
-                <h2 class="h2">GRUPO <span class="text-primary">GREEN PLANET SRL</span></h2>
-                <div class="dez-separator text-primary style-icon">
-                    <img alt="" src="themes/zoelife/peru/images/leaf-green.png" />
+            <div class="row">
+                <div class="col-md-12" style="text-align:center; padding: 40px 0px;">
+                    <h2 class="h2">GRUPO <span class="text-primary">GREEN PLANET SRL</span></h2>
+                    <div class="dez-separator text-primary style-icon">
+                        <img alt="" src="themes/zoelife/peru/images/leaf-green.png" />
+                    </div>
+                    <p style="width: 100%;">
+                        {{ $nosotros[0]->items[0]->item->content }}
+                    </p>
                 </div>
-                <p style="width: 100%;">
-                    {{ $nosotros[0]->items[0]->item->content }}
-                </p>
             </div>
             <div class="row">
                 <div class="col-md-4">

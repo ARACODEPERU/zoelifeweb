@@ -57,6 +57,13 @@ General
 
 
 
+/*aracode*/
+.ara_centrado_total {
+	display: flex;
+	justify-content: center; /* Centrar horizontalmente */
+	align-items: center; /* Centrar verticalmente */
+}
+
 
 /**********************/
 /****** Facebook ******/
