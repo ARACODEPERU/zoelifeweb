@@ -46,19 +46,21 @@
                         <span></span>
                     </button>
                     <!-- Extra Nav -->
-                    <div class="extra-nav hidden-sm-down disnone-md">
-                        <div class="extra-cell">
-                            <a href="https://zoelife.global//link/store/TIENDAPUBLICA" target="_blank"
-                                class="site-button">
-                                <i class="fa fa-cart-plus" aria-hidden="true"></i> &nbsp;
-                                Tienda Online
-                            </a>
-                        </div>
-                        <div class="extra-cell">
-                            <a href="https://zoelife.global/LoginSalesForce.php" target="_blank" class="site-button">
-                                <i class="fa fa-laptop" aria-hidden="true"></i> &nbsp;
-                                Oficina Virtual
-                            </a>
+                    <div class="btn-header-pc">
+                        <div class="extra-nav hidden-sm-down disnone-md">
+                            <div class="extra-cell">
+                                <a href="https://zoelife.global//link/store/TIENDAPUBLICA" target="_blank"
+                                    class="site-button">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i> &nbsp;
+                                    Tienda Online
+                                </a>
+                            </div>
+                            <div class="extra-cell">
+                                <a href="https://zoelife.global/LoginSalesForce.php" target="_blank" class="site-button">
+                                    <i class="fa fa-laptop" aria-hidden="true"></i> &nbsp;
+                                    Oficina Virtual
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="btn-header-mobile">

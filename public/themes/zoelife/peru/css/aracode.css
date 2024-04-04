@@ -71,7 +71,7 @@ General
 
 .appFacebook{
 	position: fixed;
-	right: 26px;
+	right: 5px;
 	bottom: 328px;
 	width: 50px;
 	z-index: 1000;
@@ -88,7 +88,7 @@ General
 
 .appInstagram{
 	position: fixed;
-	right: 26px;
+	right: 5px;
 	bottom: 277px;
 	width: 50px;
 	z-index: 1000;
@@ -105,7 +105,7 @@ General
 
 .appYoutube{
 	position: fixed;
-	right: 26px;
+	right: 5px;
 	bottom: 225px;
 	width: 50px;
 	z-index: 1000;
@@ -122,7 +122,7 @@ General
 
 .appTiktok{
 	position: fixed;
-	right: 26px;
+	right: 5px;
 	bottom: 175px;
 	width: 50px;
 	z-index: 1000;
@@ -139,7 +139,7 @@ General
 
 .appWhatsapp{
 	position: fixed;
-	right: 26px;
+	right: 5px;
 	bottom: 120px;
 	width: 53px;
 	z-index: 1000;

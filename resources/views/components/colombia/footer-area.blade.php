@@ -1,4 +1,5 @@
 <div>
+
     <a class="appFacebook" target="_blanck" href="{{ $footer[0]->items[4]->item->content }}">
         <img src="{{ $footer[0]->items[3]->item->content }}" alt="Facebook">
     </a>
@@ -15,7 +16,7 @@
         <img src="{{ $footer[0]->items[9]->item->content }}" alt="Tiktok">
     </a>
     
-    <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=51{{ $footer[0]->items[12]->item->content }}&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?">
+    <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=57{{ $footer[0]->items[12]->item->content }}&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?">
         <img src="{{ $footer[0]->items[11]->item->content }}" alt="Whatsapp">
     </a>
 
@@ -35,7 +36,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="widget widget_services">
                             <h4 class="m-b10 text-uppercase">Testimonios</h4>
-                            <div class="dez-separator bg-primary"></div>
+                            <div class="dez-separator"  style="background: #00b01a;"></div>
                             <ul>
                                 @if (count($testimonies) > 0)
                                     @foreach ($testimonies as $testimony)
@@ -48,7 +49,7 @@
                                     @endforeach
                                 @endif
                                 <li>
-                                <a href="{{ route('web_peru_testimonios') }}" style="color: orange;">
+                                <a href="{{ route('web_colombia_testimonios') }}" style="color: orange;">
                                     <i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Ver más testimonios
                                 </a>
                                 </li>
@@ -58,21 +59,21 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="widget widget_services">
                             <h4 class="m-b10 text-uppercase">Navegación</h4>
-                            <div class="dez-separator bg-primary"></div>
+                            <div class="dez-separator"  style="background: #00b01a;"></div>
                             <ul>
-                                <li><a href="{{ route('web_peru_inicio') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Inicio</a></li>
-                                <li><a href="{{ route('web_peru_productos') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Productos</a></li>
-                                <li><a href="{{ route('web_peru_centros') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Centros de Distribución</a></li>
-                                <li><a href="{{ route('web_peru_eventos') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Eventos</a></li>
-                                <li><a href="{{ route('web_peru_alcanzando_las_estrellas') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Alcanzando las Estrellas</a></li>
-                                <li><a href="{{ route('web_peru_contacto') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Contacto</a></li>
+                                <li><a href="{{ route('web_colombia_inicio') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Inicio</a></li>
+                                <li><a href="{{ route('web_colombia_productos') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Productos</a></li>
+                                <li><a href="{{ route('web_colombia_centros') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Centros de Distribución</a></li>
+                                <li><a href="{{ route('web_colombia_eventos') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Eventos</a></li>
+                                <li><a href="{{ route('web_colombia_alcanzando_las_estrellas') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Alcanzando las Estrellas</a></li>
+                                <li><a href="{{ route('web_colombia_contacto') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp;  Contacto</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="widget widget_getintuch">
                             <h4 class="m-b10 text-uppercase">Contáctanos</h4>
-                            <div class="dez-separator bg-primary"></div>
+                            <div class="dez-separator"  style="background: #00b01a;"></div>
                             <ul>
                                 <li>
                                     <i class="fa fa-map-marker"></i>
@@ -103,13 +104,13 @@
                         <span>© Copyright 2024</span>
                     </div>
                     <div class="col-lg-4 text-center">
-                        <span> Desarrollado por <i class="fa fa-heart text-primary heart"></i>
+                        <span> Desarrollado por <i class="fa fa-heart  heart" style="color: #00b01a;"></i>
                             <a href="">Aracode Smart Solutions</a>
                         </span>
                     </div>
                     <div class="col-lg-4 text-right">
                         <ul class="list-inline">
-                            <li><a href="{{ route('web_peru_contacto') }}"> Contáctanos</a></li>
+                            <li><a href="{{ route('web_colombia_contacto') }}"> Contáctanos</a></li>
                             <li><a href="{{ $footer[0]->items[8]->item->content }}"> Política de Privacidad</a></li>
                         </ul>
                     </div>

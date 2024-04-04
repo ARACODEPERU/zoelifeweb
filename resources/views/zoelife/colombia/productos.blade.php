@@ -30,7 +30,7 @@
                 <div class="p-a20 bg-white selector-d m-b20">
                     <div class="section-content" style="text-align: center;">
                         <div class="m-b10">
-                            <h2 class="text-uppercase text-primary">Beneficios de los productos</h2>
+                            <h2 class="text-uppercas" style="color: #00b01a;">Beneficios de los productos</h2>
                             <div class="row" style="justify-content: space-between;">
                                 @foreach ( $beneficiop as $bp )
                                 <div class="col-md-2" style="padding: 20px 0px;  ">
@@ -38,8 +38,8 @@
                                 </div>
                                 @endforeach
                             </div>
-                            <div class="dez-divider divider-2px bg-primary icon-center">
-                                <i class="fa fa-leaf bg-primary text-white"></i>
+                            <div class="dez-divider divider-2px icon-center" style="background: #00b01a;">
+                                <i class="fa fa-leaf  text-white" style="background: #00b01a;"></i>
                             </div>
                         </div>
                     </div>
@@ -57,13 +57,13 @@
                                 <div class="col-md-2">
                                     <div class="dez-box m-b30">
                                         <div class="dez-media dez-img-effect zoom">
-                                            <a href="{{ route('web_colombia_producto_descripcion', $producto->id) }}">
+                                            <a href="{{ route('web_peru_producto_descripcion', $producto->id) }}">
                                                 <img style="height: 100%;" src="{{ asset($producto->image) }}" alt="">
                                             </a>
                                         </div>
                                         <div class="p-a10">
                                             <h4 class="dez-title m-b0">
-                                                <a href="{{ route('web_colombia_producto_descripcion', $producto->id) }}">{{ $producto->name }}</a>
+                                                <a href="{{ route('web_peru_producto_descripcion', $producto->id) }}">{{ $producto->name }}</a>
                                             </h4>
                                         </div>
                                     </div>
