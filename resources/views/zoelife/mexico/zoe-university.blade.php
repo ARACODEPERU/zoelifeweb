@@ -17,7 +17,7 @@
         <!-- inner page banner END -->
 
         <!-- Breadcrumb row -->
-        <div class="breadcrumb-row">
+        <div class="breadcrumb-row" style="margin-top: 10px;">
             <div class="container">
                 <ul class="list-inline">
                     <li><a href="{{ route('web_mexico_inicio') }}">Home</a></li>
@@ -27,7 +27,7 @@
         </div>
         <!-- Breadcrumb row END -->
 
-        <div class="container" style="padding: 40px;">
+        <div class="container">
             <x-study-programs></x-study-programs>
         </div>
 

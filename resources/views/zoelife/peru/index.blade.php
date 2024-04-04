@@ -8,45 +8,80 @@
         <!-- Content -->
         <div class="page-content">
 
-            <div class="main-slider style-two default-banner">
-                <div class="tp-banner-container">
-                    <div class="tp-banner">
-                        <div id="dz_rev_slider_4_wrapper" class="rev_slider_wrapper fullwidthbanner-container"
-                            data-alias="news-gallery36" data-source="gallery"
-                            style="margin:0px auto;background-color:#ffffff;padding:0px;margin-top:0px;margin-bottom:0px;">
-                            <div id="dz_rev_slider_4" class="rev_slider fullwidthabanner" style="display:none;"
-                                data-version="5.3.0.2">
-                                <ul>
-                                    @foreach ($slider as $k => $row)
-                                        <li data-index="rs-100" data-transition="parallaxvertical" data-slotamount="default"
-                                            data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default"
-                                            data-easeout="default" data-masterspeed="default"
-                                            data-thumb="{{ $row->content }}" data-rotate="0" data-fstransition="fade"
-                                            data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"
-                                            data-title="" data-param1="" data-param2="" data-param3=""
-                                            data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
-                                            data-param9="" data-param10="" class="ara_centrado_total">
-                                            <img src="{{ $row->content }}" alt="" data-bgposition="center center"
-                                                    data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10"
-                                                    class="rev-slidebg" data-no-retina="" style="background-size: cover; background-position: center; width: 100%; height: auto;"
-                                            />
-                                            
-                                            <div class="tp-caption tp-shape tp-shapewrapper " id="slide-100-layer-1"
-                                                data-x="['center','center','center','center']"
-                                                data-hoffset="['0','0','0','0']"
-                                                data-y="['middle','middle','middle','middle']"
-                                                data-voffset="['0','0','0','0']" data-width="full" data-height="full"
-                                                data-whitespace="nowrap" data-type="shape" data-basealign="slide"
-                                                data-responsive_offset="off" data-responsive="off"
-                                                data-frames='[{"from":"opacity:0;","speed":1000,"to":"o:1;","delay":0,"ease":"Power4.easeOut"},{"delay":"wait","speed":1000,"to":"opacity:0;","ease":"Power4.easeOut"}]'
-                                                data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
-                                                data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
-                                                data-paddingleft="[0,0,0,0]"
-                                                style="z-index: 2;background-color:rgba(0, 0, 0, 0.30);border-color:rgba(0, 0, 0, 0);border-width:0px;">
-                                            </div>
-                                        </li>
-                                    @endforeach
-                                </ul>
+            <!-- Slider -->
+            <div class="btn-header-pc">
+                <div class="main-slider style-two default-banner">
+                    <div class="tp-banner-container">
+                        <div class="tp-banner">
+                            <div id="dz_rev_slider_4_wrapper" class="rev_slider_wrapper fullwidthbanner-container"
+                                data-alias="news-gallery36" data-source="gallery"
+                                style="margin:0px auto;background-color:#ffffff;padding:0px;margin-top:0px;margin-bottom:0px;">
+                                <div id="dz_rev_slider_4" class="rev_slider fullwidthabanner" style="display:none;"
+                                    data-version="5.3.0.2">
+                                    <ul>
+                                        @foreach ($slider as $k => $row)
+                                            <li data-index="rs-100" data-transition="parallaxvertical" data-slotamount="default"
+                                                data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default"
+                                                data-easeout="default" data-masterspeed="default"
+                                                data-thumb="{{ $row->content }}" data-rotate="0" data-fstransition="fade"
+                                                data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"
+                                                data-title="" data-param1="" data-param2="" data-param3=""
+                                                data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
+                                                data-param9="" data-param10="" class="ara_centrado_total">
+                                                <img src="{{ $row->content }}" alt="" data-bgposition="center center"
+                                                        data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10"
+                                                        class="rev-slidebg" data-no-retina="" style="background-size: cover; background-position: center; width: 100%; height: auto;"
+                                                />
+                                                
+                                                <div class="tp-caption tp-shape tp-shapewrapper " id="slide-100-layer-1"
+                                                    data-x="['center','center','center','center']"
+                                                    data-hoffset="['0','0','0','0']"
+                                                    data-y="['middle','middle','middle','middle']"
+                                                    data-voffset="['0','0','0','0']" data-width="full" data-height="full"
+                                                    data-whitespace="nowrap" data-type="shape" data-basealign="slide"
+                                                    data-responsive_offset="off" data-responsive="off"
+                                                    data-frames='[{"from":"opacity:0;","speed":1000,"to":"o:1;","delay":0,"ease":"Power4.easeOut"},{"delay":"wait","speed":1000,"to":"opacity:0;","ease":"Power4.easeOut"}]'
+                                                    data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
+                                                    data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                                    data-paddingleft="[0,0,0,0]"
+                                                    style="z-index: 2;background-color:rgba(0, 0, 0, 0.30);border-color:rgba(0, 0, 0, 0);border-width:0px;">
+                                                </div>
+                                            </li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slider END -->
+
+            <div class="btn-header-mobile">
+                <div class="">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="width: 100%; height: auto;">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                </ol>
+                                <div class="carousel-inner" style="width: 100%;">
+                                    <div class="carousel-item active">
+                                        <img style="width: 100%;" src="{{ $sliderMobil[0]->content }}" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img style="width: 100%;" src="{{ $sliderMobil[1]->content }}" alt="Second slide">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Antes</span>
+                                </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Nuevo</span>
+                                </a>
                             </div>
                         </div>
                     </div>

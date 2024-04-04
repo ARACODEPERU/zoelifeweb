@@ -23,6 +23,16 @@ class MexicoController extends Controller
             ->orderBy('cms_section_items.position')
             ->get();
 
+        $sliderMobil = CmsSection::where('component_id', 'peru_slider_inicio_mobil_116')
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->get();
+
         $video = CmsSection::where('component_id', 'mexico_video_presentacion_inicio_57')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
@@ -59,6 +69,7 @@ class MexicoController extends Controller
 
         return view('zoelife/mexico.index', [
             'slider' => $slider,
+            'sliderMobil' => $sliderMobil,
             'video' => $video,
             'fundador' => $fundador,
             'equipos' => $equipos,
