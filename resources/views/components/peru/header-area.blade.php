@@ -62,6 +62,7 @@
                             </div>
                         </div>
                     </div>
+                    <!--
                     <div class="btn-header-mobile">
                         <div class="extra-nav hidden-sm-down disnone-md" style="text-align: center;">
                             <div class="extra-cell">
@@ -78,8 +79,24 @@
                             </div>
                         </div>
                     </div>
+                    -->
                     <!-- Main Nav -->
-                    <div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
+                    <div class="header-nav navbar-collapse collapse " id="navbarNavDropdown">
+                        
+                        <div class="extra-nav hidden-sm-down disnone-md" style="text-align: center; padding: 10px;">
+                            <div class="extra-cell">
+                                <a href="https://zoelife.global//link/store/TIENDAPUBLICA" target="_blank" 
+                                    class="site-button" title="Tienda Online">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="extra-cell">
+                                <a href="https://zoelife.global/LoginSalesForce.php" target="_blank" 
+                                    class="site-button" title="Oficina Vitual">
+                                    <i class="fa fa-laptop" aria-hidden="true"></i> 
+                                </a>
+                            </div>
+                        </div>
                         <ul class="nav navbar-nav">
                             <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_inicio') ? 'active' : '' }}" href="{{ route('web_peru_inicio') }}">Inicio</a> </li>
                              <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_productos') ? 'active' : '' }}" href="{{ route('web_peru_productos') }}">Productos</a>
