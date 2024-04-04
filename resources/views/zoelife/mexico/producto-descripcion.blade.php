@@ -65,18 +65,18 @@
         <!-- Why Choose Us End -->
 
         <div class="content-area">
-            <div class="container">
+            <div class="" style="width: 100%; padding: 40px;">
 
                 <!-- Dividers with icon -->
-                <div class="p-a20 bg-white selector-d m-b20">
+                <div class="p-a20 bg-white selector-d m-b20 container">
                     <div class="section-content" style="text-align: center;">
                         <div class="m-b10">
                             <h5 class="text-uppercase">Testimonios del {{ $product->name }}</h5>
                             <p>
                                 Sumérgete en una experiencia única y conoce de primera mano cómo nuestro producto ha superado las expectativas y ha transformado rutinas diarias en momentos extraordinarios.
                             </p>
-                            <div class="dez-divider divider-2px bg-primary icon-center"><i
-                                    class="fa fa-truck bg-primary text-white"></i></div>
+                            <div class="dez-divider divider-2px  icon-center" style="background: #00b01a;"><i
+                                    class="fa fa-truck  text-white" style="background: #00b01a;"></i></div>
                         </div>
                     </div>
                 </div>
@@ -110,21 +110,6 @@
                     @endif
                 </div>
                 <!-- blog grid END -->
-
-                <!-- Pagination -->
-                {{-- <div class="pagination-bx">
-                    <ul class="pagination">
-                        <li class="previous"><a href="javascript:void(0);"><i class="fa fa-angle-double-left"></i></a>
-                        </li>
-                        <li class="active"><a href="javascript:void(0);">1</a></li>
-                        <li><a href="javascript:void(0);">2</a></li>
-                        <li><a href="javascript:void(0);">3</a></li>
-                        <li class="next"><a href="javascript:void(0);"><i class="fa fa-angle-double-right"></i></a>
-                        </li>
-                    </ul>
-                </div> --}}
-                <!-- Pagination END -->
-
             </div>
         </div>
     </div>

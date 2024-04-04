@@ -42,6 +42,9 @@
         href="{{ asset('themes/zoelife/peru/plugins/revolution/css/navigation.css') }}">
 
 
+        <link rel="stylesheet" type="text/css" class="skin" href="{{ asset('themes/zoelife/peru/plugins/bootstrap/css/bootstrap.min.css') }}">
+
+
 
 </head>
 
