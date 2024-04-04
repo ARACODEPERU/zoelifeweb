@@ -58,7 +58,7 @@
             <!-- Slider END -->
 
             <div class="btn-header-mobile">
-                <div class="">
+                <div class="container">
                     <div class="row">
                         <div class="col-md-12">
                             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="width: 90%; height: auto;">
