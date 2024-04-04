@@ -116,10 +116,10 @@
                             <h3 class="des-producto">Información de Contacto</h3>
                             <ul class="no-margin">
                                 <li class="icon-bx-wraper left m-b30">
-                                    <div class="icon-bx-xs"> 
-                                        <a href="javascript:void(0);" class="icon-cell"  style="background: #00b01a;">
-                                            <i class="fa fa-map-marker"></i>
-                                        </a>
+                                    <div class="icon-bx-xs"  style="background: #00b01a;"> 
+                                        <a href="javascript:void(0);" class="icon-cell"><i
+                                                class="fa fa-map-marker" style="color: #fff;"></i>
+                                        </a> 
                                     </div>
                                     <div class="icon-content">
                                         <h6 class="text-uppercase m-b0 dez-tilte des-producto">Oficina Principal</h6>
@@ -127,16 +127,16 @@
                                     </div>
                                 </li>
                                 <li class="icon-bx-wraper left  m-b30">
-                                    <div class="icon-bx-xs"> <a href="javascript:void(0);" class="icon-cell"><i
-                                                class="fa fa-envelope"></i></a> </div>
+                                    <div class="icon-bx-xs"  style="background: #00b01a;"> <a href="javascript:void(0);" class="icon-cell"><i
+                                                class="fa fa-envelope" style="color: #fff;"></i></a> </div>
                                     <div class="icon-content">
                                         <h6 class="text-uppercase m-b0 dez-tilte des-producto">E-MAIl</h6>
                                         <p>{{ $datosContacto[1]->content }}</p>
                                     </div>
                                 </li>
                                 <li class="icon-bx-wraper left">
-                                    <div class="icon-bx-xs"> <a href="javascript:void(0);"
-                                            class="icon-cell"><i class="fa fa-phone"></i></a> </div>
+                                    <div class="icon-bx-xs"  style="background: #00b01a;"> <a href="javascript:void(0);" class="icon-cell"><i
+                                                class="fa fa-phone" style="color: #fff;"></i></a> </div>
                                     <div class="icon-content">
                                         <h6 class="text-uppercase m-b0 dez-tilte des-producto">TELÉFONO</h6>
                                         <p>{{ $datosContacto[2]->content }}</p>

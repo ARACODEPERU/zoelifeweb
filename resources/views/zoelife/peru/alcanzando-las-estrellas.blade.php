@@ -12,7 +12,7 @@
         <!-- inner page banner -->
         <div class="dez-bnr-inr ara_centrado_total">
           <img style="width: 100%;" src="{{ $banner->content }}" alt="">
-      </div>
+        </div>
         <!-- inner page banner END -->
 
         <!-- Breadcrumb row -->
@@ -27,28 +27,22 @@
         <!-- Breadcrumb row END -->
 
         <div class="content-area">
-          <div class="container">
-              <!-- Dividers with icon -->
+            <div class="container">
               @if ( count($presentacion) > 0)
-              <div class="p-a20 bg-white selector-d m-b20">
-                <div class="section-content" style="text-align: center;">
-                    <div class="m-b10">
-                        <h3 class="text-uppercas" style="color: #00b01a;"><b>{{ $presentacion[0]->content }}</b></h3>
-                        <p>{{ $presentacion[1]->content }}</p>
-                        <div class="dez-divider divider-2p icon-center" style="background: #00b01a;">
-                          <i class="fa fa-truck text-white" style="background: #00b01a;"></i></div>
-                    </div>
+                <div class="p-a20 bg-white selector-d m-b20">
+                  <div class="section-content" style="text-align: center;">
+                      <div class="m-b10">
+                          <h3 class="text-uppercas" style="color: #00b01a;"><b>{{ $presentacion[0]->content }}</b></h3>
+                          <p>{{ $presentacion[1]->content }}</p>
+                          <div class="dez-divider divider-2p icon-center" style="background: #00b01a;">
+                            <i class="fa fa-truck text-white" style="background: #00b01a;"></i></div>
+                      </div>
+                  </div>
                 </div>
-            </div>
               @endif
-              <!-- Dividers with icon END -->
-          </div>
+            </div>
+        </div>
 
-
-
-<!-- CARRUSEL INICIO -->
-
-        <div>
 
           <section style="padding: 60px 10px;">
                       <div class="swiper tranding-slider">
@@ -140,10 +134,8 @@
           <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
 
-        </div>
 
-
-</div>
+    </div>
 
 <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 <!-- script del video -->

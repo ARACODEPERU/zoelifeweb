@@ -18,7 +18,7 @@
         <div class="breadcrumb-row">
             <div class="container">
                 <ul class="list-inline">
-                    <li><a href="{{ route('web_peru_inicio') }}">Home</a></li>
+                    <li><a href="{{ route('web_bolivia_inicio') }}">Home</a></li>
                     <li>University</li>
                 </ul>
             </div>
