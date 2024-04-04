@@ -19,20 +19,21 @@
         </div>
         <!-- Breadcrumb row END -->
 
+
         <div class="container" style="padding: 60px 0px;">
             <div class="row">
-                <div class="col-md-6">
-                    <img src="{{ $product->image }}" alt="">
+                <div class="col-md-6" style="text-align: center;">
+                    <img style="width: 90%;" src="{{ $product->image }}" alt="">
                 </div>
                 <div class="col-md-6">
                     <!-- Dividers with icon -->
                     <div class="p-a30 bg-white selector-d m-b30">
                         <div class="section-content">
                             <h2 class="text-uppercase">{{ $product->name }}</h2>
-                            <div class="dez-divider divider-2px bg-primary icon-left">
-                                <i class="fa fa-thumbs-o-up bg-primary text-white"></i>
+                            <div class="dez-divider divider-2px icon-left" style="background: #00b01a;">
+                                <i class="fa fa-thumbs-o-up  text-white" style="background: #00b01a;"></i>
                             </div>
-                            <div class="m-b10">
+                            <div class="m-b10" >
                                 {!! $product->description !!}
                             </div>
                         </div>
@@ -42,15 +43,14 @@
             </div>
         </div>
 
-
         <!-- Why Choose Us -->
         <div class="section-full text-white bg-img-fix p-t70 p-b40 overlay-black-dark choose-us"
-            style="background-image:url({{ asset('themes/zoelife/ecuador/images/background/fondo.jpg') }});">
+            style="background-image:url({{ asset('themes/zoelife/peru/images/background/fondo.jpg') }});">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="section-head  text-center text-white">
-                            <h2 class="h2">Recomendaciones <span class="text-primary"> de Uso Sugerido</span></h2>
+                            <h2 class="h2">Recomendaciones <span style="color: #00b01a;"> de Uso Sugerido</span></h2>
                             <div class="dez-separator text-primary style-icon border-white">
                                 <img alt="" src="{{ asset('themes/zoelife/peru/images/leaf-green.png') }}" />
                             </div>
@@ -71,15 +71,15 @@
 
 
                 <!-- Dividers with icon -->
-                <div class="p-a20 bg-white selector-d m-b20">
+                <div class="p-a20 bg-white selector-d m-b20 container">
                     <div class="section-content" style="text-align: center;">
                         <div class="m-b10">
                             <h5 class="text-uppercase">Testimonios del {{ $product->name }}</h5>
                             <p>
                                 Sumérgete en una experiencia única y conoce de primera mano cómo nuestro producto ha superado las expectativas y ha transformado rutinas diarias en momentos extraordinarios.
                             </p>
-                            <div class="dez-divider divider-2px bg-primary icon-center"><i
-                                    class="fa fa-truck bg-primary text-white"></i></div>
+                            <div class="dez-divider divider-2px  icon-center" style="background: #00b01a;"><i
+                                    class="fa fa-truck  text-white" style="background: #00b01a;"></i></div>
                         </div>
                     </div>
                 </div>
