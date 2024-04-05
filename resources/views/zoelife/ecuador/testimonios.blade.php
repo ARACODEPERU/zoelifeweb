@@ -8,22 +8,32 @@
     <!-- Content -->
     <div class="page-content">
 
-        <!-- inner page banner | Medidas 1920 x 300 pixeles -->
-        <div class="dez-bnr-inr ara_centrado_total">
-            <img style="width: 100%;" src="{{ $banner->content }}" alt="">
-        </div>
-        <!-- inner page banner END -->
-        <!-- Breadcrumb row -->
-        <div class="breadcrumb-row">
-            <div class="container">
-                <ul class="list-inline">
-                    <li><a href="{{ route('web_ecuador_inicio') }}">Home</a></li>
-                    <li>Testimonios</li>
-                </ul>
+        <div class="btn-header-pc">
+            <div class="dez-bnr-inr ara_centrado_total">
+                <img style="width: 100%; height: auto;" src="{{ $banner->content }}" alt="">
+            </div>
+            <div class="breadcrumb-row" style="margin-top: 15px; position:relative; z-index:1;">
+                <div class="container">
+                    <ul class="list-inline">
+                        <li><a href="{{ route('web_ecuador_inicio') }}">Home</a></li>
+                        <li>Testimonios</li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <!-- Breadcrumb row END -->
 
+        <div class="btn-header-mobile">
+            <!-- Breadcrumb row -->
+            <div class="breadcrumb-row" style="margin-top: 80px;">
+                <div class="container">
+                    <ul class="list-inline">
+                        <li><a href="{{ route('web_ecuador_inicio') }}">Home</a></li>
+                        <li>Testimonios</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Breadcrumb row END -->
+        </div>
 
         <div class="content-area">
             <!-- Left & right section start -->
@@ -56,7 +66,9 @@
                                     </div>
                                     <div class="dez-post-info">
                                         <div class="dez-post-title ">
-                                            <h4 class="post-title"><a href="" class=" des-producto">{{ $testimony->title }}</a></h4>
+                                            <h4 class="post-title">
+                                                <a href="" class=" des-producto">{{ $testimony->title }}</a>
+                                            </h4>
                                         </div>
                                         <div class="dez-post-tags">
                                             <div class="post-tags">
@@ -68,28 +80,9 @@
                         @endforeach
                     @endif
                 </ul>
-                <!-- Gallery END -->
-                <!-- Pagination start -->
-                {{-- <div class="pagination-bx">
-                    <ul class="pagination">
-                        <li class="previous"><a href="javascript:void(0);"><i class="fa fa-angle-double-left"></i></a>
-                        </li>
-                        <li class="active"><a href="javascript:void(0);">1</a></li>
-                        <li><a href="javascript:void(0);">2</a></li>
-                        <li><a href="javascript:void(0);">3</a></li>
-                        <li class="next"><a href="javascript:void(0);"><i class="fa fa-angle-double-right"></i></a>
-                        </li>
-                    </ul>
-                </div> --}}
-                <!-- Pagination END -->
             </div>
             <!-- Left & right section  END -->
         </div>
-
-        <!-- Paises / STAR -->
-        {{-- <x-countries-section /> --}}
-        <!-- Paises / END -->
-
     </div>
     <!-- Content END-->
 

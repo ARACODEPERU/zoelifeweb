@@ -5,7 +5,6 @@
     <x-peru.header-area></x-peru.header-area>
     <!-- Encabezado fin -->
 
-
     <div class="btn-header-pc">
         <!-- inner page banner -->
         <div class="dez-bnr-inr ara_centrado_total">

@@ -5,135 +5,238 @@
     <x-ecuador.header-area></x-ecuador.header-area>
     <!-- Encabezado fin -->
 
-
     <!-- Content -->
     <div class="page-content">
 
-        <!-- inner page banner -->
-        <div class="dez-bnr-inr ara_centrado_total">
-          <img style="width: 100%;" src="{{ $banner->content }}" alt="">
-      </div>
-        <!-- inner page banner END -->
-
-        <!-- Breadcrumb row -->
-        <div class="breadcrumb-row">
-            <div class="container">
-                <ul class="list-inline">
-                    <li><a href="{{ route('web_ecuador_inicio') }}">Home</a></li>
-                    <li>Alcanzando las Estrellas</li>
-                </ul>
-            </div>
-        </div>
-        <!-- Breadcrumb row END -->
-
-        <div class="content-area">
-          <div class="container">
-            @if ( count($presentacion) > 0)
-              <div class="p-a20 bg-white selector-d m-b20">
-                <div class="section-content" style="text-align: center;">
-                    <div class="m-b10">
-                        <h3 class="text-uppercas" style="color: #00b01a;"><b>{{ $presentacion[0]->content }}</b></h3>
-                        <p>{{ $presentacion[1]->content }}</p>
-                        <div class="dez-divider divider-2p icon-center" style="background: #00b01a;">
-                          <i class="fa fa-truck text-white" style="background: #00b01a;"></i></div>
-                    </div>
-                </div>
+      <div class="btn-header-pc">
+          <div class="dez-bnr-inr ara_centrado_total">
+              <img style="width: 100%; height: auto;" src="{{ $banner->content }}" alt="">
+          </div>
+          <div class="breadcrumb-row" style="margin-top: 15px; position:relative; z-index:1;">
+              <div class="container">
+                  <ul class="list-inline">
+                      <li><a href="{{ route('web_ecuador_inicio') }}">Home</a></li>
+                      <li>Alcanzando las estrellas</li>
+                  </ul>
               </div>
-            @endif
           </div>
-          </div>
-          <section style="padding: 60px 10px;">
-                      <div class="swiper tranding-slider">
-                        <div class="swiper-wrapper">
-                          <!-- Slide-start -->
-                            @if ( count($stars) > 0)
-                                @foreach ($stars as $key => $star)
-                                    <div class="swiper-slide tranding-slide">
-                                    <div  style=" width: 100%; height: 250px;">
-                                        <img src="{{ $star->item->items[0]->content }}" alt="img">
-                                        {{-- <h3 style="text-align: center; margin-top: 10px;">{{ $star_video->title }}</h2> --}}
-                                    </div>
-                                    </div>
-                                @endforeach
-                            @endif
-                          <!-- Slide-end -->
-                        </div>
+      </div>
 
-                        <div class="tranding-slider-control" style="margin-top: -200px;">
-                          <div class="container">
-                            <div class="row">
-                              <div class="col-md-2"></div>
-                              <div class="col-md-2">
-                                <div class="swiper-button-prev slider-arrow" style="margin-top: -40px;">
-                                  <ion-icon name="arrow-back-outline"></ion-icon>
-                                </div>
-                              </div>
-                              <div class="col-md-4">
-                                <div class="swiper-pagination" style="justify-content: center;"></div>
-                              </div>
-                              <div class="col-md-2">
-                                <div class="swiper-button-next slider-arrow" style="margin-top: -40px;">
-                                  <ion-icon name="arrow-forward-outline"></ion-icon>
-                                </div>
-                              </div>
-                              <div class="col-md-2"></div>
+      <div class="btn-header-mobile">
+          <!-- Breadcrumb row -->
+          <div class="breadcrumb-row" style="margin-top: 80px;">
+              <div class="container">
+                  <ul class="list-inline">
+                      <li><a href="{{ route('web_ecuador_inicio') }}">Home</a></li>
+                      <li>Alcanzando las estrellas</li>
+                  </ul>
+              </div>
+          </div>
+          <!-- Breadcrumb row END -->
+      </div>
+
+      <div class="content-area">
+            <div class="container">
+              @if ( count($presentacion) > 0)
+                <div class="p-a20 bg-white selector-d m-b20">
+                  <div class="section-content" style="text-align: center;">
+                      <div class="m-b10">
+                          <h3 class="text-uppercas" style="color: #00b01a;"><b>{{ $presentacion[0]->content }}</b></h3>
+                          <p>{{ $presentacion[1]->content }}</p>
+                          <div class="dez-divider divider-2p icon-center" style="background: #00b01a;">
+                            <i class="fa fa-truck text-white" style="background: #00b01a;"></i></div>
+                      </div>
+                  </div>
+                </div>
+              @endif
+            </div>
+      </div>
+
+      <div class="btn-header-pc">
+        <section style="padding: 60px 10px;">
+          <div class="swiper tranding-slider">
+            <div class="swiper-wrapper">
+              <!-- Slide-start -->
+                @if ( count($stars) > 0)
+                    @foreach ($stars as $key => $star)
+                        <div class="swiper-slide tranding-slide">
+                        <div  style=" width: 100%; height: 250px;">
+                            <img src="{{ $star->item->items[0]->content }}" alt="img">
+                            {{-- <h3 style="text-align: center; margin-top: 10px;">{{ $star_video->title }}</h2> --}}
+                        </div>
+                        </div>
+                    @endforeach
+                @endif
+              <!-- Slide-end -->
+            </div>
+
+            <div class="tranding-slider-control" style="margin-top: -200px;">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-2"></div>
+                          <div class="col-md-2">
+                            <div class="swiper-button-prev slider-arrow" style="margin-top: -40px;">
+                              <ion-icon name="arrow-back-outline"></ion-icon>
                             </div>
                           </div>
-                        </div>
-
-                      </div>
-          </section>
-          <br>
-          <br>
-          <section  style="padding: 80px 10px;">
-                <div class="swiper tranding-slider">
-                  <div class="swiper-wrapper">
-                    <!-- Slide-start -->
-                        @if ( count($star_videos) > 0 )
-                            @foreach ($star_videos as $key => $star_video)
-                                <div class="swiper-slide tranding-slide">
-                                <div  style=" width: 100%; height: 250px;">
-                                    {!! $star_video->item->items[0]->content !!}
-                                    {{-- <h3 style="text-align: center; margin-top: 10px;">{{ $star_video->title }}</h2> --}}
-                                </div>
-                                </div>
-                            @endforeach
-                        @endif
-                    <!-- Slide-end -->
-                  </div>
-
-                  <div class="tranding-slider-control" style="margin-top: -260px;">
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-md-2"></div>
-                        <div class="col-md-2">
-                          <div class="swiper-button-prev slider-arrow" style="margin-top: -40px;">
-                            <ion-icon name="arrow-back-outline"></ion-icon>
+                          <div class="col-md-4">
+                            <div class="swiper-pagination" style="justify-content: center;"></div>
                           </div>
+                          <div class="col-md-2">
+                            <div class="swiper-button-next slider-arrow" style="margin-top: -40px;">
+                              <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </div>
+                          </div>
+                          <div class="col-md-2"></div>
+                        </div>
+                      </div>
+            </div>
+
+          </div>
+        </section>
+      </div>
+
+      <div class="btn-header-mobile">
+        <section style="padding: 20px 10px;">
+          <div class="swiper tranding-slider">
+            <div class="swiper-wrapper">
+              <!-- Slide-start -->
+                @if ( count($stars) > 0)
+                    @foreach ($stars as $key => $star)
+                        <div class="swiper-slide tranding-slide">
+                        <div  style=" width: 100%; height: 250px;">
+                            <img src="{{ $star->item->items[0]->content }}" alt="img">
+                            {{-- <h3 style="text-align: center; margin-top: 10px;">{{ $star_video->title }}</h2> --}}
+                        </div>
+                        </div>
+                    @endforeach
+                @endif
+              <!-- Slide-end -->
+            </div>
+            <div class="tranding-slider-control" style="margin-top: -230px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12" style="justify-content: center; justify-items: center;">
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-4">
+                            <div class="swiper-button-prev slider-arrow" style="margin-top: -40px;">
+                            <ion-icon name="arrow-back-outline"></ion-icon>
+                            </div>
                         </div>
                         <div class="col-md-4">
-                          <div class="swiper-pagination" style="justify-content: center;"></div>
-                        </div>
-                        <div class="col-md-2">
-                          <div class="swiper-button-next slider-arrow" style="margin-top: -40px;">
+                            <div class="swiper-button-next slider-arrow" style="margin-top: -40px;">
                             <ion-icon name="arrow-forward-outline"></ion-icon>
-                          </div>
+                            </div>
                         </div>
                         <div class="col-md-2"></div>
-                      </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <br><br>
+
+      <div class="btn-header-pc">
+        <section  style="padding: 80px 10px;">
+          <div class="swiper tranding-slider">
+            <div class="swiper-wrapper">
+              <!-- Slide-start -->
+                  @if ( count($star_videos) > 0 )
+                      @foreach ($star_videos as $key => $star_video)
+                          <div class="swiper-slide tranding-slide">
+                          <div  style=" width: 100%; height: 250px;">
+                              {!! $star_video->item->items[0]->content !!}
+                              {{-- <h3 style="text-align: center; margin-top: 10px;">{{ $star_video->title }}</h2> --}}
+                          </div>
+                          </div>
+                      @endforeach
+                  @endif
+              <!-- Slide-end -->
+            </div>
+
+            <div class="tranding-slider-control" style="margin-top: -260px;">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-2"></div>
+                  <div class="col-md-2">
+                    <div class="swiper-button-prev slider-arrow" style="margin-top: -40px;">
+                      <ion-icon name="arrow-back-outline"></ion-icon>
                     </div>
                   </div>
-
+                  <div class="col-md-4">
+                    <div class="swiper-pagination" style="justify-content: center;"></div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="swiper-button-next slider-arrow" style="margin-top: -40px;">
+                      <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </div>
+                  </div>
+                  <div class="col-md-2"></div>
                 </div>
-          </section>
+              </div>
+            </div>
+
+          </div>
+        </section>
+      </div>
+      
+      <div class="btn-header-mobile">
+        <section  style="padding: 80px 10px;">
+          <div class="swiper tranding-slider">
+            <div class="swiper-wrapper">
+                  @if ( count($star_videos) > 0 )
+                      @foreach ($star_videos as $key => $star_video)
+                          <div class="swiper-slide tranding-slide">
+                          <div  style=" width: 100%; height: 250px;">
+                              {!! $star_video->item->items[0]->content !!}
+                              {{-- <h3 style="text-align: center; margin-top: 10px;">{{ $star_video->title }}</h2> --}}
+                          </div>
+                          </div>
+                      @endforeach
+                  @endif
+            </div>
+            <div class="tranding-slider-control" style="margin-top: -280px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12" style="justify-content: center; justify-items: center;">
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-4">
+                            <div class="swiper-button-prev slider-arrow" style="margin-top: -40px;">
+                            <ion-icon name="arrow-back-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="swiper-button-next slider-arrow" style="margin-top: -40px;">
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </section>
+      </div>
 
           <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
           <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
           <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
-
-
-        </div>
+    </div>
 
 <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 <!-- script del video -->
@@ -403,7 +506,6 @@ background: var(--primary);
     </div>
 </div>
     <!-- Content END-->
-
 
 
     <!-- Footer -->

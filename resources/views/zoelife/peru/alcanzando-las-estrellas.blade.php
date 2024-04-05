@@ -5,7 +5,6 @@
     <x-peru.header-area></x-peru.header-area>
     <!-- Encabezado fin -->
 
-
     <!-- Content -->
     <div class="page-content">
 

@@ -12,13 +12,12 @@
             <div class="container">
                 <ul class="list-inline">
                     <li><a href="{{ route('web_ecuador_inicio') }}">Home</a></li>
-                    <li><a href="{{ route('web_ecuador_inicio') }}">Productos</a></li>
+                    <li><a href="{{ route('web_ecuador_productos') }}">Productos</a></li>
                     <li>{{ $product->name }}</li>
                 </ul>
             </div>
         </div>
         <!-- Breadcrumb row END -->
-
 
         <div class="container" style="padding: 60px 0px;">
             <div class="row">
@@ -65,10 +64,8 @@
         </div>
         <!-- Why Choose Us End -->
 
-
         <div class="content-area">
-            <div class="container">
-
+            <div class="" style="width: 100%; padding: 20px 0px;">
 
                 <!-- Dividers with icon -->
                 <div class="p-a20 bg-white selector-d m-b20 container">
@@ -84,12 +81,13 @@
                     </div>
                 </div>
                 <!-- Dividers with icon END -->
+                <br>
 
                 <!-- blog grid -->
                 <div id="masonry" class="dez-blog-grid-3 row">
                     @if (count($testimonies) > 0)
                         @foreach ($testimonies as $testimony)
-                            <div class="post card-container col-md-4">
+                            <div class="post card-container col-md-3">
                                 <div class="blog-post blog-grid date-style-2">
                                     <div class="dez-post-media dez-img-effect zoom-slow">
                                         {!! $testimony->video !!}
@@ -113,24 +111,8 @@
                     @endif
                 </div>
                 <!-- blog grid END -->
-
-                <!-- Pagination -->
-                {{-- <div class="pagination-bx">
-                    <ul class="pagination">
-                        <li class="previous"><a href="javascript:void(0);"><i class="fa fa-angle-double-left"></i></a>
-                        </li>
-                        <li class="active"><a href="javascript:void(0);">1</a></li>
-                        <li><a href="javascript:void(0);">2</a></li>
-                        <li><a href="javascript:void(0);">3</a></li>
-                        <li class="next"><a href="javascript:void(0);"><i class="fa fa-angle-double-right"></i></a>
-                        </li>
-                    </ul>
-                </div> --}}
-                <!-- Pagination END -->
-
             </div>
         </div>
-
     </div>
     <!-- Content END-->
 

@@ -5,26 +5,39 @@
     <x-ecuador.header-area></x-ecuador.header-area>
     <!-- Encabezado fin -->
 
-    <!-- inner page banner -->
-    <div class="dez-bnr-inr ara_centrado_total">
-        <img style="width: 100%;" src="{{ $banner->content }}" alt="">
-    </div>
-<!-- inner page banner END -->
-
-    <!-- Breadcrumb row -->
-    <div class="breadcrumb-row">
-        <div class="container">
-            <ul class="list-inline">
-                <li><a href="{{ route('web_ecuador_inicio') }}">Home</a></li>
-                <li>Centros de Distribución</li>
-            </ul>
+    <div class="btn-header-pc">
+        <!-- inner page banner -->
+        <div class="dez-bnr-inr ara_centrado_total">
+            <img style="width: 100%; height: auto;" src="{{ $banner->content }}" alt="">
         </div>
+        <!-- inner page banner END -->
+        <!-- Breadcrumb row -->
+        <div class="breadcrumb-row" style="margin-top: 15px; position:relative; z-index:1;">
+            <div class="container">
+                <ul class="list-inline">
+                    <li><a href="{{ route('web_ecuador_inicio') }}">Home</a></li>
+                    <li>Centros de Distribución</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Breadcrumb row END -->
     </div>
-    <!-- Breadcrumb row END -->
 
+    <div class="btn-header-mobile">
+        <!-- Breadcrumb row -->
+        <div class="breadcrumb-row" style="margin-top: 80px;">
+            <div class="container">
+                <ul class="list-inline">
+                    <li><a href="{{ route('web_ecuador_inicio') }}">Home</a></li>
+                    <li>Centros de Distribución</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Breadcrumb row END -->
+    </div>
+    
     <div class="content-area">
         <div class="">
-            <!-- Gallery -->
             <div class="site-filters clearfix center m-b40">
                 <ul class="filters" data-toggle="buttons">
                     <li data-filter="" class="btn active">
@@ -45,7 +58,7 @@
                 @if (count($centers) > 0)
                     @foreach ($centers as $center)
                         <li class="card-container col-md-4 {{ $center->district->department->name }}" style="padding: 15px;">
-                            <div class="dez-box dez-gallery-box">
+                            <div class="aracode-box-with">
                                 <a href="#" onclick="openModalCenterDetails(event, {{ json_encode($center) }})">
                                     <div class="dez-thum dez-img-overlay1 dez-img-effect">
                                         <img src="{{ asset('storage/' . $center->image) }}" alt="Lima">
@@ -55,44 +68,9 @@
                         </li>
                     @endforeach
                 @endif
-
-                {{-- <li class="card-container col-md-4 ayacucho">
-                    <div class="dez-box dez-gallery-box">
-                        <div class="dez-thum dez-img-overlay1 dez-img-effect">
-                            <a href="">
-                                <img src="themes/zoelife/ecuador/images/center/ayacucho.jpg" alt="">
-                            </a>
-                            <div class="overlay-bx">
-                                <div class="overlay-icon"> <a href=""> <i class="fa fa-link icon-bx-xs"></i> </a>
-                                    <a href="themes/zoelife/ecuador/images/center/ayacucho.jpg" class="mfp-link"
-                                        title="Ayacucho"> <i class="fa fa-picture-o icon-bx-xs"></i> </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li> --}}
             </ul>
-            <!-- Gallery END -->
-            <!-- Pagination start -->
-            {{-- <div class="pagination-bx">
-                <ul class="pagination">
-                    <li class="previous"><a href="javascript:void(0);"><i class="fa fa-angle-double-left"></i></a></li>
-                    <li class="active"><a href="javascript:void(0);">1</a></li>
-                    <li><a href="javascript:void(0);">2</a></li>
-                    <li><a href="javascript:void(0);">3</a></li>
-                    <li class="next"><a href="javascript:void(0);"><i class="fa fa-angle-double-right"></i></a></li>
-                </ul>
-            </div> --}}
-            <!-- Pagination END -->
         </div>
-        <!-- Left & right section  END -->
     </div>
-
-
-    <!-- Paises / STAR -->
-    {{-- <x-countries-section /> --}}
-    <!-- Paises / END -->
-
     <br>
 
     <!-- Modal -->
