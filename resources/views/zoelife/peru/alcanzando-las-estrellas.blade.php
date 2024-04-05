@@ -13,7 +13,7 @@
           <div class="dez-bnr-inr ara_centrado_total">
               <img style="width: 100%; height: auto;" src="{{ $banner->content }}" alt="">
           </div>
-          <div class="breadcrumb-row" style="margin-top: 15px;">
+          <div class="breadcrumb-row" style="margin-top: 15px; position:relative; z-index:1;">
               <div class="container">
                   <ul class="list-inline">
                       <li><a href="{{ route('web_peru_inicio') }}">Home</a></li>
@@ -236,8 +236,6 @@
           <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
           <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
           <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-
-
 
     </div>
 
