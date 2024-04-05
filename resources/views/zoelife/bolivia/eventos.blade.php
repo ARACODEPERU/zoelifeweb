@@ -5,96 +5,151 @@
     <x-bolivia.header-area></x-bolivia.header-area>
     <!-- Encabezado fin -->
 
-   <!-- Content -->
-   <div class="page-content">
+    <!-- Content -->
+    <div class="page-content">
 
-    <!-- inner page banner -->
-    <div class="dez-bnr-inr ara_centrado_total">
-        <img  style="width: 100%;" src="{{ $banner->content }}" alt="">
-    </div>
-    <!-- inner page banner END -->
-
-    <!-- Breadcrumb row -->
-    <div class="breadcrumb-row">
-        <div class="container">
-            <ul class="list-inline">
-                <li><a href="{{ route('web_peru_inicio') }}">Home</a></li>
-                <li>Eventos</li>
-            </ul>
+        <div class="btn-header-pc">
+            <br><br><br><br><br><br><br><br>
+            <div class="dez-bnr-inr ara_centrado_total">
+                <img style="width: 100%; height: auto;" src="{{ $banner->content }}" alt="">
+            </div>
+            <div class="breadcrumb-row" style="margin-top: 260px; position:relative; z-index:1;">
+                <div class="container">
+                    <ul class="list-inline">
+                        <li><a href="{{ route('web_peru_inicio') }}">Home</a></li>
+                        <li>Eventos</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
-    <!-- Breadcrumb row END -->
-    {{-- galeryEvents --}}
-<!-- CARRUSEL INICIO -->
-
-
-<section style="padding: 80px 10px;">
-    <div class="swiper tranding-slider">
-      <div class="swiper-wrapper">
-        <!-- Slide-start -->
-        @if (count($galeryEvents) > 0)
-        @foreach ($galeryEvents as $key => $event)
-        <div class="swiper-slide tranding-slide">
-              <img src="{{ $event->item->items[0]->content }}" alt="" style="width: 100%;">
-            {{-- <h3 style="text-align: center; margin-top: 10px;">{{ $star_video->title }}</h2> --}}
+    
+        <div class="btn-header-mobile">
+            <!-- Breadcrumb row -->
+            <div class="breadcrumb-row" style="margin-top: 80px;">
+                <div class="container">
+                    <ul class="list-inline">
+                        <li><a href="{{ route('web_peru_inicio') }}">Home</a></li>
+                        <li>Eventos</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Breadcrumb row END -->
         </div>
-       @endforeach
-        @endif
-        <!-- Slide-end -->
-      </div>
 
-      <div class="tranding-slider-control" style="margin-top: -160px;">
-      <div class="container">
-          <div class="row">
-          <div class="col-md-2"></div>
-          <div class="col-md-2">
-              <div class="swiper-button-prev slider-arrow" style="margin-top: -40px;">
-              <ion-icon name="arrow-back-outline"></ion-icon>
-              </div>
-          </div>
-          <div class="col-md-4">
-              <div class="swiper-pagination" style="justify-content: center;"></div>
-          </div>
-          <div class="col-md-2">
-              <div class="swiper-button-next slider-arrow" style="margin-top: -40px;">
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-              </div>
-          </div>
-          <div class="col-md-2"></div>
-          </div>
-      </div>
-      </div>
-
-    </div>
-</section>
-
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-
-<div class="containe" style="padding: 40px;">
-    <div class="row" style="justify-content: space-between">
-        @if ( count($inscripcioncontacto) > 0 )
-        <div class="col-md-3"></div>
-        <div class="col-md-3" style="text-align: center;">
-            <a href="{{ $inscripcioncontacto[0]->content }}" target="_blank" class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;">
-                <b><i class="fa fa-edit"aria-hidden="true"></i>&nbsp;&nbsp; Inscripciones</b>
-            </a>
+        <br><br><br>
+        <div class="btn-header-pc">
+            <div style="padding: 0px 10px;" >
+                <section style="padding: 40px 10px;">
+                    <div class="swiper tranding-slider">
+                        <div class="swiper-wrapper">
+                            @if (count($galeryEvents) > 0)
+                                @foreach ($galeryEvents as $key => $event)
+                                <div class="swiper-slide tranding-slide">
+                                    <img src="{{ $event->item->items[0]->content }}" alt="" style="width: 100%;">
+                                    {{-- <h3 style="text-align: center; margin-top: 10px;">{{ $star_video->title }}</h2> --}}
+                                </div>
+                                @endforeach
+                            @endif
+                        </div>
+                        <div class="tranding-slider-control" style="margin-top: -160px;">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-2">
+                                            <div class="swiper-button-prev slider-arrow" style="margin-top: -40px;">
+                                            <ion-icon name="arrow-back-outline"></ion-icon>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="swiper-pagination" style="justify-content: center;"></div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="swiper-button-next slider-arrow" style="margin-top: -40px;">
+                                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2"></div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
-        <div class="col-md-3" style="text-align: center;">
-            <a href="https://api.whatsapp.com/send?phone=51{{ $inscripcioncontacto[1]->content }}&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?" target="_blank"  class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;">
-                <b><i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;&nbsp; Más Información</b>
-            </a>
+
+        
+        <div class="btn-header-mobile">
+            <div style="padding: 0px 10px;" >
+                <section style="padding: 0px 10px;">
+                    <div class="swiper tranding-slider">
+                        <div class="swiper-wrapper">
+                            @if (count($galeryEvents) > 0)
+                                @foreach ($galeryEvents as $key => $event)
+                                <div class="swiper-slide tranding-slide">
+                                    <img src="{{ $event->item->items[0]->content }}" alt="" style="width: 100%;">
+                                    {{-- <h3 style="text-align: center; margin-top: 10px;">{{ $star_video->title }}</h2> --}}
+                                </div>
+                                @endforeach
+                            @endif
+                        </div>
+                        <div class="tranding-slider-control" style="margin-top: -160px;">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12" style="justify-content: center; justify-items: center;">
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
+                                <div class="row">
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-4">
+                                        <div class="swiper-button-prev slider-arrow" style="margin-top: -40px;">
+                                        <ion-icon name="arrow-back-outline"></ion-icon>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="swiper-button-next slider-arrow" style="margin-top: -40px;">
+                                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
-        <div class="col-md-3"></div>
-        @endif
-    </div>
-</div>
 
-</div>
+        
+        <div class="containe" style="padding: 40px;">
+            <div class="row" style="justify-content: space-between">
+                @if ( count($inscripcioncontacto) > 0 )
+                <div class="col-md-3"></div>
+                <div class="col-md-3" style="text-align: center; padding: 15px;">
+                    <a href="{{ $inscripcioncontacto[0]->content }}" target="_blank" class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;">
+                        <b><i class="fa fa-edit"aria-hidden="true"></i>&nbsp;&nbsp; Inscripciones</b>
+                    </a>
+                </div>
+                <div class="col-md-3" style="text-align: center; padding: 15px;">
+                    <a href="https://api.whatsapp.com/send?phone=51{{ $inscripcioncontacto[1]->content }}&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?" target="_blank"  class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;">
+                        <b><i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;&nbsp; Más Información</b>
+                    </a>
+                </div>
+                <div class="col-md-3"></div>
+                @endif
+            </div>
+        </div>
+
+        
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  </div>
 
 
-</div>
 
 <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 <!-- script del video -->
@@ -124,7 +179,6 @@
 
 <style>
     @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
-
 
     .text-center {
     text-align: center;
@@ -294,79 +348,70 @@
     }
 </style>
 
-<!-- CARRUSEL FIN -->
-
-
-
-    <!-- Paises / STAR -->
-    {{-- <x-countries-section /> --}}
-    <!-- Paises / END -->
-    <style>
-        .paginator_aracode {
-        transition: opacity 0.5s;
-        }
-    </style>
-        <script>
-
-                var intervalID;
-                function startInterval() {
-                intervalID = setInterval(function() {
-                    paginator_np("n");
-                }, 3000);
-                }
-
-                function stopInterval() {
-                clearInterval(intervalID);
-                }
-
-            var elementoHTML = document.getElementById("carrusel_aracode");
-
-            elementoHTML.addEventListener("mouseenter", stopInterval);
-            elementoHTML.addEventListener("mouseleave", startInterval);
-            function paginator(n){
-                var elements = document.querySelectorAll(".paginator_aracode");
-                for (var i = 0; i < elements.length; i++) {
-                elements[i].hidden = true;
-                }
-                document.getElementById(n+"_pag").hidden=false;
-                var elements = document.querySelectorAll(".numpag");
-
-                for (var i = 0; i < elements.length; i++) {
-                elements[i].classList.remove("active");
-                }
-
-                var targetElement = document.getElementById(n + "_numpag");
-                targetElement.classList.add("active");
+        <style>
+            .paginator_aracode {
+            transition: opacity 0.5s;
             }
+        </style>
+            <script>
 
-            function paginator_np(n){
-                var elements = document.querySelectorAll(".paginator_aracode");
-                var id;
-                for (var i = 0; i < elements.length; i++) {
-                if (!elements[i].hidden) {
-                    id = elements[i].id;
-                    console.log("El ID del elemento sin atributo hidden es: " + id);
-                    break; // Rompe el bucle una vez que se encuentra el primer elemento sin hidden
-                }
-                }
-                var pagina = id;
-                var numero = parseInt(pagina.match(/\d+/)[0]);
+                    var intervalID;
+                    function startInterval() {
+                    intervalID = setInterval(function() {
+                        paginator_np("n");
+                    }, 3000);
+                    }
 
-                if(n=="p"){
-                    if(numero>1)paginator(--numero);
-                }
-                if(n=="n"){
-                        if(document.getElementById((numero+1)+"_pag")){
-                        paginator(++numero);
-                        }else{
-                            paginator(1);
-                        }
-                }
-            }
-        </script>
-</div>
-<!-- Content END-->
+                    function stopInterval() {
+                    clearInterval(intervalID);
+                    }
 
+                var elementoHTML = document.getElementById("carrusel_aracode");
+
+                elementoHTML.addEventListener("mouseenter", stopInterval);
+                elementoHTML.addEventListener("mouseleave", startInterval);
+                function paginator(n){
+                    var elements = document.querySelectorAll(".paginator_aracode");
+                    for (var i = 0; i < elements.length; i++) {
+                    elements[i].hidden = true;
+                    }
+                    document.getElementById(n+"_pag").hidden=false;
+                    var elements = document.querySelectorAll(".numpag");
+
+                    for (var i = 0; i < elements.length; i++) {
+                    elements[i].classList.remove("active");
+                    }
+
+                    var targetElement = document.getElementById(n + "_numpag");
+                    targetElement.classList.add("active");
+                }
+
+                function paginator_np(n){
+                    var elements = document.querySelectorAll(".paginator_aracode");
+                    var id;
+                    for (var i = 0; i < elements.length; i++) {
+                    if (!elements[i].hidden) {
+                        id = elements[i].id;
+                        console.log("El ID del elemento sin atributo hidden es: " + id);
+                        break; // Rompe el bucle una vez que se encuentra el primer elemento sin hidden
+                    }
+                    }
+                    var pagina = id;
+                    var numero = parseInt(pagina.match(/\d+/)[0]);
+
+                    if(n=="p"){
+                        if(numero>1)paginator(--numero);
+                    }
+                    if(n=="n"){
+                            if(document.getElementById((numero+1)+"_pag")){
+                            paginator(++numero);
+                            }else{
+                                paginator(1);
+                            }
+                    }
+                }
+            </script>
+        
     <!-- Footer -->
     <x-bolivia.footer-area></x-bolivia.footer-area>
     <!-- Footer END-->
