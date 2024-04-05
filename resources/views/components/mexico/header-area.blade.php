@@ -3,15 +3,7 @@
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="{{ asset('css/darkMode.css') }}">
         <script src="{{ asset('js/darkMode.js') }}"></script>
-    <!--
-    <div id="loading-area" class="loading-page-1">
-        <div class="spinner">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="8" cy="8" r="7" stroke-width="1"/>
-            </svg>
-        </div>
-    </div>
-    -->
+
     <!-- Header -->
     <header class="site-header header-style-1 mo-left dark dark-style-2">
         <!-- Top bar -->
@@ -36,7 +28,7 @@
         </div>
         <!-- Top Bar END-->
         <!-- Main Header -->
-        <div class="sticky-header  main-bar-wraper navbar-expand-lg">
+        <div class="sticky-header main-bar-wraper navbar-expand-lg">
             <div class="main-bar clearfix ">
                 <div class="clearfix" style="width: 100%; padding: 0px 40px;">
                     <!-- Website Logo -->
@@ -55,14 +47,15 @@
                     </button>
                     <!-- Extra Nav -->
                     <div class="btn-header-pc">
-                        <div class="extra-nav hidden-sm-down disnone-md">
+                        <div class="extra-nav hidden-sm-down disnone-md" style="text-align: center;">
+                            <!--
                             <div class="extra-cell">
-                                <a href="https://zoelife.global//link/store/TIENDAPUBLICA" target="_blank"
-                                    class="site-button">
+                                <a href="https://zoelife.global//link/store/TIENDAPUBLICA" target="_blank" class="site-button">
                                     <i class="fa fa-cart-plus" aria-hidden="true"></i> &nbsp;
                                     Tienda Online
                                 </a>
                             </div>
+                            -->
                             <div class="extra-cell">
                                 <a href="https://zoelife.global/LoginSalesForce.php" target="_blank" class="site-button">
                                     <i class="fa fa-laptop" aria-hidden="true"></i> &nbsp;
@@ -90,15 +83,17 @@
                     </div>
                     -->
                     <!-- Main Nav -->
-                    <div class="header-nav navbar-collapse collapse " id="navbarNavDropdown">
+                    <div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
                         
                         <div class="extra-nav hidden-sm-down disnone-md" style="text-align: center; padding: 10px;">
+                            
                             <div class="extra-cell">
                                 <a href="https://zoelife.global//link/store/TIENDAPUBLICA" target="_blank" 
                                     class="site-button" title="Tienda Online">
                                     <i class="fa fa-cart-plus" aria-hidden="true"></i>
                                 </a>
                             </div>
+                            
                             <div class="extra-cell">
                                 <a href="https://zoelife.global/LoginSalesForce.php" target="_blank" 
                                     class="site-button" title="Oficina Vitual">
@@ -108,7 +103,7 @@
                         </div>
                         <ul class="nav navbar-nav">
                             <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_mexico_inicio') ? 'active' : '' }}" href="{{ route('web_mexico_inicio') }}">Inicio</a> </li>
-                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_mexico_productos') ? 'active' : '' }}" href="{{ route('web_mexico_productos') }}">Productos</a>
+                             <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_mexico_productos') ? 'active' : '' }}" href="{{ route('web_mexico_productos') }}">Productos</a>
                                 <ul class="sub-menu">
                                     @foreach ($products as $product)
                                         <li>
@@ -120,11 +115,12 @@
                                 </ul>
                             </li>
                             <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_mexico_testimonios') ? 'active' : '' }}" href="{{ route('web_mexico_testimonios') }}">Testimonios</a> </li>
-                            <li> <a class="dropdown-item {{ request()->routeIs('web_mexico_centros') ? 'active' : '' }}" href="{{ route('web_mexico_centros') }}">Centros de Distribución</a> </li>
-                            <li> <a class="dropdown-item {{ request()->routeIs('web_mexico_eventos') ? 'active' : '' }}" href="{{ route('web_mexico_eventos') }}">Eventos</a> </li>
+                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_mexico_centros') ? 'active' : '' }}" href="{{ route('web_mexico_centros') }}">Centros de Distribución</a> </li>
+                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_mexico_eventos') ? 'active' : '' }}" href="{{ route('web_mexico_eventos') }}">Eventos</a> </li>
                             <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_mexico_alcanzando_las_estrellas') ? 'active' : '' }}" href="{{ route('web_mexico_alcanzando_las_estrellas') }}">Alcanzando las
                                     Estrellas</a> </li>
-                                    <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_mexico_university') ? 'active' : '' }}" href="{{ route('web_mexico_university') }}">University</a> </li>
+                                    
+                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_mexico_university') ? 'active' : '' }}" href="{{ route('web_mexico_university') }}">University</a> </li>
                             <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_mexico_contacto') ? 'active' : '' }}" href="{{ route('web_mexico_contacto') }}">Contacto</a> </li>
                             <li class="switch" style="top: 25px;">
                                 <i class="bx bxs-sun"></i>
