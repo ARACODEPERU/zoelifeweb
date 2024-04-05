@@ -65,7 +65,7 @@
         <!-- Why Choose Us End -->
 
         <div class="content-area">
-            <div class="" style="width: 100%; padding: 40px;">
+            <div class="" style="width: 100%; padding: 20px 0px;">
 
                 <!-- Dividers with icon -->
                 <div class="p-a20 bg-white selector-d m-b20 container">
@@ -81,6 +81,7 @@
                     </div>
                 </div>
                 <!-- Dividers with icon END -->
+                <br>
 
                 <!-- blog grid -->
                 <div id="masonry" class="dez-blog-grid-3 row">

@@ -48,12 +48,14 @@
                     <!-- Extra Nav -->
                     <div class="btn-header-pc">
                         <div class="extra-nav hidden-sm-down disnone-md" style="text-align: center;">
+                            <!--
                             <div class="extra-cell">
                                 <a href="https://zoelife.global//link/store/TIENDAPUBLICA" target="_blank" class="site-button">
                                     <i class="fa fa-cart-plus" aria-hidden="true"></i> &nbsp;
                                     Tienda Online
                                 </a>
                             </div>
+                            -->
                             <div class="extra-cell">
                                 <a href="https://zoelife.global/LoginSalesForce.php" target="_blank" class="site-button">
                                     <i class="fa fa-laptop" aria-hidden="true"></i> &nbsp;
@@ -81,15 +83,17 @@
                     </div>
                     -->
                     <!-- Main Nav -->
-                    <div class="header-nav navbar-collapse collapse " id="navbarNavDropdown">
+                    <div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
                         
                         <div class="extra-nav hidden-sm-down disnone-md" style="text-align: center; padding: 10px;">
+                            
                             <div class="extra-cell">
                                 <a href="https://zoelife.global//link/store/TIENDAPUBLICA" target="_blank" 
                                     class="site-button" title="Tienda Online">
                                     <i class="fa fa-cart-plus" aria-hidden="true"></i>
                                 </a>
                             </div>
+                            
                             <div class="extra-cell">
                                 <a href="https://zoelife.global/LoginSalesForce.php" target="_blank" 
                                     class="site-button" title="Oficina Vitual">
