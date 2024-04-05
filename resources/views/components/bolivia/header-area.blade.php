@@ -122,7 +122,8 @@
                                     
                             <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_bolivia_university') ? 'active' : '' }}" href="{{ route('web_bolivia_university') }}">University</a> </li>
                             <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_bolivia_contacto') ? 'active' : '' }}" href="{{ route('web_bolivia_contacto') }}">Contacto</a> </li>
-                            <li class="switch" style="top: 25px;">
+                            
+                            <li class="switch" style="top: 25px; padding:">
                                 <i class="bx bxs-sun"></i>
                                 <i class="bx bxs-moon"></i>
                             </li>

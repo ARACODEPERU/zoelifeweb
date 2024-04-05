@@ -35,7 +35,7 @@
             <!-- Breadcrumb row END -->
         </div>
 
-        <div class="container" style="padding: 40px;">
+        <div class="container" style="padding: 40px 0px;">
             <x-study-programs></x-study-programs>
         </div>
 

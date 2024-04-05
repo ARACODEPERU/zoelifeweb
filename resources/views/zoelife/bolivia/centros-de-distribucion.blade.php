@@ -5,22 +5,38 @@
     <x-bolivia.header-area></x-bolivia.header-area>
     <!-- Encabezado fin -->
 
-    <!-- inner page banner -->
-        <div class="dez-bnr-inr ara_centrado_total">
-            <img style="width: 100%;" src="{{ $banner->content }}" alt="">
-        </div>
-    <!-- inner page banner END -->
 
-    <!-- Breadcrumb row -->
-    <div class="breadcrumb-row">
-        <div class="container">
-            <ul class="list-inline">
-                <li><a href="{{ route('web_bolivia_inicio') }}">Home</a></li>
-                <li>Centros de Distribución</li>
-            </ul>
+    <div class="btn-header-pc">
+        <!-- inner page banner -->
+        <div class="dez-bnr-inr ara_centrado_total">
+            <img style="width: 100%; height: auto;" src="{{ $banner->content }}" alt="">
         </div>
+        <!-- inner page banner END -->
+        <!-- Breadcrumb row -->
+        <div class="breadcrumb-row" style="margin-top: 15px; position:relative; z-index:1;">
+            <div class="container">
+                <ul class="list-inline">
+                    <li><a href="{{ route('web_bolivia_inicio') }}">Home</a></li>
+                    <li>Centros de Distribución</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Breadcrumb row END -->
     </div>
-    <!-- Breadcrumb row END -->
+
+    <div class="btn-header-mobile">
+        <!-- Breadcrumb row -->
+        <div class="breadcrumb-row" style="margin-top: 80px;">
+            <div class="container">
+                <ul class="list-inline">
+                    <li><a href="{{ route('web_bolivia_inicio') }}">Home</a></li>
+                    <li>Centros de Distribución</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Breadcrumb row END -->
+    </div>
+    
 
     <div class="content-area">
         <div class="">

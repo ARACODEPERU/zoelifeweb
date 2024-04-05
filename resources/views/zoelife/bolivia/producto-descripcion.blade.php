@@ -81,6 +81,7 @@
                     </div>
                 </div>
                 <!-- Dividers with icon END -->
+                <br>
 
                 <!-- blog grid -->
                 <div id="masonry" class="dez-blog-grid-3 row">
