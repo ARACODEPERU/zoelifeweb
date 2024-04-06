@@ -32,6 +32,7 @@
                                 </div>
                             </div>
                             <div class="gen-header-info-box">
+                                <!--
                                 <div class="gen-menu-search-block">
                                     <a href="javascript:void(0)" id="gen-seacrh-btn"><i class="fa fa-search"></i></a>
                                     <div class="gen-search-form">
@@ -46,6 +47,7 @@
                                         </form>
                                     </div>
                                 </div>
+                                -->
                                 <div class="gen-account-holder">
                                     <a href="" id="gen-user-btn"><i class="fa fa-leaf"></i></a>
                                 </div>
