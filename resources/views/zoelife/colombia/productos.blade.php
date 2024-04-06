@@ -44,7 +44,7 @@
                 <div class="p-a20 bg-white selector-d m-b20">
                     <div class="section-content" style="text-align: center;">
                         <div class="m-b10">
-                            <h2 class="text-uppercas" style="color: #00b01a;">Beneficios de los productos</h2>
+                            <h2 class="text-uppercas" style="color: #00b01a; text-transform: uppercase; padding: 15px 0px;">Beneficios de los productos</h2>
                             <div class="row" style="justify-content: space-between;">
                                 @foreach ( $beneficiop as $bp )
                                 <div class="col-md-2" style="padding: 20px 0px;  ">
@@ -60,6 +60,7 @@
                 </div>
             </div>
         </div>
+
 
         <div class="content-area">
             <div class=""  style="width: 100%; padding: 40px;">
