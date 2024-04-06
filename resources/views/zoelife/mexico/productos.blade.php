@@ -8,30 +8,43 @@
     <!-- Content -->
     <div class="page-content">
 
-        <!-- inner page banner -->
-        <div class="dez-bnr-inr ara_centrado_total">
-            <img style="width: 100%;" src="{{ $banner->content }}" alt="">
-        </div>
-        <!-- inner page banner END -->
-
-        <!-- Breadcrumb row -->
-        <div class="breadcrumb-row">
-            <div class="container">
-                <ul class="list-inline">
-                    <li><a href="{{ route('web_mexico_inicio') }}">Home</a></li>
-                    <li>Productos</li>
-                </ul>
+        <div class="btn-header-pc">
+            <!-- inner page banner -->
+            <div class="dez-bnr-inr ara_centrado_total">
+                <img style="width: 100%; height: auto;" src="{{ $banner->content }}" alt="">
             </div>
+            <!-- inner page banner END -->
+            <!-- Breadcrumb row -->
+            <div class="breadcrumb-row" style="margin-top: 15px; position:relative; z-index:1;">
+                <div class="container">
+                    <ul class="list-inline">
+                        <li><a href="{{ route('web_mexico_inicio') }}">Home</a></li>
+                        <li>Productos</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Breadcrumb row END -->
         </div>
-        <!-- Breadcrumb row END -->
-        
+
+        <div class="btn-header-mobile">
+            <!-- Breadcrumb row -->
+            <div class="breadcrumb-row" style="margin-top: 80px;">
+                <div class="container">
+                    <ul class="list-inline">
+                        <li><a href="{{ route('web_mexico_inicio') }}">Home</a></li>
+                        <li>Productos</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Breadcrumb row END -->
+        </div>
 
         <div class="content-area">
             <div class="container">
                 <div class="p-a20 bg-white selector-d m-b20">
                     <div class="section-content" style="text-align: center;">
                         <div class="m-b10">
-                            <h2 class="text-uppercas" style="color: #00b01a;">Beneficios de los productos</h2>
+                            <h2 class="text-uppercas" style="color: #00b01a; text-transform: uppercase; padding: 15px 0px;">Beneficios de los productos</h2>
                             <div class="row" style="justify-content: space-between;">
                                 @foreach ( $beneficiop as $bp )
                                 <div class="col-md-2" style="padding: 20px 0px;  ">

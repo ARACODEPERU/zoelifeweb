@@ -21,18 +21,18 @@
 
         <div class="container" style="padding: 60px 0px;">
             <div class="row">
-                <div class="col-md-6">
-                    <img src="{{ $product->image }}" alt="">
+                <div class="col-md-6" style="text-align: center;">
+                    <img style="width: 90%;" src="{{ $product->image }}" alt="">
                 </div>
                 <div class="col-md-6">
                     <!-- Dividers with icon -->
                     <div class="p-a30 bg-white selector-d m-b30">
                         <div class="section-content">
                             <h2 class="text-uppercase">{{ $product->name }}</h2>
-                            <div class="dez-divider divider-2px bg-primary icon-left">
-                                <i class="fa fa-thumbs-o-up bg-primary text-white"></i>
+                            <div class="dez-divider divider-2px icon-left" style="background: #00b01a;">
+                                <i class="fa fa-thumbs-o-up  text-white" style="background: #00b01a;"></i>
                             </div>
-                            <div class="m-b10">
+                            <div class="m-b10" >
                                 {!! $product->description !!}
                             </div>
                         </div>
@@ -49,7 +49,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="section-head  text-center text-white">
-                            <h2 class="h2">Recomendaciones <span class="text-primary"> de Uso Sugerido</span></h2>
+                            <h2 class="h2">Recomendaciones <span style="color: #00b01a;"> de Uso Sugerido</span></h2>
                             <div class="dez-separator text-primary style-icon border-white">
                                 <img alt="" src="{{ asset('themes/zoelife/peru/images/leaf-green.png') }}" />
                             </div>
@@ -65,7 +65,7 @@
         <!-- Why Choose Us End -->
 
         <div class="content-area">
-            <div class="" style="width: 100%; padding: 40px;">
+            <div class="" style="width: 100%; padding: 20px 0px;">
 
                 <!-- Dividers with icon -->
                 <div class="p-a20 bg-white selector-d m-b20 container">
@@ -81,12 +81,13 @@
                     </div>
                 </div>
                 <!-- Dividers with icon END -->
+                <br>
 
                 <!-- blog grid -->
                 <div id="masonry" class="dez-blog-grid-3 row">
                     @if (count($testimonies) > 0)
                         @foreach ($testimonies as $testimony)
-                            <div class="post card-container col-md-4">
+                            <div class="post card-container col-md-3">
                                 <div class="blog-post blog-grid date-style-2">
                                     <div class="dez-post-media dez-img-effect zoom-slow">
                                         {!! $testimony->video !!}

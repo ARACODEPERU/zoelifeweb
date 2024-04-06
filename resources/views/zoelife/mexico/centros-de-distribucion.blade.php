@@ -5,23 +5,35 @@
     <x-mexico.header-area></x-mexico.header-area>
     <!-- Encabezado fin -->
 
-    <!-- inner page banner -->
+    <div class="btn-header-pc">
+        <!-- inner page banner -->
         <div class="dez-bnr-inr ara_centrado_total">
-            <img style="width: 100%;" src="{{ $banner->content }}" alt="">
+            <img style="width: 100%; height: auto;" src="{{ $banner->content }}" alt="">
         </div>
-    <!-- inner page banner END -->
-
-    <!-- Breadcrumb row -->
-    <div class="breadcrumb-row">
-        <div class="container">
-            <ul class="list-inline">
-                <li><a href="{{ route('web_mexico_inicio') }}">Home</a></li>
-                <li>Centros de Distribución</li>
-            </ul>
+        <div class="breadcrumb-row" style="margin-top: 15px; position:relative; z-index:1;">
+            <div class="container">
+                <ul class="list-inline">
+                    <li><a href="{{ route('web_mexico_inicio') }}">Home</a></li>
+                    <li>Centros de Distribución</li>
+                </ul>
+            </div>
         </div>
     </div>
-    <!-- Breadcrumb row END -->
 
+    <div class="btn-header-mobile">
+        <!-- Breadcrumb row -->
+        <div class="breadcrumb-row" style="margin-top: 80px;">
+            <div class="container">
+                <ul class="list-inline">
+                    <li><a href="{{ route('web_mexico_inicio') }}">Home</a></li>
+                    <li>Centros de Distribución</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Breadcrumb row END -->
+    </div>
+
+    
     <div class="content-area">
         <div class="">
             <div class="site-filters clearfix center m-b40">
@@ -44,7 +56,7 @@
                 @if (count($centers) > 0)
                     @foreach ($centers as $center)
                         <li class="card-container col-md-4 {{ $center->district->department->name }}" style="padding: 15px;">
-                            <div class="dez-box dez-gallery-box">
+                            <div class="aracode-box-with">
                                 <a href="#" onclick="openModalCenterDetails(event, {{ json_encode($center) }})">
                                     <div class="dez-thum dez-img-overlay1 dez-img-effect">
                                         <img src="{{ asset('storage/' . $center->image) }}" alt="Lima">
@@ -126,7 +138,6 @@
             $('#modal-centros').modal('show');
         }
     </script>
-    <!-- Footer -->
     <x-mexico.footer-area></x-mexico.footer-area>
     <!-- Footer END-->
 @endsection
