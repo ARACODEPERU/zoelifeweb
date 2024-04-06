@@ -8,22 +8,36 @@
     <!-- Content -->
     <div class="page-content">
 
-        <!-- inner page banner -->
-        <div class="dez-bnr-inr ara_centrado_total">
-            <img style="width: 100%;" src="{{ $banner->content }}" alt="">
-        </div>
-        <!-- inner page banner END -->
-
-        <!-- Breadcrumb row -->
-        <div class="breadcrumb-row">
-            <div class="container">
-                <ul class="list-inline">
-                    <li><a href="{{ route('web_colombia_inicio') }}">Home</a></li>
-                    <li>Productos</li>
-                </ul>
+        <div class="btn-header-pc">
+            <!-- inner page banner -->
+            <div class="dez-bnr-inr ara_centrado_total">
+                <img style="width: 100%; height: auto;" src="{{ $banner->content }}" alt="">
             </div>
+            <!-- inner page banner END -->
+            <!-- Breadcrumb row -->
+            <div class="breadcrumb-row" style="margin-top: 15px; position:relative; z-index:1;">
+                <div class="container">
+                    <ul class="list-inline">
+                        <li><a href="{{ route('web_colombia_inicio') }}">Home</a></li>
+                        <li>Productos</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Breadcrumb row END -->
         </div>
-        <!-- Breadcrumb row END -->
+
+        <div class="btn-header-mobile">
+            <!-- Breadcrumb row -->
+            <div class="breadcrumb-row" style="margin-top: 80px;">
+                <div class="container">
+                    <ul class="list-inline">
+                        <li><a href="{{ route('web_colombia_inicio') }}">Home</a></li>
+                        <li>Productos</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Breadcrumb row END -->
+        </div>
 
         <div class="content-area">
             <div class="container">
@@ -63,7 +77,7 @@
                                         </div>
                                         <div class="p-a10">
                                             <h4 class="dez-title m-b0">
-                                                <a href="{{ route('web_peru_producto_descripcion', $producto->id) }}">{{ $producto->name }}</a>
+                                                <a href="{{ route('web_colombia_producto_descripcion', $producto->id) }}">{{ $producto->name }}</a>
                                             </h4>
                                         </div>
                                     </div>
