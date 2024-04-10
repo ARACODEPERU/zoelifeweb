@@ -33,14 +33,10 @@
                 </div>
         </div>
 
+        
         <div class="container" style="padding: 40px 0px;">
             <x-study-programs></x-study-programs>
         </div>
-
-
-        <!-- Paises / STAR -->
-        {{-- <x-countries-section /> --}}
-        <!-- Paises / END -->
 
     </div>
     <!-- Content END-->
