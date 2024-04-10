@@ -197,3 +197,11 @@ body.dark .country{
 body.dark .des-producto{
     color: #fff;
 }
+
+body.dark .nav-slide {
+    background-color: #313131;
+}
+
+body.dark .div-nav-slide-dark {
+    background-color: #313131;
+}

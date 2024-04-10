@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', function() {
       bg_whitess.forEach((bg_white) => {
         bg_white.classList.toggle("bg-white");
       });
+      
+
     }
 
     sswitch.addEventListener("click", e => {
@@ -19,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function darkMode(sswitch) {
+
       let darkMode = localStorage.getItem('darkMode');
 
       if (darkMode === 'true') {
