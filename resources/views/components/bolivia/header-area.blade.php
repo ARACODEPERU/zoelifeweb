@@ -13,7 +13,8 @@
                     <div class="dez-topbar-right list-unstyled e-p-bx ">
                         <ul>
                             <li style="float: left;">
-                                <a href="https://zoelifeinternational.com/"><i class="fa fa-globe" aria-hidden="true"></i><span>Zoé Global</span></a>
+                                <a href="https://zoelifeinternational.com/"><i class="fa fa-globe"
+                                        aria-hidden="true"></i><span>Zoé Global</span></a>
                             </li>
                             <li>
                                 <i class="fa fa-envelope"></i><span>{{ $header[3]->content }}</span>
@@ -34,7 +35,8 @@
                     <!-- Website Logo -->
                     <div class="logo-header logo-dark mostion">
                         <a href="{{ route('web_peru_inicio') }}">
-                            <img src="{{ $header[5]->content }}" alt="" style="height: 80px; padding: 15px 0px;">
+                            <img src="{{ $header[5]->content }}" alt=""
+                                style="height: 80px; padding: 15px 0px;">
                         </a>
                     </div>
                     <!-- Nav Toggle Button -->
@@ -57,7 +59,8 @@
                             </div>
                             -->
                             <div class="extra-cell">
-                                <a href="https://zoelife.global/LoginSalesForce.php" target="_blank" class="site-button">
+                                <a href="https://zoelife.global/LoginSalesForce.php" target="_blank"
+                                    class="site-button">
                                     <i class="fa fa-laptop" aria-hidden="true"></i> &nbsp;
                                     Oficina Virtual
                                 </a>
@@ -68,42 +71,45 @@
                     <div class="btn-header-mobile">
                         <div class="extra-nav hidden-sm-down disnone-md" style="text-align: center;">
                             <div class="extra-cell">
-                                <a href="https://zoelife.global//link/store/TIENDAPUBLICA" target="_blank" 
+                                <a href="https://zoelife.global//link/store/TIENDAPUBLICA" target="_blank"
                                     class="site-button" title="Tienda Online">
                                     <i class="fa fa-cart-plus" aria-hidden="true"></i>
                                 </a>
                             </div>
                             <div class="extra-cell">
-                                <a href="https://zoelife.global/LoginSalesForce.php" target="_blank" 
+                                <a href="https://zoelife.global/LoginSalesForce.php" target="_blank"
                                     class="site-button" title="Oficina Vitual">
-                                    <i class="fa fa-laptop" aria-hidden="true"></i> 
+                                    <i class="fa fa-laptop" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
                     -->
                     <!-- Main Nav -->
-                    <div class="header-nav navbar-collapse collapse justify-content-end" id="navbarNavDropdown">
-                        
+                    <div class="header-nav navbar-collapse collapse justify-content-end div-nav-slide-dark"
+                        id="navbarNavDropdown">
+
                         <div class="extra-nav hidden-sm-down disnone-md" style="text-align: center; padding: 10px;">
-                            
+
                             <div class="extra-cell">
-                                <a href="https://zoelife.global//link/store/TIENDAPUBLICA" target="_blank" 
+                                <a href="https://zoelife.global//link/store/TIENDAPUBLICA" target="_blank"
                                     class="site-button" title="Tienda Online">
                                     <i class="fa fa-cart-plus" aria-hidden="true"></i>
                                 </a>
                             </div>
-                            
+
                             <div class="extra-cell">
-                                <a href="https://zoelife.global/LoginSalesForce.php" target="_blank" 
-                                    class="site-button" title="Oficina Vitual">
-                                    <i class="fa fa-laptop" aria-hidden="true"></i> 
+                                <a href="https://zoelife.global/LoginSalesForce.php" target="_blank" class="site-button"
+                                    title="Oficina Vitual">
+                                    <i class="fa fa-laptop" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
-                        <ul class="nav navbar-nav">
-                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_bolivia_inicio') ? 'active' : '' }}" href="{{ route('web_bolivia_inicio') }}">Inicio</a> </li>
-                             <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_bolivia_productos') ? 'active' : '' }}" href="{{ route('web_bolivia_productos') }}">Productos</a>
+                        <ul class="nav navbar-nav div-nav-slide-dark">
+                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_bolivia_inicio') ? 'active' : '' }}"
+                                    href="{{ route('web_bolivia_inicio') }}">Inicio</a> </li>
+                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_bolivia_productos') ? 'active' : '' }}"
+                                    href="{{ route('web_bolivia_productos') }}">Productos</a>
                                 <ul class="sub-menu">
                                     @foreach ($products as $product)
                                         <li>
@@ -114,15 +120,21 @@
                                     @endforeach
                                 </ul>
                             </li>
-                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_bolivia_testimonios') ? 'active' : '' }}" href="{{ route('web_bolivia_testimonios') }}">Testimonios</a> </li>
-                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_bolivia_centros') ? 'active' : '' }}" href="{{ route('web_bolivia_centros') }}">Centros de Distribución</a> </li>
-                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_bolivia_eventos') ? 'active' : '' }}" href="{{ route('web_bolivia_eventos') }}">Eventos</a> </li>
-                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_bolivia_alcanzando_las_estrellas') ? 'active' : '' }}" href="{{ route('web_bolivia_alcanzando_las_estrellas') }}">Alcanzando las
+                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_bolivia_testimonios') ? 'active' : '' }}"
+                                    href="{{ route('web_bolivia_testimonios') }}">Testimonios</a> </li>
+                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_bolivia_centros') ? 'active' : '' }}"
+                                    href="{{ route('web_bolivia_centros') }}">Centros de Distribución</a> </li>
+                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_bolivia_eventos') ? 'active' : '' }}"
+                                    href="{{ route('web_bolivia_eventos') }}">Eventos</a> </li>
+                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_bolivia_alcanzando_las_estrellas') ? 'active' : '' }}"
+                                    href="{{ route('web_bolivia_alcanzando_las_estrellas') }}">Alcanzando las
                                     Estrellas</a> </li>
-                                    
-                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_bolivia_university') ? 'active' : '' }}" href="{{ route('web_bolivia_university') }}">University</a> </li>
-                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_bolivia_contacto') ? 'active' : '' }}" href="{{ route('web_bolivia_contacto') }}">Contacto</a> </li>
-                            
+
+                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_bolivia_university') ? 'active' : '' }}"
+                                    href="{{ route('web_bolivia_university') }}">University</a> </li>
+                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_bolivia_contacto') ? 'active' : '' }}"
+                                    href="{{ route('web_bolivia_contacto') }}">Contacto</a> </li>
+
                             <li class="switch" style="top: 25px; padding:">
                                 <i class="bx bxs-sun"></i>
                                 <i class="bx bxs-moon"></i>
