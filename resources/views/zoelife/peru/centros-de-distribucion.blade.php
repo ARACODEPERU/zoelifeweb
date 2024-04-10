@@ -1,12 +1,12 @@
 @extends('layouts.peru')
 
 @section('content')
+<!-- Encabezado inicio -->
+<x-peru.header-area></x-peru.header-area>
+<!-- Encabezado fin -->
 
     <div class="page-content">
 
-    <!-- Encabezado inicio -->
-    <x-peru.header-area></x-peru.header-area>
-    <!-- Encabezado fin -->
         <div class="btn-header-pc">
             <!-- inner page banner -->
             <div class="dez-bnr-inr ara_centrado_total">
@@ -73,77 +73,77 @@
                 </ul>
             </div>
         </div>
+        <br>
     
-    </div>
-    <br>
-
-    <!-- Modal -->
-    <div class="modal fade" id="modal-centros" tabindex="-1" role="dialog" aria-labelledby="centrosTitle"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header ara-modal-title">
-                    <h5 class="modal-title" id="centrosTitle">Centro de Distribución:</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <img id="modal-centros-img" src="" alt="">
+        <!-- Modal -->
+        <div class="modal fade" id="modal-centros" tabindex="-1" role="dialog" aria-labelledby="centrosTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header ara-modal-title">
+                        <h5 class="modal-title" id="centrosTitle">Centro de Distribución:</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <img id="modal-centros-img" src="" alt="">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <b>Representante:</b><span id="modal-centros-res"> Jesus Anaya Aguirre</span>
+                            </div>
+                            <div class="col-md-6">
+                                <b>Teléfono:</b> <span id="modal-centros-tel"> Jesus Anaya Aguirre</span>
+                            </div>
+                            <div class="col-md-6">
+                                <b>Correo Electrónico:</b> <span id="modal-centros-ele"> Jesus Anaya Aguirre</span>
+                            </div>
+                            <div class="col-md-6">
+                                <b>Dirección:</b> <span id="modal-centros-dir"> Jesus Anaya Aguirre</span>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-12" id="modal-centros-ifr">
+    
+                            </div>
                         </div>
                     </div>
-                    <br>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <b>Representante:</b><span id="modal-centros-res"> Jesus Anaya Aguirre</span>
-                        </div>
-                        <div class="col-md-6">
-                            <b>Teléfono:</b> <span id="modal-centros-tel"> Jesus Anaya Aguirre</span>
-                        </div>
-                        <div class="col-md-6">
-                            <b>Correo Electrónico:</b> <span id="modal-centros-ele"> Jesus Anaya Aguirre</span>
-                        </div>
-                        <div class="col-md-6">
-                            <b>Dirección:</b> <span id="modal-centros-dir"> Jesus Anaya Aguirre</span>
-                        </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                     </div>
-                    <br>
-                    <div class="row">
-                        <div class="col-md-12" id="modal-centros-ifr">
-
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
+    
+        <br>
+        <script>
+            function openModalCenterDetails(event, centerObject) {
+                // Evitar que el enlace abra el modal directamente
+                event.preventDefault();
+                console.log(centerObject)
+    
+                // Cambiar el atributo src de la imagen en el modal
+                document.getElementById('modal-centros-img').src = "{{ asset('storage') }}" + "/" + centerObject.image;
+                document.getElementById('modal-centros-res').innerHTML = centerObject.agent;
+                document.getElementById('modal-centros-tel').innerHTML = centerObject.phone;
+                document.getElementById('modal-centros-ele').innerHTML = centerObject.email;
+                document.getElementById('modal-centros-dir').innerHTML = centerObject.address;
+                document.getElementById('modal-centros-ifr').innerHTML = centerObject.map;
+                // Abre el modal después de procesar la lógica
+                // ...
+    
+                // Ejemplo: abrir modal usando Bootstrap
+                $('#modal-centros').modal('show');
+            }
+        </script>
+    
     </div>
-
-    <br>
-    <script>
-        function openModalCenterDetails(event, centerObject) {
-            // Evitar que el enlace abra el modal directamente
-            event.preventDefault();
-            console.log(centerObject)
-
-            // Cambiar el atributo src de la imagen en el modal
-            document.getElementById('modal-centros-img').src = "{{ asset('storage') }}" + "/" + centerObject.image;
-            document.getElementById('modal-centros-res').innerHTML = centerObject.agent;
-            document.getElementById('modal-centros-tel').innerHTML = centerObject.phone;
-            document.getElementById('modal-centros-ele').innerHTML = centerObject.email;
-            document.getElementById('modal-centros-dir').innerHTML = centerObject.address;
-            document.getElementById('modal-centros-ifr').innerHTML = centerObject.map;
-            // Abre el modal después de procesar la lógica
-            // ...
-
-            // Ejemplo: abrir modal usando Bootstrap
-            $('#modal-centros').modal('show');
-        }
-    </script>
     <!-- Footer -->
     <x-peru.footer-area></x-peru.footer-area>
     <!-- Footer END-->
