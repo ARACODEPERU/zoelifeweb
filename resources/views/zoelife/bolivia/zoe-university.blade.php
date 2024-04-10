@@ -34,12 +34,13 @@
         </div>
 
         
-        <div class="container" style="padding: 40px 0px;">
-            <x-study-programs></x-study-programs>
-        </div>
 
     </div>
     <!-- Content END-->
+    
+    <div class="container" style="padding: 40px 0px;">
+        <x-study-programs></x-study-programs>
+    </div>
 
     <!-- Footer -->
     <x-bolivia.footer-area></x-bolivia.footer-area>
