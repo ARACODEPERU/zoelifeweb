@@ -31,7 +31,7 @@
         <!-- Main Header -->
         <div class="sticky-header main-bar-wraper navbar-expand-lg">
             <div class="main-bar clearfix ">
-                <div class="clearfix" style="width: 100%; padding: 0px 40px;">
+                <div class="clearfix" style="width: 100%; padding: 0px 10px;">
                     <!-- Website Logo -->
                     <div class="logo-header logo-dark mostion">
                         <a href="{{ route('web_peru_inicio') }}">
