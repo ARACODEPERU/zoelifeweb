@@ -75,7 +75,7 @@ class CmsTestimonyController extends Controller
         return Inertia::render('CMS::Testimonies/Create', [
             'venture'  => $this->P000009,
             'items' => $items,
-            'tiny_api_key' => $this->P000010
+            'tiny_api_key' => env('TINY_API_KEY')//$this->P000010
         ]);
     }
 
@@ -162,7 +162,7 @@ class CmsTestimonyController extends Controller
             'venture'  => $this->P000009,
             'testimony' => CmsTestimony::find($id),
             'items' => $items,
-            'tiny_api_key' => "xmpsrss1dh49by6nnf83jicfv477cz0o31h0xu3ejsnnhsnz"//$this->P000010
+            'tiny_api_key' => env('TINY_API_KEY') //$this->P000010
         ]);
     }
 

@@ -32,6 +32,17 @@
                         @endforeach
                     </div>
                 </div>
+                <div class="container" style="padding: 10px;">
+                    <div class="row" style="justify-content: space-between">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-4" style="text-align: center;">
+                            <a href="" target="_blank"  class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;"> 
+                                <b><i class="fa fa-university" aria-hidden="true"></i> Más información</b>
+                            </a>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                </div>
             </div>
             <!-- Nuestro Equipo END -->
         </div>
