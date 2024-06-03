@@ -75,6 +75,11 @@ body.dark p{
     color: #fff;
 }
 
+
+body.dark b{
+    color: #05d023;
+}
+
 body.dark span{
     color: #fff;
 }
