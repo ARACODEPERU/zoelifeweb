@@ -362,7 +362,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 align-self-center">
-                            <span class="gen-copyright"> Copyright 2023 Zoelife International
+                            <span class="gen-copyright"> Copyright 2024 Zoelife International
                                 | Desarrollado por <a target="_blank" href="#"> Aracode </a></span>
                         </div>
                     </div>

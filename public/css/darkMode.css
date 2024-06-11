@@ -80,6 +80,16 @@ body.dark b{
     color: #05d023;
 }
 
+
+body.dark .btn-zona-descarga {
+    width: 90%; 
+    color: #fff;
+    font-size: 14px; 
+    padding: 10px 20px; 
+    border-radius: 30px;
+}
+
+
 body.dark span{
     color: #fff;
 }
