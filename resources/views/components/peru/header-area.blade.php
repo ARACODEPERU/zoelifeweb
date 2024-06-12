@@ -7,7 +7,7 @@
     <!-- Header -->
     <header class="site-header header-style-1 mo-left dark dark-style-2">
         <!-- Top bar -->
-        <div class="top-bar">
+        <div class="top-bar btn-header-pc">
             <div class="top-bar-content" style="width: 100%; padding: 0px 40px;">
                 <div class="top-bar-contect-space row justify-content-between">
                     <div class="dez-topbar-right list-unstyled e-p-bx ">
@@ -21,6 +21,38 @@
                             </li>
                             <li>
                                 <i class="fa fa-phone"></i><span>(+51) {{ $header[4]->content }}</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="top-bar btn-header-mobile">
+            <div class="top-bar-content" style="width: 100%; padding: 0px 40px;">
+                <div class="top-bar-contect-space row justify-content-between">
+                    <div class="dez-topbar-right list-unstyled e-p-bx ">
+                        <ul>
+                            <li>
+                                <a href="https://zoelifeinternational.com/" target="_blank"
+                                class="" title="Zoé Global" style="text-decoration: none; padding: 5px 15px;">
+                                    <i class="fa fa-globe" aria-hidden="true"></i>
+                                    Zoé Global
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://zoelife.global/link/store/TIENDAPUBLICA" target="_blank"
+                                class="" title="Tienda Online" style="text-decoration: none; padding: 5px 15px;">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                    Tienda Online
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://zoelife.global/LoginSalesForce.php" target="_blank" 
+                                class="" title="Oficina Virtual" style="text-decoration: none; padding: 5px 15px;">
+                                    <i class="fa fa-laptop" aria-hidden="true"></i>
+                                    Oficina Virtual
+                                </a>
                             </li>
                         </ul>
                     </div>
