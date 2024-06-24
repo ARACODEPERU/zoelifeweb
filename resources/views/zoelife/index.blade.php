@@ -97,7 +97,7 @@
                                                     <h3>Perú</h3>
                                                 </div>
                                                 <div class="gen-movie-meta-holder">
-                                                    <p style="font-size: 24px;">
+                                                    <p style="font-size: 24px;  line-height: 35px;">
                                                         {{ $paisesintro[1]->content }}
                                                     </p>
                                                 </div>
@@ -138,7 +138,7 @@
                                                     <h3>Bolivia</h3>
                                                 </div>
                                                 <div class="gen-movie-meta-holder">
-                                                    <p style="font-size: 24px;">
+                                                    <p style="font-size: 24px;  line-height: 35px;">
                                                         {{ $paisesintro[4]->content }}
                                                     </p>
                                                 </div>
@@ -179,7 +179,7 @@
                                                     <h3>Ecuador</h3>
                                                 </div>
                                                 <div class="gen-movie-meta-holder">
-                                                    <p style="font-size: 24px;">
+                                                    <p style="font-size: 24px;  line-height: 35px;">
                                                         {{ $paisesintro[7]->content }}
                                                     </p>
                                                 </div>
@@ -220,7 +220,7 @@
                                                     <h3>Colombia</h3>
                                                 </div>
                                                 <div class="gen-movie-meta-holder">
-                                                    <p style="font-size: 24px;">
+                                                    <p style="font-size: 24px;  line-height: 35px;">
                                                         {{ $paisesintro[10]->content }}
                                                     </p>
                                                 </div>
@@ -261,7 +261,7 @@
                                                     <h3>Mexico</h3>
                                                 </div>
                                                 <div class="gen-movie-meta-holder">
-                                                    <p style="font-size: 24px;">
+                                                    <p style="font-size: 24px;  line-height: 35px;">
                                                         {{ $paisesintro[13]->content }}
                                                     </p>
                                                 </div>
