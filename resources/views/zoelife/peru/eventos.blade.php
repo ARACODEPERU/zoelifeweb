@@ -1,11 +1,11 @@
 @extends('layouts.peru')
 
 @section('content')
-    <!-- Encabezado inicio -->
+<!-- Encabezado inicio -->
     <x-peru.header-area></x-peru.header-area>
-    <!-- Encabezado fin -->
+<!-- Encabezado fin -->
 
-    <!-- Content -->
+<!-- Content -->
     <div class="page-content">
 
         <div class="btn-header-pc">
@@ -36,7 +36,18 @@
             <!-- Breadcrumb row END -->
         </div>
 
-        <br><br><br>
+        <br>
+
+        <div class="content-area" style="padding: 80px 0px;">
+            <div class="container">
+                    <div class="section-head">
+                        <h2 class="text-uppercase">Galeria de Viajes</h2>
+                        <div class="dez-divider divider-2pxicon-left" style="background: #00b01a;">
+                            <i class="fa fa-thumbs-o-up  text-white"  style="background: #00b01a;"></i>
+                        </div>
+                    </div>
+            </div>
+        </div>
         
         <div class="btn-header-pc">
             <div style="padding: 0px 10px;" >
@@ -123,23 +134,34 @@
             </div>
         </div>
 
-        
-        <div class="containe" style="padding: 40px;">
-            <div class="row" style="justify-content: space-between">
-                @if ( count($inscripcioncontacto) > 0 )
-                <div class="col-md-3"></div>
-                <div class="col-md-3" style="text-align: center; padding: 15px;">
-                    <a href="{{ $inscripcioncontacto[0]->content }}" target="_blank" class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;">
-                        <b><i class="fa fa-edit"aria-hidden="true"></i>&nbsp;&nbsp; Inscripciones</b>
-                    </a>
-                </div>
-                <div class="col-md-3" style="text-align: center; padding: 15px;">
-                    <a href="https://api.whatsapp.com/send?phone=51{{ $inscripcioncontacto[1]->content }}&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?" target="_blank"  class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;">
-                        <b><i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;&nbsp; Más Información</b>
-                    </a>
-                </div>
-                <div class="col-md-3"></div>
-                @endif
+        <div class="content-area" style="padding: 80px 0px;">
+            <div class="container">
+                    <div class="section-head">
+                        <h2 class="text-uppercase">Zona de Información</h2>
+                        <div class="dez-divider divider-2pxicon-left" style="background: #00b01a;">
+                            <i class="fa fa-thumbs-o-up  text-white"  style="background: #00b01a;"></i>
+                        </div>
+                    </div>
+                    <div class="section-content text-center ">
+                        @if ( count($inscripcioncontacto) > 0 )
+                        <div class="row" style="justify-content: space-between">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-4" style="text-align: center; padding: 15px;">
+                                <a href="{{ $inscripcioncontacto[0]->content }}" target="_blank" class="site-button btn-zona-eventos" 
+                                    style="font-weight: 700;">
+                                    <i class="fa fa-edit" aria-hidden="true"></i>&nbsp;&nbsp; Inscripciones
+                                </a>
+                            </div>
+                            <div class="col-md-4" style="text-align: center; padding: 15px;">
+                                <a href="https://api.whatsapp.com/send?phone=51{{ $inscripcioncontacto[1]->content }}&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?" 
+                                    target="_blank"  class="site-button btn-zona-eventos" style="font-weight: 700;">
+                                    <i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;&nbsp; Más información 
+                                </a>
+                            </div>
+                            <div class="col-md-2"></div>
+                        </div>
+                        @endif
+                    </div>
             </div>
         </div>
 
@@ -148,7 +170,7 @@
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
-  </div>
+    </div>
 
 
 

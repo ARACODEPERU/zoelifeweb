@@ -175,19 +175,19 @@
                             <div class="row" style="justify-content: space-between">
                                 <div class="col-md-4" style="text-align: center; padding: 15px;">
                                     <a href="{{ $linkDescarga[0]->content }}" target="_blank" class="site-button btn-zona-descarga" 
-                                        style="">
+                                        style="font-weight: 700;">
                                         <i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; CATÁLOGO DE PRODUCTOS
                                     </a>
                                 </div>
                                 <div class="col-md-4" style="text-align: center; padding: 15px;">
                                     <a href="{{ $linkDescarga[1]->content }}" target="_blank"  class="site-button btn-zona-descarga" 
-                                        style="">
+                                        style="font-weight: 700;">
                                         <i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; PLAN LIBERTAD 
                                     </a>
                                 </div>
                                 <div class="col-md-4" style="text-align: center; padding: 15px;">
                                     <a href="{{ $linkDescarga[2]->content }}" target="_blank"  class="site-button btn-zona-descarga" 
-                                        style="">
+                                        style="font-weight: 700;">
                                         <i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; MANUAL DE POLÍTICAS Y PROCESOS
                                     </a>
                                 </div>

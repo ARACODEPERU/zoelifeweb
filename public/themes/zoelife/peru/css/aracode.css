@@ -278,8 +278,20 @@ General
   padding: 10px 20px; 
   border-radius: 30px;
 }
+  
+.btn-zona-eventos {
+  width: 90%; 
+  color: #fff;
+  font-size: 18px; 
+  padding: 10px 20px; 
+  border-radius: 30px;
+}
 
 
 .btn-zona-descarga:hover {
+  text-decoration: none;
+}
+
+.btn-zona-eventos:hover {
   text-decoration: none;
 }
