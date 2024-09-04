@@ -27,7 +27,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="top-bar btn-header-mobile">
             <div class="top-bar-content" style="width: 100%; padding: 0px 40px;">
                 <div class="top-bar-contect-space row justify-content-between">
@@ -48,7 +48,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="https://zoelife.global/LoginSalesForce.php" target="_blank" 
+                                <a href="https://zoelife.global/LoginSalesForce.php" target="_blank"
                                 class="" title="Oficina Virtual" style="text-decoration: none; padding: 5px 15px;">
                                     <i class="fa fa-laptop" aria-hidden="true"></i>
                                     Oficina Virtual
@@ -154,29 +154,25 @@
                                     @endforeach
                                 </ul>
                             </li>
-                            <li> 
-                                <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_university') ? 'active' : '' }}"
-                                    href="{{ route('web_peru_university') }}">Cuidado Personal</a> 
-                            </li>
                             <li>
                                 <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_testimonios') ? 'active' : '' }}"
                                     href="{{ route('web_peru_testimonios') }}">
                                     Testimonios
                                 </a>
                             </li>
-                            <li> 
+                            <li>
                                 <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_centros') ? 'active' : '' }}"
-                                    href="{{ route('web_peru_centros') }}">Centros de Distribución</a> 
-                            </li>
-                            <li> 
-                                <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_eventos') ? 'active' : '' }}"
-                                    href="{{ route('web_peru_eventos') }}">Eventos</a> 
-                            </li>
-                            <li> 
-                                <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_alcanzando_las_estrellas') ? 'active' : '' }}"
-                                    href="{{ route('web_peru_alcanzando_las_estrellas') }}">Servicio Social</a> 
+                                    href="{{ route('web_peru_centros') }}">Centros de Distribución</a>
                             </li>
                             <li>
+                                <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_eventos') ? 'active' : '' }}"
+                                    href="{{ route('web_peru_eventos') }}">Eventos</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_alcanzando_las_estrellas') ? 'active' : '' }}"
+                                    href="{{ route('web_peru_alcanzando_las_estrellas') }}">Servicio Social</a>
+                            </li>
+                            {{-- <li>
                                 <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_productos') ? 'active' : '' }}"
                                     href="{{ route('web_peru_productos') }}">Linea de Belleza</a>
                                 <ul class="sub-menu">
@@ -188,10 +184,14 @@
                                         </li>
                                     @endforeach
                                 </ul>
+                            </li> --}}
+                            <li>
+                                <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_university') ? 'active' : '' }}"
+                                    href="{{ route('web_peru_university') }}">Zoé University</a>
                             </li>
-                            <li> 
+                            <li>
                                 <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_contacto') ? 'active' : '' }}"
-                                    href="{{ route('web_peru_contacto') }}">Contacto</a> 
+                                    href="{{ route('web_peru_contacto') }}">Contacto</a>
                             </li>
                             <li class="switch" style="top: 25px;">
                                 <i class="bx bxs-sun"></i>
