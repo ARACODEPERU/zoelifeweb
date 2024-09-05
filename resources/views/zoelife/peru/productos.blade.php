@@ -116,7 +116,7 @@
 
     </div>
     <!-- Content END-->
-
+hola
     <!-- Footer -->
     <x-peru.footer-area></x-peru.footer-area>
     <!-- Footer END-->
