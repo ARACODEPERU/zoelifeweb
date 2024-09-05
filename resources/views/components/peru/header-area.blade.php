@@ -143,7 +143,7 @@
                             </li>
                             <li>
                                 <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_productos') ? 'active' : '' }}"
-                                    href="{{ route('web_peru_productos') }}">Zoé Nutracéuticos</a>
+                                    href="{{ route('web_peru_productos') }}">Productos</a>
                                 <ul class="sub-menu">
                                     @foreach ($products as $product)
                                         <li>
