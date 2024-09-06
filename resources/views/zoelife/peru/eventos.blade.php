@@ -7,8 +7,8 @@
 
     <div class="page-content" style="margin-top: 85px;">
 
-            <!-- Slider -->
-            <div class="btn-header-pc">
+        <!-- Slider -->
+        <div class="btn-header-pc">
                 <div class="main-slider style-two default-banner">
                     <div class="tp-banner-container">
                         <div class="tp-banner">
@@ -53,8 +53,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- Slider END -->
+        </div>
+        <!-- Slider END -->
 
         <div class="btn-header-mobile">
             <!-- Breadcrumb row -->
@@ -69,6 +69,17 @@
             <!-- Breadcrumb row END -->
         </div>
 
+        <section>
+            <div class="container-xxl" style="padding: 60px 0px;">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="box-beneficios">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <div class="content-area" style="padding: 80px 0px;">
             <div class="container">
