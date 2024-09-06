@@ -155,6 +155,10 @@
                                 </ul>
                             </li>
                             <li>
+                                <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_university') ? 'active' : '' }}"
+                                    href="{{ route('web_peru_university') }}">Cuidado Personal</a>
+                            </li>
+                            <li>
                                 <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_testimonios') ? 'active' : '' }}"
                                     href="{{ route('web_peru_testimonios') }}">
                                     Testimonios
@@ -166,7 +170,7 @@
                             </li>
                             <li>
                                 <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_eventos') ? 'active' : '' }}"
-                                    href="{{ route('web_peru_eventos') }}">Eventos</a>
+                                    href="{{ route('web_peru_eventos') }}">Inicia tu Emprendimiento</a>
                             </li>
                             <li>
                                 <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_alcanzando_las_estrellas') ? 'active' : '' }}"
@@ -185,10 +189,6 @@
                                     @endforeach
                                 </ul>
                             </li> --}}
-                            <li>
-                                <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_university') ? 'active' : '' }}"
-                                    href="{{ route('web_peru_university') }}">Zoé University</a>
-                            </li>
                             <li>
                                 <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_contacto') ? 'active' : '' }}"
                                     href="{{ route('web_peru_contacto') }}">Contacto</a>
