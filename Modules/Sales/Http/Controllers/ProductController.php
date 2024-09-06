@@ -2,10 +2,12 @@
 
 namespace Modules\Sales\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\Kardex;
 use App\Models\KardexSize;
 use App\Models\LocalSale;
 use App\Models\Product;
+use App\Models\ProductCategory;
 use App\Models\ProductEstablishmentPrice;
 use Carbon\Carbon;
 use Exception;
@@ -81,8 +83,11 @@ class ProductController extends Controller
      */
     public function create()
     {
+        $categories = Category::all();
+
         return Inertia::render('Sales::Products/Create', [
             'establishments' => LocalSale::all(),
+            'categories' => $categories
         ]);
     }
     public function createService()
@@ -168,6 +173,19 @@ class ProductController extends Controller
             'status' => true
         ]);
 
+        $cats = $request->get('category_ids');
+
+        if (count($cats) > 0) {
+            foreach ($cats as $cat) {
+                ProductCategory::firstOrCreate(
+                    [
+                        'product_id' => $pr->id,
+                        'category_id' => $cat
+                    ]
+                );
+            }
+        }
+
         $k = Kardex::create([
             'date_of_issue' => Carbon::now()->format('Y-m-d'),
             'motion' => 'purchase',
@@ -230,8 +248,20 @@ class ProductController extends Controller
      */
     public function edit(Product $product)
     {
+        // $proddu = Product::with('categories.category')->find(2);
+        // dd($proddu);
+
+        // $categoor = Category::with('products.product')->find(2);
+        // dd($categoor);
+
+        $categories = Category::all();
+
+        $categoriesIds = ProductCategory::where('product_id', $product->id)->pluck('category_id');
+
         return Inertia::render('Sales::Products/Edit', [
             'product' => $product,
+            'categories' => $categories,
+            'categoriesIds' => $categoriesIds
         ]);
     }
 
@@ -244,7 +274,7 @@ class ProductController extends Controller
      */
     public function update(Request $request, Product $product)
     {
-        //dd($request->all());
+
         $this->validate($request, [
             'interne' => 'required|unique:products,interne,' . $product->id,
             'description' => 'required',
@@ -259,6 +289,19 @@ class ProductController extends Controller
         $product->sale_prices = $request->get('sale_prices');
         $product->sizes = $request->get('sizes');
         $product->save();
+
+        $cats = $request->get('category_ids');
+
+        ProductCategory::where('product_id', $product->id)->delete();
+
+        if (count($cats) > 0) {
+            foreach ($cats as $cat) {
+                ProductCategory::create([
+                    'product_id' => $product->id,
+                    'category_id' => $cat
+                ]);
+            }
+        }
 
         return redirect()->route('products.edit', $product->id)
             ->with('message', __('Producto editado con éxito'));
@@ -748,7 +791,9 @@ class ProductController extends Controller
 
 
             $json_prices = array(
-                "high" => $data[3], "under" =>  $data[5], "medium" => $data[4]
+                "high" => $data[3],
+                "under" =>  $data[5],
+                "medium" => $data[4]
             );
 
             $pr = Product::create([

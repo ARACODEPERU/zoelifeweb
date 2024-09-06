@@ -10,11 +10,21 @@
     import Keypad from '@/Components/Keypad.vue';
     import ModalCropperImage from './ModalCropperImage.vue';
     import swal from 'sweetalert';
+    import { Select } from 'ant-design-vue';
+    import { ref, onMounted } from 'vue';
 
     const props = defineProps({
         product: {
             type: Object,
             default: () => ({}),
+        },
+        categories: {
+            type: Object,
+            default: () => ({}),
+        },
+        categoriesIds: {
+            type: Array,
+            default: [],
         }
     });
 
@@ -23,10 +33,12 @@
         interne: props.product.interne,
         description: props.product.description,
         image: props.product.image,
+        presentations: props.product.presentations,
         imageNew: '',
         purchase_prices: props.product.purchase_prices,
         sale_prices: JSON.parse(props.product.sale_prices),
         sizes: JSON.parse(props.product.sizes),
+        category_ids: props.categoriesIds
     });
 
     const editProduct = () => {
@@ -45,6 +57,17 @@
 
     library.add(faTrashAlt);
 
+    const categoriesData = ref([]);
+
+    onMounted(()=>{
+        // cuando las categorias no tiene sub niveles
+        // categoriesData.value = props.categories.map(item => ({ value: item.id, label: item.description }));
+        categoriesData.value = props.categories.map((obj) => ({
+            value: obj.id,
+            label: obj.description
+        }));
+    });
+
 </script>
 
 <template>
@@ -58,8 +81,26 @@
         </template>
 
         <template #form>
-            
             <div class="col-span-6 sm:col-span-3">
+                <InputLabel for="category_id" value="Categorías" class="mb-1" />
+                <!-- <select v-model="form.category_id" id="category_id" class="mt-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <option value="0" disabled>Seleccionar</option>
+                    <template v-for="(category, keyi) in props.categories">
+                        <option :value="category.id">{{ category.description }}</option>
+                    </template>
+                </select> -->
+                <Select
+                    v-model:value="form.category_ids"
+                    :options="categoriesData"
+                    mode="multiple"
+                    size="large"
+                    placeholder="Por favor seleccione"
+                    style="width: 100%"
+                >
+                </Select>
+                <InputError :message="form.errors.category_id" class="mt-2" />
+            </div>
+            <!-- <div class="col-span-6 sm:col-span-3">
                 <InputLabel for="usine" value="Código Fabrica" />
                 <TextInput
                     id="usine"
@@ -69,8 +110,8 @@
                     autofocus
                 />
                 <InputError :message="form.errors.usine" class="mt-2" />
-            </div>
-            <div class="col-span-6 sm:col-span-3">
+            </div> -->
+            <div class="col-span-6 sm:col-span-2">
                 <InputLabel for="interne" value="Código Interno" />
                 <TextInput
                     id="interne"
@@ -92,7 +133,7 @@
                 />
                 <InputError :message="form.errors.description" class="mt-2" />
             </div>
-            <div class="col-span-6 sm:col-span-4">
+            <div class="col-span-6 ">
                 <InputLabel for="image" value="Imagen" />
                 <div class="flex justify-center space-x-2">
                     <figure class="max-w-lg">
@@ -130,7 +171,7 @@
                 />
                 <InputError :message="form.errors[`sale_prices.high`]" class="mt-2" />
             </div>
-            <div class="col-span-6 sm:col-span-2">
+            <div class="col-span-6 sm:col-span-2" style="display: none;">
                 <InputLabel for="sale_prices_medium" value="Precio de venta Medio" />
                 <TextInput
                     id="sale_prices_medium"
@@ -141,7 +182,7 @@
                 />
                 <InputError :message="form.errors[`sale_prices.medium`]" class="mt-2" />
             </div>
-            <div class="col-span-6 sm:col-span-2">
+            <div class="col-span-6 sm:col-span-2" style="display: none;">
                 <InputLabel for="sale_prices_under" value="Precio de venta Minimo" />
                 <TextInput
                     id="sale_prices_under"
@@ -152,15 +193,15 @@
                 />
                 <InputError :message="form.errors[`sale_prices.under`]" class="mt-2" />
             </div>
-            <div class="col-span-6 sm:col-span-6">
+            <div v-if="form.presentations" class="col-span-6 sm:col-span-6">
                 <label>
-                    Tallas
+                    Presentación
                 </label>
                 <div  class="relative overflow-x-auto shadow-md sm:rounded-lg">
                     <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                         <thead class="text-xs text-gray-700 uppercase dark:text-gray-400">
                             <tr>
-                                <th class="px-6 py-3 bg-gray-50 dark:bg-gray-800">Talla</th>
+                                <th class="px-6 py-3 bg-gray-50 dark:bg-gray-800">P/T</th>
                                 <th class="px-6 py-3">Cantidad</th>
                             </tr>
                         </thead>

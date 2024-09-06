@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Product extends Model
@@ -31,5 +32,10 @@ class Product extends Model
     public function getImageAttribute($value)
     {
         return ($value != 'img/imagen-no-disponible.jpg' ? asset('storage/' . $value) : asset($value));
+    }
+
+    public function categories(): HasMany
+    {
+        return $this->hasMany(ProductCategory::class, 'product_id');
     }
 }
