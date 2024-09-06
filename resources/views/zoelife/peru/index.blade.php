@@ -174,21 +174,21 @@
                         <div class="section-content text-center ">
                             <div class="row" style="justify-content: space-between">
                                 <div class="col-md-4" style="text-align: center; padding: 15px;">
-                                    <a href="{{ $linkDescarga[0]->content }}" target="_blank" class="site-button" 
-                                        style="width: 90%; font-size: 14px; padding: 10px 20px; border-radius: 30px;">
-                                        <b><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; CATÁLOGO DE PRODUCTOS</b>
+                                    <a href="{{ $linkDescarga[0]->content }}" target="_blank" class="site-button btn-zona-descarga" 
+                                        style="font-weight: 700;">
+                                        <i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; CATÁLOGO DE PRODUCTOS
                                     </a>
                                 </div>
                                 <div class="col-md-4" style="text-align: center; padding: 15px;">
-                                    <a href="{{ $linkDescarga[1]->content }}" target="_blank"  class="site-button" 
-                                        style="width: 90%; font-size: 14px; padding: 10px 20px; border-radius: 30px;">
-                                        <b><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; PLAN LIBERTAD </b>
+                                    <a href="{{ $linkDescarga[1]->content }}" target="_blank"  class="site-button btn-zona-descarga" 
+                                        style="font-weight: 700;">
+                                        <i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; PLAN LIBERTAD 
                                     </a>
                                 </div>
                                 <div class="col-md-4" style="text-align: center; padding: 15px;">
-                                    <a href="{{ $linkDescarga[2]->content }}" target="_blank"  class="site-button" 
-                                        style="width: 90%; font-size: 14px; padding: 10px 20px; border-radius: 30px;">
-                                        <b><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; MANUAL DE POLÍTICAS Y PROCESOS</b>
+                                    <a href="{{ $linkDescarga[2]->content }}" target="_blank"  class="site-button btn-zona-descarga" 
+                                        style="font-weight: 700;">
+                                        <i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; MANUAL DE POLÍTICAS Y PROCESOS
                                     </a>
                                 </div>
                             </div>

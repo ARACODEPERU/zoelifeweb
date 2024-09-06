@@ -103,7 +103,7 @@ class PeruController extends Controller
 
         $productos = OnliItem::join('countries', 'onli_items.country_id', '=', 'countries.id')
             ->where('countries.description', 'Perú')
-            ->select('onli_items.name', 'onli_items.image', 'onli_items.id')
+            ->select('onli_items.name', 'onli_items.image', 'onli_items.id', 'onli_items.description')
             ->get();
 
         return view('zoelife/peru.productos', [

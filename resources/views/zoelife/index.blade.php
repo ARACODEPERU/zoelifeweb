@@ -51,6 +51,7 @@
                                 <div class="gen-account-holder">
                                     <a href="" id="gen-user-btn"><i class="fa fa-leaf"></i></a>
                                 </div>
+                                <!--
                                 <div class="gen-btn-container">
                                     <a href="https://zoelife.global/LoginSalesForce.php" class="gen-button">
                                         <div class="gen-button-block">
@@ -62,6 +63,7 @@
                                         </div>
                                     </a>
                                 </div>
+                                -->
                             </div>
                             <button class="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -89,24 +91,30 @@
                                 <div class="gen-movie-contain h-100">
                                     <div class="container h-100">
                                         <div class="row align-items-center h-100">
-                                            <div class="col-xl-6">
+                                            <div class="col-xl-7">
                                                 <div class="gen-tag-line"><span></span></div>
                                                 <div class="gen-movie-info">
                                                     <h3>Perú</h3>
                                                 </div>
                                                 <div class="gen-movie-meta-holder">
-                                                    <p>
+                                                    <p style="font-size: 24px;  line-height: 35px;">
                                                         {{ $paisesintro[1]->content }}
                                                     </p>
                                                 </div>
                                                 <div class="gen-movie-action">
-                                                    <div class="gen-btn-container button-1">
+                                                    <div class="gen-btn-container button-1" style="padding: 10px 5px;">
                                                         <a href="{{ route('web_peru_inicio') }}" class="gen-button">
                                                             <i class="fa fa-leaf" aria-hidden="true"></i>
                                                             <span class="text">Ingresar Ahora</span>
                                                         </a>
                                                     </div>
-                                                    <div class="gen-btn-container button-2">
+                                                    <div class="gen-btn-container button-1" style="padding: 10px 5px;">
+                                                        <a href="https://zoelife.global/LoginSalesForce.php" class="gen-button">
+                                                            <i class="fa fa-laptop" aria-hidden="true"></i>
+                                                            <span class="text">Oficina Virtual</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="gen-btn-container button-2" style="padding: 10px 5px;">
                                                         <a href="{{ $paisesintro[2]->content }}"
                                                             class="gen-button gen-button-link">
                                                             <i aria-hidden="true" class="fa fa-play"></i> <span
@@ -124,24 +132,30 @@
                                 <div class="gen-movie-contain h-100">
                                     <div class="container h-100">
                                         <div class="row align-items-center h-100">
-                                            <div class="col-xl-6">
+                                            <div class="col-xl-7">
                                                 <div class="gen-tag-line"><span></span></div>
                                                 <div class="gen-movie-info">
                                                     <h3>Bolivia</h3>
                                                 </div>
                                                 <div class="gen-movie-meta-holder">
-                                                    <p>
+                                                    <p style="font-size: 24px;  line-height: 35px;">
                                                         {{ $paisesintro[4]->content }}
                                                     </p>
                                                 </div>
                                                 <div class="gen-movie-action">
-                                                    <div class="gen-btn-container button-1">
+                                                    <div class="gen-btn-container button-1" style="padding: 10px 5px;">
                                                         <a href="{{ route('web_bolivia_inicio') }}" class="gen-button">
                                                             <i class="fa fa-leaf" aria-hidden="true"></i>
                                                             <span class="text">Ingresar Ahora</span>
                                                         </a>
                                                     </div>
-                                                    <div class="gen-btn-container button-2">
+                                                    <div class="gen-btn-container button-1" style="padding: 10px 5px;">
+                                                        <a href="https://zoelife.global/LoginSalesForce.php" class="gen-button">
+                                                            <i class="fa fa-laptop" aria-hidden="true"></i>
+                                                            <span class="text">Oficina Virtual</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="gen-btn-container button-2" style="padding: 10px 5px;">
                                                         <a href="{{ $paisesintro[5]->content }}"
                                                             class="gen-button  gen-button-link">
                                                             <i aria-hidden="true" class="fa fa-play"></i> <span
@@ -159,24 +173,30 @@
                                 <div class="gen-movie-contain h-100">
                                     <div class="container h-100">
                                         <div class="row align-items-center h-100">
-                                            <div class="col-xl-6">
+                                            <div class="col-xl-7">
                                                 <div class="gen-tag-line"><span></span></div>
                                                 <div class="gen-movie-info">
                                                     <h3>Ecuador</h3>
                                                 </div>
                                                 <div class="gen-movie-meta-holder">
-                                                    <p>
+                                                    <p style="font-size: 24px;  line-height: 35px;">
                                                         {{ $paisesintro[7]->content }}
                                                     </p>
                                                 </div>
                                                 <div class="gen-movie-action">
-                                                    <div class="gen-btn-container button-1">
+                                                    <div class="gen-btn-container button-1" style="padding: 10px 5px;">
                                                         <a href="{{ route('web_ecuador_inicio') }}" class="gen-button">
                                                             <i class="fa fa-leaf" aria-hidden="true"></i>
                                                             <span class="text">Ingresar Ahora</span>
                                                         </a>
                                                     </div>
-                                                    <div class="gen-btn-container button-2">
+                                                    <div class="gen-btn-container button-1" style="padding: 10px 5px;">
+                                                        <a href="https://zoelife.global/LoginSalesForce.php" class="gen-button">
+                                                            <i class="fa fa-laptop" aria-hidden="true"></i>
+                                                            <span class="text">Oficina Virtual</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="gen-btn-container button-2" style="padding: 10px 5px;">
                                                         <a href="{{ $paisesintro[8]->content }}"
                                                             class="gen-button gen-button-link">
                                                             <i aria-hidden="true" class="fa fa-play"></i> <span
@@ -194,24 +214,30 @@
                                 <div class="gen-movie-contain h-100">
                                     <div class="container h-100">
                                         <div class="row align-items-center h-100">
-                                            <div class="col-xl-6">
+                                            <div class="col-xl-7">
                                                 <div class="gen-tag-line"><span></span></div>
                                                 <div class="gen-movie-info">
                                                     <h3>Colombia</h3>
                                                 </div>
                                                 <div class="gen-movie-meta-holder">
-                                                    <p>
+                                                    <p style="font-size: 24px;  line-height: 35px;">
                                                         {{ $paisesintro[10]->content }}
                                                     </p>
                                                 </div>
                                                 <div class="gen-movie-action">
-                                                    <div class="gen-btn-container button-1">
+                                                    <div class="gen-btn-container button-1" style="padding: 10px 5px;">
                                                         <a href="{{ route('web_colombia_inicio') }}" class="gen-button">
                                                             <i class="fa fa-leaf" aria-hidden="true"></i>
                                                             <span class="text">Ingresar Ahora</span>
                                                         </a>
                                                     </div>
-                                                    <div class="gen-btn-container button-2">
+                                                    <div class="gen-btn-container button-1" style="padding: 10px 5px;">
+                                                        <a href="https://zoelife.global/LoginSalesForce.php" class="gen-button">
+                                                            <i class="fa fa-laptop" aria-hidden="true"></i>
+                                                            <span class="text">Oficina Virtual</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="gen-btn-container button-2" style="padding: 10px 5px;">
                                                         <a href="{{ $paisesintro[11]->content }}"
                                                             class="gen-button gen-button-link">
                                                             <i aria-hidden="true" class="fa fa-play"></i> <span
@@ -235,18 +261,24 @@
                                                     <h3>Mexico</h3>
                                                 </div>
                                                 <div class="gen-movie-meta-holder">
-                                                    <p>
+                                                    <p style="font-size: 24px;  line-height: 35px;">
                                                         {{ $paisesintro[13]->content }}
                                                     </p>
                                                 </div>
                                                 <div class="gen-movie-action">
-                                                    <div class="gen-btn-container button-1">
+                                                    <div class="gen-btn-container button-1" style="padding: 10px 5px;">
                                                         <a href="{{ route('web_mexico_inicio') }}" class="gen-button">
                                                             <i class="fa fa-leaf" aria-hidden="true"></i>
                                                             <span class="text">Ingresar Ahora</span>
                                                         </a>
                                                     </div>
-                                                    <div class="gen-btn-container button-2">
+                                                    <div class="gen-btn-container button-1" style="padding: 10px 5px;">
+                                                        <a href="https://zoelife.global/LoginSalesForce.php" class="gen-button">
+                                                            <i class="fa fa-laptop" aria-hidden="true"></i>
+                                                            <span class="text">Oficina Virtual</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="gen-btn-container button-2" style="padding: 10px 5px;">
                                                         <a href="{{ $paisesintro[14]->content }}"
                                                             class="gen-button gen-button-link">
                                                             <i aria-hidden="true" class="fa fa-play"></i> <span
@@ -362,7 +394,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 align-self-center">
-                            <span class="gen-copyright"> Copyright 2023 Zoelife International
+                            <span class="gen-copyright"> Copyright 2024 Zoelife International
                                 | Desarrollado por <a target="_blank" href="#"> Aracode </a></span>
                         </div>
                     </div>

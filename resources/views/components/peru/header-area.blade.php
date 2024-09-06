@@ -7,7 +7,7 @@
     <!-- Header -->
     <header class="site-header header-style-1 mo-left dark dark-style-2">
         <!-- Top bar -->
-        <div class="top-bar">
+        <div class="top-bar btn-header-pc">
             <div class="top-bar-content" style="width: 100%; padding: 0px 40px;">
                 <div class="top-bar-contect-space row justify-content-between">
                     <div class="dez-topbar-right list-unstyled e-p-bx ">
@@ -27,6 +27,38 @@
                 </div>
             </div>
         </div>
+
+        <div class="top-bar btn-header-mobile">
+            <div class="top-bar-content" style="width: 100%; padding: 0px 40px;">
+                <div class="top-bar-contect-space row justify-content-between">
+                    <div class="dez-topbar-right list-unstyled e-p-bx ">
+                        <ul>
+                            <li>
+                                <a href="https://zoelifeinternational.com/" target="_blank"
+                                class="" title="Zoé Global" style="text-decoration: none; padding: 5px 15px;">
+                                    <i class="fa fa-globe" aria-hidden="true"></i>
+                                    Zoé Global
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://zoelife.global/link/store/TIENDAPUBLICA" target="_blank"
+                                class="" title="Tienda Online" style="text-decoration: none; padding: 5px 15px;">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                    Tienda Online
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://zoelife.global/LoginSalesForce.php" target="_blank"
+                                class="" title="Oficina Virtual" style="text-decoration: none; padding: 5px 15px;">
+                                    <i class="fa fa-laptop" aria-hidden="true"></i>
+                                    Oficina Virtual
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Top Bar END-->
         <!-- Main Header -->
         <div class="sticky-header main-bar-wraper navbar-expand-lg">
@@ -35,8 +67,7 @@
                     <!-- Website Logo -->
                     <div class="logo-header logo-dark mostion">
                         <a href="{{ route('web_peru_inicio') }}">
-                            <img src="{{ $header[5]->content }}" alt=""
-                                style="height: 80px; padding: 15px 0px;">
+                            <img src="{{ $header[5]->content }}" alt="banner" style="height: 80px; padding: 15px 0px;">
                         </a>
                     </div>
                     <!-- Nav Toggle Button -->
@@ -124,23 +155,44 @@
                                 </ul>
                             </li>
                             <li>
+                                <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_university') ? 'active' : '' }}"
+                                    href="{{ route('web_peru_university') }}">Cuidado Personal</a>
+                            </li>
+                            <li>
                                 <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_testimonios') ? 'active' : '' }}"
                                     href="{{ route('web_peru_testimonios') }}">
                                     Testimonios
                                 </a>
                             </li>
-                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_centros') ? 'active' : '' }}"
-                                    href="{{ route('web_peru_centros') }}">Centros de Distribución</a> </li>
-                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_eventos') ? 'active' : '' }}"
-                                    href="{{ route('web_peru_eventos') }}">Eventos</a> </li>
-                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_alcanzando_las_estrellas') ? 'active' : '' }}"
-                                    href="{{ route('web_peru_alcanzando_las_estrellas') }}">Alcanzando las
-                                    Estrellas</a> </li>
-
-                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_university') ? 'active' : '' }}"
-                                    href="{{ route('web_peru_university') }}">University</a> </li>
-                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_contacto') ? 'active' : '' }}"
-                                    href="{{ route('web_peru_contacto') }}">Contacto</a> </li>
+                            <li>
+                                <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_centros') ? 'active' : '' }}"
+                                    href="{{ route('web_peru_centros') }}">Centros de Distribución</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_eventos') ? 'active' : '' }}"
+                                    href="{{ route('web_peru_eventos') }}">Inicia tu Emprendimiento</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_alcanzando_las_estrellas') ? 'active' : '' }}"
+                                    href="{{ route('web_peru_alcanzando_las_estrellas') }}">Servicio Social</a>
+                            </li>
+                            {{-- <li>
+                                <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_productos') ? 'active' : '' }}"
+                                    href="{{ route('web_peru_productos') }}">Linea de Belleza</a>
+                                <ul class="sub-menu">
+                                    @foreach ($products as $product)
+                                        <li>
+                                            <a href="{{ route('web_peru_producto_descripcion', $product->id) }}">
+                                                {{ $product->name }}
+                                            </a>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            </li> --}}
+                            <li>
+                                <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_contacto') ? 'active' : '' }}"
+                                    href="{{ route('web_peru_contacto') }}">Contacto</a>
+                            </li>
                             <li class="switch" style="top: 25px;">
                                 <i class="bx bxs-sun"></i>
                                 <i class="bx bxs-moon"></i>
