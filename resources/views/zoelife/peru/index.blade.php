@@ -6,7 +6,7 @@
         <!-- Encabezado fin -->
 
         <!-- Content -->
-        <div class="page-content">
+        <div class="page-content" style="margin-top: 85px;">
 
             <!-- Slider -->
             <div class="btn-header-pc">
@@ -44,7 +44,8 @@
                                                     data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
                                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
                                                     data-paddingleft="[0,0,0,0]"
-                                                    style="z-index: 2;background-color:rgba(0, 0, 0, 0.30);border-color:rgba(0, 0, 0, 0);border-width:0px;">
+                                                    {{-- style="z-index: 2;background-color:rgba(0, 0, 0, 0.30);border-color:rgba(0, 0, 0, 0);border-width:0px;"> --}}
+                                                    style="z-index: 2;">
                                                 </div>
                                             </li>
                                         @endforeach

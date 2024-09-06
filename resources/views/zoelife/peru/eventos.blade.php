@@ -5,24 +5,57 @@
     <x-peru.header-area></x-peru.header-area>
 <!-- Encabezado fin -->
 
-<!-- Content -->
-    <div class="page-content">
+    <div class="page-content" style="margin-top: 85px;">
 
-        <div class="btn-header-pc">
-            <br><br><br><br><br><br><br><br>
-            <div class="dez-bnr-inr ara_centrado_total">
-                <img style="width: 100%; height: auto;" src="{{ $banner->content }}" alt="">
-            </div>
-            <div class="breadcrumb-row" style="margin-top: 260px; position:relative; z-index:1;">
-                <div class="container">
-                    <ul class="list-inline">
-                        <li><a href="{{ route('web_peru_inicio') }}">Home</a></li>
-                        <li>Eventos</li>
-                    </ul>
+            <!-- Slider -->
+            <div class="btn-header-pc">
+                <div class="main-slider style-two default-banner">
+                    <div class="tp-banner-container">
+                        <div class="tp-banner">
+                            <div id="dz_rev_slider_4_wrapper" class="rev_slider_wrapper fullwidthbanner-container"
+                                data-alias="news-gallery36" data-source="gallery"
+                                style="margin:0px auto;background-color:#ffffff;padding:0px;margin-top:0px;margin-bottom:0px;">
+                                <div id="dz_rev_slider_4" class="rev_slider fullwidthabanner" style="display:none;"
+                                    data-version="5.3.0.2">
+                                    <ul>
+                                        @foreach ($slider as $k => $row)
+                                            <li data-index="rs-100" data-transition="parallaxvertical" data-slotamount="default"
+                                                data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default"
+                                                data-easeout="default" data-masterspeed="default"
+                                                data-thumb="{{ $row->content }}" data-rotate="0" data-fstransition="fade"
+                                                data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"
+                                                data-title="" data-param1="" data-param2="" data-param3=""
+                                                data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
+                                                data-param9="" data-param10="" class="ara_centrado_total">
+                                                <img src="{{ $row->content }}" alt="" data-bgposition="center center"
+                                                        data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10"
+                                                        class="rev-slidebg" data-no-retina="" style="background-size: cover; background-position: center; width: 100%; height: auto;"
+                                                />
+                                                
+                                                <div class="tp-caption tp-shape tp-shapewrapper " id="slide-100-layer-1"
+                                                    data-x="['center','center','center','center']"
+                                                    data-hoffset="['0','0','0','0']"
+                                                    data-y="['middle','middle','middle','middle']"
+                                                    data-voffset="['0','0','0','0']" data-width="full" data-height="full"
+                                                    data-whitespace="nowrap" data-type="shape" data-basealign="slide"
+                                                    data-responsive_offset="off" data-responsive="off"
+                                                    data-frames='[{"from":"opacity:0;","speed":1000,"to":"o:1;","delay":0,"ease":"Power4.easeOut"},{"delay":"wait","speed":1000,"to":"opacity:0;","ease":"Power4.easeOut"}]'
+                                                    data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
+                                                    data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                                    data-paddingleft="[0,0,0,0]"
+                                                    style="z-index: 2;">
+                                                </div>
+                                            </li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    
+            <!-- Slider END -->
+
         <div class="btn-header-mobile">
             <!-- Breadcrumb row -->
             <div class="breadcrumb-row" style="margin-top: 80px;">
@@ -36,7 +69,6 @@
             <!-- Breadcrumb row END -->
         </div>
 
-        <br>
 
         <div class="content-area" style="padding: 80px 0px;">
             <div class="container">
@@ -170,206 +202,205 @@
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
-    </div>
 
 
 
-<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-<!-- script del video -->
-<script>
-    var TrandingSlider = new Swiper('.tranding-slider', {
-    effect: 'coverflow',
-    grabCursor: true,
-    centeredSlides: true,
-    loop: true,
-    slidesPerView: 'auto',
-    coverflowEffect: {
-    rotate: 0,
-    stretch: 0,
-    depth: 100,
-    modifier: 2.5,
-    },
-    pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    },
-    navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-    }
-    });
-</script>
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+        <!-- script del video -->
+        <script>
+            var TrandingSlider = new Swiper('.tranding-slider', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            loop: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2.5,
+            },
+            pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            },
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            }
+            });
+        </script>
 
-<style>
-    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
-    .text-center {
-    text-align: center;
-    }
+            .text-center {
+            text-align: center;
+            }
 
-    .section-heading {
-    font-size: 3rem;
-    color: var(--primary);
-    padding: 2rem;
-    }
+            .section-heading {
+            font-size: 3rem;
+            color: var(--primary);
+            padding: 2rem;
+            }
 
-    #tranding {
-    padding: 4rem 0;
-    }
+            #tranding {
+            padding: 4rem 0;
+            }
 
-    @media (max-width:1440px) {
-    #tranding {
-    padding: 7rem 0;
-    }
-    }
+            @media (max-width:1440px) {
+            #tranding {
+            padding: 7rem 0;
+            }
+            }
 
-    #tranding .tranding-slider {
-    height: 52rem;
-    padding: 2rem 0;
-    position: relative;
-    }
+            #tranding .tranding-slider {
+            height: 52rem;
+            padding: 2rem 0;
+            position: relative;
+            }
 
-    @media (max-width:500px) {
-    #tranding .tranding-slider {
-    height: 45rem;
-    }
-    }
+            @media (max-width:500px) {
+            #tranding .tranding-slider {
+            height: 45rem;
+            }
+            }
 
-    .tranding-slide {
-    width: 37rem;
-    height: 42rem;
-    position: relative;
-    }
+            .tranding-slide {
+            width: 37rem;
+            height: 42rem;
+            position: relative;
+            }
 
-    @media (max-width:500px) {
-    .tranding-slide {
-    width: 28rem !important;
-    height: 36rem !important;
-    }
-    .tranding-slide .tranding-slide-img iframe {
-    width: 28rem !important;
-    height: 36rem !important;
-    }
-    }
+            @media (max-width:500px) {
+            .tranding-slide {
+            width: 28rem !important;
+            height: 36rem !important;
+            }
+            .tranding-slide .tranding-slide-img iframe {
+            width: 28rem !important;
+            height: 36rem !important;
+            }
+            }
 
-    .tranding-slide .tranding-slide-img iframe {
-    width: 37rem;
-    height: 42rem;
-    border-radius: 2rem;
-    object-fit: cover;
-    }
+            .tranding-slide .tranding-slide-img iframe {
+            width: 37rem;
+            height: 42rem;
+            border-radius: 2rem;
+            object-fit: cover;
+            }
 
-    .tranding-slide .tranding-slide-content {
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    }
+            .tranding-slide .tranding-slide-content {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            }
 
-    .tranding-slide-content .food-price {
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    color: var(--white);
-    }
+            .tranding-slide-content .food-price {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            color: var(--white);
+            }
 
-    .tranding-slide-content .tranding-slide-content-bottom {
-    position: absolute;
-    bottom: 1rem;
-    left: 1rem;
-    color: var(--white);
-    }
+            .tranding-slide-content .tranding-slide-content-bottom {
+            position: absolute;
+            bottom: 1rem;
+            left: 1rem;
+            color: var(--white);
+            }
 
-    .food-rating {
-    padding-top: 1rem;
-    display: flex;
-    gap: 1rem;
-    }
+            .food-rating {
+            padding-top: 1rem;
+            display: flex;
+            gap: 1rem;
+            }
 
-    .rating ion-icon {
-    color: var(--primary);
-    }
+            .rating ion-icon {
+            color: var(--primary);
+            }
 
-    .swiper-slide-shadow-left,
-    .swiper-slide-shadow-right {
-    display: none;
-    }
+            .swiper-slide-shadow-left,
+            .swiper-slide-shadow-right {
+            display: none;
+            }
 
-    .tranding-slider-control {
-    position: relative;
-    bottom: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    }
+            .tranding-slider-control {
+            position: relative;
+            bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            }
 
-    .tranding-slider-control .swiper-button-next {
-    left: 58% !important;
-    transform: translateX(-58%) !important;
-    }
+            .tranding-slider-control .swiper-button-next {
+            left: 58% !important;
+            transform: translateX(-58%) !important;
+            }
 
-    @media (max-width:990px) {
-    .tranding-slider-control .swiper-button-next {
-    left: 70% !important;
-    transform: translateX(-70%) !important;
-    }
-    }
+            @media (max-width:990px) {
+            .tranding-slider-control .swiper-button-next {
+            left: 70% !important;
+            transform: translateX(-70%) !important;
+            }
+            }
 
-    @media (max-width:450px) {
-    .tranding-slider-control .swiper-button-next {
-    left: 80% !important;
-    transform: translateX(-80%) !important;
-    }
-    }
+            @media (max-width:450px) {
+            .tranding-slider-control .swiper-button-next {
+            left: 80% !important;
+            transform: translateX(-80%) !important;
+            }
+            }
 
-    @media (max-width:990px) {
-    .tranding-slider-control .swiper-button-prev {
-    left: 30% !important;
-    transform: translateX(-30%) !important;
-    }
-    }
+            @media (max-width:990px) {
+            .tranding-slider-control .swiper-button-prev {
+            left: 30% !important;
+            transform: translateX(-30%) !important;
+            }
+            }
 
-    @media (max-width:450px) {
-    .tranding-slider-control .swiper-button-prev {
-    left: 20% !important;
-    transform: translateX(-20%) !important;
-    }
-    }
+            @media (max-width:450px) {
+            .tranding-slider-control .swiper-button-prev {
+            left: 20% !important;
+            transform: translateX(-20%) !important;
+            }
+            }
 
-    .tranding-slider-control .slider-arrow {
-    background: var(--white);
-    width: 3.5rem;
-    height: 3.5rem;
-    border-radius: 50%;
-    left: 42%;
-    transform: translateX(-42%);
-    filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
-    }
+            .tranding-slider-control .slider-arrow {
+            background: var(--white);
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 50%;
+            left: 42%;
+            transform: translateX(-42%);
+            filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+            }
 
-    .tranding-slider-control .slider-arrow ion-icon {
-    font-size: 2rem;
-    color: #222224;
-    }
+            .tranding-slider-control .slider-arrow ion-icon {
+            font-size: 2rem;
+            color: #222224;
+            }
 
-    .tranding-slider-control .slider-arrow::after {
-    content: '';
-    }
+            .tranding-slider-control .slider-arrow::after {
+            content: '';
+            }
 
-    .tranding-slider-control .swiper-pagination {
-    position: relative;
-    width: 15rem;
-    bottom: 1rem;
-    }
+            .tranding-slider-control .swiper-pagination {
+            position: relative;
+            width: 15rem;
+            bottom: 1rem;
+            }
 
-    .tranding-slider-control .swiper-pagination .swiper-pagination-bullet {
-    filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
-    }
+            .tranding-slider-control .swiper-pagination .swiper-pagination-bullet {
+            filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+            }
 
-    .tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
-    background: var(--primary);
-    }
-</style>
+            .tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
+            background: var(--primary);
+            }
+        </style>
 
         <style>
             .paginator_aracode {
@@ -434,7 +465,8 @@
                     }
                 }
             </script>
-        
+
+    </div>
     <!-- Footer -->
     <x-peru.footer-area></x-peru.footer-area>
     <!-- Footer END-->

@@ -1,4 +1,4 @@
-<div>
+
     <!-- Importando darkMode -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="{{ asset('css/darkMode.css') }}">
@@ -205,4 +205,3 @@
         <!-- Main Header END -->
     </header>
     <!-- Header END -->
-</div>
