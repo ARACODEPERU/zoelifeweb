@@ -143,7 +143,7 @@
                             </li>
                             <li>
                                 <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_productos') ? 'active' : '' }}"
-                                    href="{{ route('web_peru_productos') }}">Productos</a>
+                                    href="{{ route('web_peru_productos') }}">Zoé nutraceúticos</a>
                                 <ul class="sub-menu">
                                     @foreach ($products as $product)
                                         <li>
@@ -189,6 +189,19 @@
                                     @endforeach
                                 </ul>
                             </li> --}}
+                            <li>
+                                <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_productos') ? 'active' : '' }}"
+                                    href="{{ route('web_peru_productos') }}">Linea de Belleza</a>
+                                <ul class="sub-menu">
+                                    @foreach ($products as $product)
+                                        <li>
+                                            <a href="{{ route('web_peru_producto_descripcion', $product->id) }}">
+                                                {{ $product->name }}
+                                            </a>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            </li>
                             <li>
                                 <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_contacto') ? 'active' : '' }}"
                                     href="{{ route('web_peru_contacto') }}">Contacto</a>
