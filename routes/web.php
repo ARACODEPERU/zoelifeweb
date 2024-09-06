@@ -50,7 +50,7 @@ Route::get('/home', [WebController::class, 'index'])->name('cms_principal');
 
 Route::get('/peru', [PeruController::class, 'inicio'])->name('web_peru_inicio');
 Route::get('/peru.nosotros', [PeruController::class, 'nosotros'])->name('web_peru_nosotros');
-Route::get('/peru.productos', [PeruController::class, 'productos'])->name('web_peru_productos');
+Route::get('/peru.productos/{id?}', [PeruController::class, 'productos'])->name('web_peru_productos');
 Route::get('/peru.producto-descripcion/{id}', [PeruController::class, 'productodescripcion'])->name('web_peru_producto_descripcion');
 Route::get('/peru.testimonios', [PeruController::class, 'testimonios'])->name('web_peru_testimonios');
 Route::get('/peru.centros-de-distribucion', [PeruController::class, 'centros'])->name('web_peru_centros');

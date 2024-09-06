@@ -43,4 +43,9 @@ class OnliItem extends Model
     {
         return $this->hasOne(Country::class, 'id', 'country_id');
     }
+
+    public function product(): HasOne
+    {
+        return $this->hasOne(Product::class, 'id', 'item_id');
+    }
 }

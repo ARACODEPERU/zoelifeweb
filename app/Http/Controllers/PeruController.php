@@ -24,7 +24,7 @@ class PeruController extends Controller
             ->get();
 
         $sliderMobil = CmsSection::where('component_id', 'peru_slider_inicio_mobil_116')
-                ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
                 'cms_items.content',
@@ -79,7 +79,7 @@ class PeruController extends Controller
 
     /*------------ PRODUCTOS - STAR ------------*/
 
-    public function productos()
+    public function productos($id = 1)
     {
         $banner = CmsSection::where('component_id', 'peru_banner_productos_8')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
@@ -102,6 +102,11 @@ class PeruController extends Controller
             ->get();
 
         $productos = OnliItem::join('countries', 'onli_items.country_id', '=', 'countries.id')
+            ->join('products', 'products.id', 'item_id')
+            ->join('product_categories', function ($query) use ($id) {
+                $query->on('product_categories.product_id', 'products.id')
+                    ->where('category_id', $id);
+            })
             ->where('countries.description', 'Perú')
             ->select('onli_items.name', 'onli_items.image', 'onli_items.id', 'onli_items.description')
             ->get();
@@ -109,7 +114,8 @@ class PeruController extends Controller
         return view('zoelife/peru.productos', [
             'banner' => $banner,
             'beneficiop' => $beneficiop,
-            'productos' => $productos
+            'productos' => $productos,
+            'categoryId' => $id
         ]);
     }
 
@@ -143,9 +149,9 @@ class PeruController extends Controller
                 ->from('onli_items')
                 ->where('status', true)
                 ->groupBy('name');
-            })
+        })
             ->get();
-        
+
         $testimonies = CmsTestimony::with('product')->inRandomOrder()->take(20)->get();
 
         return view('zoelife/peru.testimonios', [
@@ -202,14 +208,14 @@ class PeruController extends Controller
         //$galeryEvents->prepend(null);
 
         $inscripcioncontacto = CmsSection::where('component_id', 'peru_eventos_inscripcion_contacto_83')
-        ->join('cms_section_items', 'section_id', 'cms_sections.id')
-        ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
-        ->select(
-            'cms_items.content',
-            'cms_section_items.position'
-        )
-        ->orderBy('cms_section_items.position')
-        ->get();
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->get();
 
         return view('zoelife/peru.eventos', [
             'slider' => $slider,
