@@ -61,7 +61,7 @@ const menu = ref([
             {
                 status: false,
                 route: route('products.index'),
-                text: 'Gestión Productos & servicios',
+                text: 'Gestión Productos',
                 permissions: 'productos',
             },
             {

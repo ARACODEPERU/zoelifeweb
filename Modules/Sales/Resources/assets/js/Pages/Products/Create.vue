@@ -7,6 +7,10 @@ const props = defineProps({
     establishments: {
         type: Object,
         default: () => ({}),
+    },
+    categories: {
+        type: Object,
+        default: () => ({}),
     }
 });
 </script>
@@ -43,7 +47,7 @@ const props = defineProps({
                     </li>
                 </ol>
             </nav>
-            <CreateProductForm :establishments="props.establishments" />
+            <CreateProductForm :establishments="props.establishments" :categories="categories" />
         </div>
     </AppLayout>
 </template>

@@ -350,7 +350,7 @@
               <li aria-current="page">
                 <div class="flex items-center">
                   <svg aria-hidden="true" class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-                  <span class="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">Productos & servicios</span>
+                  <span class="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">Productos</span>
                 </div>
               </li>
             </ol>
@@ -368,11 +368,11 @@
                         <img src="/img/24px/orden.png" class="mr-1" />Productos
                       </a>
                   </li>
-                  <li class="mr-2">
+                  <!-- <li class="mr-2">
                       <a @click="getProductsServices(false)" href="#" :class="[!form.displayProduct ? 'border-b-2 text-blue-600' : 'border-transparent']" class="inline-flex p-4  rounded-t-lg active dark:text-blue-500 dark:border-blue-500 group" aria-current="page">
                         <img src="/img/24px/public-service.png" class="mr-1" />Servicios
                       </a>
-                  </li>
+                  </li> -->
                 </ul>
               </div>
               <div class="w-full p-4 border-b border-gray-200 bg-gray-50 rounded-t-xl dark:border-gray-600 dark:bg-gray-700">
@@ -435,9 +435,9 @@
                       </td>
                         <td class="text-center border-b border-stroke py-4 px-4 pl-9 dark:border-strokedark xl:pl-11">
                           <div class="flex items-center space-x-3.5">
-                              <!-- <Link v-permission="'productos_editar'" title="Editar" :href="route('products.edit',product.id)" class="mr-1 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                              <Link v-permission="'productos_editar'" title="Editar" :href="route('products.edit',product.id)" class="mr-1 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                                   <font-awesome-icon :icon="faPencilAlt" />
-                              </Link> -->
+                              </Link>
                               <!-- <template v-if="form.displayProduct" >
                                 <button title="Mover Mercadería/Calzados" type="button" class="mr-1 text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center mr-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
                                 @click="openModalTrasladoMercaderia(product)"

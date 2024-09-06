@@ -9,10 +9,15 @@
     import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
     import Keypad from '@/Components/Keypad.vue';
     import swal from 'sweetalert';
-    import { watchEffect } from 'vue';
+    import { ref, watchEffect, onMounted} from 'vue';
+    import { Select } from 'ant-design-vue';
 
     const props = defineProps({
         establishments: {
+            type: Object,
+            default: () => ({}),
+        },
+        categories: {
             type: Object,
             default: () => ({}),
         }
@@ -24,7 +29,7 @@
         description: '',
         image: '',
         purchase_prices: '',
-        presentations: true,
+        presentations: false,
         sale_prices:{
             high:'',
             medium: '',
@@ -36,8 +41,8 @@
         }],
         stock_min:'',
         stock:'',
-        local_id: 1
-
+        local_id: 2,
+        category_ids: []
     });
 
     const createProduct = () => {
@@ -79,6 +84,16 @@
         }
     });
 
+    const categoriesData = ref([]);
+
+    onMounted(()=>{
+        // cuando las categorias no tiene sub niveles
+        // categoriesData.value = props.categories.map(item => ({ value: item.id, label: item.description }));
+        categoriesData.value = props.categories.map((obj) => ({
+            value: obj.id,
+            label: obj.description
+        }));
+    });
 
 </script>
 
@@ -93,7 +108,7 @@
         </template>
 
         <template #form>
-            <div class="col-span-6 sm:col-span-2 ">
+            <div class="col-span-6 sm:col-span-3 ">
                 <InputLabel for="stablishment" value="Establecimiento" />
                 <select v-model="form.local_id" id="stablishment" class="mt-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                     <template v-for="(establishment, index) in props.establishments" :key="index">
@@ -102,7 +117,26 @@
                 </select>
                 <InputError :message="form.errors.local_id" class="mt-2" />
             </div>
-            <div class="col-span-6 sm:col-span-2">
+            <div class="col-span-6 sm:col-span-3">
+                <InputLabel for="category_id" value="Categorías" class="mb-1" />
+                <!-- <select v-model="form.category_id" id="category_id" class="mt-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <option value="0" disabled>Seleccionar</option>
+                    <template v-for="(category, keyi) in props.categories">
+                        <option :value="category.id">{{ category.description }}</option>
+                    </template>
+                </select> -->
+                <Select
+                    v-model:value="form.category_ids"
+                    :options="categoriesData"
+                    mode="multiple"
+                    size="large"
+                    placeholder="Por favor seleccione"
+                    style="width: 100%"
+                >
+                </Select>
+                <InputError :message="form.errors.category_id" class="mt-2" />
+            </div>
+            <!-- <div class="col-span-6 sm:col-span-2">
                 <InputLabel for="usine" value="Código Fabrica" />
                 <TextInput
                     id="usine"
@@ -112,7 +146,7 @@
                     autofocus
                 />
                 <InputError :message="form.errors.usine" class="mt-2" />
-            </div>
+            </div> -->
             <div class="col-span-6 sm:col-span-2">
                 <InputLabel for="interne" value="Código Interno" />
                 <TextInput
@@ -133,7 +167,7 @@
                 />
                 <InputError :message="form.errors.description" class="mt-2" />
             </div>
-            <div class="col-span-6 sm:col-span-4">
+            <div class="col-span-6">
                 <InputLabel for="image" value="Imagen" />
                 <!-- <div class="flex justify-center space-x-2">
                     <figure class="max-w-lg">
@@ -167,7 +201,7 @@
                 />
                 <InputError :message="form.errors[`sale_prices.high`]" class="mt-2" />
             </div>
-            <div class="col-span-6 sm:col-span-2">
+            <div class="col-span-6 sm:col-span-2" style="display: none;" >
                 <InputLabel for="sale_prices_medium" value="Precio de venta Medio" />
                 <TextInput
                     id="sale_prices_medium"
@@ -177,7 +211,7 @@
                 />
                 <InputError :message="form.errors[`sale_prices.medium`]" class="mt-2" />
             </div>
-            <div class="col-span-6 sm:col-span-2">
+            <div class="col-span-6 sm:col-span-2" style="display: none;">
                 <InputLabel for="sale_prices_under" value="Precio de venta Minimo" />
                 <TextInput
                     id="sale_prices_under"
@@ -207,7 +241,7 @@
             </div>
             <div v-show="form.presentations" class="col-span-6 sm:col-span-6">
                 <label>
-                    Tallas
+                    Presentación
                     <button @click="addSize" type="button" class="inline-block px-6 py-2.5 bg-transparent text-blue-600 font-medium text-xs leading-tight uppercase rounded hover:text-blue-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none focus:ring-0 active:bg-gray-200 transition duration-150 ease-in-out">Agregar</button>
                 </label>
                 <div v-for="(item, index) in form.sizes" v-bind:key="index">
@@ -215,7 +249,7 @@
                         <tr>
                             <td style="padding: 4px;">
                                 <div class="col-span-3 sm:col-span-2">
-                                    <InputLabel value="Talla" />
+                                    <InputLabel value="P/T" />
                                     <TextInput
                                         v-model="item.size"
                                         type="text"
