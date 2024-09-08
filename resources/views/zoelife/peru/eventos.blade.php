@@ -70,29 +70,188 @@
         </div>
 
         <section>
-            <div class="container-xxl" style="padding: 60px 0px;">
+            <div class="container-xl" style="padding: 60px 0px 80px 0px;">
                 <div class="row">
-                    <div class="col-md-4">
-                        <div class="box-beneficios">
-                            
+                    <div class="col-md-4" style="padding: 20px;">
+                        <div class="card text-center mb-3">
+                            <img src="{{ asset('themes/zoelife/peru/images/logoFondo.jpg') }}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title title-green">Productos de alta calidad</h5>
+                                <p class="card-text">
+                                    En ZoéLife trabajamos bajo los más estrictos procesos de calidad y mejora continua.
+                                </p>
+                                <br>
+                                <a href="#" class="btn-green">Conoce más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" style="padding: 20px;">
+                        <div class="card text-center mb-3">
+                            <img src="{{ asset('themes/zoelife/peru/images/logoFondo.jpg') }}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title title-green">Sistema educativo</h5>
+                                <p class="card-text">
+                                    Con nosotros tienes acceso a una platafoema diseñada exclsivamente para tu formación y aprendizaje de forma virtual y presencial.
+                                </p>
+                                <br>
+                                <a href="#" class="btn-green">Conoce más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" style="padding: 20px;">
+                        <div class="card text-center mb-3">
+                            <img src="{{ asset('themes/zoelife/peru/images/logoFondo.jpg') }}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title title-green">Oportunidad y servicio</h5>
+                                <p class="card-text">
+                                    En ZoéLife trabajamos bajo los más estrictos procesos de calidad y mejora continua.
+                                </p>
+                                <br>
+                                <a href="#" class="btn-green">Conoce más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" style="padding: 20px;">
+                        <div class="card text-center mb-3">
+                            <img src="{{ asset('themes/zoelife/peru/images/logoFondo.jpg') }}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title title-green">Oficina virtual</h5>
+                                <p class="card-text">
+                                    Descripción corta
+                                </p>
+                                <br>
+                                <a href="#" class="btn-green">Conoce más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" style="padding: 20px;">
+                        <div class="card text-center mb-3">
+                            <img src="{{ asset('themes/zoelife/peru/images/logoFondo.jpg') }}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title title-green">Fábrica propia</h5>
+                                <p class="card-text">
+                                    Descripción corta
+                                </p>
+                                <br>
+                                <a href="#" class="btn-green">Conoce más</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <div class="content-area" style="padding: 80px 0px;">
-            <div class="container">
-                    <div class="section-head">
-                        <h2 class="text-uppercase">Galeria de Viajes</h2>
-                        <div class="dez-divider divider-2pxicon-left" style="background: #00b01a;">
-                            <i class="fa fa-thumbs-o-up  text-white"  style="background: #00b01a;"></i>
+
+        <div class="section-full bg-img-fix p-t90 p-b90 overlay-black-middle choose-us"
+            style="background-image:url({{ asset('themes/zoelife/peru/images/background/imgGanar.jpg') }});">
+            <div class="container" style="padding: 20px;">
+                <div class="section-head text-center text-white" style="padding: 10px;">
+                    <h2 class="h2 text-uppercase">Formas de ganar con <span style="color: #fecc00;"> Zoé Life</span></h2>
+                    <div class="dez-separator  style-icon border-white">
+                        <img alt="img-ganar" src="{{ asset('themes/zoelife/peru/images/leaf-green.png') }}" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img style="width: 100%;" src="{{ asset('themes/zoelife/peru/images/imgFormasGanar.png') }}" alt="">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="box-ganar">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Vas a ganar cheques de reconocimiento por alcanzar un rango.
+                                    <a href="">
+                                        <span class="badge text-bg-primary rounded-pill" style="padding: 5px 15px; background: #5A9F00 !important;">
+                                            <i class="fa fa-play"></i> Video
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Vas a tener grandes descuentos en la compra de productos.
+                                    <a href="">
+                                        <span class="badge text-bg-primary rounded-pill" style="padding: 5px 15px; background: #5A9F00 !important;">
+                                            <i class="fa fa-play"></i> Video
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Vas a ganar viajes nacionales e internaconales por calificación.
+                                    <a href="">
+                                        <span class="badge text-bg-primary rounded-pill" style="padding: 5px 15px; background: #5A9F00 !important;">
+                                            <i class="fa fa-play"></i> Video
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Vas a ganar por afiliar a una persona nueva.
+                                    <a href="">
+                                        <span class="badge text-bg-primary rounded-pill" style="padding: 5px 15px; background: #5A9F00 !important;">
+                                            <i class="fa fa-play"></i> Video
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
+                </div>
             </div>
         </div>
+
+        <section style="padding: 80px 0px;  background:#ffffff;">
+            <div class="container-xl">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-head">
+                            <h2 class="text-uppercase">Se parte de <b>Zoelife</b> y viaja a todo el mundo con todo pagado</h2>
+                            <div class="dez-divider divider-2pxicon-left" style="background: #00b01a;">
+                                <i class="fa fa-thumbs-o-up  text-white"  style="background: #00b01a;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    @if (count($galeryEvents) > 0)
+                        @foreach ($galeryEvents as $key => $event)
+                        <div class="col-md-3" style="padding: 20px;">
+                            <img src="{{ $event->item->items[0]->content }}" alt="imgEmprendimiento" style="width: 100%;">
+                        </div>
+                        @endforeach
+                    @endif
+                </div>
+            </div>
+        </section>
+
+        <section style="padding: 20px 0px 80px 0px; background:#ffffff;">
+            <div class="container" style="padding: 40px 20px; border-radius: 20px; background:#f8f8f8; border: 3px solid #00b01a;">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="h2 text-uppercase" style="color: #00b01a;"><b>Tú Éxito no tiene LÍmites</b></h2>
+                        <h3>
+                            Empieza hoy tu negocio independiente y toma las riendas de tu destino
+                        </h3>
+                        <div class="dez-separator text-primary style-icon">
+                            <img alt="" src="themes/zoelife/peru/images/leaf-green.png" />
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-6  text-center">
+                        <a href="https://api.whatsapp.com/send?phone=51{{ $inscripcioncontacto[1]->content }}&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?" 
+                            target="_blank" class="btn-green" style="font-weight: 700;">
+                            <i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;&nbsp; Quiero unirme ahora
+                        </a>
+                    </div>
+                    <div class="col-md-6  text-center">
+                        <a href=""  target="_blank" class="btn-green">
+                            <i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; Descarga plan libertad
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
         
-        <div class="btn-header-pc">
+        {{-- <div class="btn-header-pc">
             <div style="padding: 0px 10px;" >
                 <section style="padding: 40px 10px;">
                     <div class="swiper tranding-slider">
@@ -101,7 +260,6 @@
                                 @foreach ($galeryEvents as $key => $event)
                                 <div class="swiper-slide tranding-slide">
                                     <img src="{{ $event->item->items[0]->content }}" alt="" style="width: 100%;">
-                                    {{-- <h3 style="text-align: center; margin-top: 10px;">{{ $star_video->title }}</h2> --}}
                                 </div>
                                 @endforeach
                             @endif
@@ -132,7 +290,6 @@
             </div>
         </div>
 
-        
         <div class="btn-header-mobile">
             <div style="padding: 0px 10px;" >
                 <section style="padding: 0px 10px;">
@@ -142,7 +299,6 @@
                                 @foreach ($galeryEvents as $key => $event)
                                 <div class="swiper-slide tranding-slide">
                                     <img src="{{ $event->item->items[0]->content }}" alt="" style="width: 100%;">
-                                    {{-- <h3 style="text-align: center; margin-top: 10px;">{{ $star_video->title }}</h2> --}}
                                 </div>
                                 @endforeach
                             @endif
@@ -175,8 +331,8 @@
                     </div>
                 </section>
             </div>
-        </div>
-
+        </div> --}}
+{{-- 
         <div class="content-area" style="padding: 80px 0px;">
             <div class="container">
                     <div class="section-head">
@@ -206,7 +362,7 @@
                         @endif
                     </div>
             </div>
-        </div>
+        </div> --}}
 
         
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

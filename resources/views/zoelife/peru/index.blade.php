@@ -146,11 +146,11 @@
             </div>
 
             <!-- Video Presentación / STAR -->
-            <div class="section-full text-white bg-img-fix p-t70 p-b70 overlay-black-dark choose-us"
+            <div class="section-full text-white bg-img-fix p-t70 p-b70 overlay-black-middle choose-us"
                 style="background-image:url({{ asset('themes/zoelife/peru/images/background/fondo.jpg') }});">
                 <div class="container">
                     <div class="section-head text-center text-white" style="padding: 10px;">
-                        <h2 class="h2">Sobre <span style="color: #00b01a;"> Zoé Life</span></h2>
+                        <h2 class="h2 text-uppercase">Sobre <span style="color: #fecc00;"> Zoé Life</span></h2>
                         <div class="dez-separator text-primary style-icon border-white">
                             <img alt="" src="themes/zoelife/peru/images/leaf-green.png" />
                         </div>
