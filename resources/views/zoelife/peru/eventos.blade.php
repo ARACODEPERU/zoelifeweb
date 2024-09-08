@@ -197,7 +197,7 @@
             </div>
         </div>
 
-        <section style="padding: 80px 0px;  background:#ffffff;">
+        <section style="padding: 80px 0px;">
             <div class="container-xl">
                 <div class="row">
                     <div class="col-md-12">
@@ -221,8 +221,8 @@
             </div>
         </section>
 
-        <section style="padding: 20px 0px 80px 0px; background:#ffffff;">
-            <div class="container" style="padding: 40px 20px; border-radius: 20px; background:#f8f8f8; border: 3px solid #00b01a;">
+        <section style="padding: 20px 0px 80px 0px;">
+            <div class="container" style="padding: 40px 20px; border-radius: 20px;  border: 3px solid #00b01a;">
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <h2 class="h2 text-uppercase" style="color: #00b01a;"><b>Tú Éxito no tiene LÍmites</b></h2>
