@@ -158,7 +158,7 @@
 
 
         <div class="section-full bg-img-fix p-t90 p-b90 overlay-black-middle choose-us"
-            style="background-image:url({{ asset('themes/zoelife/peru/images/background/imgGanar.jpg') }});">
+            style="background-image:url({{ $formasTitle[0]->content }});">
             <div class="container" style="padding: 20px;">
                 <div class="section-head text-center text-white" style="padding: 10px;">
                     <h2 class="h2 text-uppercase">{{ $formasTitle[1]->content }} <span style="color: #fecc00;"> {{ $formasTitle[2]->content }}</span></h2>
