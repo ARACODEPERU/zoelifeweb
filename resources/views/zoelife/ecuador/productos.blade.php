@@ -71,7 +71,7 @@
                                     <a href="{{ route('web_peru_producto_descripcion', $producto->id) }}">
                                         <img style="height: 100%;" src="{{ asset($producto->image) }}" alt="img_producto">
                                     </a>
-                                    <div class="box-producto-body">
+                                    <div class="box-producto-body texto-oculto4">
                                         <h4>
                                             <a href="{{ route('web_peru_producto_descripcion', $producto->id) }}">{{ $producto->name }}</a>
                                         </h4>

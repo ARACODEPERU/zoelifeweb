@@ -93,7 +93,7 @@
                                     <a href="{{ route('web_peru_producto_descripcion', $producto->id) }}">
                                         <img style="height: 100%;" src="{{ asset($producto->image) }}" alt="img_producto">
                                     </a>
-                                    <div class="box-producto-body">
+                                    <div class="box-producto-body texto-oculto4">
                                         <h4>
                                             <a href="{{ route('web_peru_producto_descripcion', $producto->id) }}">{{ $producto->name }}</a>
                                         </h4>
@@ -102,7 +102,7 @@
                                         </p>
                                     </div>
                                     <div class="box-producto-footer">
-                                        <a href="https://api.whatsapp.com/send?phone=51992914870&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?"
+                                        <a href="https://api.whatsapp.com/send?phone=51992914870&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar&nbsp;acerca&nbsp;de&nbsp;{{ $producto->name }}?"
                                         target="_blank"  class="btn-green">
                                             <i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;&nbsp; Más información
                                         </a>
