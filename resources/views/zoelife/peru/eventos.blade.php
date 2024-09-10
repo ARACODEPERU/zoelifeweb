@@ -72,7 +72,22 @@
         <section>
             <div class="container-xl" style="padding: 60px 0px 80px 0px;">
                 <div class="row">
-                    <div class="col-md-4" style="padding: 20px;">
+                    @foreach ($beneficios as $key => $beneficio )
+                        <div class="col-md-4" style="padding: 20px;">
+                            <div class="card text-center mb-3">
+                                <img src="{{ $beneficio->item->items[0]->content }}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title title-green">{{ $beneficio->item->items[1]->content }}</h5>
+                                    <p class="card-text">
+                                        {{ $beneficio->item->items[2]->content }}
+                                    </p>
+                                    <br>
+                                    <a target="_blank" href="{{ $beneficio->item->items[3]->content }}" class="btn-green">Conoce más</a>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                    {{-- <div class="col-md-4" style="padding: 20px;">
                         <div class="card text-center mb-3">
                             <img src="{{ asset('themes/zoelife/peru/images/logoFondo.jpg') }}" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -136,7 +151,7 @@
                                 <a href="#" class="btn-green">Conoce más</a>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </section>

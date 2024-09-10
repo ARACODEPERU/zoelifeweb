@@ -192,7 +192,7 @@ class PeruController extends Controller
 
     public function eventos()
     {
-        $slider = CmsSection::where('component_id', 'peru_slider_evento_121')
+        $slider = CmsSection::where('component_id', 'peru_slider_emprendimiento_121')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
@@ -201,6 +201,11 @@ class PeruController extends Controller
             )
             ->orderBy('cms_section_items.position')
             ->get();
+            
+
+        $beneficios = CmsSectionItem::with('item.items')->where('section_id', 122)  //cambiar el id de la seccion ->sedes ubicacion 24
+        ->orderBy('position')
+        ->get();
 
         $galeryEvents = CmsSectionItem::with('item.items')->where('section_id', 76)
             ->orderBy('position')
@@ -219,6 +224,7 @@ class PeruController extends Controller
 
         return view('zoelife/peru.eventos', [
             'slider' => $slider,
+            'beneficios' => $beneficios,
             'galeryEvents' => $galeryEvents,
             'inscripcioncontacto' => $inscripcioncontacto
         ]);
