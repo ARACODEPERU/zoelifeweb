@@ -8,7 +8,6 @@
     <!-- Content -->
     <div class="page-content">
 
-    <link rel="stylesheet" href="{{ asset('themes/zoelife/global/css/texto-oculto.css') }}">
         <div class="btn-header-pc">
             <div class="dez-bnr-inr ara_centrado_total">
                 <img style="width: 100%; height: auto;" src="{{ $banner->content }}" alt="">
@@ -89,7 +88,7 @@
                     @if (isset($productos))
                         @foreach ($productos as $producto)
                             <div class="col-md-4" style="padding: 15px;">
-                                <div class="box-producto">
+                                <div class="box-producto texto-oculto4">
                                     <a href="{{ route('web_peru_producto_descripcion', $producto->id) }}">
                                         <img style="height: 100%;" src="{{ asset($producto->image) }}" alt="img_producto">
                                     </a>
@@ -97,7 +96,7 @@
                                         <h4>
                                             <a href="{{ route('web_peru_producto_descripcion', $producto->id) }}">{{ $producto->name }}</a>
                                         </h4>
-                                        <p class="texto-oculto4">
+                                        <p>
                                             {!! $producto->description !!}
                                         </p>
                                     </div>
@@ -114,7 +113,46 @@
                 </div>
             </div>
         </section>
+        <style>
+            /* Ocultar Lineas de Textos - START */
 
+        .texto-oculto4 {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            min-height: 8em;
+          }
+          .texto-oculto3 {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            min-height: 5.5em;
+          }
+          .texto-oculto2 {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            min-height: 2em;
+          }
+          .texto-oculto1 {
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+          }
+          .texto-oculto4:hover, .texto-oculto3:hover, .texto-oculto2:hover, .texto-oculto1:hover {
+            display: -webkit-box;
+            -webkit-line-clamp: initial;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+          }
+
+          /* Ocultar Lineas de Textos - END */
+
+        </style>
     </div>
     <!-- Content END-->
 
