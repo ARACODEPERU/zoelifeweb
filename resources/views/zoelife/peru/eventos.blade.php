@@ -250,6 +250,47 @@
                 </div>
             </div>
         </section>
+
+        <!-- card area end -->
+
+        <section style="padding: 80px 0px;">
+            <div class="container">
+                <div class="card-wrapper">
+                    <ul class="card-list">
+                        <li class="card-item">
+                            <a href="" class="card-link">
+                                <img src="{{ asset('themes/zoelife/peru/images/card-people/designer.jpg') }}" alt="card" class="card-image">
+                                <p class="badge">Developer</p>
+                                <h2 class="card-title"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+                                <button class="card-button material-symbols-rounded">
+                                    <li class="fa fa-arrow-right"></li>
+                                </button>
+                            </a>
+                        </li>
+                        <li class="card-item">
+                            <a href="" class="card-link">
+                                <img src="{{ asset('themes/zoelife/peru/images/card-people/designer.jpg') }}" alt="card" class="card-image">
+                                <p class="badge">Developer</p>
+                                <h2 class="card-title"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+                                <button class="card-button material-symbols-rounded">
+                                    <li class="fa fa-arrow-right"></li>
+                                </button>
+                            </a>
+                        </li>
+                        <li class="card-item">
+                            <a href="" class="card-link">
+                                <img src="{{ asset('themes/zoelife/peru/images/card-people/designer.jpg') }}" alt="card" class="card-image">
+                                <p class="badge">Developer</p>
+                                <h2 class="card-title"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+                                <button class="card-button material-symbols-rounded">
+                                    <li class="fa fa-arrow-right"></li>
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
         
         {{-- <div class="btn-header-pc">
             <div style="padding: 0px 10px;" >
@@ -332,7 +373,7 @@
                 </section>
             </div>
         </div> --}}
-{{-- 
+        {{-- 
         <div class="content-area" style="padding: 80px 0px;">
             <div class="container">
                     <div class="section-head">
@@ -574,7 +615,7 @@
             transition: opacity 0.5s;
             }
         </style>
-            <script>
+        <script>
 
                     var intervalID;
                     function startInterval() {
@@ -631,7 +672,7 @@
                             }
                     }
                 }
-            </script>
+        </script>
 
     </div>
     <!-- Footer -->
