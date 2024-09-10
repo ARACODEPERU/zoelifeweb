@@ -7,7 +7,7 @@
 
     <!-- Content -->
     <div class="page-content">
-
+        <link rel="stylesheet" href="{{ asset('themes/zoelife/global/css/texto-oculto.css') }}">
         <div class="btn-header-pc">
             <!-- inner page banner -->
             <div class="dez-bnr-inr ara_centrado_total">
@@ -62,35 +62,37 @@
         </div>
 
 
-        <div class="content-area">
-            <div class=""  style="width: 100%; padding: 40px;">
-                <div class="p-a30  m-b30">
-                    <div class="section-content text-center ">
-                        <div class="row">
-                            @if (isset($productos))
-                                @foreach ($productos as $producto)
-                                <div class="col-md-2">
-                                    <div class="dez-box m-b30">
-                                        <div class="dez-media dez-img-effect zoom">
-                                            <a href="{{ route('web_peru_producto_descripcion', $producto->id) }}">
-                                                <img style="height: 100%;" src="{{ asset($producto->image) }}" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="p-a10">
-                                            <h4 class="dez-title m-b0">
-                                                <a href="{{ route('web_colombia_producto_descripcion', $producto->id) }}">{{ $producto->name }}</a>
-                                            </h4>
-                                        </div>
+        <section>
+            <div class="container-xxl">
+                <div class="row">
+                    @if (isset($productos))
+                        @foreach ($productos as $producto)
+                            <div class="col-md-4" style="padding: 15px;">
+                                <div class="box-producto">
+                                    <a href="{{ route('web_peru_producto_descripcion', $producto->id) }}">
+                                        <img style="height: 100%;" src="{{ asset($producto->image) }}" alt="img_producto">
+                                    </a>
+                                    <div class="box-producto-body">
+                                        <h4>
+                                            <a href="{{ route('web_peru_producto_descripcion', $producto->id) }}">{{ $producto->name }}</a>
+                                        </h4>
+                                        <p>
+                                            {!! $producto->description !!}
+                                        </p>
+                                    </div>
+                                    <div class="box-producto-footer">
+                                        <a href="https://api.whatsapp.com/send?phone=51992914870&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?"
+                                        target="_blank"  class="btn-green">
+                                            <i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;&nbsp; Más información
+                                        </a>
                                     </div>
                                 </div>
-                                @endforeach
-                            @endif
-                        </div>
-                    </div>
+                            </div>
+                        @endforeach
+                    @endif
                 </div>
             </div>
-            <!-- Left & right section  END -->
-        </div>
+        </section>
     </div>
     <!-- Content END-->
 
