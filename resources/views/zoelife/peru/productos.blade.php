@@ -8,6 +8,7 @@
     <!-- Content -->
     <div class="page-content">
 
+    <link rel="stylesheet" href="{{ asset('themes/zoelife/global/css/texto-oculto.css') }}">
         <div class="btn-header-pc">
             <div class="dez-bnr-inr ara_centrado_total">
                 <img style="width: 100%; height: auto;" src="{{ $banner->content }}" alt="">
@@ -81,7 +82,7 @@
                 </div>
             </div>
         </div> --}}
-        
+
         <section>
             <div class="container-xxl">
                 <div class="row">
@@ -96,14 +97,14 @@
                                         <h4>
                                             <a href="{{ route('web_peru_producto_descripcion', $producto->id) }}">{{ $producto->name }}</a>
                                         </h4>
-                                        <p>
+                                        <p class="texto-oculto4">
                                             {!! $producto->description !!}
                                         </p>
                                     </div>
                                     <div class="box-producto-footer">
-                                        <a href="https://api.whatsapp.com/send?phone=51992914870&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?" 
+                                        <a href="https://api.whatsapp.com/send?phone=51992914870&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?"
                                         target="_blank"  class="btn-green">
-                                            <i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;&nbsp; Más información 
+                                            <i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;&nbsp; Más información
                                         </a>
                                     </div>
                                 </div>
