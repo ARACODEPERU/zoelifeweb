@@ -102,15 +102,22 @@ class PeruController extends Controller
             ->get();
 
         $productos = OnliItem::join('countries', 'onli_items.country_id', '=', 'countries.id')
-            ->join('products', 'products.id', 'item_id')
+            ->join('products', 'products.id', 'onli_items.item_id')
             ->join('product_categories', function ($query) use ($id) {
                 $query->on('product_categories.product_id', 'products.id')
                     ->where('category_id', $id);
             })
             ->where('countries.description', 'Perú')
-            ->select('onli_items.name', 'onli_items.image', 'onli_items.id', 'onli_items.description')
+            ->select(
+                'onli_items.name',
+                'onli_items.image',
+                'onli_items.id',
+                'onli_items.item_id',
+                'products.description as nameporduct',
+                'onli_items.description'
+            )
             ->get();
-
+        //dd($productos);
         return view('zoelife/peru.productos', [
             'banner' => $banner,
             'beneficiop' => $beneficiop,
@@ -203,8 +210,8 @@ class PeruController extends Controller
             ->get();
 
         $beneficios = CmsSectionItem::with('item.items')->where('section_id', 122)  //cambiar el id de la seccion ->sedes ubicacion 24
-        ->orderBy('position')
-        ->get();
+            ->orderBy('position')
+            ->get();
 
         $formasTitle = CmsSection::where('component_id', 'peru_titulo_formas_ganar_emprendimiento_124')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
@@ -215,10 +222,10 @@ class PeruController extends Controller
             )
             ->orderBy('cms_section_items.position')
             ->get();
-            
+
         $formasContenido = CmsSectionItem::with('item.items')->where('section_id', 123)  //cambiar el id de la seccion ->sedes ubicacion 24
-        ->orderBy('position')
-        ->get();
+            ->orderBy('position')
+            ->get();
 
         $galeryEvents = CmsSectionItem::with('item.items')->where('section_id', 76)
             ->orderBy('position')
