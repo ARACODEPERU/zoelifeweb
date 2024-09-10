@@ -34,6 +34,7 @@ class HeaderArea extends Component
                 $query->on('product_categories.product_id', 'products.id')
                     ->where('category_id', 1);
             })
+            ->select('onli_items.*')
             ->where('country_id', 1)
             ->get();
 
@@ -42,6 +43,7 @@ class HeaderArea extends Component
                 $query->on('product_categories.product_id', 'products.id')
                     ->where('category_id', 2);
             })
+            ->select('onli_items.*')
             ->where('country_id', 1)
             ->get();
 
