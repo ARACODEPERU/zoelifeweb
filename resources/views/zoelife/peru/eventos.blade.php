@@ -253,7 +253,7 @@
 
         <!-- card area end -->
 
-        <section style="padding: 80px 0px;">
+        {{-- <section style="padding: 80px 0px;">
             <div class="container">
                 <div class="card-wrapper">
                     <ul class="card-list">
@@ -290,7 +290,7 @@
                     </ul>
                 </div>
             </div>
-        </section>
+        </section> --}}
         
         {{-- <div class="btn-header-pc">
             <div style="padding: 0px 10px;" >
