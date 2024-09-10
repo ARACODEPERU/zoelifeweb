@@ -96,24 +96,6 @@
                         </div>
                     </div>
                 </div>
-                <!--
-                    <div class="btn-header-mobile">
-                        <div class="extra-nav hidden-sm-down disnone-md" style="text-align: center;">
-                            <div class="extra-cell">
-                                <a href="https://zoelife.global//link/store/TIENDAPUBLICA" target="_blank"
-                                    class="site-button" title="Tienda Online">
-                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                            <div class="extra-cell">
-                                <a href="https://zoelife.global/LoginSalesForce.php" target="_blank"
-                                    class="site-button" title="Oficina Vitual">
-                                    <i class="fa fa-laptop" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    -->
                 <!-- Main Nav -->
                 <div class="header-nav navbar-collapse collapse justify-content-end div-nav-slide-dark"
                     id="navbarNavDropdown">
@@ -156,9 +138,22 @@
                             </ul>
                         </li>
                         <li>
+                            <a class="dropdown-item aquitoy {{ $currentUrl == route('web_peru_productos', 2) ? 'active' : '' }}"
+                                href="{{ route('web_peru_productos', 2) }}">Cuidado Personal</a>
+                            <ul class="sub-menu">
+                                @foreach ($productsct2 as $product2)
+                                    <li>
+                                        <a href="{{ route('web_peru_producto_descripcion', $product2->id) }}">
+                                            {{ $product2->name }}
+                                        </a>
+                                    </li>
+                                @endforeach
+                            </ul>
+                        </li>
+                        {{-- <li>
                             <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_university') ? 'active' : '' }}"
                                 href="{{ route('web_peru_university') }}">Cuidado Personal</a>
-                        </li>
+                        </li> --}}
                         <li>
                             <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_testimonios') ? 'active' : '' }}"
                                 href="{{ route('web_peru_testimonios') }}">
@@ -176,32 +171,6 @@
                         <li>
                             <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_alcanzando_las_estrellas') ? 'active' : '' }}"
                                 href="{{ route('web_peru_alcanzando_las_estrellas') }}">Servicio Social</a>
-                        </li>
-                        {{-- <li>
-                                <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_productos') ? 'active' : '' }}"
-                                    href="{{ route('web_peru_productos') }}">Linea de Belleza</a>
-                                <ul class="sub-menu">
-                                    @foreach ($products as $product)
-                                        <li>
-                                            <a href="{{ route('web_peru_producto_descripcion', $product->id) }}">
-                                                {{ $product->name }}
-                                            </a>
-                                        </li>
-                                    @endforeach
-                                </ul>
-                            </li> --}}
-                        <li>
-                            <a class="dropdown-item aquitoy {{ $currentUrl == route('web_peru_productos', 2) ? 'active' : '' }}"
-                                href="{{ route('web_peru_productos', 2) }}">Linea de Belleza</a>
-                            <ul class="sub-menu">
-                                @foreach ($productsct2 as $product2)
-                                    <li>
-                                        <a href="{{ route('web_peru_producto_descripcion', $product2->id) }}">
-                                            {{ $product2->name }}
-                                        </a>
-                                    </li>
-                                @endforeach
-                            </ul>
                         </li>
                         <li>
                             <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_contacto') ? 'active' : '' }}"
