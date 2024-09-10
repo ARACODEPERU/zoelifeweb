@@ -207,6 +207,16 @@ class PeruController extends Controller
         ->orderBy('position')
         ->get();
 
+        $formasTitle = CmsSection::where('component_id', 'peru_titulo_formas_ganar_emprendimiento_124')
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->get();
+
         $galeryEvents = CmsSectionItem::with('item.items')->where('section_id', 76)
             ->orderBy('position')
             ->get();
@@ -225,6 +235,7 @@ class PeruController extends Controller
         return view('zoelife/peru.eventos', [
             'slider' => $slider,
             'beneficios' => $beneficios,
+            'formasTitle' => $formasTitle,
             'galeryEvents' => $galeryEvents,
             'inscripcioncontacto' => $inscripcioncontacto
         ]);

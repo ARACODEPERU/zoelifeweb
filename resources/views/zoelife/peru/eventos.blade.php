@@ -161,14 +161,14 @@
             style="background-image:url({{ asset('themes/zoelife/peru/images/background/imgGanar.jpg') }});">
             <div class="container" style="padding: 20px;">
                 <div class="section-head text-center text-white" style="padding: 10px;">
-                    <h2 class="h2 text-uppercase">Formas de ganar con <span style="color: #fecc00;"> Zoé Life</span></h2>
+                    <h2 class="h2 text-uppercase">{{ $formasTitle[1]->content }} <span style="color: #fecc00;"> {{ $formasTitle[2]->content }}</span></h2>
                     <div class="dez-separator  style-icon border-white">
                         <img alt="img-ganar" src="{{ asset('themes/zoelife/peru/images/leaf-green.png') }}" />
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-4">
-                        <img style="width: 100%;" src="{{ asset('themes/zoelife/peru/images/imgFormasGanar.png') }}" alt="">
+                        <img style="width: 100%;" src="{{ $formasTitle[3]->content }}" alt="">
                     </div>
                     <div class="col-md-8">
                         <div class="box-ganar">
