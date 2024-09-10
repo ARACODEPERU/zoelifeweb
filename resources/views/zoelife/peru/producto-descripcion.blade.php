@@ -49,7 +49,7 @@
                 <div class="row">
                     <div class="col-md-6" style="padding: 0px 40px;">
                         <div class="section-head  text-center text-white">
-                            <h2 class="h2">Recomendaciones <span style="color: #00b01a;"> de Uso Sugerido</span></h2>
+                            <h2 class="h2">Recomendaciones <span style="color: #fecc00;"> de Uso Sugerido</span></h2>
                             <div class="dez-separator text-primary style-icon border-white">
                                 <img alt="" src="{{ asset('themes/zoelife/peru/images/leaf-green.png') }}" />
                             </div>
