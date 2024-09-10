@@ -173,7 +173,17 @@
                     <div class="col-md-8">
                         <div class="box-ganar">
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                @foreach ($formasContenido as $key => $contenido )
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        {{ $contenido->item->items[0]->content }}
+                                        <a href="{{ $contenido->item->items[1]->content }}">
+                                            <span class="badge text-bg-primary rounded-pill" style="padding: 5px 15px; background: #5A9F00 !important;">
+                                                <i class="fa fa-play"></i> Video
+                                            </span>
+                                        </a>
+                                    </li>
+                                @endforeach
+                                {{-- <li class="list-group-item d-flex justify-content-between align-items-center">
                                     Vas a ganar cheques de reconocimiento por alcanzar un rango.
                                     <a href="">
                                         <span class="badge text-bg-primary rounded-pill" style="padding: 5px 15px; background: #5A9F00 !important;">
@@ -204,7 +214,7 @@
                                             <i class="fa fa-play"></i> Video
                                         </span>
                                     </a>
-                                </li>
+                                </li> --}}
                             </ul>
                         </div>
                     </div>

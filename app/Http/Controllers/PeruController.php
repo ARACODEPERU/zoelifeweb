@@ -201,7 +201,6 @@ class PeruController extends Controller
             )
             ->orderBy('cms_section_items.position')
             ->get();
-            
 
         $beneficios = CmsSectionItem::with('item.items')->where('section_id', 122)  //cambiar el id de la seccion ->sedes ubicacion 24
         ->orderBy('position')
@@ -216,11 +215,14 @@ class PeruController extends Controller
             )
             ->orderBy('cms_section_items.position')
             ->get();
+            
+        $formasContenido = CmsSectionItem::with('item.items')->where('section_id', 123)  //cambiar el id de la seccion ->sedes ubicacion 24
+        ->orderBy('position')
+        ->get();
 
         $galeryEvents = CmsSectionItem::with('item.items')->where('section_id', 76)
             ->orderBy('position')
             ->get();
-        //$galeryEvents->prepend(null);
 
         $inscripcioncontacto = CmsSection::where('component_id', 'peru_eventos_inscripcion_contacto_83')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
@@ -236,6 +238,7 @@ class PeruController extends Controller
             'slider' => $slider,
             'beneficios' => $beneficios,
             'formasTitle' => $formasTitle,
+            'formasContenido' => $formasContenido,
             'galeryEvents' => $galeryEvents,
             'inscripcioncontacto' => $inscripcioncontacto
         ]);
