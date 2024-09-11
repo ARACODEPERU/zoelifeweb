@@ -93,66 +93,72 @@
             <x-peru.vision-mision-valores-area></x-peru.vision-mision-valores-area>
             <!-- Visión - Misión - Valores / END -->
 
-            <div class="content-area" style="padding: 80px 0px;">
-                <div class="container">
-                        <div class="section-head">
-                            <h2 class="text-uppercase">{{ $equipos[0]->item->content }}</h2>
-                            <div class="dez-divider divider-2px icon-left" style="background: #00b01a;">
-                                <i class="fa fa-thumbs-o-up text-white"  style="background: #00b01a;"></i>
+            <div class="content-area" style="padding: 120px 0px;">
+                <div class="container-xl">
+                    <div class="row">
+                        <div class="col-md-12" style="text-align:center; padding: 40px 0px 10px 0px;">
+                            <div class="section-head">
+                                <h2 class="text-uppercase">{{ $equipos[0]->item->content }}</h2>
+                                <div class="dez-divider divider-2px icon-left" style="background: #00b01a;">
+                                    <i class="fa fa-thumbs-o-up text-white"  style="background: #00b01a;"></i>
+                                </div>
                             </div>
                         </div>
-                        <div class="section-content text-center ">
-                            <div class="row">
-                                <div class="col-md-3" style="padding: 15px;">
-                                    <div class="dez-box m-b30">
-                                        <div class="dez-media">
-                                            <a href="javascript:void(0);">
-                                                <img width="358" height="460"
-                                                    src="{{ $fundador[0]->content }}" alt="">
-                                            </a>
-                                            <div class="dez-info-has bg-primary">
-                                                <ul class="dez-social-icon dez-border">
-                                                    <li><a href="{{ $fundador[4]->content }}"
-                                                            class="fab fa-facebook"></a></li>
-                                                    <li><a href="{{ $fundador[5]->content }}"
-                                                            class="fab fa-instagram"></a></li>
-                                                    <li><a href="{{ $fundador[6]->content }}"
-                                                            class="fab fa-linkedin"></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3" style="padding: 15px;">
+                            <div class="dez-box m-b30">
+                                <div class="dez-media">
+                                    <a href="javascript:void(0);">
+                                        <img width="358" height="460"
+                                            src="{{ $fundador[0]->content }}" alt="">
+                                    </a>
+                                    <div class="dez-info-has bg-primary">
+                                        <ul class="dez-social-icon dez-border">
+                                            <li><a href="{{ $fundador[4]->content }}"
+                                                    class="fab fa-facebook"></a></li>
+                                            <li><a href="{{ $fundador[5]->content }}"
+                                                    class="fab fa-instagram"></a></li>
+                                            <li><a href="{{ $fundador[6]->content }}"
+                                                    class="fab fa-linkedin"></a></li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="col-md-9" style="padding: 15px;">
-                                    <br>
-                                    <h3 class="dez-title" style="text-align: left;">
-                                        <b style="font-size: 30px; color: #00b01a;" >{{ $fundador[1]->content }}</b>
-                                        <br>
-                                        <b class="des-producto">{{ $fundador[2]->content }}</b>
-                                    </h3>
-                                    <p style="text-align: left;">
-                                        {{ $fundador[6]->content }}
-                                    </p>
-                                    <p style="text-align: left;">
-                                        {{ $fundador[7]->content }}
-                                    </p>
-                                    <p style="text-align: left;">
-                                        {{ $fundador[8]->content }}
-                                    </p>
-                                </div>
                             </div>
                         </div>
+                        <div class="col-md-9" style="padding: 15px;">
+                            <br>
+                            <h3 class="dez-title" style="text-align: left;">
+                                <b style="font-size: 30px; color: #00b01a;" >{{ $fundador[1]->content }}</b>
+                                <br>
+                                <b class="des-producto">{{ $fundador[2]->content }}</b>
+                            </h3>
+                            <p style="text-align: left;">
+                                {{ $fundador[6]->content }}
+                            </p>
+                            <p style="text-align: left;">
+                                {{ $fundador[7]->content }}
+                            </p>
+                            <p style="text-align: left;">
+                                {{ $fundador[8]->content }}
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <!-- Video Presentación / STAR -->
             <div class="section-full text-white bg-img-fix p-t70 p-b70 overlay-black-middle choose-us"
                 style="background-image:url({{ asset('themes/zoelife/peru/images/background/fondo.jpg') }});">
-                <div class="container">
-                    <div class="section-head text-center text-white" style="padding: 10px;">
-                        <h2 class="h2 text-uppercase">Sobre <span style="color: #fecc00;"> Zoé Life</span></h2>
-                        <div class="dez-separator text-primary style-icon border-white">
-                            <img alt="" src="themes/zoelife/peru/images/leaf-green.png" />
+                <div class="container" style="padding: 30px 20px;">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="section-head text-center text-white">
+                                <h2 class="h2 text-uppercase">Sobre <span style="color: #fecc00;"> Zoé Life</span></h2>
+                                <div class="dez-separator style-icon border-white">
+                                    <img src="themes/zoelife/peru/images/leaf-green.png"  alt=""  />
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="row">

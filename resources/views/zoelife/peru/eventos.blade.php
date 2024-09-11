@@ -250,9 +250,9 @@
             <div class="container" style="padding: 40px 20px; border-radius: 20px;  border: 3px solid #00b01a;">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <h2 class="h2 text-uppercase" style="color: #00b01a;"><b>Tú Éxito no tiene LÍmites</b></h2>
+                        <h2 class="h2 text-uppercase" style="color: #00b01a;"><b>{{ $tuExito[0]->content }}</b></h2>
                         <h3>
-                            Empieza hoy tu negocio independiente y toma las riendas de tu destino
+                            {{ $tuExito[1]->content }}
                         </h3>
                         <div class="dez-separator text-primary style-icon">
                             <img alt="" src="themes/zoelife/peru/images/leaf-green.png" />
@@ -262,13 +262,13 @@
                 <br>
                 <div class="row">
                     <div class="col-md-6  text-center">
-                        <a href="https://api.whatsapp.com/send?phone=51{{ $inscripcioncontacto[1]->content }}&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?" 
+                        <a href="https://api.whatsapp.com/send?phone=51{{ $tuExito[2]->content }}&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?" 
                             target="_blank" class="btn-green" style="font-weight: 700;">
                             <i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;&nbsp; Quiero unirme ahora
                         </a>
                     </div>
                     <div class="col-md-6  text-center">
-                        <a href=""  target="_blank" class="btn-green">
+                        <a href="{{ $tuExito[3]->content }}"  target="_blank" class="btn-green">
                             <i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; Descarga plan libertad
                         </a>
                     </div>

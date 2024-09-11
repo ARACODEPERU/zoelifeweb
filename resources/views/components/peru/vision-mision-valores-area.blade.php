@@ -1,7 +1,7 @@
 <div>
     <!-- Visión - Misión - Valores / STAR -->
     <div class="section-full bg-white  selector-d" style="padding: 80px 5px;">
-        <div class="container">
+        <div class="container-xl">
             <div class="row">
                 <div class="col-md-12" style="text-align:center; padding: 40px 0px;">
                     <h2 class="h2">GRUPO <span style="color: #00b01a;">GREEN PLANET SRL</span></h2>
