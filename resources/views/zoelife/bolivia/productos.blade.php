@@ -8,6 +8,15 @@
     <!-- Content -->
     <div class="page-content">
         <link rel="stylesheet" href="{{ asset('themes/zoelife/global/css/texto-oculto.css') }}">
+    <script>
+        function mostrarDescripcion(id) {
+            document.getElementById(id+"-description").classList.add('mostrar-descripcion');
+        }
+
+        function ocultarDescripcion(id) {
+            document.getElementById(id+"-description").classList.remove('mostrar-descripcion');
+        }
+    </script>
 
         <div class="btn-header-pc">
             <!-- inner page banner -->
@@ -68,11 +77,11 @@
                     @if (isset($productos))
                         @foreach ($productos as $producto)
                             <div class="col-md-4" style="padding: 15px;">
-                                <div class="box-producto">
+                                <div class="box-producto" onmouseover="mostrarDescripcion({{ $producto->id }})" onmouseout="ocultarDescripcion({{ $producto->id }})">
                                     <a href="{{ route('web_peru_producto_descripcion', $producto->id) }}">
                                         <img style="height: 100%;" src="{{ asset($producto->image) }}" alt="img_producto">
                                     </a>
-                                    <div class="box-producto-body texto-oculto4">
+                                    <div class="box-producto-body texto-oculto-js" id="{{ $producto->id }}-description">
                                         <h4>
                                             <a href="{{ route('web_peru_producto_descripcion', $producto->id) }}">{{ $producto->name }}</a>
                                         </h4>
@@ -81,7 +90,7 @@
                                         </p>
                                     </div>
                                     <div class="box-producto-footer">
-                                        <a href="https://api.whatsapp.com/send?phone=51992914870&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?"
+                                        <a href="https://api.whatsapp.com/send?phone=51992914870&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar&nbsp;acerca&nbsp;de&nbsp;{{ $producto->name }}?"
                                         target="_blank"  class="btn-green">
                                             <i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;&nbsp; Más información
                                         </a>
