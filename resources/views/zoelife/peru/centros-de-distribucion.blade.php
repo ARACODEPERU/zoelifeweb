@@ -15,7 +15,7 @@
             <!-- inner page banner END -->
             <!-- Breadcrumb row -->
             <div class="breadcrumb-row" style="margin-top: 15px; position:relative; z-index:1;">
-                <div class="container">
+                <div class="container-xxl">
                     <ul class="list-inline">
                         <li><a href="{{ route('web_peru_inicio') }}">Home</a></li>
                         <li>Centros de Distribución</li>

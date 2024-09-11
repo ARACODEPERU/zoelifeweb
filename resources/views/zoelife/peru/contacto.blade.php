@@ -13,7 +13,7 @@
                 <img style="width: 100%; height: auto;" src="{{ $banner->content }}" alt="">
             </div>
             <div class="breadcrumb-row" style="margin-top: 15px; position:relative; z-index:1;">
-                <div class="container">
+                <div class="container-xxl">
                     <ul class="list-inline">
                         <li><a href="{{ route('web_peru_inicio') }}">Home</a></li>
                         <li>Contactanos</li>
@@ -35,11 +35,9 @@
             <!-- Breadcrumb row END -->
         </div>
 
-        <!-- contact area -->
-        <div class="content-area">
-            <div class="container">
+        {{-- <div class="content-area">
+            <div class="container-xxl">
                 <div class="row">
-                    <!-- Left part start -->
                     <div class="col-md-7">
                         <div class="dzFormMsg"></div>
                         <div class="p-a30 bg-white selector-d clearfix m-b30">
@@ -119,8 +117,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Left part END -->
-                    <!-- right part start -->
                     <div class="col-md-5">
                         <div class="p-a30 bg-white selector-d m-b30">
                             <h3 class="des-producto">Información de Contacto</h3>
@@ -155,22 +151,147 @@
                             </ul>
                         </div>
                     </div>
-                    <!-- right part END -->
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <!-- Map part start -->
                         <h4 class=" des-producto">Nuestra Ubicación</h4>
                         <iframe
                             src="{{ $datosContacto[3]->content }}"
                             width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <!-- Map part END -->
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- contact area  END -->
+        </div> --}}
+
+        <section style="padding: 80px 0px;">
+            <div class="container-xxl">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="p-a30 bg-white selector-d clearfix m-b30">
+                            <h3 class="des-producto">Envianos un mensaje</h3>
+                            <form class="dzForm" id="pageContactForm">
+                                <input type="text" hidden name="country" value="PE" required>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        <i class="fa fa-user"></i>
+                                                    </span>
+                                                </div>
+                                                <input name="full_name" id="full_name" type="text" required
+                                                    class="form-control" placeholder="Nombre Completo">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        <i class="fa fa-phone"></i>
+                                                    </span>
+                                                </div>
+                                                <input name="phone" id="phone" type="telephone" required
+                                                    class="form-control" placeholder="Teléfono">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        <i class="fa fa-envelope"></i>
+                                                    </span>
+                                                </div>
+                                                <input name="email" id="email" type="email" required
+                                                    class="form-control" placeholder="Correo Electrónico">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend v-align-t">
+                                                    <span class="input-group-text">
+                                                        <i class="fa fa-edit"></i>
+                                                    </span>
+                                                </div>
+                                                <textarea name="message" id="message" rows="4" required class="form-control"
+                                                    placeholder="Escribe tu mensaje aqui..."></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button class="site-button"
+                                            id="submitPageContactButton">
+                                            <i class="fa fa-envelope"></i> &nbsp;
+                                            <span>Enviar Ahora</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="col-md-12">
+                                <div class="g-recaptcha-bx">
+                                    <div class="g-recaptcha" data-sitekey="6LefsVUUAAAAADBPsLZzsNnETChealv6PYGzv3ZN"
+                                        data-callback="verifyRecaptchaCallback"
+                                        data-expired-callback="expiredRecaptchaCallback"></div>
+                                    <input class="form-control d-none" style="display:none;" data-recaptcha="true"
+                                        required data-error="Please complete the Captcha">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-a30 bg-white selector-d m-b30">
+                            <h3 class="des-producto">Información de Contacto</h3>
+                            <ul class="no-margin">
+                                <li class="icon-bx-wraper left m-b30">
+                                    <div class="icon-bx-xs"  style="background: #00b01a;"> 
+                                        <a href="javascript:void(0);" class="icon-cell"><i
+                                                class="fa fa-map-marker" style="color: #fff;"></i>
+                                        </a> 
+                                    </div>
+                                    <div class="icon-content">
+                                        <h6 class="text-uppercase m-b0 dez-tilte des-producto">Oficina Principal</h6>
+                                        <p>{{ $datosContacto[0]->content }}</p>
+                                    </div>
+                                </li>
+                                <li class="icon-bx-wraper left  m-b30">
+                                    <div class="icon-bx-xs"  style="background: #00b01a;"> <a href="javascript:void(0);" class="icon-cell"><i
+                                                class="fa fa-envelope" style="color: #fff;"></i></a> </div>
+                                    <div class="icon-content">
+                                        <h6 class="text-uppercase m-b0 dez-tilte des-producto">E-MAIl</h6>
+                                        <p>{{ $datosContacto[1]->content }}</p>
+                                    </div>
+                                </li>
+                                <li class="icon-bx-wraper left">
+                                    <div class="icon-bx-xs"  style="background: #00b01a;"> <a href="javascript:void(0);" class="icon-cell"><i
+                                                class="fa fa-phone" style="color: #fff;"></i></a> </div>
+                                    <div class="icon-content">
+                                        <h6 class="text-uppercase m-b0 dez-tilte des-producto">TELÉFONO</h6>
+                                        <p>{{ $datosContacto[2]->content }}</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="p-a30 bg-white selector-d m-b30">
+                            <h4 class=" des-producto">Nuestra Ubicación</h4>
+                            <iframe
+                                src="{{ $datosContacto[3]->content }}"
+                                width="100%" height="650" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </div>
     <!-- Content END-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

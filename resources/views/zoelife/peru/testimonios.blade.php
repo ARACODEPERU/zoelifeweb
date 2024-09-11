@@ -13,7 +13,7 @@
                 <img style="width: 100%; height: auto;" src="{{ $banner->content }}" alt="">
             </div>
             <div class="breadcrumb-row" style="margin-top: 15px; position:relative; z-index:1;">
-                <div class="container">
+                <div class="container-xxl">
                     <ul class="list-inline">
                         <li><a href="{{ route('web_peru_inicio') }}">Home</a></li>
                         <li>Testimonios</li>
@@ -36,9 +36,7 @@
         </div>
 
         <div class="content-area">
-            <!-- Left & right section start -->
             <div class="">
-                <!-- Gallery -->
                 <div class="site-filters clearfix center m-b40">
                     <ul class="filters" data-toggle="buttons">
                         <li data-filter="" class="btn active">
@@ -56,7 +54,7 @@
                     </ul>
                 </div>
 
-                <ul id="masonry" class="dez-gallery-listing row gallery-grid-4 m-b0 mfp-gallery">
+                {{-- <ul id="masonry" class="dez-gallery-listing row gallery-grid-4 m-b0 mfp-gallery">
                     @if (count($testimonies) > 0)
                         @foreach ($testimonies as $testimony)
                             <li class="card-container col-md-4 {{ $testimony->product->name }}" style="padding: 15px;">
@@ -79,10 +77,27 @@
                             </li>
                         @endforeach
                     @endif
-                </ul>
+                </ul> --}}
             </div>
-            <!-- Left & right section  END -->
         </div>
+
+        <section>
+            <div class="container-xxl">
+                <div class="row">
+                    @if (count($testimonies) > 0)
+                        @foreach ($testimonies as $testimony)
+                            <div class="col-md-4 {{ $testimony->product->name }}" style="padding: 15px;">
+                                {!! $testimony->video !!}
+                                <h4 class="post-title">
+                                    <a href="" class=" des-producto">{{ $testimony->title }}</a>
+                                </h4>
+                            </div>
+                        @endforeach
+                    @endif
+                </div>
+            </div>
+        </section>
+
     </div>
     <!-- Content END-->
 

@@ -93,7 +93,7 @@
             <x-peru.vision-mision-valores-area></x-peru.vision-mision-valores-area>
             <!-- Visión - Misión - Valores / END -->
 
-            <div class="content-area" style="padding: 120px 0px;">
+            <section style="padding: 120px 0px;">
                 <div class="container-xl">
                     <div class="row">
                         <div class="col-md-12" style="text-align:center; padding: 40px 0px 10px 0px;">
@@ -145,7 +145,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
             <!-- Video Presentación / STAR -->
             <div class="section-full text-white bg-img-fix p-t70 p-b70 overlay-black-middle choose-us"
@@ -170,38 +170,42 @@
             </div>
             <!-- Video Presentación / END -->
 
-            <div class="content-area" style="padding: 80px 0px;">
-                <div class="container">
-                        <div class="section-head">
-                            <h2 class="text-uppercase">Zona de Descarga</h2>
-                            <div class="dez-divider divider-2pxicon-left" style="background: #00b01a;">
-                                <i class="fa fa-thumbs-o-up  text-white"  style="background: #00b01a;"></i>
+            <section style="padding: 80px 0px;">
+                <div class="container-xl">
+                    <div class="row">
+                        <div class="col-md-12" style="text-align:center; padding: 40px 0px 10px 0px;">
+                            <div class="section-head">
+                                <h2 class="text-uppercase">Zona de Descarga</h2>
+                                <div class="dez-divider divider-2px icon-left" style="background: #00b01a;">
+                                    <i class="fa fa-thumbs-o-up text-white"  style="background: #00b01a;"></i>
+                                </div>
                             </div>
                         </div>
+                    </div>
                         <div class="section-content text-center ">
                             <div class="row" style="justify-content: space-between">
-                                <div class="col-md-4" style="text-align: center; padding: 15px;">
+                                <div class="col-md-4">
                                     <a href="{{ $linkDescarga[0]->content }}" target="_blank" class="site-button btn-zona-descarga" 
-                                        style="font-weight: 700;">
+                                        style="font-weight: 700; text-align: center; padding: 18px 15px;">
                                         <i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; CATÁLOGO DE PRODUCTOS
                                     </a>
                                 </div>
-                                <div class="col-md-4" style="text-align: center; padding: 15px;">
+                                <div class="col-md-4">
                                     <a href="{{ $linkDescarga[1]->content }}" target="_blank"  class="site-button btn-zona-descarga" 
-                                        style="font-weight: 700;">
+                                        style="font-weight: 700; text-align: center; padding: 18px 15px;">
                                         <i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; PLAN LIBERTAD 
                                     </a>
                                 </div>
-                                <div class="col-md-4" style="text-align: center; padding: 15px;">
+                                <div class="col-md-4">
                                     <a href="{{ $linkDescarga[2]->content }}" target="_blank"  class="site-button btn-zona-descarga" 
-                                        style="font-weight: 700;">
+                                        style="font-weight: 700; text-align: center; padding: 18px 15px;">
                                         <i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; MANUAL DE POLÍTICAS Y PROCESOS
                                     </a>
                                 </div>
                             </div>
                         </div>
                 </div>
-            </div>
+            </section>
 
         </div>
         <!-- Content END-->

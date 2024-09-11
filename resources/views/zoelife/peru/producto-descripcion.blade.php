@@ -9,7 +9,7 @@
     <div class="page-content">
         <!-- Breadcrumb row -->
         <div class="breadcrumb-row" style="margin-top: 80px;">
-            <div class="container">
+            <div class="container-xxl">
                 <ul class="list-inline">
                     <li><a href="{{ route('web_peru_inicio') }}">Home</a></li>
                     <li><a href="{{ route('web_peru_productos') }}">Productos</a></li>
@@ -19,7 +19,7 @@
         </div>
         <!-- Breadcrumb row END -->
 
-        <div class="container" style="padding: 60px 0px;">
+        <div class="container-xl" style="padding: 60px 0px;">
             <div class="row">
                 <div class="col-md-6" style="text-align: center;">
                     <img style="width: 90%;" src="{{ $product->image }}" alt="">
@@ -49,7 +49,7 @@
                 <div class="row">
                     <div class="col-md-6" style="padding: 0px 40px;">
                         <div class="section-head  text-center text-white">
-                            <h2 class="h2">Recomendaciones <span style="color: #fecc00;"> de Uso Sugerido</span></h2>
+                            <h2 class="h2 text-uppercase">Recomendaciones <span style="color: #fecc00;"> de Uso Sugerido</span></h2>
                             <div class="dez-separator text-primary style-icon border-white">
                                 <img alt="" src="{{ asset('themes/zoelife/peru/images/leaf-green.png') }}" />
                             </div>
@@ -83,8 +83,38 @@
                 <!-- Dividers with icon END -->
                 <br>
 
-                <!-- blog grid -->
-                <div id="masonry" class="dez-blog-grid-3 row">
+                <section>
+                    <div class="container-xxl">
+                        <div class="row">
+                            @if (count($testimonies) > 0)
+                                @foreach ($testimonies as $testimony)
+                                    <div class="col-md-4">
+                                        <div class="blog-post blog-grid date-style-2">
+                                            <div class="dez-post-media dez-img-effect zoom-slow">
+                                                {!! $testimony->video !!}
+                                            </div>
+                                            <div class="dez-post-info">
+                                                <div class="dez-post-title ">
+                                                    <h3 class="post-title">
+                                                        <a href="">
+                                                            {{ $testimony->title }}
+                                                        </a>
+                                                    </h3>
+                                                </div>
+                                                <div class="dez-post-tags">
+                                                    <div class="post-tags">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                @endforeach
+                            @endif
+                        </div>
+                    </div>
+                </section>
+
+                {{-- <div id="masonry" class="dez-blog-grid-3 row">
                     @if (count($testimonies) > 0)
                         @foreach ($testimonies as $testimony)
                             <div class="post card-container col-md-3">
@@ -109,8 +139,7 @@
                             </div>
                         @endforeach
                     @endif
-                </div>
-                <!-- blog grid END -->
+                </div> --}}
             </div>
         </div>
     </div>

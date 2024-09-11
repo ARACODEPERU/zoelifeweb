@@ -13,7 +13,7 @@
               <img style="width: 100%; height: auto;" src="{{ $banner->content }}" alt="">
           </div>
           <div class="breadcrumb-row" style="margin-top: 15px; position:relative; z-index:1;">
-              <div class="container">
+              <div class="container-xxl">
                   <ul class="list-inline">
                       <li><a href="{{ route('web_peru_inicio') }}">Home</a></li>
                       <li>Alcanzando las estrellas</li>
@@ -36,7 +36,7 @@
       </div>
 
       <div class="content-area">
-            <div class="container">
+            <div class="container-xxl">
               @if ( count($presentacion) > 0)
                 <div class="p-a20 bg-white selector-d m-b20">
                   <div class="section-content" style="text-align: center;">
