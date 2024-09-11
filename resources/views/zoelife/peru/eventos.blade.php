@@ -74,7 +74,7 @@
                 <div class="row">
                     @foreach ($beneficios as $key => $beneficio )
                         <div class="col-md-4" style="padding: 20px;">
-                            <div class="card text-center mb-3">
+                            <div class="card text-center mb-3 box-beneficios-emprendimiento" style="padding-bottom: 10px;">
                                 <img src="{{ $beneficio->item->items[0]->content }}" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title title-green">{{ $beneficio->item->items[1]->content }}</h5>

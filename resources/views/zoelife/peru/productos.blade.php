@@ -36,7 +36,7 @@
 
         <div class="content-area">
             <div class="container">
-                <div class="p-a20 bg-white selector-d m-b20">
+                <div class="p-a20 bg-white selector-d m-b20  box-elevado">
                     <h2 class="text-uppercas" style="color: #00b01a; text-transform: uppercase; padding: 15px 0px; text-align:center;">
                         Beneficios de los Productos
                     </h2>
@@ -47,9 +47,9 @@
                         </div>
                         @endforeach
                     </div>
-                    <div class="dez-divider divider-2px icon-center" style="background: #00b01a;">
+                    {{-- <div class="dez-divider divider-2px icon-center" style="background: #00b01a;">
                         <i class="fa fa-leaf  text-white" style="background: #00b01a;"></i>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>

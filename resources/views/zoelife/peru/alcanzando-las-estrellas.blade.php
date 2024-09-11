@@ -38,7 +38,7 @@
       <div class="content-area">
             <div class="container-xxl">
               @if ( count($presentacion) > 0)
-                <div class="p-a20 bg-white selector-d m-b20">
+                <div class="p-a20 bg-white selector-d m-b20 box-elevado">
                   <div class="section-content" style="text-align: center;">
                       <div class="m-b10">
                           <h3 class="text-uppercas" style="color: #00b01a;"><b>{{ $presentacion[0]->content }}</b></h3>
@@ -498,7 +498,7 @@ background: var(--primary);
     <div class="row" style="justify-content: space-between">
         <div class="col-md-2"></div>
         <div class="col-md-4" style="text-align: center;">
-            <a href="https://ninosperu.wixsite.com/sagradafamilia" target="_blank"  class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;">
+            <a href="https://ninosperu.wixsite.com/sagradafamilia" target="_blank"  class="btn-green">
                 <b><i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;&nbsp; Más Información</b>
             </a>
         </div>
