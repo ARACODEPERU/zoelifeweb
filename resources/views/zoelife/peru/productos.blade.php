@@ -17,7 +17,7 @@
         function ocultarDescripcion(id) {
             document.getElementById(id+"-description").classList.remove('mostrar-descripcion');
         }
-        </script>
+    </script>
         <div class="btn-header-pc">
             <div class="dez-bnr-inr ara_centrado_total">
                 <img style="width: 100%; height: auto;" src="{{ $banner->content }}" alt="">
