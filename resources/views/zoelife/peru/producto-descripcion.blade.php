@@ -22,7 +22,7 @@
         <div class="container-xl" style="padding: 60px 0px;">
             <div class="row">
                 <div class="col-md-6" style="text-align: center;">
-                    <img style="width: 90%;" src="{{ $product->image }}" alt="">
+                    <img style="height: 400px;" src="{{ $product->image }}" alt="">
                 </div>
                 <div class="col-md-6">
                     <!-- Dividers with icon -->
