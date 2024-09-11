@@ -251,9 +251,9 @@
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <h2 class="h2 text-uppercase" style="color: #00b01a;"><b>{{ $tuExito[0]->content }}</b></h2>
-                        <h3>
+                        <p class="card-text" style="font-size: 20px;">
                             {{ $tuExito[1]->content }}
-                        </h3>
+                        </p>
                         <div class="dez-separator text-primary style-icon">
                             <img alt="" src="themes/zoelife/peru/images/leaf-green.png" />
                         </div>
