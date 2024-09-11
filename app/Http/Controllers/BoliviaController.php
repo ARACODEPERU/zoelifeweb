@@ -81,7 +81,7 @@ class BoliviaController extends Controller
 
     /*------------ PRODUCTOS - STAR ------------*/
 
-    public function productos()
+    public function productos($id = 1)
     {
         $banner = CmsSection::where('component_id', 'bolivia_banner_productos_21')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
@@ -104,14 +104,26 @@ class BoliviaController extends Controller
             ->get();
 
         $productos = OnliItem::join('countries', 'onli_items.country_id', '=', 'countries.id')
+            ->join('products', 'products.id', 'onli_items.item_id')
+            ->join('product_categories', function ($query) use ($id) {
+                $query->on('product_categories.product_id', 'products.id')
+                    ->where('category_id', $id);
+            })
             ->where('countries.description', 'Bolivia')
-            ->select('onli_items.name', 'onli_items.image', 'onli_items.id')
+            ->select('onli_items.name', 
+            'onli_items.image', 
+            'onli_items.id',
+            'onli_items.item_id',
+            'products.description as nameporduct',
+            'onli_items.description'
+            )
             ->get();
 
         return view('zoelife/bolivia.productos', [
             'banner' => $banner,
             'beneficiop' => $beneficiop,
-            'productos' => $productos
+            'productos' => $productos,
+            'categoryId' => $id
         ]);
     }
 
