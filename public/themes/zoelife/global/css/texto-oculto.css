@@ -34,4 +34,15 @@
     overflow: hidden;
   }
 
+  .texto-oculto-js {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.mostrar-descripcion {
+    display: block;
+}
+
   /* Ocultar Lineas de Textos - END */
