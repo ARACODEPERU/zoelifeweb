@@ -156,6 +156,20 @@ General
   color: #fff;
 }
 
+.box-producto-body p{
+  text-decoration: none;
+  color: #000;
+}
+
+.box-producto-body p:hover{
+  color: #000;
+}
+
+.box-producto-body p a:hover{
+  text-decoration: none;
+  color: #5A9F00;
+}
+
 .box-producto-footer{
   display: flex; 
   justify-content: center;
