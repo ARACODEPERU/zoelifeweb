@@ -103,7 +103,7 @@
                                         <img style="height: 100%;" src="{{ asset($producto->image) }}" alt="img_producto">
                                     </a>
                                     <div class="box-producto-body texto-oculto-js" id="{{ $producto->id }}-description">
-                                        <h4>
+                                        <h4 style="text-align: center;">
                                             <a href="{{ route('web_peru_producto_descripcion', $producto->id) }}">{{ $producto->name }}</a>
                                         </h4>
                                         <p>
