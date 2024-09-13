@@ -18,26 +18,26 @@
             document.getElementById(id+"-description").classList.remove('mostrar-descripcion');
         }
     </script>
-        <div class="btn-header-pc">
-            <div class="dez-bnr-inr ara_centrado_total">
-                <img style="width: 100%; height: auto;" src="{{ $banner->content }}" alt="">
-            </div>
-            <div class="breadcrumb-row" style="margin-top: 15px; position:relative; z-index:1;">
-                <div class="container-xxl">
-                    <ul class="list-inline">
-                        <li><a href="{{ route('web_peru_inicio') }}">Home</a></li>
-                        <li>Productos</li>
-                    </ul>
+            <div class="btn-header-pc">
+                <div class="dez-bnr-inr ara_centrado_total">
+                    <img style="width: 100%; height: auto;" src="{{ $bannerNutricion->content }}" alt="">
+                </div>
+                <div class="breadcrumb-row" style="margin-top: 15px; position:relative; z-index:1;">
+                    <div class="container-xxl">
+                        <ul class="list-inline">
+                            <li><a href="{{ route('web_peru_inicio') }}">Home</a></li>
+                            <li>Zoé Nutraceúticos</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
 
         <div class="btn-header-mobile">
             <div class="breadcrumb-row" style="margin-top: 80px;">
                 <div class="container">
                     <ul class="list-inline">
                         <li><a href="{{ route('web_peru_inicio') }}">Home</a></li>
-                        <li>Productos</li>
+                        <li>Zoé Nutraceúticos</li>
                     </ul>
                 </div>
             </div>

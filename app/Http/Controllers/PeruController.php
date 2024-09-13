@@ -81,7 +81,17 @@ class PeruController extends Controller
 
     public function productos($id = 1)
     {
-        $banner = CmsSection::where('component_id', 'peru_banner_productos_8')
+        $bannerNutricion = CmsSection::where('component_id', 'peru_banner_productos_nutraceuticos_126', $id)
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->first();
+
+        $bannerCuidado = CmsSection::where('component_id', 'peru_banner_productos_cuidado_personal_127')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
@@ -119,7 +129,8 @@ class PeruController extends Controller
             ->get();
         //dd($productos);
         return view('zoelife/peru.productos', [
-            'banner' => $banner,
+            'bannerNutricion' => $bannerNutricion,
+            'bannerCuidado' => $bannerCuidado,
             'beneficiop' => $beneficiop,
             'productos' => $productos,
             'categoryId' => $id
