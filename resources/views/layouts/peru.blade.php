@@ -27,7 +27,7 @@
  <script src="js/html5shiv.min.js"></script>
  <script src="js/respond.min.js"></script>
  <![endif]-->
- 
+
     <!-- STYLESHEETS -->
     <link rel="stylesheet" type="text/css" href="{{ asset('themes/zoelife/peru/css/plugins.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('themes/zoelife/peru/css/style.css') }}">
@@ -41,9 +41,10 @@
     <link rel="stylesheet" type="text/css"
         href="{{ asset('themes/zoelife/peru/plugins/revolution/css/navigation.css') }}">
 
-    <link rel="stylesheet" type="text/css" class="skin" href="{{ asset('themes/zoelife/peru/plugins/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" class="skin"
+        href="{{ asset('themes/zoelife/peru/plugins/bootstrap/css/bootstrap.min.css') }}">
 
-
+    @yield('cstyles')
 </head>
 
 <body id="bg">

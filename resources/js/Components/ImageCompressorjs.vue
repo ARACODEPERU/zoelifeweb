@@ -11,65 +11,65 @@
    </div> 
 </template>
   
-  <script>
-  import { pageHeaderProps } from 'ant-design-vue/es/page-header';
-import Compressor from 'compressorjs';
+<script>
+
+    import Compressor from 'compressorjs';
   
-  export default {
-    props: {
-        onImageCompressed: Function
-    },
-    data() {
-        return {
-            loading: false,
-        };
-    },
-    methods: {
-        async handleFileChange(event) {
-            const file = event.target.files[0];
-            this.loading = true;
-            try {
-                const imageUrl = await this.compressAndConvertToBase64(file);
-                this.onImageCompressed(imageUrl);
-            } catch (error) {
-                console.error('Error en la compresión:', error.message);
-            } finally {
-                this.loading = false;
+    export default {
+        props: {
+            onImageCompressed: Function
+        },
+        data() {
+            return {
+                loading: false,
+            };
+        },
+        methods: {
+            async handleFileChange(event) {
+                const file = event.target.files[0];
+                this.loading = true;
+                try {
+                    const imageUrl = await this.compressAndConvertToBase64(file);
+                    this.onImageCompressed(imageUrl);
+                } catch (error) {
+                    console.error('Error en la compresión:', error.message);
+                } finally {
+                    this.loading = false;
+                }
+            },
+            async compressAndConvertToBase64(file) {
+                return new Promise((resolve, reject) => {
+                    new Compressor(file, {
+                        quality: 0.2,
+                        success: (result) => {
+                            const imageUrl = URL.createObjectURL(result);
+                            resolve(this.convertUrlToBase64(imageUrl));
+                        },
+                        error: (error) => {
+                            reject(error);
+                        },
+                    });
+                });
+            },
+            async convertUrlToBase64(url) {
+                const response = await fetch(url);
+                const blob = await response.blob();
+
+                return new Promise((resolve, reject) => {
+                    const reader = new FileReader();
+                    reader.onloadend = () => resolve(reader.result);
+                    reader.onerror = reject;
+                    reader.readAsDataURL(blob);
+                });
             }
         },
-        async compressAndConvertToBase64(file) {
-            return new Promise((resolve, reject) => {
-                new Compressor(file, {
-                    quality: 0.2,
-                    success: (result) => {
-                        const imageUrl = URL.createObjectURL(result);
-                        resolve(this.convertUrlToBase64(imageUrl));
-                    },
-                    error: (error) => {
-                        reject(error);
-                    },
-                });
-            });
-        },
-        async convertUrlToBase64(url) {
-            const response = await fetch(url);
-            const blob = await response.blob();
-
-            return new Promise((resolve, reject) => {
-                const reader = new FileReader();
-                reader.onloadend = () => resolve(reader.result);
-                reader.onerror = reject;
-                reader.readAsDataURL(blob);
-            });
-        }
-    },
-  };
-// de esta forma se optiene la imagen en el componente padre
-// todas la imagenes estan en base64 toca convertir en en controlador
-// import ImageCompressorjs from '@/Components/ImageCompressorjs.vue';
-// const handleImageCompressed = (file) => {
-//     console.log(file)
-// };
-// <ImageCompressorjs :onImageCompressed="handleImageCompressed" /> 
+    };
+    // de esta forma se optiene la imagen en el componente padre
+    // todas la imagenes estan en base64 toca convertir en en controlador
+    // import ImageCompressorjs from '@/Components/ImageCompressorjs.vue';
+    // const handleImageCompressed = (file) => {
+    //     console.log(file)
+    // };
+    // <ImageCompressorjs :onImageCompressed="handleImageCompressed" /> 
   </script>
   

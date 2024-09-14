@@ -466,3 +466,13 @@ General
 .title-green {
   color: #5A9F00;
 }
+.btn-plomo { 
+  width: auto; 
+  background-color: #dfd5b4 !important;
+  color: #3f3d3d;
+  font-weight: 700;
+  font-size: 18px; 
+  padding: 10px 30px; 
+  border-radius: 30px;
+  text-align: center;
+}

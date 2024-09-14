@@ -101,7 +101,16 @@ class PeruController extends Controller
             ->orderBy('cms_section_items.position')
             ->first();
 
-        $beneficiop = CmsSection::where('component_id', 'peru_beneficio_productos_78')
+        $beneficioNutricion = CmsSection::where('component_id', 'peru_beneficios_productos_nutraceuticos_128')
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->get();
+        $beneficioCuidado  = CmsSection::where('component_id', 'peru_beneficios_productos_cuidado_personal_129')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
@@ -127,11 +136,10 @@ class PeruController extends Controller
                 'onli_items.description'
             )
             ->get();
-        //dd($productos);
+        //dd($bannerCuidado);
         return view('zoelife/peru.productos', [
-            'bannerNutricion' => $bannerNutricion,
-            'bannerCuidado' => $bannerCuidado,
-            'beneficiop' => $beneficiop,
+            'bannerCategoria' => $id == 1 ? $bannerNutricion : $bannerCuidado,
+            'beneficioProducto' => $id == 1 ? $beneficioNutricion : $beneficioCuidado,
             'productos' => $productos,
             'categoryId' => $id
         ]);
@@ -243,14 +251,14 @@ class PeruController extends Controller
             ->get();
 
         $tuExito = CmsSection::where('component_id', 'peru_tu_Exito_emprendimiento_125')
-        ->join('cms_section_items', 'section_id', 'cms_sections.id')
-        ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
-        ->select(
-            'cms_items.content',
-            'cms_section_items.position'
-        )
-        ->orderBy('cms_section_items.position')
-        ->get();
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->get();
 
         return view('zoelife/peru.eventos', [
             'slider' => $slider,

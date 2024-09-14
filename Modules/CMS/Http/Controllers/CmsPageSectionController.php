@@ -73,6 +73,8 @@ class CmsPageSectionController extends Controller
     {
         $destination = 'uploads/cms/items';
         $items = $request->all();
+
+        $errorCode = 200;
         //dd($request->all());
         foreach ($items['items'] as $key => $item) {
 
@@ -83,17 +85,27 @@ class CmsPageSectionController extends Controller
             if ($type_id == 1 || $type_id == 3) {
                 if ($item['is_file'] === 'yes') {
                     $file = $item['content'];
-                    $original_name = strtolower(trim($file->getClientOriginalName()));
-                    $original_name = str_replace(" ", "_", $original_name);
-                    $extension = $file->getClientOriginalExtension();
-                    $file_name = date('YmdHis') . '.' . $extension;
-                    $path = $item['content']->storeAs(
-                        $destination,
-                        $file_name,
-                        'public'
-                    );
+                    //dd($file->getSize());
+                    // Define el tamaño máximo permitido (por ejemplo, 2 MB)
+                    $maxFileSize = 2 * 1024 * 1024; // 2 MB en bytes
+                    if ($file->getSize() > $maxFileSize) {
+                        return response()->json([
+                            'success' => true,
+                            'message' => 'El archivo es demasiado pesado. El tamaño máximo permitido es de 2 MB.'
+                        ]);
+                    } else {
+                        $original_name = strtolower(trim($file->getClientOriginalName()));
+                        $original_name = str_replace(" ", "_", $original_name);
+                        $extension = $file->getClientOriginalExtension();
+                        $file_name = date('YmdHis') . '.' . $extension;
+                        $path = $item['content']->storeAs(
+                            $destination,
+                            $file_name,
+                            'public'
+                        );
 
-                    $content = $type_id == 1 ? asset('storage/' . $path) : $path;
+                        $content = $type_id == 1 ? asset('storage/' . $path) : $path;
+                    }
                 } else {
                     $content = $item['content'];
                 }

@@ -32,7 +32,7 @@
                             <div class="dez-divider divider-2px icon-left" style="background: #00b01a;">
                                 <i class="fa fa-thumbs-o-up  text-white" style="background: #00b01a;"></i>
                             </div>
-                            <div class="m-b10" >
+                            <div class="m-b10">
                                 {!! $product->description !!}
                             </div>
                         </div>
@@ -49,7 +49,8 @@
                 <div class="row">
                     <div class="col-md-6" style="padding: 0px 40px;">
                         <div class="section-head  text-center text-white">
-                            <h2 class="h2 text-uppercase">Recomendaciones <span style="color: #fecc00;"> de Uso Sugerido</span></h2>
+                            <h2 class="h2 text-uppercase">Recomendaciones <span style="color: #fecc00;"> de Uso
+                                    Sugerido</span></h2>
                             <div class="dez-separator text-primary style-icon border-white">
                                 <img alt="" src="{{ asset('themes/zoelife/peru/images/leaf-green.png') }}" />
                             </div>
@@ -73,7 +74,8 @@
                         <div class="m-b10">
                             <h5 class="text-uppercase">Testimonios del {{ $product->name }}</h5>
                             <p>
-                                Sumérgete en una experiencia única y conoce de primera mano cómo nuestro producto ha superado las expectativas y ha transformado rutinas diarias en momentos extraordinarios.
+                                Sumérgete en una experiencia única y conoce de primera mano cómo nuestro producto ha
+                                superado las expectativas y ha transformado rutinas diarias en momentos extraordinarios.
                             </p>
                             <div class="dez-divider divider-2px  icon-center" style="background: #00b01a;"><i
                                     class="fa fa-truck  text-white" style="background: #00b01a;"></i></div>
