@@ -28,7 +28,7 @@
                 <div class="container-xxl">
                     <ul class="list-inline">
                         <li><a href="{{ route('web_peru_inicio') }}">Home</a></li>
-                        <li>Zoé Nutraceúticos</li>
+                        <li>Productos</li>
                     </ul>
                 </div>
             </div>
@@ -46,9 +46,9 @@
 
         <div class="content-area">
             <div class="container">
-                <div class="p-a20 bg-white selector-d m-b20  box-elevado">
-                    <h2 class="text-uppercas"
-                        style="color: #00b01a; text-transform: uppercase; padding: 15px 0px; text-align:center;">
+                <div class="p-a20 bg-white selector-d m-b20 {{ $categoryId == 1 ? 'box-elevado-green' : 'box-elevado-plomo' }}">
+                    <h2 class="text-uppercas  {{ $categoryId == 1 ? 'title-green' : 'title-plomo' }}"
+                        style="text-transform: uppercase; padding: 15px 0px; text-align:center;">
                         Beneficios de los Productos
                     </h2>
                     <div class="row" style="justify-content: space-between;">
@@ -114,9 +114,8 @@
                                         </p>
                                     </div> --}}
                                     <div class="box-producto-body texto-oculto-js" id="{{ $producto->id }}">
-                                        <h4 style="text-align: center;">
-                                            <a
-                                                href="{{ route('web_peru_producto_descripcion', $producto->id) }}">{{ $producto->name }}</a>
+                                        <h4 class="{{ $categoryId == 1 ? 'title-bg-green' : 'title-bg-plomo' }}">
+                                            <a href="{{ route('web_peru_producto_descripcion', $producto->id) }}">{{ $producto->name }}</a>
                                         </h4>
                                         <p>
                                             <a href="{{ route('web_peru_producto_descripcion', $producto->id) }}">
@@ -124,23 +123,33 @@
                                             </a>
                                         </p>
                                     </div>
-                                    <br>
-                                    <div class="box-producto-footer">
-                                        <a href="https://api.whatsapp.com/send?phone=51992914870&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar&nbsp;acerca&nbsp;de&nbsp;{{ $producto->name }}?"
-                                            target="_blank" class="{{ $categoryId == 1 ? 'btn-green' : 'btn-plomo' }}">
-                                            <i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;&nbsp; Más información
-                                        </a>
-                                    </div>
                                 </div>
                             </div>
                         @endforeach
                     @endif
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="box-producto-footer">
+                            <a href="https://api.whatsapp.com/send?phone=51992914870&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar&nbsp;acerca&nbsp;de&nbsp;{{ $producto->name }}?"
+                                target="_blank" class="{{ $categoryId == 1 ? 'btn-green' : 'btn-plomo' }}">
+                                <i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;&nbsp; Más información
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
     </div>
     <!-- Content END-->
+
+    {{-- @if (false)
+        <h2>HOLA SOY 1</h2>
+        @else
+        <h2>No soy 1</h2>
+    @endif --}}
 
     <!-- Footer -->
     <x-peru.footer-area></x-peru.footer-area>
