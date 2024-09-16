@@ -1,4 +1,4 @@
-<div>
+
 
     <a class="appFacebook" target="_blanck" href="{{ $footer[0]->items[4]->item->content }}">
         <img src="{{ $footer[0]->items[3]->item->content }}" alt="Facebook">
@@ -147,4 +147,3 @@
     </div>
 
 
-</div>

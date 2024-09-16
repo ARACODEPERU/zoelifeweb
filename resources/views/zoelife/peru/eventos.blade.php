@@ -247,7 +247,7 @@
         </section>
 
         <section style="padding: 20px 0px 80px 0px;">
-            <div class="container" style="padding: 40px 20px; border-radius: 20px;  border: 3px solid #00b01a;">
+            <div class="container box-elevado-green bg-white selector-d" style="padding: 40px 20px; border-radius: 20px;  border: 3px solid #00b01a;">
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <h2 class="h2 text-uppercase" style="color: #00b01a;"><b>{{ $tuExito[0]->content }}</b></h2>
@@ -431,6 +431,56 @@
         </div> --}}
 
         
+        <section style="padding: 80px 0px;">
+            <div class="container-xl">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-head">
+                            <h2 class="text-uppercase">Conoce a la <b>Comunidad</b></h2>
+                            <div class="dez-divider divider-2pxicon-left" style="background: #00b01a;">
+                                <i class="fa fa-thumbs-o-up  text-white"  style="background: #00b01a;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        
+                        @foreach ($comunidad as $key => $cn )
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="{{ $cn->item->items[0]->content }}" alt="" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">{{ $cn->item->items[1]->content }}</h2>
+                                    <span style="margin-top: -10px;">
+                                        <img class="img-flags" src="{{ $cn->item->items[2]->content }}" alt="">&nbsp; {{ $cn->item->items[3]->content }}
+                                    </span>
+                                    <p class="description" style="padding: 15px;">
+                                        {{ $cn->item->items[4]->content }}
+                                    </p>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+    
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+                
+            </div>
+        </section>
+
+
+
+        
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
@@ -440,7 +490,7 @@
 
         <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
         <!-- script del video -->
-        <script>
+        {{-- <script>
             var TrandingSlider = new Swiper('.tranding-slider', {
             effect: 'coverflow',
             grabCursor: true,
@@ -462,9 +512,9 @@
             prevEl: '.swiper-button-prev',
             }
             });
-        </script>
+        </script> --}}
 
-        <style>
+        {{-- <style>
             @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
             .text-center {
@@ -633,7 +683,7 @@
             .tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
             background: var(--primary);
             }
-        </style>
+        </style> --}}
 
         <style>
             .paginator_aracode {
@@ -641,7 +691,6 @@
             }
         </style>
         <script>
-
                     var intervalID;
                     function startInterval() {
                     intervalID = setInterval(function() {

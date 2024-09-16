@@ -259,6 +259,10 @@ class PeruController extends Controller
             )
             ->orderBy('cms_section_items.position')
             ->get();
+        
+        $comunidad = CmsSectionItem::with('item.items')->where('section_id', 130)  //cambiar el id de la seccion ->sedes ubicacion 24
+            ->orderBy('position')
+            ->get();
 
         return view('zoelife/peru.eventos', [
             'slider' => $slider,
@@ -266,7 +270,8 @@ class PeruController extends Controller
             'formasTitle' => $formasTitle,
             'formasContenido' => $formasContenido,
             'galeryEvents' => $galeryEvents,
-            'tuExito' => $tuExito
+            'tuExito' => $tuExito,
+            'comunidad' => $comunidad
         ]);
     }
 
