@@ -138,24 +138,32 @@ General
   transform: translateY(-10px);
 }
 
-.box-producto-body .title-bg-green{
+.box-producto a{
+  text-decoration: none;
+}
+
+.box-producto a:hover{
+  text-decoration: none;
+}
+
+.title-bg-green{
   background: #5A9F00;
+  width: 100%;
+  font-size: 18px;
   color: #fff;
   text-align: center;
   padding: 10px 15px;
 }
 
-.box-producto-body .title-bg-plomo{
-  background: #dfd5b4 !important;
+.title-bg-plomo{
+  background: #dfd5b4;
+  width: 100%;
+  font-size: 18px;
   color: #000;
   text-align: center;
   padding: 10px 15px;
 }
 
-.box-producto-body .title-bg-plomo a:hover{
-  text-decoration: none;
-  color: #000;
-}
 
 .box-producto-body p{
   text-decoration: none;

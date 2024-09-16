@@ -104,21 +104,13 @@
                                     onmouseout="ocultarDescripcion({{ $producto->id }})">
                                     <a href="{{ route('web_peru_producto_descripcion', $producto->id) }}">
                                         <img style="height: 100%;" src="{{ asset($producto->image) }}" alt="img_producto">
+                                        <div class="{{ $categoryId == 1 ? 'title-bg-green' : 'title-bg-plomo' }}">
+                                            <b>{{ $producto->name }}</b>
+                                        </div>
                                     </a>
-                                    {{-- <div class="box-producto-body texto-oculto-js" id="{{ $producto->id }}-description">
-                                        <h4 style="text-align: center;">
-                                            <a href="{{ route('web_peru_producto_descripcion', $producto->id) }}">{{ $producto->name }}</a>
-                                        </h4>
+                                    <div class="texto-oculto-js" id="{{ $producto->id }}">
                                         <p>
-                                            {!! $producto->description !!}
-                                        </p>
-                                    </div> --}}
-                                    <div class="box-producto-body texto-oculto-js" id="{{ $producto->id }}">
-                                        <h4 class="{{ $categoryId == 1 ? 'title-bg-green' : 'title-bg-plomo' }}">
-                                            <a href="{{ route('web_peru_producto_descripcion', $producto->id) }}">{{ $producto->name }}</a>
-                                        </h4>
-                                        <p>
-                                            <a href="{{ route('web_peru_producto_descripcion', $producto->id) }}">
+                                            <a href="{{ route('web_peru_producto_descripcion', $producto->id) }}" style="color: #000;">
                                                 {!! $producto->description !!}
                                             </a>
                                         </p>
