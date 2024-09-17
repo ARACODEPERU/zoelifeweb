@@ -209,6 +209,32 @@ a.dropdown-item.dark {
     color: #000;
   }
 
+body.dark .title-bg-green{
+  background: #5A9F00;
+  width: 100%;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  padding: 10px 15px;
+}
+
+body.dark .title-bg-green b{
+    color: #fff;
+  }
+  
+body.dark .title-bg-plomo{
+    background: #dfd5b4;
+    width: 100%;
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+    padding: 10px 15px;
+  }
+  
+body.dark .title-bg-plomo b{
+    color: #000;
+}
+
 body.dark .country{
     color: #fff;
 }
