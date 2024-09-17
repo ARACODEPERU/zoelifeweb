@@ -8,14 +8,14 @@
     <div class="page-content" style="margin-top: 85px;">
 
         <!-- Slider -->
-        <div class="btn-header-pc">
-                <div class="main-slider style-two default-banner">
+        <section>
+            <div class="main-slider style-two default-banner">
                     <div class="tp-banner-container">
                         <div class="tp-banner">
                             <div id="dz_rev_slider_4_wrapper" class="rev_slider_wrapper fullwidthbanner-container"
                                 data-alias="news-gallery36" data-source="gallery"
                                 style="margin:0px auto;background-color:#ffffff;padding:0px;margin-top:0px;margin-bottom:0px;">
-                                <div id="dz_rev_slider_4" class="rev_slider fullwidthabanner" style="display:none;"
+                                <div id="dz_rev_slider_4" class="rev_slider fullwidthabanner ara_centrado_total" style="display:none;"
                                     data-version="5.3.0.2">
                                     <ul>
                                         @foreach ($slider as $k => $row)
@@ -26,8 +26,8 @@
                                                 data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"
                                                 data-title="" data-param1="" data-param2="" data-param3=""
                                                 data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
-                                                data-param9="" data-param10="" class="ara_centrado_total">
-                                                <img src="{{ $row->content }}" alt="" data-bgposition="center center"
+                                                data-param9="" data-param10="" class="ara_centrado_total" style="width: 100%;">
+                                                <img width="100%;" src="{{ $row->content }}" alt="" data-bgposition="center center"
                                                         data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10"
                                                         class="rev-slidebg" data-no-retina="" style="background-size: cover; background-position: center; width: 100%; height: auto;"
                                                 />
@@ -52,13 +52,12 @@
                             </div>
                         </div>
                     </div>
-                </div>
-        </div>
+            </div>
+        </section>
         <!-- Slider END -->
 
         <div class="btn-header-mobile">
-            <!-- Breadcrumb row -->
-            <div class="breadcrumb-row" style="margin-top: 80px;">
+            <div class="breadcrumb-row">
                 <div class="container">
                     <ul class="list-inline">
                         <li><a href="{{ route('web_peru_inicio') }}">Home</a></li>
@@ -66,11 +65,10 @@
                     </ul>
                 </div>
             </div>
-            <!-- Breadcrumb row END -->
         </div>
 
-        <section>
-            <div class="container-xl" style="padding: 60px 0px 80px 0px;">
+        <section style="padding: 20px 15px;">
+            <div class="container-xl">
                 <div class="row">
                     @foreach ($beneficios as $key => $beneficio )
                         <div class="col-md-4" style="padding: 20px;">
@@ -222,7 +220,7 @@
             </div>
         </div>
 
-        <section style="padding: 80px 0px;">
+        <section style="padding: 40px 15px;">
             <div class="container-xl">
                 <div class="row">
                     <div class="col-md-12">
@@ -246,7 +244,7 @@
             </div>
         </section>
 
-        <section style="padding: 20px 0px 80px 0px;">
+        <section style="padding: 20px 30px;">
             <div class="container box-elevado-green bg-white selector-d" style="padding: 40px 20px; border-radius: 20px;  border: 3px solid #00b01a;">
                 <div class="row">
                     <div class="col-md-12 text-center">
@@ -261,13 +259,13 @@
                 </div>
                 <br>
                 <div class="row">
-                    <div class="col-md-6  text-center">
+                    <div class="col-md-6  text-center" style="padding: 15px;">
                         <a href="https://api.whatsapp.com/send?phone=51{{ $tuExito[2]->content }}&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?" 
                             target="_blank" class="btn-green" style="font-weight: 700;">
                             <i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;&nbsp; Quiero unirme ahora
                         </a>
                     </div>
-                    <div class="col-md-6  text-center">
+                    <div class="col-md-6  text-center" style="padding: 15px;">
                         <a href="{{ $tuExito[3]->content }}"  target="_blank" class="btn-green">
                             <i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; Descarga plan libertad
                         </a>
@@ -431,7 +429,7 @@
         </div> --}}
 
         
-        <section style="padding: 80px 0px;">
+        <section style="padding: 40px 25px;">
             <div class="container-xl">
                 <div class="row">
                     <div class="col-md-12">
@@ -444,7 +442,6 @@
                     </div>
                 </div>
             </div>
-        
             <div class="slide-container swiper">
                 <div class="slide-content">
                     <div class="card-wrapper swiper-wrapper">
@@ -478,9 +475,6 @@
             </div>
         </section>
 
-
-
-        
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
