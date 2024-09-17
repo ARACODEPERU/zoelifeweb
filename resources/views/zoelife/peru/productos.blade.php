@@ -24,7 +24,7 @@
             <div class="dez-bnr-inr ara_centrado_total">
                 <img style="width: 100%; height: auto;" src="{{ $bannerCategoria->content }}" alt="">
             </div>
-            <div class="breadcrumb-row" style="margin-top: 15px; position:relative; z-index:1;">
+            <div class="breadcrumb-row" style=" position:relative; z-index:1;">
                 <div class="container-xxl">
                     <ul class="list-inline">
                         <li><a href="{{ route('web_peru_inicio') }}">Home</a></li>
@@ -47,7 +47,7 @@
             </div>
         </div>
 
-        <div class="content-area">
+        <section style="padding: 40px 15px;">
             <div class="container">
                 <div class="p-a20 bg-white selector-d m-b20 {{ $categoryId == 1 ? 'box-elevado-green' : 'box-elevado-plomo' }}">
                     <h2 class="text-uppercas  {{ $categoryId == 1 ? 'title-green' : 'title-plomo' }}"
@@ -56,7 +56,7 @@
                     </h2>
                     <div class="row" style="justify-content: space-between;">
                         @foreach ($beneficioProducto as $bp)
-                            <div class="col-md-2" style="padding: 20px 0px;  ">
+                            <div class="col-md-2" style="padding: 20px 0px; text-align:center; ">
                                 <img src="{{ $bp->content }}" alt="">
                             </div>
                         @endforeach
@@ -66,7 +66,7 @@
                     </div> --}}
                 </div>
             </div>
-        </div>
+        </section>
 
         {{-- <div class="content-area">
             <div class=""  style="width: 100%; padding: 40px;">
@@ -97,7 +97,7 @@
             </div>
         </div> --}}
 
-        <section>
+        <section style="padding: 40px 15px;">
             <div class="container-xxl">
                 <div class="row">
                     @if (isset($productos))
