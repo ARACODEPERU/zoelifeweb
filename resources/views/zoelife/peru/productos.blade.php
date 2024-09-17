@@ -110,7 +110,7 @@
                                     </a>
                                     <div class="texto-oculto-js" id="{{ $producto->id }}">
                                         <p>
-                                            <a href="{{ route('web_peru_producto_descripcion', $producto->id) }}" style="color: #000;">
+                                            <a class="country" href="{{ route('web_peru_producto_descripcion', $producto->id) }}">
                                                 {!! $producto->description !!}
                                             </a>
                                         </p>
