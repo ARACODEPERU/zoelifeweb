@@ -248,7 +248,7 @@ class PeruController extends Controller
         
 
 
-        $star_videos = CmsSectionItem::with('item.items')->where('section_id', 87) //peru_videos_alcanzando_las_estrellas_87
+        $star_videos = CmsSectionItem::with('item.items')->where('section_id', 132) //peru_videos_alcanzando_las_estrellas_87
             ->orderBy('position')
             ->get();
 
