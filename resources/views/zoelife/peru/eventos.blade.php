@@ -151,6 +151,17 @@
                         </div>
                     </div> --}}
                 </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="box-producto-footer">
+                            <a href="https://api.whatsapp.com/send?phone=51992914870&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?"
+                                target="_blank">
+                                <i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;&nbsp; Más información
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
