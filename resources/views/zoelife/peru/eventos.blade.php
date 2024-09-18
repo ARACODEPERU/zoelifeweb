@@ -157,7 +157,7 @@
 
         <div class="section-full bg-img-fix p-t90 p-b90 overlay-black-middle choose-us"
             style="background-image:url({{ $formasTitle[0]->content }});">
-            <div class="container" style="padding: 20px;">
+            <div class="container" style="padding: 20px; z-index: 999;">
                 <div class="section-head text-center text-white" style="padding: 10px;">
                     <h2 class="h2 text-uppercase">{{ $formasTitle[1]->content }} <span style="color: #fecc00;"> {{ $formasTitle[2]->content }}</span></h2>
                     <div class="dez-separator  style-icon border-white">
@@ -165,20 +165,20 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <img style="width: 100%;" src="{{ $formasTitle[3]->content }}" alt="">
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-9">
                         <div class="box-ganar">
                             <ul class="list-group list-group-flush">
                                 @foreach ($formasContenido as $key => $contenido )
-                                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                                        {{ $contenido->item->items[0]->content }}
-                                        <a href="{{ $contenido->item->items[1]->content }}">
+                                    <li class="list-group-item d-flex" style="font-size: 18px;">
+                                        <i class="fa fa-money" aria-hidden="true"></i>&nbsp; {{ $contenido->item->items[0]->content }}
+                                        {{-- <a href="{{ $contenido->item->items[1]->content }}">
                                             <span class="badge text-bg-primary rounded-pill" style="padding: 5px 15px; background: #5A9F00 !important;">
                                                 <i class="fa fa-play"></i> Video
                                             </span>
-                                        </a>
+                                        </a> --}}
                                     </li>
                                 @endforeach
                                 {{-- <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -220,7 +220,7 @@
             </div>
         </div>
 
-        <section style="padding: 40px 15px;">
+        <section style="padding: 80px 15px;">
             <div class="container-xl">
                 <div class="row">
                     <div class="col-md-12">
