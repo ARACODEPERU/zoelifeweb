@@ -154,9 +154,9 @@
                 <br>
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="box-producto-footer">
+                        <div style="text-align: center;">
                             <a href="https://api.whatsapp.com/send?phone=51992914870&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?"
-                                target="_blank">
+                                target="_blank" class="btn-green">
                                 <i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;&nbsp; Más información
                             </a>
                         </div>
@@ -164,6 +164,7 @@
                 </div>
             </div>
         </section>
+        <br>
 
 
         <div class="section-full bg-img-fix p-t90 p-b90 overlay-black-middle choose-us"
