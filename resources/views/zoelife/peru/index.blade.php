@@ -93,7 +93,7 @@
             <x-peru.vision-mision-valores-area></x-peru.vision-mision-valores-area>
             <!-- Visión - Misión - Valores / END -->
 
-            <section style="padding: 120px 0px;">
+            <section style="padding: 120px 30px;">
                 <div class="container-xl">
                     <div class="row">
                         <div class="col-md-12" style="text-align:center; padding: 40px 0px 10px 0px;">
@@ -133,13 +133,13 @@
                                 <br>
                                 <b class="des-producto">{{ $fundador[2]->content }}</b>
                             </h3>
-                            <p style="text-align: left;">
+                            <p style="text-align: justify;">
                                 {{ $fundador[6]->content }}
                             </p>
-                            <p style="text-align: left;">
+                            <p style="text-align: justify;">
                                 {{ $fundador[7]->content }}
                             </p>
-                            <p style="text-align: left;">
+                            <p style="text-align: justify;">
                                 {{ $fundador[8]->content }}
                             </p>
                         </div>
@@ -170,7 +170,7 @@
             </div>
             <!-- Video Presentación / END -->
 
-            <section style="padding: 80px 0px;">
+            <section style="padding: 80px 30px;">
                 <div class="container-xl">
                     <div class="row">
                         <div class="col-md-12" style="text-align:center; padding: 40px 0px 10px 0px;">
@@ -184,21 +184,21 @@
                     </div>
                         <div class="section-content text-center ">
                             <div class="row" style="justify-content: space-between">
-                                <div class="col-md-4">
+                                <div class="col-md-4" style="padding: 15px;">
                                     <a href="{{ $linkDescarga[0]->content }}" target="_blank" class="site-button btn-zona-descarga" 
-                                        style="font-weight: 700; text-align: center; padding: 18px 15px;">
+                                        style="font-weight: 700; text-align: center; padding: 17px 15px;">
                                         <i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; CATÁLOGO DE PRODUCTOS
                                     </a>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-4" style="padding: 15px;">
                                     <a href="{{ $linkDescarga[1]->content }}" target="_blank"  class="site-button btn-zona-descarga" 
-                                        style="font-weight: 700; text-align: center; padding: 18px 15px;">
+                                        style="font-weight: 700; text-align: center; padding: 17px 15px;">
                                         <i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; PLAN LIBERTAD 
                                     </a>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-4" style="padding: 15px;">
                                     <a href="{{ $linkDescarga[2]->content }}" target="_blank"  class="site-button btn-zona-descarga" 
-                                        style="font-weight: 700; text-align: center; padding: 18px 15px;">
+                                        style="font-weight: 700; text-align: center; padding: 17px 15px;">
                                         <i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; MANUAL DE POLÍTICAS Y PROCESOS
                                     </a>
                                 </div>

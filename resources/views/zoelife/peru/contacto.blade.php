@@ -165,7 +165,7 @@
             </div>
         </div> --}}
 
-        <section style="padding: 80px 0px;">
+        <section style="padding: 15px 30px;">
             <div class="container-xxl">
                 <div class="row">
                     <div class="col-md-5">

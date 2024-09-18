@@ -35,8 +35,7 @@
             <!-- Breadcrumb row END -->
         </div>
 
-        <div class="content-area">
-            <div class="">
+        <div class="content-area" style="padding: 10px 20px;">
                 <div class="site-filters clearfix center m-b40">
                     <ul class="filters" data-toggle="buttons">
                         <li data-filter="" class="btn active">
@@ -77,7 +76,6 @@
                         @endforeach
                     @endif
                 </ul>
-            </div>
         </div>
 
     </div>

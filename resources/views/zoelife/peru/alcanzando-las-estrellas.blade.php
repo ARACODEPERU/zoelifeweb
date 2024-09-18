@@ -23,7 +23,6 @@
       </div>
 
       <div class="btn-header-mobile">
-          <!-- Breadcrumb row -->
           <div class="breadcrumb-row" style="margin-top: 80px;">
               <div class="container">
                   <ul class="list-inline">
@@ -32,10 +31,9 @@
                   </ul>
               </div>
           </div>
-          <!-- Breadcrumb row END -->
       </div>
 
-      <div class="content-area">
+      <div class="content-area" style="padding: 10px 20px;">
             <div class="container-xxl">
               @if ( count($presentacion) > 0)
                 <div class="p-a20 bg-white selector-d m-b20 box-elevado">
@@ -53,7 +51,7 @@
       </div>
 
       <div class="btn-header-pc">
-        <section style="padding: 60px 10px;">
+        <section style="padding: 60px 30px;">
           <div class="swiper tranding-slider">
             <div class="swiper-wrapper">
               <!-- Slide-start -->
@@ -70,7 +68,7 @@
               <!-- Slide-end -->
             </div>
 
-            <div class="tranding-slider-control" style="margin-top: -200px;">
+            <div class="tranding-slider-control" style="margin-top: -150px;">
                       <div class="container">
                         <div class="row">
                           <div class="col-md-2"></div>
@@ -142,10 +140,10 @@
         </section>
       </div>
 
-      <br><br>
+      <br>
 
       <div class="btn-header-pc">
-        <section  style="padding: 80px 10px;">
+        <section  style="padding: 80px 30px;">
           <div class="swiper tranding-slider">
             <div class="swiper-wrapper">
               <!-- Slide-start -->
