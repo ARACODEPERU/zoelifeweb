@@ -29,9 +29,9 @@
                     <div class="p-a30 bg-white selector-d m-b30">
                         <div class="section-content">
                             <h2 class="text-uppercase">{{ $product->name }}</h2>
-                            <div class="dez-divider divider-2px icon-left" style="background: #00b01a;">
+                            {{-- <div class="dez-divider divider-2px icon-left" style="background: #00b01a;">
                                 <i class="fa fa-thumbs-o-up  text-white" style="background: #00b01a;"></i>
-                            </div>
+                            </div> --}}
                             <div class="m-b10">
                                 {!! $product->description !!}
                             </div>

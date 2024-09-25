@@ -152,7 +152,8 @@ class PeruController extends Controller
 
         return view('zoelife/peru.producto-descripcion', [
             'product' => $product,
-            'testimonies' => $testimonies
+            'testimonies' => $testimonies,
+            'categoryId' => $id
         ]);
     }
 
