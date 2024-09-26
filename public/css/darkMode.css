@@ -57,6 +57,13 @@ body.dark h5.text-uppercase{
 }
 
 
+body.dark .amarillo{
+    color: #fecc00; 
+}
+
+
+
+
 body.dark h3.post-title a{
     color: #fff; 
 }
@@ -79,6 +86,7 @@ body.dark p{
 body.dark b{
     color: #05d023;
 }
+
 
 
 body.dark .btn-zona-descarga {
