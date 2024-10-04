@@ -19,7 +19,7 @@
         </div>
         <!-- Breadcrumb row END -->
 
-        <div class="container" style="padding: 60px 0px;">
+        <div class="container-xl" style="padding: 60px 0px;">
             <div class="row">
                 <div class="col-md-6" style="text-align: center;">
                     <img style="width: 90%;" src="{{ $product->image }}" alt="">
