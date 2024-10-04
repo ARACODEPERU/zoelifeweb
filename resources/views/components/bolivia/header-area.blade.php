@@ -126,12 +126,19 @@
                                     href="{{ route('web_bolivia_centros') }}">Centros de Distribución</a> </li>
                             <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_bolivia_eventos') ? 'active' : '' }}"
                                     href="{{ route('web_bolivia_eventos') }}">Eventos</a> </li>
-                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_bolivia_alcanzando_las_estrellas') ? 'active' : '' }}"
-                                    href="{{ route('web_bolivia_alcanzando_las_estrellas') }}">Alcanzando las
-                                    Estrellas</a> </li>
+                            <li> 
+                                <a class="dropdown-item aquitoy {{ request()->routeIs('web_bolivia_alcanzando_las_estrellas') ? 'active' : '' }}"
+                                    href="{{ route('web_bolivia_alcanzando_las_estrellas') }}">
+                                    Servicio Social
+                                </a> 
+                            </li>
 
-                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_bolivia_university') ? 'active' : '' }}"
-                                    href="{{ route('web_bolivia_university') }}">University</a> </li>
+                            {{-- <li> 
+                                <a class="dropdown-item aquitoy {{ request()->routeIs('web_bolivia_university') ? 'active' : '' }}"
+                                    href="{{ route('web_bolivia_university') }}">
+                                    University
+                                </a> 
+                            </li> --}}
                             <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_bolivia_contacto') ? 'active' : '' }}"
                                     href="{{ route('web_bolivia_contacto') }}">Contacto</a> </li>
 

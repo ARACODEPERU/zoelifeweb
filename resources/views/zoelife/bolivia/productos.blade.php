@@ -8,15 +8,15 @@
     <!-- Content -->
     <div class="page-content">
         <link rel="stylesheet" href="{{ asset('themes/zoelife/global/css/texto-oculto.css') }}">
-    <script>
-        function mostrarDescripcion(id) {
-            document.getElementById(id+"-description").classList.add('mostrar-descripcion');
-        }
+        <script>
+            function mostrarDescripcion(id) {
+                document.getElementById(id+"-description").classList.add('mostrar-descripcion');
+            }
 
-        function ocultarDescripcion(id) {
-            document.getElementById(id+"-description").classList.remove('mostrar-descripcion');
-        }
-    </script>
+            function ocultarDescripcion(id) {
+                document.getElementById(id+"-description").classList.remove('mostrar-descripcion');
+            }
+        </script>
 
         <div class="btn-header-pc">
             <!-- inner page banner -->
@@ -26,7 +26,7 @@
             <!-- inner page banner END -->
             <!-- Breadcrumb row -->
             <div class="breadcrumb-row" style="position:relative; z-index:1;">
-                <div class="container">
+                <div class="container-xxl">
                     <ul class="list-inline">
                         <li><a href="{{ route('web_bolivia_inicio') }}">Home</a></li>
                         <li>Productos</li>

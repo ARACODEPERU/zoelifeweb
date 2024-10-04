@@ -12,8 +12,8 @@
             <div class="dez-bnr-inr ara_centrado_total">
                 <img style="width: 100%; height: auto;" src="{{ $banner->content }}" alt="">
             </div>
-            <div class="breadcrumb-row" style="margin-top: 15px; position:relative; z-index:1;">
-                <div class="container">
+            <div class="breadcrumb-row" style="position:relative; z-index:1;">
+                <div class="container-xxl">
                     <ul class="list-inline">
                         <li><a href="{{ route('web_bolivia_inicio') }}">Home</a></li>
                         <li>Alcanzando las estrellas</li>
@@ -23,7 +23,6 @@
         </div>
 
         <div class="btn-header-mobile">
-            <!-- Breadcrumb row -->
             <div class="breadcrumb-row" style="margin-top: 80px;">
                 <div class="container">
                     <ul class="list-inline">
@@ -32,13 +31,12 @@
                     </ul>
                 </div>
             </div>
-            <!-- Breadcrumb row END -->
         </div>
 
-        <div class="content-area">
-          <div class="container">
+        <div class="content-area" style="padding: 10px 20px;">
+          <div class="container-xxl">
             @if ( count($presentacion) > 0)
-              <div class="p-a20 bg-white selector-d m-b20">
+              <div class="p-a20 bg-white selector-d m-b20 box-elevado">
                 <div class="section-content" style="text-align: center;">
                     <div class="m-b10">
                         <h3 class="text-uppercas" style="color: #00b01a;"><b>{{ $presentacion[0]->content }}</b></h3>
