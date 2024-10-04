@@ -43,13 +43,14 @@
         </div>
 
         <!-- Why Choose Us -->
-        <div class="section-full text-white bg-img-fix p-t70 p-b40 overlay-black-dark choose-us"
+        <div class="section-full text-white bg-img-fix p-t90 p-b90 overlay-black-middle choose-us"
             style="background-image:url({{ asset('themes/zoelife/peru/images/background/fondo.jpg') }});">
-            <div class="container">
+            <div class="container" style="padding: 20px 30px;">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6" style="padding: 0px 40px;">
                         <div class="section-head  text-center text-white">
-                            <h2 class="h2">Recomendaciones <span style="color: #00b01a;"> de Uso Sugerido</span></h2>
+                            <h2 class="h2 text-uppercase">Recomendaciones <span style="color: #fecc00;"> de Uso
+                                    Sugerido</span></h2>
                             <div class="dez-separator text-primary style-icon border-white">
                                 <img alt="" src="{{ asset('themes/zoelife/peru/images/leaf-green.png') }}" />
                             </div>
