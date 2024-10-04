@@ -12,8 +12,8 @@
         </div>
         <!-- inner page banner END -->
         <!-- Breadcrumb row -->
-        <div class="breadcrumb-row" style="margin-top: 15px; position:relative; z-index:1;">
-            <div class="container">
+        <div class="breadcrumb-row" style="position:relative; z-index:1;">
+            <div class="container-xxl">
                 <ul class="list-inline">
                     <li><a href="{{ route('web_ecuador_inicio') }}">Home</a></li>
                     <li>Centros de Distribución</li>
@@ -35,9 +35,8 @@
         </div>
         <!-- Breadcrumb row END -->
     </div>
-    
-    <div class="content-area">
-        <div class="">
+        
+    <div class="content-area" style="padding: 10px 20px;">
             <div class="site-filters clearfix center m-b40">
                 <ul class="filters" data-toggle="buttons">
                     <li data-filter="" class="btn active">
@@ -69,7 +68,6 @@
                     @endforeach
                 @endif
             </ul>
-        </div>
     </div>
     <br>
 

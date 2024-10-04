@@ -1,4 +1,4 @@
-<div>
+
     <!-- Importando darkMode -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="{{ asset('css/darkMode.css') }}">
@@ -7,7 +7,7 @@
     <!-- Header -->
     <header class="site-header header-style-1 mo-left dark dark-style-2">
         <!-- Top bar -->
-        <div class="top-bar">
+        <div class="top-bar btn-header-pc">
             <div class="top-bar-content" style="width: 100%; padding: 0px 40px;">
                 <div class="top-bar-contect-space row justify-content-between">
                     <div class="dez-topbar-right list-unstyled e-p-bx ">
@@ -27,11 +27,43 @@
                 </div>
             </div>
         </div>
+
+        <div class="top-bar btn-header-mobile">
+            <div class="top-bar-content" style="width: 100%; padding: 0px 40px;">
+                <div class="top-bar-contect-space row justify-content-between">
+                    <div class="dez-topbar-right list-unstyled e-p-bx ">
+                        <ul>
+                            <li>
+                                <a href="https://zoelifeinternational.com/" target="_blank" class=""
+                                    title="Zoé Global" style="text-decoration: none; padding: 5px 15px;">
+                                    <i class="fa fa-globe" aria-hidden="true"></i>
+                                    Zoé Global
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://zoelife.global/link/store/TIENDAPUBLICA" target="_blank" class=""
+                                    title="Tienda Online" style="text-decoration: none; padding: 5px 15px;">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                    Tienda Online
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://zoelife.global/LoginSalesForce.php" target="_blank" class=""
+                                    title="Oficina Virtual" style="text-decoration: none; padding: 5px 15px;">
+                                    <i class="fa fa-laptop" aria-hidden="true"></i>
+                                    Oficina Virtual
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Top Bar END-->
         <!-- Main Header -->
         <div class="sticky-header main-bar-wraper navbar-expand-lg">
             <div class="main-bar clearfix ">
-                <div class="clearfix" style="width: 100%; padding: 0px 40px;">
+                <div class="clearfix" style="width: 100%; padding: 0px 10px;">
                     <!-- Website Logo -->
                     <div class="logo-header logo-dark mostion">
                         <a href="{{ route('web_peru_inicio') }}">
@@ -67,24 +99,6 @@
                             </div>
                         </div>
                     </div>
-                    <!--
-                    <div class="btn-header-mobile">
-                        <div class="extra-nav hidden-sm-down disnone-md" style="text-align: center;">
-                            <div class="extra-cell">
-                                <a href="https://zoelife.global//link/store/TIENDAPUBLICA" target="_blank"
-                                    class="site-button" title="Tienda Online">
-                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                            <div class="extra-cell">
-                                <a href="https://zoelife.global/LoginSalesForce.php" target="_blank"
-                                    class="site-button" title="Oficina Vitual">
-                                    <i class="fa fa-laptop" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    -->
                     <!-- Main Nav -->
                     <div class="header-nav navbar-collapse collapse justify-content-end div-nav-slide-dark"
                         id="navbarNavDropdown">
@@ -106,10 +120,17 @@
                             </div>
                         </div>
                         <ul class="nav navbar-nav div-nav-slide-dark">
-                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_ecuador_inicio') ? 'active' : '' }}"
-                                    href="{{ route('web_ecuador_inicio') }}">Inicio</a> </li>
-                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_ecuador_productos') ? 'active' : '' }}"
-                                    href="{{ route('web_ecuador_productos') }}">Productos</a>
+                            <li> 
+                                <a class="dropdown-item aquitoy {{ request()->routeIs('web_ecuador_inicio') ? 'active' : '' }}"
+                                    href="{{ route('web_ecuador_inicio') }}">
+                                    Inicio
+                                </a> 
+                            </li>
+                            <li> 
+                                <a class="dropdown-item aquitoy {{ request()->routeIs('web_ecuador_productos') ? 'active' : '' }}"
+                                    href="{{ route('web_ecuador_productos') }}">
+                                    Productos
+                                </a>
                                 <ul class="sub-menu">
                                     @foreach ($products as $product)
                                         <li>
@@ -120,20 +141,42 @@
                                     @endforeach
                                 </ul>
                             </li>
-                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_ecuador_testimonios') ? 'active' : '' }}"
-                                    href="{{ route('web_ecuador_testimonios') }}">Testimonios</a> </li>
-                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_ecuador_centros') ? 'active' : '' }}"
-                                    href="{{ route('web_ecuador_centros') }}">Centros de Distribución</a> </li>
-                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_ecuador_eventos') ? 'active' : '' }}"
-                                    href="{{ route('web_ecuador_eventos') }}">Eventos</a> </li>
-                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_ecuador_alcanzando_las_estrellas') ? 'active' : '' }}"
-                                    href="{{ route('web_ecuador_alcanzando_las_estrellas') }}">Alcanzando las
-                                    Estrellas</a> </li>
-
-                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_ecuador_university') ? 'active' : '' }}"
-                                    href="{{ route('web_ecuador_university') }}">University</a> </li>
-                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_ecuador_contacto') ? 'active' : '' }}"
-                                    href="{{ route('web_ecuador_contacto') }}">Contacto</a> </li>
+                            <li> 
+                                <a class="dropdown-item aquitoy {{ request()->routeIs('web_ecuador_testimonios') ? 'active' : '' }}"
+                                    href="{{ route('web_ecuador_testimonios') }}">
+                                    Testimonios
+                                </a> 
+                            </li>
+                            <li> 
+                                <a class="dropdown-item aquitoy {{ request()->routeIs('web_ecuador_centros') ? 'active' : '' }}"
+                                    href="{{ route('web_ecuador_centros') }}">
+                                    Centros de Distribución
+                                </a> 
+                            </li>
+                            <li> 
+                                <a class="dropdown-item aquitoy {{ request()->routeIs('web_ecuador_eventos') ? 'active' : '' }}"
+                                    href="{{ route('web_ecuador_eventos') }}">
+                                    Inicia tu emprendimiento
+                                </a> 
+                            </li>
+                            <li> 
+                                <a class="dropdown-item aquitoy {{ request()->routeIs('web_ecuador_alcanzando_las_estrellas') ? 'active' : '' }}"
+                                    href="{{ route('web_ecuador_alcanzando_las_estrellas') }}">
+                                    Servicio Social
+                                </a> 
+                            </li>
+                            {{-- <li> 
+                                <a class="dropdown-item aquitoy {{ request()->routeIs('web_ecuador_university') ? 'active' : '' }}"
+                                    href="{{ route('web_ecuador_university') }}">
+                                    University
+                                </a> 
+                            </li> --}}
+                            <li> 
+                                <a class="dropdown-item aquitoy {{ request()->routeIs('web_ecuador_contacto') ? 'active' : '' }}"
+                                    href="{{ route('web_ecuador_contacto') }}">
+                                    Contacto
+                                </a> 
+                            </li>
                             <li class="switch" style="top: 25px;">
                                 <i class="bx bxs-sun"></i>
                                 <i class="bx bxs-moon"></i>
@@ -145,5 +188,3 @@
         </div>
         <!-- Main Header END -->
     </header>
-    <!-- Header END -->
-</div>

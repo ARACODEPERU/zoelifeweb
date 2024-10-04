@@ -66,7 +66,8 @@
                 <!-- Website Logo -->
                 <div class="logo-header logo-dark mostion">
                     <a href="{{ route('web_peru_inicio') }}">
-                        <img src="{{ $header[5]->content }}" alt="banner" style="height: 80px; padding: 15px 0px;">
+                        <img src="{{ $header[5]->content }}" alt="banner" 
+                        style="height: 80px; padding: 15px 0px;">
                     </a>
                 </div>
                 <!-- Nav Toggle Button -->
@@ -162,19 +163,27 @@
                         </li>
                         <li>
                             <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_centros') ? 'active' : '' }}"
-                                href="{{ route('web_peru_centros') }}">Centros de Distribución</a>
+                                href="{{ route('web_peru_centros') }}">
+                                Centros de Distribución
+                            </a>
                         </li>
                         <li>
                             <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_eventos') ? 'active' : '' }}"
-                                href="{{ route('web_peru_eventos') }}">Inicia tu Emprendimiento</a>
+                                href="{{ route('web_peru_eventos') }}">
+                                Inicia tu Emprendimiento
+                            </a>
                         </li>
                         <li>
                             <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_alcanzando_las_estrellas') ? 'active' : '' }}"
-                                href="{{ route('web_peru_alcanzando_las_estrellas') }}">Servicio Social</a>
+                                href="{{ route('web_peru_alcanzando_las_estrellas') }}">
+                                Servicio Social
+                            </a>
                         </li>
                         <li>
                             <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_contacto') ? 'active' : '' }}"
-                                href="{{ route('web_peru_contacto') }}">Contacto</a>
+                                href="{{ route('web_peru_contacto') }}">
+                                Contacto
+                            </a>
                         </li>
                         <li class="switch" style="top: 25px;">
                             <i class="bx bxs-sun"></i>
