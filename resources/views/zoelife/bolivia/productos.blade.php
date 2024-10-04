@@ -86,6 +86,13 @@
                                             <b>{{ $producto->name }}</b>
                                         </div>
                                     </a>
+                                    <div class="texto-oculto-js" id="{{ $producto->id }}">
+                                        <p>
+                                            <a class="country" href="{{ route('web_bolivia_producto_descripcion', $producto->id) }}">
+                                                {!! $producto->description !!}
+                                            </a>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         @endforeach
