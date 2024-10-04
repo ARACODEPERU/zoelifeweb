@@ -80,19 +80,12 @@
                         @foreach ($productos as $producto)
                             <div class="col-md-4" style="padding: 15px;">
                                 <div class="box-producto" onmouseover="mostrarDescripcion({{ $producto->id }})" onmouseout="ocultarDescripcion({{ $producto->id }})">
-                                    <a href="{{ route('web_peru_producto_descripcion', $producto->id) }}">
+                                    <a href="{{ route('web_bolivia_producto_descripcion', $producto->id) }}">
                                         <img style="height: 100%;" src="{{ asset($producto->image) }}" alt="img_producto">
                                         <div class="title-bg-green">
                                             <b>{{ $producto->name }}</b>
                                         </div>
                                     </a>
-                                    <div class="texto-oculto-js" id="{{ $producto->id }}">
-                                        <p>
-                                            <a class="country" href="{{ route('web_peru_producto_descripcion', $producto->id) }}">
-                                                {!! $producto->description !!}
-                                            </a>
-                                        </p>
-                                    </div>
                                 </div>
                             </div>
                         @endforeach
