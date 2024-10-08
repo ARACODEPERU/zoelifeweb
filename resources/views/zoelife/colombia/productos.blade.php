@@ -8,15 +8,15 @@
     <!-- Content -->
     <div class="page-content">
         <link rel="stylesheet" href="{{ asset('themes/zoelife/global/css/texto-oculto.css') }}">
-    <script>
-        function mostrarDescripcion(id) {
-            document.getElementById(id+"-description").classList.add('mostrar-descripcion');
-        }
+        <script>
+            function mostrarDescripcion(id) {
+                document.getElementById(id+"-description").classList.add('mostrar-descripcion');
+            }
 
-        function ocultarDescripcion(id) {
-            document.getElementById(id+"-description").classList.remove('mostrar-descripcion');
-        }
-    </script>
+            function ocultarDescripcion(id) {
+                document.getElementById(id+"-description").classList.remove('mostrar-descripcion');
+            }
+        </script>
         <div class="btn-header-pc">
             <!-- inner page banner -->
             <div class="dez-bnr-inr ara_centrado_total">
@@ -24,8 +24,8 @@
             </div>
             <!-- inner page banner END -->
             <!-- Breadcrumb row -->
-            <div class="breadcrumb-row" style="margin-top: 15px; position:relative; z-index:1;">
-                <div class="container">
+            <div class="breadcrumb-row" style="position:relative; z-index:1;">
+                <div class="container-xxl">
                     <ul class="list-inline">
                         <li><a href="{{ route('web_colombia_inicio') }}">Home</a></li>
                         <li>Productos</li>
@@ -48,9 +48,9 @@
             <!-- Breadcrumb row END -->
         </div>
 
-        <div class="content-area">
+        <section style="padding: 40px 15px;">
             <div class="container">
-                <div class="p-a20 bg-white selector-d m-b20">
+                <div class="p-a20 bg-white selector-d m-b20 box-elevado-green">
                     <div class="section-content" style="text-align: center;">
                         <div class="m-b10">
                             <h2 class="text-uppercas" style="color: #00b01a; text-transform: uppercase; padding: 15px 0px;">Beneficios de los productos</h2>
@@ -68,7 +68,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
 
         <section>

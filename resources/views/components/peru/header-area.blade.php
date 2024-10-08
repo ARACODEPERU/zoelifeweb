@@ -1,11 +1,11 @@
 <!-- Importando darkMode -->
+
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 <link rel="stylesheet" href="{{ asset('css/darkMode.css') }}">
 <script src="{{ asset('js/darkMode.js') }}"></script>
 
 <!-- Header -->
 <header class="site-header header-style-1 mo-left dark dark-style-2">
-    <!-- Top bar -->
     <div class="top-bar btn-header-pc">
         <div class="top-bar-content" style="width: 100%; padding: 0px 40px;">
             <div class="top-bar-contect-space row justify-content-between">
@@ -59,10 +59,11 @@
         </div>
     </div>
     <!-- Top Bar END-->
+
     <!-- Main Header -->
     <div class="sticky-header main-bar-wraper navbar-expand-lg">
         <div class="main-bar clearfix ">
-            <div class="clearfix" style="width: 100%; padding: 0px 10px;">
+            <div class="clearfix" style="width: 100%; padding: 0px 20px;">
                 <!-- Website Logo -->
                 <div class="logo-header logo-dark mostion">
                     <a href="{{ route('web_peru_inicio') }}">

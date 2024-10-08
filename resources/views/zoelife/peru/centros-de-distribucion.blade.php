@@ -73,7 +73,6 @@
         </div>
         <br>
     
-        <!-- Modal -->
         <div class="modal fade" id="modal-centros" tabindex="-1" role="dialog" aria-labelledby="centrosTitle"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -142,6 +141,7 @@
         </script>
     
     </div>
+
     <!-- Footer -->
     <x-peru.footer-area></x-peru.footer-area>
     <!-- Footer END-->

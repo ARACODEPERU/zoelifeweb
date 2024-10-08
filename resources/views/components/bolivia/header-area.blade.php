@@ -8,7 +8,7 @@
     <header class="site-header header-style-1 mo-left dark dark-style-2">
         <!-- Top bar -->
         <div class="top-bar">
-            <div class="top-bar-content" style="width: 100%; padding: 0px 40px;">
+            <div class="top-bar-content" style="width: 100%; padding: 0px 20px;">
                 <div class="top-bar-contect-space row justify-content-between">
                     <div class="dez-topbar-right list-unstyled e-p-bx ">
                         <ul>
