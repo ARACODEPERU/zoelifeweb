@@ -34,20 +34,20 @@
       </div>
 
       <div class="content-area" style="padding: 10px 20px;">
-            <div class="container-xxl">
-              @if ( count($presentacion) > 0)
-                <div class="p-a20 bg-white selector-d m-b20 box-elevado">
-                  <div class="section-content" style="text-align: center;">
-                      <div class="m-b10">
-                          <h3 class="text-uppercas" style="color: #00b01a;"><b>{{ $presentacion[0]->content }}</b></h3>
-                          <p>{{ $presentacion[1]->content }}</p>
-                          <div class="dez-divider divider-2p icon-center" style="background: #00b01a;">
-                            <i class="fa fa-truck text-white" style="background: #00b01a;"></i></div>
-                      </div>
-                  </div>
+          <div class="container-xxl">
+            @if ( count($presentacion) > 0)
+              <div class="p-a20 bg-white selector-d m-b20 box-elevado">
+                <div class="section-content" style="text-align: center;">
+                    <div class="m-b10">
+                        <h3 class="text-uppercas" style="color: #00b01a;"><b>{{ $presentacion[0]->content }}</b></h3>
+                        <p>{{ $presentacion[1]->content }}</p>
+                        <div class="dez-divider divider-2p icon-center" style="background: #00b01a;">
+                          <i class="fa fa-truck text-white" style="background: #00b01a;"></i></div>
+                    </div>
                 </div>
-              @endif
-            </div>
+              </div>
+            @endif
+          </div>
       </div>
 
       <div class="btn-header-pc">
@@ -230,9 +230,9 @@
         </section>
       </div>
 
-          <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-          <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-          <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
     </div>
 

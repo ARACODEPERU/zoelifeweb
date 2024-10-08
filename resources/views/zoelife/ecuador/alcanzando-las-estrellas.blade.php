@@ -12,8 +12,8 @@
           <div class="dez-bnr-inr ara_centrado_total">
               <img style="width: 100%; height: auto;" src="{{ $banner->content }}" alt="">
           </div>
-          <div class="breadcrumb-row" style="margin-top: 15px; position:relative; z-index:1;">
-              <div class="container">
+          <div class="breadcrumb-row" style="osition:relative; z-index:1;">
+              <div class="container-xxl">
                   <ul class="list-inline">
                       <li><a href="{{ route('web_ecuador_inicio') }}">Home</a></li>
                       <li>Alcanzando las estrellas</li>
@@ -35,25 +35,25 @@
           <!-- Breadcrumb row END -->
       </div>
 
-      <div class="content-area">
-            <div class="container">
-              @if ( count($presentacion) > 0)
-                <div class="p-a20 bg-white selector-d m-b20">
-                  <div class="section-content" style="text-align: center;">
-                      <div class="m-b10">
-                          <h3 class="text-uppercas" style="color: #00b01a;"><b>{{ $presentacion[0]->content }}</b></h3>
-                          <p>{{ $presentacion[1]->content }}</p>
-                          <div class="dez-divider divider-2p icon-center" style="background: #00b01a;">
-                            <i class="fa fa-truck text-white" style="background: #00b01a;"></i></div>
-                      </div>
-                  </div>
+      <div class="content-area" style="padding: 10px 20px;">
+          <div class="container-xxl">
+            @if ( count($presentacion) > 0)
+              <div class="p-a20 bg-white selector-d m-b20">
+                <div class="section-content" style="text-align: center;">
+                    <div class="m-b10">
+                        <h3 class="text-uppercas" style="color: #00b01a;"><b>{{ $presentacion[0]->content }}</b></h3>
+                        <p>{{ $presentacion[1]->content }}</p>
+                        <div class="dez-divider divider-2p icon-center" style="background: #00b01a;">
+                          <i class="fa fa-truck text-white" style="background: #00b01a;"></i></div>
+                    </div>
                 </div>
-              @endif
-            </div>
+              </div>
+            @endif
+          </div>
       </div>
 
       <div class="btn-header-pc">
-        <section style="padding: 60px 10px;">
+        <section style="padding: 60px 30px;">
           <div class="swiper tranding-slider">
             <div class="swiper-wrapper">
               <!-- Slide-start -->
@@ -70,7 +70,7 @@
               <!-- Slide-end -->
             </div>
 
-            <div class="tranding-slider-control" style="margin-top: -200px;">
+            <div class="tranding-slider-control" style="margin-top: -150px;">
                       <div class="container">
                         <div class="row">
                           <div class="col-md-2"></div>
@@ -142,10 +142,10 @@
         </section>
       </div>
 
-      <br><br>
+      <br>
 
       <div class="btn-header-pc">
-        <section  style="padding: 80px 10px;">
+        <section  style="padding: 80px 30px;">
           <div class="swiper tranding-slider">
             <div class="swiper-wrapper">
               <!-- Slide-start -->
@@ -232,9 +232,9 @@
         </section>
       </div>
 
-          <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-          <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-          <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
     </div>
 
