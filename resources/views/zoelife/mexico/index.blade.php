@@ -6,7 +6,7 @@
         <!-- Encabezado fin -->
 
         <!-- Content -->
-        <div class="page-content">
+        <div class="page-content" style="margin-top: 85px;">
 
             <!-- Slider -->
             <div class="btn-header-pc">
@@ -91,67 +91,73 @@
             <x-mexico.vision-mision-valores-area></x-mexico.vision-mision-valores-area>
             <!-- Visión - Misión - Valores / END -->
 
-            <div class="content-area" style="padding: 80px 0px;">
-                <div class="container">
-                        <div class="section-head">
-                            <h2 class="text-uppercase">{{ $equipos[0]->item->content }}</h2>
-                            <div class="dez-divider divider-2px icon-left" style="background: #00b01a;">
-                                <i class="fa fa-thumbs-o-up text-white"  style="background: #00b01a;"></i>
+            <section style="padding: 120px 30px;">
+                <div class="container-xl">
+                    <div class="row">
+                        <div class="col-md-12" style="text-align:center; padding: 40px 0px 10px 0px;">
+                            <div class="section-head">
+                                <h2 class="text-uppercase">{{ $equipos[0]->item->content }}</h2>
+                                <div class="dez-divider divider-2px icon-left" style="background: #00b01a;">
+                                    <i class="fa fa-thumbs-o-up text-white"  style="background: #00b01a;"></i>
+                                </div>
                             </div>
                         </div>
-                        <div class="section-content text-center ">
-                            <div class="row">
-                                <div class="col-md-3" style="padding: 15px;">
-                                    <div class="dez-box m-b30">
-                                        <div class="dez-media">
-                                            <a href="javascript:void(0);">
-                                                <img width="358" height="460"
-                                                    src="{{ $fundador[0]->content }}" alt="">
-                                            </a>
-                                            <div class="dez-info-has bg-primary">
-                                                <ul class="dez-social-icon dez-border">
-                                                    <li><a href="{{ $fundador[4]->content }}"
-                                                            class="fab fa-facebook"></a></li>
-                                                    <li><a href="{{ $fundador[5]->content }}"
-                                                            class="fab fa-instagram"></a></li>
-                                                    <li><a href="{{ $fundador[6]->content }}"
-                                                            class="fab fa-linkedin"></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3" style="padding: 15px;">
+                            <div class="dez-box m-b30">
+                                <div class="dez-media">
+                                    <a href="javascript:void(0);">
+                                        <img width="358" height="460"
+                                            src="{{ $fundador[0]->content }}" alt="">
+                                    </a>
+                                    <div class="dez-info-has bg-primary">
+                                        <ul class="dez-social-icon dez-border">
+                                            <li><a href="{{ $fundador[4]->content }}"
+                                                    class="fab fa-facebook"></a></li>
+                                            <li><a href="{{ $fundador[5]->content }}"
+                                                    class="fab fa-instagram"></a></li>
+                                            <li><a href="{{ $fundador[6]->content }}"
+                                                    class="fab fa-linkedin"></a></li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="col-md-9" style="padding: 15px;">
-                                    <br>
-                                    <h3 class="dez-title" style="text-align: left;">
-                                        <b style="font-size: 30px; color: #00b01a;" >{{ $fundador[1]->content }}</b>
-                                        <br>
-                                        <b class="des-producto">{{ $fundador[2]->content }}</b>
-                                    </h3>
-                                    <p style="text-align: left;">
-                                        {{ $fundador[6]->content }}
-                                    </p>
-                                    <p style="text-align: left;">
-                                        {{ $fundador[7]->content }}
-                                    </p>
-                                    <p style="text-align: left;">
-                                        {{ $fundador[8]->content }}
-                                    </p>
-                                </div>
                             </div>
                         </div>
+                        <div class="col-md-9" style="padding: 15px;">
+                            <br>
+                            <h3 class="dez-title" style="text-align: left;">
+                                <b style="font-size: 30px; color: #00b01a;" >{{ $fundador[1]->content }}</b>
+                                <br>
+                                <b class="des-producto">{{ $fundador[2]->content }}</b>
+                            </h3>
+                            <p style="text-align: justify;">
+                                {{ $fundador[6]->content }}
+                            </p>
+                            <p style="text-align: justify;">
+                                {{ $fundador[7]->content }}
+                            </p>
+                            <p style="text-align: justify;">
+                                {{ $fundador[8]->content }}
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </section>
 
 
             <!-- Video Presentación / STAR -->
-            <div class="section-full text-white bg-img-fix p-t70 p-b70 overlay-black-dark choose-us"
+            <div class="section-full text-white bg-img-fix p-t70 p-b70 overlay-black-middle choose-us"
                 style="background-image:url({{ asset('themes/zoelife/peru/images/background/fondo.jpg') }});">
-                <div class="container">
-                    <div class="section-head text-center text-white" style="padding: 10px;">
-                        <h2 class="h2">Sobre <span style="color: #00b01a;"> Zoé Life</span></h2>
-                        <div class="dez-separator text-primary style-icon border-white">
-                            <img alt="" src="themes/zoelife/peru/images/leaf-green.png" />
+                <div class="container" style="padding: 30px 20px;">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="section-head text-center text-white">
+                                <h2 class="h2 text-uppercase">Sobre <span style="color: #fecc00;"> Zoé Life</span></h2>
+                                <div class="dez-separator style-icon border-white">
+                                    <img src="themes/zoelife/peru/images/leaf-green.png"  alt=""  />
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
@@ -163,39 +169,42 @@
             </div>
             <!-- Video Presentación / END -->
 
-            <div class="content-area" style="padding: 80px 0px;">
-                <div class="container">
-                        <div class="section-head">
-                            <h2 class="text-uppercase">Zona de Descarga</h2>
-                            <div class="dez-divider divider-2pxicon-left" style="background: #00b01a;">
-                                <i class="fa fa-thumbs-o-up  text-white"  style="background: #00b01a;"></i>
+            <section style="padding: 80px 30px;">
+                <div class="container-xl">
+                    <div class="row">
+                        <div class="col-md-12" style="text-align:center; padding: 40px 0px 10px 0px;">
+                            <div class="section-head">
+                                <h2 class="text-uppercase">Zona de Descarga</h2>
+                                <div class="dez-divider divider-2px icon-left" style="background: #00b01a;">
+                                    <i class="fa fa-thumbs-o-up text-white"  style="background: #00b01a;"></i>
+                                </div>
                             </div>
                         </div>
+                    </div>
                         <div class="section-content text-center ">
                             <div class="row" style="justify-content: space-between">
-                                <div class="col-md-4" style="text-align: center; padding: 15px;">
-                                    <a href="{{ $linkDescarga[0]->content }}" target="_blank" class="site-button" 
-                                        style="width: 90%; font-size: 14px; padding: 10px 20px; border-radius: 30px;">
-                                        <b><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; CATÁLOGO DE PRODUCTOS</b>
+                                <div class="col-md-4" style="padding: 15px;">
+                                    <a href="{{ $linkDescarga[0]->content }}" target="_blank" class="site-button btn-zona-descarga" 
+                                        style="font-weight: 700; text-align: center; padding: 17px 15px;">
+                                        <i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; CATÁLOGO DE PRODUCTOS
                                     </a>
                                 </div>
-                                <div class="col-md-4" style="text-align: center; padding: 15px;">
-                                    <a href="{{ $linkDescarga[1]->content }}" target="_blank"  class="site-button" 
-                                        style="width: 90%; font-size: 14px; padding: 10px 20px; border-radius: 30px;">
-                                        <b><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; PLAN LIBERTAD </b>
+                                <div class="col-md-4" style="padding: 15px;">
+                                    <a href="{{ $linkDescarga[1]->content }}" target="_blank"  class="site-button btn-zona-descarga" 
+                                        style="font-weight: 700; text-align: center; padding: 17px 15px;">
+                                        <i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; PLAN LIBERTAD 
                                     </a>
                                 </div>
-                                <div class="col-md-4" style="text-align: center; padding: 15px;">
-                                    <a href="{{ $linkDescarga[2]->content }}" target="_blank"  class="site-button" 
-                                        style="width: 90%; font-size: 14px; padding: 10px 20px; border-radius: 30px;">
-                                        <b><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; MANUAL DE POLÍTICAS Y PROCESOS</b>
+                                <div class="col-md-4" style="padding: 15px;">
+                                    <a href="{{ $linkDescarga[2]->content }}" target="_blank"  class="site-button btn-zona-descarga" 
+                                        style="font-weight: 700; text-align: center; padding: 17px 15px;">
+                                        <i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; MANUAL DE POLÍTICAS Y PROCESOS
                                     </a>
                                 </div>
                             </div>
                         </div>
                 </div>
-            </div>
-
+            </section>
         </div>
         <!-- Content END-->
 
