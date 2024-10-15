@@ -228,6 +228,11 @@ class BoliviaController extends Controller
         $formasContenido = CmsSectionItem::with('item.items')->where('section_id', 123)  //cambiar el id de la seccion ->sedes ubicacion 24
             ->orderBy('position')
             ->get();
+
+        $star_videos = CmsSectionItem::with('item.items')->where('section_id', 138) //peru_videos_alcanzando_las_estrellas_87
+            ->orderBy('position')
+            ->get();
+    
         
 
 
@@ -255,6 +260,7 @@ class BoliviaController extends Controller
             'beneficios' => $beneficios,
             'formasTitle' => $formasTitle,
             'formasContenido' => $formasContenido,
+            'star_videos' => $star_videos,
             'galeryEvents' => $galeryEvents,
             'inscripcioncontacto' => $inscripcioncontacto
         ]);

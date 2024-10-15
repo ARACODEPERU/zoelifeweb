@@ -247,13 +247,9 @@ class PeruController extends Controller
             ->orderBy('position')
             ->get();
         
-
-
         $star_videos = CmsSectionItem::with('item.items')->where('section_id', 132) //peru_videos_alcanzando_las_estrellas_87
             ->orderBy('position')
             ->get();
-
-
 
         $galeryEvents = CmsSectionItem::with('item.items')->where('section_id', 76)
             ->orderBy('position')
