@@ -201,7 +201,7 @@ class BoliviaController extends Controller
 
     public function eventos()
     {
-        $banner = CmsSection::where('component_id', 'bolivia_banner_eventos_24')
+        $slider = CmsSection::where('component_id', 'bolivia_slider_emprendimiento_133')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
@@ -209,7 +209,7 @@ class BoliviaController extends Controller
                 'cms_section_items.position'
             )
             ->orderBy('cms_section_items.position')
-            ->first();
+            ->get();
 
 
         $galeryEvents = CmsSectionItem::with('item.items')->where('section_id', 76)
@@ -228,7 +228,7 @@ class BoliviaController extends Controller
         ->get();
 
         return view('zoelife/bolivia.eventos', [
-            'banner' => $banner,
+            'slider' => $slider,
             'galeryEvents' => $galeryEvents,
             'inscripcioncontacto' => $inscripcioncontacto
         ]);
