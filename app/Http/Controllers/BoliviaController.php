@@ -212,8 +212,23 @@ class BoliviaController extends Controller
             ->get();
 
         $beneficios = CmsSectionItem::with('item.items')->where('section_id', 135)  //cambiar el id de la seccion ->sedes ubicacion 24
-                ->orderBy('position')
-                ->get();
+            ->orderBy('position')
+            ->get();
+
+        $formasTitle = CmsSection::where('component_id', 'bolivia_titulo_formas_ganar_emprendimiento_136')
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->get();
+
+        $formasContenido = CmsSectionItem::with('item.items')->where('section_id', 123)  //cambiar el id de la seccion ->sedes ubicacion 24
+            ->orderBy('position')
+            ->get();
+        
 
 
 
@@ -238,6 +253,8 @@ class BoliviaController extends Controller
         return view('zoelife/bolivia.eventos', [
             'slider' => $slider,
             'beneficios' => $beneficios,
+            'formasTitle' => $formasTitle,
+            'formasContenido' => $formasContenido,
             'galeryEvents' => $galeryEvents,
             'inscripcioncontacto' => $inscripcioncontacto
         ]);

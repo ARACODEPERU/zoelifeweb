@@ -166,7 +166,6 @@
         </section>
         <br>
 
-
         <div class="section-full bg-img-fix p-t90 p-b90 overlay-black-middle choose-us"
             style="background-image:url({{ $formasTitle[0]->content }});">
             <div class="container" style="padding: 20px; z-index: 999;">
