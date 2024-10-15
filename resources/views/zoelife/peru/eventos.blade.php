@@ -61,7 +61,7 @@
                 <div class="container">
                     <ul class="list-inline">
                         <li><a href="{{ route('web_peru_inicio') }}">Home</a></li>
-                        <li>Eventos</li>
+                        <li>Inicia Tu Emprendimiento</li>
                     </ul>
                 </div>
             </div>

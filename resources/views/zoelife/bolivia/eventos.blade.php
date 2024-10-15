@@ -58,7 +58,6 @@
         <!-- Slider END -->
     
         <div class="btn-header-mobile">
-            <!-- Breadcrumb row -->
             <div class="breadcrumb-row" style="margin-top: 80px;">
                 <div class="container">
                     <ul class="list-inline">
@@ -67,10 +66,46 @@
                     </ul>
                 </div>
             </div>
-            <!-- Breadcrumb row END -->
         </div>
 
-        <br><br><br>
+        <section style="padding: 20px 15px;">
+            <div class="container-xl">
+                <div class="row">
+                    @foreach ($beneficios as $key => $beneficio )
+                        <div class="col-md-4" style="padding: 20px;">
+                            <div class="card text-center mb-3 box-beneficios-emprendimiento" style="padding-bottom: 10px;">
+                                <img src="{{ $beneficio->item->items[0]->content }}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title title-green">{{ $beneficio->item->items[1]->content }}</h5>
+                                    <p class="card-text">
+                                        {{ $beneficio->item->items[2]->content }}
+                                    </p>
+                                    {{-- <br>
+                                    <a target="_blank" href="{{ $beneficio->item->items[3]->content }}" class="btn-green">Conoce más</a> --}}
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div style="text-align: center;">
+                            <a href="https://api.whatsapp.com/send?phone=51992914870&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?"
+                                target="_blank" class="btn-green">
+                                <i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;&nbsp; Más información
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+
+
+
+
+
         <div class="btn-header-pc">
             <div style="padding: 0px 10px;" >
                 <section style="padding: 40px 10px;">

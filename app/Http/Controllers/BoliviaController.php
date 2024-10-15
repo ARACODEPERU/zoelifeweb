@@ -211,6 +211,14 @@ class BoliviaController extends Controller
             ->orderBy('cms_section_items.position')
             ->get();
 
+        $beneficios = CmsSectionItem::with('item.items')->where('section_id', 135)  //cambiar el id de la seccion ->sedes ubicacion 24
+                ->orderBy('position')
+                ->get();
+
+
+
+
+
 
         $galeryEvents = CmsSectionItem::with('item.items')->where('section_id', 76)
         ->orderBy('position')
@@ -229,6 +237,7 @@ class BoliviaController extends Controller
 
         return view('zoelife/bolivia.eventos', [
             'slider' => $slider,
+            'beneficios' => $beneficios,
             'galeryEvents' => $galeryEvents,
             'inscripcioncontacto' => $inscripcioncontacto
         ]);
