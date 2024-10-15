@@ -233,16 +233,21 @@ class BoliviaController extends Controller
             ->orderBy('position')
             ->get();
     
-        
-
-
-
-
-
-
         $galeryEvents = CmsSectionItem::with('item.items')->where('section_id', 76)
-        ->orderBy('position')
-        ->get();
+            ->orderBy('position')
+            ->get();
+
+        $tuExito = CmsSection::where('component_id', 'bolivia_tu_Exito_emprendimiento_139')
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->get();
+
+
         //$galeryEvents->prepend(null);
 
         $inscripcioncontacto = CmsSection::where('component_id', 'bolivia_eventos_inscripcion_contacto_100')
@@ -262,6 +267,7 @@ class BoliviaController extends Controller
             'formasContenido' => $formasContenido,
             'star_videos' => $star_videos,
             'galeryEvents' => $galeryEvents,
+            'tuExito' => $tuExito,
             'inscripcioncontacto' => $inscripcioncontacto
         ]);
     }

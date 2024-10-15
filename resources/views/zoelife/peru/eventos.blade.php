@@ -255,8 +255,6 @@
             </div>
         </section>
 
-
-        
       <div class="btn-header-pc">
         <section  style="padding: 80px 30px;">
           <div class="swiper tranding-slider">
@@ -346,28 +344,6 @@
       </div>
         
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <div class="btn-header-pc">
             <section style="padding: 0px 30px;">
               <div class="swiper tranding-slider">
@@ -455,7 +431,6 @@
             </section>
         </div>
         
-
         <section style="padding: 20px 30px;">
             <div class="container box-elevado-green bg-white selector-d" style="padding: 40px 20px; border-radius: 20px;  border: 3px solid #00b01a;">
                 <div class="row">

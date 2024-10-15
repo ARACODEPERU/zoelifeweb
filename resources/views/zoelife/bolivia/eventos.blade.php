@@ -368,9 +368,39 @@
               </div>
             </section>
         </div>
-
-
         
+        <section style="padding: 20px 30px;">
+            <div class="container box-elevado-green bg-white selector-d" style="padding: 40px 20px; border-radius: 20px;  border: 3px solid #00b01a;">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="h2 text-uppercase" style="color: #00b01a;"><b>{{ $tuExito[0]->content }}</b></h2>
+                        <p class="card-text" style="font-size: 20px;">
+                            {{ $tuExito[1]->content }}
+                        </p>
+                        <div class="dez-separator text-primary style-icon">
+                            <img alt="" src="themes/zoelife/peru/images/leaf-green.png" />
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-6  text-center" style="padding: 15px;">
+                        <a href="https://api.whatsapp.com/send?phone=51{{ $tuExito[2]->content }}&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?" 
+                            target="_blank" class="btn-green" style="font-weight: 700;">
+                            <i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;&nbsp; Quiero unirme ahora
+                        </a>
+                    </div>
+                    <div class="col-md-6  text-center" style="padding: 15px;">
+                        <a href="{{ $tuExito[3]->content }}"  target="_blank" class="btn-green">
+                            <i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; Descarga plan libertad
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
         
         <div class="containe" style="padding: 40px;">
             <div class="row" style="justify-content: space-between">
