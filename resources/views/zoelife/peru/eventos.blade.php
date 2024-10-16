@@ -460,18 +460,6 @@
                 </div>
             </div>
         </section>
-
-        
-
-
-
-
-
-
-
-
-
-
         
         <section style="padding: 40px 25px;">
             <div class="container-xl">

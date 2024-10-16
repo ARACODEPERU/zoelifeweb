@@ -398,242 +398,265 @@
                 </div>
             </div>
         </section>
-
-
-
         
-        <div class="containe" style="padding: 40px;">
-            <div class="row" style="justify-content: space-between">
-                @if ( count($inscripcioncontacto) > 0 )
-                <div class="col-md-3"></div>
-                <div class="col-md-3" style="text-align: center; padding: 15px;">
-                    <a href="{{ $inscripcioncontacto[0]->content }}" target="_blank" class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;">
-                        <b><i class="fa fa-edit"aria-hidden="true"></i>&nbsp;&nbsp; Inscripciones</b>
-                    </a>
+        <section style="padding: 40px 25px;">
+            <div class="container-xl">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-head">
+                            <h2 class="text-uppercase">Conoce a la <b>Comunidad</b></h2>
+                            <div class="dez-divider divider-2pxicon-left" style="background: #00b01a;">
+                                <i class="fa fa-thumbs-o-up  text-white"  style="background: #00b01a;"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-3" style="text-align: center; padding: 15px;">
-                    <a href="https://api.whatsapp.com/send?phone=51{{ $inscripcioncontacto[1]->content }}&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?" target="_blank"  class="site-button" style="width: 80%; font-size: 18px; padding: 10px 30px; border-radius: 30px;">
-                        <b><i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;&nbsp; Más Información</b>
-                    </a>
-                </div>
-                <div class="col-md-3"></div>
-                @endif
             </div>
-        </div>
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        
+                        @foreach ($comunidad as $key => $cn )
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="{{ $cn->item->items[0]->content }}" alt="" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="name">{{ $cn->item->items[1]->content }}</h2>
+                                    <span style="margin-top: -10px;">
+                                        <img class="img-flags" src="{{ $cn->item->items[2]->content }}" alt="">&nbsp; {{ $cn->item->items[3]->content }}
+                                    </span>
+                                    <p class="description" style="padding: 15px;">
+                                        {{ $cn->item->items[4]->content }}
+                                    </p>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+    
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+                
+            </div>
+        </section>
+
 
         
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
-  </div>
 
 
 
-<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-<!-- script del video -->
-<script>
-    var TrandingSlider = new Swiper('.tranding-slider', {
-    effect: 'coverflow',
-    grabCursor: true,
-    centeredSlides: true,
-    loop: true,
-    slidesPerView: 'auto',
-    coverflowEffect: {
-    rotate: 0,
-    stretch: 0,
-    depth: 100,
-    modifier: 2.5,
-    },
-    pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    },
-    navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-    }
-    });
-</script>
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+        <!-- script del video -->
+        <script>
+            var TrandingSlider = new Swiper('.tranding-slider', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            loop: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2.5,
+            },
+            pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            },
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            }
+            });
+        </script>
 
-<style>
-    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
-    .text-center {
-    text-align: center;
-    }
+            .text-center {
+            text-align: center;
+            }
 
-    .section-heading {
-    font-size: 3rem;
-    color: var(--primary);
-    padding: 2rem;
-    }
+            .section-heading {
+            font-size: 3rem;
+            color: var(--primary);
+            padding: 2rem;
+            }
 
-    #tranding {
-    padding: 4rem 0;
-    }
+            #tranding {
+            padding: 4rem 0;
+            }
 
-    @media (max-width:1440px) {
-    #tranding {
-    padding: 7rem 0;
-    }
-    }
+            @media (max-width:1440px) {
+            #tranding {
+            padding: 7rem 0;
+            }
+            }
 
-    #tranding .tranding-slider {
-    height: 52rem;
-    padding: 2rem 0;
-    position: relative;
-    }
+            #tranding .tranding-slider {
+            height: 52rem;
+            padding: 2rem 0;
+            position: relative;
+            }
 
-    @media (max-width:500px) {
-    #tranding .tranding-slider {
-    height: 45rem;
-    }
-    }
+            @media (max-width:500px) {
+            #tranding .tranding-slider {
+            height: 45rem;
+            }
+            }
 
-    .tranding-slide {
-    width: 37rem;
-    height: 42rem;
-    position: relative;
-    }
+            .tranding-slide {
+            width: 37rem;
+            height: 42rem;
+            position: relative;
+            }
 
-    @media (max-width:500px) {
-    .tranding-slide {
-    width: 28rem !important;
-    height: 36rem !important;
-    }
-    .tranding-slide .tranding-slide-img iframe {
-    width: 28rem !important;
-    height: 36rem !important;
-    }
-    }
+            @media (max-width:500px) {
+            .tranding-slide {
+            width: 28rem !important;
+            height: 36rem !important;
+            }
+            .tranding-slide .tranding-slide-img iframe {
+            width: 28rem !important;
+            height: 36rem !important;
+            }
+            }
 
-    .tranding-slide .tranding-slide-img iframe {
-    width: 37rem;
-    height: 42rem;
-    border-radius: 2rem;
-    object-fit: cover;
-    }
+            .tranding-slide .tranding-slide-img iframe {
+            width: 37rem;
+            height: 42rem;
+            border-radius: 2rem;
+            object-fit: cover;
+            }
 
-    .tranding-slide .tranding-slide-content {
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    }
+            .tranding-slide .tranding-slide-content {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            }
 
-    .tranding-slide-content .food-price {
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    color: var(--white);
-    }
+            .tranding-slide-content .food-price {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            color: var(--white);
+            }
 
-    .tranding-slide-content .tranding-slide-content-bottom {
-    position: absolute;
-    bottom: 1rem;
-    left: 1rem;
-    color: var(--white);
-    }
+            .tranding-slide-content .tranding-slide-content-bottom {
+            position: absolute;
+            bottom: 1rem;
+            left: 1rem;
+            color: var(--white);
+            }
 
-    .food-rating {
-    padding-top: 1rem;
-    display: flex;
-    gap: 1rem;
-    }
+            .food-rating {
+            padding-top: 1rem;
+            display: flex;
+            gap: 1rem;
+            }
 
-    .rating ion-icon {
-    color: var(--primary);
-    }
+            .rating ion-icon {
+            color: var(--primary);
+            }
 
-    .swiper-slide-shadow-left,
-    .swiper-slide-shadow-right {
-    display: none;
-    }
+            .swiper-slide-shadow-left,
+            .swiper-slide-shadow-right {
+            display: none;
+            }
 
-    .tranding-slider-control {
-    position: relative;
-    bottom: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    }
+            .tranding-slider-control {
+            position: relative;
+            bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            }
 
-    .tranding-slider-control .swiper-button-next {
-    left: 58% !important;
-    transform: translateX(-58%) !important;
-    }
+            .tranding-slider-control .swiper-button-next {
+            left: 58% !important;
+            transform: translateX(-58%) !important;
+            }
 
-    @media (max-width:990px) {
-    .tranding-slider-control .swiper-button-next {
-    left: 70% !important;
-    transform: translateX(-70%) !important;
-    }
-    }
+            @media (max-width:990px) {
+            .tranding-slider-control .swiper-button-next {
+            left: 70% !important;
+            transform: translateX(-70%) !important;
+            }
+            }
 
-    @media (max-width:450px) {
-    .tranding-slider-control .swiper-button-next {
-    left: 80% !important;
-    transform: translateX(-80%) !important;
-    }
-    }
+            @media (max-width:450px) {
+            .tranding-slider-control .swiper-button-next {
+            left: 80% !important;
+            transform: translateX(-80%) !important;
+            }
+            }
 
-    @media (max-width:990px) {
-    .tranding-slider-control .swiper-button-prev {
-    left: 30% !important;
-    transform: translateX(-30%) !important;
-    }
-    }
+            @media (max-width:990px) {
+            .tranding-slider-control .swiper-button-prev {
+            left: 30% !important;
+            transform: translateX(-30%) !important;
+            }
+            }
 
-    @media (max-width:450px) {
-    .tranding-slider-control .swiper-button-prev {
-    left: 20% !important;
-    transform: translateX(-20%) !important;
-    }
-    }
+            @media (max-width:450px) {
+            .tranding-slider-control .swiper-button-prev {
+            left: 20% !important;
+            transform: translateX(-20%) !important;
+            }
+            }
 
-    .tranding-slider-control .slider-arrow {
-    background: var(--white);
-    width: 3.5rem;
-    height: 3.5rem;
-    border-radius: 50%;
-    left: 42%;
-    transform: translateX(-42%);
-    filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
-    }
+            .tranding-slider-control .slider-arrow {
+            background: var(--white);
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 50%;
+            left: 42%;
+            transform: translateX(-42%);
+            filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+            }
 
-    .tranding-slider-control .slider-arrow ion-icon {
-    font-size: 2rem;
-    color: #222224;
-    }
+            .tranding-slider-control .slider-arrow ion-icon {
+            font-size: 2rem;
+            color: #222224;
+            }
 
-    .tranding-slider-control .slider-arrow::after {
-    content: '';
-    }
+            .tranding-slider-control .slider-arrow::after {
+            content: '';
+            }
 
-    .tranding-slider-control .swiper-pagination {
-    position: relative;
-    width: 15rem;
-    bottom: 1rem;
-    }
+            .tranding-slider-control .swiper-pagination {
+            position: relative;
+            width: 15rem;
+            bottom: 1rem;
+            }
 
-    .tranding-slider-control .swiper-pagination .swiper-pagination-bullet {
-    filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
-    }
+            .tranding-slider-control .swiper-pagination .swiper-pagination-bullet {
+            filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+            }
 
-    .tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
-    background: var(--primary);
-    }
-</style>
+            .tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
+            background: var(--primary);
+            }
+        </style> 
 
         <style>
             .paginator_aracode {
             transition: opacity 0.5s;
             }
         </style>
-            <script>
-
+        <script>
                     var intervalID;
                     function startInterval() {
                     intervalID = setInterval(function() {
@@ -689,8 +712,12 @@
                             }
                     }
                 }
-            </script>
-        
+        </script>
+
+
+
+  </div>
+
     <!-- Footer -->
     <x-bolivia.footer-area></x-bolivia.footer-area>
     <!-- Footer END-->
