@@ -106,9 +106,42 @@
                             </div>
                         </div>
                         <ul class="nav navbar-nav div-nav-slide-dark">
-                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_mexico_inicio') ? 'active' : '' }}"
-                                    href="{{ route('web_mexico_inicio') }}">Inicio</a> </li>
-                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_mexico_productos') ? 'active' : '' }}"
+                            <li>
+                                <a class="dropdown-item aquitoy {{ request()->routeIs('web_mexico_inicio') ? 'active' : '' }}"
+                                    href="{{ route('web_mexico_inicio') }}">Inicio
+                                </a>
+                            </li>
+                            @php
+                                $currentUrl = request()->url();
+                            @endphp
+                            <li>
+                                <a class="dropdown-item aquitoy {{ $currentUrl == route('web_mexico_productos', 1) ? 'active' : '' }}"
+                                    href="{{ route('web_mexico_productos', 1) }}">Zoé nutraceúticos</a>
+                                <ul class="sub-menu">
+                                    @foreach ($productsct1 as $product)
+                                        <li>
+                                            <a href="{{ route('web_mexico_producto_descripcion', $product->id) }}">
+                                                {{ $product->name }}
+                                            </a>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="dropdown-item aquitoy {{ $currentUrl == route('web_mexico_productos', 2) ? 'active' : '' }}"
+                                    href="{{ route('web_mexico_productos', 2) }}">Cuidado Personal</a>
+                                <ul class="sub-menu">
+                                    @foreach ($productsct2 as $product2)
+                                        <li>
+                                            <a href="{{ route('web_mexico_producto_descripcion', $product2->id) }}">
+                                                {{ $product2->name }}
+                                            </a>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            </li>
+                            {{-- <li>
+                                <a class="dropdown-item aquitoy {{ request()->routeIs('web_mexico_productos') ? 'active' : '' }}"
                                     href="{{ route('web_mexico_productos') }}">Productos</a>
                                 <ul class="sub-menu">
                                     @foreach ($products as $product)
@@ -119,7 +152,7 @@
                                         </li>
                                     @endforeach
                                 </ul>
-                            </li>
+                            </li> --}}
                             <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_mexico_testimonios') ? 'active' : '' }}"
                                     href="{{ route('web_mexico_testimonios') }}">Testimonios</a> </li>
                             <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_mexico_centros') ? 'active' : '' }}"

@@ -24,7 +24,7 @@ class BoliviaController extends Controller
             ->get();
 
         $sliderMobil = CmsSection::where('component_id', 'peru_slider_inicio_mobil_116')
-                ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
                 'cms_items.content',
@@ -110,12 +110,13 @@ class BoliviaController extends Controller
                     ->where('category_id', $id);
             })
             ->where('countries.description', 'Bolivia')
-            ->select('onli_items.name', 
-            'onli_items.image', 
-            'onli_items.id',
-            'onli_items.item_id',
-            'products.description as nameporduct',
-            'onli_items.description'
+            ->select(
+                'onli_items.name',
+                'onli_items.image',
+                'onli_items.id',
+                'onli_items.item_id',
+                'products.description as nameporduct',
+                'onli_items.description'
             )
             ->get();
 
@@ -158,7 +159,7 @@ class BoliviaController extends Controller
                 ->from('onli_items')
                 ->where('status', true)
                 ->groupBy('name');
-            })
+        })
             ->get();
 
         $testimonies = CmsTestimony::with('product')->inRandomOrder()->take(20)->get();
@@ -213,19 +214,19 @@ class BoliviaController extends Controller
 
 
         $galeryEvents = CmsSectionItem::with('item.items')->where('section_id', 76)
-        ->orderBy('position')
-        ->get();
+            ->orderBy('position')
+            ->get();
         //$galeryEvents->prepend(null);
 
         $inscripcioncontacto = CmsSection::where('component_id', 'bolivia_eventos_inscripcion_contacto_100')
-        ->join('cms_section_items', 'section_id', 'cms_sections.id')
-        ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
-        ->select(
-            'cms_items.content',
-            'cms_section_items.position'
-        )
-        ->orderBy('cms_section_items.position')
-        ->get();
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->get();
 
         return view('zoelife/bolivia.eventos', [
             'banner' => $banner,

@@ -63,7 +63,7 @@ Route::get('/peru.contacto', [PeruController::class, 'contacto'])->name('web_per
 
 Route::get('/bolivia', [BoliviaController::class, 'inicio'])->name('web_bolivia_inicio');
 Route::get('/bolivia.nosotros', [BoliviaController::class, 'nosotros'])->name('web_bolivia_nosotros');
-Route::get('/bolivia.productos', [BoliviaController::class, 'productos'])->name('web_bolivia_productos');
+Route::get('/bolivia.productos/{id?}', [BoliviaController::class, 'productos'])->name('web_bolivia_productos');
 Route::get('/bolivia.producto-descripcion/{id}', [BoliviaController::class, 'productodescripcion'])->name('web_bolivia_producto_descripcion');
 Route::get('/bolivia.testimonios', [BoliviaController::class, 'testimonios'])->name('web_bolivia_testimonios');
 Route::get('/bolivia.centros-de-distribucion', [BoliviaController::class, 'centros'])->name('web_bolivia_centros');
@@ -76,7 +76,7 @@ Route::get('/bolivia.contacto', [BoliviaController::class, 'contacto'])->name('w
 
 Route::get('/ecuador', [EcuadorController::class, 'inicio'])->name('web_ecuador_inicio');
 Route::get('/ecuador.nosotros', [EcuadorController::class, 'nosotros'])->name('web_ecuador_nosotros');
-Route::get('/ecuador.productos', [EcuadorController::class, 'productos'])->name('web_ecuador_productos');
+Route::get('/ecuador.productos/{id?}', [EcuadorController::class, 'productos'])->name('web_ecuador_productos');
 Route::get('/ecuador.producto-descripcion/{id}', [EcuadorController::class, 'productodescripcion'])->name('web_ecuador_producto_descripcion');
 Route::get('/ecuador.testimonios', [EcuadorController::class, 'testimonios'])->name('web_ecuador_testimonios');
 Route::get('/ecuador.centros-de-distribucion', [EcuadorController::class, 'centros'])->name('web_ecuador_centros');
@@ -88,7 +88,7 @@ Route::get('/ecuador.contacto', [EcuadorController::class, 'contacto'])->name('w
 
 Route::get('/colombia', [ColombiaController::class, 'inicio'])->name('web_colombia_inicio');
 Route::get('/colombia.nosotros', [ColombiaController::class, 'nosotros'])->name('web_colombia_nosotros');
-Route::get('/colombia.productos', [ColombiaController::class, 'productos'])->name('web_colombia_productos');
+Route::get('/colombia.productos/{id?}', [ColombiaController::class, 'productos'])->name('web_colombia_productos');
 Route::get('/colombia.producto-descripcion/{id}', [ColombiaController::class, 'productodescripcion'])->name('web_colombia_producto_descripcion');
 Route::get('/colombia.testimonios', [ColombiaController::class, 'testimonios'])->name('web_colombia_testimonios');
 Route::get('/colombia.centros-de-distribucion', [ColombiaController::class, 'centros'])->name('web_colombia_centros');
@@ -100,7 +100,7 @@ Route::get('/colombia.contacto', [ColombiaController::class, 'contacto'])->name(
 
 Route::get('/mexico', [MexicoController::class, 'inicio'])->name('web_mexico_inicio');
 Route::get('/mexico.nosotros', [MexicoController::class, 'nosotros'])->name('web_mexico_nosotros');
-Route::get('/mexico.productos', [MexicoController::class, 'productos'])->name('web_mexico_productos');
+Route::get('/mexico.productos/{id?}', [MexicoController::class, 'productos'])->name('web_mexico_productos');
 Route::get('/mexico.producto-descripcion/{id}', [MexicoController::class, 'productodescripcion'])->name('web_mexico_producto_descripcion');
 Route::get('/mexico.testimonios', [MexicoController::class, 'testimonios'])->name('web_mexico_testimonios');
 Route::get('/mexico.centros-de-distribucion', [MexicoController::class, 'centros'])->name('web_mexico_centros');

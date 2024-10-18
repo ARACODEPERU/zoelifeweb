@@ -15,6 +15,8 @@ class HeaderArea extends Component
     protected $products;
     protected $pages; //de aqui se saca los paises o countries
     protected $country;
+    protected $productsct1;
+    protected $productsct2;
     /**
      * Create a new component instance.
      */
@@ -30,7 +32,26 @@ class HeaderArea extends Component
 
             ->orderBy('cms_section_items.position')
             ->get();
+
         $this->products  = OnliItem::where('country_id', 4)->get();
+
+        $this->productsct1 = OnliItem::join('products', 'products.id', 'item_id')
+            ->join('product_categories', function ($query) {
+                $query->on('product_categories.product_id', 'products.id')
+                    ->where('category_id', 1);
+            })
+            ->select('onli_items.*')
+            ->where('country_id', 4)
+            ->get();
+
+        $this->productsct2 = OnliItem::join('products', 'products.id', 'item_id')
+            ->join('product_categories', function ($query) {
+                $query->on('product_categories.product_id', 'products.id')
+                    ->where('category_id', 2);
+            })
+            ->select('onli_items.*')
+            ->where('country_id', 4)
+            ->get();
 
         $this->pages = CmsPage::with('country')
             ->where('status', true)
@@ -50,6 +71,8 @@ class HeaderArea extends Component
             'products' => $this->products,
             'pages' => $this->pages,
             'country' => $this->country,
+            'productsct1' => $this->productsct1,
+            'productsct2' => $this->productsct2,
         ]);
     }
 }

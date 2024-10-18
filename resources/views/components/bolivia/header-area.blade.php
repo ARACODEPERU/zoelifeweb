@@ -108,13 +108,43 @@
                         <ul class="nav navbar-nav div-nav-slide-dark">
                             <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_bolivia_inicio') ? 'active' : '' }}"
                                     href="{{ route('web_bolivia_inicio') }}">Inicio</a> </li>
-                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_bolivia_productos') ? 'active' : '' }}"
+                            {{-- <li>
+                                <a class="dropdown-item aquitoy {{ request()->routeIs('web_bolivia_productos') ? 'active' : '' }}"
                                     href="{{ route('web_bolivia_productos') }}">Productos</a>
                                 <ul class="sub-menu">
                                     @foreach ($products as $product)
                                         <li>
                                             <a href="{{ route('web_bolivia_producto_descripcion', $product->id) }}">
                                                 {{ $product->name }}
+                                            </a>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            </li> --}}
+                            @php
+                                $currentUrl = request()->url();
+                            @endphp
+                            <li>
+                                <a class="dropdown-item aquitoy {{ $currentUrl == route('web_bolivia_productos', 1) ? 'active' : '' }}"
+                                    href="{{ route('web_bolivia_productos', 1) }}">Zoé nutraceúticos</a>
+                                <ul class="sub-menu">
+                                    @foreach ($productsct1 as $product)
+                                        <li>
+                                            <a href="{{ route('web_bolivia_producto_descripcion', $product->id) }}">
+                                                {{ $product->name }}
+                                            </a>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="dropdown-item aquitoy {{ $currentUrl == route('web_bolivia_productos', 2) ? 'active' : '' }}"
+                                    href="{{ route('web_bolivia_productos', 2) }}">Cuidado Personal</a>
+                                <ul class="sub-menu">
+                                    @foreach ($productsct2 as $product2)
+                                        <li>
+                                            <a href="{{ route('web_bolivia_producto_descripcion', $product2->id) }}">
+                                                {{ $product2->name }}
                                             </a>
                                         </li>
                                     @endforeach
