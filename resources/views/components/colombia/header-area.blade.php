@@ -1,4 +1,4 @@
-<div>
+
     <!-- Importando darkMode -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="{{ asset('css/darkMode.css') }}">
@@ -6,8 +6,7 @@
 
     <!-- Header -->
     <header class="site-header header-style-1 mo-left dark dark-style-2">
-        <!-- Top bar -->
-        <div class="top-bar">
+        <div class="top-bar btn-header-pc">
             <div class="top-bar-content" style="width: 100%; padding: 0px 40px;">
                 <div class="top-bar-contect-space row justify-content-between">
                     <div class="dez-topbar-right list-unstyled e-p-bx ">
@@ -20,7 +19,39 @@
                                 <i class="fa fa-envelope"></i><span>{{ $header[3]->content }}</span>
                             </li>
                             <li>
-                                <i class="fa fa-phone"></i><span>(+57) {{ $header[4]->content }}</span>
+                                <i class="fa fa-phone"></i><span>(+51) {{ $header[4]->content }}</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="top-bar btn-header-mobile">
+            <div class="top-bar-content" style="width: 100%; padding: 0px 40px;">
+                <div class="top-bar-contect-space row justify-content-between">
+                    <div class="dez-topbar-right list-unstyled e-p-bx ">
+                        <ul>
+                            <li>
+                                <a href="https://zoelifeinternational.com/" target="_blank" class=""
+                                    title="Zoé Global" style="text-decoration: none; padding: 5px 15px;">
+                                    <i class="fa fa-globe" aria-hidden="true"></i>
+                                    Zoé Global
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://zoelife.global/link/store/TIENDAPUBLICA" target="_blank" class=""
+                                    title="Tienda Online" style="text-decoration: none; padding: 5px 15px;">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                    Tienda Online
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://zoelife.global/LoginSalesForce.php" target="_blank" class=""
+                                    title="Oficina Virtual" style="text-decoration: none; padding: 5px 15px;">
+                                    <i class="fa fa-laptop" aria-hidden="true"></i>
+                                    Oficina Virtual
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -28,10 +59,12 @@
             </div>
         </div>
         <!-- Top Bar END-->
+
+
         <!-- Main Header -->
         <div class="sticky-header main-bar-wraper navbar-expand-lg">
             <div class="main-bar clearfix ">
-                <div class="clearfix" style="width: 100%; padding: 0px 40px;">
+                <div class="clearfix" style="width: 100%; padding: 0px 20px;">
                     <!-- Website Logo -->
                     <div class="logo-header logo-dark mostion">
                         <a href="{{ route('web_peru_inicio') }}">
@@ -157,13 +190,20 @@
                             <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_colombia_centros') ? 'active' : '' }}"
                                     href="{{ route('web_colombia_centros') }}">Centros de Distribución</a> </li>
                             <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_colombia_eventos') ? 'active' : '' }}"
-                                    href="{{ route('web_colombia_eventos') }}">Eventos</a> </li>
-                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_colombia_alcanzando_las_estrellas') ? 'active' : '' }}"
-                                    href="{{ route('web_colombia_alcanzando_las_estrellas') }}">Alcanzando las
-                                    Estrellas</a> </li>
+                                    href="{{ route('web_colombia_eventos') }}">Inicia tu emprendimiento</a> </li>
+                            <li> 
+                                <a class="dropdown-item aquitoy {{ request()->routeIs('web_colombia_alcanzando_las_estrellas') ? 'active' : '' }}"
+                                    href="{{ route('web_colombia_alcanzando_las_estrellas') }}">
+                                    Servicio Social
+                                </a> 
+                            </li>
 
-                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_colombia_university') ? 'active' : '' }}"
-                                    href="{{ route('web_colombia_university') }}">University</a> </li>
+                            {{-- <li> 
+                                <a class="dropdown-item aquitoy {{ request()->routeIs('web_colombia_university') ? 'active' : '' }}"
+                                    href="{{ route('web_colombia_university') }}">
+                                    University
+                                </a>
+                            </li> --}}
                             <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_colombia_contacto') ? 'active' : '' }}"
                                     href="{{ route('web_colombia_contacto') }}">Contacto</a> </li>
                             <li class="switch" style="top: 25px;">
@@ -178,4 +218,3 @@
         <!-- Main Header END -->
     </header>
     <!-- Header END -->
-</div>

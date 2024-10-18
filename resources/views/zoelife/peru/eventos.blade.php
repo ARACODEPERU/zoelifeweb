@@ -8,14 +8,14 @@
     <div class="page-content" style="margin-top: 85px;">
 
         <!-- Slider -->
-        <div class="btn-header-pc">
-                <div class="main-slider style-two default-banner">
+        <section>
+            <div class="main-slider style-two default-banner">
                     <div class="tp-banner-container">
                         <div class="tp-banner">
                             <div id="dz_rev_slider_4_wrapper" class="rev_slider_wrapper fullwidthbanner-container"
                                 data-alias="news-gallery36" data-source="gallery"
                                 style="margin:0px auto;background-color:#ffffff;padding:0px;margin-top:0px;margin-bottom:0px;">
-                                <div id="dz_rev_slider_4" class="rev_slider fullwidthabanner" style="display:none;"
+                                <div id="dz_rev_slider_4" class="rev_slider fullwidthabanner ara_centrado_total" style="display:none;"
                                     data-version="5.3.0.2">
                                     <ul>
                                         @foreach ($slider as $k => $row)
@@ -26,8 +26,8 @@
                                                 data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"
                                                 data-title="" data-param1="" data-param2="" data-param3=""
                                                 data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
-                                                data-param9="" data-param10="" class="ara_centrado_total">
-                                                <img src="{{ $row->content }}" alt="" data-bgposition="center center"
+                                                data-param9="" data-param10="" class="ara_centrado_total" style="width: 100%;">
+                                                <img width="100%;" src="{{ $row->content }}" alt="" data-bgposition="center center"
                                                         data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10"
                                                         class="rev-slidebg" data-no-retina="" style="background-size: cover; background-position: center; width: 100%; height: auto;"
                                                 />
@@ -52,25 +52,23 @@
                             </div>
                         </div>
                     </div>
-                </div>
-        </div>
+            </div>
+        </section>
         <!-- Slider END -->
 
         <div class="btn-header-mobile">
-            <!-- Breadcrumb row -->
-            <div class="breadcrumb-row" style="margin-top: 80px;">
+            <div class="breadcrumb-row">
                 <div class="container">
                     <ul class="list-inline">
                         <li><a href="{{ route('web_peru_inicio') }}">Home</a></li>
-                        <li>Eventos</li>
+                        <li>Inicia Tu Emprendimiento</li>
                     </ul>
                 </div>
             </div>
-            <!-- Breadcrumb row END -->
         </div>
 
-        <section>
-            <div class="container-xl" style="padding: 60px 0px 80px 0px;">
+        <section style="padding: 20px 15px;">
+            <div class="container-xl">
                 <div class="row">
                     @foreach ($beneficios as $key => $beneficio )
                         <div class="col-md-4" style="padding: 20px;">
@@ -81,8 +79,8 @@
                                     <p class="card-text">
                                         {{ $beneficio->item->items[2]->content }}
                                     </p>
-                                    <br>
-                                    <a target="_blank" href="{{ $beneficio->item->items[3]->content }}" class="btn-green">Conoce más</a>
+                                    {{-- <br>
+                                    <a target="_blank" href="{{ $beneficio->item->items[3]->content }}" class="btn-green">Conoce más</a> --}}
                                 </div>
                             </div>
                         </div>
@@ -153,13 +151,24 @@
                         </div>
                     </div> --}}
                 </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div style="text-align: center;">
+                            <a href="https://api.whatsapp.com/send?phone=51992914870&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?"
+                                target="_blank" class="btn-green">
+                                <i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;&nbsp; Más información
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-
+        <br>
 
         <div class="section-full bg-img-fix p-t90 p-b90 overlay-black-middle choose-us"
             style="background-image:url({{ $formasTitle[0]->content }});">
-            <div class="container" style="padding: 20px;">
+            <div class="container" style="padding: 20px; z-index: 999;">
                 <div class="section-head text-center text-white" style="padding: 10px;">
                     <h2 class="h2 text-uppercase">{{ $formasTitle[1]->content }} <span style="color: #fecc00;"> {{ $formasTitle[2]->content }}</span></h2>
                     <div class="dez-separator  style-icon border-white">
@@ -167,20 +176,20 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <img style="width: 100%;" src="{{ $formasTitle[3]->content }}" alt="">
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-9">
                         <div class="box-ganar">
                             <ul class="list-group list-group-flush">
                                 @foreach ($formasContenido as $key => $contenido )
-                                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                                        {{ $contenido->item->items[0]->content }}
-                                        <a href="{{ $contenido->item->items[1]->content }}">
+                                    <li class="list-group-item d-flex" style="font-size: 18px;">
+                                        <i class="fa fa-money" aria-hidden="true"></i>&nbsp; {{ $contenido->item->items[0]->content }}
+                                        {{-- <a href="{{ $contenido->item->items[1]->content }}">
                                             <span class="badge text-bg-primary rounded-pill" style="padding: 5px 15px; background: #5A9F00 !important;">
                                                 <i class="fa fa-play"></i> Video
                                             </span>
-                                        </a>
+                                        </a> --}}
                                     </li>
                                 @endforeach
                                 {{-- <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -222,7 +231,7 @@
             </div>
         </div>
 
-        <section style="padding: 80px 0px;">
+        <section style="padding: 80px 15px 0px 15px;">
             <div class="container-xl">
                 <div class="row">
                     <div class="col-md-12">
@@ -234,7 +243,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                {{-- <div class="row">
                     @if (count($galeryEvents) > 0)
                         @foreach ($galeryEvents as $key => $event)
                         <div class="col-md-3" style="padding: 20px;">
@@ -242,12 +251,188 @@
                         </div>
                         @endforeach
                     @endif
-                </div>
+                </div> --}}
             </div>
         </section>
 
-        <section style="padding: 20px 0px 80px 0px;">
-            <div class="container" style="padding: 40px 20px; border-radius: 20px;  border: 3px solid #00b01a;">
+      <div class="btn-header-pc">
+        <section  style="padding: 80px 30px;">
+          <div class="swiper tranding-slider">
+            <div class="swiper-wrapper">
+              <!-- Slide-start -->
+                  @if ( count($star_videos) > 0 )
+                      @foreach ($star_videos as $key => $star_video)
+                          <div class="swiper-slide tranding-slide">
+                          <div  style=" width: 100%; height: 250px;">
+                              {!! $star_video->item->items[0]->content !!}
+                              {{-- <h3 style="text-align: center; margin-top: 10px;">{{ $star_video->title }}</h2> --}}
+                          </div>
+                          </div>
+                      @endforeach
+                  @endif
+              <!-- Slide-end -->
+            </div>
+
+            <div class="tranding-slider-control" style="margin-top: -260px;">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-2"></div>
+                  <div class="col-md-2">
+                    <div class="swiper-button-prev slider-arrow" style="margin-top: -40px;">
+                      <ion-icon name="arrow-back-outline"></ion-icon>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="swiper-pagination" style="justify-content: center;"></div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="swiper-button-next slider-arrow" style="margin-top: -40px;">
+                      <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </div>
+                  </div>
+                  <div class="col-md-2"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+      </div>
+      
+      <div class="btn-header-mobile">
+        <section  style="padding: 80px 10px;">
+          <div class="swiper tranding-slider">
+            <div class="swiper-wrapper">
+                  @if ( count($star_videos) > 0 )
+                      @foreach ($star_videos as $key => $star_video)
+                          <div class="swiper-slide tranding-slide">
+                          <div  style=" width: 100%; height: 250px;">
+                              {!! $star_video->item->items[0]->content !!}
+                              {{-- <h3 style="text-align: center; margin-top: 10px;">{{ $star_video->title }}</h2> --}}
+                          </div>
+                          </div>
+                      @endforeach
+                  @endif
+            </div>
+            <div class="tranding-slider-control" style="margin-top: -280px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12" style="justify-content: center; justify-items: center;">
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-4">
+                            <div class="swiper-button-prev slider-arrow" style="margin-top: -40px;">
+                            <ion-icon name="arrow-back-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="swiper-button-next slider-arrow" style="margin-top: -40px;">
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </section>
+      </div>
+        
+
+        <div class="btn-header-pc">
+            <section style="padding: 0px 30px;">
+              <div class="swiper tranding-slider">
+                <div class="swiper-wrapper">
+                    @if (count($galeryEvents) > 0)
+                        @foreach ($galeryEvents as $key => $event)
+                            <div class="swiper-slide tranding-slide">
+                                <div  style=" width: 100%; height: 250px;">
+                                    <img src="{{ $event->item->items[0]->content }}" alt="" style="width: 100%;">
+                                </div>
+                            </div>
+                        @endforeach
+                    @endif
+                </div>
+    
+                <div class="tranding-slider-control" style="margin-top: -150px;">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-md-2"></div>
+                              <div class="col-md-2">
+                                <div class="swiper-button-prev slider-arrow" style="margin-top: -40px;">
+                                  <ion-icon name="arrow-back-outline"></ion-icon>
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="swiper-pagination" style="justify-content: center;"></div>
+                              </div>
+                              <div class="col-md-2">
+                                <div class="swiper-button-next slider-arrow" style="margin-top: -40px;">
+                                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </div>
+                              </div>
+                              <div class="col-md-2"></div>
+                            </div>
+                          </div>
+                </div>
+    
+              </div>
+            </section>
+        </div>
+          
+        <div class="btn-header-mobile">
+            <section style="padding: 20px 10px;">
+              <div class="swiper tranding-slider">
+                <div class="swiper-wrapper">
+                  <!-- Slide-start -->
+                    @if (count($galeryEvents) > 0)
+                        @foreach ($galeryEvents as $key => $event)
+                            <div class="swiper-slide tranding-slide">
+                            <div  style=" width: 100%; height: 250px;">
+                                <img src="{{ $event->item->items[0]->content }}" alt="" style="width: 100%;">
+                                {{-- <h3 style="text-align: center; margin-top: 10px;">{{ $star_video->title }}</h2> --}}
+                            </div>
+                            </div>
+                        @endforeach
+                    @endif
+                  <!-- Slide-end -->
+                </div>
+                <div class="tranding-slider-control" style="margin-top: -230px;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12" style="justify-content: center; justify-items: center;">
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-4">
+                                <div class="swiper-button-prev slider-arrow" style="margin-top: -40px;">
+                                <ion-icon name="arrow-back-outline"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="swiper-button-next slider-arrow" style="margin-top: -40px;">
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="col-md-2"></div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </section>
+        </div>
+        
+        <section style="padding: 20px 30px;">
+            <div class="container box-elevado-green bg-white selector-d" style="padding: 40px 20px; border-radius: 20px;  border: 3px solid #00b01a;">
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <h2 class="h2 text-uppercase" style="color: #00b01a;"><b>{{ $tuExito[0]->content }}</b></h2>
@@ -261,13 +446,13 @@
                 </div>
                 <br>
                 <div class="row">
-                    <div class="col-md-6  text-center">
+                    <div class="col-md-6  text-center" style="padding: 15px;">
                         <a href="https://api.whatsapp.com/send?phone=51{{ $tuExito[2]->content }}&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?" 
                             target="_blank" class="btn-green" style="font-weight: 700;">
                             <i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;&nbsp; Quiero unirme ahora
                         </a>
                     </div>
-                    <div class="col-md-6  text-center">
+                    <div class="col-md-6  text-center" style="padding: 15px;">
                         <a href="{{ $tuExito[3]->content }}"  target="_blank" class="btn-green">
                             <i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp; Descarga plan libertad
                         </a>
@@ -275,162 +460,53 @@
                 </div>
             </div>
         </section>
-
-        <!-- card area end -->
-
-        {{-- <section style="padding: 80px 0px;">
-            <div class="container">
-                <div class="card-wrapper">
-                    <ul class="card-list">
-                        <li class="card-item">
-                            <a href="" class="card-link">
-                                <img src="{{ asset('themes/zoelife/peru/images/card-people/designer.jpg') }}" alt="card" class="card-image">
-                                <p class="badge">Developer</p>
-                                <h2 class="card-title"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-                                <button class="card-button material-symbols-rounded">
-                                    <li class="fa fa-arrow-right"></li>
-                                </button>
-                            </a>
-                        </li>
-                        <li class="card-item">
-                            <a href="" class="card-link">
-                                <img src="{{ asset('themes/zoelife/peru/images/card-people/designer.jpg') }}" alt="card" class="card-image">
-                                <p class="badge">Developer</p>
-                                <h2 class="card-title"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-                                <button class="card-button material-symbols-rounded">
-                                    <li class="fa fa-arrow-right"></li>
-                                </button>
-                            </a>
-                        </li>
-                        <li class="card-item">
-                            <a href="" class="card-link">
-                                <img src="{{ asset('themes/zoelife/peru/images/card-people/designer.jpg') }}" alt="card" class="card-image">
-                                <p class="badge">Developer</p>
-                                <h2 class="card-title"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-                                <button class="card-button material-symbols-rounded">
-                                    <li class="fa fa-arrow-right"></li>
-                                </button>
-                            </a>
-                        </li>
-                    </ul>
+        
+        <section style="padding: 40px 25px;">
+            <div class="container-xl">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-head">
+                            <h2 class="text-uppercase">Conoce a la <b>Comunidad</b></h2>
+                            <div class="dez-divider divider-2pxicon-left" style="background: #00b01a;">
+                                <i class="fa fa-thumbs-o-up  text-white"  style="background: #00b01a;"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section> --}}
-        
-        {{-- <div class="btn-header-pc">
-            <div style="padding: 0px 10px;" >
-                <section style="padding: 40px 10px;">
-                    <div class="swiper tranding-slider">
-                        <div class="swiper-wrapper">
-                            @if (count($galeryEvents) > 0)
-                                @foreach ($galeryEvents as $key => $event)
-                                <div class="swiper-slide tranding-slide">
-                                    <img src="{{ $event->item->items[0]->content }}" alt="" style="width: 100%;">
-                                </div>
-                                @endforeach
-                            @endif
-                        </div>
-                        <div class="tranding-slider-control" style="margin-top: -160px;">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-2"></div>
-                                        <div class="col-md-2">
-                                            <div class="swiper-button-prev slider-arrow" style="margin-top: -40px;">
-                                            <ion-icon name="arrow-back-outline"></ion-icon>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="swiper-pagination" style="justify-content: center;"></div>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <div class="swiper-button-next slider-arrow" style="margin-top: -40px;">
-                                            <ion-icon name="arrow-forward-outline"></ion-icon>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-2"></div>
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        
+                        @foreach ($comunidad as $key => $cn )
+                            <div class="card swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="{{ $cn->item->items[0]->content }}" alt="" class="card-img">
                                     </div>
                                 </div>
-                        </div>
+                                <div class="card-content">
+                                    <h2 class="name">{{ $cn->item->items[1]->content }}</h2>
+                                    <span style="margin-top: -10px;">
+                                        <img class="img-flags" src="{{ $cn->item->items[2]->content }}" alt="">&nbsp; {{ $cn->item->items[3]->content }}
+                                    </span>
+                                    <p class="description" style="padding: 15px;">
+                                        {{ $cn->item->items[4]->content }}
+                                    </p>
+                                </div>
+                            </div>
+                        @endforeach
                     </div>
-                </section>
+                </div>
+    
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+                
             </div>
-        </div>
+        </section>
 
-        <div class="btn-header-mobile">
-            <div style="padding: 0px 10px;" >
-                <section style="padding: 0px 10px;">
-                    <div class="swiper tranding-slider">
-                        <div class="swiper-wrapper">
-                            @if (count($galeryEvents) > 0)
-                                @foreach ($galeryEvents as $key => $event)
-                                <div class="swiper-slide tranding-slide">
-                                    <img src="{{ $event->item->items[0]->content }}" alt="" style="width: 100%;">
-                                </div>
-                                @endforeach
-                            @endif
-                        </div>
-                        <div class="tranding-slider-control" style="margin-top: -160px;">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12" style="justify-content: center; justify-items: center;">
-                                        <div class="swiper-pagination"></div>
-                                    </div>
-                                </div>
-                                <br>
-                                <br>
-                                <div class="row">
-                                    <div class="col-md-2"></div>
-                                    <div class="col-md-4">
-                                        <div class="swiper-button-prev slider-arrow" style="margin-top: -40px;">
-                                        <ion-icon name="arrow-back-outline"></ion-icon>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="swiper-button-next slider-arrow" style="margin-top: -40px;">
-                                        <ion-icon name="arrow-forward-outline"></ion-icon>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div> --}}
-        {{-- 
-        <div class="content-area" style="padding: 80px 0px;">
-            <div class="container">
-                    <div class="section-head">
-                        <h2 class="text-uppercase">Zona de Información</h2>
-                        <div class="dez-divider divider-2pxicon-left" style="background: #00b01a;">
-                            <i class="fa fa-thumbs-o-up  text-white"  style="background: #00b01a;"></i>
-                        </div>
-                    </div>
-                    <div class="section-content text-center ">
-                        @if ( count($inscripcioncontacto) > 0 )
-                        <div class="row" style="justify-content: space-between">
-                            <div class="col-md-2"></div>
-                            <div class="col-md-4" style="text-align: center; padding: 15px;">
-                                <a href="{{ $inscripcioncontacto[0]->content }}" target="_blank" class="site-button btn-zona-eventos" 
-                                    style="font-weight: 700;">
-                                    <i class="fa fa-edit" aria-hidden="true"></i>&nbsp;&nbsp; Inscripciones
-                                </a>
-                            </div>
-                            <div class="col-md-4" style="text-align: center; padding: 15px;">
-                                <a href="https://api.whatsapp.com/send?phone=51{{ $inscripcioncontacto[1]->content }}&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?" 
-                                    target="_blank"  class="site-button btn-zona-eventos" style="font-weight: 700;">
-                                    <i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;&nbsp; Más información 
-                                </a>
-                            </div>
-                            <div class="col-md-2"></div>
-                        </div>
-                        @endif
-                    </div>
-            </div>
-        </div> --}}
-
-        
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
@@ -633,7 +709,7 @@
             .tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
             background: var(--primary);
             }
-        </style>
+        </style> 
 
         <style>
             .paginator_aracode {
@@ -641,7 +717,6 @@
             }
         </style>
         <script>
-
                     var intervalID;
                     function startInterval() {
                     intervalID = setInterval(function() {

@@ -6,7 +6,7 @@
     <!-- Encabezado fin -->
 
     <!-- Content -->
-    <div class="page-content">
+    <div class="page-content" style="margin-top: 85px;">
 
         <div class="btn-header-pc">
             <br><br><br><br><br><br><br><br>

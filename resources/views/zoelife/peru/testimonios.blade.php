@@ -12,7 +12,7 @@
             <div class="dez-bnr-inr ara_centrado_total">
                 <img style="width: 100%; height: auto;" src="{{ $banner->content }}" alt="">
             </div>
-            <div class="breadcrumb-row" style="margin-top: 15px; position:relative; z-index:1;">
+            <div class="breadcrumb-row" style="position:relative; z-index:1;">
                 <div class="container-xxl">
                     <ul class="list-inline">
                         <li><a href="{{ route('web_peru_inicio') }}">Home</a></li>
@@ -35,8 +35,7 @@
             <!-- Breadcrumb row END -->
         </div>
 
-        <div class="content-area">
-            <div class="">
+        <div class="content-area" style="padding: 10px 20px;">
                 <div class="site-filters clearfix center m-b40">
                     <ul class="filters" data-toggle="buttons">
                         <li data-filter="" class="btn active">
@@ -77,7 +76,6 @@
                         @endforeach
                     @endif
                 </ul>
-            </div>
         </div>
 
     </div>

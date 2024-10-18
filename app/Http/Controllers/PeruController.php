@@ -152,7 +152,8 @@ class PeruController extends Controller
 
         return view('zoelife/peru.producto-descripcion', [
             'product' => $product,
-            'testimonies' => $testimonies
+            'testimonies' => $testimonies,
+            'categoryId' => $id
         ]);
     }
 
@@ -245,6 +246,10 @@ class PeruController extends Controller
         $formasContenido = CmsSectionItem::with('item.items')->where('section_id', 123)  //cambiar el id de la seccion ->sedes ubicacion 24
             ->orderBy('position')
             ->get();
+        
+        $star_videos = CmsSectionItem::with('item.items')->where('section_id', 132) //peru_videos_alcanzando_las_estrellas_87
+            ->orderBy('position')
+            ->get();
 
         $galeryEvents = CmsSectionItem::with('item.items')->where('section_id', 76)
             ->orderBy('position')
@@ -259,14 +264,20 @@ class PeruController extends Controller
             )
             ->orderBy('cms_section_items.position')
             ->get();
+        
+        $comunidad = CmsSectionItem::with('item.items')->where('section_id', 130)  //cambiar el id de la seccion ->sedes ubicacion 24
+            ->orderBy('position')
+            ->get();
 
         return view('zoelife/peru.eventos', [
             'slider' => $slider,
             'beneficios' => $beneficios,
             'formasTitle' => $formasTitle,
             'formasContenido' => $formasContenido,
+            'star_videos' => $star_videos,
             'galeryEvents' => $galeryEvents,
-            'tuExito' => $tuExito
+            'tuExito' => $tuExito,
+            'comunidad' => $comunidad
         ]);
     }
 

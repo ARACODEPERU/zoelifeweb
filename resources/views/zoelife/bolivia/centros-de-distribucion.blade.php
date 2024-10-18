@@ -13,8 +13,8 @@
         </div>
         <!-- inner page banner END -->
         <!-- Breadcrumb row -->
-        <div class="breadcrumb-row" style="margin-top: 15px; position:relative; z-index:1;">
-            <div class="container">
+        <div class="breadcrumb-row" style="position:relative; z-index:1;">
+            <div class="container-xxl">
                 <ul class="list-inline">
                     <li><a href="{{ route('web_bolivia_inicio') }}">Home</a></li>
                     <li>Centros de Distribución</li>
@@ -38,43 +38,40 @@
     </div>
     
 
-    <div class="content-area">
-        <div class="">
-            <!-- Gallery -->
-            <div class="site-filters clearfix center m-b40">
-                <ul class="filters" data-toggle="buttons">
-                    <li data-filter="" class="btn active">
-                        <input type="radio">
-                        <a href="#" class="site-button-secondry"><span>Todos</span></a>
-                    </li>
-                    @if (count($departments) > 0)
-                        @foreach ($departments as $department)
-                            <li data-filter="{{ $department->name }}" class="btn">
-                                <input type="radio">
-                                <a href="#" class="site-button-secondry"><span>{{ $department->name }}</span></a>
-                            </li>
-                        @endforeach
-                    @endif
-                </ul>
-            </div>
-            <ul id="masonry" class="dez-gallery-listing row gallery-grid-4 m-b0 mfp-gallery">
-                @if (count($centers) > 0)
-                    @foreach ($centers as $center)
-                        <li class="card-container col-md-4 {{ $center->district->department->name }}" style="padding: 15px;">
-                            <div class="dez-box dez-gallery-box">
-                                <a href="#" onclick="openModalCenterDetails(event, {{ json_encode($center) }})">
-                                    <div class="dez-thum dez-img-overlay1 dez-img-effect">
-                                        <img src="{{ asset('storage/' . $center->image) }}" alt="">
-                                    </div>
-                                </a>
-                            </div>
+        
+    <div class="content-area" style="padding: 10px 20px;">
+        <div class="site-filters clearfix center m-b40">
+            <ul class="filters" data-toggle="buttons">
+                <li data-filter="" class="btn active">
+                    <input type="radio">
+                    <a href="#" class="site-button-secondry"><span>Todos</span></a>
+                </li>
+                @if (count($departments) > 0)
+                    @foreach ($departments as $department)
+                        <li data-filter="{{ $department->name }}" class="btn">
+                            <input type="radio">
+                            <a href="#" class="site-button-secondry"><span>{{ $department->name }}</span></a>
                         </li>
                     @endforeach
                 @endif
             </ul>
         </div>
+        <ul id="masonry" class="dez-gallery-listing row gallery-grid-4 m-b0 mfp-gallery">
+            @if (count($centers) > 0)
+                @foreach ($centers as $center)
+                    <li class="card-container col-md-4 {{ $center->district->department->name }}" style="padding: 15px;">
+                        <div class="aracode-box-with">
+                            <a href="#" onclick="openModalCenterDetails(event, {{ json_encode($center) }})">
+                                <div class="dez-thum dez-img-overlay1 dez-img-effect">
+                                    <img src="{{ asset('storage/' . $center->image) }}" alt="Lima">
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                @endforeach
+            @endif
+        </ul>
     </div>
-
     <br>
 
     <!-- Modal -->

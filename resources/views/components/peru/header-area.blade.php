@@ -1,11 +1,11 @@
 <!-- Importando darkMode -->
+
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 <link rel="stylesheet" href="{{ asset('css/darkMode.css') }}">
 <script src="{{ asset('js/darkMode.js') }}"></script>
 
 <!-- Header -->
 <header class="site-header header-style-1 mo-left dark dark-style-2">
-    <!-- Top bar -->
     <div class="top-bar btn-header-pc">
         <div class="top-bar-content" style="width: 100%; padding: 0px 40px;">
             <div class="top-bar-contect-space row justify-content-between">
@@ -59,14 +59,16 @@
         </div>
     </div>
     <!-- Top Bar END-->
+
     <!-- Main Header -->
     <div class="sticky-header main-bar-wraper navbar-expand-lg">
         <div class="main-bar clearfix ">
-            <div class="clearfix" style="width: 100%; padding: 0px 10px;">
+            <div class="clearfix" style="width: 100%; padding: 0px 20px;">
                 <!-- Website Logo -->
                 <div class="logo-header logo-dark mostion">
                     <a href="{{ route('web_peru_inicio') }}">
-                        <img src="{{ $header[5]->content }}" alt="banner" style="height: 80px; padding: 15px 0px;">
+                        <img src="{{ $header[5]->content }}" alt="banner" 
+                        style="height: 80px; padding: 15px 0px;">
                     </a>
                 </div>
                 <!-- Nav Toggle Button -->
@@ -162,19 +164,27 @@
                         </li>
                         <li>
                             <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_centros') ? 'active' : '' }}"
-                                href="{{ route('web_peru_centros') }}">Centros de Distribución</a>
+                                href="{{ route('web_peru_centros') }}">
+                                Centros de Distribución
+                            </a>
                         </li>
                         <li>
                             <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_eventos') ? 'active' : '' }}"
-                                href="{{ route('web_peru_eventos') }}">Inicia tu Emprendimiento</a>
+                                href="{{ route('web_peru_eventos') }}">
+                                Inicia tu Emprendimiento
+                            </a>
                         </li>
                         <li>
                             <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_alcanzando_las_estrellas') ? 'active' : '' }}"
-                                href="{{ route('web_peru_alcanzando_las_estrellas') }}">Servicio Social</a>
+                                href="{{ route('web_peru_alcanzando_las_estrellas') }}">
+                                Servicio Social
+                            </a>
                         </li>
                         <li>
                             <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_contacto') ? 'active' : '' }}"
-                                href="{{ route('web_peru_contacto') }}">Contacto</a>
+                                href="{{ route('web_peru_contacto') }}">
+                                Contacto
+                            </a>
                         </li>
                         <li class="switch" style="top: 25px;">
                             <i class="bx bxs-sun"></i>

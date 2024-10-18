@@ -138,26 +138,36 @@ General
   transform: translateY(-10px);
 }
 
-.box-producto-body h4{
+.box-producto a{
+  text-decoration: none;
+}
+
+.box-producto a:hover{
+  text-decoration: none;
+}
+
+.title-bg-green{
   background: #5A9F00;
+  width: 100%;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
   padding: 10px 15px;
 }
 
+.title-bg-plomo{
+  background: #dfd5b4;
+  width: 100%;
+  font-size: 18px;
+  color: #000;
+  text-align: center;
+  padding: 10px 15px;
+}
+
+
 .box-producto-body p{
+  text-decoration: none;
   padding: 0px 10px;
-}
-
-.box-producto-body h4 a{
-  color: #fff;
-}
-
-.box-producto-body h4 a:hover{
-  text-decoration: none;
-  color: #fff;
-}
-
-.box-producto-body p{
-  text-decoration: none;
   color: #000;
 }
 
@@ -189,9 +199,16 @@ General
 }
 
 
-.box-elevado {
+.box-elevado-green {
   border-radius: 20px;
   border: 3px solid #00b01a;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
+}
+
+.box-elevado-plomo {
+  border-radius: 20px;
+  border: 3px solid #dfd5b4;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
   transform: translateY(-10px);
 }
@@ -466,6 +483,13 @@ General
 .title-green {
   color: #5A9F00;
 }
+
+
+.title-plomo {
+  color: #dfd5b4 !important;
+  font-weight: 700;
+}
+
 .btn-plomo { 
   width: auto; 
   background-color: #dfd5b4 !important;

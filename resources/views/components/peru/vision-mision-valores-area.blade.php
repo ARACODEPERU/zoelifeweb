@@ -1,7 +1,6 @@
-<div>
-    <!-- Visión - Misión - Valores / STAR -->
-    <div class="section-full bg-white  selector-d" style="padding: 80px 5px;">
-        <div class="container-xl">
+
+    <div class="section-full bg-white  selector-d" style="padding: 40px 30px;">
+        <div class="container-xxl">
             <div class="row">
                 <div class="col-md-12" style="text-align:center; padding: 40px 0px;">
                     <h2 class="h2">GRUPO <span style="color: #00b01a;">GREEN PLANET SRL</span></h2>
@@ -21,7 +20,7 @@
                         </div>
                         <div class="icon-content p-l40">
                             <h4 class="dez-tilte">Visión</h4>
-                            <p>
+                            <p style="justify;">
                                 {{ $nosotros[0]->items[1]->item->items[0]->content }}
                             </p>
                         </div>
@@ -34,7 +33,7 @@
                         </div>
                         <div class="icon-content p-l40">
                             <h4 class="dez-tilte ">Misión</h4>
-                            <p>
+                            <p style="justify;">
                                 {{ $nosotros[0]->items[1]->item->items[1]->content }}
                             </p>
                         </div>
@@ -47,7 +46,7 @@
                         </div>
                         <div class="icon-content p-l40">
                             <h4 class="dez-tilte ">Valores</h4>
-                            <p>
+                            <p style="justify;">
                                 {{ $nosotros[0]->items[1]->item->items[2]->content }}
                             </p>
                         </div>
@@ -56,5 +55,3 @@
             </div>
         </div>
     </div>
-    <!-- Visión - Misión - Valores / END -->
-</div>

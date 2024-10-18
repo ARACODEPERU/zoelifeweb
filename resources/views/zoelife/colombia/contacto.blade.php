@@ -12,8 +12,8 @@
             <div class="dez-bnr-inr ara_centrado_total">
                 <img style="width: 100%; height: auto;" src="{{ $banner->content }}" alt="">
             </div>
-            <div class="breadcrumb-row" style="margin-top: 15px; position:relative; z-index:1;">
-                <div class="container">
+            <div class="breadcrumb-row" style="position:relative; z-index:1;">
+                <div class="container-xxl">
                     <ul class="list-inline">
                         <li><a href="{{ route('web_colombia_inicio') }}">Home</a></li>
                         <li>Contactanos</li>
@@ -35,17 +35,14 @@
             <!-- Breadcrumb row END -->
         </div>
 
-        <!-- contact area -->
-        <div class="content-area">
-            <div class="container">
+        <section style="padding: 15px 30px;">
+            <div class="container-xxl">
                 <div class="row">
-                    <!-- Left part start -->
-                    <div class="col-md-7">
-                        <div class="dzFormMsg"></div>
+                    <div class="col-md-5">
                         <div class="p-a30 bg-white selector-d clearfix m-b30">
                             <h3 class="des-producto">Envianos un mensaje</h3>
                             <form class="dzForm" id="pageContactForm">
-                                <input type="text" hidden name="country" value="CO" required>
+                                <input type="text" hidden name="country" value="PE" required>
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
@@ -118,10 +115,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Left part END -->
-                    <!-- right part start -->
-                    <div class="col-md-5">
                         <div class="p-a30 bg-white selector-d m-b30">
                             <h3 class="des-producto">Información de Contacto</h3>
                             <ul class="no-margin">
@@ -155,27 +148,19 @@
                             </ul>
                         </div>
                     </div>
-                    <!-- right part END -->
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <!-- Map part start -->
-                        <h4 class="des-producto" >Nuestra Ubicación</h4>
-                        <iframe
-                            src="{{ $datosContacto[3]->content }}"
-                            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <!-- Map part END -->
+                    <div class="col-md-7">
+                        <div class="p-a30 bg-white selector-d m-b30">
+                            <h4 class=" des-producto">Nuestra Ubicación</h4>
+                            <iframe
+                                src="{{ $datosContacto[3]->content }}"
+                                width="100%" height="650" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- contact area  END -->
-
-
-        <!-- Paises / STAR -->
-        {{-- <x-countries-section /> --}}
-        <!-- Paises / END -->
+        </section>
 
     </div>
     <!-- Content END-->

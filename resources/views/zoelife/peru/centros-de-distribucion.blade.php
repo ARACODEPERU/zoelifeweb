@@ -14,7 +14,7 @@
             </div>
             <!-- inner page banner END -->
             <!-- Breadcrumb row -->
-            <div class="breadcrumb-row" style="margin-top: 15px; position:relative; z-index:1;">
+            <div class="breadcrumb-row" style="position:relative; z-index:1;">
                 <div class="container-xxl">
                     <ul class="list-inline">
                         <li><a href="{{ route('web_peru_inicio') }}">Home</a></li>
@@ -38,8 +38,7 @@
             <!-- Breadcrumb row END -->
         </div>
         
-        <div class="content-area">
-            <div class="">
+        <div class="content-area" style="padding: 10px 20px;">
                 <div class="site-filters clearfix center m-b40">
                     <ul class="filters" data-toggle="buttons">
                         <li data-filter="" class="btn active">
@@ -71,11 +70,9 @@
                         @endforeach
                     @endif
                 </ul>
-            </div>
         </div>
         <br>
     
-        <!-- Modal -->
         <div class="modal fade" id="modal-centros" tabindex="-1" role="dialog" aria-labelledby="centrosTitle"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -144,6 +141,7 @@
         </script>
     
     </div>
+
     <!-- Footer -->
     <x-peru.footer-area></x-peru.footer-area>
     <!-- Footer END-->
