@@ -237,14 +237,19 @@ class BoliviaController extends Controller
         $galeryEvents = CmsSectionItem::with('item.items')->where('section_id', 76)
             ->orderBy('position')
             ->get();
-<<<<<<< HEAD
         //$galeryEvents->prepend(null);
 
-        $inscripcioncontacto = CmsSection::where('component_id', 'bolivia_eventos_inscripcion_contacto_100')
-=======
+        // $inscripcioncontacto = CmsSection::where('component_id', 'bolivia_eventos_inscripcion_contacto_100')
+        // ->join('cms_section_items', 'section_id', 'cms_sections.id')
+        //     ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+        //     ->select(
+        //         'cms_items.content',
+        //         'cms_section_items.position'
+        //     )
+        //     ->orderBy('cms_section_items.position')
+        //     ->get();
 
         $tuExito = CmsSection::where('component_id', 'bolivia_tu_Exito_emprendimiento_139')
->>>>>>> 360023b81bf159c64f3cdfde70f50e5cafe1ae55
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
@@ -253,13 +258,10 @@ class BoliviaController extends Controller
             )
             ->orderBy('cms_section_items.position')
             ->get();
-<<<<<<< HEAD
-=======
         
         $comunidad = CmsSectionItem::with('item.items')->where('section_id', 140)  //cambiar el id de la seccion ->sedes ubicacion 24
                 ->orderBy('position')
                 ->get();
->>>>>>> 360023b81bf159c64f3cdfde70f50e5cafe1ae55
 
         return view('zoelife/bolivia.eventos', [
             'slider' => $slider,
