@@ -75,7 +75,7 @@ class CmsTestimonyController extends Controller
         return Inertia::render('CMS::Testimonies/Create', [
             'venture'  => $this->P000009,
             'items' => $items,
-            'tiny_api_key' => env('TINY_API_KEY')//$this->P000010
+            'tiny_api_key' => env('TINY_API_KEY') //$this->P000010
         ]);
     }
 
@@ -122,7 +122,7 @@ class CmsTestimonyController extends Controller
             if (PHP_OS == 'WINNT') {
                 $tempFile = tempnam(sys_get_temp_dir(), 'img');
             } else {
-                $tempFile = tempnam('/var/www/html', 'img');
+                $tempFile = tempnam('/var/www/html/img_temp', 'img');
             }
             file_put_contents($tempFile, $fileData);
             $mime = mime_content_type($tempFile);
@@ -205,7 +205,7 @@ class CmsTestimonyController extends Controller
             if (PHP_OS == 'WINNT') {
                 $tempFile = tempnam(sys_get_temp_dir(), 'img');
             } else {
-                $tempFile = tempnam('/var/www/html', 'img');
+                $tempFile = tempnam('/var/www/html/img_temp', 'img');
             }
             file_put_contents($tempFile, $fileData);
             $mime = mime_content_type($tempFile);
