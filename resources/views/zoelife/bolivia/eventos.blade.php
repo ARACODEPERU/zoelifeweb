@@ -456,6 +456,7 @@
 
         <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
         <!-- script del video -->
+
         <script>
             var TrandingSlider = new Swiper('.tranding-slider', {
             effect: 'coverflow',
@@ -656,6 +657,7 @@
             transition: opacity 0.5s;
             }
         </style>
+        
         <script>
                     var intervalID;
                     function startInterval() {

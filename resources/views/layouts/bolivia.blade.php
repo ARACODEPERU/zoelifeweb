@@ -54,8 +54,6 @@
         @yield('content')
         <!-- Back-to-Top end -->
 
-
-
         <button class="scroltop fa fa-arrow-up"></button>
     </div>
     <!-- JavaScript files ========================================= -->

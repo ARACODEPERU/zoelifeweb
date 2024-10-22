@@ -199,7 +199,8 @@ class EcuadorController extends Controller
 
     public function eventos()
     {
-        $banner = CmsSection::where('component_id', 'ecuador_banner_eventos_37')
+        
+        $slider = CmsSection::where('component_id', 'ecuador_slider_emprendimiento_141')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
             ->select(
@@ -207,28 +208,71 @@ class EcuadorController extends Controller
                 'cms_section_items.position'
             )
             ->orderBy('cms_section_items.position')
-            ->first();
+            ->get();
+        
+        
+        $beneficios = CmsSectionItem::with('item.items')->where('section_id', 143)  //cambiar el id de la seccion ->sedes ubicacion 24
+            ->orderBy('position')
+            ->get();
+        
+        $formasTitle = CmsSection::where('component_id', 'ecuador_titulo_formas_ganar_emprendimiento_144')
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->get();
+
+        $formasContenido = CmsSectionItem::with('item.items')->where('section_id', 145)  //cambiar el id de la seccion ->sedes ubicacion 24
+                ->orderBy('position')
+                ->get();
+
+        $star_videos = CmsSectionItem::with('item.items')->where('section_id', 146) //peru_videos_alcanzando_las_estrellas_87
+            ->orderBy('position')
+            ->get();
 
 
-        $galeryEvents = CmsSectionItem::with('item.items')->where('section_id', 76)
+        $galeryEvents = CmsSectionItem::with('item.items')->where('section_id', 97)
             ->orderBy('position')
             ->get();
         //$galeryEvents->prepend(null);
 
-        $inscripcioncontacto = CmsSection::where('component_id', 'ecuador_eventos_inscripcion_contacto_101')
-        ->join('cms_section_items', 'section_id', 'cms_sections.id')
-        ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
-        ->select(
-            'cms_items.content',
-            'cms_section_items.position'
-        )
-        ->orderBy('cms_section_items.position')
-        ->get();
+        // $inscripcioncontacto = CmsSection::where('component_id', 'ecuador_eventos_inscripcion_contacto_101')
+        // ->join('cms_section_items', 'section_id', 'cms_sections.id')
+        // ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+        // ->select(
+        //     'cms_items.content',
+        //     'cms_section_items.position'
+        // )
+        // ->orderBy('cms_section_items.position')
+        // ->get();
+
+        $tuExito = CmsSection::where('component_id', 'ecuador_tu_Exito_emprendimiento_147')
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->get();
+        
+
+        $comunidad = CmsSectionItem::with('item.items')->where('section_id', 148)  //cambiar el id de la seccion ->sedes ubicacion 24
+            ->orderBy('position')
+            ->get();
 
         return view('zoelife/ecuador.eventos', [
-            'banner' => $banner,
+            'slider' => $slider,
+            'beneficios' => $beneficios,
+            'formasTitle' => $formasTitle,
+            'formasContenido' => $formasContenido,
+            'star_videos' => $star_videos,
             'galeryEvents' => $galeryEvents,
-            'inscripcioncontacto' => $inscripcioncontacto
+            'tuExito' => $tuExito,
+            'comunidad' => $comunidad
         ]);
     }
 
