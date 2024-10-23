@@ -27,7 +27,7 @@
  <script src="js/html5shiv.min.js"></script>
  <script src="js/respond.min.js"></script>
  <![endif]-->
-
+ 
     <!-- STYLESHEETS -->
     <link rel="stylesheet" type="text/css" href="{{ asset('themes/zoelife/peru/css/plugins.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('themes/zoelife/peru/css/style.css') }}">
@@ -41,8 +41,9 @@
     <link rel="stylesheet" type="text/css"
         href="{{ asset('themes/zoelife/peru/plugins/revolution/css/navigation.css') }}">
 
+        
+    <link rel="stylesheet" type="text/css" class="skin" href="{{ asset('themes/zoelife/peru/plugins/bootstrap/css/bootstrap.min.css') }}">
 
-        <link rel="stylesheet" type="text/css" class="skin" href="{{ asset('themes/zoelife/peru/plugins/bootstrap/css/bootstrap.min.css') }}">
 
 
 
@@ -121,6 +122,176 @@
             $('#myInput').trigger('focus')
         })
     </script>
+
+     
+    <style>
+        /* Google Fonts - Poppins */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+        .img-flags{
+            widows: 18px;
+            height: 18px;
+            border-radius: 50%;
+            margin-top: -4px;
+        }
+        .slide-container{
+        max-width: 1360px;
+        width: 100%;
+        padding: 40px 0;
+        }
+        .slide-content{
+        margin: 0 40px;
+        overflow: hidden;
+        border-radius: 25px;
+        }
+        .card{
+        border-radius: 25px;
+        background-color: #FFF;
+        }
+        .image-content,
+        .card-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 14px;
+        }
+        .image-content{
+        position: relative;
+        row-gap: 5px;
+        padding: 25px 0;
+        }
+        .overlay{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        /* background-color: #5A9F00; */
+        background: rgb(2,100,16);
+        background: linear-gradient(90deg, rgba(2,100,16,1) 0%, rgba(90,159,0,1) 50%, rgba(2,100,16,1) 100%);
+        border-radius: 25px 25px 0 25px;
+        }
+        .overlay::before,
+        .overlay::after{
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: -40px;
+        height: 40px;
+        width: 40px;
+        background-color: rgb(2,100,16);
+        }
+        .overlay::after{
+        border-radius: 0 25px 0 0;
+        background-color: #FFF;
+        }
+        .card-image{
+        position: relative;
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        background: #FFF;
+        padding: 3px;
+        }
+        .card-image .card-img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 4px solid #5A9F00;
+        }
+        .name{
+        font-size: 18px;
+        font-weight: 500;
+        color: #333;
+        }
+        .description{
+        font-size: 14px;
+        color: #707070;
+        text-align: center;
+        }
+        .button{
+        border: none;
+        font-size: 16px;
+        color: #FFF;
+        padding: 8px 16px;
+        background-color: #5A9F00;
+        border-radius: 6px;
+        margin: 14px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        }
+        .button:hover{
+        background: #265DF2;
+        }
+
+        .swiper-navBtn{
+        color: #5A9F00;
+        transition: color 0.3s ease;
+        }
+        .swiper-navBtn:hover{
+        color: #5A9F00;
+        }
+        .swiper-navBtn::before,
+        .swiper-navBtn::after{
+        font-size: 35px;
+        }
+        .swiper-button-next{
+        right: 0;
+        }
+        .swiper-button-prev{
+        left: 0;
+        }
+        .swiper-pagination-bullet{
+        background-color: #6E93f7;
+        opacity: 1;
+        }
+        .swiper-pagination-bullet-active{
+        background-color: #4070F4;
+        }
+
+        @media screen and (max-width: 768px) {
+        .slide-content{
+            margin: 0 10px;
+        }
+        .swiper-navBtn{
+            display: none;
+        }
+        }
+    </style>
+
+    <script>
+        var swiper = new Swiper(".slide-content", {
+                slidesPerView: 3,
+                spaceBetween: 25,
+                loop: true,
+                centerSlide: 'true',
+                fade: 'true',
+                grabCursor: 'true',
+                pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+            },
+                navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            breakpoints:{
+                0: {
+                    slidesPerView: 1,
+                },
+                520: {
+                    slidesPerView: 2,
+                },
+                950: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+    </script>
+
 
     <div class="loading-area" style="display:none;">
         <div class="loading-box"></div>
