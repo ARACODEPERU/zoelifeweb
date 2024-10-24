@@ -6,7 +6,6 @@
 
     <!-- Header -->
     <header class="site-header header-style-1 mo-left dark dark-style-2">
-        <!-- Top bar -->
         <div class="top-bar btn-header-pc">
             <div class="top-bar-content" style="width: 100%; padding: 0px 40px;">
                 <div class="top-bar-contect-space row justify-content-between">
@@ -59,7 +58,6 @@
                 </div>
             </div>
         </div>
-
         <!-- Top Bar END-->
 
         <!-- Main Header -->
@@ -101,8 +99,8 @@
                             </div>
                         </div>
                     </div>
-                    <!--
-                    <div class="btn-header-mobile">
+                    
+                    {{-- <div class="btn-header-mobile">
                         <div class="extra-nav hidden-sm-down disnone-md" style="text-align: center;">
                             <div class="extra-cell">
                                 <a href="https://zoelife.global//link/store/TIENDAPUBLICA" target="_blank"
@@ -117,8 +115,8 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
-                    -->
+                    </div> --}}
+                    
                     <!-- Main Nav -->
                     <div class="header-nav navbar-collapse collapse justify-content-end div-nav-slide-dark"
                         id="navbarNavDropdown">
@@ -192,13 +190,16 @@
                             <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_mexico_centros') ? 'active' : '' }}"
                                     href="{{ route('web_mexico_centros') }}">Centros de Distribución</a> </li>
                             <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_mexico_eventos') ? 'active' : '' }}"
-                                    href="{{ route('web_mexico_eventos') }}">Eventos</a> </li>
-                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_mexico_alcanzando_las_estrellas') ? 'active' : '' }}"
-                                    href="{{ route('web_mexico_alcanzando_las_estrellas') }}">Alcanzando las
-                                    Estrellas</a> </li>
+                                    href="{{ route('web_mexico_eventos') }}">Inicia tu emprendimiento</a> </li>
+                            <li> 
+                                <a class="dropdown-item aquitoy {{ request()->routeIs('web_mexico_alcanzando_las_estrellas') ? 'active' : '' }}"
+                                    href="{{ route('web_mexico_alcanzando_las_estrellas') }}">
+                                    Servicio Social
+                                </a>
+                            </li>
 
-                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_mexico_university') ? 'active' : '' }}"
-                                    href="{{ route('web_mexico_university') }}">University</a> </li>
+                            {{-- <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_mexico_university') ? 'active' : '' }}"
+                                    href="{{ route('web_mexico_university') }}">University</a> </li> --}}
                             <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_mexico_contacto') ? 'active' : '' }}"
                                     href="{{ route('web_mexico_contacto') }}">Contacto</a> </li>
                             <li class="switch" style="top: 25px;">

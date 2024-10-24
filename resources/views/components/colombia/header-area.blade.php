@@ -60,7 +60,6 @@
         </div>
         <!-- Top Bar END-->
 
-
         <!-- Main Header -->
         <div class="sticky-header main-bar-wraper navbar-expand-lg">
             <div class="main-bar clearfix ">
@@ -100,8 +99,8 @@
                             </div>
                         </div>
                     </div>
-                    <!--
-                    <div class="btn-header-mobile">
+                    
+                    {{-- <div class="btn-header-mobile">
                         <div class="extra-nav hidden-sm-down disnone-md" style="text-align: center;">
                             <div class="extra-cell">
                                 <a href="https://zoelife.global//link/store/TIENDAPUBLICA" target="_blank"
@@ -116,8 +115,8 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
-                    -->
+                    </div> --}}
+                    
                     <!-- Main Nav -->
                     <div class="header-nav navbar-collapse collapse justify-content-end div-nav-slide-dark"
                         id="navbarNavDropdown">
@@ -139,8 +138,10 @@
                             </div>
                         </div>
                         <ul class="nav navbar-nav div-nav-slide-dark">
-                            <li> <a class="dropdown-item aquitoy {{ request()->routeIs('web_colombia_inicio') ? 'active' : '' }}"
-                                    href="{{ route('web_colombia_inicio') }}">Inicio</a>
+                            <li> 
+                                <a class="dropdown-item aquitoy {{ request()->routeIs('web_colombia_inicio') ? 'active' : '' }}"
+                                    href="{{ route('web_colombia_inicio') }}">Inicio
+                                </a>
                             </li>
                             @php
                                 $currentUrl = request()->url();
