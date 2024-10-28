@@ -159,7 +159,15 @@ class ColombiaController extends Controller
         })
             ->get();
 
-        $testimonies = CmsTestimony::with('product')->inRandomOrder()->take(20)->get();
+        $testimonies = CmsTestimony::with('product')
+            ->whereIn('id', function ($query) {
+                $query->select('id')
+                    ->orderBy('id', 'desc') // Ordenar por ID en orden descendente
+                    ->take(20); // Limitar a los 20 últimos registros
+            })
+            ->inRandomOrder() // Mezclar los resultados
+            ->take(20) // Limitar el número total a 20
+            ->get();
 
         return view('zoelife/colombia.testimonios', [
             'banner'        => $banner,
@@ -208,12 +216,12 @@ class ColombiaController extends Controller
             )
             ->orderBy('cms_section_items.position')
             ->get();
-        
-        
+
+
         $beneficios = CmsSectionItem::with('item.items')->where('section_id', 151)  //cambiar el id de la seccion ->sedes ubicacion 24
             ->orderBy('position')
             ->get();
-        
+
         $formasTitle = CmsSection::where('component_id', 'colombia_titulo_formas_ganar_emprendimiento_152')
             ->join('cms_section_items', 'section_id', 'cms_sections.id')
             ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
@@ -225,8 +233,8 @@ class ColombiaController extends Controller
             ->get();
 
         $formasContenido = CmsSectionItem::with('item.items')->where('section_id', 153)  //cambiar el id de la seccion ->sedes ubicacion 24
-                ->orderBy('position')
-                ->get();
+            ->orderBy('position')
+            ->get();
 
         $star_videos = CmsSectionItem::with('item.items')->where('section_id', 154) //peru_videos_alcanzando_las_estrellas_87
             ->orderBy('position')
@@ -257,7 +265,7 @@ class ColombiaController extends Controller
             )
             ->orderBy('cms_section_items.position')
             ->get();
-        
+
 
         $comunidad = CmsSectionItem::with('item.items')->where('section_id', 156)  //cambiar el id de la seccion ->sedes ubicacion 24
             ->orderBy('position')

@@ -162,7 +162,15 @@ class BoliviaController extends Controller
         })
             ->get();
 
-        $testimonies = CmsTestimony::with('product')->inRandomOrder()->take(20)->get();
+        $testimonies = CmsTestimony::with('product')
+            ->whereIn('id', function ($query) {
+                $query->select('id')
+                    ->orderBy('id', 'desc') // Ordenar por ID en orden descendente
+                    ->take(20); // Limitar a los 20 últimos registros
+            })
+            ->inRandomOrder() // Mezclar los resultados
+            ->take(20) // Limitar el número total a 20
+            ->get();
 
         return view('zoelife/bolivia.testimonios', [
             'banner'        => $banner,
@@ -233,7 +241,7 @@ class BoliviaController extends Controller
         $star_videos = CmsSectionItem::with('item.items')->where('section_id', 138) //peru_videos_alcanzando_las_estrellas_87
             ->orderBy('position')
             ->get();
-    
+
         $galeryEvents = CmsSectionItem::with('item.items')->where('section_id', 96)
             ->orderBy('position')
             ->get();
@@ -258,10 +266,10 @@ class BoliviaController extends Controller
             )
             ->orderBy('cms_section_items.position')
             ->get();
-        
+
         $comunidad = CmsSectionItem::with('item.items')->where('section_id', 140)  //cambiar el id de la seccion ->sedes ubicacion 24
-                ->orderBy('position')
-                ->get();
+            ->orderBy('position')
+            ->get();
 
         return view('zoelife/bolivia.eventos', [
             'slider' => $slider,
