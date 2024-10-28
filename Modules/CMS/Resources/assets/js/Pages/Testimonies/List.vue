@@ -125,6 +125,8 @@
                                     </th>
                                     <th class="py-2 px-4 font-medium text-black dark:text-white">
                                         Título
+                                    </th><th class="py-2 px-4 font-medium text-black dark:text-white">
+                                        Producto relacionado
                                     </th>
                                     <th class="py-2 px-4 font-medium text-black dark:text-white">
                                         Estado
@@ -144,6 +146,9 @@
                                         </td>
                                         <td class="py-2 px-2 dark:border-strokedark">
                                             {{ testimony.title }}
+                                        </td>
+                                        <td class="py-2 px-2 dark:border-strokedark">
+                                            {{ testimony.product.name }} - {{ testimony.product.country.description }}
                                         </td>
                                         <td class="text-center py-2 px-2 dark:border-strokedark">
                                             <span v-if="testimony.status" class="bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400">Activo</span>

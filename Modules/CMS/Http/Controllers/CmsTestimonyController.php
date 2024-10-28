@@ -46,6 +46,7 @@ class CmsTestimonyController extends Controller
             $testimonies->latest();
         }
 
+        $testimonies = $testimonies->with('product.country');
 
         $testimonies = $testimonies->paginate($this->reg)->onEachSide(2);
 
