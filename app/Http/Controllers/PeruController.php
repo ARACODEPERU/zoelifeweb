@@ -179,15 +179,8 @@ class PeruController extends Controller
         })
             ->get();
 
-        $testimonies = CmsTestimony::with('product')
-            ->whereIn('id', function ($query) {
-                $query->select('id')
-                    ->orderBy('id', 'desc') // Ordenar por ID en orden descendente
-                    ->take(20); // Limitar a los 20 últimos registros
-            })
-            ->inRandomOrder() // Mezclar los resultados
-            ->take(20) // Limitar el número total a 20
-            ->get();
+        // $testimonies = CmsTestimony::with('product')->inRandomOrder()->take(20)->get();
+        $testimonies = CmsTestimony::with('product')->orderBy('id', 'DESC')->take(20)->get();
 
         return view('zoelife/peru.testimonios', [
             'banner'        => $banner,
