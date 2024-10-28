@@ -64,10 +64,13 @@ class CmsTestimonyController extends Controller
         $items = [];
 
         if ($this->P000009 == 2) {
-            $items = OnliItem::select(
-                'id AS value',
-                'name'
-            )
+            $items = OnliItem::leftJoin('countries', 'country_id', '=', 'countries.id')
+                ->select(
+                    'onli_items.id AS value',
+                    DB::raw('CONCAT(name, 
+                        IF(countries.description IS NOT NULL AND countries.description <> "", CONCAT(" - ", countries.description), "")
+                    ) AS name')
+                )
                 ->where('entitie', 'App-Models-Product')
                 ->get();
         }
@@ -150,10 +153,13 @@ class CmsTestimonyController extends Controller
         $items = [];
 
         if ($this->P000009 == 2) {
-            $items = OnliItem::select(
-                'id AS value',
-                'name'
-            )
+            $items = OnliItem::leftJoin('countries', 'country_id', '=', 'countries.id')
+                ->select(
+                    'onli_items.id AS value',
+                    DB::raw('CONCAT(name, 
+                        IF(countries.description IS NOT NULL AND countries.description <> "", CONCAT(" - ", countries.description), "")
+                    ) AS name')
+                )
                 ->where('entitie', 'App-Models-Product')
                 ->get();
         }
