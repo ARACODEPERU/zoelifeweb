@@ -106,7 +106,7 @@
                                 <div class="box-producto" onmouseover="mostrarDescripcion({{ $producto->id }})"
                                     onmouseout="ocultarDescripcion({{ $producto->id }})">
                                     <a href="{{ route('web_peru_producto_descripcion', $producto->id) }}">
-                                        <img style="height: 100%;" src="{{ asset($producto->image) }}" alt="img_producto">
+                                        <img style="width: 100%;" src="{{ asset($producto->image) }}" alt="img_producto">
                                         <div class="{{ $categoryId == 1 ? 'title-bg-green' : 'title-bg-plomo' }}">
                                             <b>{{ $producto->name }}</b>
                                         </div>
