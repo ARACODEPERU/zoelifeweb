@@ -20,6 +20,11 @@ use App\Http\Controllers\WebController;
 use Modules\Blog\Http\Controllers\BlogController;
 use Modules\Sales\Http\Controllers\ProductController;
 
+Route::get('cookies_policy', function () {
+    return view('cookies_policy');
+})->name('cookies_policy');
+
+
 Route::get('/', function () {
     $ip = $_SERVER['REMOTE_ADDR']; // Esto contendrá la ip de la solicitud.
 
