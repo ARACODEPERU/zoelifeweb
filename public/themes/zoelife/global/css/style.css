@@ -3134,7 +3134,7 @@ footer#gen-footer .gen-copyright-footer .gen-copyright a {
 }
 
 footer#gen-footer .gen-copyright-footer .gen-copyright a:hover {
-    color: var(--white-color);
+    color: yellow;
     text-decoration: underline;
 }
 
