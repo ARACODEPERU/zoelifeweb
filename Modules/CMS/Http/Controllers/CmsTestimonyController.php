@@ -49,7 +49,7 @@ class CmsTestimonyController extends Controller
         $testimonies = $testimonies->with('product.country');
 
         $testimonies = $testimonies->paginate($this->reg)->onEachSide(2);
-
+        //dd($testimonies);
         return Inertia::render('CMS::Testimonies/List', [
             'testimonies' => $testimonies,
             'filters' => request()->all('search'),

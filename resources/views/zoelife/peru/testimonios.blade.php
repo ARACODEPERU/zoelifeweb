@@ -36,25 +36,26 @@
         </div>
 
         <div class="content-area" style="padding: 10px 20px;">
-                <div class="site-filters clearfix center m-b40">
-                    <ul class="filters" data-toggle="buttons">
-                        <li data-filter="" class="btn active">
-                            <input type="radio">
-                            <a href="#" class="site-button-secondry"><span>Todos</span></a>
-                        </li>
-                        @if (count($products) > 0)
-                            @foreach ($products as $product)
-                                <li data-filter="{{ $product->name }}" class="btn">
-                                    <input type="radio">
-                                    <a href="#" class="site-button-secondry"><span>{{ $product->name }}</span></a>
-                                </li>
-                            @endforeach
-                        @endif
-                    </ul>
-                </div>
-                 <ul id="masonry" class="dez-gallery-listing row gallery-grid-4 m-b0 mfp-gallery">
-                    @if (count($testimonies) > 0)
-                        @foreach ($testimonies as $testimony)
+            <div class="site-filters clearfix center m-b40">
+                <ul class="filters" data-toggle="buttons">
+                    <li data-filter="" class="btn active">
+                        <input type="radio">
+                        <a href="#" class="site-button-secondry"><span>Todos</span></a>
+                    </li>
+                    @if (count($products) > 0)
+                        @foreach ($products as $product)
+                            <li data-filter="{{ $product->name }}" class="btn">
+                                <input type="radio">
+                                <a href="#" class="site-button-secondry"><span>{{ $product->name }}</span></a>
+                            </li>
+                        @endforeach
+                    @endif
+                </ul>
+            </div>
+            <ul id="masonry" class="dez-gallery-listing row gallery-grid-4 m-b0 mfp-gallery">
+                @if (count($testimonies) > 0)
+                    @foreach ($testimonies as $testimony)
+                        @if ($testimony->product)
                             <li class="card-container col-md-4 {{ $testimony->product->name }}" style="padding: 15px;">
                                 <div class="aracode-box-with">
                                     <div class="dez-post-media dez-img-effect zoom-slow">
@@ -73,9 +74,10 @@
                                     </div>
                                 </div>
                             </li>
-                        @endforeach
-                    @endif
-                </ul>
+                        @endif
+                    @endforeach
+                @endif
+            </ul>
         </div>
 
     </div>
