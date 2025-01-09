@@ -320,6 +320,40 @@ class PeruController extends Controller
         ]);
     }
 
+    
+    public function merchandasing()
+    {
+        $banner = CmsSection::where('component_id', 'peru_banner_merchandasing_165')
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->first();
+
+        $presentacion = CmsSection::where('component_id', 'peru_presentacion_merchandasing_166')
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->get();
+
+        $merchandasing = CmsSectionItem::with('item.items')->where('section_id', 167) //peru_galeria_alcanzando_las_estrellas_85
+            ->orderBy('position')
+            ->get();
+
+        return view('zoelife/peru.merchandasing', [
+            'banner' => $banner,
+            'presentacion' => $presentacion,
+            'merchandasing' => $merchandasing
+        ]);
+    }
+
     public function university()
     {
         $banner = CmsSection::where('component_id', 'peru_banner_university_77')

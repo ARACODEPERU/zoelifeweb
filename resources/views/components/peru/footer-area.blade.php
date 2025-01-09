@@ -15,10 +15,25 @@
     <a class="appTiktok" target="_blanck" href="{{ $footer[0]->items[10]->item->content }}">
         <img src="{{ $footer[0]->items[9]->item->content }}" alt="Tiktok">
     </a>
-    
+{{--     
     <a class="appWhatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=51{{ $footer[0]->items[12]->item->content }}&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?">
         <img src="{{ $footer[0]->items[11]->item->content }}" alt="Whatsapp">
-    </a>
+    </a> --}}
+    
+    <div id="merchandising">
+        <a href="{{ route('web_peru_merchandasing') }}" 
+            class="mer" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+        </a>
+    </div>
+
+    
+    <div id="whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=51{{ $footer[0]->items[12]->item->content }}&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?" 
+            class="wtsapp" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
 
     <!-- Footer -->
     <footer class="site-footer dark-style-2">

@@ -61,6 +61,7 @@ Route::get('/peru.testimonios', [PeruController::class, 'testimonios'])->name('w
 Route::get('/peru.centros-de-distribucion', [PeruController::class, 'centros'])->name('web_peru_centros');
 Route::get('/peru.eventos', [PeruController::class, 'eventos'])->name('web_peru_eventos');
 Route::get('/peru.alcanzando-las-estrellas', [PeruController::class, 'estrellas'])->name('web_peru_alcanzando_las_estrellas');
+Route::get('/peru.merchandasing', [PeruController::class, 'merchandasing'])->name('web_peru_merchandasing');
 Route::get('/peru.zoe-university', [PeruController::class, 'university'])->name('web_peru_university');
 Route::get('/peru.contacto', [PeruController::class, 'contacto'])->name('web_peru_contacto');
 
