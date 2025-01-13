@@ -83,7 +83,7 @@ class CmsPageSectionController extends Controller
             $content = null;
 
             if ($type_id == 1 || $type_id == 3) {
-                if ($item['is_file'] === 'yes') {
+                if (isset($item['is_file']) && $item['is_file'] === 'yes') {
                     $file = $item['content'];
                     //dd($file->getSize());
                     // Define el tamaño máximo permitido (por ejemplo, 2 MB)
