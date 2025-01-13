@@ -30,7 +30,7 @@ Route::middleware(['auth', 'verified'])->prefix('cms')->group(function () {
     Route::get('pages/sections/{id}', [CmsPageSectionController::class, 'index'])->name('cms_pages_section_list');
     Route::post('pages/sections/add', [CmsPageSectionController::class, 'store'])->name('cms_pages_section_add');
     Route::get('pages/section_item_data/{id}', [CmsPageSectionController::class, 'getSectionItems'])->name('cms_pages_section_items_data');
-    Route::post('pages/section_item_data_save', [CmsPageSectionController::class, 'updateItems'])->name('cms_pages_section_items_save');
+    Route::get('pages/section_item_data_save', [CmsPageSectionController::class, 'updateItems'])->name('cms_pages_section_items_save');
     Route::delete('pages/section_item_data_delete/{id}', [CmsPageSectionController::class, 'destroySection'])->name('cms_pages_section_items_delete');
     Route::post('pages/section_group_create', [CmsPageSectionController::class, 'groupSectionStore'])->name('cms_pages_section_group_save');
 
