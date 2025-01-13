@@ -53,7 +53,23 @@ class PeruController extends Controller
             ->orderBy('cms_section_items.position')
             ->get();
 
-        $equipos = CmsSectionItem::with('item.items')->where('section_id', 66)
+        $equipos = CmsSectionItem::with('item.items')
+            ->where('section_id', 66)
+            ->orderBy('position')
+            ->get();
+
+        $presentacion = CmsSection::where('component_id', 'peru_presentacion_merchandasing_166')
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->get();
+
+        $merchandasing = CmsSectionItem::with('item.items')
+            ->where('section_id', 167) //peru_galeria_alcanzando_las_estrellas_85
             ->orderBy('position')
             ->get();
 
@@ -73,6 +89,8 @@ class PeruController extends Controller
             'video' => $video,
             'fundador' => $fundador,
             'equipos' => $equipos,
+            'presentacion' => $presentacion,
+            'merchandasing' => $merchandasing,
             'linkDescarga' => $linkDescarga
         ]);
     }
@@ -333,23 +351,14 @@ class PeruController extends Controller
             ->orderBy('cms_section_items.position')
             ->first();
 
-        $presentacion = CmsSection::where('component_id', 'peru_presentacion_merchandasing_166')
-            ->join('cms_section_items', 'section_id', 'cms_sections.id')
-            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
-            ->select(
-                'cms_items.content',
-                'cms_section_items.position'
-            )
-            ->orderBy('cms_section_items.position')
-            ->get();
+        
 
-        $merchandasing = CmsSectionItem::with('item.items')->where('section_id', 167) //peru_galeria_alcanzando_las_estrellas_85
+        $merchandasing = CmsSectionItem::with('item.items')->where('section_id', 168) //peru_galeria_alcanzando_las_estrellas_85
             ->orderBy('position')
             ->get();
 
         return view('zoelife/peru.merchandasing', [
             'banner' => $banner,
-            'presentacion' => $presentacion,
             'merchandasing' => $merchandasing
         ]);
     }

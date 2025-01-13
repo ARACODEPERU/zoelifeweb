@@ -613,3 +613,96 @@ General
   border-radius: 30px;
   text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.carruselMer {
+  position: relative;
+  max-width: 80%; /* Ocupa el 80% de la pantalla */
+  margin: auto;
+  overflow: hidden;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+.productosMer {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.productoMer {
+  min-width: 33.33%; /* Para mostrar 3 productos a la vez */
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+}
+.productoMer img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.puntosMer {
+  text-align: center;
+  padding: 10px 0;
+}
+.puntoMer {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #bbb;
+  cursor: pointer;
+}
+.activoMer {
+  background-color: #717171;
+}
+.flechaMer {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+  z-index: 1;
+}
+.izquierdaMer {
+  left: 10px;
+}
+.derechaMer {
+  right: 10px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+  .productoMer {
+      min-width: 100%; /* Mostrar solo un producto a la vez en pantallas pequeñas */
+  }
+  .flechaMer {
+      font-size: 16px;
+      padding: 8px;
+  }
+}

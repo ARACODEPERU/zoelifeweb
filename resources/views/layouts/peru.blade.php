@@ -359,6 +359,56 @@
         });
     </script>
 
+    <script>
+        const productos = document.querySelector('.productosMer');
+        const puntos = document.querySelectorAll('.puntoMer');
+        const flechaIzquierda = document.querySelector('.izquierdaMer');
+        const flechaDerecha = document.querySelector('.derechaMer');
+        let indiceActual = 0;
+
+        function mostrarProductos(indice) {
+            productos.style.transform = `translateX(-${indice * 100}%)`;
+            puntos.forEach((punto, index) => {
+                punto.classList.toggle('activoMer', index === indice);
+            });
+        }
+
+        function siguienteProductos() {
+            indiceActual = (indiceActual + 1) % puntos.length;
+            mostrarProductos(indiceActual);
+        }
+
+        function anteriorProductos() {
+            indiceActual = (indiceActual - 1 + puntos.length) % puntos.length;
+            mostrarProductos(indiceActual);
+        }
+
+        let intervalo = setInterval(siguienteProductos, 3000);
+
+        flechaDerecha.addEventListener('click', () => {
+            clearInterval(intervalo);
+            siguienteProductos();
+            intervalo = setInterval(siguienteProductos, 3000);
+        });
+
+        flechaIzquierda.addEventListener('click', () => {
+            clearInterval(intervalo);
+            anteriorProductos();
+            intervalo = setInterval(siguienteProductos, 3000);
+        });
+
+        puntos.forEach(punto => {
+            punto.addEventListener('click', () => {
+                clearInterval(intervalo);
+                indiceActual = parseInt(punto.dataset.index);
+                mostrarProductos(indiceActual);
+                intervalo = setInterval(siguienteProductos, 3000);
+            });
+        });
+
+        mostrarProductos(indiceActual);
+    </script>
+
 
     <div class="loading-area" style="display:none;">
         <div class="loading-box"></div>

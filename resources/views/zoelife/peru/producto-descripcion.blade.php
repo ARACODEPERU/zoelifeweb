@@ -35,6 +35,11 @@
                             <div class="m-b10">
                                 {!! $product->description !!}
                             </div>
+                            <br>
+                            <a href="https://api.whatsapp.com/send?phone=51992914870&text=Buen&nbsp;día&nbsp;ZoeLife!&nbsp;deseo&nbsp;adquirir&nbsp;sus&nbsp;productos." 
+                                class="btn btn-green">
+                                <i class="fab fa-whatsapp"></i> &nbsp;Adquirir Ahora
+                            </a>
                         </div>
                     </div>
                     <!-- Dividers with icon END -->
@@ -112,6 +117,16 @@
                                     </div>
                                 @endforeach
                             @endif
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4" style="text-align: center;">
+                                <a href="https://api.whatsapp.com/send?phone=51992914870&text=Buen&nbsp;día&nbsp;ZoeLife!&nbsp;deseo&nbsp;adquirir&nbsp;sus&nbsp;productos." 
+                                    class="btn btn-green">
+                                    <i class="fab fa-whatsapp"></i> &nbsp;Deseo adquirir los productos
+                                </a>
+                            </div>
+                            <div class="col-md-4"></div>
                         </div>
                     </div>
                 </section>

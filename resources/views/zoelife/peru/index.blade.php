@@ -1,9 +1,10 @@
-    @extends('layouts.peru')
+@extends('layouts.peru')
 
-    @section('content')
-        <!-- Encabezado inicio -->
-        <x-peru.header-area></x-peru.header-area>
-        <!-- Encabezado fin -->
+@section('content')
+
+    <!-- Encabezado inicio -->
+    <x-peru.header-area></x-peru.header-area>
+    <!-- Encabezado fin -->
 
         <!-- Content -->
         <div class="page-content" style="margin-top: 85px;">
@@ -115,8 +116,11 @@
                                     </a>
                                     <div class="dez-info-has bg-primary">
                                         <ul class="dez-social-icon dez-border">
-                                            <li><a href="{{ $fundador[4]->content }}"
-                                                    class="fab fa-facebook"></a></li>
+                                            <li>
+                                                <a href="{{ $fundador[4]->content }}"
+                                                    class="fab fa-facebook">
+                                                </a>
+                                            </li>
                                             <li><a href="{{ $fundador[5]->content }}"
                                                     class="fab fa-instagram"></a></li>
                                             <li><a href="{{ $fundador[6]->content }}"
@@ -170,6 +174,55 @@
             </div>
             <!-- Video Presentación / END -->
 
+            <section  style="padding: 80px 30px;">
+
+                
+                <div class="content-area" style="padding: 10px 20px;">
+                    <div class="container">
+                        @if ( count($presentacion) > 0)
+                        <div class="p-a20 bg-white selector-d m-b20 box-elevado">
+                            <div class="section-content" style="text-align: center;">
+                                <div class="m-b10">
+                                    <h3 class="text-uppercas" style="color: #00b01a;"><b>{{ $presentacion[0]->content }}</b></h3>
+                                    <p>{{ $presentacion[1]->content }}</p>
+                                    <div class="dez-divider divider-2p icon-center" style="background: #00b01a;">
+                                    <i class="fa fa-truck text-white" style="background: #00b01a;"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        @endif
+                    </div>
+                </div>
+                
+
+                <div class="carruselMer">
+                    <div class="productosMer">
+                        @foreach ($merchandasing as $key => $mer )
+                            <div class="productoMer">
+                                <img src="{{ $mer->item->items[0]->content }}" alt="Producto 1">
+                                <h3>{{ $mer->item->items[1]->content }}</h3>
+                                <div class="texto-oculto-js">
+                                    <p>
+                                        {{ $mer->item->items[2]->content }}
+                                    </p>
+                                </div>
+                                <br>
+                                <a href="" class="btn btn-green">
+                                    <i class="fab fa-whatsapp"></i> &nbsp;Adquirir Ahora
+                                </a>
+                            </div>
+                        @endforeach
+                    </div>
+                    <button class="flechaMer izquierdaMer">&#10094;</button>
+                    <button class="flechaMer derechaMer">&#10095;</button>
+                    <div class="puntosMer">
+                        <span class="puntoMer" data-index="0"></span>
+                        <span class="puntoMer" data-index="1"></span>
+                        <span class="puntoMer" data-index="2"></span>
+                    </div>
+                </div>
+            </section>
+
             <section style="padding: 80px 30px;">
                 <div class="container-xl">
                     <div class="row">
@@ -207,6 +260,8 @@
                 </div>
             </section>
 
+
+
         </div>
         <!-- Content END-->
 
@@ -214,3 +269,9 @@
         <x-peru.footer-area></x-peru.footer-area>
         <!-- Footer END-->
     @endsection
+
+
+    
+
+
+
