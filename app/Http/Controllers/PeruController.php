@@ -69,7 +69,7 @@ class PeruController extends Controller
             ->get();
 
         $merchandasing = CmsSectionItem::with('item.items')
-            ->where('section_id', 167) //peru_galeria_alcanzando_las_estrellas_85
+            ->where('section_id', 168) //peru_galeria_alcanzando_las_estrellas_85
             ->orderBy('position')
             ->get();
 

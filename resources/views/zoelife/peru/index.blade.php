@@ -200,10 +200,10 @@
                         @foreach ($merchandasing as $key => $mer )
                             <div class="productoMer">
                                 <img src="{{ $mer->item->items[0]->content }}" alt="Producto 1">
-                                <h3>{{ $mer->item->items[1]->content }}</h3>
+                                <h3>{{ $mer->item->items[3]->content }}</h3>
                                 <div class="texto-oculto-js">
                                     <p>
-                                        {{ $mer->item->items[2]->content }}
+                                        {{ $mer->item->items[4]->content }}
                                     </p>
                                 </div>
                                 <br>
