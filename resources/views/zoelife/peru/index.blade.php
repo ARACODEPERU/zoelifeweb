@@ -177,7 +177,7 @@
             <section  style="padding: 80px 30px;">
 
                 
-                <div class="content-area" style="padding: 10px 20px;">
+                <div class="content-area" style="padding: 10px 10px;">
                     <div class="container">
                         @if ( count($presentacion) > 0)
                         <div class="p-a20 bg-white selector-d m-b20 box-elevado">
