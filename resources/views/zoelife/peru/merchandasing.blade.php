@@ -41,7 +41,8 @@
                             <div class="box-producto" style="place-items: center;">
                                 <div style="place-items: center;">
                                     <div class="carrusel">
-                                        <div class="imagenes" id="imagenes{{ '-' . $key + 1 }}" style="transform: translateX(0%);">
+                                        <div class="imagenes" id="imagenes{{ '-' . $key + 1 }}"
+                                            style="transform: translateX(0%);">
                                             <div class="imagen">
                                                 <img src="{{ $mer->item->items[0]->content }}" alt="Producto - Imagen 1">
                                             </div>
@@ -57,9 +58,10 @@
                                         <button class="flecha derecha"
                                             onclick="siguienteImagen('{{ strval($key + 1) }}')">&#10095;</button>
                                         <div class="puntos">
-                                            <span class="punto" data-index="0"></span>
-                                            <span class="punto" data-index="1"></span>
-                                            <span class="punto" data-index="2"></span>
+                                            <span id="punto1-{{ $key + 1 }}" class="punto activo"
+                                                data-index="0"></span>
+                                            <span id="punto2-{{ $key + 1 }}" class="punto" data-index="1"></span>
+                                            <span id="punto3-{{ $key + 1 }}" class="punto" data-index="2"></span>
                                         </div>
                                     </div>
                                     {{-- <img style="width: 100%;" src="{{ $mer->item->items[0]->content }}" alt="img_producto"> --}}
@@ -168,9 +170,9 @@
             function mostrarImagenes(indice, key) {
                 let imagenes2 = document.getElementById("imagenes-" + key.toString());
                 if (indice == 1) {
-                    imagenes2.style.transform = cambiaTranslate(imagenes2.style.transform, 1);
+                    imagenes2.style.transform = cambiaTranslate(imagenes2.style.transform, 1, key);
                 } else {
-                    imagenes2.style.transform = cambiaTranslate(imagenes2.style.transform, 0);
+                    imagenes2.style.transform = cambiaTranslate(imagenes2.style.transform, 0, key);
                 }
 
             }
@@ -188,23 +190,39 @@
 
             mostrarImagenes(indiceActual);
 
-            function cambiaTranslate(transformValue, val) {
+            function cambiaTranslate(transformValue, val, key) {
                 // Obtener el valor actual de translateX
                 const match = transformValue.match(/translateX\((-?\d+)%\)/);
                 if (match) {
                     // Extraer el valor numérico de translateX
                     const currentValue = parseInt(match[1]);
-                    if(val ==1){
-                        val=-100;
-                        if(currentValue==-200)val=200; // si llego a -200 le suma 200 para dejarlo en 0
-                    }else{
-                        val=100;
-                        if(currentValue==0)val=-200; // si llego a -200 le suma 200 para dejarlo en 0
+                    if (val == 1) {
+                        val = -100;
+                        if (currentValue == -200) val = 200; // si llego a -200 le suma 200 para dejarlo en 0
+                    } else {
+                        val = 100;
+                        if (currentValue == 0) val = -200; // si llego a -200 le suma 200 para dejarlo en 0
                     }
 
                     // Sumar 100 al valor actual
                     const newValue = currentValue + val;
-
+                    switch (newValue) {
+                        case 0:
+                            document.getElementById('punto1-'+key).classList.add('activo');
+                            document.getElementById('punto2-'+key).classList.remove('activo');
+                            document.getElementById('punto3-'+key).classList.remove('activo');
+                            break;
+                        case -100:
+                            document.getElementById('punto1-'+key).classList.remove('activo');
+                            document.getElementById('punto2-'+key).classList.add('activo');
+                            document.getElementById('punto3-'+key).classList.remove('activo');
+                            break;
+                        case -200:
+                            document.getElementById('punto1-'+key).classList.remove('activo');
+                            document.getElementById('punto2-'+key).classList.remove('activo');
+                            document.getElementById('punto3-'+key).classList.add('activo');
+                            break;
+                    }
                     // Actualizar el valor de translateX con la suma
 
                     return `translateX(${newValue}%)`;
