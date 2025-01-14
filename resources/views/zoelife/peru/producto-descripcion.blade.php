@@ -36,8 +36,7 @@
                                 {!! $product->description !!}
                             </div>
                         </div>
-                        <br>
-                        <div class="row">
+                        <div class="row" style="margin-top: -15px;">
                             <div class="col-md-4"></div>
                             <div class="col-md-4" style="text-align: center;">
                                 <a href="https://wa.link/isjo6j" 
