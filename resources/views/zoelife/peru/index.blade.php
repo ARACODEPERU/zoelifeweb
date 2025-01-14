@@ -194,7 +194,6 @@
                     </div>
                 </div>
                 
-
                 <div class="carruselMer">
                     <div class="productosMer">
                         @foreach ($merchandasing as $key => $mer )
@@ -221,6 +220,23 @@
                         <span class="puntoMer" data-index="2"></span>
                     </div>
                 </div>
+
+                <br>
+                <div class="container">
+                    <div class="row" style="justify-content: space-between">
+                        <div class="col-md-4" style="padding: 15px;">
+                        </div>
+                        <div class="col-md-4" style="padding: 15px;">
+                            <a href="{{ route('web_peru_merchandasing') }}" target="_blank"  class="site-button btn-zona-descarga" 
+                                style="font-weight: 700; text-align: center; padding: 17px 15px;">
+                                <i class="fa fa-shopping-basket" aria-hidden="true"></i>&nbsp;&nbsp; TODO NUESTRO MERCHANDASING
+                            </a>
+                        </div>
+                        <div class="col-md-4" style="padding: 15px;">
+                        </div>
+                    </div>
+                </div>
+
             </section>
 
             <section style="padding: 80px 30px;">
