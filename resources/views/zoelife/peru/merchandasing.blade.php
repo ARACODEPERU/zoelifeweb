@@ -73,7 +73,7 @@
                                     </p>
                                 </div>
                                 <br>
-                                <a href="" class="btn btn-green">
+                                <a href="https://wa.link/7bs0v5" class="btn btn-green">
                                     <i class="fab fa-whatsapp"></i> &nbsp;Adquirir Ahora
                                 </a>
                             </div>
