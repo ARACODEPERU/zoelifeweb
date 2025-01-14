@@ -141,17 +141,17 @@
                 border: none;
                 padding: 10px;
                 cursor: pointer;
-                font-size: 18px;
+                font-size: 15px;
                 border-radius: 5px;
-                z-index: 1;
+                z-index: 9;
             }
 
             .izquierda {
-                left: 10px;
+                left: 5px;
             }
 
             .derecha {
-                right: 10px;
+                right: 5px;
             }
 
             /* Estilos responsivos */
