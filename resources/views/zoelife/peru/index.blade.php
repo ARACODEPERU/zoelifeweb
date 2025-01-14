@@ -197,7 +197,7 @@
                 <div class="carruselMer">
                     <div class="productosMer">
                         @foreach ($merchandasing as $key => $mer )
-                            <div class="productoMer">
+                            <div class="productoMer" style="place-items: center;">
                                 <img src="{{ $mer->item->items[0]->content }}" alt="Producto 1">
                                 <h3>{{ $mer->item->items[3]->content }}</h3>
                                 <div class="texto-oculto-js">
