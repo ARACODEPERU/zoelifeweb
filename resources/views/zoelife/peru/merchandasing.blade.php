@@ -73,9 +73,12 @@
                                     </p>
                                 </div>
                                 <br>
-                                <a href="https://wa.link/7bs0v5" class="btn btn-green" style="place-items: center;">
-                                    <i class="fab fa-whatsapp"></i> &nbsp;Adquirir Ahora
-                                </a>
+                                <div  style="place-items: center;">
+                                    <a href="https://wa.link/7bs0v5" class="btn btn-green">
+                                        <i class="fab fa-whatsapp"></i> &nbsp;Adquirir Ahora
+                                    </a>
+
+                                </div>
                             </div>
                         </div>
                     @endforeach
