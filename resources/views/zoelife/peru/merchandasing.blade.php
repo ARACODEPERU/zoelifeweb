@@ -73,11 +73,14 @@
                                     </p>
                                 </div>
                                 <br>
-                                <div  style="place-items: center;">
-                                    <a href="https://wa.link/7bs0v5" class="btn btn-green">
-                                        <i class="fab fa-whatsapp"></i> &nbsp;Adquirir Ahora
-                                    </a>
-
+                                <div class="row">
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-10" style="place-items: center;">
+                                        <a href="https://wa.link/7bs0v5" class="btn btn-green" style=" width: 100%;">
+                                            <i class="fab fa-whatsapp"></i> &nbsp;Adquirir Ahora
+                                        </a>
+                                    </div>
+                                    <div class="col-md-1"></div>
                                 </div>
                             </div>
                         </div>
