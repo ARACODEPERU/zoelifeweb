@@ -227,7 +227,7 @@
                         <div class="col-md-4" style="padding: 15px;">
                         </div>
                         <div class="col-md-4" style="padding: 15px;">
-                            <a href="{{ route('web_peru_merchandasing') }}" target="_blank"  class="site-button btn-zona-descarga" 
+                            <a href="{{ route('web_peru_merchandasing') }}" class="site-button btn-zona-descarga" 
                                 style="font-weight: 700; text-align: center; padding: 17px 15px;">
                                 <i class="fa fa-shopping-basket" aria-hidden="true"></i>&nbsp;&nbsp; TODO NUESTRO MERCHANDASING
                             </a>
