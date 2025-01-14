@@ -135,7 +135,9 @@
                 position: absolute;
                 top: 50%;
                 transform: translateY(-50%);
-                background-color: rgba(255, 255, 255, 0.8);
+                /* background-color: rgba(255, 255, 255, 0.8); */
+                background-color: #5A9F00;
+                color: #fff;
                 border: none;
                 padding: 10px;
                 cursor: pointer;
