@@ -223,16 +223,16 @@
 
                 <br>
                 <div class="container">
-                    <div class="row" style="justify-content: space-between">
-                        <div class="col-md-4" style="padding: 15px;">
+                    <div class="row">
+                        <div class="col-md-4">
                         </div>
-                        <div class="col-md-4" style="padding: 15px;">
+                        <div class="col-md-4" style="text-align: center;">
                             <a href="{{ route('web_peru_merchandasing') }}" class="site-button btn-zona-descarga" 
                                 style="font-weight: 700; text-align: center; padding: 17px 15px;">
-                                <i class="fa fa-shopping-basket" aria-hidden="true"></i>&nbsp;&nbsp; TODO NUESTRO MERCHANDASING
+                                <i class="fa fa-shopping-basket" aria-hidden="true"></i>&nbsp;&nbsp; TODO NUESTRO MERCHANDISING
                             </a>
                         </div>
-                        <div class="col-md-4" style="padding: 15px;">
+                        <div class="col-md-4">
                         </div>
                     </div>
                 </div>

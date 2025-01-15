@@ -307,7 +307,7 @@
                     <div class="row">
                         <div class="col-md-12 align-self-center">
                             <span class="gen-copyright"> 
-                                Copyright 2024 Zoelife International
+                                Copyright 2025 Zoelife International
                                 | Desarrollado por 
                                 <a class="linkaracode" target="_blank" href="https://aracodeperu.com/"> 
                                     Aracode Smart Solutions
