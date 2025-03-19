@@ -98,10 +98,10 @@
                                 <b>Teléfono:</b> <span id="modal-centros-tel"> Jesus Anaya Aguirre</span>
                             </div>
                             <div class="col-md-6">
-                                <b>Correo Electrónico:</b> <span id="modal-centros-ele"> Jesus Anaya Aguirre</span>
+                                <b>Dirección:</b> <span id="modal-centros-dir"> Jesus Anaya Aguirre</span>
                             </div>
                             <div class="col-md-6">
-                                <b>Dirección:</b> <span id="modal-centros-dir"> Jesus Anaya Aguirre</span>
+                                <b>Horario de atención:</b> <span id="modal-centros-ele"> Jesus Anaya Aguirre</span>
                             </div>
                         </div>
                         <br>
