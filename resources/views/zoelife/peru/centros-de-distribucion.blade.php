@@ -92,16 +92,16 @@
                         <br>
                         <div class="row">
                             <div class="col-md-6">
-                                <b>Representante:</b><span id="modal-centros-res"> Jesus Anaya Aguirre</span>
+                                <b>Representante:</b>&nbsp; <span id="modal-centros-res"> Jesus Anaya Aguirre</span>
                             </div>
                             <div class="col-md-6">
-                                <b>Teléfono:</b> <span id="modal-centros-tel"> Jesus Anaya Aguirre</span>
+                                <b>Teléfono:</b>&nbsp; <span id="modal-centros-tel"> Jesus Anaya Aguirre</span>
                             </div>
                             <div class="col-md-6">
-                                <b>Dirección:</b> <span id="modal-centros-dir"> Jesus Anaya Aguirre</span>
+                                <b>Dirección:</b>&nbsp; <span id="modal-centros-dir"> Jesus Anaya Aguirre</span>
                             </div>
                             <div class="col-md-6">
-                                <b>Horario de atención:</b> <span id="modal-centros-ele"> Jesus Anaya Aguirre</span>
+                                <b>Horario de atención:</b>&nbsp; <span id="modal-centros-ele"> Jesus Anaya Aguirre</span>
                             </div>
                         </div>
                         <br>
