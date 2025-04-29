@@ -31,7 +31,7 @@
                                                         data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10"
                                                         class="rev-slidebg" data-no-retina="" style="background-size: cover; background-position: center; width: 100%; height: auto;"
                                                 />
-                                                
+
                                                 <div class="tp-caption tp-shape tp-shapewrapper " id="slide-100-layer-1"
                                                     data-x="['center','center','center','center']"
                                                     data-hoffset="['0','0','0','0']"
@@ -276,21 +276,21 @@
             <div class="tranding-slider-control" style="margin-top: -260px;">
               <div class="container">
                 <div class="row">
-                  <div class="col-md-2"></div>
+                  <div class="col-md-4"></div>
                   <div class="col-md-2">
                     <div class="swiper-button-prev slider-arrow" style="margin-top: -40px;">
                       <ion-icon name="arrow-back-outline"></ion-icon>
                     </div>
                   </div>
-                  <div class="col-md-4">
+                  {{-- <div class="col-md-4">
                     <div class="swiper-pagination" style="justify-content: center;"></div>
-                  </div>
+                  </div> --}}
                   <div class="col-md-2">
                     <div class="swiper-button-next slider-arrow" style="margin-top: -40px;">
                       <ion-icon name="arrow-forward-outline"></ion-icon>
                     </div>
                   </div>
-                  <div class="col-md-2"></div>
+                  <div class="col-md-4"></div>
                 </div>
               </div>
             </div>
@@ -298,7 +298,7 @@
           </div>
         </section>
       </div>
-      
+
       <div class="btn-header-mobile">
         <section  style="padding: 80px 10px;">
           <div class="swiper tranding-slider">
@@ -316,33 +316,33 @@
             </div>
             <div class="tranding-slider-control" style="margin-top: -280px;">
                 <div class="container">
-                    <div class="row">
+                    {{-- <div class="row">
                         <div class="col-md-12" style="justify-content: center; justify-items: center;">
                             <div class="swiper-pagination"></div>
                         </div>
-                    </div>
+                    </div> --}}
                     <br>
                     <br>
                     <div class="row">
-                        <div class="col-md-2"></div>
-                        <div class="col-md-4">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-2">
                             <div class="swiper-button-prev slider-arrow" style="margin-top: -40px;">
                             <ion-icon name="arrow-back-outline"></ion-icon>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-2">
                             <div class="swiper-button-next slider-arrow" style="margin-top: -40px;">
                             <ion-icon name="arrow-forward-outline"></ion-icon>
                             </div>
                         </div>
-                        <div class="col-md-2"></div>
+                        <div class="col-md-4"></div>
                     </div>
                 </div>
             </div>
           </div>
         </section>
       </div>
-        
+
 
         <div class="btn-header-pc">
             <section style="padding: 0px 30px;">
@@ -358,33 +358,33 @@
                         @endforeach
                     @endif
                 </div>
-    
+
                 <div class="tranding-slider-control" style="margin-top: -150px;">
                           <div class="container">
                             <div class="row">
-                              <div class="col-md-2"></div>
+                              <div class="col-md-4"></div>
                               <div class="col-md-2">
                                 <div class="swiper-button-prev slider-arrow" style="margin-top: -40px;">
                                   <ion-icon name="arrow-back-outline"></ion-icon>
                                 </div>
                               </div>
-                              <div class="col-md-4">
+                              {{-- <div class="col-md-4">
                                 <div class="swiper-pagination" style="justify-content: center;"></div>
-                              </div>
+                              </div> --}}
                               <div class="col-md-2">
                                 <div class="swiper-button-next slider-arrow" style="margin-top: -40px;">
                                   <ion-icon name="arrow-forward-outline"></ion-icon>
                                 </div>
                               </div>
-                              <div class="col-md-2"></div>
+                              <div class="col-md-4"></div>
                             </div>
                           </div>
                 </div>
-    
+
               </div>
             </section>
         </div>
-          
+
         <div class="btn-header-mobile">
             <section style="padding: 20px 10px;">
               <div class="swiper tranding-slider">
@@ -404,33 +404,35 @@
                 </div>
                 <div class="tranding-slider-control" style="margin-top: -230px;">
                     <div class="container">
-                        <div class="row">
+                        {{-- <div class="row">
                             <div class="col-md-12" style="justify-content: center; justify-items: center;">
                                 <div class="swiper-pagination"></div>
                             </div>
-                        </div>
+                        </div> --}}
                         <br>
                         <br>
                         <div class="row">
-                            <div class="col-md-2"></div>
-                            <div class="col-md-4">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-2">
                                 <div class="swiper-button-prev slider-arrow" style="margin-top: -40px;">
                                 <ion-icon name="arrow-back-outline"></ion-icon>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-2">
                                 <div class="swiper-button-next slider-arrow" style="margin-top: -40px;">
                                 <ion-icon name="arrow-forward-outline"></ion-icon>
                                 </div>
                             </div>
-                            <div class="col-md-2"></div>
+                            <div class="col-md-4"></div>
                         </div>
                     </div>
                 </div>
               </div>
             </section>
         </div>
-        
+        <br>
+        <br>
+
         <section style="padding: 20px 30px;">
             <div class="container box-elevado-green bg-white selector-d" style="padding: 40px 20px; border-radius: 20px;  border: 3px solid #00b01a;">
                 <div class="row">
@@ -447,7 +449,7 @@
                 <br>
                 <div class="row">
                     <div class="col-md-6  text-center" style="padding: 15px;">
-                        <a href="https://api.whatsapp.com/send?phone=51{{ $tuExito[2]->content }}&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?" 
+                        <a href="https://api.whatsapp.com/send?phone=51{{ $tuExito[2]->content }}&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?"
                             target="_blank" class="btn-green" style="font-weight: 700;">
                             <i class="fa fa-commenting" aria-hidden="true"></i>&nbsp;&nbsp; Quiero unirme ahora
                         </a>
@@ -460,7 +462,7 @@
                 </div>
             </div>
         </section>
-        
+
         <section style="padding: 40px 25px;">
             <div class="container-xl">
                 <div class="row">
@@ -477,7 +479,7 @@
             <div class="slide-container swiper">
                 <div class="slide-content">
                     <div class="card-wrapper swiper-wrapper">
-                        
+
                         @foreach ($comunidad as $key => $cn )
                             <div class="card swiper-slide">
                                 <div class="image-content">
@@ -499,11 +501,11 @@
                         @endforeach
                     </div>
                 </div>
-    
+
                 <div class="swiper-button-next swiper-navBtn"></div>
                 <div class="swiper-button-prev swiper-navBtn"></div>
                 <div class="swiper-pagination"></div>
-                
+
             </div>
         </section>
 
@@ -709,7 +711,7 @@
             .tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
             background: var(--primary);
             }
-        </style> 
+        </style>
 
         <style>
             .paginator_aracode {
