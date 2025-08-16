@@ -427,4 +427,24 @@ class PeruController extends Controller
             'banner' => $banner
         ]);
     }
+
+    public function reclamaciones()
+    {
+        $banner = CmsSection::where('component_id', 'peru_banner_reclamaciones_170')
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->first();
+
+        
+
+        return view('zoelife/peru.libro-de-reclamaciones', [
+            'banner' => $banner
+        ]);
+    }
+
 }

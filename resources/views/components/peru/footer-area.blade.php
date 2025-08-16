@@ -93,6 +93,10 @@
                                     <i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp; Politicas de Privacidad</a>
                             </li>
                             <li>
+                                <a href="{{ route('web_peru_reclamaciones') }}">
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp; Libro de Reclamaciones</a>
+                            </li>
+                            <li>
                                 <a href="{{ route('web_peru_contacto') }}">
                                     <i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp; Contacto</a>
                             </li>
