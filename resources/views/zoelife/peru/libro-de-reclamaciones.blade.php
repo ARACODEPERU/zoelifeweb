@@ -25,6 +25,18 @@
         </div>
         <!-- Breadcrumb row END -->
 
+        @if(session('success'))
+        <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-4" role="alert">
+            <span class="block sm:inline">{{ session('success') }}</span>
+            <span class="absolute top-0 bottom-0 right-0 px-4 py-3">
+                <svg class="fill-current h-6 w-6 text-green-500" role="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" onclick="this.parentElement.parentElement.remove()">
+                    <title>Cerrar</title>
+                    <path d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z"/>
+                </svg>
+            </span>
+        </div>
+    @endif
+
         <section style="padding: 60px 0px;">
             <div class="container">
                 <div class="row">
@@ -32,9 +44,10 @@
                         <div class="tabs">
                             <!-- Sign In -->
                             <input type="radio" class="tabs__button" name="signForm" id="signIn" checked />
-                            <label class="tabs__text" for="signIn">Persona</label>
+                            <label class="tabs__text" for="signIn">Libro de Reclamaciones</label>
                             <div class="tabs__content">
-                                <form class="form">
+                                <form class="form" method="post" action="{{ route('complaints_book_store') }}">
+                                    @csrf
                                     <div class="row">
                                         <div class="col-md-12">
                                             <h5>1. INFORMACIÓN DEL CONSUMIDOR RECLAMANTE</h5>
@@ -42,23 +55,21 @@
                                     </div>
                                     <div class="row">
                                         <div class="col">
-                                            <div class="mb-3">
+                                            <div class="mb-6">
                                                 <label for="formGroupExampleInput" class="form-label">Tu Nombre *</label>
-                                                <input type="text" class="form-control" id="formGroupExampleInput">
+                                                <input required type="text" class="form-control" id="formGroupExampleInput" name="names">
                                             </div>
                                         </div>
+
                                         <div class="col">
-                                            <div class="mb-3">
-                                                <label for="formGroupExampleInput" class="form-label">Tus Apellidos
-                                                    *</label>
-                                                <input type="text" class="form-control" id="formGroupExampleInput">
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="mb-3">
+                                            <div class="mb-6">
                                                 <label for="formGroupExampleInput" class="form-label">Tipo de Documento
                                                     *</label>
-                                                <input type="text" class="form-control" id="formGroupExampleInput">
+                                                <select required name="tipoIdentificacion" id="tipoIdentificcion">
+                                                    @foreach ($tipoDocumentos as $tipo)
+                                                        <option value="{{ $tipo->id }}">{{ $tipo->description }}</option>
+                                                    @endforeach
+                                                </select>
                                             </div>
                                         </div>
                                     </div>
@@ -67,139 +78,20 @@
                                             <div class="mb-3">
                                                 <label for="formGroupExampleInput" class="form-label">Número de Documento
                                                     *</label>
-                                                <input type="text" class="form-control" id="formGroupExampleInput">
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="mb-3">
-                                                <label for="formGroupExampleInput" class="form-label">Tu Teléfono *</label>
-                                                <input type="text" class="form-control" id="formGroupExampleInput">
+                                                <input required type="number" class="form-control" id="formGroupExampleInput" name="dni">
                                             </div>
                                         </div>
                                         <div class="col">
                                             <div class="mb-3">
                                                 <label for="formGroupExampleInput" class="form-label">Tu Correo Electrónico
                                                     *</label>
-                                                <input type="text" class="form-control" id="formGroupExampleInput">
+                                                <input type="text" class="form-control" id="formGroupExampleInput" name="email">
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <h5>2. IDENTIFICACIÓN DEL BIEN CONTRATADO</h5>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">
-                                            <div class="mb-3">
-                                                <label for="formGroupExampleInput" class="form-label">Tipo de Producto
-                                                    *</label>
-                                                <input type="text" class="form-control" id="formGroupExampleInput">
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="mb-3">
-                                                <label for="formGroupExampleInput" class="form-label">Nombre del Producto
-                                                    *</label>
-                                                <input type="text" class="form-control" id="formGroupExampleInput">
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="mb-3">
-                                                <label for="formGroupExampleInput" class="form-label">Monto Reclamado
-                                                    *</label>
-                                                <input type="text" class="form-control" id="formGroupExampleInput">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="mb-3">
-                                            <label for="exampleFormControlTextarea1" class="form-label">Detalle de la
-                                                Reclamación *</label>
-                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                        </div>
-
-                                    </div>
-                                    <div class="row">
-                                        <div class="mb-3 form-check">
-                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                            <label class="form-check-label" for="exampleCheck1">Declaro ser el usuario del servicio o producto 
-                                                y acepto el contenido del presente formulario manifestando bajo Declaración Jurada la veracidad 
-                                                de los hechos descritos
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <button type="submit">Enviar</button>
-                                </form>
-                            </div>
-
-                            <!-- Sign Up -->
-                            <input type="radio" class="tabs__button" name="signForm" id="signUp" />
-                            <label class="tabs__text" for="signUp">Empresa</label>
-                            <div class="tabs__content">
-                                <form class="form">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <h5>1. INFORMACIÓN DEL CONSUMIDOR RECLAMANTE</h5>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">
-                                            <div class="mb-3">
-                                                <label for="formGroupExampleInput" class="form-label">Razón Social *</label>
-                                                <input type="text" class="form-control" id="formGroupExampleInput">
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="mb-3">
-                                                <label for="formGroupExampleInput" class="form-label">RUC *</label>
-                                                <input type="text" class="form-control" id="formGroupExampleInput">
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="mb-3">
-                                                <label for="formGroupExampleInput" class="form-label">Tu Nombre*</label>
-                                                <input type="text" class="form-control" id="formGroupExampleInput">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">
-                                            <div class="mb-3">
-                                                <label for="formGroupExampleInput" class="form-label">Tus Apellidos *</label>
-                                                <input type="text" class="form-control" id="formGroupExampleInput">
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="mb-3">
-                                                <label for="formGroupExampleInput" class="form-label">Tipo de Documento *</label>
-                                                <input type="text" class="form-control" id="formGroupExampleInput">
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="mb-3">
-                                                <label for="formGroupExampleInput" class="form-label">Número de Documento *</label>
-                                                <input type="text" class="form-control" id="formGroupExampleInput">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
                                         <div class="col">
                                             <div class="mb-3">
                                                 <label for="formGroupExampleInput" class="form-label">Tu Teléfono *</label>
-                                                <input type="text" class="form-control" id="formGroupExampleInput">
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="mb-3">
-                                                <label for="formGroupExampleInput" class="form-label">Tú Correo Electrónico *</label>
-                                                <input type="text" class="form-control" id="formGroupExampleInput">
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="mb-3">
-                                                <label for="formGroupExampleInput" class="form-label">Número de Documento *</label>
-                                                <input type="text" class="form-control" id="formGroupExampleInput">
+                                                <input type="tel" class="form-control" id="formGroupExampleInput" name="telefono">
                                             </div>
                                         </div>
                                     </div>
@@ -213,37 +105,81 @@
                                             <div class="mb-3">
                                                 <label for="formGroupExampleInput" class="form-label">Tipo de Producto
                                                     *</label>
-                                                <input type="text" class="form-control" id="formGroupExampleInput">
+                                                <select name="tipoBien" id="cbxSer">
+                                                    <option value="product">Producto</option>
+                                                    <option value="service">Servicio</option>
+                                                </select>
                                             </div>
                                         </div>
                                         <div class="col">
                                             <div class="mb-3">
-                                                <label for="formGroupExampleInput" class="form-label">Nombre del Producto
+                                                <label for="formGroupExampleInput" class="form-label">Nombre del Producto/Servicio
                                                     *</label>
-                                                <input type="text" class="form-control" id="formGroupExampleInput">
+                                                <textarea name="descripcion_bien" id="txtdesc" cols="30" rows="10" placeholder="nombre del bien o servicio y alguna descripción"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="mb-3">
+                                                <label for="formGroupExampleInput" class="form-label">Deseo Reclamar un monto por el producto/servicio
+                                                    *</label>
+                                                <input type="checkbox" name="chxMonto" id="cbxMoneda">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="mb-3">
+                                                <label for="formGroupExampleInput" class="form-label">Elija Tipo Moneda
+                                                    *</label>
+                                                <select name="moneda" id="cbxMoneda">
+                                                    @foreach ($monedas as $moneda)
+                                                    <option value="{{ $moneda->id }}">{{ $moneda->description }}</option>
+                                                    @endforeach
+                                                </select>
                                             </div>
                                         </div>
                                         <div class="col">
                                             <div class="mb-3">
                                                 <label for="formGroupExampleInput" class="form-label">Monto Reclamado
                                                     *</label>
-                                                <input type="text" class="form-control" id="formGroupExampleInput">
+                                                <input type="text" class="form-control" id="formGroupExampleInput" name="monto">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="mb-3">
-                                            <label for="exampleFormControlTextarea1" class="form-label">Detalle de la
-                                                Reclamación *</label>
-                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                            <label for="exampleFormControlTextarea1" class="form-label">Reclamo o Queja*</label>
+                                            <select name="tipoReclamo" id="cbxTipoQueja">
+                                                <option value="queja">Queja</option>
+                                                <option value="reclamo">Reclamo</option>
+                                            </select>
+                                            <span>Elija "Reclamo" si la disconformidad es con el producto o servicio. Elija "Queja" si la disconformidad es con la atención, u otros aspectos no relacionados con el producto o servicio.</span>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="mb-6">
+                                            <label for="exampleFormControlTextarea1" class="form-label">Detalle*</label>
+                                            <textarea name="reclamo" id="txtReclamo" cols="30" rows="10"></textarea>
+                                            <span>Detalle por favor el motivo de su reclamación.</span>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="mb-6">
+                                            <label for="exampleFormControlTextarea1" class="form-label">Solución esperada*</label>
+                                            <textarea name="pedido" id="txtPedido" cols="30" rows="10"></textarea>
+                                            <span>Cuéntenos qué espera como solución a su reclamación.</span>
                                         </div>
 
                                     </div>
                                     <div class="row">
                                         <div class="mb-3 form-check">
-                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                            <label class="form-check-label" for="exampleCheck1">Declaro ser el usuario del servicio o producto 
-                                                y acepto el contenido del presente formulario manifestando bajo Declaración Jurada la veracidad 
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1" name="acepto">
+                                            <label class="form-check-label" for="exampleCheck1">Declaro ser el usuario del
+                                                servicio o producto
+                                                y acepto el contenido del presente formulario manifestando bajo Declaración
+                                                Jurada la veracidad
                                                 de los hechos descritos
                                             </label>
                                         </div>
@@ -251,6 +187,7 @@
                                     <button type="submit">Enviar</button>
                                 </form>
                             </div>
+
                         </div>
                     </div>
                 </div>

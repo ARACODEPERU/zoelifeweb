@@ -8,6 +8,7 @@ use Modules\CMS\Entities\CmsSection;
 use Modules\CMS\Entities\CmsSectionItem;
 use Modules\CMS\Entities\CmsTestimony;
 use Modules\Onlineshop\Entities\OnliItem;
+use Illuminate\Support\Facades\DB;
 
 class PeruController extends Controller
 {
@@ -339,7 +340,7 @@ class PeruController extends Controller
         ]);
     }
 
-    
+
     public function merchandasing()
     {
         $banner = CmsSection::where('component_id', 'peru_banner_merchandasing_165')
@@ -352,7 +353,7 @@ class PeruController extends Controller
             ->orderBy('cms_section_items.position')
             ->first();
 
-        
+
 
         $merchandasing = CmsSectionItem::with('item.items')->where('section_id', 168) //peru_galeria_alcanzando_las_estrellas_85
             ->orderBy('position')
@@ -421,7 +422,7 @@ class PeruController extends Controller
             ->orderBy('cms_section_items.position')
             ->first();
 
-        
+
 
         return view('zoelife/peru.politicas-de-privacidad', [
             'banner' => $banner
@@ -439,11 +440,14 @@ class PeruController extends Controller
             )
             ->orderBy('cms_section_items.position')
             ->first();
+            $monedas = DB::table('sunat_currency_types')->get();
 
-        
+            $tipoDocumentos = DB::table('identity_document_type')->get();
 
         return view('zoelife/peru.libro-de-reclamaciones', [
-            'banner' => $banner
+            'banner' => $banner,
+            'monedas' => $monedas,
+            'tipoDocumentos' => $tipoDocumentos,
         ]);
     }
 

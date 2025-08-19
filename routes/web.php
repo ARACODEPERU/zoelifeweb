@@ -19,6 +19,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\WebController;
 use Modules\Blog\Http\Controllers\BlogController;
 use Modules\Sales\Http\Controllers\ProductController;
+use App\Http\Controllers\ComplaintsBookController;
 
 Route::get('cookies_policy', function () {
     return view('cookies_policy');
@@ -183,5 +184,9 @@ Route::middleware('auth')->group(function () {
     Route::post('international/cities/store', [UbigeoController::class, 'storeCity'])->name('ubigeo_store');
     Route::delete('international/cities/destroy/{id}', [UbigeoController::class, 'destroy'])->name('ubigeo_destroy');
 });
+
+Route::get('/libro-de-reclamaciones',  [WebPageController::class, 'complaints'])->name('web_complaints');
+Route::get('complaints-book', [ComplaintsBookController::class, 'createdByClient'])->name('complaints_book');
+Route::post('complaints-book/store', [ComplaintsBookController::class, 'storeByClient'])->name('complaints_book_store');
 
 require __DIR__ . '/auth.php';
