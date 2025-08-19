@@ -185,7 +185,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('international/cities/destroy/{id}', [UbigeoController::class, 'destroy'])->name('ubigeo_destroy');
 });
 
-Route::get('/libro-de-reclamaciones',  [WebPageController::class, 'complaints'])->name('web_complaints');
+Route::get('complaints-book', [ComplaintsBookController::class, 'index'])->name('complaints_book_list');
 Route::get('complaints-book', [ComplaintsBookController::class, 'createdByClient'])->name('complaints_book');
 Route::post('complaints-book/store', [ComplaintsBookController::class, 'storeByClient'])->name('complaints_book_store');
 
