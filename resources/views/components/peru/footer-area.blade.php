@@ -38,7 +38,7 @@
     <div class="footer-top">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-md-3">
                     <div class="widget widget_about">
                         <div class="logo-footer">
                             <img src="{{ $footer[0]->items[0]->item->content }}" alt="">
@@ -46,7 +46,7 @@
                         <p class="m-tb20">{{ $footer[0]->items[1]->item->content }}</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-md-3">
                     <div class="widget widget_services">
                         <h4 class="m-b10 text-uppercase">Testimonios</h4>
                         <div class="dez-separator" style="background: #00b01a;"></div>
@@ -71,7 +71,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-md-3">
                     <div class="widget widget_services">
                         <h4 class="m-b10 text-uppercase">Navegación</h4>
                         <div class="dez-separator" style="background: #00b01a;"></div>
@@ -93,17 +93,13 @@
                                     <i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp; Politicas de Privacidad</a>
                             </li>
                             <li>
-                                <a href="{{ route('web_peru_reclamaciones') }}">
-                                    <i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp; Libro de Reclamaciones</a>
-                            </li>
-                            <li>
                                 <a href="{{ route('web_peru_contacto') }}">
                                     <i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp; Contacto</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-md-3">
                     <div class="widget widget_getintuch">
                         <h4 class="m-b10 text-uppercase">Contáctanos</h4>
                         <div class="dez-separator" style="background: #00b01a;"></div>
@@ -125,6 +121,9 @@
                                         <br />
                             </li>
                         </ul>
+                        <a href="{{ route('web_peru_reclamaciones') }}">
+                            <img style="height: 120px;" src="{{ asset('themes/zoelife/peru/images/libroReclamaciones.png') }}" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
