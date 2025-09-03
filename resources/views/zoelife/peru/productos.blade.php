@@ -102,7 +102,7 @@
                 <div class="row">
                     @if (isset($productos))
                         @foreach ($productos as $producto)
-                            <div class="col-md-4" style="padding: 15px;">
+                            <div class="col-md-3" style="padding: 15px;">
                                 <div class="box-producto" onmouseover="mostrarDescripcion({{ $producto->id }})"
                                     onmouseout="ocultarDescripcion({{ $producto->id }})">
                                     <a href="{{ route('web_peru_producto_descripcion', $producto->id) }}">
