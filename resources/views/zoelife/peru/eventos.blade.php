@@ -509,6 +509,72 @@
             </div>
         </section>
 
+        
+            <section  style="padding: 80px 30px;">
+
+                
+                <div class="content-area" style="padding: 10px 10px;">
+                    <div class="container">
+                        @if ( count($presentacion) > 0)
+                        <div class="p-a20 bg-white selector-d m-b20 box-elevado">
+                            <div class="section-content" style="text-align: center;">
+                                <div class="m-b10">
+                                    <h3 class="text-uppercas" style="color: #00b01a;"><b>{{ $presentacion[0]->content }}</b></h3>
+                                    <p>{{ $presentacion[1]->content }}</p>
+                                    <div class="dez-divider divider-2p icon-center" style="background: #00b01a;">
+                                    <i class="fa fa-truck text-white" style="background: #00b01a;"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        @endif
+                    </div>
+                </div>
+                
+                <div class="carruselMer">
+                    <div class="productosMer">
+                        @foreach ($merchandasing as $key => $mer )
+                            <div class="productoMer" style="place-items: center;">
+                                <img src="{{ $mer->item->items[0]->content }}" alt="Producto 1">
+                                <h3>{{ $mer->item->items[3]->content }}</h3>
+                                <div class="texto-oculto-js">
+                                    <p>
+                                        {{ $mer->item->items[4]->content }}
+                                    </p>
+                                </div>
+                                <br>
+                                <a href="https://wa.link/7bs0v5" class="btn btn-green">
+                                    <i class="fab fa-whatsapp"></i> &nbsp;Adquirir Ahora
+                                </a>
+                            </div>
+                        @endforeach
+                    </div>
+                    <button class="flechaMer izquierdaMer">&#10094;</button>
+                    <button class="flechaMer derechaMer">&#10095;</button>
+                    <div class="puntosMer">
+                        <span class="puntoMer" data-index="0"></span>
+                        <span class="puntoMer" data-index="1"></span>
+                        <span class="puntoMer" data-index="2"></span>
+                    </div>
+                </div>
+
+                <br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                        </div>
+                        <div class="col-md-4" style="text-align: center;">
+                            <a href="{{ route('web_peru_merchandasing') }}" class="site-button btn-zona-descarga" 
+                                style="font-weight: 700; text-align: center; padding: 17px 15px;">
+                                <i class="fa fa-shopping-basket" aria-hidden="true"></i>&nbsp;&nbsp; TODO NUESTRO MERCHANDISING
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>

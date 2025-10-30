@@ -170,11 +170,22 @@
                             {!! $video->content !!}
                         </div>
                     </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4">
+                            <a href="https://api.whatsapp.com/send?phone=51992914870&text=Hola&nbsp;ZoeLife!&nbsp;me&nbsp;pueden&nbsp;ayudar?" target="_blank"  class="site-button btn-zona-descarga" 
+                                    style="font-weight: 700; text-align: center; padding: 17px 15px;">
+                                    <i class="fab fa-whatsapp" aria-hidden="true" style="font-size: 18px;"></i>&nbsp;&nbsp; Quiero más información 
+                            </a>
+                        </div>
+                        <div class="col-md-4"></div>
+                    </div>
                 </div>
             </div>
             <!-- Video Presentación / END -->
 
-            <section  style="padding: 80px 30px;">
+            {{-- <section  style="padding: 80px 30px;">
 
                 
                 <div class="content-area" style="padding: 10px 10px;">
@@ -237,9 +248,9 @@
                     </div>
                 </div>
 
-            </section>
+            </section> --}}
 
-            <section style="padding: 80px 30px;">
+            {{-- <section style="padding: 80px 30px;">
                 <div class="container-xl">
                     <div class="row">
                         <div class="col-md-12" style="text-align:center; padding: 40px 0px 10px 0px;">
@@ -274,7 +285,7 @@
                             </div>
                         </div>
                 </div>
-            </section>
+            </section> --}}
 
 
 

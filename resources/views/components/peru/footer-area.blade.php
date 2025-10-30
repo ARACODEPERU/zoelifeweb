@@ -133,11 +133,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 text-left">
-                    <span>© Copyright 2024</span>
+                    <span>© Copyright 2025</span>
                 </div>
                 <div class="col-lg-4 text-center">
                     <span> Desarrollado por <i class="fa fa-heart  heart" style="color: #00b01a;"></i>
-                        <a href="">Aracode Smart Solutions</a>
+                        <a href="https://www.aracodeperu.com/">Aracode Smart Solutions</a>
                     </span>
                 </div>
                 <div class="col-lg-4 text-right">

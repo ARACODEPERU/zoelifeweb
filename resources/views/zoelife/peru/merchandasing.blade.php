@@ -27,7 +27,7 @@
                 <div class="container">
                     <ul class="list-inline">
                         <li><a href="{{ route('web_peru_merchandasing') }}">Home</a></li>
-                        <li>Merchandasing</li>
+                        <li>Merchandising</li>
                     </ul>
                 </div>
             </div>
