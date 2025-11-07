@@ -49,9 +49,15 @@ Route::get('/', function () {
 });
 
 
-Route::get('/', [WebController::class, 'index'])->name('cms_principal');
+// Route::get('/', [WebController::class, 'index'])->name('cms_principal');
 
-Route::get('/home', [WebController::class, 'index'])->name('cms_principal');
+// Route::get('/home', [WebController::class, 'index'])->name('cms_principal');
+
+
+
+Route::get('/', [PeruController::class, 'inicio'])->name('web_peru_inicio');
+
+Route::get('/home', [PeruController::class, 'inicio'])->name('web_peru_inicio');
 
 
 Route::get('/peru', [PeruController::class, 'inicio'])->name('web_peru_inicio');
