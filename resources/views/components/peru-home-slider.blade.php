@@ -1,9 +1,8 @@
 <div>
     <div class="slider-container">
         <div class="slider">
-            @foreach ($sliders as $slide)
-                <img src="{{ $slide->content }}" alt="Imagen 1">
-            @endforeach
+                <img src="{{ $sliders[0]->item->content }}" alt="Imagen 1">
+                <img src="{{ $sliders[1]->item->content }}" alt="Imagen 2">
         </div>
         <button class="prev-button">&#10094;</button>
         <button class="next-button">&#10095;</button>

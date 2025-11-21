@@ -16,7 +16,7 @@ class PeruHomeSlider extends Component
     public $sliders;
     public function __construct()
     {
-        $this->sliders = CmsSectionItem::with('item.items')->where('section_id', 121)->get();
+        $this->sliders = CmsSectionItem::with('item.items')->where('section_id', 2)->get();
     }
 
     /**

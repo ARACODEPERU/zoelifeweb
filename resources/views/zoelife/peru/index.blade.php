@@ -55,7 +55,7 @@
                         </div>
                     </div>
                 </div>
-            </div> --}}
+            </div>  --}}
             <!-- Slider END -->
 
             <x-peru-home-slider />
