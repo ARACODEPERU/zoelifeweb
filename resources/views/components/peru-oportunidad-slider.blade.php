@@ -1,4 +1,5 @@
 <div>
+    
     <div class="slider-container">
         <div class="slider">
                 <img src="{{ $sliders[0]->item->content }}" alt="Imagen 1">
@@ -142,5 +143,4 @@
             startAutoSlide();
         });
     </script>
-
 </div>

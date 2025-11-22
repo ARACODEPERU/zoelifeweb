@@ -8,7 +8,7 @@
     <div class="page-content" style="margin-top: 85px;">
 
         <!-- Slider -->
-        <section>
+        {{-- <section>
             <div class="main-slider style-two default-banner">
                     <div class="tp-banner-container">
                         <div class="tp-banner">
@@ -53,8 +53,10 @@
                         </div>
                     </div>
             </div>
-        </section>
+        </section> --}}
         <!-- Slider END -->
+
+        <x-peru-oportunidad-slider />
 
         <div class="btn-header-mobile">
             <div class="breadcrumb-row">
