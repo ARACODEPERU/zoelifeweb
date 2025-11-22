@@ -2,10 +2,10 @@
     <div class="section-full bg-white  selector-d" style="padding: 40px 30px;">
         <div class="container-xxl">
             <div class="row">
-                <div class="col-md-12" style="text-align:center; padding: 40px 0px;">
-                    <h2 class="h2">GRUPO <span style="color: #00b01a;">GREEN PLANET SRL</span></h2>
-                    <div class="dez-separator text-primary style-icon">
-                        <img alt="" src="themes/zoelife/peru/images/leaf-green.png" />
+                <div class="col-md-12" style="text-align:center;">
+                    <h2 style="font-weight: bold;">GRUPO <span style="color: #00b01a;">GREEN PLANET SRL</span></h2>
+                    <div class="dez-separator style-icon">
+                        <img src="{{ asset('themes/zoelife/global/images/favicon.png') }}" />
                     </div>
                     <p style="width: 100%;">
                         {{ $nosotros[0]->items[0]->item->content }}

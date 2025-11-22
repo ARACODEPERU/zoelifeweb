@@ -60,8 +60,6 @@
 
             <x-peru-home-slider />
 
-
-
             {{-- <div class="btn-header-mobile">
                 <div class="container">
                     <div class="row">
@@ -94,13 +92,13 @@
             </div> --}}
 
             <!-- Visión - Misión - Valores / STAR -->
-            <x-peru.vision-mision-valores-area></x-peru.vision-mision-valores-area>
+            <x-peru.vision-mision-valores-area />
             <!-- Visión - Misión - Valores / END -->
 
-            <section style="padding: 120px 30px;">
+            <section style="padding: 40px 30px;">
                 <div class="container-xl">
                     <div class="row">
-                        <div class="col-md-12" style="text-align:center; padding: 40px 0px 10px 0px;">
+                        <div class="col-md-12" style="text-align:center;">
                             <div class="section-head">
                                 <h2 class="text-uppercase">{{ $equipos[0]->item->content }}</h2>
                                 <div class="dez-divider divider-2px icon-left" style="background: #00b01a;">
@@ -113,11 +111,9 @@
                         <div class="col-md-3" style="padding: 15px;">
                             <div class="dez-box m-b30">
                                 <div class="dez-media">
-                                    <a href="javascript:void(0);">
                                         <img width="358" height="460"
                                             src="{{ $fundador[0]->content }}" alt="">
-                                    </a>
-                                    <div class="dez-info-has bg-primary">
+                                    {{-- <div class="dez-info-has bg-primary">
                                         <ul class="dez-social-icon dez-border">
                                             <li>
                                                 <a href="{{ $fundador[4]->content }}"
@@ -129,7 +125,7 @@
                                             <li><a href="{{ $fundador[6]->content }}"
                                                     class="fab fa-linkedin"></a></li>
                                         </ul>
-                                    </div>
+                                    </div> --}}
                                 </div>
                             </div>
                         </div>
@@ -163,7 +159,7 @@
                             <div class="section-head text-center text-white">
                                 <h2 class="h2 text-uppercase">Sobre <span style="color: #fecc00;"> Zoé Life</span></h2>
                                 <div class="dez-separator style-icon border-white">
-                                    <img src="themes/zoelife/peru/images/leaf-green.png"  alt=""  />
+                                    <img src="themes/zoelife/global/images/favicon.png"  alt=""  />
                                 </div>
                             </div>
                         </div>
