@@ -68,7 +68,7 @@
                 <div class="logo-header logo-dark mostion">
                     <a href="{{ route('web_peru_inicio') }}">
                         <img src="{{ $header[5]->content }}" alt="banner" 
-                        style="height: 80px; padding: 15px 0px;">
+                        style="height: 80px; padding: 0px;">
                     </a>
                 </div>
                 <!-- Nav Toggle Button -->
@@ -124,11 +124,11 @@
                         @endphp
                         <li>
                             <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_inicio') ? 'active' : '' }}"
-                                href="{{ route('web_peru_inicio') }}">Inicio</a>
+                                href="{{ route('web_peru_inicio') }}">CONÓCENOS</a>
                         </li>
                         <li>
                             <a class="dropdown-item aquitoy {{ $currentUrl == route('web_peru_productos', 1) ? 'active' : '' }}"
-                                href="{{ route('web_peru_productos', 1) }}">Zoé nutraceúticos</a>
+                                href="{{ route('web_peru_productos', 1) }}">NUTRACEÚTICOS</a>
                             <ul class="sub-menu">
                                 @foreach ($productsct1 as $product)
                                     <li>

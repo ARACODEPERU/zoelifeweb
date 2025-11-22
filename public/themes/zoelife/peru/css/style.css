@@ -2513,14 +2513,14 @@ blockquote:before {
     float: left;
     vertical-align: middle;
     padding: 0;
-    font-size: 34px;
+    /* font-size: 34px; */
     color: #EFBB20;
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
     width: auto;
-    height: 80px;
+    /* height: 80px; */
     position: relative;
     z-index: 9;
 }

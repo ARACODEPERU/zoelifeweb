@@ -62,7 +62,7 @@
 
 
 
-            <div class="btn-header-mobile">
+            {{-- <div class="btn-header-mobile">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -91,7 +91,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
             <!-- Visión - Misión - Valores / STAR -->
             <x-peru.vision-mision-valores-area></x-peru.vision-mision-valores-area>
