@@ -141,7 +141,7 @@
                         </li>
                         <li>
                             <a class="dropdown-item aquitoy {{ $currentUrl == route('web_peru_productos', 2) ? 'active' : '' }}"
-                                href="{{ route('web_peru_productos', 2) }}">Cuidado Personal</a>
+                                href="{{ route('web_peru_productos', 2) }}">CUIDADO PERSONAL</a>
                             <ul class="sub-menu">
                                 @foreach ($productsct2 as $product2)
                                     <li>
@@ -159,31 +159,31 @@
                         <li>
                             <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_testimonios') ? 'active' : '' }}"
                                 href="{{ route('web_peru_testimonios') }}">
-                                Testimonios
+                                TESTIMONIOS
                             </a>
                         </li>
                         <li>
                             <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_centros') ? 'active' : '' }}"
                                 href="{{ route('web_peru_centros') }}">
-                                Centros de Distribución
+                                PUNTOS DE VENTA
                             </a>
                         </li>
                         <li>
                             <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_eventos') ? 'active' : '' }}"
                                 href="{{ route('web_peru_eventos') }}">
-                                Inicia tu Emprendimiento
+                                OPORTUNIDAD
                             </a>
                         </li>
                         <li>
                             <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_alcanzando_las_estrellas') ? 'active' : '' }}"
                                 href="{{ route('web_peru_alcanzando_las_estrellas') }}">
-                                Servicio Social
+                                LEGADO
                             </a>
                         </li>
                         <li>
                             <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_contacto') ? 'active' : '' }}"
                                 href="{{ route('web_peru_contacto') }}">
-                                Contacto
+                                CONTÁCTANOS
                             </a>
                         </li>
                         <li class="switch" style="top: 25px;">
