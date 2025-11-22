@@ -8,8 +8,7 @@
             <a class="brand" href="#" aria-label="Home">
                 <img src="{{ $header[5]->content }}" alt="banner" style="height: 70px; padding: 0px;">
             </a>
-
-            <button class="burger" aria-controls="mobile-drawer" aria-expanded="false">
+            <button class="burger negro" aria-controls="mobile-drawer" aria-expanded="false">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                     <path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z" />
                 </svg>
@@ -28,8 +27,7 @@
                     </li>
                     <!-- Products (Mega) -->
                     <li class="nav-item" data-type="mega" aria-expanded="false">
-                        <a class="nav-link aquitoy {{ $currentUrl == route('web_peru_productos', 1) ? 'active' : '' }}"
-                            href="{{ route('web_peru_productos', 1) }}" aria-haspopup="true"
+                        <a class="nav-link aquitoy" href="{{ route('web_peru_productos', 1) }}" aria-haspopup="true"
                             aria-expanded="false">Nutraceúticos
                             <svg class="caret" viewBox="0 0 10 6" aria-hidden="true">
                                 <path d="M1 1l4 4l4-4" stroke="currentColor" stroke-width="1.6" fill="none"
@@ -137,19 +135,18 @@
     <aside class="drawer" id="mobile-drawer" aria-hidden="true" aria-label="Mobile menu">
 
         <div class="section">
-            <h4>Navegar</h4>
-            <a href="{{ route('web_peru_inicio') }}">Conócenos</a>
-            <a href="{{ route('web_peru_productos', 1) }}">Nutraceúticos</a>
-            <a href="{{ route('web_peru_productos', 2) }}">Cuidado personal</a>
-            <a href="{{ route('web_peru_testimonios') }}">Conócenos</a>
-            <a href="{{ route('web_peru_centros') }}">Puntos de venta</a>
-            <a href="{{ route('web_peru_eventos') }}">Oportunidad</a>
-            <a href="{{ route('web_peru_alcanzando_las_estrellas') }}">Legado</a>
-            <a href="{{ route('web_peru_contacto') }}">Contáctanos</a>
+            <a href="{{ route('web_peru_inicio') }}"class=" negro">Conócenos</a>
+            <a href="{{ route('web_peru_productos', 1) }}"class=" negro">Nutraceúticos</a>
+            <a href="{{ route('web_peru_productos', 2) }}"class=" negro">Cuidado personal</a>
+            <a href="{{ route('web_peru_testimonios') }}"class=" negro">Conócenos</a>
+            <a href="{{ route('web_peru_centros') }}"class=" negro">Puntos de venta</a>
+            <a href="{{ route('web_peru_eventos') }}"class=" negro">Oportunidad</a>
+            <a href="{{ route('web_peru_alcanzando_las_estrellas') }}"class=" negro">Legado</a>
+            <a href="{{ route('web_peru_contacto') }}"class=" negro">Contáctanos</a>
         </div>
 
         <div class="section">
-            <a href="https://zoelife.global/LoginSalesForce.php" class="btn" 
+            <a href="https://zoelife.global/LoginSalesForce.php" class="btn"
                 style="display:inline-block; text-align:center">Oficina Virtual
             </a>
         </div>

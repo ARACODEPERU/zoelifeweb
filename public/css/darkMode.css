@@ -67,6 +67,12 @@ body.dark .nav-item a{
 }
 
 
+body.dark .negro{
+    color: #fff; 
+}
+
+
+
 body.dark h3.post-title a{
     color: #fff; 
 }
