@@ -1,0 +1,76 @@
+<?php
+
+namespace App\View\Components;
+
+use Closure;
+use Illuminate\Contracts\View\View;
+use Illuminate\View\Component;
+
+use Modules\CMS\Entities\CmsSection;
+use Modules\Onlineshop\Entities\OnliItem;
+use Modules\CMS\Entities\CmsPage;
+
+class PeruHeader extends Component
+{
+    protected $header;
+    protected $productsct1;
+    protected $productsct2;
+    protected $pages; //de aqui se saca los paises o countries
+    protected $country;
+
+    public function __construct()
+    {
+       $this->header = CmsSection::where('component_id', 'peru_header_area_1')
+            ->join('cms_section_items', 'section_id', 'cms_sections.id')
+            ->join('cms_items', 'cms_section_items.item_id', 'cms_items.id')
+            ->select(
+                'cms_items.content',
+                'cms_section_items.position'
+            )
+            ->orderBy('cms_section_items.position')
+            ->get();
+
+        $this->productsct1 = OnliItem::join('products', 'products.id', 'item_id')
+            ->join('product_categories', function ($query) {
+                $query->on('product_categories.product_id', 'products.id')
+                    ->where('category_id', 1);
+            })
+            ->select('onli_items.*')
+            ->where('country_id', 1)
+            ->get();
+
+        $this->productsct2 = OnliItem::join('products', 'products.id', 'item_id')
+            ->join('product_categories', function ($query) {
+                $query->on('product_categories.product_id', 'products.id')
+                    ->where('category_id', 2);
+            })
+            ->select('onli_items.*')
+            ->where('country_id', 1)
+            ->get();
+
+
+        $this->pages = CmsPage::with('country')
+            ->where('status', true)
+            ->where('main', true)
+            ->whereNotNull('country_id')
+            ->get();
+
+        $this->country = $this->pages->where('route', 'web_peru_inicio')->values(); 
+    }
+
+    /**
+     * Get the view / contents that represent the component.
+     */
+    public function render(): View|Closure|string
+    {
+        // return view('components.peru-header');
+        
+        return view('components.peru-header', [
+            'header' => $this->header,
+            'productsct1' => $this->productsct1,
+            'productsct2' => $this->productsct2,
+            'pages' => $this->pages,
+            'country' => $this->country,
+        ]);
+    }
+}

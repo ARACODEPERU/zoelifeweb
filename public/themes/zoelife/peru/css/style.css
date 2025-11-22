@@ -2682,6 +2682,7 @@ blockquote:before {
     color: #EFBB20;
 }
 .header-nav .nav > li:hover > .sub-menu,
+.header-nav .nav > li:hover > .sub-menuMega,
 .header-nav .nav > li:hover > .mega-menu {
     opacity: 1;
     visibility: visible;
@@ -2705,6 +2706,27 @@ blockquote:before {
     visibility: hidden;
     width: 220px;
     z-index: 10;
+}
+.header-nav .nav > li .sub-menuMega {
+    background-color: #ffffff; 
+    border: 1px solid #f4f4f4; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    display: block;
+    
+    /* --- CAMBIOS CLAVE PARA ANCHO COMPLETO --- */
+    width: 100vw; /* Ocupa el 100% del ancho del viewport */
+    left: 0;      /* Se posiciona en el borde izquierdo absoluto de la pantalla */
+    right: 0;     /* Asegura que se estire correctamente si es necesario */
+    /* ------------------------------------------- */
+
+    list-style: none;
+    margin: 20px 0 0; 
+    opacity: 0; 
+    padding: 20px; 
+    position: absolute; /* Sigue siendo absoluto para salirse del flujo normal */
+    visibility: hidden; 
+    z-index: 10;
+    transition: opacity 0.3s ease, visibility 0.3s ease, margin 0.3s ease; 
 }
 .header-nav .nav > li .sub-menu li {
     border-bottom: 1px solid #f4f4f4;

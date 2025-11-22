@@ -3,11 +3,13 @@
 @section('content')
 
     <!-- Encabezado inicio -->
-    <x-peru.header-area></x-peru.header-area>
+    {{-- <x-peru.header-area></x-peru.header-area> --}}
     <!-- Encabezado fin -->
 
+    <x-peru-header />
+
         <!-- Content -->
-        <div class="page-content" style="margin-top: 85px;">
+        <div class="page-content" style="margin-top: 0px;">
 
             <!-- Slider -->
             {{-- <div class="btn-header-pc">

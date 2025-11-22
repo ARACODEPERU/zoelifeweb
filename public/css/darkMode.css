@@ -62,6 +62,9 @@ body.dark .amarillo{
 }
 
 
+body.dark .nav-item a{
+    color: #fff; 
+}
 
 
 body.dark h3.post-title a{
