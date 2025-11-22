@@ -181,7 +181,7 @@
                 --shadow: 0 10px 30px rgba(15, 23, 42, 0.1);
             }
         }
-
+/* 
         html[data-theme="dark"] {
             color-scheme: dark;
         }
@@ -192,7 +192,7 @@
 
         * {
             box-sizing: border-box;
-        }
+        } */
 
         /* Header */
         .site-header {
