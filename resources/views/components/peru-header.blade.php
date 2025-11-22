@@ -156,7 +156,7 @@
     <style>
         /* --- CSS ORIGINAL DEL USUARIO --- */
         :root {
-            --bg: #0b0f14;
+            --bg: #fff;
             --surface: #121821;
             --surface-2: #0f141c;
             --text: #e6edf3;
