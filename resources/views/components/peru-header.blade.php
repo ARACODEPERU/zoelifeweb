@@ -157,8 +157,8 @@
         /* --- CSS ORIGINAL DEL USUARIO --- */
         :root {
             --bg: #fff;
-            --surface: #121821;
-            --surface-2: #0f141c;
+            --surface: #fff;
+            --surface-2: #fff;
             --text: #e6edf3;
             --muted: #9fb0c3;
             --brand: #5A9F00;
