@@ -159,7 +159,7 @@
             --bg: #fff;
             --surface: #fff;
             --surface-2: #fff;
-            --text: #e6edf3;
+            --text: #000;
             --muted: #9fb0c3;
             --brand: #5A9F00;
             --brand-2: #00b01a;
