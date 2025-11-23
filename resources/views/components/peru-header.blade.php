@@ -263,7 +263,7 @@
             padding: 10px 12px;
             border-radius: 10px;
             text-decoration: none;
-            color: var(--text);
+            color: #000;
         }
 
         .nav-link:hover,
