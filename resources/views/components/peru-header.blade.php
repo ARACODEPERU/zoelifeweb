@@ -200,7 +200,8 @@
             top: 0;
             z-index: 1000;
             backdrop-filter: saturate(1.2) blur(8px);
-            background: color-mix(in srgb, var(--surface-2) 85%, transparent);
+            /* background: color-mix(in srgb, var(--surface-2) 85%, transparent); */
+            background: #fff;
             border-bottom: 1px solid color-mix(in srgb, var(--muted) 18%, transparent);
         }
 
