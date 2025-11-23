@@ -442,7 +442,7 @@
             margin-left: auto;
             background: transparent;
             border: 1px solid color-mix(in srgb, var(--muted) 30%, transparent);
-            color: var(--text);
+            color: #000;
             padding: 8px 10px;
             border-radius: 10px;
         }
