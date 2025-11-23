@@ -2,9 +2,10 @@
 
 @section('content')
     <!-- Encabezado inicio -->
-    <x-peru.header-area></x-peru.header-area>
+    {{-- <x-peru.header-area></x-peru.header-area> --}}
     <!-- Encabezado fin -->
 
+    <x-peru-header />
     <!-- Content -->
     <div class="page-content">
 

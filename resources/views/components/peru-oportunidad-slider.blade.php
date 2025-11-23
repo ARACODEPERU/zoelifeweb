@@ -13,7 +13,7 @@
         .slider-container {
             position: relative;
             max-width: 100%;
-            margin-top: 70px;
+            margin-top: 0px;
             overflow: hidden;
             /* Oculta las imágenes fuera del contenedor */
             border-radius: 8px;

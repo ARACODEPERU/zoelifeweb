@@ -2,8 +2,10 @@
 
 @section('content')
     <!-- Encabezado inicio -->
-    <x-peru.header-area></x-peru.header-area>
+    {{-- <x-peru.header-area></x-peru.header-area> --}}
     <!-- Encabezado fin -->
+
+    <x-peru-header />
 
     <!-- Content -->
     <div class="page-content">
@@ -12,7 +14,7 @@
             <div class="dez-bnr-inr ara_centrado_total">
                 <img style="width: 100%; height: auto;" src="{{ $banner->content }}" alt="">
             </div>
-            <div class="breadcrumb-row" style="margin-top: 20px; position:relative; z-index:1;">
+            <div class="breadcrumb-row" style="margin-top: 0px; position:relative; z-index:1;">
                 <div class="container">
                     <ul class="list-inline">
                         <li><a href="{{ route('web_peru_inicio') }}">Home</a></li>

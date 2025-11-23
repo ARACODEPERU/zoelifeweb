@@ -2,13 +2,14 @@
 
 @section('content')
     <!-- Encabezado inicio -->
-    <x-peru.header-area></x-peru.header-area>
+    {{-- <x-peru.header-area></x-peru.header-area> --}}
     <!-- Encabezado fin -->
 
+    <x-peru-header />
     <!-- Content -->
     <div class="page-content">
 
-        <div class="btn-header-pc">
+        <div class="btn-header-pc" style="margin-top: 0px;">
             <div class="dez-bnr-inr ara_centrado_total">
                 <img style="width: 100%; height: auto;" src="{{ $banner->content }}" alt="">
             </div>

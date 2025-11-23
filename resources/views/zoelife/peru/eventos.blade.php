@@ -1,11 +1,13 @@
 @extends('layouts.peru')
 
 @section('content')
-<!-- Encabezado inicio -->
-    <x-peru.header-area></x-peru.header-area>
-<!-- Encabezado fin -->
+    <!-- Encabezado inicio -->
+    {{-- <x-peru.header-area></x-peru.header-area> --}}
+    <!-- Encabezado fin -->
 
-    <div class="page-content" style="margin-top: 85px;">
+    <x-peru-header />
+
+    <div class="page-content" style="margin-top: 5px;">
 
         <!-- Slider -->
         {{-- <section>

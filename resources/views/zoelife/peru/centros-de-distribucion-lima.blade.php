@@ -3,8 +3,10 @@
 @section('content')
 
     <!-- Encabezado inicio -->
-    <x-peru.header-area></x-peru.header-area>
+    {{-- <x-peru.header-area></x-peru.header-area> --}}
     <!-- Encabezado fin -->
+
+    <x-peru-header />
 
     <!-- inner page banner -->
     <div class="dez-bnr-inr overlay-black-middle" style="background-image:url(themes/zoelife/peru/images/header-page/centrosPeru.jpg);">
