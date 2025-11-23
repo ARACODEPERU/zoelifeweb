@@ -1,7 +1,7 @@
 <div>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="{{ asset('css/darkMode.css') }}">
-    <script src="{{ asset('js/darkMode.js') }}"></script>
+    {{-- <link rel="stylesheet" href="{{ asset('css/darkMode.css') }}">
+    <script src="{{ asset('js/darkMode.js') }}"></script> --}}
 
     <header class="site-header" role="banner" style="z-index: 10000">
         <div class="wrap">

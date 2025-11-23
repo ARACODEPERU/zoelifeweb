@@ -44,6 +44,10 @@
     <link rel="stylesheet" type="text/css" class="skin"
         href="{{ asset('themes/zoelife/peru/plugins/bootstrap/css/bootstrap.min.css') }}">
 
+
+        <link rel="stylesheet" href="{{ asset('css/darkMode.css') }}">
+    <script src="{{ asset('js/darkMode.js') }}"></script>
+
     @yield('cstyles')
 </head>
 
