@@ -268,7 +268,8 @@
 
         .nav-link:hover,
         .nav-link:focus-visible {
-            background: color-mix(in srgb, var(--brand) 10%, var(--surface-2));
+            /* background: color-mix(in srgb, var(--brand) 10%, var(--surface-2)); */
+            /* background: #fff; */
             outline: none;
             box-shadow: var(--ring);
         }
