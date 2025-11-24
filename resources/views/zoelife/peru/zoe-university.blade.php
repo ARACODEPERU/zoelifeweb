@@ -17,7 +17,7 @@
             <div class="breadcrumb-row" style="margin-top: 0px; position:relative; z-index:1;">
                 <div class="container">
                     <ul class="list-inline">
-                        <li><a href="{{ route('web_peru_inicio') }}">Home</a></li>
+                        <li><a href="{{ route('web_peru_inicio') }}" style="color:#00b01a;">Home</a></li>
                         <li>University</li>
                     </ul>
                 </div>
@@ -29,7 +29,7 @@
             <div class="breadcrumb-row" style="margin-top: 80px;">
                 <div class="container">
                     <ul class="list-inline">
-                        <li><a href="{{ route('web_peru_inicio') }}">Home</a></li>
+                        <li><a href="{{ route('web_peru_inicio') }}" style="color:#00b01a;">Home</a></li>
                         <li>University</li>
                     </ul>
                 </div>

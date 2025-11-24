@@ -64,7 +64,7 @@
             <div class="breadcrumb-row">
                 <div class="container">
                     <ul class="list-inline">
-                        <li><a href="{{ route('web_peru_inicio') }}">Home</a></li>
+                        <li><a href="{{ route('web_peru_inicio') }}" style="color:#00b01a;">Home</a></li>
                         <li>Inicia Tu Emprendimiento</li>
                     </ul>
                 </div>

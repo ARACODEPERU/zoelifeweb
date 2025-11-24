@@ -73,10 +73,38 @@
 General
 ================================================*/
 
+li.nav-item  a.active2{
+    border-bottom: 2px solid green;
+}
+
+.flecha-hacia-abajo {
+  position: relative;
+  /* El resto del estilo es solo para el contenedor */
+  width: 100px;
+  height: 32px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.flecha-hacia-abajo::after {
+  content: '';
+  position: absolute;
+  bottom: -10px; /* Ajusta la posición vertical */
+  left: 50%; /* Centra horizontalmente */
+  transform: translateX(-50%); /* Ajuste fino para centrar */
+
+  /* Crea el triángulo */
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent; /* Borde izquierdo transparente */
+  border-right: 10px solid transparent; /* Borde derecho transparente */
+  border-top: 10px solid green; /* Borde inferior verde (este es el que se ve) */
+}
+
 
 .navbar-nav  li a.active{
     background: var(--zoeprimary-color);
-    color: var(--white-color);
+    color: var(--white-color); 
 }
 
 

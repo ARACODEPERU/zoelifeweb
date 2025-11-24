@@ -8,7 +8,7 @@
 
     <header class="site-header" role="banner">
         <div class="wrap">
-            <a class="brand" href="#" aria-label="Home">
+            <a class="brand" href="{{ route('web_peru_inicio') }}" aria-label="Home">
                 <img src="{{ $header[5]->content }}" alt="banner" style="height: 70px; padding: 0px;">
             </a>
             <button class="burger negro" aria-controls="mobile-drawer" aria-expanded="false">
@@ -25,7 +25,7 @@
                     @endphp
 
                     <li class="nav-item">
-                        <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_inicio') ? 'active' : '' }}"
+                        <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_inicio') ? 'flecha-hacia-abajo' : '' }}"
                             href="{{ route('web_peru_inicio') }}">Conócenos</a>
                     </li>
                     <!-- Products (Mega) -->
@@ -59,7 +59,7 @@
                     </li>
 
                     <li class="nav-item" data-type="mega" aria-expanded="false">
-                        <a class="nav-link aquitoy {{ $currentUrl == route('web_peru_productos', 2) ? 'active' : '' }}"
+                        <a class="nav-link aquitoy {{ $currentUrl == route('web_peru_productos', 2) ? 'flecha-hacia-abajo' : '' }}"
                             href="{{ route('web_peru_productos', 2) }}" aria-haspopup="true"
                             aria-expanded="false">Cuidado personal
                             <svg class="caret" viewBox="0 0 10 6" aria-hidden="true">
@@ -89,31 +89,31 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_testimonios') ? 'active' : '' }}"
+                        <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_testimonios') ? 'flecha-hacia-abajo' : '' }}"
                             href="{{ route('web_peru_testimonios') }}">
                             Testimonios
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_centros') ? 'active' : '' }}"
+                        <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_centros') ? 'flecha-hacia-abajo' : '' }}"
                             href="{{ route('web_peru_centros') }}">
                             Puntos de venta
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_eventos') ? 'active' : '' }}"
+                        <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_eventos') ? 'flecha-hacia-abajo' : '' }}"
                             href="{{ route('web_peru_eventos') }}">
                             Oportunidad
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_alcanzando_las_estrellas') ? 'active' : '' }}"
+                        <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_alcanzando_las_estrellas') ? 'flecha-hacia-abajo' : '' }}"
                             href="{{ route('web_peru_alcanzando_las_estrellas') }}">
                             Legado
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_contacto') ? 'active' : '' }}"
+                        <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_contacto') ? 'flecha-hacia-abajo' : '' }}"
                             href="{{ route('web_peru_contacto') }}">
                             Contáctanos
                         </a>
@@ -201,7 +201,7 @@
         .site-header {
             position: sticky;
             top: 0;
-            z-index: 1000;
+            z-index: 100000;
             backdrop-filter: saturate(1.2) blur(8px);
             /* background: color-mix(in srgb, var(--surface-2) 85%, transparent); */
             background: #fff;
@@ -209,9 +209,9 @@
         }
 
         .wrap {
-            max-width: 90%;
+            max-width: 95%;
             margin: 0 auto;
-            padding: 14px 20px;
+            padding: 14px 15px;
             display: flex;
             align-items: center;
             gap: 14px;
