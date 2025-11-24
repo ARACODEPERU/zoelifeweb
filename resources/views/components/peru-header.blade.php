@@ -2,6 +2,9 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     {{-- <link rel="stylesheet" href="{{ asset('css/darkMode.css') }}">
     <script src="{{ asset('js/darkMode.js') }}"></script> --}}
+    
+    <link rel="stylesheet" href="{{ asset('css/darkMode.css') }}">
+    <script src="{{ asset('js/darkMode.js') }}"></script>
 
     <header class="site-header" role="banner">
         <div class="wrap">
@@ -155,7 +158,7 @@
 
     <style>
         /* --- CSS ORIGINAL DEL USUARIO --- */
-        :root {
+        /* :root {
             --bg: #fff;
             --surface: #fff;
             --surface-2: #fff;
@@ -180,8 +183,8 @@
                 --brand-2: #00b01a;
                 --shadow: 0 10px 30px rgba(15, 23, 42, 0.1);
             }
-        }
-/* 
+        } */
+        /* 
         html[data-theme="dark"] {
             color-scheme: dark;
         }

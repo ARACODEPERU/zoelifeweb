@@ -28,7 +28,7 @@
 
         <div class="btn-header-mobile">
             <!-- Breadcrumb row -->
-            <div class="breadcrumb-row" style="margin-top: 80px;">
+            <div class="breadcrumb-row" style="margin-top: 0px;">
                 <div class="container">
                     <ul class="list-inline">
                         <li><a href="{{ route('web_peru_inicio') }}">Home</a></li>

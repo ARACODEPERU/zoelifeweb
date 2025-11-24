@@ -122,7 +122,7 @@
                             </li>
                         </ul>
                         <a href="{{ route('web_peru_reclamaciones') }}">
-                            <img style="height: 120px;" src="{{ asset('themes/zoelife/peru/images/libroReclamaciones.png') }}" alt="">
+                            <img style="height: 120px;" src="{{ asset('themes/zoelife/peru/images/libroReclamaciones2.png') }}" alt="">
                         </a>
                     </div>
                 </div>

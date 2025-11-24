@@ -36,7 +36,7 @@
             </div>
         </div>
         <div class="btn-header-mobile">
-            <div class="breadcrumb-row" style="margin-top: 60px;">
+            <div class="breadcrumb-row" style="margin-top: 0px;">
                 <div class="ara_centrado_total" style="margin-bottom: 10px;">
                     <img style="width: 100%; height: auto;" src="{{ $bannerCategoria->content }}" alt="">
                 </div>

@@ -28,12 +28,15 @@
  <script src="js/respond.min.js"></script>
  <![endif]-->
 
+
     <!-- STYLESHEETS -->
     <link rel="stylesheet" type="text/css" href="{{ asset('themes/zoelife/peru/css/plugins.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('themes/zoelife/peru/css/style.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('themes/zoelife/peru/css/templete.css') }}">
     <link rel="stylesheet" type="text/css" class="skin" href="{{ asset('themes/zoelife/peru/css/skin/skin-9.css') }}">
     <link rel="stylesheet" type="text/css" class="skin" href="{{ asset('themes/zoelife/peru/css/aracode.css') }}">
+
+
 
     <!-- REVOLUTION SLIDER CSS -->
     <link rel="stylesheet" type="text/css"
@@ -45,8 +48,6 @@
         href="{{ asset('themes/zoelife/peru/plugins/bootstrap/css/bootstrap.min.css') }}">
 
 
-    <link rel="stylesheet" href="{{ asset('css/darkMode.css') }}">
-    <script src="{{ asset('js/darkMode.js') }}"></script>
 
     @yield('cstyles')
 </head>
