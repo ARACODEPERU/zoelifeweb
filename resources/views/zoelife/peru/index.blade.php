@@ -102,7 +102,7 @@
                     <div class="row">
                         <div class="col-md-12" style="text-align:center;">
                             <div class="section-head">
-                                <h2 class="text-uppercase">{{ $equipos[0]->item->content }}</h2>
+                                <h2 class="text-uppercase" style="font-weight: bold;">{{ $equipos[0]->item->content }}</h2>
                                 <div class="dez-divider divider-2px icon-left" style="background: #00b01a;">
                                     <i class="fa fa-thumbs-o-up text-white"  style="background: #00b01a;"></i>
                                 </div>

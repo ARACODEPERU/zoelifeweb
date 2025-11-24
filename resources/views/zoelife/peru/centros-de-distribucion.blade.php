@@ -48,9 +48,9 @@
                         </li>
                         @if (count($departments) > 0)
                             @foreach ($departments as $department)
-                                <li data-filter="{{ $department->name }}" class="btn">
+                                <li data-filter="{{ $department->name }}">
                                     <input type="radio">
-                                    <a href="#" class="site-button-secondry"><span>{{ $department->name }}</span></a>
+                                    <a class="site-button-secondry" style="color: #fff;"><span>{{ $department->name }}</span></a>
                                 </li>
                             @endforeach
                         @endif

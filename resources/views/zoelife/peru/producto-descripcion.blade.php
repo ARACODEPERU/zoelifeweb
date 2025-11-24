@@ -10,7 +10,7 @@
     <!-- Content -->
     <div class="page-content">
         <!-- Breadcrumb row -->
-        <div class="breadcrumb-row" style="margin-top: 80px;">
+        <div class="breadcrumb-row">
             <div class="container-xxl">
                 <ul class="list-inline">
                     <li><a href="{{ route('web_peru_inicio') }}">Home</a></li>
@@ -21,7 +21,7 @@
         </div>
         <!-- Breadcrumb row END -->
 
-        <div class="container-xl" style="padding: 60px 0px;">
+        <div class="container-xl" style="padding: 20px 0px;">
             <div class="row">
                 <div class="col-md-6" style="text-align: center; align-items: center;">
                     <img style="height: 600px;" src="{{ $product->image }}" alt="">
@@ -64,7 +64,7 @@
                             <h2 class="h2 text-uppercase">Recomendaciones <span style="color: #fecc00;"> de Uso
                                     Sugerido</span></h2>
                             <div class="dez-separator text-primary style-icon border-white">
-                                <img alt="" src="{{ asset('themes/zoelife/peru/images/leaf-green.png') }}" />
+                                <img alt="" src="{{ asset('themes/zoelife/global/images/favicon.png') }}" />
                             </div>
                         </div>
                         {!! $product->additional !!}
@@ -81,19 +81,37 @@
             <div class="" style="width: 100%; padding: 20px 0px;">
 
                 <!-- Dividers with icon -->
-                <div class="p-a20 bg-white selector-d m-b20 container">
+                <div class="container">
+                    <div style="text-align: center;">
+                        <div class="m-b10">
+                            <h5 class="text-uppercase">
+                                <img style="height: 40px;" alt="" src="{{ asset('themes/zoelife/global/images/favicon.png') }}" />
+                                Testimonios del <b>{{ $product->name }}</b>
+                            </h5>
+                            <p>
+                                Sumérgete en una experiencia única y conoce de primera mano cómo nuestro producto ha
+                                superado las expectativas <br> y ha transformado rutinas diarias en momentos extraordinarios.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                {{-- <div class="p-a20  selector-d m-b20 container">
                     <div class="section-content" style="text-align: center;">
                         <div class="m-b10">
-                            <h5 class="text-uppercase">Testimonios del {{ $product->name }}</h5>
+                            <h5 class="text-uppercase">
+                                <img style="height: 40px;" alt="" src="{{ asset('themes/zoelife/global/images/favicon.png') }}" />
+                                Testimonios del <b>{{ $product->name }}</b>
+                            </h5>
                             <p>
                                 Sumérgete en una experiencia única y conoce de primera mano cómo nuestro producto ha
                                 superado las expectativas y ha transformado rutinas diarias en momentos extraordinarios.
                             </p>
-                            <div class="dez-divider divider-2px  icon-center" style="background: #00b01a;"><i
-                                    class="fa fa-truck  text-white" style="background: #00b01a;"></i></div>
+                            <div class="dez-divider divider-2px  icon-center" style="background: #00b01a;">
+                                <i class="fa fa-truck  text-white" style="background: #00b01a;"></i>
+                            </div> 
                         </div>
                     </div>
-                </div>
+                </div> --}}
                 <!-- Dividers with icon END -->
                 <br>
 
@@ -108,12 +126,10 @@
                                                 {!! $testimony->video !!}
                                             </div>
                                             <div class="dez-post-info">
-                                                <div class="dez-post-title ">
-                                                    <h3 class="post-title">
-                                                        <a href="">
+                                                <div style="text-align: center; background-color: #00b01a; padding: 5px 5px 3px 5px;">
+                                                    <h6 style=" color: #fff;">
                                                             {{ $testimony->title }}
-                                                        </a>
-                                                    </h3>
+                                                    </h6>
                                                 </div>
                                                 <div class="dez-post-tags">
                                                     <div class="post-tags">

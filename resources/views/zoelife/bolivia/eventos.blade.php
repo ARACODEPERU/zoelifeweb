@@ -412,7 +412,7 @@
                     </div>
                 </div>
             </div>
-            <div class="slide-container swiper">
+            <div class="slide-container swiper" style="padding: 0px;">
                 <div class="slide-content">
                     <div class="card-wrapper swiper-wrapper">
                         

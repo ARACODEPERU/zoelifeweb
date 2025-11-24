@@ -45,9 +45,9 @@
                     </li>
                     @if (count($products) > 0)
                         @foreach ($products as $product)
-                            <li data-filter="{{ $product->name }}" class="btn">
+                            <li data-filter="{{ $product->name }}">
                                 <input type="radio">
-                                <a href="#" class="site-button-secondry"><span>{{ $product->name }}</span></a>
+                                <a class="site-button-secondry" style="color: #fff;"><span>{{ $product->name }}</span></a>
                             </li>
                         @endforeach
                     @endif
@@ -63,10 +63,11 @@
                                         {!! $testimony->video !!}
                                     </div>
                                     <div class="dez-post-info">
-                                        <div class="dez-post-title ">
-                                            <h4 class="post-title" style="font-size: 16px;">
+                                        <div
+                                            style="text-align: center; background-color: #00b01a; padding: 5px 5px 3px 5px;">
+                                            <h6 style=" color: #fff;">
                                                 {{ $testimony->title }}
-                                            </h4>
+                                            </h6>
                                         </div>
                                         <div class="dez-post-tags">
                                             <div class="post-tags">

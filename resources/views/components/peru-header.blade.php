@@ -3,7 +3,7 @@
     {{-- <link rel="stylesheet" href="{{ asset('css/darkMode.css') }}">
     <script src="{{ asset('js/darkMode.js') }}"></script> --}}
 
-    <header class="site-header" role="banner" style="z-index: 10000">
+    <header class="site-header" role="banner">
         <div class="wrap">
             <a class="brand" href="#" aria-label="Home">
                 <img src="{{ $header[5]->content }}" alt="banner" style="height: 70px; padding: 0px;">

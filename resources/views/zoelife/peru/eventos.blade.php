@@ -174,26 +174,21 @@
             style="background-image:url({{ $formasTitle[0]->content }});">
             <div class="container" style="padding: 20px; z-index: 1;">
                 <div class="section-head text-center text-white" style="padding: 10px;">
-                    <h2 class="h2 text-uppercase">{{ $formasTitle[1]->content }} <span style="color: #fecc00;"> {{ $formasTitle[2]->content }}</span></h2>
+                    <h2 class="h2 text-uppercase" style="font-weight: bold;">{{ $formasTitle[1]->content }} <span style="color: #fecc00;"> {{ $formasTitle[2]->content }}</span></h2>
                     <div class="dez-separator  style-icon border-white">
-                        <img alt="img-ganar" src="{{ asset('themes/zoelife/peru/images/leaf-green.png') }}" />
+                        <img alt="img-ganar" src="{{ asset('themes/zoelife/global/images/favicon.png') }}" />
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3">
+                    {{-- <div class="col-md-3">
                         <img style="width: 100%;" src="{{ $formasTitle[3]->content }}" alt="">
-                    </div>
-                    <div class="col-md-9">
+                    </div> --}}
+                    <div class="col-md-12">
                         <div class="box-ganar">
                             <ul class="list-group list-group-flush">
                                 @foreach ($formasContenido as $key => $contenido )
                                     <li class="list-group-item d-flex" style="font-size: 18px;">
                                         <i class="fa fa-money" aria-hidden="true"></i>&nbsp; {{ $contenido->item->items[0]->content }}
-                                        {{-- <a href="{{ $contenido->item->items[1]->content }}">
-                                            <span class="badge text-bg-primary rounded-pill" style="padding: 5px 15px; background: #5A9F00 !important;">
-                                                <i class="fa fa-play"></i> Video
-                                            </span>
-                                        </a> --}}
                                     </li>
                                 @endforeach
                                 {{-- <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -235,15 +230,18 @@
             </div>
         </div>
 
-        <section style="padding: 80px 15px 0px 15px;">
+        <section style="padding: 40px 15px 0px 15px;">
             <div class="container-xl">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-head">
-                            <h2 class="text-uppercase">Se parte de <b>Zoelife</b> y viaja a todo el mundo con todo pagado</h2>
-                            <div class="dez-divider divider-2pxicon-left" style="background: #00b01a;">
+                            <h2 class="text-uppercase">
+                                <img alt="img-ganar" style="margin-top: -5px;" src="{{ asset('themes/zoelife/global/images/favicon.png') }}" />
+                                Se parte de <b>Zoelife</b> y viaja a todo el mundo con todo pagado
+                            </h2>
+                            {{-- <div class="dez-divider divider-2pxicon-left" style="background: #00b01a;">
                                 <i class="fa fa-thumbs-o-up  text-white"  style="background: #00b01a;"></i>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -260,7 +258,7 @@
         </section>
 
       <div class="btn-header-pc">
-        <section  style="padding: 80px 30px;">
+        <section  style="padding: 40px 30px;">
           <div class="swiper tranding-slider">
             <div class="swiper-wrapper">
               <!-- Slide-start -->
@@ -441,13 +439,15 @@
             <div class="container box-elevado-green bg-white selector-d" style="padding: 40px 20px; border-radius: 20px;  border: 3px solid #00b01a;">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <h2 class="h2 text-uppercase" style="color: #00b01a;"><b>{{ $tuExito[0]->content }}</b></h2>
+                        <h2 class="h2 text-uppercase" style="color: #00b01a;">
+                            <img alt="" style="height: 40px; margin-top: -7px;" src="{{ asset('themes/zoelife/global/images/favicon.png') }}" />&nbsp; <b>{{ $tuExito[0]->content }}</b>
+                        </h2>
                         <p class="card-text" style="font-size: 20px;">
                             {{ $tuExito[1]->content }}
                         </p>
-                        <div class="dez-separator text-primary style-icon">
-                            <img alt="" src="themes/zoelife/peru/images/leaf-green.png" />
-                        </div>
+                        {{-- <div class="dez-separator text-primary style-icon">
+                            <img alt="" src="{{ asset('themes/zoelife/global/images/favicon.png') }}" />
+                        </div> --}}
                     </div>
                 </div>
                 <br>
@@ -467,15 +467,18 @@
             </div>
         </section>
 
-        <section style="padding: 40px 25px;">
+        <section style="padding: 40px 25px 0px 25px;">
             <div class="container-xl">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-head">
-                            <h2 class="text-uppercase">Conoce a la <b>Comunidad</b></h2>
-                            <div class="dez-divider divider-2pxicon-left" style="background: #00b01a;">
+                            <h2 class="text-uppercase">
+                                <img alt="img-ganar" style="margin-top: -5px;" src="{{ asset('themes/zoelife/global/images/favicon.png') }}" />
+                                Conoce a la <b>Comunidad</b>
+                            </h2>
+                            {{-- <div class="dez-divider divider-2pxicon-left" style="background: #00b01a;">
                                 <i class="fa fa-thumbs-o-up  text-white"  style="background: #00b01a;"></i>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -514,14 +517,14 @@
         </section>
 
         
-            <section  style="padding: 80px 30px;">
+            <section  style="padding: 10px 30px;">
 
                 
-                <div class="content-area" style="padding: 10px 10px;">
+                <div class="content-area">
                     <div class="container">
                         @if ( count($presentacion) > 0)
-                        <div class="p-a20 bg-white selector-d m-b20 box-elevado">
-                            <div class="section-content" style="text-align: center;">
+                        <div class="p-a20  selector-d m-b20 box-elevado">
+                            <div  style="text-align: center;">
                                 <div class="m-b10">
                                     <h3 class="text-uppercas" style="color: #00b01a;"><b>{{ $presentacion[0]->content }}</b></h3>
                                     <p>{{ $presentacion[1]->content }}</p>
