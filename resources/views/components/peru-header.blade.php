@@ -127,7 +127,7 @@
                     <i class="bx bxs-moon"></i>
                 </li>
                 <a href="https://zoelife.global/LoginSalesForce.php">
-                    <button class="btn">Oficina Virtual</button>
+                    <button class="btn" style="color: #fff;">Oficina Virtual</button>
                 </a>
             </div>
         </div>
@@ -209,7 +209,7 @@
         }
 
         .wrap {
-            max-width: 100%;
+            max-width: 90%;
             margin: 0 auto;
             padding: 14px 20px;
             display: flex;

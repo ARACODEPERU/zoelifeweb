@@ -76,25 +76,49 @@
                         <h4 class="m-b10 text-uppercase">Navegación</h4>
                         <div class="dez-separator" style="background: #00b01a;"></div>
                         <ul>
-                            <li><a href="{{ route('web_peru_inicio') }}">
-                                    <i class="fa fa-angle-right"aria-hidden="true"></i>&nbsp; &nbsp; Inicio</a></li>
-                            <li><a href="{{ route('web_peru_productos') }}">
-                                    <i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp; Productos</a></li>
-                            <li><a href="{{ route('web_peru_centros') }}">
-                                    <i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp; Centros de
-                                    Distribución</a></li>
-                            <li><a href="{{ route('web_peru_eventos') }}">
-                                    <i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp; Eventos</a></li>
-                            <li><a href="{{ route('web_peru_alcanzando_las_estrellas') }}">
-                                    <i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp; Alcanzando las
-                                    Estrellas</a></li>
+                            <li>
+                                <a href="{{ route('web_peru_inicio') }}">
+                                    <i class="fa fa-angle-right"aria-hidden="true"></i>&nbsp; &nbsp; Conócenos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('web_peru_productos', 1) }}">
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp; Nutraceúticos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('web_peru_productos', 2) }}">
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp; Cuidado personal
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('web_peru_testimonios') }}">
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp; Testimonios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('web_peru_centros') }}">
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp; Punto de venta
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('web_peru_eventos') }}">
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp; Oportunidad
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('web_peru_alcanzando_las_estrellas') }}">
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp; Legado
+                                </a>
+                            </li>
                             <li>
                                 <a href="{{ route('web_peru_privacidad') }}">
-                                    <i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp; Politicas de Privacidad</a>
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp; Politicas de Privacidad
+                                </a>
                             </li>
                             <li>
                                 <a href="{{ route('web_peru_contacto') }}">
-                                    <i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp; Contacto</a>
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp; Contáctanos</a>
                             </li>
                         </ul>
                     </div>
@@ -143,7 +167,7 @@
                 <div class="col-lg-4 text-right">
                     <ul class="list-inline">
                         <li><a href="{{ route('web_peru_contacto') }}"> Contáctanos</a></li>
-                        <li><a href="{{ $footer[0]->items[8]->item->content }}"> Política de Privacidad</a></li>
+                        <li><a href="{{ route('web_peru_privacidad') }}"> Política de Privacidad</a></li>
                     </ul>
                 </div>
             </div>

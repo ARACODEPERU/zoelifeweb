@@ -8300,12 +8300,12 @@ button.scroltop {
     margin: 0;
     cursor: pointer;
     display: none;
-    height: 30px;
-    width: 30px;
+    height: 60px;
+    width: 60px;
     line-height: 26px;
     text-align: center;
 	z-index: 999;
-	font-size: 13px;
+	font-size: 20px;
 }
 .trans-footer .footer-top .saf-footer {
     padding: 50px 30px 20px;

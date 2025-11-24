@@ -23,7 +23,7 @@ class FooterArea extends Component
 
         $this->testimonies = CmsTestimony::where('status', true)
             ->orderBy('id', 'DESC')
-            ->limit(3)
+            ->limit(8)
             ->get();
     }
 
