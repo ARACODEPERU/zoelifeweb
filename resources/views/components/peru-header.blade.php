@@ -2,7 +2,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     {{-- <link rel="stylesheet" href="{{ asset('css/darkMode.css') }}">
     <script src="{{ asset('js/darkMode.js') }}"></script> --}}
-    
+
     <link rel="stylesheet" href="{{ asset('css/darkMode.css') }}">
     <script src="{{ asset('js/darkMode.js') }}"></script>
 
@@ -26,12 +26,12 @@
 
                     <li class="nav-item">
                         <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_inicio') ? 'flecha-hacia-abajo' : '' }}"
-                            href="{{ route('web_peru_inicio') }}">Conócenos</a>
+                            href="{{ route('web_peru_inicio') }}">CONÓCENOS</a>
                     </li>
                     <!-- Products (Mega) -->
                     <li class="nav-item" data-type="mega" aria-expanded="false">
                         <a class="nav-link aquitoy" href="{{ route('web_peru_productos', 1) }}" aria-haspopup="true"
-                            aria-expanded="false">Nutraceúticos
+                            aria-expanded="false">NUTRACEÚTICOS
                             <svg class="caret" viewBox="0 0 10 6" aria-hidden="true">
                                 <path d="M1 1l4 4l4-4" stroke="currentColor" stroke-width="1.6" fill="none"
                                     stroke-linecap="round" />
@@ -61,7 +61,7 @@
                     <li class="nav-item" data-type="mega" aria-expanded="false">
                         <a class="nav-link aquitoy {{ $currentUrl == route('web_peru_productos', 2) ? 'flecha-hacia-abajo' : '' }}"
                             href="{{ route('web_peru_productos', 2) }}" aria-haspopup="true"
-                            aria-expanded="false">Cuidado personal
+                            aria-expanded="false">CUIDADO PERSONAL
                             <svg class="caret" viewBox="0 0 10 6" aria-hidden="true">
                                 <path d="M1 1l4 4l4-4" stroke="currentColor" stroke-width="1.6" fill="none"
                                     stroke-linecap="round" />
@@ -89,33 +89,35 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_testimonios') ? 'flecha-hacia-abajo' : '' }}"
+                        <a style="padding: 0px 4px;"
+                            class="dropdown-item aquitoy {{ request()->routeIs('web_peru_testimonios') ? 'flecha-hacia-abajo' : '' }}"
                             href="{{ route('web_peru_testimonios') }}">
-                            Testimonios
+                            TESTIMONIOS
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_centros') ? 'flecha-hacia-abajo' : '' }}"
+                        <a style="padding: 0px 4px;"
+                            class="dropdown-item aquitoy {{ request()->routeIs('web_peru_centros') ? 'flecha-hacia-abajo' : '' }}"
                             href="{{ route('web_peru_centros') }}">
-                            Puntos de venta
+                            PUNTO DE VENTA
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_eventos') ? 'flecha-hacia-abajo' : '' }}"
                             href="{{ route('web_peru_eventos') }}">
-                            Oportunidad
+                            OPORTUNIDAD
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_alcanzando_las_estrellas') ? 'flecha-hacia-abajo' : '' }}"
                             href="{{ route('web_peru_alcanzando_las_estrellas') }}">
-                            Legado
+                            LEGADO
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="dropdown-item aquitoy {{ request()->routeIs('web_peru_contacto') ? 'flecha-hacia-abajo' : '' }}"
                             href="{{ route('web_peru_contacto') }}">
-                            Contáctanos
+                            CONTÁCTANOS
                         </a>
                     </li>
                 </ul>
@@ -127,7 +129,7 @@
                     <i class="bx bxs-moon"></i>
                 </li>
                 <a href="https://zoelife.global/LoginSalesForce.php">
-                    <button class="btn" style="color: #fff;">Oficina Virtual</button>
+                    <button class="btn" style="color: #fff;">OFICINA VIRTUAL</button>
                 </a>
             </div>
         </div>
@@ -184,7 +186,7 @@
                 --shadow: 0 10px 30px rgba(15, 23, 42, 0.1);
             }
         } */
-        /* 
+        /*
         html[data-theme="dark"] {
             color-scheme: dark;
         }
@@ -248,7 +250,8 @@
         .nav-list {
             display: flex;
             align-items: center;
-            gap: 14px;
+            gap: 4px;
+            /* gap: 14px; */
             list-style: none;
             margin: 0;
             padding: 0;
@@ -505,6 +508,66 @@
 
         .drawer a:hover {
             background: color-mix(in srgb, var(--brand) 10%, transparent);
+        }
+
+        @media (max-width: 1500px) {
+
+            .wrap {
+                max-width: 100%;
+                margin: 0 auto;
+                padding: 14px 15px;
+                display: flex;
+                align-items: center;
+                gap: 14px;
+            }
+
+
+            .nav-link {
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                font-size: 14px;
+                padding: 10px 12px;
+                border-radius: 10px;
+                text-decoration: none;
+                color: #000;
+            }
+
+            .dropdown-item {
+                display: block;
+                width: 100%;
+                /* padding: 0.45rem 1.5rem; */
+                padding: 0.45rem .5rem;
+                clear: both;
+                font-weight: 400;
+                font-size: 14px;
+                color: #212529;
+                text-align: inherit;
+                white-space: nowrap;
+                background-color: transparent;
+                border: 0;
+            }
+
+            .dropdown-item:hover,
+            .dropdown-item:focus {
+                color: #16181b;
+                text-decoration: none;
+                background-color: #f8f9fa;
+            }
+
+            .dropdown-item.active,
+            .dropdown-item:active {
+                color: #fff;
+                text-decoration: none;
+                background-color: #03a87c;
+            }
+
+            .dropdown-item.disabled,
+            .dropdown-item:disabled {
+                color: #6c757d;
+                background-color: transparent;
+            }
+
         }
 
         /* Responsive */

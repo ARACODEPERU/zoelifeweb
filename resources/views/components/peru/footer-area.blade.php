@@ -41,7 +41,7 @@
                 <div class="col-md-3">
                     <div class="widget widget_about">
                         <div class="logo-footer">
-                            <img src="{{ $footer[0]->items[0]->item->content }}" alt="">
+                            <a href="{{ route('web_peru_inicio') }}"><img src="{{ $footer[0]->items[0]->item->content }}" alt="Logo"></a>
                         </div>
                         <p class="m-tb20">{{ $footer[0]->items[1]->item->content }}</p>
                     </div>
@@ -76,11 +76,11 @@
                         <h4 class="m-b10 text-uppercase">Navegación</h4>
                         <div class="dez-separator" style="background: #00b01a;"></div>
                         <ul>
-                            <li>
+                            {{-- <li>
                                 <a href="{{ route('web_peru_inicio') }}">
                                     <i class="fa fa-angle-right"aria-hidden="true"></i>&nbsp; &nbsp; Conócenos
                                 </a>
-                            </li>
+                            </li> --}}
                             <li>
                                 <a href="{{ route('web_peru_productos', 1) }}">
                                     <i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp; Nutraceúticos
@@ -111,11 +111,11 @@
                                     <i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp; Legado
                                 </a>
                             </li>
-                            <li>
+                            {{-- <li>
                                 <a href="{{ route('web_peru_privacidad') }}">
                                     <i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp; Politicas de Privacidad
                                 </a>
-                            </li>
+                            </li> --}}
                             <li>
                                 <a href="{{ route('web_peru_contacto') }}">
                                     <i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp; &nbsp; Contáctanos</a>
@@ -139,14 +139,12 @@
                                 {{ $footer[0]->items[13]->item->content }}
                             </li>
                             <li>
-                                <i class="fa fa-phone"></i>
-                                <strong>Teléfono: <strong>
-                                        {{ $footer[0]->items[12]->item->content }}
-                                        <br />
+                                <i class="fa fa-phone" style="margin-top: -10px;"></i>
+                                <strong>Teléfono: {{ $footer[0]->items[12]->item->content }} <strong> 
                             </li>
                         </ul>
                         <a href="{{ route('web_peru_reclamaciones') }}">
-                            <img style="height: 120px;" src="{{ asset('themes/zoelife/peru/images/libroReclamaciones2.png') }}" alt="">
+                            <img style="height: 100px;" src="{{ asset('themes/zoelife/peru/images/libroReclamaciones2.png') }}" alt="">
                         </a>
                     </div>
                 </div>

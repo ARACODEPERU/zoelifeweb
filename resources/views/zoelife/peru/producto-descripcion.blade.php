@@ -86,7 +86,7 @@
                         <div class="m-b10">
                             <h5 class="text-uppercase">
                                 <img style="height: 40px;" alt="" src="{{ asset('themes/zoelife/global/images/favicon.png') }}" />
-                                Testimonios del <b>{{ $product->name }}</b>
+                                Testimonios | <b style="color: #00b01a;">{{ $product->name }}</b>
                             </h5>
                             <p>
                                 Sumérgete en una experiencia única y conoce de primera mano cómo nuestro producto ha

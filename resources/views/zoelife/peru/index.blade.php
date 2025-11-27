@@ -153,8 +153,8 @@
             </section>
 
             <!-- Video Presentación / STAR -->
-            <div class="section-full text-white bg-img-fix p-t70 p-b70 overlay-black-middle choose-us"
-                style="background-image:url({{ asset('themes/zoelife/peru/images/background/fondo.jpg') }});">
+            <div class="section-full text-white bg-img-fix  overlay-black-middle choose-us"
+                style="background-image:url({{ asset('themes/zoelife/peru/images/background/fondo.jpg') }}); padding: 40px 30px;">
                 <div class="container" style="padding: 30px 20px;">
                     <div class="row">
                         <div class="col-md-12">
