@@ -510,6 +510,8 @@
             background: color-mix(in srgb, var(--brand) 10%, transparent);
         }
 
+        
+
         @media (max-width: 1500px) {
 
             .wrap {
