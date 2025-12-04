@@ -87,7 +87,7 @@ const loadFile = (event) => {
 
     // Obtén una referencia al elemento de imagen a través de Vue.js
     const imagePreview = document.getElementById('preview_img');
-    
+
     // Crea un objeto de archivo de imagen y asigna la URL al formulario
     const imageFile = URL.createObjectURL(event.target.files[0]);
     form.image_view = imageFile;
@@ -121,7 +121,7 @@ const setCountry = (id, text, icon) => {
                 <dropdown>
                     <template #trigger="{ toggle }">
                     <button class="w-full flex-shrink-0 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-500 bg-gray-100 border border-gray-300 rounded-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-white dark:border-gray-600" type="button" @click="toggle">
-                        <img v-show="form.country_icon" :src="form.country_icon" class="mr-1" style="width: 15px;"><span>{{ form.country_description }}</span> 
+                        <img v-show="form.country_icon" :src="form.country_icon" class="mr-1" style="width: 15px;"><span>{{ form.country_description }}</span>
                     </button>
                     </template>
                     <div class="z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-full dark:bg-gray-700">
@@ -150,7 +150,7 @@ const setCountry = (id, text, icon) => {
                 />
                 <InputError :message="form.errors.name" class="mt-2" />
             </div>
-            
+
             <div v-if="form.type == 1" class="col-span-6 sm:col-span-6 ">
                 <InputLabel for="description" value="Descripción" />
                 <textarea v-model="form.description" id="description" rows="2" autofocus class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Escribe descripción aquí..."></textarea>
@@ -161,7 +161,7 @@ const setCountry = (id, text, icon) => {
                 <InputLabel for="description" value="Descripción" />
                 <Editor
                     id="description"
-                    :api-key="tiny_api_key"
+                    api-key="adka9iydlg2djvr4gppluf2d3zzm29iwni1gdyc5hwzjvm30"
                     v-model="form.description"
                     :init="{
                         plugins: 'anchor autolink charmap codesample emoticons link lists media searchreplace table visualblocks wordcount',
@@ -209,12 +209,12 @@ const setCountry = (id, text, icon) => {
                 </select>
                 <InputError :message="form.errors.additional" class="mt-2" />
             </div>
-           
+
             <div v-if="form.type == 2" class="col-span-6 sm:col-span-6">
                 <InputLabel for="additional" :value="titles.additional+'*'" />
                 <Editor
                     id="additional"
-                    :api-key="tiny_api_key"
+                    api-key="adka9iydlg2djvr4gppluf2d3zzm29iwni1gdyc5hwzjvm30"
                     v-model="form.additional"
                     :init="{
                         plugins: 'anchor autolink charmap codesample emoticons link lists media searchreplace table visualblocks wordcount',
@@ -232,7 +232,7 @@ const setCountry = (id, text, icon) => {
                         <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">Imagen Actual</figcaption>
                     </figure>
                 </div>
-                
+
                 <input @change="loadFile" accept=".svg, .png, .jpg, .jpeg, .gif" class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" aria-describedby="file_input_help" id="file_input" type="file">
                 <p class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="file_input_help">PNG, JPG or GIF (RECOMENDADO. 800x400px).</p>
                 <InputError :message="form.errors.image" class="mt-2" />

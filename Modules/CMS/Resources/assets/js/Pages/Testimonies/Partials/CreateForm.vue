@@ -106,7 +106,7 @@ const handleImageCompressed = (file) => {
                 <InputLabel for="description" value="Descripción *" />
                 <Editor
                     id="description"
-                    :api-key="tiny_api_key"
+                    api-key="adka9iydlg2djvr4gppluf2d3zzm29iwni1gdyc5hwzjvm30"
                     v-model="form.description"
                     :init="{
                         plugins: 'anchor autolink charmap codesample emoticons link lists media searchreplace table visualblocks wordcount',
