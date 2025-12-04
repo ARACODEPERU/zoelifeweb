@@ -24,7 +24,14 @@ use Modules\Sales\Http\Controllers\SaleSummaryController;
 use Modules\Sales\Http\Controllers\SerieController;
 
 Route::middleware(['auth', 'verified'])->prefix('sales')->group(function () {
-    Route::resource('products', ProductController::class);
+
+    Route::prefix('sales')->name('sales.')->group(function () {
+        // Esta línea ahora genera:
+        // URI: /sales/products
+        // Nombre: sales.products.index
+        Route::resource('products', SalesProductController::class);
+    });
+    //Route::resource('products', ProductController::class);
     Route::resource('pettycash', PettyCashController::class);
     Route::resource('providers', ProviderController::class);
 
