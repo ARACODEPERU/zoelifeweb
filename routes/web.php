@@ -57,7 +57,7 @@ Route::get('/', function () {
 
 Route::get('/', [PeruController::class, 'inicio'])->name('web_peru_inicio');
 
-Route::get('/home', [PeruController::class, 'inicio'])->name('web_peru_inicio');
+Route::get('/home', [PeruController::class, 'inicio'])->name('web_peru_inicio_home');
 
 
 Route::get('/peru', [PeruController::class, 'inicio'])->name('web_peru_inicio');
