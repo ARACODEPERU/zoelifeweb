@@ -60,7 +60,7 @@ Route::get('/', [PeruController::class, 'inicio'])->name('web_peru_inicio');
 Route::get('/home', [PeruController::class, 'inicio'])->name('web_peru_inicio_home');
 
 
-Route::get('/peru', [PeruController::class, 'inicio'])->name('web_peru_inicio');
+Route::get('/peru', [PeruController::class, 'inicio'])->name('web_peru_inicio_peru');
 Route::get('/peru.nosotros', [PeruController::class, 'nosotros'])->name('web_peru_nosotros');
 Route::get('/peru.productos/{id?}', [PeruController::class, 'productos'])->name('web_peru_productos');
 Route::get('/peru.producto-descripcion/{id}', [PeruController::class, 'productodescripcion'])->name('web_peru_producto_descripcion');
