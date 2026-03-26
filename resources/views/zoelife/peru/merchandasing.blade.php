@@ -11,9 +11,9 @@
     <div class="page-content">
 
         <div class="btn-header-pc">
-            <div class="dez-bnr-inr ara_centrado_total">
+            {{-- <div class="dez-bnr-inr ara_centrado_total">
                 <img style="width: 100%; height: auto;" src="{{ $banner->content }}" alt="">
-            </div>
+            </div> --}}
             <div class="breadcrumb-row" style="position:relative; z-index:1;">
                 <div class="container-xxl">
                     <ul class="list-inline">
