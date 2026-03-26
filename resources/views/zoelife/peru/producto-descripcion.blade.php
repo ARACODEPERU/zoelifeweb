@@ -144,7 +144,7 @@
                         <div class="row">
                             <div class="col-md-4"></div>
                             <div class="col-md-4" style="text-align: center;">
-                                <a href="https://wa.link/isjo6j" 
+                                <a href="https://wa.link/gqpwnm" 
                                     class="btn btn-green">
                                     <i class="fab fa-whatsapp"></i> &nbsp;Deseo adquirir los productos
                                 </a>
